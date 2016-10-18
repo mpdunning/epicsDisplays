@@ -1,0 +1,286 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 433
+y 23
+w 560
+h 420
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 560
+h 36
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 484
+y 4
+w 64
+h 28
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-bold-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 10
+w 102
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "ADC Channels"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 236
+y 40
+w 100
+h 16
+controlPv "$(P):LI:MID.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 340
+y 40
+w 72
+h 16
+controlPv "$(P):LI:MID"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 428
+y 40
+w 44
+h 16
+controlPv "$(P):LI:CSR.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 476
+y 40
+w 72
+h 16
+controlPv "$(P):LI:CSR"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 96
+w 540
+h 312
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 12
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,Channels,Registers,CSR,CCR,RCR"
+center
+sizeOfs 5
+numDsps 5
+displayFileName {
+  0 "v3122Ch.edl"
+  1 "v3122Reg.edl"
+  2 "v3122CSR.edl"
+  3 "v3122CCR.edl"
+  4 "v3122RCR.edl"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 64
+w 308
+h 32
+fgColor index 13
+bgColor index 6
+selectColor index 2
+inconsistentColor index 8
+topShadowColor index 6
+botShadowColor index 6
+controlPv "LOC\\$(!W)show"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 208
+y 10
+w 84
+h 16
+controlPv "$(P):BI:STATE.DESC"
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 10
+w 52
+h 16
+controlPv "$(P):BI:STATE"
+font "helvetica-bold-r-14.0"
+fgColor index 13
+fgAlarm
+bgColor index 4
+useDisplayBg
+limitsFromDb
+nullColor index 40
+useHexPrefix
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 12
+y 40
+w 192
+h 16
+controlPv "$(P):SI:NAME.DESC"
+font "helvetica-bold-r-14.0"
+fgColor index 29
+bgColor index 4
+useDisplayBg
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+

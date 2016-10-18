@@ -1,0 +1,8820 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 594
+y 23
+w 1000
+h 400
+font "new century schoolbook-medium-r-12.0"
+ctlFont "new century schoolbook-medium-r-12.0"
+btnFont "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 1
+textColor index 14
+ctlFgColor1 index 12
+ctlFgColor2 index 7
+ctlBgColor1 index 63
+ctlBgColor2 index 21
+topShadowColor index 1
+botShadowColor index 11
+showGrid
+endScreenProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 849
+y 9
+w 80
+h 30
+fgColor index 14
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 11
+label "EXIT"
+font "new century schoolbook-medium-r-18.0"
+3d
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 10
+w 250
+h 40
+lineColor index 1
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 22
+y 20
+w 227
+h 20
+font "new century schoolbook-bold-r-18.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "New Focus Pico Motors"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 552
+y 48
+w 92
+h 24
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 11
+font "new century schoolbook-medium-r-14.0"
+buttonLabel "C2 Diag"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoAsyn.edl"
+}
+symbols {
+  0 "P=PM01:,R=C2:ASYN"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 490
+y 207
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 490
+}
+yPoints {
+  0 207
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 103
+w 256
+h 24
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 103
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=2,UM=0,RM=1,DM=2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 108
+w 186
+h 14
+controlPv "PM01:C2:A2:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "2"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 235
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 240
+w 186
+h 14
+controlPv "PM01:C2:A7:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 235
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A7"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=7,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "7"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 261
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 266
+w 186
+h 14
+controlPv "PM01:C2:A8:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 261
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A8"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=8,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "8"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 287
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 292
+w 186
+h 14
+controlPv "PM01:C2:A9:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 287
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A9"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=9,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "9"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 313
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 318
+w 186
+h 14
+controlPv "PM01:C2:A10:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 313
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A10"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=10,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "10"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 339
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 344
+w 186
+h 14
+controlPv "PM01:C2:A11:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 339
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A11"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=11,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "11"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 365
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 370
+w 186
+h 14
+controlPv "PM01:C2:A12:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 365
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A12"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=12,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "12"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 391
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 396
+w 186
+h 14
+controlPv "PM01:C2:A13:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 391
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A13"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=13,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "13"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 417
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 422
+w 186
+h 14
+controlPv "PM01:C2:A14:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 417
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A14"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=14,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "14"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 443
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 448
+w 186
+h 14
+controlPv "PM01:C2:A15:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 443
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A15"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=15,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "15"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 468
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 473
+w 186
+h 14
+controlPv "PM01:C2:A16:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 468
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A16"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=16,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "16"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 494
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 499
+w 186
+h 14
+controlPv "PM01:C2:A17:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 494
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A17"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=17,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "17"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 520
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 525
+w 186
+h 14
+controlPv "PM01:C2:A18:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 520
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A18"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=18,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "18"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 546
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 551
+w 186
+h 14
+controlPv "PM01:C2:A19:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 546
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A19"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=19,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "19"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 572
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 577
+w 186
+h 14
+controlPv "PM01:C2:A20:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 572
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A20"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=20,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "20"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 598
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 603
+w 186
+h 14
+controlPv "PM01:C2:A21:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 598
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A21"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=21,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "21"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 650
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 655
+w 186
+h 14
+controlPv "PM01:C2:A23:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 650
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A23"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=23,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "23"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 676
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 681
+w 186
+h 14
+controlPv "PM01:C2:A24:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 676
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A24"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=24,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "24"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 702
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 707
+w 186
+h 14
+controlPv "PM01:C2:A25:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 702
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A25"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=25,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "25"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 728
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 733
+w 186
+h 14
+controlPv "PM01:C2:A26:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 728
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A26"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=26,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "26"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 754
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 759
+w 186
+h 14
+controlPv "PM01:C2:A27:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 754
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A27"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=27,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "27"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 780
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 785
+w 186
+h 14
+controlPv "PM01:C2:A28:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 780
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A28"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=28,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "28"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 806
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 811
+w 186
+h 14
+controlPv "PM01:C2:A29:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 806
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A29"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=29,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "29"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 832
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 837
+w 186
+h 14
+controlPv "PM01:C2:A30:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 832
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A30"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=30,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "30"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 129
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 134
+w 186
+h 14
+controlPv "PM01:C2:A3:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 129
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A3"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=3,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "3"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 155
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 160
+w 186
+h 14
+controlPv "PM01:C2:A4:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 155
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A4"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=4,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "4"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 209
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 214
+w 186
+h 14
+controlPv "PM01:C2:A6:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 209
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A6"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=6,UM=2,RM=0,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "6"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 181
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 186
+w 186
+h 14
+controlPv "PM01:C2:A5:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 181
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A5"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=5,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "5"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 857
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 862
+w 186
+h 14
+controlPv "PM01:C2:A31:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 857
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A31"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=31,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C2:ANUM"
+visMin "31"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 624
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 629
+w 186
+h 14
+controlPv "PM01:C1:A22:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 624
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A22"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=22,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "22"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 77
+w 242
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 546
+y 82
+w 186
+h 14
+controlPv "PM01:C2:A1:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 490
+y 77
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C2 A1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=2,A=1,UM=2,RM=0,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 795
+y 48
+w 92
+h 24
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 11
+font "new century schoolbook-medium-r-14.0"
+buttonLabel "C3 Diag"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoAsyn.edl"
+}
+symbols {
+  0 "P=PM01:,R=C3:ASYN"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 733
+y 207
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 733
+}
+yPoints {
+  0 207
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 77
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 82
+w 186
+h 14
+controlPv "PM01:C3:A1:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 77
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=1,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "1"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 103
+w 256
+h 24
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 103
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=2,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 108
+w 186
+h 14
+controlPv "PM01:C3:A2:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "2"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 235
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 240
+w 186
+h 14
+controlPv "PM01:C3:A7:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 235
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A7"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=7,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "7"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 261
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 266
+w 186
+h 14
+controlPv "PM01:C3:A8:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 261
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A8"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=8,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "8"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 287
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 292
+w 186
+h 14
+controlPv "PM01:C3:A9:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 287
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A9"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=9,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "9"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 313
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 318
+w 186
+h 14
+controlPv "PM01:C3:A10:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 313
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A10"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=10,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "10"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 339
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 344
+w 186
+h 14
+controlPv "PM01:C3:A11:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 339
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A11"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=11,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "11"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 365
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 370
+w 186
+h 14
+controlPv "PM01:C3:A12:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 365
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A12"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=12,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "12"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 391
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 396
+w 186
+h 14
+controlPv "PM01:C3:A13:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 391
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A13"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=13,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "13"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 417
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 422
+w 186
+h 14
+controlPv "PM01:C3:A14:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 417
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A14"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=14,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "14"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 443
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 448
+w 186
+h 14
+controlPv "PM01:C3:A15:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 443
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A15"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=15,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "15"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 468
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 473
+w 186
+h 14
+controlPv "PM01:C3:A16:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 468
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A16"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=16,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "16"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 494
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 499
+w 186
+h 14
+controlPv "PM01:C3:A17:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 494
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A17"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=17,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "17"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 520
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 525
+w 186
+h 14
+controlPv "PM01:C3:A18:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 520
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A18"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=18,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "18"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 546
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 551
+w 186
+h 14
+controlPv "PM01:C3:A19:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 546
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A19"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=19,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "19"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 572
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 577
+w 186
+h 14
+controlPv "PM01:C3:A20:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 572
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A20"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=20,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "20"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 598
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 603
+w 186
+h 14
+controlPv "PM01:C3:A21:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 598
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A21"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=21,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "21"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 650
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 655
+w 186
+h 14
+controlPv "PM01:C3:A23:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 650
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A23"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=23,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "23"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 676
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 681
+w 186
+h 14
+controlPv "PM01:C3:A24:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 676
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A24"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=24,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "24"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 702
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 707
+w 186
+h 14
+controlPv "PM01:C3:A25:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 702
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A25"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=25,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "25"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 728
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 733
+w 186
+h 14
+controlPv "PM01:C3:A26:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 728
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A26"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=26,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "26"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 754
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 759
+w 186
+h 14
+controlPv "PM01:C3:A27:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 754
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A27"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=27,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "27"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 780
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 785
+w 186
+h 14
+controlPv "PM01:C3:A28:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 780
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A28"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=28,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "28"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 806
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 811
+w 186
+h 14
+controlPv "PM01:C3:A29:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 806
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A29"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=29,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "29"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 832
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 837
+w 186
+h 14
+controlPv "PM01:C3:A30:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 832
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A30"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=30,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "30"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 129
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 134
+w 186
+h 14
+controlPv "PM01:C3:A3:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 129
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A3"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=3,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "3"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 155
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 160
+w 186
+h 14
+controlPv "PM01:C3:A4:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 155
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A4"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=4,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "4"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 209
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 214
+w 186
+h 14
+controlPv "PM01:C3:A6:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 209
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A6"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=6,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "6"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 181
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 186
+w 186
+h 14
+controlPv "PM01:C3:A5:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 181
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A5"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=5,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "5"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 857
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 862
+w 186
+h 14
+controlPv "PM01:C3:A31:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 857
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C3 A31"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=3,A=31,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C3:ANUM"
+visMin "31"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 624
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 789
+y 629
+w 186
+h 14
+controlPv "PM01:C1:A22:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 733
+y 624
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A22"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=22,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "22"
+visMax "32"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 68
+y 48
+w 92
+h 24
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 11
+font "new century schoolbook-medium-r-14.0"
+buttonLabel "C0 Diag"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoAsyn.edl"
+}
+symbols {
+  0 "P=PM01:,R=C0:ASYN"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 6
+y 207
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 6
+}
+yPoints {
+  0 207
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 77
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 82
+w 186
+h 14
+controlPv "PM01:C0:A1:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 77
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=1,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "1"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 103
+w 256
+h 24
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 103
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=2,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 108
+w 186
+h 14
+controlPv "PM01:C0:A2:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "2"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 235
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 240
+w 186
+h 14
+controlPv "PM01:C0:A7:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 235
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A7"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=7,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "7"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 261
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 266
+w 186
+h 14
+controlPv "PM01:C0:A8:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 261
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A8"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=8,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "8"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 287
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 292
+w 186
+h 14
+controlPv "PM01:C0:A9:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 287
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A9"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=9,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "9"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 313
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 318
+w 186
+h 14
+controlPv "PM01:C0:A10:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 313
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A10"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=10,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "10"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 339
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 344
+w 186
+h 14
+controlPv "PM01:C0:A11:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 339
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A11"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=11,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "11"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 365
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 370
+w 186
+h 14
+controlPv "PM01:C0:A12:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 365
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A12"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=12,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "12"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 391
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 396
+w 186
+h 14
+controlPv "PM01:C0:A13:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 391
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A13"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=13,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "13"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 417
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 422
+w 186
+h 14
+controlPv "PM01:C0:A14:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 417
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A14"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=14,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "14"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 443
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 448
+w 186
+h 14
+controlPv "PM01:C0:A15:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 443
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A15"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=15,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "15"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 468
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 473
+w 186
+h 14
+controlPv "PM01:C0:A16:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 468
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A16"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=16,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "16"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 494
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 499
+w 186
+h 14
+controlPv "PM01:C0:A17:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 494
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A17"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=17,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "17"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 520
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 525
+w 186
+h 14
+controlPv "PM01:C0:A18:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 520
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A18"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=18,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "18"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 546
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 551
+w 186
+h 14
+controlPv "PM01:C0:A19:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 546
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A19"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=19,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "19"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 572
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 577
+w 186
+h 14
+controlPv "PM01:C0:A20:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 572
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A20"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=20,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "20"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 598
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 603
+w 186
+h 14
+controlPv "PM01:C0:A21:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 598
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A21"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=21,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "21"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 650
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 655
+w 186
+h 14
+controlPv "PM01:C0:A23:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 650
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A23"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=23,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "23"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 676
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 681
+w 186
+h 14
+controlPv "PM01:C0:A24:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 676
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A24"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=24,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "24"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 702
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 707
+w 186
+h 14
+controlPv "PM01:C0:A25:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 702
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A25"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=25,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "25"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 728
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 733
+w 186
+h 14
+controlPv "PM01:C0:A26:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 728
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A26"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=26,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "26"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 754
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 759
+w 186
+h 14
+controlPv "PM01:C0:A27:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 754
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A27"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=27,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "27"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 780
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 785
+w 186
+h 14
+controlPv "PM01:C0:A28:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 780
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A28"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=28,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "28"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 806
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 811
+w 186
+h 14
+controlPv "PM01:C0:A29:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 806
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A29"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=29,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "29"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 832
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 837
+w 186
+h 14
+controlPv "PM01:C0:A30:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 832
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A30"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=30,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "30"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 129
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 134
+w 186
+h 14
+controlPv "PM01:C0:A3:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 129
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A3"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=3,UM=2,RM=0,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "3"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 155
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 160
+w 186
+h 14
+controlPv "PM01:C0:A4:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 155
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A4"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=4,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "4"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 209
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 214
+w 186
+h 14
+controlPv "PM01:C0:A6:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 209
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A6"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=6,UM=2,RM=0,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "6"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 181
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 186
+w 186
+h 14
+controlPv "PM01:C0:A5:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 181
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A5"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=5,UM=0,RM=0,DM=0"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "5"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 857
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 862
+w 186
+h 14
+controlPv "PM01:C0:A31:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 857
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A31"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=31,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "31"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 624
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 62
+y 629
+w 186
+h 14
+controlPv "PM01:C0:A22:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 6
+y 624
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C0 A22"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=0,A=22,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C0:ANUM"
+visMin "22"
+visMax "32"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 310
+y 48
+w 92
+h 24
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 11
+font "new century schoolbook-medium-r-14.0"
+buttonLabel "C1 Diag"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoAsyn.edl"
+}
+symbols {
+  0 "P=PM01:,R=C1:ASYN"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 248
+y 207
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 248
+}
+yPoints {
+  0 207
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 77
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 82
+w 186
+h 14
+controlPv "PM01:C1:A1:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 77
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=1,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "1"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 103
+w 256
+h 24
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 103
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=2,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 108
+w 186
+h 14
+controlPv "PM01:C1:A2:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "2"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 235
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 240
+w 186
+h 14
+controlPv "PM01:C1:A7:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 235
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A7"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=7,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "7"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 261
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 266
+w 186
+h 14
+controlPv "PM01:C1:A8:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 261
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A8"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=8,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "8"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 287
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 292
+w 186
+h 14
+controlPv "PM01:C1:A9:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 287
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A9"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=9,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "9"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 313
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 318
+w 186
+h 14
+controlPv "PM01:C1:A10:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 313
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A10"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=10,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "10"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 339
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 344
+w 186
+h 14
+controlPv "PM01:C1:A11:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 339
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A11"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=11,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "11"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 365
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 370
+w 186
+h 14
+controlPv "PM01:C1:A12:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 365
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A12"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=12,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "12"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 391
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 396
+w 186
+h 14
+controlPv "PM01:C1:A13:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 391
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A13"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=13,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "13"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 417
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 422
+w 186
+h 14
+controlPv "PM01:C1:A14:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 417
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A14"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=14,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "14"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 443
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 448
+w 186
+h 14
+controlPv "PM01:C1:A15:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 443
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A15"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=15,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "15"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 468
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 473
+w 186
+h 14
+controlPv "PM01:C1:A16:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 468
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A16"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=16,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "16"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 494
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 499
+w 186
+h 14
+controlPv "PM01:C1:A17:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 494
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A17"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=17,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "17"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 520
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 525
+w 186
+h 14
+controlPv "PM01:C1:A18:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 520
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A18"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=18,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "18"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 546
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 551
+w 186
+h 14
+controlPv "PM01:C1:A19:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 546
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A19"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=19,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "19"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 572
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 577
+w 186
+h 14
+controlPv "PM01:C1:A20:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 572
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A20"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=20,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "20"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 598
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 603
+w 186
+h 14
+controlPv "PM01:C1:A21:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 598
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A21"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=21,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "21"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 650
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 655
+w 186
+h 14
+controlPv "PM01:C1:A23:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 650
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A23"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=23,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "23"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 676
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 681
+w 186
+h 14
+controlPv "PM01:C1:A24:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 676
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A24"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=24,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "24"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 702
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 707
+w 186
+h 14
+controlPv "PM01:C1:A25:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 702
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A25"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=25,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "25"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 728
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 733
+w 186
+h 14
+controlPv "PM01:C1:A26:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 728
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A26"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=26,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "26"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 754
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 759
+w 186
+h 14
+controlPv "PM01:C1:A27:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 754
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A27"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=27,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "27"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 780
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 785
+w 186
+h 14
+controlPv "PM01:C1:A28:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 780
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A28"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=28,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "28"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 806
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 811
+w 186
+h 14
+controlPv "PM01:C1:A29:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 806
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A29"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=29,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "29"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 832
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 837
+w 186
+h 14
+controlPv "PM01:C1:A30:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 832
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A30"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=30,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "30"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 129
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 134
+w 186
+h 14
+controlPv "PM01:C1:A3:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 129
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A3"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=3,UM=2,RM=0,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "3"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 155
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 160
+w 186
+h 14
+controlPv "PM01:C1:A4:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 155
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A4"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=4,UM=2,RM=0,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "4"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 209
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 214
+w 186
+h 14
+controlPv "PM01:C1:A6:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 209
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A6"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=6,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "6"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 181
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 186
+w 186
+h 14
+controlPv "PM01:C1:A5:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 181
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A5"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=5,UM=1,RM=2,DM=0"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "5"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 857
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 862
+w 186
+h 14
+controlPv "PM01:C1:A31:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 857
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A31"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=31,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "31"
+visMax "32"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 624
+w 256
+h 24
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 304
+y 629
+w 186
+h 14
+controlPv "PM01:C1:A22:M0:AO.DESC"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 248
+y 624
+w 56
+h 24
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "new century schoolbook-medium-r-12.0"
+buttonLabel "C1 A22"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "picoDiag.edl"
+}
+symbols {
+  0 "C=1,A=22,UM=0,RM=2,DM=1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "PM01:C1:ANUM"
+visMin "22"
+visMax "32"
+endObjectProperties
+

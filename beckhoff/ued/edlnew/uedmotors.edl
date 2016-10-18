@@ -1,0 +1,237 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 918
+y 306
+w 600
+h 400
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 598
+h 48
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 532
+y 8
+w 60
+h 32
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 8
+y 8
+w 208
+h 24
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "UED Beckhoff Motor System"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 324
+y 4
+w 152
+h 14
+controlPv "$(P):SI:START:TIME"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 324
+y 28
+w 152
+h 14
+controlPv "$(P):SI:CURR:TIME"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 280
+y 4
+w 39
+h 14
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Started"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 280
+y 28
+w 38
+h 14
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Now is"
+}
+autoSize
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 84
+w 584
+h 308
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,Motors,Details"
+center
+setSize
+sizeOfs 5
+numDsps 2
+displayFileName {
+  0 "motorpage1.edl"
+  1 "motorpage2.edl"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 60
+w 196
+h 24
+fgColor index 13
+bgColor index 6
+selectColor index 2
+inconsistentColor index 8
+topShadowColor index 6
+botShadowColor index 6
+controlPv "LOC\\$(!W)show"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 284
+y 56
+w 260
+h 20
+controlPv "$(P):SI:MESG"
+font "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 12
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+

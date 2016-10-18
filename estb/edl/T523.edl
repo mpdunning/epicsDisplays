@@ -1,0 +1,244 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1601
+y 571
+w 300
+h 172
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 298
+h 32
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 8
+w 132
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "T523 Specific"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 236
+y 4
+w 56
+h 24
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 8
+y 44
+w 136
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "DAQ"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "T523Daq.edl"
+}
+symbols {
+  0 "P=ESA:T523, IOC=sioc-esa-t523"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 44
+w 136
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Table Motors"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "main2motor.edl"
+}
+symbols {
+  0 "P=ESA, M=21, M1=2531, M2=2541, ADC=3172, DAC=4001, C1=1, C2=2, TITLE=T523 Table Motors"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 8
+y 80
+w 136
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Dipole Supply"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lambda-bulk.edl"
+}
+symbols {
+  0 "P=ESA:MAG:1, IOC=sioc-esa-lamb01"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 116
+w 136
+h 28
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 124
+w 80
+h 16
+font "helvetica-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Collimator"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 112
+y 120
+w 28
+h 20
+fgColor index 13
+onColor index 15
+offColor index 4
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESA:BO:SC:2114-1-27:BIT1"
+onLabel "IN"
+offLabel "OUT"
+labelType "literal"
+3d
+font "helvetica-bold-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 152
+y 80
+w 136
+h 28
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Kraken laser cam"
+numCmds 1
+command {
+  0 "$SCRIPT/startCamViewer.sh qCam 7"
+}
+endObjectProperties
+

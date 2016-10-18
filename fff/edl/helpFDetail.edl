@@ -1,0 +1,119 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 401
+y 276
+w 450
+h 380
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 1
+w 448
+h 30
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 395
+y 4
+w 50
+h 24
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 8
+w 148
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Help for Fault Setup Panel"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 31
+y 45
+w 405
+h 322
+font "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 4
+useDisplayBg
+value {
+  "The \"Fault Status Details...\" display shows the fault state of channels"
+  "in all three FFF modules.  These could be \"Fast\" or \"Slow\" channels."
+  "Separate displays or screens are used for these two groups of channels."
+  "The values in columns \"value read\", \"Lower Limit\", \"Upper Limit\","
+  "\"Tick Limit\", \"RF Mask\", and \"Mod Mask\" are the same as in the "
+  "\"Samples\" screens and here are strictly Read Only.  The limits units"
+  "are the same as corresponding \"value read\".  The limits units on the"
+  "Diff Ch are always in ADC counts."
+  ""
+  "The \"value read\" field contains two sensitive areas, one on the left"
+  "the other on the right.  Right clicking on one of these areas brings up"
+  "a dialog which shows engineering units and alarm limits (left sensitive"
+  "area), or calculated running averages ( right sentive area)."
+  ""
+  "The \"RF Fault\" and \"Mod Fault\" indicators show the fault state for"
+  "each channel.  When it is dark green there is no fault, when it is"
+  "bright red, fault condition exists.  The channel which has a Mask bit"
+  "enabled and shows a fault condition is generating a fault."
+  ""
+  "When a channel generates a fault, then either the \"RF Fault Counts\""
+  "or the \"Mod Fault Counts\" is incremented.  These counters can be"
+  "reset from the \"Fault Status Overview\" screen by pressing the"
+  "\"Clear Counts\" button."
+}
+autoSize
+endObjectProperties
+

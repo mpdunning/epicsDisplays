@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Pico Motor Controls</title>
+</head><body>
+<img src="motor.png">
+<h3>Overview</h3>
+This application is a Qt implementation of the controls and
+monitoring widgets for interracting with the soft IOC
+which does IO with the hardware.  EPICS aware widgets are used
+to do Channel Access IO with IOC PVs.  The Epics aware widgets
+were developed at Australian Synchrotron Laboratory.
+Andrew Rhyder is one of the developers and a contact person.
+Documentation on the EPICS aware widgets, or QCA framework, can be found
+in /afs/slac/g/testfac/tools/epicsQt/R1.1.6.2/documentation.
+<h3>Hardware</h3>
+The hardware consists of NewFocus 8752 Ethernet controller and
+a number of 8753 Intelligent Pico Motor Drivers.  Each driver
+controls up to three pico motors.  In the NLCTA implementation
+we use only two of the three motors, A and C, to effect horizontal
+and vertical moves of optical elements.
+<h3>Soft IOC</h3>
+<p>The soft IOC program uses
+<a href="/afs/slac/g/testfac/workspace/zms/rhel5/R3.14.11/mod/motor/new/documentation/motorRecord.html"> motor record</a> and a support module "pico".
+The support module is a subclass of the
+<a href="/afs/slac/g/testfac/workspace/zms/rhel5/R3.14.11/mod/asyn/R4.17/documentation/asynPortDriver.html">asyn Port Driver class</a>
+<p>More descriptions...
+<h3> Qt GUI</h3>
+</body>
+</html>

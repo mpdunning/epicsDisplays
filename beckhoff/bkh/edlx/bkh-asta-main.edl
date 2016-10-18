@@ -1,0 +1,274 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 843
+y 51
+w 376
+h 180
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 374
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 300
+y 4
+w 64
+h 32
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-bold-r-14.0"
+3d
+exitProgram
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 12
+w 248
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 13
+bgColor index 63
+value {
+  "ASTA EDM Display Manager"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 4
+y 52
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Beckhoff 5: ASTA ...."
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "bkh05.edl"
+}
+symbols {
+  0 "P=ASTA,M=5,D=bkh5"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 4
+y 84
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Beckhoff 9: ASTA Bunker Ceiling"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "bkh09.edl"
+}
+symbols {
+  0 "P=ASTA,M=9,D=BKH9,A=9,IOC=sioc-asta-bkh9"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 232
+y 52
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Soft Channels"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "astasc.edl"
+}
+symbols {
+  0 "P=ASTA"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 4
+y 116
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Beckhoff 12: ASTA ...."
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "bkh12.edl"
+}
+symbols {
+  0 "P=ASTA,M=12,D=bkh12"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 232
+y 84
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Cameras"
+numPvs 4
+numDsps 4
+displayFileName {
+  0 "gcADBase.edl"
+  1 "gcADBase.edl"
+  2 "gcADBase.edl"
+  3 "gcADBase.edl"
+}
+menuLabel {
+  0 " Cam 1  "
+  1 " Cam 2 "
+  2 " Cam 3 "
+  3 " Cam 4 "
+}
+symbols {
+  0 "P=ASPS01:,R=cam1:,IOC=sioc-asta-adps01,CAMSERVER=$CAMSERVER"
+  1 "P=ASPS02:,R=cam1:,IOC=sioc-asta-adps02,CAMSERVER=$CAMSERVER"
+  2 "P=ASPS03:,R=cam1:,IOC=sioc-asta-adps03,CAMSERVER=$CAMSERVER"
+  3 "P=ASPS04:,R=cam1:,IOC=sioc-asta-adps04,CAMSERVER=$CAMSERVER"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 232
+y 116
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Rigol 60xx"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ds6x.edl"
+}
+symbols {
+  0 "P=ASTA:SC01"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 4
+y 148
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "UED Motors"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "uedmotors.edl"
+}
+symbols {
+  0 "P=ASTA:UEDM"
+}
+endObjectProperties
+

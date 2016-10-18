@@ -1,0 +1,338 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 732
+y 659
+w 775
+h 245
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 1
+textColor index 14
+ctlFgColor1 index 12
+ctlFgColor2 index 7
+ctlBgColor1 index 63
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+title "$(SCOPE)"
+endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 2147483647
+y 2147483647
+w -2147483648
+h -2147483648
+lineColor index 14
+fillColor index 63
+arrows "both"
+numPoints 0
+xPoints {
+}
+yPoints {
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 846
+y 445
+w 0
+h 0
+lineColor index 14
+fillColor index 63
+lineWidth 2
+numPoints 1
+xPoints {
+  0 846
+}
+yPoints {
+  0 445
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 846
+y 446
+w 0
+h 0
+lineColor index 14
+fillColor index 63
+lineWidth 2
+numPoints 1
+xPoints {
+  0 846
+}
+yPoints {
+  0 446
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 687
+y 3
+w 61
+h 26
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+label "EXIT"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 628
+h 57
+lineColor index 63
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 3
+w 145
+h 30
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "L-Band"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 57
+w 826
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 4
+xPoints {
+  0 0
+  1 825
+  2 819
+  3 809
+}
+yPoints {
+  0 57
+  1 57
+  2 57
+  3 57
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 2
+w 381
+h 30
+controlPv "$(IOC):$(SCOPE):NAME.DESC"
+fgColor index 14
+bgColor index 1
+font "new century schoolbook-bold-r-24.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 30
+w 210
+h 30
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Enter Filename"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 63
+w 216
+h 33
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 406
+y 63
+w 90
+h 33
+fgColor index 14
+onColor index 63
+offColor index 63
+topShadowColor index 2
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):GETDATA.PROC"
+pressValue "1"
+onLabel "Set WF"
+offLabel "Set WF"
+3d
+font "new century schoolbook-bold-r-14.0"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 63
+w 90
+h 33
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-bold-r-14.0"
+buttonLabel "Select File"
+numCmds 1
+commandLabel {
+  0 "Select File"
+}
+command {
+  0 "/usr/local/bin/wish /nfs/slac/g/nlcta/u01/jnelson/wfm/afgwfs/sel_file_$(SCOPE).tcl"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 388
+y 148
+w 376
+h 44
+controlPv "$(IOC):$(SCOPE):FNAME2"
+fgColor index 14
+bgColor index 1
+font "courier-bold-r-14.0"
+lineWidth 0
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 12
+y 148
+w 376
+h 44
+controlPv "$(IOC):$(SCOPE):FNAME1"
+fgColor index 14
+bgColor index 1
+font "courier-bold-r-14.0"
+lineWidth 0
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 388
+y 99
+w 356
+h 39
+controlPv "$(IOC):$(SCOPE):FNAME2"
+fgColor index 14
+bgColor index 63
+font "courier-bold-r-14.0"
+lineWidth 0
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 32
+y 99
+w 356
+h 39
+controlPv "$(IOC):$(SCOPE):FNAME1"
+fgColor index 14
+bgColor index 63
+font "courier-bold-r-14.0"
+lineWidth 0
+endObjectProperties
+

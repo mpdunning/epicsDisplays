@@ -1,0 +1,71 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 814
+y 77
+w 560
+h 200
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+endScreenProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 483
+y 4
+w 67
+h 24
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 12
+label "Close"
+font "helvetica-bold-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 34
+w 547
+h 140
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Controls:"
+  "Run/Stop   - put instrument in run or stop mode"
+  "Acquire Type is used to chose one of the three acquisition types that the scope provides."
+  "Acquire Mode is used to choose between realtime and equaltime modes."
+  "Average over is used to specify number of averages used when Acquire Type is set to Averages."
+  "Auto push button is used to set the scope to auto scale for optimal waveform display."
+  "Reset push button is used to reset the scope to factory defaults."
+  "Init push button is used to initialize waveform data length  to a preset values of 600."
+  "data format, presently only  binary byte waveform data format is implemented."
+  "record lengtth - number of data points per waveform"
+}
+autoSize
+endObjectProperties
+

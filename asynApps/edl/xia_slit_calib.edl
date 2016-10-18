@@ -1,0 +1,309 @@
+4 0 0
+beginScreenProperties
+major 4
+minor 0
+release 0
+x 71
+y 153
+w 400
+h 310
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor rgb 0 0 0
+bgColor rgb 47872 49408 34560
+textColor rgb 0 0 0
+ctlFgColor1 rgb 64256 62208 18944
+ctlFgColor2 rgb 60928 46592 11008
+ctlBgColor1 rgb 52480 24832 0
+ctlBgColor2 rgb 65280 45056 65280
+topShadowColor rgb 44544 19968 48128
+botShadowColor rgb 13312 13056 34304
+snapToGrid
+gridSize 5
+endScreenProperties
+
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 17
+w 380
+h 22
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Huber Slit Controller $(P)$(HSC)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 4
+w 380
+h 8
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "xiahsc.adl    edited:  1999-Dec-08 (prj)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 71
+w 380
+h 18
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Instructions"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 44
+w 380
+h 22
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Calibration"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 114
+w 380
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "step 2:  unplug power supply from slit cable"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 133
+w 380
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "step 3:  manually close the slits to 0"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 152
+w 380
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "step 4:  plug the power cable back in"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 95
+w 380
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "step 1:  disable slit software"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 171
+w 380
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "step 5:  enable slit software"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 236
+w 380
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "step 7:  you are done"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 190
+w 380
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "step 6:  press the calibrate button below"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 282
+w 147
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "serial port:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 169
+y 282
+w 221
+h 14
+controlPv "$(P)$(HSC)port"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+bgColor rgb 47872 49408 34560
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 130
+y 209
+w 140
+h 22
+fgColor rgb 0 0 0
+onColor rgb 39168 65280 65280
+offColor rgb 39168 65280 65280
+topShadowColor rgb 65280 65280 65280
+botShadowColor rgb 0 0 0
+controlPv "$(P)$(HSC)calib"
+pressValue "1"
+releaseValue 
+onLabel "calibrate"
+offLabel "calibrate"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 301
+y 62
+w 82
+h 38
+fgColor rgb 0 0 0
+bgColor rgb 60160 61696 46336
+selectColor rgb 60160 61696 46336
+inconsistentColor rgb 0 0 0
+topShadowColor rgb 65280 65280 65280
+botShadowColor rgb 0 0 0
+controlPv "$(P)$(HSC)enable"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+

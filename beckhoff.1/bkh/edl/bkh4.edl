@@ -1,0 +1,258 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 736
+y 228
+w 500
+h 468
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 498
+h 36
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 440
+y 4
+w 56
+h 28
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Exit"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 68
+w 480
+h 340
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,ADC,DIO,3408Hid,BK9000"
+center
+sizeOfs 5
+numDsps 4
+displayFileName {
+  0 "adcConv-8.edl"
+  1 "bkh4-dio.edl"
+  2 "bkhhidregs.edl"
+  3 "bk9000.edl"
+}
+symbols {
+  0 "ADC=3408"
+  1 "T1=1104,T2=2408"
+  2 "T=3408"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 44
+w 460
+h 24
+fgColor index 13
+bgColor index 5
+selectColor index 1
+inconsistentColor index 8
+topShadowColor index 5
+botShadowColor index 5
+controlPv "LOC\\$(!W)show"
+font "courier-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 8
+w 84
+h 20
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Beckhoff $(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 92
+y 440
+w 384
+h 20
+controlPv "$(P):WF:BKHERR-$(M):MESSAGE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 73
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 438
+w 72
+h 24
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:BKHERR-$(M):ERROR"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 438
+w 72
+h 24
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:BKHERR-$(M):ERROR"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 12
+y 440
+w 68
+h 20
+controlPv "$(P):BI:BKHERR-$(M):ERROR"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 108
+y 8
+w 216
+h 20
+controlPv "$(P):SI:900R-$(M):NAME.VAL"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 8
+w 84
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "IOC Control"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "procServCtrl.edl"
+}
+endObjectProperties
+

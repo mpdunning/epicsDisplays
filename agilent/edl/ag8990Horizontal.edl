@@ -1,0 +1,170 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 607
+y 138
+w 330
+h 400
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 20
+w 295
+h 145
+lineColor index 13
+fill
+fillColor index 4
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 35
+y 80
+w 70
+h 25
+fgColor index 13
+bgColor index 50
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(P):MBBO:SC:TIM:DIV:V"
+indicatorPv "$(P):MBBI:TIM:DIV:V"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 110
+y 80
+w 70
+h 25
+fgColor index 13
+bgColor index 50
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(P):MBBO:SC:TIM:DIV:U"
+indicatorPv "$(P):MBBI:TIM:DIV:U"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 185
+y 85
+w 75
+h 15
+controlPv "$(P):SI:TIM:DIV"
+font "helvetica-medium-r-12.0"
+fgColor index 29
+bgColor index 4
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 35
+y 110
+w 90
+h 20
+controlPv "$(P):AO:SC:TIME:OFFST"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 130
+y 110
+w 90
+h 20
+controlPv "$(P):AI:TIME:OFFST"
+font "helvetica-medium-r-12.0"
+fgColor index 29
+bgColor index 4
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 25
+w 63
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Time Base"
+}
+autoSize
+endObjectProperties
+

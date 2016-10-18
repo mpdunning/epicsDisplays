@@ -1,0 +1,116 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 605
+y 436
+w 530
+h 330
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 1
+w 529
+h 30
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 470
+y 4
+w 50
+h 24
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 8
+w 188
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Help for Filament Timeout Display"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 31
+y 45
+w 490
+h 260
+font "courier-medium-r-12.0"
+fgColor index 55
+bgColor index 4
+useDisplayBg
+value {
+  "The \"DAC\" display allows modifying setpoint for each"
+  "of the 8 DAC channels.  The data are organized into eight"
+  "rows, one for each of the 8 channels that are being used."
+  "Four columns are used:"
+  ""
+  "\"DAC\":      shows current set point, which can be modified either by"
+  "            typing a new value and commiting it with the \"Enter\" key,"
+  "            or by using the increment/decrement buttons (up/down"
+  "            arrows)."
+  "\"ADC\":      Shows a read back valu of the set point via a seperate ADC"
+  "            module."
+  "\"DAC read\": Shows a read back value of the set point via an adc"
+  "            internal to the DAC module."
+  "\"DAC Raw\" : Show the raw value that is actually written to the DAC"
+  "            module register."
+  ""
+  "-------------------"
+  ""
+  "\"CSR\" is a read/write widget for monitoring or modifying the Control"
+  "      and status register."
+}
+autoSize
+endObjectProperties
+

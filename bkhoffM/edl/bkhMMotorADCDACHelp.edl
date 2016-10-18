@@ -1,0 +1,89 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1448
+y 322
+w 400
+h 400
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 71
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 7
+w 252
+h 15
+font "courier-bold-r-14.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "Help for the ADC-DAC screen."
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 26
+w 392
+h 351
+font "courier-medium-r-12.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "Number of ADC channels and DAC channels are displayed."
+  "The DAC channels are used to drive potentiometers,"
+  "which are read out with the ADC channels.  The DAC"
+  "value is set to the upper range value of the ADC.  For"
+  "instance, if the ADC has range 0 to +10 V, we set the"
+  "DAC value to 10 V."
+  "Display shows Raw, value, and Converted values for each"
+  "ADC channel.  Raw value is in ADC counts, value is in"
+  "Volts, and Converted is in some engineering units,"
+  "most likely in mm.  The conversion from Raw to value"
+  "is done in EPICS data base records.  The Converted"
+  "value coefficients need to be entered for it to"
+  "have a correct value in the units of choice."
+  "Clicking on the Converted value pops up a dialog which"
+  "allows entering values for intercept and slope"
+  "coefficients."
+  "The following procedure can be used to obtain the"
+  "coefficients:"
+  "The Home position needs to be established, that the"
+  "PosFromSteps has been calibrated to display the position"
+  "in chosen units.  That is, it is showing the position"
+  "of the stage in correct units.  One then can move the"
+  "stage in a few steps over the range of motion of the"
+  "stage and record the value from PosFromStep and the ADC"
+  "value in Volts.  From this table of values, calculate"
+  "the intercept and slope for the ADC Converted value and"
+  "enter these values via the dialog."
+}
+autoSize
+endObjectProperties
+

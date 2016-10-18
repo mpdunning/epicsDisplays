@@ -1,0 +1,363 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 212
+y 74
+w 824
+h 500
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 25
+w 400
+h 80
+lineColor index 13
+fill
+fillColor index 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 15
+w 75
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+value {
+  "Calibration"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 45
+w 120
+h 15
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Ch1 Cal Factor [dB]:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 145
+y 40
+w 100
+h 24
+controlPv "$(P):CAL:CH1"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 75
+w 120
+h 15
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Ch4 Cal Factor [dB]:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 145
+y 70
+w 100
+h 24
+controlPv "$(P):CAL:CH4"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 240
+w 185
+h 85
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 240
+w 185
+h 85
+lineColor index 13
+fill
+fillColor index 61
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 250
+w 60
+h 30
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Ch4"
+  "Disable:"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 250
+w 90
+h 30
+fgColor index 13
+bgColor index 50
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(P):DIS:CH4"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 290
+w 127
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Set to \"Disabled\" if "
+  "only Ch1 is connected"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 130
+w 185
+h 85
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 130
+w 185
+h 85
+lineColor index 13
+fill
+fillColor index 61
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 140
+w 60
+h 30
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Waveform"
+  "Update:"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 140
+w 90
+h 30
+fgColor index 13
+bgColor index 50
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(P):SEQ:CH1:1.SCAN"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 180
+w 135
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Should be >= 2 second "
+  "if reading both channels"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 270
+y 50
+w 120
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "External loss factor "
+  "from all couplers, etc."
+}
+autoSize
+endObjectProperties
+

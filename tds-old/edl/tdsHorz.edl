@@ -1,0 +1,273 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 511
+y 69
+w 310
+h 385
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 35
+y 160
+w 265
+h 130
+lineColor index 13
+fill
+fillColor index 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 125
+y 40
+w 175
+h 65
+lineColor index 13
+fill
+fillColor index 3
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 5
+w 56
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Horizontal"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 140
+y 55
+w 50
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Time/div:"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 195
+y 50
+w 100
+h 18
+controlPv "$(usr):R_TIME_DIV"
+format "exponential"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 170
+y 75
+w 60
+h 20
+fgColor index 13
+bgColor index 50
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(usr):W_TIME_DIV_A"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 235
+y 75
+w 60
+h 20
+fgColor index 13
+bgColor index 50
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(usr):W_TIME_DIV_B"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 80
+y 165
+w 102
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "trigger to center of"
+  "screen time delay:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 190
+y 170
+w 100
+h 18
+controlPv "$(usr):W_TIME_DELAY"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 95
+y 260
+w 89
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Trigger position:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 190
+y 255
+w 70
+h 18
+controlPv "$(usr):W_TIME_REF"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 265
+y 260
+w 11
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "%"
+}
+autoSize
+endObjectProperties
+

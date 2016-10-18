@@ -1,0 +1,1065 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1104
+y 64
+w 450
+h 360
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 6
+bgColor index 2
+textColor index 14
+ctlFgColor1 index 69
+ctlFgColor2 index 40
+ctlBgColor1 index 39
+ctlBgColor2 index 74
+topShadowColor index 72
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 0
+y 0
+w 10
+h 10
+font "helvetica-medium-r-8.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 228
+y 268
+w 60
+h 80
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 45
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(P):$(M).SPMG"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 28
+y 296
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Tweak"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 76
+y 16
+w 120
+h 28
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 74
+y 14
+w 120
+h 28
+lineColor index 55
+fillColor index 1
+lineWidth 2
+visPv "CALC\\\{(A)\}($(P):$(M).HOMR)"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 76
+y 16
+w 116
+h 24
+fgColor index 14
+onColor index 65
+offColor index 67
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(P):$(M).HOMR"
+pressValue "1"
+onLabel "Initialize & Home"
+offLabel "Initialize & Home"
+3d
+useEnumNumeric
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 184
+w 426
+h 55
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 84
+y 208
+w 354
+h 27
+lineColor index 69
+fill
+fillColor index 69
+visPv "CALC\\\{(A)\}($(P):$(M).LVIO)"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 84
+y 180
+w 210
+h 22
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 182
+w 204
+h 16
+lineColor index 69
+fillColor index 69
+lineWidth 2
+visPv "CALC\\\{(A)\}($(P):$(M).SET)"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 84
+y 180
+w 208
+h 20
+lineColor index 14
+fillColor index 14
+lineWidth 2
+visPv "CALC\\\{(A)\}($(P):$(M).SET)"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 92
+y 180
+w 100
+h 18
+controlPv "$(P):$(M).RBV"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 29
+bgColor index 3
+useDisplayBg
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 192
+y 180
+w 100
+h 18
+controlPv "$(P):$(M).DRBV"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 29
+bgColor index 3
+useDisplayBg
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 88
+y 212
+w 100
+h 20
+controlPv "$(P):$(M).VAL"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 1
+editable
+motifWidget
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 192
+y 212
+w 100
+h 20
+controlPv "$(P):$(M).DVAL"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 1
+editable
+motifWidget
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 340
+y 180
+w 76
+h 16
+controlPv "$(P):$(M).RRBV"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 29
+bgColor index 3
+useDisplayBg
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 340
+y 212
+w 88
+h 20
+controlPv "$(P):$(M).RVAL"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 1
+editable
+motifWidget
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 16
+y 212
+w 56
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "MoveAbs"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 184
+w 60
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Readback"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 288
+y 64
+w 30
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 20
+bgColor index 0
+useDisplayBg
+visPv "CALC\\\{(A)\}($(P):$(M).LLS)"
+visInvert
+visMin "0"
+visMax "1"
+value {
+  "Limit"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 84
+y 64
+w 56
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "User"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 188
+y 64
+w 56
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Dial"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 288
+y 64
+w 30
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 20
+bgColor index 0
+useDisplayBg
+visPv "CALC\\\{(A)\}($(P):$(M).HLS)"
+visInvert
+visMin "0"
+visMax "1"
+value {
+  "Limit"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 84
+y 108
+w 100
+h 20
+controlPv "$(P):$(M).LLM"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 1
+editable
+motifWidget
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 188
+y 84
+w 100
+h 20
+controlPv "$(P):$(M).DHLM"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 1
+editable
+motifWidget
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 84
+y 84
+w 100
+h 20
+controlPv "$(P):$(M).HLM"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 1
+editable
+motifWidget
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 188
+y 108
+w 100
+h 20
+controlPv "$(P):$(M).DLLM"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 1
+editable
+motifWidget
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 292
+y 84
+w 19
+h 19
+lineColor index 20
+fill
+fillColor index 20
+lineWidth 0
+visPv "CALC\\\{(A)\}($(P):$(M).HLS)"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 292
+y 108
+w 19
+h 19
+lineColor index 20
+fill
+fillColor index 20
+lineWidth 0
+visPv "CALC\\\{(A)\}($(P):$(M).LLS)"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 84
+y 128
+w 152
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 69
+bgColor index 0
+useDisplayBg
+visPv "CALC\\\{(A)\}($(P):$(M).LVIO)"
+visInvert
+visMin "0"
+visMax "1"
+value {
+  "Soft-Limit Violation"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 344
+y 152
+w 73
+h 18
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Raw"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 108
+w 48
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Lo limit"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 80
+w 64
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Hi limit"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 100
+w 92
+h 16
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 368
+y 100
+w 28
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 69
+bgColor index 0
+useDisplayBg
+visPv "CALC\\\{(A)\}($(P):$(M).SET)"
+visInvert
+visMin "0"
+visMax "1"
+value {
+  "SET"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 336
+y 100
+w 92
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 69
+bgColor index 0
+useDisplayBg
+visPv "CALC\\\{(A==9)\}($(P):$(M).STAT)"
+visInvert
+visMin "0"
+visMax "1"
+value {
+  "Comm. Failure"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 342
+y 100
+w 80
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+visPv "CALC\\\{(((A=0)&&(B=0)))\}($(P):$(M).DMOV, $(P):$(M).STAT)"
+visInvert
+visMin "0"
+visMax "1"
+value {
+  "Moving"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 338
+y 100
+w 88
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 69
+bgColor index 0
+useDisplayBg
+visPv "CALC\\\{(A==7)\}($(P):$(M).STAT)"
+visInvert
+visMin "0"
+visMax "1"
+value {
+  "Controller"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 344
+y 100
+w 76
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 69
+bgColor index 0
+useDisplayBg
+visPv "$(P):$(M).STAT"
+visMin "1"
+visMax "0"
+value {
+  "Error"
+}
+endObjectProperties
+
+endGroup
+
+visPv "a"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 212
+y 24
+w 44
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Status:"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 264
+y 24
+w 30
+h 14
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 264
+y 24
+w 21
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 19
+bgColor index 2
+useDisplayBg
+visPv "$(P):$(M).MSTA"
+visInvert
+visMin "2818"
+visMax "2819"
+value {
+  "OK:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 264
+y 24
+w 30
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 20
+bgColor index 2
+useDisplayBg
+visPv "$(P):$(M).MSTA"
+visMin "2818"
+visMax "2819"
+value {
+  "Error:"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 300
+y 24
+w 132
+h 16
+controlPv "$(P):$(M):STATE"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 39
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 84
+y 296
+w 117
+h 24
+
+beginGroup
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 112
+y 296
+w 56
+h 24
+controlPv "$(P):$(M).TWV"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 1
+editable
+motifWidget
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 176
+y 296
+w 25
+h 24
+fgColor index 14
+onColor index 65
+offColor index 67
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(P):$(M).TWF"
+pressValue "1"
+onLabel ">"
+offLabel ">"
+3d
+useEnumNumeric
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 84
+y 296
+w 25
+h 24
+fgColor index 14
+onColor index 65
+offColor index 67
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(P):$(M).TWR"
+pressValue "1"
+onLabel "<"
+offLabel "<"
+3d
+useEnumNumeric
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

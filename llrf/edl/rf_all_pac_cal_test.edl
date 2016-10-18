@@ -1,0 +1,1299 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 503
+y 357
+w 724
+h 763
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 7
+textColor index 14
+ctlFgColor1 index 16
+ctlFgColor2 index 14
+ctlBgColor1 index 4
+ctlBgColor2 index 12
+topShadowColor index 1
+botShadowColor index 11
+title "PAC CAL $(PAC)"
+showGrid
+gridSize 8
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 142
+y 65
+w 386
+h 90
+lineColor index 3
+fill
+fillColor index 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x -5
+y 165
+w 818
+h 297
+lineColor index 3
+fill
+fillColor index 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 236
+y 472
+w 208
+h 96
+lineColor index 3
+fill
+fillColor index 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 563
+y 67
+w 147
+h 88
+lineColor index 3
+fill
+fillColor index 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 904
+h 40
+lineColor index 68
+fill
+fillColor index 68
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 433
+y 13
+w 73
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 68
+value {
+  "Current State"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 0
+w 352
+h 40
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 68
+useDisplayBg
+value {
+  "RF Station: $(TITLE)"
+  "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 600
+y 8
+w 48
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "Print..."
+numCmds 0
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 656
+y 8
+w 48
+h 24
+fgColor index 14
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+label "Exit"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 583
+y 76
+w 104
+h 72
+fgColor index 14
+bgColor index 3
+selectColor index 3
+inconsistentColor index 49
+topShadowColor index 1
+botShadowColor index 14
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_C_CALIB"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 563
+y 55
+w 114
+h 14
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+value {
+  "Calibration Control"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 512
+y 8
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_C_STATE"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+# Geometry
+x 370
+y 579
+w 288
+h 168
+# Appearance
+border
+graphTitle "I waveform in FPGA"
+yLabel "I"
+fgColor index 14
+bgColor index 0
+gridColor index 14
+font "helvetica-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 2048
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+xShowLabelGrid
+# Y axis properties
+showYAxis
+yAxisSrc "fromUser"
+yMin -32767
+yMax 32767
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "fromUser"
+y2Min -32767
+y2Max 32767
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_I_FPGA"
+}
+lineThickness {
+  0 3
+}
+plotUpdateMode {
+  0 "y"
+}
+ySigned {
+  0 1
+}
+plotColor {
+  0 index 23
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+# Geometry
+x 52
+y 579
+w 288
+h 168
+# Appearance
+border
+graphTitle "Q waveform in FPGA"
+yLabel "Q"
+fgColor index 14
+bgColor index 0
+gridColor index 14
+font "helvetica-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 2048
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+xShowLabelGrid
+# Y axis properties
+showYAxis
+yAxisSrc "fromUser"
+yMin -32767
+yMax 32767
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "fromUser"
+y2Min -32767
+y2Max 32767
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_Q_FPGA"
+}
+lineThickness {
+  0 3
+}
+plotUpdateMode {
+  0 "y"
+}
+ySigned {
+  0 1
+}
+plotColor {
+  0 index 44
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 179
+y 0
+w 248
+h 40
+font "helvetica-medium-r-12.0"
+fgColor index 21
+bgColor index 68
+value {
+  "To effect changes, press Calib Rqst button "
+  "and wait for Current State to be \"Calibrating\". "
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 242
+y 474
+w 200
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+value {
+  "Select Calibration Waveform Pair"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 290
+y 497
+w 104
+h 24
+fgColor index 14
+bgColor index 4
+inconsistentColor index 12
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_CWF"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 246
+y 529
+w 181
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 28
+bgColor index 3
+useDisplayBg
+value {
+  "Changing Calibration Waveform "
+  "redraws the waveforms below"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 158
+y 92
+w 120
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Int Trig Rate"
+  "(in 9.8 ns increments)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 142
+y 49
+w 64
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+value {
+  "Trigger"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 450
+y 65
+w 32
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Mode"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 413
+y 81
+w 104
+h 64
+fgColor index 14
+bgColor index 3
+selectColor index 3
+inconsistentColor index 49
+topShadowColor index 1
+botShadowColor index 14
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_TRG_MODE"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 281
+y 101
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_I_T_R"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+fgAlarm
+bgColor index 4
+editable
+motifWidget
+limitsFromDb
+nullColor index 18
+nullCondition "disabled"
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 559
+y 189
+w 117
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "      Valid Ranges"
+  "   Min               Max"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 0
+y 149
+w 112
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+value {
+  "Configuration"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 19
+y 174
+w 203
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "FPGA size is 2048 pts each I and Q"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x -3
+y 395
+w 772
+h 1
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 200
+y 196
+w 303
+h 22
+font "helvetica-medium-r-12.0"
+fgColor index 23
+bgColor index 3
+value {
+  "Changing I Gain or Offset updates FPGA I buffer."
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 541
+y 221
+w 160
+h 24
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 621
+y 221
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_I_GAIN.HOPR"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 541
+y 221
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_I_GAIN.LOPR"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 152
+y 218
+w 377
+h 32
+fgColor index 14
+bgColor index 4
+2ndBgColor index 12
+topShadowColor index 1
+botShadowColor index 11
+increment 10
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_I_GAIN"
+controlLabelType "pvName"
+font "helvetica-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 64
+y 222
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_I_GAIN"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+fgAlarm
+bgColor index 4
+editable
+motifWidget
+limitsFromDb
+nullColor index 18
+nullCondition "disabled"
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 24
+y 227
+w 35
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 23
+bgColor index 3
+useDisplayBg
+value {
+  "I Gain"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 542
+y 257
+w 160
+h 24
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 622
+y 257
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_I_OFFSET.HOPR"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 542
+y 257
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_I_OFFSET.LOPR"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 152
+y 254
+w 377
+h 32
+fgColor index 14
+bgColor index 4
+2ndBgColor index 12
+topShadowColor index 1
+botShadowColor index 11
+increment 10
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_I_OFFSET"
+controlLabelType "pvName"
+font "helvetica-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 264
+w 51
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 23
+bgColor index 3
+useDisplayBg
+value {
+  "I Offset "
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 64
+y 258
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_I_OFFSET"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+fgAlarm
+bgColor index 4
+editable
+motifWidget
+limitsFromDb
+nullColor index 18
+nullCondition "disabled"
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 542
+y 318
+w 160
+h 24
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 622
+y 318
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_Q_GAIN.HOPR"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 542
+y 318
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_Q_GAIN.LOPR"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 153
+y 315
+w 377
+h 32
+fgColor index 14
+bgColor index 4
+2ndBgColor index 12
+topShadowColor index 1
+botShadowColor index 11
+increment 10
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_Q_GAIN"
+controlLabelType "pvName"
+font "helvetica-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 64
+y 319
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_Q_GAIN"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+fgAlarm
+bgColor index 4
+editable
+motifWidget
+limitsFromDb
+nullColor index 18
+nullCondition "disabled"
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 16
+y 325
+w 45
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 44
+bgColor index 3
+useDisplayBg
+value {
+  "Q Gain "
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 359
+w 57
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 44
+bgColor index 3
+useDisplayBg
+value {
+  "Q Offset "
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 64
+y 355
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_Q_OFFSET"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+fgAlarm
+bgColor index 4
+editable
+motifWidget
+limitsFromDb
+nullColor index 18
+nullCondition "disabled"
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 153
+y 351
+w 377
+h 32
+fgColor index 14
+bgColor index 4
+2ndBgColor index 12
+topShadowColor index 1
+botShadowColor index 11
+increment 10
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_Q_OFFSET"
+controlLabelType "pvName"
+font "helvetica-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 542
+y 354
+w 160
+h 24
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 622
+y 354
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_Q_OFFSET.HOPR"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 542
+y 354
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_Q_OFFSET.LOPR"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 200
+y 295
+w 303
+h 22
+font "helvetica-medium-r-12.0"
+fgColor index 44
+bgColor index 3
+value {
+  "Changing Q Gain or Offset updates FPGA Q buffer."
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 542
+y 416
+w 160
+h 24
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 622
+y 416
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_AMPLITUD.HOPR"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 542
+y 416
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_AMPLITUD.LOPR"
+fgColor index 16
+fgAlarm
+bgColor index 12
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 191
+y 409
+w 237
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 28
+bgColor index 3
+useDisplayBg
+value {
+  "Changing Ampl redraws I & Q center plots"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 174
+y 431
+w 190
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Amplitude of Calibration waveform"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 369
+y 426
+w 80
+h 24
+controlPv "$(PAC_PRIM):$(PAC_LOCA):$(PAC_UNIT):$(PAC)_AMPLITUD"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+fgAlarm
+bgColor index 4
+editable
+motifWidget
+limitsFromDb
+nullColor index 18
+nullCondition "disabled"
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+

@@ -1,0 +1,182 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1735
+y 1695
+w 236
+h 36
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 4
+y 4
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "gcADBase"
+}
+symbols {
+  0 "P=LBPS$(C):,R=cam1:,A=$(A),N=$(N),IOC=sioc-lbd-adps$(C)"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 149
+y 4
+w 32
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=LBPS$(C):,R=cam1:,A=$(A),N=$(N),IOC=sioc-lbd-adps$(C)"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 4
+w 136
+h 24
+lineColor index 15
+fillColor index 15
+lineWidth 3
+visPv "LBPS$(C):cam1:Acquire.RVAL"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 4
+w 136
+h 24
+lineColor index 13
+fillColor index 15
+visPv "LBPS$(C):cam1:Acquire.RVAL"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 188
+y 4
+w 40
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "qCam"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -m P=LBPS$(C),A=$(A),N=$(N),IOC=sioc-lbd-adps$(C)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 52
+y 8
+w 84
+h 16
+controlPv "LBPS$(C):cam1:BI:NAME.DESC"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 8
+w 44
+h 16
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "LBPS$(C):"
+}
+endObjectProperties
+

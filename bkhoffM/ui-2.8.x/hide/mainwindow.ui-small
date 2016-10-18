@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>292</width>
+    <height>166</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Motor</string>
+  </property>
+  <property name="toolTip">
+   <string>Motor Control</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="TButton" name="tbutton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LO:SC:$(R):CBYTE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=2531-1-2</string>
+    </property>
+   </widget>
+   <widget class="TButton" name="tbutton_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>75</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LO:SC:$(R):CBYTE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=2531-1-2</string>
+    </property>
+    <property name="showLabel">
+     <bool>false</bool>
+    </property>
+    <property name="onColor">
+     <color>
+      <red>61</red>
+      <green>255</green>
+      <blue>61</blue>
+     </color>
+    </property>
+    <property name="offColor">
+     <color>
+      <red>167</red>
+      <green>171</green>
+      <blue>193</blue>
+     </color>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>292</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TButton</class>
+   <extends>QPushButton</extends>
+   <header>tbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

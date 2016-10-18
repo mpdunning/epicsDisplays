@@ -1,0 +1,134 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 194
+y 63
+w 512
+h 360
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 24
+w 14
+h 224
+controlPv "$(P):MBBID:RCR"
+lineColor index 13
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 20
+y 8
+w 36
+h 14
+controlPv "$(P):MBBID:RCR.DESC"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 40
+w 43
+h 210
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Rate 14"
+  "Rate 13"
+  "Rate 12"
+  "Rate 11"
+  "Rate 10"
+  "Rate 09"
+  "Rate 08"
+  "Rate 07"
+  "Rate 06"
+  "Rate 05"
+  "Rate 04"
+  "Rate 03"
+  "Rate 02"
+  "Rate 01"
+  "Rate 00"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 144
+y 24
+w 321
+h 224
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Rate 14-0: Sample rate configuration bits used to program"
+  "a variable sample rate as shown in the equation:"
+  ""
+  "sample rate = 100kHz for 0x0000<=rate<=0x007a"
+  "sample rate = 12.5MHz/(rate+3) for 0x007a<rate<=0x7fff"
+  ""
+  "Example of a sampling rate of 80kHz would be:"
+  "rate+3 = 12.5MHz/(sampling rate)"
+  "rate   = 12.5E6/80000 - 3  =153.25 =~ 153 = 0x99"
+  ""
+  "According to the manual, the scanning rate range is"
+  "381Hz to 100kHz, where"
+  "381Hz corresponds to RCR 0x7fff and"
+  "100kHz corresponds to RCR range of 0x7a..0x0."
+  ""
+  "(Not very clear but that is what is in the manual)"
+}
+autoSize
+endObjectProperties
+

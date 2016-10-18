@@ -1,0 +1,2141 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 327
+y 235
+w 520
+h 436
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 344
+y 80
+w 104
+h 148
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 48
+y 372
+w 72
+h 24
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:$(ADC)-$(M):ERROR"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 48
+y 372
+w 72
+h 24
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:$(ADC)-$(M):ERROR"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 348
+y 104
+w 92
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "adc-conv.edl"
+}
+symbols {
+  0 "C=1,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 228
+w 332
+h 136
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 272
+y 80
+w 72
+h 148
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 80
+w 104
+h 284
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 172
+y 80
+w 100
+h 284
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 80
+w 436
+h 20
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 116
+y 80
+w 56
+h 284
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 108
+w 44
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):SBYTE1"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 128
+w 44
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):SBYTE2"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 48
+y 84
+w 49
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "channel"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 128
+y 84
+w 35
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "sByte"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 284
+y 84
+w 56
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "value(V)"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 108
+w 92
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH1.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 128
+w 92
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH2.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 180
+y 108
+w 88
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):DATA1"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 180
+y 128
+w 88
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):DATA2"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 216
+y 84
+w 21
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Raw"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 280
+y 104
+w 60
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "alarm-limits.edl"
+}
+symbols {
+  0 "C=1,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 276
+y 108
+w 64
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH1"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 280
+y 124
+w 60
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "alarm-limits.edl"
+}
+symbols {
+  0 "C=2,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 276
+y 128
+w 64
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH2"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 240
+w 92
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH1.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+limitsFromDb
+nullColor index 13
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 260
+w 92
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH2.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 240
+w 44
+h 16
+controlPv "$(P):LI:$(DAC)-$(M):SBYTE1"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 264
+w 44
+h 13
+controlPv "$(P):LI:$(DAC)-$(M):SBYTE2"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 284
+y 240
+w 56
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH1"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 284
+y 260
+w 56
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH2"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 176
+y 240
+w 88
+h 16
+controlPv "$(P):LI:$(DAC)-$(M):CH1"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 176
+y 260
+w 88
+h 16
+controlPv "$(P):LI:$(DAC)-$(M):CH2"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 348
+y 104
+w 88
+h 20
+controlPv "$(P):CALC:$(ADC)-$(M):CH1"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+precision 4
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 348
+y 124
+w 92
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "adc-conv.edl"
+}
+symbols {
+  0 "C=2,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 348
+y 124
+w 88
+h 20
+controlPv "$(P):CALC:$(ADC)-$(M):CH2"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+precision 4
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 352
+y 84
+w 63
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Converted"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 48
+y 372
+w 68
+h 20
+controlPv "$(P):BI:$(ADC)-$(M):ERROR"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 48
+y 404
+w 72
+h 24
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:$(DAC)-$(M):ERROR"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 48
+y 404
+w 72
+h 24
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:$(DAC)-$(M):ERROR"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 48
+y 404
+w 68
+h 20
+controlPv "$(P):BI:$(DAC)-$(M):ERROR"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 372
+w 32
+h 20
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ADC"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 404
+w 32
+h 20
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "DAC"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 124
+y 372
+w 384
+h 20
+controlPv "$(P):WF:$(ADC)-$(M):MESSAGE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 73
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 124
+y 404
+w 384
+h 20
+controlPv "$(P):WF:$(DAC)-$(M):MESSAGE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 73
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 8
+w 274
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Position readback from external device:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 28
+w 476
+h 52
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Below are parameters for ADC and DAC channels.  The DAC is used"
+  "to energize the position measuring device (Potentiometer or LVDT)."
+  "The ADC is used to measure the excitation voltage which is converted"
+  "to engineering units (e.g. mm or deg)."
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 348
+y 144
+w 92
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "adc-conv.edl"
+}
+symbols {
+  0 "C=3,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 148
+w 44
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):SBYTE3"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 168
+w 44
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):SBYTE4"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 148
+w 92
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH3.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 168
+w 92
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH4.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 180
+y 148
+w 88
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):DATA3"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 180
+y 168
+w 88
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):DATA4"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 280
+y 144
+w 60
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "alarm-limits.edl"
+}
+symbols {
+  0 "C=3,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 276
+y 148
+w 64
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH3"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 280
+y 164
+w 60
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "alarm-limits.edl"
+}
+symbols {
+  0 "C=4,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 276
+y 168
+w 64
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH4"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 348
+y 144
+w 88
+h 20
+controlPv "$(P):CALC:$(ADC)-$(M):CH3"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+precision 4
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 348
+y 164
+w 92
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "adc-conv.edl"
+}
+symbols {
+  0 "C=4,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 348
+y 164
+w 88
+h 20
+controlPv "$(P):CALC:$(ADC)-$(M):CH4"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+precision 4
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 348
+y 184
+w 92
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "adc-conv.edl"
+}
+symbols {
+  0 "C=5,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 188
+w 44
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):SBYTE5"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 208
+w 44
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):SBYTE6"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 188
+w 92
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH5.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 208
+w 92
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH6.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 180
+y 188
+w 88
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):DATA5"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 180
+y 208
+w 88
+h 13
+controlPv "$(P):LI:$(ADC)-$(M):DATA6"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 280
+y 184
+w 60
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "alarm-limits.edl"
+}
+symbols {
+  0 "C=5,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 276
+y 188
+w 64
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH5"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 280
+y 204
+w 60
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "alarm-limits.edl"
+}
+symbols {
+  0 "C=6,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 276
+y 208
+w 64
+h 13
+controlPv "$(P):AI:$(ADC)-$(M):CH6"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 348
+y 184
+w 88
+h 20
+controlPv "$(P):CALC:$(ADC)-$(M):CH5"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+precision 4
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 348
+y 204
+w 92
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "adc-conv.edl"
+}
+symbols {
+  0 "C=6,MOD=$(ADC)-$(M)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 348
+y 204
+w 88
+h 20
+controlPv "$(P):CALC:$(ADC)-$(M):CH6"
+format "float"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+precision 4
+nullColor index 13
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 280
+w 92
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH3.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+limitsFromDb
+nullColor index 13
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 300
+w 92
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH4.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 280
+w 44
+h 16
+controlPv "$(P):LI:$(DAC)-$(M):SBYTE3"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 304
+w 44
+h 13
+controlPv "$(P):LI:$(DAC)-$(M):SBYTE4"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 284
+y 280
+w 56
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH3"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 284
+y 300
+w 56
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH4"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 176
+y 280
+w 88
+h 16
+controlPv "$(P):LI:$(DAC)-$(M):CH3"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 176
+y 300
+w 88
+h 16
+controlPv "$(P):LI:$(DAC)-$(M):CH4"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 320
+w 92
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH5.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+limitsFromDb
+nullColor index 13
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 340
+w 92
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH6.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+editable
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 320
+w 44
+h 16
+controlPv "$(P):LI:$(DAC)-$(M):SBYTE5"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 344
+w 44
+h 13
+controlPv "$(P):LI:$(DAC)-$(M):SBYTE6"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 284
+y 320
+w 56
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH5"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 284
+y 340
+w 56
+h 16
+controlPv "$(P):AO:$(DAC)-$(M):CH6"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 176
+y 320
+w 88
+h 16
+controlPv "$(P):LI:$(DAC)-$(M):CH5"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 176
+y 340
+w 88
+h 16
+controlPv "$(P):LI:$(DAC)-$(M):CH6"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+

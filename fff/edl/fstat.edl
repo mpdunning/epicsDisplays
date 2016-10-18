@@ -1,0 +1,1418 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 817
+y 48
+w 360
+h 452
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 48
+w 344
+h 396
+lineColor index 13
+fill
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 360
+h 36
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 8
+w 157
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Fault Status Overview:"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 296
+y 4
+w 56
+h 28
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-bold-r-12.0"
+3d
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 200
+w 112
+h 14
+controlPv "$(P):SI:FAULT:TIME"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 264
+w 52
+h 14
+controlPv "$(P):CALC:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 248
+w 68
+h 14
+controlPv "$(P):1:GS:TIME.VALD"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 56
+w 100
+h 24
+file "fsym"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):CALC:FAULT:STAT"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 200
+w 99
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Time of Last Fault"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 216
+w 112
+h 14
+controlPv "$(P):SI:FAULT:CLEAR:TIME"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 36
+y 216
+w 106
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Time Fault Cleared"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 28
+y 248
+w 112
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Since Fault Cleared"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 48
+y 264
+w 95
+h 14
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Number of Faults"
+}
+autoSize
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 264
+w 19
+h 18
+file "ofon"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:IMM:FLAGS:HI.BF"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 288
+w 19
+h 18
+file "ofon"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):BO:DO:DUMP"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 288
+y 268
+w 17
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "HB"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 272
+y 292
+w 32
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Dump"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 36
+y 316
+w 96
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+buttonLabel "Fast Channels"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "fastflt.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 316
+w 96
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+buttonLabel "Slow Channels"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "slowflt.edl"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 44
+y 120
+w 88
+h 24
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(P):LI:CLEAR:FAULT:CNT.VAL"
+pressValue "1"
+onLabel "Clear Counts"
+offLabel "Clear Counts"
+3d
+font "helvetica-medium-r-12.0"
+visPv "$(P):3F1:BID"
+visMin "1"
+visMax "2000000"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 232
+w 112
+h 14
+controlPv "$(P):SI:FAULT:CLEAR:CNT:TIME"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 24
+y 232
+w 117
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Time Counts Cleared"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 36
+y 348
+w 96
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+buttonLabel "Filament Tmo"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "filtmo.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 236
+y 4
+w 44
+h 28
+fgColor index 55
+bgColor index 11
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-bold-r-12.0"
+buttonLabel "Help"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "helpFault.edl"
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 144
+y 352
+w 120
+h 20
+file "filState.edl"
+numStates 4
+minValues {
+  1 1
+  2 2
+  3 3
+}
+maxValues {
+  0 1
+  1 2
+  2 3
+  3 4
+}
+controlPvs {
+  0 "$(P):MBBI:FIL:STATE"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 36
+y 384
+w 96
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+buttonLabel "ChekSums"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "chksum.edl"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 384
+w 96
+h 24
+lineColor index 20
+fillColor index 4
+lineWidth 2
+visPv "$(P):CALC:LIMITS:CHKSUM:ALRM"
+visMin "1"
+visMax "1000000000"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 384
+w 96
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+buttonLabel "Klystron"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "klyPwr.edl"
+}
+symbols {
+  0 "P=ESA"
+}
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 264
+y 84
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:IMM:FLAGS:HI.BC"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 84
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:IMM:FLAGS:HI.BA"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 308
+y 84
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:IMM:FLAGS:HI.BC"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 324
+y 84
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:IMM:FLAGS:HI.BA"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 220
+y 84
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:IMM:FLAGS:HI.BC"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 236
+y 84
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:IMM:FLAGS:HI.BA"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 264
+y 112
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:IMM:FLAGS:HI.B9"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 112
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:IMM:FLAGS:HI.B7"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 308
+y 112
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:IMM:FLAGS:HI.B9"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 324
+y 112
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:IMM:FLAGS:HI.B7"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 220
+y 112
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:IMM:FLAGS:HI.B9"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 236
+y 112
+w 16
+h 16
+file "offonRnd.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:IMM:FLAGS:HI.B7"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 196
+y 84
+w 21
+h 13
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "RF:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 188
+y 112
+w 28
+h 13
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Mod:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 224
+y 56
+w 21
+h 26
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "3F1"
+  "I O"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 268
+y 56
+w 21
+h 26
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "3F2"
+  "I O"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 312
+y 56
+w 21
+h 26
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "3F3"
+  "I O"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 280
+w 52
+h 14
+controlPv "$(P):CALC:RF:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 28
+y 280
+w 115
+h 14
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Number of RF Faults"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 296
+w 52
+h 14
+controlPv "$(P):CALC:MD:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 28
+y 296
+w 117
+h 14
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Number of Md Faults"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 156
+w 112
+h 14
+controlPv "$(P):startTime"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 60
+y 156
+w 84
+h 14
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "IOC started on:"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 172
+w 112
+h 14
+controlPv "$(P):currTime"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 92
+y 172
+w 52
+h 14
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "currently:"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 412
+w 96
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+buttonLabel "ARC Status"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "arcStat.edl"
+}
+symbols {
+  0 "P=ESA"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 412
+w 96
+h 24
+lineColor index 20
+fillColor index 4
+lineWidth 2
+visPv "$(P):CALC:ARC1:ALARM"
+visMin "1"
+visMax "1000000000"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 412
+w 96
+h 24
+lineColor index 20
+fillColor index 4
+lineWidth 2
+visPv "$(P):CALC:ARC2:ALARM"
+visMin "1"
+visMax "1000000000"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 412
+w 96
+h 24
+lineColor index 20
+fillColor index 4
+lineWidth 2
+visPv "$(P):3F1:MBBOB:RF:FLT:MSK:HI.BE"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 344
+w 264
+h 32
+lineColor index 13
+fillColor index 4
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 36
+y 412
+w 96
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+buttonLabel "RF Ramp"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "rfRamp.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 44
+y 88
+w 88
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+buttonLabel "Clear Fault"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "fltmasks.edl"
+}
+endObjectProperties
+

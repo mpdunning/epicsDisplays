@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>kl1xxxForm</class>
+ <widget class="QWidget" name="kl1xxxForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>180</width>
+    <height>100</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QELineEdit" name="qelineedit">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>6</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):BIT1.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_2">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>28</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):BIT2.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_3">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>72</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):BIT4.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_4">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>50</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):BIT3.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="CAShape" name="cashape">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>6</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="fill">
+    <bool>true</bool>
+   </property>
+   <property name="color1">
+    <color>
+     <red>180</red>
+     <green>190</green>
+     <blue>210</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):BIT1</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+  </widget>
+  <widget class="CAShape" name="cashape_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>28</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="fill">
+    <bool>true</bool>
+   </property>
+   <property name="color1">
+    <color>
+     <red>180</red>
+     <green>190</green>
+     <blue>210</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):BIT2</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+  </widget>
+  <widget class="CAShape" name="cashape_3">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>50</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="fill">
+    <bool>true</bool>
+   </property>
+   <property name="color1">
+    <color>
+     <red>180</red>
+     <green>190</green>
+     <blue>210</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):BIT3</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+  </widget>
+  <widget class="CAShape" name="cashape_4">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>72</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="fill">
+    <bool>true</bool>
+   </property>
+   <property name="color1">
+    <color>
+     <red>180</red>
+     <green>190</green>
+     <blue>210</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):BIT4</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AShape</class>
+   <extends>QWidget</extends>
+   <header>ashape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAShape</class>
+   <extends>AShape</extends>
+   <header>cashape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

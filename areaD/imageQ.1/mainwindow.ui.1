@@ -1,0 +1,3664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>530</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QFrame" name="frame_4">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QELabel" name="qelabel_camTitle">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>110</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>18</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <weight>75</weight>
+                 <italic>false</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
+               </property>
+               <property name="textFormat">
+                <enum>Qt::RichText</enum>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):cam1:BI:NAME.DESC</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="displayAlarmState">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>Acquire</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="CAButton" name="cabutton">
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="useTextColor">
+                  <bool>true</bool>
+                 </property>
+                 <property name="writeOnClick" stdset="0">
+                  <bool>true</bool>
+                 </property>
+                 <property name="onText">
+                  <string>Acquire</string>
+                 </property>
+                 <property name="offText">
+                  <string>Done</string>
+                 </property>
+                 <property name="onLabel">
+                  <string>Stop</string>
+                 </property>
+                 <property name="offLabel">
+                  <string>Start</string>
+                 </property>
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:Acquire</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="subscribe">
+                  <bool>true</bool>
+                 </property>
+                 <property name="AlarmEnable" stdset="0">
+                  <bool>false</bool>
+                 </property>
+                 <property name="literalLabel">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QELabel" name="qelabel_5">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:Acquire</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmState">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>Gain</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QESpinBox" name="qespinbox">
+                 <property name="minimumSize">
+                  <size>
+                   <width>40</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::ClickFocus</enum>
+                 </property>
+                 <property name="buttonSymbols">
+                  <enum>QAbstractSpinBox::UpDownArrows</enum>
+                 </property>
+                 <property name="decimals">
+                  <number>0</number>
+                 </property>
+                 <property name="maximum">
+                  <double>31.000000000000000</double>
+                 </property>
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:Gain</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmState">
+                  <bool>false</bool>
+                 </property>
+                 <property name="useDbPrecision" stdset="0">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>Exposure</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QESpinBox" name="qespinbox_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>60</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::ClickFocus</enum>
+                 </property>
+                 <property name="buttonSymbols">
+                  <enum>QAbstractSpinBox::UpDownArrows</enum>
+                 </property>
+                 <property name="correctionMode">
+                  <enum>QAbstractSpinBox::CorrectToNearestValue</enum>
+                 </property>
+                 <property name="decimals">
+                  <number>3</number>
+                 </property>
+                 <property name="minimum">
+                  <double>0.000000000000000</double>
+                 </property>
+                 <property name="maximum">
+                  <double>31.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.010000000000000</double>
+                 </property>
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:AcquireTime</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmState">
+                  <bool>false</bool>
+                 </property>
+                 <property name="value">
+                  <double>0.140000000000000</double>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="text">
+                  <string>AcqPeriod</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QESpinBox" name="qespinbox_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>60</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::ClickFocus</enum>
+                 </property>
+                 <property name="buttonSymbols">
+                  <enum>QAbstractSpinBox::UpDownArrows</enum>
+                 </property>
+                 <property name="correctionMode">
+                  <enum>QAbstractSpinBox::CorrectToNearestValue</enum>
+                 </property>
+                 <property name="decimals">
+                  <number>3</number>
+                 </property>
+                 <property name="minimum">
+                  <double>0.000000000000000</double>
+                 </property>
+                 <property name="maximum">
+                  <double>1.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.010000000000000</double>
+                 </property>
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:AcquirePeriod</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmState">
+                  <bool>false</bool>
+                 </property>
+                 <property name="value">
+                  <double>0.200000000000000</double>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+          <zorder>qespinbox</zorder>
+          <zorder>label_3</zorder>
+          <zorder>label_2</zorder>
+          <zorder>qespinbox_3</zorder>
+          <zorder>qespinbox_4</zorder>
+          <zorder>label_8</zorder>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Rate</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QELabel" name="qelabel_imageRate">
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):cam1:ArrayRate_RBV</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmState">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QEBitStatus" name="qebitstatus">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>10</width>
+                 <height>10</height>
+                </size>
+               </property>
+               <property name="numberOfBits">
+                <number>1</number>
+               </property>
+               <property name="drawBorder">
+                <bool>true</bool>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):cam1:Acquire.RVAL</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="usesScrollButtons">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="View">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <attribute name="title">
+          <string>View</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="0">
+           <widget class="QEImage" name="qeimage">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="imageVariable" stdset="0">
+             <string>$(P):image1:ArrayData</string>
+            </property>
+            <property name="widthVariable" stdset="0">
+             <string>$(P):cam1:ArraySizeX_RBV</string>
+            </property>
+            <property name="heightVariable" stdset="0">
+             <string>$(P):cam1:ArraySizeY_RBV</string>
+            </property>
+            <property name="targetXVariable" stdset="0">
+             <string>$(P):cam1:TARGETX</string>
+            </property>
+            <property name="targetYVariable" stdset="0">
+             <string>$(P):cam1:TARGETY</string>
+            </property>
+            <property name="beamXVariable" stdset="0">
+             <string>$(P):cam1:BEAMX</string>
+            </property>
+            <property name="beamYVariable" stdset="0">
+             <string>$(P):cam1:BEAMY</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>P=CPS1</string>
+            </property>
+            <property name="variableAsToolTip">
+             <bool>false</bool>
+            </property>
+            <property name="displayAlarmState">
+             <bool>false</bool>
+            </property>
+            <property name="bitDepth" stdset="0">
+             <UInt>8</UInt>
+            </property>
+            <property name="enableVertSliceSelection" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="enableHozSliceSelection" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="enableProfileSelection">
+             <bool>true</bool>
+            </property>
+            <property name="enableHozSlicePresentation">
+             <bool>true</bool>
+            </property>
+            <property name="enableVertSlicePresentation">
+             <bool>true</bool>
+            </property>
+            <property name="enableProfilePresentation">
+             <bool>true</bool>
+            </property>
+            <property name="enableArea3Selection">
+             <bool>false</bool>
+            </property>
+            <property name="enableArea4Selection">
+             <bool>false</bool>
+            </property>
+            <property name="enableTargetSelection">
+             <bool>true</bool>
+            </property>
+            <property name="enableBeamSelection">
+             <bool>true</bool>
+            </property>
+            <property name="displayVertSliceSelection" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="displayArea3Selection">
+             <bool>false</bool>
+            </property>
+            <property name="displayArea4Selection">
+             <bool>false</bool>
+            </property>
+            <property name="displayTargetSelection">
+             <bool>false</bool>
+            </property>
+            <property name="displayCursorPixelInfo">
+             <bool>false</bool>
+            </property>
+            <property name="displayButtonBar">
+             <bool>true</bool>
+            </property>
+            <property name="showTime">
+             <bool>true</bool>
+            </property>
+            <property name="resizeOption" stdset="0">
+             <enum>QEImage::Fit</enum>
+            </property>
+            <property name="zoom">
+             <number>74</number>
+            </property>
+            <property name="autoBrightnessContrast">
+             <bool>false</bool>
+            </property>
+            <property name="displayMarkups">
+             <bool>false</bool>
+            </property>
+            <property name="programStartupOption1" stdset="0">
+             <enum>QEImage::None</enum>
+            </property>
+            <property name="enableBrightnessContrast" stdset="0">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="Readout">
+         <attribute name="title">
+          <string>Readout</string>
+         </attribute>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>4</y>
+            <width>473</width>
+            <height>405</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QGroupBox" name="groupBox">
+               <property name="title">
+                <string/>
+               </property>
+               <widget class="QLabel" name="label_13">
+                <property name="geometry">
+                 <rect>
+                  <x>28</x>
+                  <y>26</y>
+                  <width>114</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Sensor size</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_15">
+                <property name="geometry">
+                 <rect>
+                  <x>28</x>
+                  <y>50</y>
+                  <width>114</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Region start</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_16">
+                <property name="geometry">
+                 <rect>
+                  <x>28</x>
+                  <y>74</y>
+                  <width>114</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Region size</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_39">
+                <property name="geometry">
+                 <rect>
+                  <x>28</x>
+                  <y>98</y>
+                  <width>114</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Calibration [um/px]</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_40">
+                <property name="geometry">
+                 <rect>
+                  <x>28</x>
+                  <y>122</y>
+                  <width>114</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Size [mm]</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_14">
+                <property name="geometry">
+                 <rect>
+                  <x>28</x>
+                  <y>146</y>
+                  <width>114</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Binning</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_19">
+                <property name="geometry">
+                 <rect>
+                  <x>28</x>
+                  <y>170</y>
+                  <width>114</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Image size [px]</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_X">
+               <property name="title">
+                <string>X</string>
+               </property>
+               <widget class="QELabel" name="qelabel_16">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>50</y>
+                  <width>16</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:MinX_RBV</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_18">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>74</y>
+                  <width>39</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:SizeX_RBV</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELineEdit" name="qelineedit_6">
+                <property name="geometry">
+                 <rect>
+                  <x>12</x>
+                  <y>74</y>
+                  <width>64</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:SizeX</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QEGenericEdit::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELineEdit" name="qelineedit_4">
+                <property name="geometry">
+                 <rect>
+                  <x>12</x>
+                  <y>50</y>
+                  <width>64</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:MinX</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QEGenericEdit::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_11">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>26</y>
+                  <width>45</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:MaxSizeX_RBV</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELineEdit" name="qelineedit">
+                <property name="geometry">
+                 <rect>
+                  <x>12</x>
+                  <y>146</y>
+                  <width>64</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:BinX</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QEGenericEdit::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_19">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>170</y>
+                  <width>43</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:ArraySizeX_RBV</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_13">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>146</y>
+                  <width>16</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:BinX_RBV</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELineEdit" name="qelineedit_7">
+                <property name="geometry">
+                 <rect>
+                  <x>12</x>
+                  <y>98</y>
+                  <width>64</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:ResolutionX</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QEGenericEdit::Never</enum>
+                </property>
+                <property name="addUnits">
+                 <bool>false</bool>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_22">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>122</y>
+                  <width>55</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:ScaledSizeX</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+                <property name="addUnits">
+                 <bool>false</bool>
+                </property>
+               </widget>
+               <zorder>qelineedit_4</zorder>
+               <zorder>qelineedit_6</zorder>
+               <zorder>qelabel_16</zorder>
+               <zorder>qelabel_18</zorder>
+               <zorder>qelabel_11</zorder>
+               <zorder>qelabel_19</zorder>
+               <zorder>qelineedit</zorder>
+               <zorder>qelabel_13</zorder>
+               <zorder>qelineedit_7</zorder>
+               <zorder>qelabel_22</zorder>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_Y">
+               <property name="title">
+                <string>Y</string>
+               </property>
+               <widget class="QELineEdit" name="qelineedit_3">
+                <property name="geometry">
+                 <rect>
+                  <x>12</x>
+                  <y>50</y>
+                  <width>64</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:MinY</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QEGenericEdit::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_15">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>50</y>
+                  <width>16</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:MinY_RBV</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELineEdit" name="qelineedit_5">
+                <property name="geometry">
+                 <rect>
+                  <x>12</x>
+                  <y>74</y>
+                  <width>64</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:SizeY</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QEGenericEdit::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_17">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>74</y>
+                  <width>41</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:SizeY_RBV</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_12">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>26</y>
+                  <width>41</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:MaxSizeY_RBV</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_20">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>170</y>
+                  <width>41</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:ArraySizeY_RBV</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELineEdit" name="qelineedit_2">
+                <property name="geometry">
+                 <rect>
+                  <x>12</x>
+                  <y>146</y>
+                  <width>64</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:BinY</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QEGenericEdit::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELineEdit" name="qelineedit_8">
+                <property name="geometry">
+                 <rect>
+                  <x>12</x>
+                  <y>98</y>
+                  <width>64</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:ResolutionY</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QEGenericEdit::Never</enum>
+                </property>
+                <property name="addUnits">
+                 <bool>false</bool>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_14">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>146</y>
+                  <width>16</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:BinY_RBV</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+               </widget>
+               <widget class="QELabel" name="qelabel_28">
+                <property name="geometry">
+                 <rect>
+                  <x>82</x>
+                  <y>122</y>
+                  <width>49</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="variable" stdset="0">
+                 <string>$(P):cam1:ScaledSizeY</string>
+                </property>
+                <property name="variableSubstitutions" stdset="0">
+                 <string>P=CPS1</string>
+                </property>
+                <property name="displayAlarmStateOption" stdset="0">
+                 <enum>QELabel::Never</enum>
+                </property>
+                <property name="addUnits">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_5">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QELabel" name="qelabel_34">
+              <property name="geometry">
+               <rect>
+                <x>232</x>
+                <y>152</y>
+                <width>95</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:ArrayCounter_RBV</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="displayAlarmStateOption" stdset="0">
+               <enum>QELabel::Never</enum>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_28">
+              <property name="geometry">
+               <rect>
+                <x>6</x>
+                <y>102</y>
+                <width>114</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Trigger Mode</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QELabel" name="qelabel_10">
+              <property name="geometry">
+               <rect>
+                <x>232</x>
+                <y>126</y>
+                <width>67</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:ArrayCallbacks_RBV</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="displayAlarmStateOption" stdset="0">
+               <enum>QELabel::Never</enum>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_22">
+              <property name="geometry">
+               <rect>
+                <x>14</x>
+                <y>48</y>
+                <width>114</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Color mode</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QELabel" name="qelabel_30">
+              <property name="geometry">
+               <rect>
+                <x>232</x>
+                <y>102</y>
+                <width>85</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:TriggerMode_RBV</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="displayAlarmStateOption" stdset="0">
+               <enum>QELabel::Never</enum>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_17">
+              <property name="geometry">
+               <rect>
+                <x>8</x>
+                <y>4</y>
+                <width>111</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Image size (bytes)</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QEComboBox" name="qecombobox_7">
+              <property name="geometry">
+               <rect>
+                <x>126</x>
+                <y>126</y>
+                <width>100</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:ArrayCallbacks</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="subscribe">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_26">
+              <property name="geometry">
+               <rect>
+                <x>6</x>
+                <y>126</y>
+                <width>114</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Array Callbacks</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QEComboBox" name="qecombobox_4">
+              <property name="geometry">
+               <rect>
+                <x>126</x>
+                <y>30</y>
+                <width>67</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:DataType</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="subscribe">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QELabel" name="qelabel_21">
+              <property name="geometry">
+               <rect>
+                <x>232</x>
+                <y>6</y>
+                <width>75</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:ArraySize_RBV</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="displayAlarmStateOption" stdset="0">
+               <enum>QELabel::Never</enum>
+              </property>
+             </widget>
+             <widget class="QEComboBox" name="qecombobox_6">
+              <property name="geometry">
+               <rect>
+                <x>126</x>
+                <y>78</y>
+                <width>100</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:ImageMode</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="subscribe">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QELabel" name="qelabel_29">
+              <property name="geometry">
+               <rect>
+                <x>232</x>
+                <y>78</y>
+                <width>83</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:ImageMode_RBV</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="displayAlarmStateOption" stdset="0">
+               <enum>QELabel::Never</enum>
+              </property>
+             </widget>
+             <widget class="QELabel" name="qelabel_23">
+              <property name="geometry">
+               <rect>
+                <x>232</x>
+                <y>30</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:DataType_RBV</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="displayAlarmStateOption" stdset="0">
+               <enum>QELabel::Never</enum>
+              </property>
+             </widget>
+             <widget class="QELabel" name="qelabel_24">
+              <property name="geometry">
+               <rect>
+                <x>232</x>
+                <y>54</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:ColorMode_RBV</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="displayAlarmStateOption" stdset="0">
+               <enum>QELabel::Never</enum>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_20">
+              <property name="geometry">
+               <rect>
+                <x>6</x>
+                <y>78</y>
+                <width>114</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Image Mode</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_43">
+              <property name="geometry">
+               <rect>
+                <x>6</x>
+                <y>150</y>
+                <width>114</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Image counter</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QEComboBox" name="qecombobox_5">
+              <property name="geometry">
+               <rect>
+                <x>126</x>
+                <y>54</y>
+                <width>65</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:ColorMode</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="subscribe">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QEComboBox" name="qecombobox_3">
+              <property name="geometry">
+               <rect>
+                <x>126</x>
+                <y>102</y>
+                <width>100</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="variable" stdset="0">
+               <string>$(P):cam1:TriggerMode</string>
+              </property>
+              <property name="variableSubstitutions" stdset="0">
+               <string>P=CPS1</string>
+              </property>
+              <property name="subscribe">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_21">
+              <property name="geometry">
+               <rect>
+                <x>28</x>
+                <y>26</y>
+                <width>91</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Data type</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <zorder>frame_5</zorder>
+         <zorder>groupBox_Y</zorder>
+         <zorder>groupBox_X</zorder>
+         <zorder>groupBox</zorder>
+         <zorder>horizontalSpacer</zorder>
+        </widget>
+        <widget class="QWidget" name="Stats">
+         <attribute name="title">
+          <string>Stats</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>428</width>
+            <height>352</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="0" column="0">
+            <layout class="QGridLayout" name="gridLayout_13">
+             <item row="6" column="2">
+              <widget class="QELabel" name="qelabel_61">
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:BayerPattern_RBV</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QELabel::Never</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="label_52">
+               <property name="text">
+                <string>Bayer pattern</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QELabel" name="qelabel_59">
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:DataType_RBV</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QELabel::Never</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QELabel" name="qelabel_56">
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:NDArrayAddress_RBV</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QELabel::Never</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QELabel" name="qelabel_52">
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:NDArrayPort_RBV</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QELabel::Never</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_48">
+               <property name="text">
+                <string>Array rate</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_50">
+               <property name="text">
+                <string>Array port</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_53">
+               <property name="text">
+                <string>Color mode</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_51">
+               <property name="text">
+                <string>Array address</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_58">
+               <property name="text">
+                <string>Data type</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QELineEdit" name="qelineedit_15">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:NDArrayAddress</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QEGenericEdit::Never</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QELineEdit" name="qelineedit_10">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:NDArrayPort</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QEGenericEdit::Never</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_56">
+               <property name="text">
+                <string>Enable</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QEComboBox" name="qecombobox_8">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:EnableCallbacks</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="subscribe">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QELabel" name="qelabel_57">
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:ArrayRate_RBV</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QELabel::Never</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QELabel" name="qelabel_42">
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:EnableCallbacks_RBV</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QELabel::WhenInAlarm</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QEComboBox" name="qecombobox_9">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:ComputeStatistics</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="subscribe">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
+              <widget class="QLabel" name="label_62">
+               <property name="text">
+                <string>Total pixel count</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
+              <widget class="QELabel" name="qelabel_60">
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:ColorMode_RBV</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QELabel::Never</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="2">
+              <widget class="QELabel" name="qelabel_53">
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:ComputeStatistics_RBV</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QELabel::WhenInAlarm</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="1">
+              <widget class="QEComboBox" name="qecombobox_15">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:ComputeCentroid</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="subscribe">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="label_61">
+               <property name="text">
+                <string>Compute Statistics</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="2">
+              <widget class="QELabel" name="qelabel_50">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>120</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:Total_RBV</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="displayAlarmStateOption" stdset="0">
+                <enum>QELabel::Never</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="1">
+              <widget class="QEComboBox" name="qecombobox_16">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:ComputeProfiles</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="subscribe">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="0">
+              <widget class="QLabel" name="label_64">
+               <property name="text">
+                <string>Compute Centroids</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="0">
+              <widget class="QLabel" name="label_77">
+               <property name="text">
+                <string>Compute Profiles</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="2">
+              <layout class="QGridLayout" name="gridLayout_16">
+               <property name="sizeConstraint">
+                <enum>QLayout::SetDefaultConstraint</enum>
+               </property>
+               <item row="0" column="1">
+                <widget class="QELabel" name="qelabel_8">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>40</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="variable" stdset="0">
+                  <string>$(P):Stats1:CentroidX_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>CenY:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label">
+                 <property name="text">
+                  <string>CenX:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QELabel" name="qelabel_9">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>40</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="variable" stdset="0">
+                  <string>$(P):Stats1:CentroidY_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>SigX:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QELabel" name="qelabel_31">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>40</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="variable" stdset="0">
+                  <string>$(P):Stats1:SigmaX_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>SigY:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QELabel" name="qelabel_32">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>40</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="variable" stdset="0">
+                  <string>$(P):Stats1:SigmaY_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="10" column="0">
+              <widget class="QLabel" name="label_78">
+               <property name="text">
+                <string>Centroid Overlay</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QEPushButton" name="qepushbutton_17">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>On</string>
+                 </property>
+                 <property name="program">
+                  <string>/afs/slac/g/testfac/extras/scripts/centroidOverlay.sh</string>
+                 </property>
+                 <property name="arguments">
+                  <stringlist>
+                   <string>$(P)</string>
+                   <string>--enable</string>
+                  </stringlist>
+                 </property>
+                 <property name="guiFile" stdset="0">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QEPushButton" name="qepushbutton_16">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Off</string>
+                 </property>
+                 <property name="program">
+                  <string>/afs/slac/g/testfac/extras/scripts/centroidOverlay.sh</string>
+                 </property>
+                 <property name="arguments">
+                  <stringlist>
+                   <string>$(P)</string>
+                   <string>--disable</string>
+                  </stringlist>
+                 </property>
+                 <property name="guiFile" stdset="0">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+             <item row="12" column="0">
+              <widget class="QLabel" name="label_79">
+               <property name="text">
+                <string>Compute Histogram</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="12" column="1">
+              <widget class="QEComboBox" name="qecombobox_17">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="variable" stdset="0">
+                <string>$(P):Stats1:ComputeHistogram</string>
+               </property>
+               <property name="variableSubstitutions" stdset="0">
+                <string>P=CPS1</string>
+               </property>
+               <property name="subscribe">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="12" column="2">
+              <widget class="QPushButton" name="showHistPB">
+               <property name="text">
+                <string>show Histogram</string>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="2">
+              <widget class="QPushButton" name="showProfPB">
+               <property name="text">
+                <string>show Profiles</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Overlay">
+         <attribute name="title">
+          <string>Overlay</string>
+         </attribute>
+         <layout class="QFormLayout" name="formLayout_8">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_9">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QFormLayout" name="formLayout_7">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_18">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_23">
+                 <item row="5" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_12">
+                   <item>
+                    <widget class="QEPushButton" name="qepushbutton_32">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>On</string>
+                     </property>
+                     <property name="program">
+                      <string>/afs/slac/g/testfac/extras/scripts/beamOverlay.sh</string>
+                     </property>
+                     <property name="arguments">
+                      <stringlist>
+                       <string>$(P)</string>
+                       <string>--enable</string>
+                      </stringlist>
+                     </property>
+                     <property name="guiFile" stdset="0">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QEPushButton" name="qepushbutton_33">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                     <property name="program">
+                      <string>/afs/slac/g/testfac/extras/scripts/beamOverlay.sh</string>
+                     </property>
+                     <property name="arguments">
+                      <stringlist>
+                       <string>$(P)</string>
+                       <string>--disable</string>
+                      </stringlist>
+                     </property>
+                     <property name="guiFile" stdset="0">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_14">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="QELabel" name="qelabel_77">
+                   <property name="variable" stdset="0">
+                    <string>$(P):Over1:NDArrayPort_RBV</string>
+                   </property>
+                   <property name="variableSubstitutions" stdset="0">
+                    <string>P=CPS1</string>
+                   </property>
+                   <property name="displayAlarmStateOption" stdset="0">
+                    <enum>QELabel::Never</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_49">
+                   <property name="text">
+                    <string>Array rate</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_55">
+                   <property name="text">
+                    <string>Array port</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QELineEdit" name="qelineedit_13">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="variable" stdset="0">
+                    <string>$(P):Over1:NDArrayPort</string>
+                   </property>
+                   <property name="variableSubstitutions" stdset="0">
+                    <string>P=CPS1</string>
+                   </property>
+                   <property name="displayAlarmStateOption" stdset="0">
+                    <enum>QEGenericEdit::Never</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_82">
+                   <property name="text">
+                    <string>Enable</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QEComboBox" name="qecombobox_18">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="variable" stdset="0">
+                    <string>$(P):Over1:EnableCallbacks</string>
+                   </property>
+                   <property name="variableSubstitutions" stdset="0">
+                    <string>P=CPS1</string>
+                   </property>
+                   <property name="subscribe">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QELabel" name="qelabel_84">
+                   <property name="variable" stdset="0">
+                    <string>$(P):Over1:ArrayRate_RBV</string>
+                   </property>
+                   <property name="variableSubstitutions" stdset="0">
+                    <string>P=CPS1</string>
+                   </property>
+                   <property name="displayAlarmStateOption" stdset="0">
+                    <enum>QELabel::Never</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="QELabel" name="qelabel_44">
+                   <property name="variable" stdset="0">
+                    <string>$(P):Over1:EnableCallbacks_RBV</string>
+                   </property>
+                   <property name="variableSubstitutions" stdset="0">
+                    <string>P=CPS1</string>
+                   </property>
+                   <property name="displayAlarmStateOption" stdset="0">
+                    <enum>QELabel::Never</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_87">
+                   <property name="text">
+                    <string>Centroid Overlay</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_10">
+                   <item>
+                    <widget class="QEPushButton" name="qepushbutton_27">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>On</string>
+                     </property>
+                     <property name="program">
+                      <string>/afs/slac/g/testfac/extras/scripts/centroidOverlay.sh</string>
+                     </property>
+                     <property name="arguments">
+                      <stringlist>
+                       <string>$(P)</string>
+                       <string>--enable</string>
+                      </stringlist>
+                     </property>
+                     <property name="guiFile" stdset="0">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QEPushButton" name="qepushbutton_28">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                     <property name="program">
+                      <string>/afs/slac/g/testfac/extras/scripts/centroidOverlay.sh</string>
+                     </property>
+                     <property name="arguments">
+                      <stringlist>
+                       <string>$(P)</string>
+                       <string>--disable</string>
+                      </stringlist>
+                     </property>
+                     <property name="guiFile" stdset="0">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_12">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_89">
+                   <property name="text">
+                    <string>Target Overlay</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <layout class="QHBoxLayout" name="horizontalLayout_11">
+                   <item>
+                    <widget class="QEPushButton" name="qepushbutton_30">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>On</string>
+                     </property>
+                     <property name="program">
+                      <string>/afs/slac/g/testfac/extras/scripts/targetOverlay.sh</string>
+                     </property>
+                     <property name="arguments">
+                      <stringlist>
+                       <string>$(P)</string>
+                       <string>--enable</string>
+                      </stringlist>
+                     </property>
+                     <property name="guiFile" stdset="0">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QEPushButton" name="qepushbutton_31">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>40</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>Off</string>
+                     </property>
+                     <property name="program">
+                      <string>/afs/slac/g/testfac/extras/scripts/targetOverlay.sh</string>
+                     </property>
+                     <property name="arguments">
+                      <stringlist>
+                       <string>$(P)</string>
+                       <string>--disable</string>
+                      </stringlist>
+                     </property>
+                     <property name="guiFile" stdset="0">
+                      <string/>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_13">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="label_90">
+                   <property name="text">
+                    <string>Beam Overlay</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <spacer name="horizontalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0">
+           <spacer name="verticalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="Info">
+         <attribute name="title">
+          <string>Info</string>
+         </attribute>
+         <layout class="QFormLayout" name="formLayout_6">
+          <property name="fieldGrowthPolicy">
+           <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+          </property>
+          <item row="2" column="1">
+           <widget class="QGroupBox" name="groupBox_8">
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QFormLayout" name="formLayout">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_14">
+               <item row="2" column="2">
+                <widget class="QELabel" name="qelabel_27">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PortName_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLabel" name="label_25">
+                 <property name="text">
+                  <string>asyn port</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QELabel" name="qelabel_26">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:Model_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLabel" name="label_27">
+                 <property name="text">
+                  <string>EPICS name</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="2">
+                <widget class="QELabel" name="qelabel_48">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:BI:EPICS:NAME.DESC</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLabel" name="label_24">
+                 <property name="text">
+                  <string>Model</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QELabel" name="qelabel_25">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>130</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:Manufacturer_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_23">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>130</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Manufacturer</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="1">
+                <widget class="QLabel" name="label_34">
+                 <property name="text">
+                  <string>Packets Received</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="1">
+                <widget class="QLabel" name="label_32">
+                 <property name="text">
+                  <string>Packets Erroneous</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="2">
+                <widget class="QELabel" name="qelabel_58">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PSPacketsMissed_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="2">
+                <widget class="QELabel" name="qelabel_62">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PSPacketsReceived_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="2">
+                <widget class="QELabel" name="qelabel_55">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PSPacketsErroneous_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="1">
+                <widget class="QLabel" name="label_31">
+                 <property name="text">
+                  <string>Frames Dropped</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="2">
+                <widget class="QELabel" name="qelabel_51">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PSFramesCompleted_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="1">
+                <widget class="QLabel" name="label_36">
+                 <property name="text">
+                  <string>Packets Resent</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QLabel" name="label_30">
+                 <property name="text">
+                  <string>Frames Completed</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="2">
+                <widget class="QELabel" name="qelabel_54">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PSFramesDropped_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QLabel" name="label_29">
+                 <property name="text">
+                  <string>Frame Rate</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="1">
+                <widget class="QLabel" name="label_33">
+                 <property name="text">
+                  <string>Packets Missed</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="1">
+                <widget class="QLabel" name="label_35">
+                 <property name="text">
+                  <string>Packets Requested</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="1">
+                <widget class="QLabel" name="label_37">
+                 <property name="text">
+                  <string>Bad Frames</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="2">
+                <widget class="QELabel" name="qelabel_64">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PSPacketsRequested_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="2">
+                <widget class="QEComboBox" name="qecombobox_11">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PSReadStatistics.SCAN</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="subscribe">
+                  <bool>true</bool>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QEComboBox::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="2">
+                <widget class="QELabel" name="qelabel_49">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PSFrameRate_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="2">
+                <widget class="QELabel" name="qelabel_65">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PSPacketsResent_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="2">
+                <widget class="QELabel" name="qelabel_66">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:PSBadFrameCounter_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="1">
+                <widget class="QLabel" name="label_38">
+                 <property name="text">
+                  <string>Update Rate</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="1">
+                <widget class="QLabel" name="label_41">
+                 <property name="text">
+                  <string>Trigger Edge</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="2">
+                <widget class="QELabel" name="qelabel_67">
+                 <property name="variable" stdset="0">
+                  <string>$(P):cam1:TriggerEvent_RBV</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLabel" name="label_42">
+                 <property name="text">
+                  <string>Image Array port</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="2">
+                <widget class="QELabel" name="qelabel_33">
+                 <property name="variable" stdset="0">
+                  <string>$(P):image1:NDArrayPort</string>
+                 </property>
+                 <property name="variableSubstitutions" stdset="0">
+                  <string>P=CPS1</string>
+                 </property>
+                 <property name="displayAlarmStateOption" stdset="0">
+                  <enum>QELabel::Never</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="More">
+         <attribute name="title">
+          <string>More</string>
+         </attribute>
+         <layout class="QFormLayout" name="formLayout_3">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_6">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_8">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_11">
+               <item row="0" column="0">
+                <widget class="QEPushButton" name="qepushbutton_4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>80</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>10000</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>ImageJ</string>
+                 </property>
+                 <property name="program">
+                  <string>/afs/slac/g/testfac/extras/scripts/startImageJ</string>
+                 </property>
+                 <property name="arguments">
+                  <stringlist>
+                   <string>$(P)</string>
+                  </stringlist>
+                 </property>
+                 <property name="guiFile" stdset="0">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+               </item>
+               <item row="1" column="1">
+                <widget class="QEPushButton" name="qepushbutton_8">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>80</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>10000</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>mpFit</string>
+                 </property>
+                 <property name="confirmAction">
+                  <bool>false</bool>
+                 </property>
+                 <property name="program">
+                  <string>edm</string>
+                 </property>
+                 <property name="arguments">
+                  <stringlist>
+                   <string>-x</string>
+                   <string>-eolc</string>
+                   <string>-m P=$(P):,R=cam1:,PORT=MPFT</string>
+                   <string>/afs/slac/g/testfac/tools/display/mpfit/edl/mpFitADMain.edl</string>
+                  </stringlist>
+                 </property>
+                 <property name="guiFile" stdset="0">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QEPushButton" name="qepushbutton_6">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>120</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>10000</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>AreaDetector</string>
+                 </property>
+                 <property name="program">
+                  <string>edm</string>
+                 </property>
+                 <property name="arguments">
+                  <stringlist>
+                   <string>-x</string>
+                   <string>-eolc</string>
+                   <string>-m P=$(P):,R=cam1:,P2=$(P2),N=$(N),IOC=$(IOC)</string>
+                   <string>/afs/slac/g/testfac/tools/display/areaD/edl/gcADBase.edl</string>
+                  </stringlist>
+                 </property>
+                 <property name="guiFile" stdset="0">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QEPushButton" name="qepushbutton_5">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>80</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>10000</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>edmViewer</string>
+                 </property>
+                 <property name="confirmAction">
+                  <bool>false</bool>
+                 </property>
+                 <property name="program">
+                  <string>edm</string>
+                 </property>
+                 <property name="arguments">
+                  <stringlist>
+                   <string>-x</string>
+                   <string>-eolc</string>
+                   <string>-m P=$(P):,R=cam1:,A=$(A),N=$(N),IOC=$(IOC)</string>
+                   <string>/afs/slac/g/testfac/tools/display/areaD/edl/edmViewer.edl</string>
+                  </stringlist>
+                 </property>
+                 <property name="guiFile" stdset="0">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="Line" name="line_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="title">
+             <string>Trouble</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_24">
+               <item row="1" column="0">
+                <widget class="QEPushButton" name="qepushbutton_10">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Power Cycle Camera</string>
+                 </property>
+                 <property name="confirmAction">
+                  <bool>true</bool>
+                 </property>
+                 <property name="program">
+                  <string>/afs/slac/g/testfac/extras/scripts/rebootCamera.sh</string>
+                 </property>
+                 <property name="arguments">
+                  <stringlist>
+                   <string>$(P):</string>
+                  </stringlist>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QEPushButton" name="qepushbutton_11">
+                 <property name="text">
+                  <string>Reboot IOC</string>
+                 </property>
+                 <property name="confirmAction">
+                  <bool>true</bool>
+                 </property>
+                 <property name="program">
+                  <string>ssh</string>
+                 </property>
+                 <property name="arguments">
+                  <stringlist>
+                   <string>ar-bigbird</string>
+                   <string>/afs/slac/g/testfac/extras/scripts/iocRestartCamera.sh</string>
+                   <string>$(IOC)</string>
+                  </stringlist>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <widget class="QLabel" name="label_9">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Power:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QEBitStatus" name="qebitstatus_3">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>18</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="numberOfBits">
+                    <number>1</number>
+                   </property>
+                   <property name="variable" stdset="0">
+                    <string>$(P2):BI:STATE:$(N)</string>
+                   </property>
+                   <property name="variableSubstitutions" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="1">
+              <spacer name="horizontalSpacer_10">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder>frame_4</zorder>
+   <zorder>tabWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>530</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AButton</class>
+   <extends>QPushButton</extends>
+   <header>abutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAButton</class>
+   <extends>AButton</extends>
+   <header>cabutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEBitStatus</class>
+   <extends>QBitStatus</extends>
+   <header>QEBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEImage</class>
+   <extends>QFrame</extends>
+   <header>QEImage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESpinBox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header>QESpinBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QBitStatus</class>
+   <extends>QWidget</extends>
+   <header>QBitStatus.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>slot1()</slot>
+ </slots>
+</ui>

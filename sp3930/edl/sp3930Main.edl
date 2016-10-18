@@ -1,0 +1,490 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 164
+y 314
+w 360
+h 240
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 2
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 44
+y 16
+w 268
+h 180
+lineColor index 13
+fill
+fillColor index 2
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 44
+y 76
+w 268
+h 60
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 102
+y 82
+w 147
+h 13
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Loop Monitor Voltages"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 136
+y 140
+w 84
+h 13
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PZT Voltages"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 67
+y 106
+w 90
+h 18
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 67
+y 106
+w 33
+h 18
+font "courier-bold-r-18.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "AC:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 105
+y 106
+w 52
+h 18
+controlPv "$(P):AI:LOOP:AC"
+font "courier-bold-r-18.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 180
+y 106
+w 92
+h 18
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 180
+y 106
+w 33
+h 18
+font "courier-bold-r-18.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "DC:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 220
+y 106
+w 52
+h 18
+controlPv "$(P):AI:LOOP:DC"
+font "courier-bold-r-18.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 66
+y 164
+w 92
+h 18
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 66
+y 164
+w 33
+h 18
+font "courier-bold-r-18.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "AC:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 106
+y 164
+w 52
+h 18
+controlPv "$(P):AI:PZT:AC"
+font "courier-bold-r-18.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 180
+y 164
+w 92
+h 18
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 180
+y 164
+w 33
+h 18
+font "courier-bold-r-18.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "DC:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 220
+y 164
+w 52
+h 18
+controlPv "$(P):AI:PZT:DC"
+font "courier-bold-r-18.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 72
+y 204
+w 100
+h 24
+fgColor index 13
+bgColor index 50
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):AI:LOOP:AC.SCAN"
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 112
+y 36
+w 75
+h 24
+font "courier-bold-r-24.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Loop:"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 190
+y 36
+w 30
+h 24
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 190
+y 36
+w 30
+h 24
+font "courier-bold-r-24.0"
+fgColor index 19
+bgColor index 2
+useDisplayBg
+visPv "$(P):BI:LOOP"
+visMin "1"
+visMax "2"
+value {
+  "On"
+}
+autoSize
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 190
+y 36
+w 45
+h 24
+font "courier-bold-r-24.0"
+fgColor index 20
+bgColor index 2
+useDisplayBg
+visPv "$(P):BI:LOOP"
+visMin "0"
+visMax "1"
+value {
+  "Off"
+}
+autoSize
+lineWidth 2
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 276
+y 116
+w 32
+h 16
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Info"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sp3930LoopInfo"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 192
+y 204
+w 92
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Archived Data"
+numCmds 1
+command {
+  0 "$SCRIPT/startArchiveViewer.sh nlcta nlctaLaserLokToClock.xml"
+}
+endObjectProperties
+

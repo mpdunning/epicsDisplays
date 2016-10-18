@@ -1,0 +1,855 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 84
+y 375
+w 550
+h 315
+font "helvetica-bold-r-14.0"
+ctlFont "helvetica-bold-r-14.0"
+btnFont "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 50
+textColor index 14
+ctlFgColor1 index 25
+ctlFgColor2 index 30
+ctlBgColor1 index 10
+ctlBgColor2 index 5
+topShadowColor index 1
+botShadowColor index 11
+title "LBand Mod Version Information Screen"
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 225
+w 530
+h 80
+lineColor index 14
+fillColor index 10
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 55
+y 255
+w 410
+h 45
+
+beginGroup
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 265
+y 255
+w 95
+h 45
+fgColor index 25
+fgAlarm
+onColor index 5
+offColor index 5
+inconsistentColor index 22
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(S):MOD:RACK:RUN_CTL"
+onLabel "RUN"
+offLabel "RUN"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 160
+y 255
+w 95
+h 45
+fgColor index 25
+fgAlarm
+onColor index 5
+offColor index 5
+inconsistentColor index 20
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(S):MOD:RACK:SB_CTL"
+onLabel "STANDBY"
+offLabel "STANDBY"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 55
+y 255
+w 95
+h 45
+fgColor index 25
+fgAlarm
+onColor index 5
+offColor index 5
+inconsistentColor index 22
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(S):MOD:RACK:OFF_CTL"
+onLabel "OFF"
+offLabel "OFF"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 370
+y 255
+w 95
+h 45
+fgColor index 25
+fgAlarm
+onColor index 5
+offColor index 5
+inconsistentColor index 22
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(S):MOD:RACK:FLT_RST_CTL"
+onLabel "FLT RESET"
+offLabel "FLT RESET"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 10
+w 475
+h 30
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 51
+value {
+  "LBand Mod VERSION INFORMATION $(S)"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 50
+w 530
+h 65
+lineColor index 14
+fillColor index 10
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 75
+w 110
+h 20
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "PLC BATTERY"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 55
+w 95
+h 55
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 55
+w 95
+h 55
+lineColor index 0
+fill
+fillColor index 17
+visPv "$(S):MOD:PLC:LOWBATT"
+visInvert
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 55
+w 95
+h 55
+lineColor index 0
+fill
+fillColor index 22
+visPv "$(S):MOD:PLC:LOWBATT"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 140
+y 65
+w 95
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 38
+useDisplayBg
+value {
+  "BATTERY"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 140
+y 80
+w 95
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 0
+bgColor index 38
+useDisplayBg
+visPv "$(S):MOD:PLC:LOWBATT"
+visInvert
+visMax "1"
+value {
+  "OK"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 230
+w 410
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "--------------------------- RACK CONTROL --------------------------"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 125
+w 530
+h 95
+lineColor index 14
+fillColor index 10
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 15
+y 170
+w 95
+h 45
+controlPv "$(S):MOD:IGBT:RACK_STAT"
+fgColor index 0
+bgColor index 5
+fill
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 120
+y 170
+w 95
+h 45
+fgColor index 17
+fgAlarm
+onColor index 10
+offColor index 10
+inconsistentColor index 22
+topShadowColor index 1
+botShadowColor index 11
+indicatorPv "$(S):MOD:PLC:LOCALSTAT"
+onLabel "Remote"
+offLabel "Local"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 195
+y 130
+w 150
+h 35
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 196
+y 145
+w 150
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "FAULT"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 196
+y 130
+w 150
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "EQUIPMENT"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 305
+y 130
+w 150
+h 35
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 301
+y 145
+w 150
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "FAULT"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 301
+y 130
+w 150
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "PERSONNEL"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 440
+y 130
+w 85
+h 35
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 440
+y 145
+w 85
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "SELECTOR"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 440
+y 130
+w 85
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "SCREEN"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 130
+w 150
+h 35
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 95
+y 145
+w 150
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "MODE"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 95
+y 130
+w 150
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "OPERATION"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 130
+w 95
+h 35
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 13
+y 145
+w 95
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "STATE"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 13
+y 130
+w 95
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "OPERATION"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 415
+y 65
+w 110
+h 35
+controlPv "$(S):MOD:PLC:CLOCKTIM"
+fgColor index 0
+bgColor index 5
+fill
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+lineWidth 2
+lineAlarm
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 295
+y 80
+w 105
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "COUNTER"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 295
+y 65
+w 105
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 38
+useDisplayBg
+value {
+  "PLC HEALTH"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 265
+y 50
+w 5
+h 65
+lineColor index 14
+fillColor index 10
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 330
+y 170
+w 95
+h 45
+fgColor index 17
+fgAlarm
+onColor index 10
+offColor index 10
+inconsistentColor index 22
+topShadowColor index 1
+botShadowColor index 11
+indicatorPv "$(S):MOD:IGBT:PPS_OK_FLT"
+onLabel "OK"
+offLabel "FAULT"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 225
+y 170
+w 95
+h 45
+fgColor index 17
+fgAlarm
+onColor index 10
+offColor index 10
+inconsistentColor index 22
+topShadowColor index 1
+botShadowColor index 11
+indicatorPv "$(S):MOD:SCR:EPS_SUM_FLT"
+onLabel "OK"
+offLabel "FAULT"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-bold-r-14.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 440
+y 170
+w 90
+h 45
+fgColor index 1
+bgColor index 44
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-14.0"
+buttonLabel "Main"
+numPvs 4
+numDsps 7
+displayFileName {
+  0 "lband_mod_main"
+  1 "lband_analogs"
+  2 "lband_equip_sts"
+  3 "lband_equip_flt"
+  4 "lband_ppflt"
+  5 "lband_alarm_hist"
+  6 "lband_mod_vers"
+}
+menuLabel {
+  1 "Analog Setup & Status Screen"
+  2 "Equipment Status Screen"
+  3 "Equipment Fault Screen"
+  4 "Personal Protect Fault Screen"
+  5 "Alarm History Fault Screen"
+  6 "Version Information Screen"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 505
+y 10
+w 35
+h 30
+fgColor index 14
+bgColor index 10
+topShadowColor index 1
+botShadowColor index 11
+label "EXIT"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+

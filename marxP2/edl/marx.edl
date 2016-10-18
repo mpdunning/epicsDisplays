@@ -1,0 +1,135 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 935
+y 49
+w 600
+h 550
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+ctlFont "helvetica-medium-r-10.0"
+ctlFontAlign "right"
+btnFont "helvetica-medium-r-10.0"
+btnFontAlign "center"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 600
+h 36
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 540
+y 4
+w 48
+h 28
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "helvetica-bold-r-12.0"
+3d
+exitProgram
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 8
+w 239
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "SLAC P2 MARX Monitor & Control"
+}
+autoSize
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 76
+w 588
+h 468
+fgColor index 13
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)showIt=e:0,Main,HM,HM99"
+sizeOfs 5
+numDsps 3
+displayFileName {
+  0 "main.edl"
+  1 "hm.edl"
+  2 "hmPage.edl"
+}
+symbols {
+  2 "P=HM99"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 52
+w 152
+h 24
+fgColor index 13
+bgColor index 5
+selectColor index 3
+inconsistentColor index 3
+topShadowColor index 5
+botShadowColor index 5
+controlPv "LOC\\$(!W)showIt"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+

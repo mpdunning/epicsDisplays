@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>668</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QELabel" name="qelabel">
+    <property name="geometry">
+     <rect>
+      <x>344</x>
+      <y>368</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):image1:UniqueId_RBV</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=PS1</string>
+    </property>
+   </widget>
+   <widget class="QEImage" name="qeimage">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>661</width>
+      <height>525</height>
+     </rect>
+    </property>
+    <property name="imageVariable" stdset="0">
+     <string>$(P):image1:ArrayData</string>
+    </property>
+    <property name="formatVariable" stdset="0">
+     <string/>
+    </property>
+    <property name="widthVariable" stdset="0">
+     <string>$(P):cam1:ArraySizeX_RBV</string>
+    </property>
+    <property name="heightVariable" stdset="0">
+     <string>$(P):cam1:ArraySizeY_RBV</string>
+    </property>
+    <property name="profileHozThicknessVariable" stdset="0">
+     <string>500</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CPS1</string>
+    </property>
+    <property name="bitDepth" stdset="0">
+     <UInt>8</UInt>
+    </property>
+    <property name="displayEllipse">
+     <bool>true</bool>
+    </property>
+    <property name="displayButtonBar">
+     <bool>false</bool>
+    </property>
+    <property name="showTime">
+     <bool>true</bool>
+    </property>
+    <property name="externalControls">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>668</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEImage</class>
+   <extends>QFrame</extends>
+   <header>QEImage.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

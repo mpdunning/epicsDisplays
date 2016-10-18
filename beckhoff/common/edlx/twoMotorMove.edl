@@ -1,0 +1,810 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 462
+y 51
+w 380
+h 200
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 71
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 378
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 8
+y 8
+w 224
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Two Motor Relative Moves"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 312
+y 4
+w 60
+h 32
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 56
+y 108
+w 96
+h 16
+controlPv "$(P):CALC:$(T1)-$(M):POS:MM"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+precision 3
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 220
+y 108
+w 96
+h 16
+controlPv "$(P):CALC:$(T2)-$(M):POS:MM"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+precision 3
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 56
+y 88
+w 96
+h 16
+controlPv "$(P):CALC:$(ADC)-$(M):CH$(CH1)"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+precision 3
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 220
+y 88
+w 96
+h 16
+controlPv "$(P):CALC:$(ADC)-$(M):CH$(CH2)"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+precision 3
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 96
+y 132
+w 56
+h 24
+controlPv "$(P):AO:$(M)-$(N):SET:REL:1"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 50
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 8
+y 132
+w 80
+h 24
+controlPv "$(P):AO:$(M)-$(N):SET:REL:1.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 60
+y 44
+w 84
+h 20
+controlPv "$(P):LI:$(T1)-$(M):DATA.DESC"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 224
+y 44
+w 84
+h 20
+controlPv "$(P):LI:$(T2)-$(M):DATA.DESC"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 72
+y 64
+w 48
+h 20
+controlPv "$(P):MBBI:$(T1)-$(M):MOTOR:STATE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 240
+y 64
+w 48
+h 20
+controlPv "$(P):MBBI:$(T2)-$(M):MOTOR:STATE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 160
+y 108
+w 12
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 160
+y 108
+w 12
+h 16
+lineColor index 13
+fill
+fillColor index 4
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 160
+y 108
+w 12
+h 16
+lineColor index 13
+fill
+fillColor index 81
+visPv "$(P):BI:$(T1)-$(M):LIM:FOR"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 108
+w 12
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 108
+w 12
+h 16
+lineColor index 13
+fill
+fillColor index 4
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 108
+w 12
+h 16
+lineColor index 13
+fill
+fillColor index 81
+visPv "$(P):BI:$(T1)-$(M):LIM:REV"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 108
+w 12
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 108
+w 12
+h 16
+lineColor index 13
+fill
+fillColor index 4
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 108
+w 12
+h 16
+lineColor index 13
+fill
+fillColor index 81
+visPv "$(P):BI:$(T2)-$(M):LIM:REV"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 324
+y 108
+w 12
+h 16
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 324
+y 108
+w 12
+h 16
+lineColor index 13
+fill
+fillColor index 4
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 324
+y 108
+w 12
+h 16
+lineColor index 13
+fill
+fillColor index 81
+visPv "$(P):BI:$(T2)-$(M):LIM:FOR"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 132
+w 40
+h 24
+fgColor index 13
+onColor index 58
+offColor index 70
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):DF:$(M)-$(N):REL:LL.PROC"
+pressValue "1"
+releaseValue "0"
+onLabel "<:<"
+offLabel "<:<"
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 216
+y 132
+w 40
+h 24
+fgColor index 13
+onColor index 58
+offColor index 70
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):DF:$(M)-$(N):REL:RR.PROC"
+pressValue "1"
+releaseValue "0"
+onLabel ">:>"
+offLabel ">:>"
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 264
+y 132
+w 40
+h 24
+fgColor index 13
+onColor index 58
+offColor index 70
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):DF:$(M)-$(N):REL:LR.PROC"
+pressValue "1"
+releaseValue "0"
+onLabel "<:>"
+offLabel "<:>"
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 312
+y 132
+w 40
+h 24
+fgColor index 13
+onColor index 58
+offColor index 70
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):DF:$(M)-$(N):REL:RL.PROC"
+pressValue "1"
+releaseValue "0"
+onLabel ">:<"
+offLabel ">:<"
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 248
+y 8
+w 52
+h 24
+fgColor index 73
+bgColor index 34
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-12.0"
+buttonLabel "Help"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "twoMotorMoveHelp.edl"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 108
+y 164
+w 36
+h 24
+fgColor index 13
+onColor index 59
+offColor index 60
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):AO:$(M)-$(N):PRESET:REL:1.PROC"
+pressValue "1"
+releaseValue "0"
+onLabel "0.05"
+offLabel "0.05"
+3d
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 148
+y 164
+w 36
+h 24
+fgColor index 13
+onColor index 59
+offColor index 60
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):AO:$(M)-$(N):PRESET:REL:2.PROC"
+pressValue "1"
+releaseValue "0"
+onLabel "0.1"
+offLabel "0.1"
+3d
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 188
+y 164
+w 36
+h 24
+fgColor index 13
+onColor index 59
+offColor index 60
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):AO:$(M)-$(N):PRESET:REL:3.PROC"
+pressValue "1"
+releaseValue "0"
+onLabel "0.2"
+offLabel "0.2"
+3d
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 228
+y 164
+w 36
+h 24
+fgColor index 13
+onColor index 59
+offColor index 60
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):AO:$(M)-$(N):PRESET:REL:4.PROC"
+pressValue "1"
+releaseValue "0"
+onLabel "0.5"
+offLabel "0.5"
+3d
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 268
+y 164
+w 36
+h 24
+fgColor index 13
+onColor index 59
+offColor index 60
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):AO:$(M)-$(N):PRESET:REL:5.PROC"
+pressValue "1"
+releaseValue "0"
+onLabel "1"
+offLabel "1"
+3d
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 308
+y 164
+w 36
+h 24
+fgColor index 13
+onColor index 59
+offColor index 60
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):AO:$(M)-$(N):PRESET:REL:6.PROC"
+pressValue "1"
+releaseValue "0"
+onLabel "2"
+offLabel "2"
+3d
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 348
+y 168
+w 24
+h 16
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 4
+y 168
+w 96
+h 16
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "preset rel:"
+}
+endObjectProperties
+

@@ -1,0 +1,740 @@
+# MEDM filename = "/home/sricat/BCDA/epics/3.13.1/baseR3.13.1.1_shareR4.0/stdApp/op/adl/motor4x.adl"
+# MEDM version = 020305
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1697
+y 79
+w 500
+h 770
+font "helvetica-bold-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 4
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 0
+ctlBgColor1 index 1
+ctlBgColor2 index 0
+topShadowColor index 1
+botShadowColor index 11
+title "Motor Details"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 490
+h 760
+lineColor index 0
+fill
+fillColor index 10
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 120
+w 470
+h 160
+lineColor index 0
+fill
+fillColor index 6
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 700
+w 470
+h 50
+lineColor index 0
+fill
+fillColor index 6
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 710
+w 70
+h 30
+fgColor index 35
+bgColor index 27
+topShadowColor index 60
+botShadowColor index 10
+label "Done"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 10
+w 290
+h 90
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 10
+w 290
+h 90
+lineColor index 0
+fill
+fillColor index 6
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 20
+w 269
+h 70
+lineColor index 29
+fill
+fillColor index 29
+lineWidth 4
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 20
+y 60
+w 269
+h 30
+controlPv "$(DEV):$(AREA):$(POS):MOTR.DESC"
+fgColor index 0
+fgAlarm
+bgColor index 3
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 31
+y 30
+w 247
+h 30
+controlPv "$(DEV):$(AREA):$(POS):MOTR.NAME"
+fgColor index 27
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 130
+w 450
+h 140
+font "helvetica-medium-r-12.0"
+fgColor index 27
+bgColor index 6
+useDisplayBg
+value {
+  "Previous Help screens have described the Absolute and Relative Motion"
+  "controls."
+  ""
+  "The \"Internal Units\" area on the upper right of the window will usually contain"
+  "the same values as the \"Absolute Motion\" area, to it's left.  These values are"
+  "referred to as the \"Dial\" values, where the absolute motion refers to \"User\""
+  "values."
+  ""
+  "They will have different values if you reset the motor's perception of it's"
+  "Zero point.  This is described in the Calibration section later."
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 310
+y 10
+w 170
+h 90
+lineColor index 0
+fill
+fillColor index 6
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 320
+y 20
+w 149
+h 50
+font "helvetica-bold-r-24.0"
+fgColor index 27
+bgColor index 6
+useDisplayBg
+value {
+  "Motion"
+  "Details"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 320
+y 70
+w 160
+h 30
+font "helvetica-bold-r-14.0"
+fgColor index 27
+bgColor index 6
+useDisplayBg
+value {
+  "Instructions (cont'd)"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 290
+y 710
+w 80
+h 30
+fgColor index 27
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "More   >"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorHELPdetail3.edl"
+}
+menuLabel {
+  0 "Next"
+}
+closeAction {
+  0 1
+}
+symbols {
+  0 "DEV=$(DEV),AREA=$(AREA),POS=$(POS)"
+}
+propagateMacros {
+  0 0
+}
+closeDisplay {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 710
+w 80
+h 30
+fgColor index 27
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "<   Prev"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorHELPdetail1.edl"
+}
+menuLabel {
+  0 "Prev"
+}
+closeAction {
+  0 1
+}
+symbols {
+  0 "DEV=$(DEV),AREA=$(AREA),POS=$(POS)"
+}
+propagateMacros {
+  0 0
+}
+closeDisplay {
+  0 1
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 290
+w 470
+h 400
+lineColor index 0
+fill
+fillColor index 6
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 330
+w 450
+h 100
+font "helvetica-medium-r-12.0"
+fgColor index 27
+bgColor index 6
+useDisplayBg
+value {
+  "The Velocity controls, in the second area from top, on the right side, allows you"
+  "to adjust various aspects of speed and acceleration.  The top of the area shows"
+  "engineering units per unit time.  The motor's limit on velocity is shown below"
+  "that.  This value will seldom change from the value shown. The next fields,"
+  "\"Upper Ramp\" and \"Lower Ramp\" describe the normal, maximum velocity that"
+  "the motor will use, and also the initial velocity used as it ramps up to that speed."
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 440
+w 460
+h 180
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 160
+y 480
+w 270
+h 40
+lineColor index 18
+fillColor index 1
+lineWidth 2
+numPoints 6
+xPoints {
+  0 160
+  1 190
+  2 230
+  3 360
+  4 400
+  5 430
+}
+yPoints {
+  0 520
+  1 520
+  2 480
+  3 480
+  4 520
+  5 520
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 150
+y 530
+w 320
+h 0
+lineColor index 14
+fillColor index 1
+lineWidth 2
+numPoints 2
+xPoints {
+  0 150
+  1 470
+}
+yPoints {
+  0 530
+  1 530
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 150
+y 440
+w 0
+h 90
+lineColor index 49
+fillColor index 1
+lineWidth 2
+numPoints 2
+xPoints {
+  0 150
+  1 150
+}
+yPoints {
+  0 530
+  1 440
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 270
+y 530
+w 60
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "time"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 440
+w 70
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "velocity"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 470
+w 80
+h 30
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 1
+useDisplayBg
+value {
+  "Upper Ramp"
+  "Velocity"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 90
+y 520
+w 50
+h 0
+lineColor index 24
+fillColor index 1
+lineWidth 2
+arrows "to"
+numPoints 2
+xPoints {
+  0 90
+  1 140
+}
+yPoints {
+  0 520
+  1 520
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 505
+w 80
+h 30
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 24
+bgColor index 1
+useDisplayBg
+value {
+  "Lower Ramp"
+  "Velocity"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 90
+y 480
+w 110
+h 0
+lineColor index 24
+fillColor index 1
+lineWidth 2
+arrows "to"
+numPoints 2
+xPoints {
+  0 90
+  1 200
+}
+yPoints {
+  0 480
+  1 480
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 190
+y 540
+w 0
+h 50
+lineColor index 24
+fillColor index 1
+lineWidth 2
+arrows "to"
+numPoints 2
+xPoints {
+  0 190
+  1 190
+}
+yPoints {
+  0 590
+  1 540
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 230
+y 490
+w 0
+h 100
+lineColor index 24
+fillColor index 1
+lineWidth 2
+arrows "to"
+numPoints 2
+xPoints {
+  0 230
+  1 230
+}
+yPoints {
+  0 590
+  1 490
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 190
+y 590
+w 40
+h 30
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 24
+bgColor index 1
+useDisplayBg
+value {
+  "Ramp"
+  "Time"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 190
+y 590
+w 40
+h 0
+lineColor index 24
+fillColor index 1
+lineWidth 2
+numPoints 2
+xPoints {
+  0 190
+  1 230
+}
+yPoints {
+  0 590
+  1 590
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 300
+w 470
+h 30
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 27
+bgColor index 1
+useDisplayBg
+value {
+  "Velocity and Acceleration Control"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 620
+w 450
+h 70
+font "helvetica-medium-r-12.0"
+fgColor index 27
+bgColor index 6
+useDisplayBg
+value {
+  "Acceleration is determined by a Ramp Time.  As show in the diagram above, the"
+  "ramp time, expressed in seconds, indicates how long the motor will take to drive"
+  "from its Lower to Upper Ramp speed."
+  "The deceleration ramp is always the same as the acceleration."
+}
+endObjectProperties
+

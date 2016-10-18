@@ -1,0 +1,181 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1003
+y 103
+w 440
+h 432
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 438
+h 36
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 376
+y 4
+w 56
+h 28
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 68
+w 424
+h 360
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,DOut,Temp,3314Hid,BK9000"
+center
+sizeOfs 5
+numDsps 4
+displayFileName {
+  0 "bkhxx-dout.edl"
+  1 "therm-4.edl"
+  2 "bkhhidregs.edl"
+  3 "bk9000.edl"
+}
+symbols {
+  0 "T1=2114,T2=2124"
+  1 "R=3314"
+  2 "T=3314"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 44
+w 408
+h 24
+fgColor index 13
+bgColor index 6
+selectColor index 1
+inconsistentColor index 8
+topShadowColor index 6
+botShadowColor index 6
+controlPv "LOC\\$(!W)show"
+font "courier-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 296
+y 8
+w 72
+h 20
+fgColor index 14
+bgColor index 20
+topShadowColor index 72
+botShadowColor index 12
+font "courier-bold-r-10.0"
+buttonLabel "Reboot IOC"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "popUpConf"
+}
+symbols {
+  0 "CMD=ssh $IOCSERVER $SCRIPT/iocRestart $(IOC),ACTION=Restart IOC: $(IOC),MESSAGE1=Takes 5 seconds...,MESSAGE2= "
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 72
+y 8
+w 192
+h 20
+controlPv "ESB:SI:900R-$(N):NAME.VAL"
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 8
+w 52
+h 20
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "BKH$(A):"
+}
+endObjectProperties
+

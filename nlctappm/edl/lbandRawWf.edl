@@ -1,0 +1,148 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 628
+y 29
+w 479
+h 458
+font "new century schoolbook-medium-r-18.0"
+ctlFont "new century schoolbook-medium-r-12.0"
+btnFont "new century schoolbook-bold-r-14.0"
+fgColor index 14
+bgColor index 71
+textColor index 14
+ctlFgColor1 index 12
+ctlFgColor2 index 7
+ctlBgColor1 index 63
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+title "lband_ppm_main.edl"
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 476
+h 44
+lineColor index 14
+fill
+fillColor index 63
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 2147483647
+y 2147483647
+w -2147483648
+h -2147483648
+lineColor index 14
+fillColor index 63
+arrows "both"
+numPoints 0
+xPoints {
+}
+yPoints {
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 388
+y 4
+w 76
+h 32
+fgColor index 73
+bgColor index 29
+topShadowColor index 2
+botShadowColor index 0
+label "Close"
+font "new century schoolbook-bold-r-14.0"
+3d
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 12
+y 64
+w 457
+h 369
+# Appearance
+border
+fgColor index 14
+bgColor index 63
+gridColor index 14
+font "new century schoolbook-medium-r-12.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 500
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+showY2Axis
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(IOC):$(SCOPE):CHAN$(N):MDATA"
+}
+plotUpdateMode {
+  0 "xOrY"
+}
+ySigned {
+  0 1810440
+}
+plotColor {
+  0 index 26
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 26
+y 690
+w 72
+h 11
+controlPv "$(IOC):$(SCOPE):TS"
+fgColor index 12
+fgAlarm
+bgColor index 63
+fill
+font "new century schoolbook-medium-r-8.0"
+endObjectProperties
+

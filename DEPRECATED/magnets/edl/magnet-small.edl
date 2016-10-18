@@ -1,0 +1,506 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1010
+y 357
+w 244
+h 232
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 16
+y 20
+w 128
+h 16
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lambda.edl"
+}
+symbols {
+  0 "P=$(P)"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 12
+w 140
+h 32
+lineColor index 13
+fillColor index 2
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 104
+y 20
+w 36
+h 15
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "$(P)"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 164
+y 8
+w 68
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "All Quads"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "esbmags"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 164
+y 32
+w 68
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "KnobBox"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "knobbox-nlcta.edl"
+}
+symbols {
+  0 "LOCA=ESB,B=1,FACILITY=NLCTA,facility=nlcta"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 68
+w 220
+h 120
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 132
+y 84
+w 96
+h 40
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 84
+w 116
+h 40
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 20
+y 96
+w 72
+h 16
+controlPv "$(P):AO:SC:BSET"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 29
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+updatePvOnDrop
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (incDecButton)
+object idbClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 100
+y 92
+w 16
+h 24
+fgColor index 27
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):AO:SC:BSET"
+coarseValue "0.1"
+fineValue "0.01"
+label ""
+3d
+rate 0.1
+limitsFromDb
+scaleMin 0
+scaleMax 20
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 68
+w 98
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Set Point [kG]"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 136
+y 68
+w 84
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Monitor [kG]"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 44
+y 168
+w 56
+h 20
+fgColor index 40
+bgColor index 14
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+buttonLabel "save"
+numCmds 1
+command {
+  0 "echo `caget $(P):AO:SC:BSET` > $(SRDIR)$(CTRL)-$(MAG).sr"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 152
+y 168
+w 56
+h 20
+fgColor index 40
+bgColor index 14
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+buttonLabel "restore"
+numCmds 1
+command {
+  0 "caput $(P):AO:SC:BSET `cut -d \" \" -f 2 $(SRDIR)$(CTRL)-$(MAG).sr`"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 144
+y 96
+w 72
+h 20
+lineColor index 20
+lineAlarm
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:ERROR"
+visMin "1"
+visMax "10"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 148
+y 96
+w 68
+h 16
+controlPv "$(P):AI:BMON"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 29
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 12
+y 132
+w 220
+h 32
+fgColor index 13
+bgColor index 2
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 0.1
+controlPv "$(P):AO:SC:BSET"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 196
+w 224
+h 28
+lineColor index 13
+fill
+fillColor index 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 16
+y 204
+w 77
+h 13
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Assign Knob"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 116
+y 200
+w 20
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "1"
+numCmds 1
+command {
+  0 "caput KNOB:ESB:1:K0_DEVNAME $(P):AO:SC:BSET"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 144
+y 200
+w 20
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "2"
+numCmds 1
+command {
+  0 "caput KNOB:ESB:1:K1_DEVNAME $(P):AO:SC:BSET"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 172
+y 200
+w 20
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "3"
+numCmds 1
+command {
+  0 "caput KNOB:ESB:1:K2_DEVNAME $(P):AO:SC:BSET"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 200
+w 20
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "4"
+numCmds 1
+command {
+  0 "caput KNOB:ESB:1:K3_DEVNAME $(P):AO:SC:BSET"
+}
+endObjectProperties
+

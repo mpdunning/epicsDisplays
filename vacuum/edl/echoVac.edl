@@ -1,0 +1,697 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 511
+y 89
+w 484
+h 320
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 16
+w 228
+h 36
+lineColor index 13
+fill
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 60
+w 228
+h 252
+lineColor index 13
+fill
+fillColor index 1
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 72
+w 35
+h 16
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Gauge"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 120
+y 72
+w 105
+h 16
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Press.[Torr]"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 152
+y 92
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 152
+}
+yPoints {
+  0 92
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 180
+y 108
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 180
+}
+yPoints {
+  0 108
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 20
+y 24
+w 88
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "StripTool"
+numCmds 1
+command {
+  0 "StripTool /nfs/slac/g/nlcta/u01/nlcta/stripTool/$(AREA)Vac.stp"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 164
+y 116
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 164
+}
+yPoints {
+  0 116
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 164
+y 92
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 164
+}
+yPoints {
+  0 92
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 96
+w 84
+h 16
+controlPv "ESB:TPS01:PRESSURE"
+format "exponential"
+font "courier-medium-r-12.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+precision 1
+nullColor index 13
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 96
+w 35
+h 16
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "TPS 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 128
+y 24
+w 92
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Archived Data"
+numCmds 1
+command {
+  0 "$SCRIPT/startArchiveViewer.sh nlcta nlcta$(AREA)Vacuum.xml"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 60
+w 228
+h 252
+lineColor index 13
+fill
+fillColor index 1
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 256
+y 72
+w 70
+h 16
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Pump"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 372
+y 72
+w 96
+h 16
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Current [A]"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 396
+y 80
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 396
+}
+yPoints {
+  0 80
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 432
+y 100
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 432
+}
+yPoints {
+  0 100
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 416
+y 116
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 416
+}
+yPoints {
+  0 116
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 256
+y 116
+w 77
+h 16
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "1638,1738"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 416
+y 96
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 416
+}
+yPoints {
+  0 96
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 372
+y 96
+w 84
+h 16
+controlPv "ESB:VACP:1438:CURRENT"
+format "exponential"
+font "courier-medium-r-12.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+precision 1
+nullColor index 13
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 256
+y 96
+w 77
+h 16
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "1438,1538"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 184
+y 128
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 184
+}
+yPoints {
+  0 128
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 164
+y 136
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 164
+}
+yPoints {
+  0 136
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 116
+w 84
+h 16
+controlPv "ESB:TPS02:PRESSURE"
+format "exponential"
+font "courier-medium-r-12.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+precision 1
+nullColor index 13
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 116
+w 35
+h 16
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "TPS 2"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 164
+y 136
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 164
+}
+yPoints {
+  0 136
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 184
+y 148
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 184
+}
+yPoints {
+  0 148
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 164
+y 156
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 164
+}
+yPoints {
+  0 156
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 120
+y 136
+w 84
+h 16
+controlPv "ESB:TPS03:PRESSURE"
+format "exponential"
+font "courier-medium-r-12.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+precision 1
+nullColor index 13
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 136
+w 35
+h 16
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "TPS 3"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 372
+y 116
+w 84
+h 16
+controlPv "ESB:VACP:1638:CURRENT"
+format "exponential"
+font "courier-medium-r-12.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+precision 1
+nullColor index 13
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+

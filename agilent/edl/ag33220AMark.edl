@@ -1,0 +1,129 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 613
+y 77
+w 318
+h 310
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+title "Configuration"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 140
+y 120
+w 95
+h 20
+controlPv "$(P):AO:SC:MARK:FREQ"
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 4
+motifWidget
+limitsFromDb
+nullColor index 53
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 120
+w 116
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Marker frequency:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 85
+y 145
+w 49
+h 20
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Marker:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 15
+w 104
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Marker Commands"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 145
+w 95
+h 20
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(P):BO:SC:MARKER"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+

@@ -1,0 +1,512 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 776
+y 150
+w 388
+h 280
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 80
+w 176
+h 136
+lineColor index 13
+fill
+fillColor index 50
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 204
+y 80
+w 176
+h 136
+lineColor index 13
+fill
+fillColor index 50
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 28
+y 16
+w 90
+h 15
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+useDisplayBg
+value {
+  "Digital IO"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 224
+y 116
+w 116
+h 20
+controlPv "$(P):BI:1104-$(M):BIT1.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 224
+y 140
+w 116
+h 20
+controlPv "$(P):BI:1104-$(M):BIT2.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 224
+y 164
+w 116
+h 20
+controlPv "$(P):BI:1104-$(M):BIT3.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 224
+y 188
+w 116
+h 20
+controlPv "$(P):BI:1104-$(M):BIT4.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Animated Symbol)
+object anaSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 344
+y 116
+w 20
+h 20
+file "ofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):BI:1104-$(M):BIT1"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 2
+endObjectProperties
+
+# (Animated Symbol)
+object anaSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 344
+y 140
+w 20
+h 20
+file "ofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):BI:1104-$(M):BIT2"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 2
+endObjectProperties
+
+# (Animated Symbol)
+object anaSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 344
+y 164
+w 20
+h 20
+file "ofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):BI:1104-$(M):BIT3"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 2
+endObjectProperties
+
+# (Animated Symbol)
+object anaSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 344
+y 188
+w 20
+h 20
+file "ofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):BI:1104-$(M):BIT4"
+}
+numPvs 1
+useOriginalColors
+fgColor index 13
+bgColor index 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 216
+y 88
+w 42
+h 13
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "KL1104"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 156
+y 116
+w 20
+h 20
+fgColor index 13
+onColor index 15
+offColor index 6
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:2114-$(M):BIT1"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 36
+y 116
+w 116
+h 20
+controlPv "$(P):BO:2114-$(M):BIT1.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 28
+y 88
+w 42
+h 13
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "KL2114"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 156
+y 140
+w 20
+h 20
+fgColor index 13
+onColor index 15
+offColor index 6
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:2114-$(M):BIT2"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 36
+y 140
+w 116
+h 20
+controlPv "$(P):BO:2114-$(M):BIT2.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 156
+y 164
+w 20
+h 20
+fgColor index 13
+onColor index 15
+offColor index 6
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:2114-$(M):BIT3"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 36
+y 164
+w 116
+h 20
+controlPv "$(P):BO:2114-$(M):BIT3.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 156
+y 188
+w 20
+h 20
+fgColor index 13
+onColor index 15
+offColor index 6
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:2114-$(M):BIT4"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 36
+y 188
+w 116
+h 20
+controlPv "$(P):BO:2114-$(M):BIT4.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+

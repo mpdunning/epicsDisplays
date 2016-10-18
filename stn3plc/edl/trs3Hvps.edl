@@ -1,0 +1,524 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 673
+y 55
+w 210
+h 300
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 154
+w 163
+h 131
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 224
+w 76
+h 61
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 224
+w 76
+h 61
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:HVPS:TOP:READYILCK"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 33
+y 230
+w 61
+h 48
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Top"
+  "Ready"
+  "Interlock"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 112
+y 224
+w 76
+h 61
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 112
+y 224
+w 76
+h 61
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:HVPS:FAULT:STATUS"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 130
+y 238
+w 41
+h 32
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Fault"
+  "Status"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 112
+y 154
+w 76
+h 61
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 112
+y 154
+w 76
+h 61
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:HVPS:CONTACT:TOPILCK"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 116
+y 160
+w 69
+h 48
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Contactor "
+  "Top"
+  "Interlock"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 154
+w 76
+h 61
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 154
+w 76
+h 61
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:HVPS:CONTACT:BOTILCK"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 29
+y 160
+w 69
+h 48
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Contactor "
+  "Bottom"
+  "Interlock"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 75
+w 192
+h 30
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 170
+y 82
+w 32
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Volts"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 94
+y 75
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 94
+y 75
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=HVPS:VOLT"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 96
+y 77
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:HVPS:VOLT:SUMY"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 103
+y 77
+w 55
+h 25
+controlPv "TRS3:KLY$(K):BUCKVOLT:VAL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:HVPS:VOLT:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 82
+w 70
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PS Voltage"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 134
+y 9
+w 68
+h 30
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "new century schoolbook-medium-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 14
+y 16
+w 70
+h 26
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "HVPS"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 110
+w 193
+h 36
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 171
+y 120
+w 32
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Volts"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 94
+y 110
+w 67
+h 36
+controlPv "TRS3:HVPS:VOLT:REF:AO"
+precision 1
+fgColor index 13
+fgAlarm
+bgColor index 2
+fill
+font "new century schoolbook-medium-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 120
+w 74
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PS Setpoint"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

@@ -1,0 +1,2616 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 730
+y 461
+w 405
+h 380
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 41
+y 18
+w 155
+h 26
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Klystron $(K)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 105
+y 51
+w 55
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Current"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 181
+y 51
+w 51
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Ground"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 253
+y 51
+w 49
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Voltage"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 324
+y 8
+w 68
+h 30
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "new century schoolbook-medium-r-14.0"
+3d
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 109
+w 281
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 109
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 109
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 97
+y 109
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):COIL1CUR"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 98
+y 110
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):COIL1CUR:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 106
+y 111
+w 55
+h 25
+controlPv "TRS3:KLY$(K):COIL1CUR:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):COIL1CUR:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 111
+w 64
+h 26
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 111
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY6:COIL1:PSON"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 43
+y 118
+w 37
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Coil 1"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 171
+y 109
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 171
+y 109
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 171
+y 109
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valnp.edl"
+}
+symbols {
+  0 "PV=KLY$(K):COIL1GND"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 172
+y 110
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):COIL1GND:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 180
+y 111
+w 55
+h 25
+controlPv "TRS3:KLY$(K):COIL1GND:VAL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):COIL1GND:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 242
+y 109
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 242
+y 109
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 242
+y 109
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):COIL1VOLT"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 243
+y 110
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):COIL1VOLT:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 251
+y 111
+w 55
+h 25
+controlPv "TRS3:KLY$(K):COIL1VOLT:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):COIL1VOLT:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 143
+w 281
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 143
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 143
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 97
+y 143
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):COIL2CUR"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 98
+y 144
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):COIL2CUR:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 106
+y 145
+w 55
+h 25
+controlPv "TRS3:KLY$(K):COIL2CUR:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):COIL2CUR:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 145
+w 64
+h 26
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 145
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY6:COIL2:ON"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 43
+y 152
+w 37
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Coil 2"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 171
+y 143
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 171
+y 143
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 171
+y 143
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valnp.edl"
+}
+symbols {
+  0 "PV=KLY$(K):COIL2GND"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 172
+y 144
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):COIL2GND:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 180
+y 145
+w 55
+h 25
+controlPv "TRS3:KLY$(K):COIL2GND:VAL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):COIL2GND:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 242
+y 143
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 242
+y 143
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 242
+y 143
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):COIL2VOLT"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 243
+y 144
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):COIL2VOLT:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 251
+y 145
+w 55
+h 25
+controlPv "TRS3:KLY$(K):COIL2VOLT:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):COIL2VOLT:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 212
+w 136
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 212
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 212
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 97
+y 212
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):PULSECUR"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 98
+y 213
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):PULSECUR:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 106
+y 214
+w 55
+h 25
+controlPv "TRS3:KLY$(K):PULSECUR:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):HTRCUR:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 214
+w 64
+h 26
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 43
+y 219
+w 36
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Pulse"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 214
+w 64
+h 26
+lineColor index 13
+fillColor index 15
+lineWidth 0
+invisible
+alarmPv "TRS3:KLY6:HTR:ON"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 257
+w 136
+h 113
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 56
+y 257
+w 79
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Water Flow"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 275
+w 136
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 275
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 275
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 95
+y 275
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):BODYH2OFLO"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 96
+y 276
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):BODYH2OFLO:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 104
+y 277
+w 55
+h 25
+controlPv "TRS3:KLY$(K):BODYH2OFLO:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):BODYH2OFLO:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 277
+w 64
+h 26
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 41
+y 282
+w 33
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Body"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 277
+w 64
+h 26
+lineColor index 13
+fillColor index 15
+lineWidth 0
+invisible
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 307
+w 136
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 307
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 307
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 95
+y 307
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):COLLH2OFLO"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 96
+y 308
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):COLLH2OFLO:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 104
+y 309
+w 55
+h 25
+controlPv "TRS3:KLY$(K):COLLH2OFLO:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):COLLH2OFLO:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 309
+w 64
+h 26
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 314
+w 59
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Collector"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 309
+w 64
+h 26
+lineColor index 13
+fillColor index 15
+lineWidth 0
+invisible
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 340
+w 136
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 340
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 340
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 95
+y 340
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):MAGH2OFLO"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 96
+y 341
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):MAGH2OFLO:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 104
+y 342
+w 55
+h 25
+controlPv "TRS3:KLY$(K):MAGH2OFLO:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):MAGH2OFLO:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 342
+w 64
+h 26
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 33
+y 347
+w 53
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Magnet"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 342
+w 64
+h 26
+lineColor index 13
+fillColor index 15
+lineWidth 0
+invisible
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 331
+y 53
+w 60
+h 295
+indicatorColor index 13
+fgColor index 13
+bgColor index 2
+indicatorPv "TRS3:KLY$(K):PULSECUR:VALFIL"
+label "K$(K) CURR"
+showScale
+origin "0"
+font "courier-medium-r-12.0"
+labelTicks "10"
+border
+limitsFromDb
+precision "10"
+min "0"
+max "100"
+scaleFormat "FFloat"
+orientation "vertical"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 70
+w 282
+h 35
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 243
+y 72
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 243
+y 72
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):BUCKVOLT"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 245
+y 74
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):BUCKVOLT:SUMY"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 252
+y 74
+w 55
+h 25
+controlPv "TRS3:KLY$(K):BUCKVOLT:VAL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):BUCKVOLT:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 172
+y 72
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 172
+y 72
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valnp.edl"
+}
+symbols {
+  0 "PV=KLY$(K):BUCKGND"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 174
+y 74
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):BUCKGND:SUMY"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 181
+y 74
+w 55
+h 25
+controlPv "TRS3:KLY$(K):BUCKGND:VAL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):BUCKGND:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 98
+y 72
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 98
+y 72
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 98
+y 72
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):BUCKCUR"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 99
+y 73
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):BUCKCUR:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 107
+y 74
+w 55
+h 25
+controlPv "TRS3:KLY$(K):BUCKCUR:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):BUCKCUR:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 70
+w 64
+h 35
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 70
+w 64
+h 35
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY6:BUCK:ON"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 33
+y 71
+w 56
+h 32
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Bucking"
+  "Coil"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 177
+w 281
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 242
+y 177
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 242
+y 177
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 242
+y 177
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):HTRVOLT"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 243
+y 178
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):HTRVOLT:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 251
+y 179
+w 55
+h 25
+controlPv "TRS3:KLY$(K):HTRVOLT:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):HTRVOLT:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 177
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 177
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 97
+y 177
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):HTRCUR"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 98
+y 178
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):HTRCUR:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 106
+y 179
+w 55
+h 25
+controlPv "TRS3:KLY$(K):HTRCUR:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):HTRCUR:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 179
+w 64
+h 26
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 29
+y 179
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY6:HTR:ON"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 38
+y 184
+w 46
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Heater"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 212
+w 50
+h 26
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 181
+y 212
+w 50
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY6:KLIX:ILCK"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 185
+y 217
+w 43
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Klixon"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 256
+w 136
+h 80
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 306
+w 136
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 250
+y 306
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 250
+y 306
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 250
+y 306
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):WINDOWTEMP"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 251
+y 307
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):WINDOWTEMP:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 259
+y 308
+w 55
+h 25
+controlPv "TRS3:KLY$(K):WINDOWTEMP:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):WINDOWTEMP:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 308
+w 64
+h 26
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 185
+y 313
+w 56
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Window"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 308
+w 64
+h 26
+lineColor index 13
+fillColor index 15
+lineWidth 0
+invisible
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 206
+y 256
+w 89
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Temperature"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 274
+w 136
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 276
+w 64
+h 26
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 196
+y 281
+w 33
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Body"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 276
+w 64
+h 26
+lineColor index 13
+fillColor index 15
+lineWidth 0
+invisible
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 250
+y 274
+w 68
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 250
+y 274
+w 68
+h 30
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 250
+y 274
+w 68
+h 30
+fgColor index 13
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3Valfil.edl"
+}
+symbols {
+  0 "PV=KLY$(K):BODYTMP"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 251
+y 275
+w 64
+h 26
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:KLY$(K):BODYTMP:SUMY"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 259
+y 276
+w 55
+h 25
+controlPv "TRS3:KLY$(K):BODYTMP:VALFIL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+fgAlarm
+bgColor index 2
+colorPv "TRS3:KLY$(K):BODYTMP:VAL:OOT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

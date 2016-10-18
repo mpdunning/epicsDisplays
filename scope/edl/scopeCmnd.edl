@@ -1,0 +1,134 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 863
+y 432
+w 312
+h 370
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+disableScroll
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 5
+w 287
+h 168
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Command:"
+  "Issue commands as the instrument"
+  "understands them."
+  "NOTE: if you issue an unrecognized command,"
+  "the scope will most likely hang for a while."
+  "It should eventually recover, but may need to be"
+  "power cycled.  This might apply to the Tektronix"
+  "TDS3000 scopes.  I did not observe this problem"
+  "with Rigol scopes."
+  "Since the command reply buffer is also used for"
+  "querying the error queue one can check the queue"
+  "for errors."
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 5
+y 210
+w 250
+h 18
+controlPv "$(P):SO:CMND"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 5
+y 235
+w 300
+h 15
+controlPv "$(P):WF:REPLY"
+format "string"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 265
+w 105
+h 25
+fgColor index 13
+onColor index 68
+offColor index 58
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(P):BO:GET:EV:MSG"
+onLabel "Get Next Error"
+offLabel "Get Next Error"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+

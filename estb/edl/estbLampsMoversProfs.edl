@@ -1,0 +1,1494 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1052
+y 645
+w 664
+h 500
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 64
+w 340
+h 428
+lineColor index 13
+fillColor index 61
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 348
+y 64
+w 308
+h 428
+lineColor index 13
+fillColor index 64
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 684
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 592
+y 4
+w 64
+h 32
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 8
+w 376
+h 24
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "ESTB Lamps, Movers, & Profile Monitor Controls"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 12
+y 100
+w 108
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH1.DESC"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 12
+y 144
+w 108
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH2.DESC"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 52
+w 124
+h 24
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 3
+value {
+  "Lamps (0 - 100%)"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 136
+y 100
+w 60
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH1"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 136
+y 144
+w 60
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH2"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 204
+y 136
+w 136
+h 32
+fgColor index 13
+bgColor index 71
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 1
+controlPv "$(P):AO:4414-$(M):PC:CH2"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 204
+y 92
+w 136
+h 32
+fgColor index 13
+bgColor index 71
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 1
+controlPv "$(P):AO:4414-$(M):PC:CH1"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 12
+y 184
+w 108
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH3.DESC"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 136
+y 184
+w 60
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH3"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 204
+y 176
+w 136
+h 32
+fgColor index 13
+bgColor index 71
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 1
+controlPv "$(P):AO:4414-$(M):PC:CH3"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 12
+y 288
+w 108
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH4.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 136
+y 288
+w 60
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH4"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 3204
+y 212
+w 136
+h 32
+fgColor index 13
+bgColor index 71
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 1
+controlPv "$(P):AO:4414-$(M):PC:CH3"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 12
+y 332
+w 108
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH5.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 136
+y 332
+w 60
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH5"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 204
+y 324
+w 136
+h 32
+fgColor index 13
+bgColor index 71
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 1
+controlPv "$(P):AO:4414-$(M):PC:CH5"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 100
+w 40
+h 20
+fgColor index 13
+onColor index 74
+offColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESA:BO:SC:2114-24:BIT1"
+indicatorPv "ESA:BO:SC:2114-24:BIT1"
+onLabel "In"
+offLabel "Out"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 600
+y 84
+w 14
+h 13
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "In"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 624
+y 84
+w 21
+h 13
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Out"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 596
+y 100
+w 20
+h 20
+controlPv "ESA:BI:1498-24:BIT1"
+lineColor index 13
+onColor index 15
+offColor index 4
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 624
+y 100
+w 20
+h 20
+controlPv "ESA:BI:1498-24:BIT2"
+lineColor index 13
+onColor index 15
+offColor index 4
+numBits 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 272
+w 40
+h 20
+fgColor index 13
+onColor index 74
+offColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:SC:2408-22:BIT1"
+onLabel "In"
+offLabel "Out"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 336
+w 40
+h 20
+fgColor index 13
+onColor index 74
+offColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:SC:2408-$(M):BIT3"
+onLabel "In"
+offLabel "Out"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 304
+w 40
+h 20
+fgColor index 13
+onColor index 74
+offColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:SC:2408-$(M):BIT2"
+onLabel "In"
+offLabel "Out"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 364
+y 308
+w 176
+h 16
+controlPv "$(P):BO:SC:2408-$(M):BIT2.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 364
+y 340
+w 176
+h 16
+controlPv "$(P):BO:SC:2408-$(M):BIT3.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 360
+y 52
+w 112
+h 24
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 3
+value {
+  "Movers & Profs"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 184
+w 40
+h 20
+fgColor index 13
+onColor index 74
+offColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:SC:2408-$(M):BIT4"
+onLabel "In"
+offLabel "Out"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 12
+y 376
+w 108
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH7.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 136
+y 376
+w 60
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH7"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 204
+y 368
+w 136
+h 32
+fgColor index 13
+bgColor index 71
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 1
+controlPv "$(P):AO:4414-$(M):PC:CH7"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 136
+y 624
+w 60
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH7"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 204
+y 616
+w 136
+h 32
+fgColor index 13
+bgColor index 71
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 1
+controlPv "$(P):AO:4414-$(M):PC:CH7"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 136
+y 420
+w 60
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH8"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 204
+y 412
+w 136
+h 32
+fgColor index 13
+bgColor index 71
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 1
+controlPv "$(P):AO:4414-$(M):PC:CH8"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 12
+y 420
+w 108
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH8.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 204
+y 280
+w 136
+h 32
+fgColor index 13
+bgColor index 71
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 1
+controlPv "$(P):AO:4414-$(M):PC:CH4"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 400
+w 40
+h 20
+fgColor index 13
+onColor index 74
+offColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:SC:2408-$(M):BIT6"
+onLabel "In"
+offLabel "Out"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 368
+w 40
+h 20
+fgColor index 13
+onColor index 74
+offColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:SC:2408-$(M):BIT5"
+onLabel "In"
+offLabel "Out"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 364
+y 372
+w 176
+h 16
+controlPv "$(P):BO:SC:2408-$(M):BIT5.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 364
+y 404
+w 176
+h 16
+controlPv "$(P):BO:SC:2408-$(M):BIT6.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 432
+w 40
+h 20
+fgColor index 13
+onColor index 74
+offColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:SC:2408-$(M):BIT7"
+onLabel "In"
+offLabel "Out"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 364
+y 436
+w 176
+h 16
+controlPv "$(P):BO:SC:2408-$(M):BIT7.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 464
+w 40
+h 20
+fgColor index 13
+onColor index 74
+offColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:SC:2408-$(M):BIT8"
+onLabel "In"
+offLabel "Out"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 364
+y 468
+w 176
+h 16
+controlPv "$(P):BO:SC:2408-$(M):BIT8.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 376
+y 100
+w 164
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "3PR2"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 144
+w 40
+h 20
+fgColor index 13
+onColor index 74
+offColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESA:BO:SC:2408-4:BIT2"
+indicatorPv "ESA:BO:SC:2408-4:BIT2"
+onLabel "In"
+offLabel "Out"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 600
+y 128
+w 14
+h 13
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "In"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 624
+y 128
+w 21
+h 13
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Out"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 596
+y 144
+w 20
+h 20
+controlPv "ESA:BI:1104-4:BIT3"
+lineColor index 13
+onColor index 15
+offColor index 4
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 624
+y 144
+w 20
+h 20
+controlPv "ESA:BI:1104-4:BIT4"
+lineColor index 13
+onColor index 15
+offColor index 4
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 376
+y 144
+w 164
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "3PR3"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 376
+y 184
+w 164
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "3PR4"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 364
+y 276
+w 176
+h 16
+controlPv "$(P):BO:SC:2408-$(M):BIT1.DESC"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 548
+y 224
+w 96
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "Motor Control"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "main1motor.edl"
+}
+symbols {
+  0 "P=ESA,M=24,M1=2531-3,ADC=3162,DAC=4002,C1=1,D1=1"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 376
+y 224
+w 164
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Kraken"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 12
+y 224
+w 108
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH6.DESC"
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 136
+y 224
+w 60
+h 20
+controlPv "$(P):AO:4414-$(M):PC:CH6"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 204
+y 220
+w 136
+h 32
+fgColor index 13
+bgColor index 71
+2ndBgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+increment 1
+controlPv "$(P):AO:4414-$(M):PC:CH6"
+controlLabelType "pvName"
+font "courier-medium-r-12.0"
+limitsFromDb
+showLimits
+showValue
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 264
+w 340
+h 228
+lineColor index 13
+fillColor index 61
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 348
+y 264
+w 308
+h 228
+lineColor index 13
+fillColor index 64
+endObjectProperties
+

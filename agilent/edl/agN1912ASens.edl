@@ -1,0 +1,293 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1090
+y 198
+w 288
+h 268
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 25
+w 270
+h 115
+lineColor index 13
+fill
+fillColor index 4
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 5
+w 50
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Sensor"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 30
+w 29
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 13
+bgColor index 4
+value {
+  "CH A"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 145
+w 270
+h 115
+lineColor index 13
+fill
+fillColor index 4
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 150
+w 30
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 13
+bgColor index 4
+value {
+  "CH B"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 70
+y 30
+w 75
+h 15
+controlPv "$(P):SI:SENS1:TYPE"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 70
+y 150
+w 75
+h 15
+controlPv "$(P):SI:SENS2:TYPE"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 35
+y 50
+w 80
+h 15
+controlPv "$(P):AI:SENS1:TEMP.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 120
+y 50
+w 65
+h 15
+controlPv "$(P):AI:SENS1:TEMP"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 35
+y 170
+w 80
+h 15
+controlPv "$(P):AI:SENS2:TEMP.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 120
+y 170
+w 65
+h 15
+controlPv "$(P):AI:SENS2:TEMP"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 180
+y 30
+w 75
+h 14
+controlPv "$(P):SI:SENS1:SN"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 180
+y 150
+w 75
+h 14
+controlPv "$(P):SI:SENS2:SN"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+

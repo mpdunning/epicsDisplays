@@ -1,0 +1,192 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 449
+y 82
+w 432
+h 320
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 6
+bgColor index 2
+textColor index 14
+ctlFgColor1 index 69
+ctlFgColor2 index 40
+ctlBgColor1 index 39
+ctlBgColor2 index 74
+topShadowColor index 72
+botShadowColor index 12
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 45
+y 30
+w 28
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Cal"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 45
+y 60
+w 28
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Off"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 45
+y 100
+w 28
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Dir"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x -1
+y 532
+w 110
+h 20
+font "helvetica-medium-r-8.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Resolution"
+}
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 80
+y 30
+w 100
+h 20
+fgColor index 14
+bgColor index 62
+selectColor index 60
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(P):$(M).SET"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 80
+y 100
+w 100
+h 20
+fgColor index 14
+bgColor index 62
+selectColor index 60
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(P):$(M).DIR"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 80
+y 135
+w 100
+h 24
+fgColor index 14
+bgColor index 50
+inconsistentColor index 12
+topShadowColor index 0
+botShadowColor index 12
+controlPv "$(P):$(M).FOFF"
+indicatorPv "$(P):$(M).FOFF"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 80
+y 60
+w 100
+h 20
+controlPv "$(P):$(M).OFF"
+format "decimal"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 1
+editable
+motifWidget
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+

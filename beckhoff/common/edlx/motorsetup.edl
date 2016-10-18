@@ -1,0 +1,1419 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 637
+y 253
+w 560
+h 340
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 168
+w 172
+h 116
+lineColor index 5
+fill
+fillColor index 58
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 420
+y 80
+w 128
+h 68
+lineColor index 5
+fill
+fillColor index 73
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 84
+w 104
+h 112
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 32
+y 76
+w 64
+h 16
+font "courier-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 1
+value {
+  "StatByte"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 116
+y 36
+w 180
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):DATA.DESC"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 36
+w 72
+h 16
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "(KL$(MOT))"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 96
+w 12
+h 96
+controlPv "$(P):LI:$(MOT)-$(M):SBYTE"
+lineColor index 13
+onColor index 15
+offColor index 19
+numBits 8
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 48
+y 96
+w 58
+h 96
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Reg Access"
+  "Error"
+  "Warning"
+  "Idle"
+  "LoadAngle 3"
+  "LoadAngle 2"
+  "LoadAngle 1"
+  "Ready"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 96
+w 6
+h 96
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "7"
+  "6"
+  "5"
+  "4"
+  "3"
+  "2"
+  "1"
+  "0"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 128
+y 84
+w 20
+h 20
+fgColor index 13
+onColor index 58
+offColor index 34
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):LO:$(MOT)-$(M):CBYTE"
+labelType "literal"
+buttonType "push"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+controlBitPos 6
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 252
+y 80
+w 76
+h 32
+fgColor index 13
+onColor index 58
+offColor index 71
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):LO:$(MOT)-$(M):CBYTE"
+onLabel "Disable"
+offLabel "Enable"
+labelType "literal"
+3d
+font "courier-medium-r-14.0"
+objType "controls"
+controlBitPos 0
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 128
+y 108
+w 20
+h 20
+fgColor index 13
+onColor index 58
+offColor index 34
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):LO:$(MOT)-$(M):CWORD"
+labelType "literal"
+buttonType "push"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+controlBitPos 13
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 128
+y 132
+w 20
+h 20
+fgColor index 13
+onColor index 58
+offColor index 34
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:$(MOT)-$(M):SET:CURR:POS"
+labelType "literal"
+buttonType "push"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+controlBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 128
+y 4
+w 212
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Setup & Control Parameters"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 152
+y 84
+w 56
+h 20
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Reset"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 152
+y 108
+w 92
+h 20
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ClearPosition"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 152
+y 132
+w 88
+h 20
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Set Position"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 424
+y 88
+w 112
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):POS"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 73
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 212
+y 184
+w 48
+h 16
+controlPv "$(P):LO:$(MOT)-$(M):RWR:MAXV"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 132
+y 184
+w 76
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):RWR:MAXV.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 264
+y 184
+w 36
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):RWR:MAXV"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 456
+y 128
+w 49
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Refresh"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 240
+w 12
+h 12
+controlPv "$(P):LI:$(MOT)-$(M):SWORD"
+lineColor index 13
+onColor index 15
+offColor index 19
+numBits 1
+shift 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 256
+w 12
+h 12
+controlPv "$(P):LI:$(MOT)-$(M):SWORD"
+lineColor index 13
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 48
+y 240
+w 49
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Input 2"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 48
+y 256
+w 49
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Input 1"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 276
+w 12
+h 12
+controlPv "$(P):LO:$(MOT)-$(M):CBYTE"
+lineColor index 13
+onColor index 15
+offColor index 20
+numBits 1
+shift 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 48
+y 276
+w 60
+h 12
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "AutoStop"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 496
+y 4
+w 56
+h 28
+fgColor index 73
+bgColor index 34
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-14.0"
+buttonLabel "Help"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorctrlhelp.edl"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 424
+y 104
+w 112
+h 16
+controlPv "$(P):CALC:$(MOT)-$(M):POS:MM"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 73
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 412
+y 48
+w 88
+h 20
+controlPv "$(P):MBBI:$(MOT)-$(M):MOTOR:STATE"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 32
+y 224
+w 12
+h 12
+controlPv "$(P):LI:$(MOT)-$(M):SWORD"
+lineColor index 13
+onColor index 15
+offColor index 19
+numBits 1
+shift 3
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 48
+y 224
+w 56
+h 13
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "AtTarget"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 432
+y 124
+w 20
+h 20
+fgColor index 13
+onColor index 58
+offColor index 65
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:$(MOT)-$(M):READ:POS"
+labelType "literal"
+buttonType "push"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 168
+w 164
+h 96
+lineColor index 5
+fill
+fillColor index 70
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 324
+y 236
+w 56
+h 16
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 70
+value {
+  "Refresh"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 388
+y 236
+w 20
+h 20
+fgColor index 13
+onColor index 58
+offColor index 65
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:$(MOT)-$(M):READ:SETPT"
+labelType "literal"
+buttonType "push"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 380
+y 216
+w 88
+h 16
+controlPv "$(P):CALC:$(MOT)-$(M):SET:INC:STEP"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 70
+precision 0
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 424
+y 68
+w 116
+h 16
+font "courier-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 73
+value {
+  "Actual Position"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 332
+y 156
+w 116
+h 16
+font "courier-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 70
+value {
+  "Set Position"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 380
+y 196
+w 88
+h 16
+controlPv "$(P):CALC:$(MOT)-$(M):SET:POS:TOREV"
+font "courier-medium-r-12.0"
+fgColor index 29
+bgColor index 70
+precision 1
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 324
+y 176
+w 56
+h 16
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 70
+value {
+  "Absolute"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 324
+y 216
+w 56
+h 16
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 70
+value {
+  "Relative"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 212
+y 204
+w 48
+h 16
+controlPv "$(P):LO:$(MOT)-$(M):RWR:MINV"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 132
+y 204
+w 76
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):RWR:MINV.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 264
+y 204
+w 36
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):RWR:MINV"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 212
+y 224
+w 48
+h 16
+controlPv "$(P):LO:$(MOT)-$(M):RWR:MAXA"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 132
+y 224
+w 76
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):RWR:MAXA.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 264
+y 224
+w 36
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):RWR:MAXA"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 212
+y 244
+w 48
+h 16
+controlPv "$(P):LO:$(MOT)-$(M):RWR:MAXD"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 132
+y 244
+w 76
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):RWR:MAXD.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 264
+y 244
+w 36
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):RWR:MAXD"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 212
+y 264
+w 48
+h 16
+controlPv "$(P):LO:$(MOT)-$(M):RWR:EACC"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 132
+y 264
+w 76
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):RWR:EACC.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 264
+y 264
+w 36
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):RWR:EACC"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 132
+y 160
+w 136
+h 16
+font "courier-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 58
+value {
+  "Motion Parameters"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 252
+y 56
+w 20
+h 20
+fgColor index 13
+onColor index 58
+offColor index 34
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:$(MOT)-$(M):MOT:ENABL"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 276
+y 56
+w 92
+h 20
+controlPv "$(P):BO:$(MOT)-$(M):MOT:ENABL.DESC"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 416
+y 8
+w 68
+h 20
+controlPv "$(P):BI:$(MOT)-$(M):ERROR"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 414
+y 6
+w 72
+h 24
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:$(MOT)-$(M):ERROR"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 414
+y 6
+w 72
+h 24
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:$(MOT)-$(M):ERROR"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 28
+y 304
+w 384
+h 20
+controlPv "$(P):WF:$(MOT)-$(M):MESSAGE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 73
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 380
+y 176
+w 88
+h 16
+controlPv "$(P):LI:$(MOT)-$(M):SET:POS"
+font "courier-medium-r-12.0"
+fgColor index 29
+bgColor index 70
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 304
+y 268
+w 80
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Resolution"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 396
+y 268
+w 96
+h 20
+controlPv "$(P):AO:$(MOT)-$(M):RESOL"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 492
+y 268
+w 56
+h 20
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "mm/step"
+}
+endObjectProperties
+

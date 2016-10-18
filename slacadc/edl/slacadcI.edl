@@ -1,0 +1,265 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 904
+y 221
+w 332
+h 180
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 120
+y 112
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "bits"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "slacadcIBits.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 24
+y 144
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Chanls"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "slacadcIChan.edl"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 132
+y 44
+w 92
+h 16
+controlPv "$(P):$(R):BI:STATE.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 236
+y 44
+w 44
+h 16
+controlPv "$(P):$(R):BI:STATE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 232
+y 40
+w 52
+h 24
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "$(P):$(R):BI:STATE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 232
+y 40
+w 52
+h 24
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "$(P):$(R):BI:STATE"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 24
+y 112
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "Registers"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "slacadcIRegs.edl"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 8
+w 312
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Controls for SLAC Integrating ADC"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 216
+y 144
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "Debug"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "slacadcDebug.edl"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 28
+y 80
+w 80
+h 12
+controlPv "$(P):$(R):SI:TYPE.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 112
+y 80
+w 92
+h 13
+controlPv "$(P):$(R):SI:TYPE"
+font "courier-bold-r-12.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+

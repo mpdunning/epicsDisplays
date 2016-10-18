@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>518</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>32</y>
+      <width>501</width>
+      <height>427</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="motor1">
+     <attribute name="title">
+      <string>Motor 1</string>
+     </attribute>
+     <widget class="QTabWidget" name="motor1_tab">
+      <property name="geometry">
+       <rect>
+        <x>6</x>
+        <y>6</y>
+        <width>485</width>
+        <height>385</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="control">
+       <attribute name="title">
+        <string>Control</string>
+       </attribute>
+       <widget class="QPushButton" name="motorXPB">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>326</y>
+          <width>83</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor 1</string>
+        </property>
+       </widget>
+       <widget class="QEForm" name="qeform">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/control.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-1,N=2</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="coefMXPB">
+        <property name="geometry">
+         <rect>
+          <x>378</x>
+          <y>326</y>
+          <width>83</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Coefficients</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>276</x>
+          <y>326</y>
+          <width>99</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pos Conversion</string>
+        </property>
+       </widget>
+       <zorder>qeform</zorder>
+       <zorder>motorXPB</zorder>
+       <zorder>coefMXPB</zorder>
+       <zorder>label</zorder>
+      </widget>
+      <widget class="QWidget" name="csr">
+       <attribute name="title">
+        <string>CSR</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_3">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/csr.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-1,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="readreg">
+       <attribute name="title">
+        <string>readReg</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_5">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/readreg.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-1,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="writeram">
+       <attribute name="title">
+        <string>writeRAM</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_7">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/writeram.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-1,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="writeeeprom">
+       <attribute name="title">
+        <string>writeEEPROM</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_9">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/writeeep.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-1,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="feature1">
+       <attribute name="title">
+        <string>Feature 1</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_11">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/feature.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-1,N=2</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="motor2">
+     <attribute name="title">
+      <string>Motor 2</string>
+     </attribute>
+     <widget class="QTabWidget" name="motor2_tab">
+      <property name="geometry">
+       <rect>
+        <x>6</x>
+        <y>6</y>
+        <width>485</width>
+        <height>385</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="control_2">
+       <attribute name="title">
+        <string>Control</string>
+       </attribute>
+       <widget class="QPushButton" name="motorYPB">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>326</y>
+          <width>83</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor 2</string>
+        </property>
+       </widget>
+       <widget class="QEForm" name="qeform_2">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/control.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-2,N=2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>276</x>
+          <y>326</y>
+          <width>99</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Pos Conversion</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="coefMYPB">
+        <property name="geometry">
+         <rect>
+          <x>378</x>
+          <y>326</y>
+          <width>83</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Coefficients</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="csr_2">
+       <attribute name="title">
+        <string>CSR</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_4">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/csr.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-2,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="readreg_2">
+       <attribute name="title">
+        <string>readReg</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_6">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/readreg.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-2,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="writeram_2">
+       <attribute name="title">
+        <string>writeRAM</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_8">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/writeram.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-2,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="writeeeprom_2">
+       <attribute name="title">
+        <string>writeEEPROM</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_10">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/writeeep.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-2,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="feature1_2">
+       <attribute name="title">
+        <string>Feature 1</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_12">
+        <property name="geometry">
+         <rect>
+          <x>6</x>
+          <y>6</y>
+          <width>470</width>
+          <height>314</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/feature.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,Q=2531-2,N=2</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="adc">
+     <attribute name="title">
+      <string>ADC/DAC</string>
+     </attribute>
+     <widget class="QEForm" name="qeform_13">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>14</y>
+        <width>470</width>
+        <height>314</height>
+       </rect>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>../ui-common/adcdac.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA,R=3132,T=4132,N=2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>292</x>
+        <y>342</y>
+        <width>99</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ADC Conversion</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="coefADCPB">
+      <property name="geometry">
+       <rect>
+        <x>394</x>
+        <y>342</y>
+        <width>83</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Coefficients</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="hidden">
+     <attribute name="title">
+      <string>Hidden</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>14</y>
+        <width>470</width>
+        <height>314</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Mot 1</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_14">
+        <property name="geometry">
+         <rect>
+          <x>8</x>
+          <y>8</y>
+          <width>378</width>
+          <height>260</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/hiddenreg.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>Q=2531-1,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Mot 2</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_15">
+        <property name="geometry">
+         <rect>
+          <x>8</x>
+          <y>8</y>
+          <width>378</width>
+          <height>260</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/hiddenreg.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>Q=2531-2,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>ADC</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_16">
+        <property name="geometry">
+         <rect>
+          <x>8</x>
+          <y>8</y>
+          <width>378</width>
+          <height>260</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/hiddenreg.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>Q=3132,N=2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>DAC</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_17">
+        <property name="geometry">
+         <rect>
+          <x>8</x>
+          <y>8</y>
+          <width>378</width>
+          <height>260</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>../ui-common/hiddenreg.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>Q=4132,N=2</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="bk9000">
+     <attribute name="title">
+      <string>BK9000</string>
+     </attribute>
+     <widget class="QEForm" name="qeFormBK9">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>14</y>
+        <width>470</width>
+        <height>340</height>
+       </rect>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>../ui-common/bk9000.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA,N=2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="debugPB">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>366</y>
+        <width>72</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Debug</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QELabel" name="errMessage1">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>466</y>
+      <width>429</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):WF:BKHERR-$(N):MESSAGE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,N=2</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QELabel::Never</enum>
+    </property>
+    <property name="buddy">
+     <cstring>message</cstring>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelError">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>8</y>
+      <width>56</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgb(255,255,230)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):BI:BKHERR-$(N):ERROR</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,N=2</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QELabel::Never</enum>
+    </property>
+   </widget>
+   <widget class="CAShape" name="cashape">
+    <property name="geometry">
+     <rect>
+      <x>438</x>
+      <y>6</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <UInt>2</UInt>
+    </property>
+    <property name="rectangle" stdset="0">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="color1">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="color2">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):BI:BKHERR-$(N):ERROR</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,N=2</string>
+    </property>
+   </widget>
+   <zorder>cashape</zorder>
+   <zorder>tabWidget</zorder>
+   <zorder>errMessage1</zorder>
+   <zorder>qelError</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>518</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AShape</class>
+   <extends>QWidget</extends>
+   <header>ashape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAShape</class>
+   <extends>AShape</extends>
+   <header>cashape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

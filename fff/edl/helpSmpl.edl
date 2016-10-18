@@ -1,0 +1,136 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 694
+y 336
+w 450
+h 640
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 1
+w 448
+h 30
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 395
+y 4
+w 50
+h 24
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 8
+w 148
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Help for Fault Setup Panel"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 31
+y 45
+w 389
+h 560
+font "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 4
+useDisplayBg
+value {
+  "The Text Controls are used to write new values to the registers."
+  "After typing a new value, it is sent to the register when the \"Enter\""
+  "key is pressed on the keyboard.  Text Controls are in columns"
+  "labeled \"sample #\", \"Upper Limit\",\"Lower Limit\", and \"Tick Limit\"."
+  ""
+  "The on/off buttons are used to turn off or on a bit in either the RF"
+  "or MOD Fault Mask register.  When the button is showing the \"on\""
+  "label the particular trip is enabled."
+  ""
+  "The \"sample #\", \"Lower Limit\",Upper Limit\", \"Tick Limit\", RF and Mod"
+  "flags values are saved and restored by autosave EPICS utility."
+  "Hence, changes made to any of these values are saved to a disk file"
+  "and restored when the IOC boots."
+  ""
+  "The \"value read\" field contains two sensitive areas, one on the left"
+  "the other on the right.  Right clicking on one of these areas brings up"
+  "a dialog which shows engineering units and alarm limits (left sensitive"
+  "area), or calculated running averages ( right sentive area)."
+  ""
+  "Unlabeled Related Display buttons in a collumn between \"value read\""
+  "and \"Lower Limit\" are used to pop up a dialog via which one can"
+  "view or modify DRVH and DRVL epics record parameters for each"
+  "channel.  These parameters are used to force a new entered value"
+  "to be:  DRVL<=newVal<=DRVH."
+  ""
+  "Note that Text Controls values can be changed by a \"super user\"."
+  "For all other uses they are read only."
+  ""
+  "The File Name Text Control value is used to construct a path"
+  "for saving or restoring the contents of this pannel to or from a disk"
+  "file.  The constructed path is: /data/<file name>,"
+  "where <file name> is taken from the Text Control and /data is the NFS"
+  "mount point as specified in the st.cmd file.  The default file name"
+  "is defined in the sncFFF.st program.  It can be overriden in the"
+  "st.cmd file on the line where the sequencer program is started."
+  "For example: seq &sncFFF,\"C=1,FN=apath/myfile.txt\""
+  "will use /data/apath/myfile.txt for save/restore."
+  "NOTE: When saving to a file, if a file of this name already exists,"
+  "it will be overwritten.  This feature is useful if one wants to"
+  "save to a disk file a set of Limits data for future retrieval."
+}
+autoSize
+endObjectProperties
+

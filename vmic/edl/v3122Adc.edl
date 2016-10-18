@@ -1,0 +1,541 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 679
+y 25
+w 500
+h 400
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 600
+h 35
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 10
+y 10
+w 95
+h 14
+controlPv "$(P):ADC:SI:NAME"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 47
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+# Geometry
+x 5
+y 45
+w 165
+h 190
+# Appearance
+border
+autoScaleBothDirections
+graphTitle "ADC"
+xLabel "channel"
+yLabel "volt"
+fgColor index 11
+bgColor index 12
+gridColor index 7
+font "courier-medium-r-10.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 8
+xLabelIntervals 4
+xShowLabelGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "fromUser"
+yMin -10
+yMax 10
+yLabelIntervals 5
+yShowLabelGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(P):ADC:WF:DATA"
+}
+plotSymbolType {
+  0 "diamond"
+}
+opMode {
+  0 "plot"
+}
+ySigned {
+  0 1
+}
+plotColor {
+  0 index 45
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 245
+w 105
+h 25
+fgColor index 13
+bgColor index 50
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(P):ADC:BO:TRIGGER.SCAN"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 435
+y 5
+w 60
+h 24
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 315
+w 195
+h 70
+lineColor index 13
+fill
+fillColor index 50
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 335
+w 80
+h 18
+controlPv "$(P):ADC:SO:REGISTER.IVOV"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 35
+y 340
+w 75
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "register index"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 35
+y 360
+w 75
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "value to write"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 35
+y 320
+w 77
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Write Register"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 360
+w 80
+h 18
+controlPv "$(P):ADC:SO:REGISTER.VAL"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 215
+y 315
+w 245
+h 70
+lineColor index 13
+fill
+fillColor index 73
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 315
+y 335
+w 124
+h 18
+controlPv "$(P):ADC:SI:REGISTER.SVAL"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 315
+y 360
+w 124
+h 18
+controlPv "$(P):ADC:SI:REGISTER.VAL"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 235
+y 340
+w 75
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "register index"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 360
+w 81
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "value returned"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 235
+y 320
+w 78
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Read Register"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 205
+y 10
+w 65
+h 14
+controlPv "$(P):ADC:LI:MID"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 63
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 175
+y 10
+w 26
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "MID:"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 135
+y 245
+w 90
+h 25
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(P):ADC:BO:TRIGGER.PROC"
+pressValue "1"
+onLabel "get One"
+offLabel "get One"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (barGraph)
+object barGrClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+# Geometry
+x 335
+y 45
+w 155
+h 190
+# Appearance
+border
+graphTitle "ADC Data"
+xLabel "Chan"
+yLabel "Volt"
+fgColor index 13
+bgColor index 4
+gridColor index 13
+font "courier-medium-r-10.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 8
+xLabelIntervals 4
+xShowLabelGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "fromUser"
+yMin -10
+yMax 10
+yLabelIntervals 5
+yShowLabelGrid
+yUserSpecScaleDiv 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(P):ADC:WF:DATA"
+}
+lineThickness {
+  0 6
+}
+plotUpdateMode {
+  0 "y"
+}
+ySigned {
+  0 1
+}
+plotColor {
+  0 index 21
+}
+endObjectProperties
+

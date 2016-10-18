@@ -1,0 +1,665 @@
+4 0 0
+beginScreenProperties
+major 4
+minor 0
+release 0
+x 762
+y 532
+w 380
+h 150
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+textColor rgb 0 0 0
+ctlFgColor1 rgb 64256 62208 18944
+ctlFgColor2 rgb 60928 46592 11008
+ctlBgColor1 rgb 52480 24832 0
+ctlBgColor2 rgb 65280 45056 65280
+topShadowColor rgb 44544 19968 48128
+botShadowColor rgb 13312 13056 34304
+snapToGrid
+gridSize 5
+endScreenProperties
+
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 379
+h 25
+lineColor rgb 60416 60416 60416
+fill
+fillColor rgb 60416 60416 60416
+lineWidth 0
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 66
+w 215
+h 20
+controlPv "$(P)$(C).INPB"
+font "helvetica-medium-r-8.0"
+smartRefresh
+fastUpdate
+fgColor rgb 0 0 0
+bgColor rgb 41984 43520 65280
+editable
+autoHeight
+format "string"
+motifWidget
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 56
+w 180
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "PV NAME OF CHANNEL TO AVERAGE"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 240
+h 26
+controlPv "$(P)$(C).DESC"
+font "helvetica-medium-r-8.0"
+smartRefresh
+fastUpdate
+fgColor rgb 2560 0 47104
+bgColor rgb 60416 60416 60416
+editable
+autoHeight
+format decimal
+motifWidget
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 241
+y 6
+w 140
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "($(P)$(C))"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 32
+w 80
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 64768 0 0
+useDisplayBg
+value {
+ "DISABLED"
+}
+visPv "CALC\\\{(A)\}($(P)userAveEnable.VAL)"
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 26
+w 384
+h 3
+lineColor rgb 2560 0 47104
+fillColor rgb 2560 0 47104
+lineWidth 2
+numPoints 2 {
+xPoints  {
+0 1
+1 382
+}
+yPoints  {
+0 27
+1 27
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 155
+y 33
+w 70
+h 15
+font "helvetica-medium-r-8.0"
+fgColor rgb 2560 0 47104
+useDisplayBg
+value {
+ "ENABLED"
+}
+visPv "CALC\\\{(A)\}($(P)userAveEnable.VAL)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 224
+y 59
+w 80
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Input Value:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 312
+y 56
+w 65
+h 15
+controlPv "$(P)$(C).B"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+autoHeight
+format "string"
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x -4
+y 51
+w 384
+h 3
+lineColor rgb 2560 0 47104
+fillColor rgb 2560 0 47104
+lineWidth 2
+numPoints 2 {
+xPoints  {
+0 -3
+1 378
+}
+yPoints  {
+0 52
+1 52
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 154
+y 128
+w 30
+h 20
+controlPv "$(P)$(C).PREC"
+font "helvetica-medium-r-8.0"
+smartRefresh
+fastUpdate
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+editable
+autoHeight
+format decimal
+motifWidget
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 134
+w 143
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "# OF DIGITS TO DISPLAY:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 154
+y 108
+w 64
+h 20
+controlPv "$(P)$(C).A"
+font "helvetica-medium-r-8.0"
+smartRefresh
+fastUpdate
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+editable
+autoHeight
+format "decimal"
+precision 0
+motifWidget
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 114
+w 143
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "# OF SAMPLES TO AVERAGE:"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 177
+y 133
+w 8
+h 3
+lineColor rgb 0 0 0
+fillColor rgb 0 0 0
+lineWidth 3
+numPoints 2 {
+xPoints  {
+0 178
+1 183
+}
+yPoints  {
+0 134
+1 134
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 137
+w 11
+h 3
+lineColor rgb 39168 65280 65280
+fillColor rgb 39168 65280 65280
+lineWidth 3
+numPoints 2 {
+xPoints  {
+0 183
+1 191
+}
+yPoints  {
+0 138
+1 138
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 94
+w 143
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "CURRENT SAMPLE #"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 154
+y 90
+w 64
+h 14
+controlPv "$(P)$(C).E"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+autoHeight
+format "decimal"
+precision 0
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 224
+y 80
+w 154
+h 41
+
+beginGroup
+
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 224
+y 95
+w 154
+h 26
+controlPv "$(P)$(C).VAL"
+font "helvetica-medium-r-8.0"
+fgColor rgb 65280 65280 65280
+fgAlarm
+bgColor rgb 0 0 0
+autoHeight
+format "string"
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 227
+y 80
+w 150
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Averaged Value:"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 2
+y 32
+w 100
+h 16
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(P)$(C).SCAN"
+indicatorPv "$(P)$(C).SCAN"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 107
+y 30
+w 40
+h 20
+fgColor rgb 0 0 0
+onColor rgb 29440 57088 65280
+offColor rgb 29440 57088 65280
+topShadowColor rgb 65280 65280 65280
+botShadowColor rgb 0 0 0
+controlPv "$(P)$(C).PROC"
+pressValue "1"
+releaseValue 
+onLabel "PROC"
+offLabel "PROC"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 234
+y 33
+w 100
+h 16
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "ENABLE ALL"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 userAve10.edl
+}
+menuLabel {
+  0 userAverages (all)
+}
+symbols {
+  0  "P=$(P)"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 224
+y 128
+w 100
+h 18
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(P)$(C)_mode.VAL"
+indicatorPv "$(P)$(C)_mode.VAL"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 328
+y 128
+w 50
+h 18
+fgColor rgb 0 0 0
+onColor rgb 29440 57088 65280
+offColor rgb 29440 57088 65280
+topShadowColor rgb 65280 65280 65280
+botShadowColor rgb 0 0 0
+controlPv "$(P)$(C).C"
+pressValue "1"
+releaseValue 
+onLabel "RESTART"
+offLabel "RESTART"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 189
+y 129
+w 29
+h 18
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Fix"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 userAve.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "P=$(P),C=$(C)"
+}
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 224
+y 80
+w 154
+h 41
+
+beginGroup
+
+
+endGroup
+
+endObjectProperties
+
+

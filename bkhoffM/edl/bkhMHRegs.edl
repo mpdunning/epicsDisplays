@@ -1,0 +1,344 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 413
+y 103
+w 400
+h 280
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 120
+y 208
+w 60
+h 20
+controlPv "$(P):LO:$(T)-$(M):REGN"
+format "decimal"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 4
+w 342
+h 15
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Read from or write to Hidden Registers"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 216
+y 208
+w 40
+h 20
+controlPv "$(P):LI:$(T)-$(M):REGVAL"
+format "decimal"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 184
+y 208
+w 32
+h 20
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "RBV:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 120
+y 232
+w 60
+h 20
+controlPv "$(P):LO:$(T)-$(M):WREG:VAL"
+format "hex"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 232
+w 91
+h 20
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Data to write"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 268
+y 208
+w 48
+h 20
+controlPv "$(P):LI:$(T)-$(M):REGVAL"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 260
+y 208
+w 7
+h 20
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "("
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 208
+w 7
+h 20
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  ")"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 120
+y 184
+w 60
+h 20
+controlPv "$(P):LO:$(T)-$(M):CHAN"
+format "decimal"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 36
+y 184
+w 80
+h 20
+controlPv "$(P):LO:$(T)-$(M):CHAN.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 36
+y 208
+w 80
+h 20
+controlPv "$(P):LO:$(T)-$(M):REGN.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 184
+y 232
+w 48
+h 20
+controlPv "$(P):LI:$(T)-$(M):WR:RBV"
+format "hex"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 24
+y 32
+w 357
+h 130
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "A. read:"
+  "  enter Channel number"
+  "  enter register number (RegNumb)"
+  "  The value read is shown as read back value (RBV)."
+  "B. write"
+  "  enter Channel number"
+  "  enter RegNum, this will read current contents,"
+  "  enter a new value in hexadecimal,"
+  "  The new value is read back and displayed to the"
+  "  right of the control widget."
+}
+autoSize
+endObjectProperties
+

@@ -1,0 +1,2449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CSR</class>
+ <widget class="QDialog" name="CSR">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>451</width>
+    <height>309</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>4</y>
+     <width>444</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QELabel" name="qelabel">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>4</y>
+      <width>81</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LI:$(Q)-$(N):DATA.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,Q=2531-1,N=2</string>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="csrClosePB">
+    <property name="geometry">
+     <rect>
+      <x>376</x>
+      <y>4</y>
+      <width>57</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="SB_label_15">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>120</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>LoadAngle 3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_9">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>156</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Ready</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_8">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>96</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Warning</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_12">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>132</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>LoadAngle 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_14">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>108</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Idle</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_13">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>72</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>RegAccess</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_7">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>176</y>
+     <width>26</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:$(Q)-$(N):SBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QELabel::Automatic</enum>
+   </property>
+   <property name="arrayAction" stdset="0">
+    <enum>QELabel::Ascii</enum>
+   </property>
+   <property name="updateOption" stdset="0">
+    <enum>QELabel::Text</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>72</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_10">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>144</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>LoadAngle 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>156</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>52</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>StatusByte</string>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>72</y>
+     <width>12</width>
+     <height>96</height>
+    </rect>
+   </property>
+   <property name="Orientation">
+    <enum>QBitStatus::LSB_On_Bottom</enum>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>157</red>
+     <green>171</green>
+     <blue>193</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:$(Q)-$(N):SBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_11">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>84</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Error</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>172</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELineEdit::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_8">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>204</y>
+     <width>57</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:$(Q)-$(N):DATA</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_22">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>156</y>
+     <width>53</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Enable</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_23">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>132</y>
+     <width>53</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>52</y>
+     <width>73</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ControlByte</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_31">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>204</y>
+     <width>56</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Data In</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_18">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>108</y>
+     <width>53</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>AutoStart</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_20">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>144</y>
+     <width>53</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>FastStop</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_19">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>84</y>
+     <width>53</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_17">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>96</y>
+     <width>53</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>AutoStop</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_32">
+   <property name="geometry">
+    <rect>
+     <x>66</x>
+     <y>228</y>
+     <width>56</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Data Out</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_16">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>120</y>
+     <width>53</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Reduced</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_21">
+   <property name="geometry">
+    <rect>
+     <x>126</x>
+     <y>70</y>
+     <width>53</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>RegAccess</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>224</y>
+     <width>65</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):DATAOUT</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_36">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>228</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>SetPosReady</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_37">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>216</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>TargetReached</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_13">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>272</y>
+     <width>45</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:$(Q)-$(N):SWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QELabel::Automatic</enum>
+   </property>
+   <property name="arrayAction" stdset="0">
+    <enum>QELabel::Ascii</enum>
+   </property>
+   <property name="updateOption" stdset="0">
+    <enum>QELabel::Text</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_38">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>168</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>EncDisabled</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_39">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>192</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>LatchDataIn</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_29">
+   <property name="geometry">
+    <rect>
+     <x>216</x>
+     <y>52</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>StatusWord</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_25">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>96</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>OverCurr B</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>108</y>
+     <width>14</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_28">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>72</y>
+     <width>14</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>15</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>208</y>
+     <width>14</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QEBitStatus" name="qebitstatus_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>72</y>
+     <width>12</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="numberOfBits">
+    <number>16</number>
+   </property>
+   <property name="Orientation">
+    <enum>QBitStatus::LSB_On_Bottom</enum>
+   </property>
+   <property name="offColour">
+    <color>
+     <red>157</red>
+     <green>171</green>
+     <blue>193</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:$(Q)-$(N):SWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_26">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>108</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>OverCurr A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_27">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>84</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>NoCtrlPower</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>160</y>
+     <width>14</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>220</y>
+     <width>14</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>124</y>
+     <width>14</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>11</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_24">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>120</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>OpenLoop B</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>172</y>
+     <width>14</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_31">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>132</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>OpenLoop A</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_32">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>240</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Input 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_33">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>204</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>LatchValid</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_28">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>144</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>UnderVolt</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_34">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>252</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Input 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_29">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>72</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ConfigError</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>202</x>
+     <y>252</y>
+     <width>14</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_35">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>178</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>LatchDataTogld</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_30">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>156</y>
+     <width>65</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>OverTemp</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_3">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>268</y>
+     <width>57</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELineEdit::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_54">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>216</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>enLatchRiseEdge</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_52">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>204</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>enLatchFallEdge</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_41">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>84</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>SetPosInProcData</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_42">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>144</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>DisMixedDecay</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_30">
+   <property name="geometry">
+    <rect>
+     <x>332</x>
+     <y>52</y>
+     <width>77</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ControlWord</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_50">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>192</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>GetLatchData</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_40">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>156</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>GetEncPos</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_51">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>240</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>enLatchInput 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_43">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>120</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ReducedCurr</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_45">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>96</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ClearPosition</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_47">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>166</y>
+     <width>80</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>GetPosError</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_53">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>180</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ToggleLatchData</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_46">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>108</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>ReducedDrivCurr</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_48">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>250</y>
+     <width>80</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>enLatchC (intrn)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_44">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>132</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>SetPosition</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SB_label_49">
+   <property name="geometry">
+    <rect>
+     <x>344</x>
+     <y>228</y>
+     <width>80</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>enLatchInput 2</string>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CB7_MB">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>72</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColor">
+    <color>
+     <red>100</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>7</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CB0_MB">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>156</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>0</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CB2_MB">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>132</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>2</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CB5_MB">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>96</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>5</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CB4_MB">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>108</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>4</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CB1_MB">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>144</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColor">
+    <color>
+     <red>100</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>1</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CB3_MB">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>120</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColor">
+    <color>
+     <red>100</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>3</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CB6_MB">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>84</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="offColor">
+    <color>
+     <red>100</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>6</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW00_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>252</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>0</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW01_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>240</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>1</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW02_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>228</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>2</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW03_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>216</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>3</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW04_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>204</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>4</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW05_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>192</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>5</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW06_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>180</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>6</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW07_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>168</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>7</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW09_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>144</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>9</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW08_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>156</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>8</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW10_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>132</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>10</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW11_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>120</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>11</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW12_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>108</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>12</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW13_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>96</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>13</UInt>
+   </property>
+  </widget>
+  <widget class="MyButton" name="CW14_MB">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>84</y>
+     <width>12</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(Q)-$(N):CWORD</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>14</UInt>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>176</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>272</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyButton</class>
+   <extends>QPushButton</extends>
+   <header>mybutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEBitStatus</class>
+   <extends>QBitStatus</extends>
+   <header>QEBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QBitStatus</class>
+   <extends>QWidget</extends>
+   <header>QBitStatus.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ADCCoef</class>
+ <widget class="QDialog" name="ADCCoef">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>248</width>
+    <height>197</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>2</y>
+     <width>249</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>8</y>
+      <width>147</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Conversion: V to mm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closePB">
+    <property name="geometry">
+     <rect>
+      <x>182</x>
+      <y>4</y>
+      <width>56</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>60</y>
+     <width>65</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Intercept</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>84</y>
+     <width>65</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Slope</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_2">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>84</y>
+     <width>89</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AO:$(R)-$(N):CH1:B</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=3132,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>60</y>
+     <width>89</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AO:$(R)-$(N):CH1:A</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=3132,N=2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>140</y>
+     <width>65</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Intercept</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>164</y>
+     <width>65</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Slope</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_3">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>164</y>
+     <width>89</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AO:$(R)-$(N):CH2:B</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=3132,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_4">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>140</y>
+     <width>89</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AO:$(R)-$(N):CH2:A</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=3132,N=2</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>38</y>
+     <width>193</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ADC Chan 1</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>34</x>
+     <y>116</y>
+     <width>191</width>
+     <height>73</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ADC Chan 2</string>
+   </property>
+  </widget>
+  <zorder>groupBox_2</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>frame</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>qelineedit_2</zorder>
+  <zorder>qelineedit</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>qelineedit_3</zorder>
+  <zorder>qelineedit_4</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuSetup">
+    <property name="title">
+     <string>Setup</string>
+    </property>
+    <addaction name="actionPWM"/>
+   </widget>
+   <widget class="QMenu" name="menuShow">
+    <property name="title">
+     <string>Show</string>
+    </property>
+    <addaction name="actionShowHMRegs"/>
+    <addaction name="actionShowStatus"/>
+    <addaction name="actionShowHMAdcs"/>
+    <addaction name="actionShowTrig"/>
+    <addaction name="actionShowPWM"/>
+    <addaction name="actionShowWFM"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowGDRegs"/>
+    <addaction name="actionShowGDWFM"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSetup"/>
+   <addaction name="menuShow"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionPWM">
+   <property name="text">
+    <string>PWM</string>
+   </property>
+  </action>
+  <action name="actionShowHMRegs">
+   <property name="text">
+    <string>HM Registers</string>
+   </property>
+  </action>
+  <action name="actionShowStatus">
+   <property name="text">
+    <string>Status</string>
+   </property>
+  </action>
+  <action name="actionShowHMAdcs">
+   <property name="text">
+    <string>HM ADC's</string>
+   </property>
+  </action>
+  <action name="actionShowTrig">
+   <property name="text">
+    <string>Trig Control</string>
+   </property>
+  </action>
+  <action name="actionShowPWM">
+   <property name="text">
+    <string>PWM</string>
+   </property>
+  </action>
+  <action name="actionShowWFM">
+   <property name="text">
+    <string>WFM</string>
+   </property>
+  </action>
+  <action name="actionShowGDRegs">
+   <property name="text">
+    <string>GD Registers</string>
+   </property>
+  </action>
+  <action name="actionShowGDWFM">
+   <property name="text">
+    <string>GD Monitor WFM</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,364 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 816
+y 351
+w 920
+h 645
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 10
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 919
+h 45
+lineColor index 13
+fill
+fillColor index 64
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 845
+y 10
+w 50
+h 25
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 11
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+exitProgram
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 10
+y 10
+w 130
+h 16
+controlPv "LB:name"
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 11
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 47
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 1270
+y 1180
+w 30
+h 21
+controlPv "LB:SIS:perSecond"
+font "helvetica-bold-r-18.0"
+fgColor index 55
+bgColor index 11
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 47
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1300
+y 1180
+w 67
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 55
+bgColor index 34
+useDisplayBg
+value {
+  "reads/sec"
+}
+autoSize
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 85
+w 880
+h 540
+fgColor index 4
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+filePv "LOC\\showIt=s:diagram"
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 60
+w 85
+h 20
+fgColor index 13
+onColor index 6
+offColor index 4
+topShadowColor index 4
+botShadowColor index 4
+controlPv "LOC\\showIt"
+pressValue "diagram"
+onLabel "Overview"
+offLabel "Overview"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 195
+y 60
+w 85
+h 20
+fgColor index 13
+onColor index 6
+offColor index 4
+topShadowColor index 4
+botShadowColor index 4
+controlPv "LOC\\showIt"
+pressValue "sis"
+onLabel "SIS Module"
+offLabel "SIS Module"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 285
+y 60
+w 85
+h 20
+fgColor index 13
+onColor index 6
+offColor index 4
+topShadowColor index 4
+botShadowColor index 4
+controlPv "LOC\\showIt"
+pressValue "dio"
+onLabel "DIO Module"
+offLabel "DIO Module"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 375
+y 60
+w 85
+h 20
+fgColor index 13
+onColor index 6
+offColor index 4
+topShadowColor index 4
+botShadowColor index 4
+controlPv "LOC\\showIt"
+pressValue "dac"
+onLabel "DAC Module"
+offLabel "DAC Module"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 465
+y 60
+w 85
+h 20
+fgColor index 13
+onColor index 6
+offColor index 4
+topShadowColor index 4
+botShadowColor index 4
+controlPv "LOC\\showIt"
+pressValue "vme"
+onLabel "VME Crate"
+offLabel "VME Crate"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 155
+y 10
+w 55
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "started on"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 220
+y 10
+w 120
+h 14
+controlPv "LB:startTime"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 64
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 380
+y 10
+w 135
+h 14
+controlPv "LB:currTime"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 64
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 105
+y 60
+w 85
+h 20
+fgColor index 13
+onColor index 6
+offColor index 4
+topShadowColor index 4
+botShadowColor index 4
+controlPv "LOC\\showIt"
+pressValue "channels"
+onLabel "Chnnels"
+offLabel "Channels"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 80
+w 890
+h 550
+lineColor index 4
+fillColor index 4
+lineWidth 3
+endObjectProperties
+

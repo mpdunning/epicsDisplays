@@ -1,0 +1,546 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 957
+y 495
+w 560
+h 72
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 24
+y 8
+w 36
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorx_setup.edl"
+}
+symbols {
+  0 "P=$(P):,M=$(M1)"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 24
+y 36
+w 36
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorx_setup.edl"
+}
+symbols {
+  0 "P=$(P):,M=$(M2)"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 64
+y 8
+w 64
+h 20
+controlPv "$(P):$(M1):AO:ABS"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 64
+y 36
+w 64
+h 20
+controlPv "$(P):$(M2):AO:ABS"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 132
+y 8
+w 32
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(M1):AO:ABS:GO.PROC"
+pressValue "1"
+onLabel "GO"
+offLabel "GO"
+3d
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 132
+y 36
+w 32
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(M2):AO:ABS:GO.PROC"
+pressValue "1"
+onLabel "GO"
+offLabel "GO"
+3d
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 168
+y 8
+w 52
+h 20
+controlPv "$(P):$(M1).RBV"
+font "courier-medium-r-12.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 168
+y 36
+w 52
+h 20
+controlPv "$(P):$(M2).RBV"
+font "courier-medium-r-12.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 228
+y 8
+w 60
+h 20
+controlPv "$(P):$(M1).TWV"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+precision 2
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 228
+y 36
+w 60
+h 20
+controlPv "$(P):$(M2).TWV"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+precision 2
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 292
+y 8
+w 24
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(M1).TWR"
+pressValue "1"
+onLabel "-"
+offLabel "-"
+3d
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 292
+y 36
+w 24
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(M2).TWR"
+pressValue "1"
+onLabel "-"
+offLabel "-"
+3d
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 8
+w 24
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(M1).TWF"
+pressValue "1"
+onLabel "+"
+offLabel "+"
+3d
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 320
+y 36
+w 24
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(M2).TWF"
+pressValue "1"
+onLabel "+"
+offLabel "+"
+3d
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 368
+y 20
+w 60
+h 20
+controlPv "$(P):$(M3):AO:REL"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 432
+y 20
+w 24
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(M3):DF:REL:CCK.PROC"
+pressValue "1"
+onLabel "-"
+offLabel "-"
+3d
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 460
+y 20
+w 24
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(M3):DF:REL:CLK.PROC"
+pressValue "1"
+onLabel "+"
+offLabel "+"
+3d
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 20
+w 24
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(M3):DF:REL:LFT.PROC"
+pressValue "1"
+onLabel "-"
+offLabel "-"
+3d
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 528
+y 20
+w 24
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(M3):DF:REL:RHT.PROC"
+pressValue "1"
+onLabel "+"
+offLabel "+"
+3d
+font "courier-bold-r-14.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 8
+w 16
+h 16
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "$(M1)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 36
+w 16
+h 16
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "$(M2)"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 226
+y 6
+w 64
+h 24
+lineColor index 36
+fillColor index 2
+lineWidth 2
+visPv "$(P):$(M1).LVIO"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 226
+y 34
+w 64
+h 24
+lineColor index 36
+fillColor index 2
+lineWidth 2
+visPv "$(P):$(M2).LVIO"
+visMin "1"
+visMax "2"
+endObjectProperties
+

@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>kl2xxxForm</class>
+ <widget class="QWidget" name="kl2xxxForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>186</width>
+    <height>192</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QELineEdit" name="qelineedit">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>8</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT1.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="CAButton" name="cabutton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>8</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnClick" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT1</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="CAButton" name="cabutton_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnClick" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT2</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_2">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>30</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT2.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="CAButton" name="cabutton_3">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>52</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnClick" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT3</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="CAButton" name="cabutton_4">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>74</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnClick" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT4</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_3">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>52</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT3.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_4">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>74</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT4.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_5">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>142</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT7.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_6">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>164</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT8.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="CAButton" name="cabutton_5">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>164</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnClick" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT8</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="CAButton" name="cabutton_6">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>120</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnClick" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT6</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="CAButton" name="cabutton_7">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>98</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnClick" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT5</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="CAButton" name="cabutton_8">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>142</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnClick" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT7</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_7">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>98</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT5.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_8">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>120</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:SC:$(M)-$(N):BIT6.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QEGenericEdit::Never</enum>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AButton</class>
+   <extends>QPushButton</extends>
+   <header>abutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAButton</class>
+   <extends>AButton</extends>
+   <header>cabutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

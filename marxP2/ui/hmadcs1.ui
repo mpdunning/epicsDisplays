@@ -1,0 +1,1539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HMAdcs1Dialog</class>
+ <widget class="QDialog" name="HMAdcs1Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>374</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>4</y>
+     <width>365</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>HM02</string>
+   </property>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>20</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:00.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>185</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:00.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_3">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>20</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.31 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:00</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_4">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>40</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:01.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_5">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>172</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:01.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_6">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>40</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.30 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:01</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_7">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>60</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:02.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_8">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>60</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1c2</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:02.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_9">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>60</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.36 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:02</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_10">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>80</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:03.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_11">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>80</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>176</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:03.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_12">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>80</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.30 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:03</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_13">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>100</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:04.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_14">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>120</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>802</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:05.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_15">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>160</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1.65 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:07</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_16">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>100</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>800</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:04.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_17">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>160</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>801</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:07.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_18">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>140</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>801</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:06.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_19">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>100</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1.65 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:04</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_20">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>120</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1.65 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:05</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_21">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>140</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1.65 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:06</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_22">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>160</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:07.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_23">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>120</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:05.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_24">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>140</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:06.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_25">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>180</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:08.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_26">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>200</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>c3d</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:09.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_27">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>240</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1.65 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:11</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_28">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>180</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>c3d</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:08.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_29">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>240</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>802</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:11.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_30">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>220</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ca4</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:10.RVAL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>false</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::UnsignedInteger</enum>
+    </property>
+    <property name="radix">
+     <UInt>16</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_31">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>180</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2.52 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:08</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_32">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>200</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2.52 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:09</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_33">
+    <property name="geometry">
+     <rect>
+      <x>124</x>
+      <y>220</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2.61 V</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:10</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_34">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>240</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:11.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_35">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>200</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:09.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_36">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>220</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:10.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM01</string>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_37">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>160</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>23.27 degC</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:THERM1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_38">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>160</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>73.88 degF</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):CALC:HM:THERM1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_39">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>180</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>73.88 degF</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):CALC:HM:THERM2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_40">
+    <property name="geometry">
+     <rect>
+      <x>186</x>
+      <y>180</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>23.27 degC</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:HM:ADC:THERM2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="useDbPrecision">
+     <bool>true</bool>
+    </property>
+    <property name="leadingZero">
+     <bool>true</bool>
+    </property>
+    <property name="trailingZeros">
+     <bool>true</bool>
+    </property>
+    <property name="addUnits">
+     <bool>true</bool>
+    </property>
+    <property name="format" stdset="0">
+     <enum>QCaLabelPlugin::Floating</enum>
+    </property>
+    <property name="radix">
+     <UInt>10</UInt>
+    </property>
+    <property name="notation" stdset="0">
+     <enum>QCaLabelPlugin::Fixed</enum>
+    </property>
+    <property name="visible" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCaPlotPlugin" name="qcaplotplugin">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>284</y>
+      <width>160</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):WF:HM:ADC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=HM02</string>
+    </property>
+    <property name="backgroundColor">
+     <color>
+      <red>73</red>
+      <green>80</green>
+      <blue>85</blue>
+     </color>
+    </property>
+    <property name="traceColor">
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="xIncrement">
+     <double>50.000000000000000</double>
+    </property>
+    <property name="timeSpan">
+     <UInt>100</UInt>
+    </property>
+    <property name="tickRate">
+     <UInt>25</UInt>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCaLabelPlugin</class>
+   <extends>QLabel</extends>
+   <header>QCaLabelPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaPlotPlugin</class>
+   <extends>QFrame</extends>
+   <header>QCaPlotPlugin.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

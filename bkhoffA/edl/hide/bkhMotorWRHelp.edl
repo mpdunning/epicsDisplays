@@ -1,0 +1,86 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 38
+y 77
+w 400
+h 400
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 73
+bgColor index 11
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 7
+w 279
+h 15
+font "courier-bold-r-14.0"
+fgColor index 73
+bgColor index 2
+useDisplayBg
+value {
+  "Help for the Move Stage dialog."
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 38
+w 388
+h 336
+font "new century schoolbook-medium-r-12.0"
+fgColor index 73
+bgColor index 2
+useDisplayBg
+value {
+  "The travel of the stage is bounded by the two limit switches."
+  "Normally one sets the position at the limit switch near the motor"
+  "as position 0 or home."
+  "PotRBV is the position of the stage as measured by"
+  "       the potentiometer."
+  "Internal is the position of the stage as determined"
+  "       by the internal counter, counting steps."
+  "goABS is a text entry where we specify a destination"
+  "       absolute position."
+  "goRel is used to specify a relative move increment."
+  ""
+  "The button \"Go\" is used to start a move to an absolute position,"
+  "which was entered in goABS.  Buttons \"<\" and \">\" are used to"
+  "start relative move towards home and away from home respectively."
+  "Notice, when the motor is moving, these buttons are grayed out"
+  "and cannot be pressed.  \"Stop\" button can be pressed while the"
+  "motor is moving to suspend the motion."
+  ""
+  "When a limit switch is activated, the limit switch indicator"
+  "is in an active state (flashing) and no further motion can be"
+  "started via the the three buttons used to start motion; they"
+  "remain grayed out.  The \"GetOffLimit\" is used to jog the stage"
+  "away from the limit switch in direction opposite to the one that"
+  "brought the stage to the limit switch."
+}
+autoSize
+endObjectProperties
+

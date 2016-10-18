@@ -1,0 +1,80 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 540
+y 77
+w 400
+h 400
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 55
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+disableScroll
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 32
+w 384
+h 252
+font "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 2
+useDisplayBg
+value {
+  "Channel status is organized into four groups of 16 channels each,"
+  "which are displayed by clicking the appropriate tab.  A fifth tab,"
+  "labeled Module, is used to show parameters for each HV board and"
+  "chassis status words."
+  ""
+  "Two tabs are used to select either the Active channel data or"
+  "channel setup Parameters."
+  "In Active screen, the CH column shows the HV channel number."
+  "Clicking on the channel number pops a \"Setup Edit Channel\" dialog,"
+  "which is used to change set points and turn the HV on or off."
+  ""
+  "At the bottom of the Main screen there are four controls:"
+  ""
+  "refresh menu is used to control rate of reading active channel data,"
+  "killAll button is used to turn off all HV channels,"
+  "clearAlarm button is used to clear any alarms that might be present,"
+  "Diagnostic related display button is used to pop up a diagnostic"
+  "           display, useful to an advanced user only."
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 2
+w 65
+h 26
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+

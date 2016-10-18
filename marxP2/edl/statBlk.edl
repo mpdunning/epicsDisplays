@@ -1,0 +1,666 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 935
+y 49
+w 500
+h 400
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+ctlFont "helvetica-medium-r-10.0"
+ctlFontAlign "right"
+btnFont "helvetica-medium-r-10.0"
+btnFontAlign "center"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 500
+h 36
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 16
+y 12
+w 200
+h 16
+controlPv "$(P):SI:NAME.DESC"
+font "helvetica-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 63
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 432
+y 4
+w 56
+h 28
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "helvetica-bold-r-12.0"
+3d
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 68
+w 58
+h 208
+
+beginGroup
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 84
+w 12
+h 188
+controlPv "HM01:MBBI:HM:STATUS"
+lineColor index 13
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 16
+y 68
+w 32
+h 12
+controlPv "$(P):MBBI:HM:STATUS.DESC"
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 56
+y 84
+w 18
+h 192
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "b15"
+  "b14"
+  "b13"
+  "b12"
+  "b11"
+  "b10"
+  "b09"
+  "b08"
+  "b07"
+  "b06"
+  "b05"
+  "b04"
+  "b03"
+  "b02"
+  "b01"
+  "b00"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 88
+y 68
+w 62
+h 208
+
+beginGroup
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 112
+y 84
+w 12
+h 188
+controlPv "HM01:MBBI:GD0:STATUS"
+lineColor index 13
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 88
+y 68
+w 36
+h 12
+controlPv "$(P):MBBI:GD0:STATUS.DESC"
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 132
+y 84
+w 18
+h 192
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "b15"
+  "b14"
+  "b13"
+  "b12"
+  "b11"
+  "b10"
+  "b09"
+  "b08"
+  "b07"
+  "b06"
+  "b05"
+  "b04"
+  "b03"
+  "b02"
+  "b01"
+  "b00"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 160
+y 68
+w 62
+h 208
+
+beginGroup
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 184
+y 84
+w 12
+h 188
+controlPv "HM01:MBBI:GD1:STATUS"
+lineColor index 13
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 160
+y 68
+w 36
+h 12
+controlPv "$(P):MBBI:GD1:STATUS.DESC"
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 204
+y 84
+w 18
+h 192
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "b15"
+  "b14"
+  "b13"
+  "b12"
+  "b11"
+  "b10"
+  "b09"
+  "b08"
+  "b07"
+  "b06"
+  "b05"
+  "b04"
+  "b03"
+  "b02"
+  "b01"
+  "b00"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 68
+w 58
+h 208
+
+beginGroup
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 260
+y 84
+w 12
+h 188
+controlPv "HM01:MBBI:GD2:STATUS"
+lineColor index 13
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 240
+y 68
+w 32
+h 12
+controlPv "$(P):MBBI:GD2:STATUS.DESC"
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 280
+y 84
+w 18
+h 192
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "b15"
+  "b14"
+  "b13"
+  "b12"
+  "b11"
+  "b10"
+  "b09"
+  "b08"
+  "b07"
+  "b06"
+  "b05"
+  "b04"
+  "b03"
+  "b02"
+  "b01"
+  "b00"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 68
+w 54
+h 208
+
+beginGroup
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 332
+y 84
+w 12
+h 188
+controlPv "HM01:MBBI:GD3:STATUS"
+lineColor index 13
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 316
+y 68
+w 28
+h 12
+controlPv "$(P):MBBI:GD3:STATUS.DESC"
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 352
+y 84
+w 18
+h 192
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "b15"
+  "b14"
+  "b13"
+  "b12"
+  "b11"
+  "b10"
+  "b09"
+  "b08"
+  "b07"
+  "b06"
+  "b05"
+  "b04"
+  "b03"
+  "b02"
+  "b01"
+  "b00"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 388
+y 68
+w 58
+h 208
+
+beginGroup
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 84
+w 12
+h 188
+controlPv "HM01:MBBI:FLASH:STATUS"
+lineColor index 13
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 388
+y 68
+w 32
+h 12
+controlPv "$(P):MBBI:FLASH:STATUS.DESC"
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 428
+y 84
+w 18
+h 192
+font "helvetica-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "b15"
+  "b14"
+  "b13"
+  "b12"
+  "b11"
+  "b10"
+  "b09"
+  "b08"
+  "b07"
+  "b06"
+  "b05"
+  "b04"
+  "b03"
+  "b02"
+  "b01"
+  "b00"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 244
+y 12
+w 101
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Status Display"
+}
+autoSize
+endObjectProperties
+

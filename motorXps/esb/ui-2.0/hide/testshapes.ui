@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QCaSliderPlugin" name="qcasliderplugin">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>56</y>
+     <width>16</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>24</number>
+   </property>
+   <property name="invertedAppearance">
+    <bool>false</bool>
+   </property>
+   <property name="invertedControls">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>SHAPE:A1</string>
+   </property>
+  </widget>
+  <widget class="QCaShapePlugin" name="qcashapeplugin">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>28</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="variable1" stdset="0">
+    <string>SHAPE:A1</string>
+   </property>
+   <property name="animation1" stdset="0">
+    <enum>QCaShapePlugin::Height</enum>
+   </property>
+   <property name="scale1" stdset="0">
+    <double>-0.010000000000000</double>
+   </property>
+   <property name="originTranslation">
+    <point>
+     <x>0</x>
+     <y>-100</y>
+    </point>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>99</x>
+     <y>99</y>
+    </point>
+   </property>
+   <property name="drawBorder">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCaShapePlugin" name="qcashapeplugin_2">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>156</y>
+     <width>102</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="variable1" stdset="0">
+    <string>SHAPE:A1</string>
+   </property>
+   <property name="scale1" stdset="0">
+    <double>0.010000000000000</double>
+   </property>
+   <property name="originTranslation">
+    <point>
+     <x>0</x>
+     <y>0</y>
+    </point>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>99</x>
+     <y>16</y>
+    </point>
+   </property>
+   <property name="drawBorder">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QCaShapePlugin" name="qcashapeplugin_3">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>156</y>
+     <width>102</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="color1" stdset="0">
+    <color>
+     <red>166</red>
+     <green>255</green>
+     <blue>250</blue>
+    </color>
+   </property>
+  </widget>
+  <zorder>qcashapeplugin_3</zorder>
+  <zorder>qcasliderplugin</zorder>
+  <zorder>qcashapeplugin</zorder>
+  <zorder>qcashapeplugin_2</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCaShapePlugin</class>
+   <extends>QWidget</extends>
+   <header>QCaShapePlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaSliderPlugin</class>
+   <extends>QSlider</extends>
+   <header>QCaSliderPlugin.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

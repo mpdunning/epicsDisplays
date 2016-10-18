@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>714</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Knob" name="knob">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>100</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:SC:CH0:POS</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:SC02</string>
+    </property>
+    <property name="subscribe">
+     <bool>true</bool>
+    </property>
+    <property name="knobStyle">
+     <enum>Knob::Sunken</enum>
+    </property>
+    <property name="borderWidth">
+     <number>3</number>
+    </property>
+    <property name="haveScale">
+     <bool>false</bool>
+    </property>
+    <property name="minValue" stdset="0">
+     <double>-4.000000000000000</double>
+    </property>
+    <property name="maxValue" stdset="0">
+     <double>4.000000000000000</double>
+    </property>
+    <property name="valueIncrement" stdset="0">
+     <double>0.100000000000000</double>
+    </property>
+   </widget>
+   <widget class="XYGraph" name="xygraph">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>400</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>$(P):WF:CH0:TRACE</string>
+    </property>
+    <property name="variable2" stdset="0">
+     <string>$(P):WF:CH1:TRACE</string>
+    </property>
+    <property name="variable3" stdset="0">
+     <string>$(P):WF:CH2:TRACE</string>
+    </property>
+    <property name="variable4" stdset="0">
+     <string>$(P):WF:CH3:TRACE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:SC02</string>
+    </property>
+    <property name="traceColor1">
+     <color>
+      <red>255</red>
+      <green>184</green>
+      <blue>17</blue>
+     </color>
+    </property>
+    <property name="traceColor2">
+     <color>
+      <red>165</red>
+      <green>219</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="traceColor3">
+     <color>
+      <red>255</red>
+      <green>85</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="traceColor4">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="autoScaleX">
+     <bool>false</bool>
+    </property>
+    <property name="xMax">
+     <double>500.000000000000000</double>
+    </property>
+    <property name="axisEnableX">
+     <bool>false</bool>
+    </property>
+    <property name="gridEnableMajorX" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="gridNTicksMajorX" stdset="0">
+     <number>10</number>
+    </property>
+    <property name="autoScaleY">
+     <bool>false</bool>
+    </property>
+    <property name="yMin">
+     <double>-4.000000000000000</double>
+    </property>
+    <property name="yMax">
+     <double>4.000000000000000</double>
+    </property>
+    <property name="axisEnableY">
+     <bool>false</bool>
+    </property>
+    <property name="gridEnableMajorY" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="gridNTicksMajorY" stdset="0">
+     <number>8</number>
+    </property>
+    <property name="gridMajorColor" stdset="0">
+     <color>
+      <red>116</red>
+      <green>116</green>
+      <blue>173</blue>
+     </color>
+    </property>
+    <property name="backgroundColor">
+     <color>
+      <red>62</red>
+      <green>62</green>
+      <blue>86</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="scopeArea">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>16</y>
+      <width>497</width>
+      <height>389</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Knob" name="knob_3">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>240</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:SC:CH2:POS</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:SC02</string>
+    </property>
+    <property name="subscribe">
+     <bool>true</bool>
+    </property>
+    <property name="knobStyle">
+     <enum>Knob::Sunken</enum>
+    </property>
+    <property name="borderWidth">
+     <number>3</number>
+    </property>
+    <property name="haveScale">
+     <bool>false</bool>
+    </property>
+    <property name="minValue" stdset="0">
+     <double>-4.000000000000000</double>
+    </property>
+    <property name="maxValue" stdset="0">
+     <double>4.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="Knob" name="knob_2">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>168</y>
+      <width>60</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:SC:CH1:POS</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:SC02</string>
+    </property>
+    <property name="subscribe">
+     <bool>true</bool>
+    </property>
+    <property name="knobStyle">
+     <enum>Knob::Sunken</enum>
+    </property>
+    <property name="borderWidth">
+     <number>3</number>
+    </property>
+    <property name="haveScale">
+     <bool>false</bool>
+    </property>
+    <property name="minValue" stdset="0">
+     <double>-4.000000000000000</double>
+    </property>
+    <property name="maxValue" stdset="0">
+     <double>4.000000000000000</double>
+    </property>
+    <property name="valueIncrement" stdset="0">
+     <double>0.100000000000000</double>
+    </property>
+   </widget>
+   <zorder>scopeArea</zorder>
+   <zorder>knob</zorder>
+   <zorder>xygraph</zorder>
+   <zorder>knob_3</zorder>
+   <zorder>knob_2</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>714</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Knob</class>
+   <extends>QWidget</extends>
+   <header>knob.h</header>
+  </customwidget>
+  <customwidget>
+   <class>XYGraph</class>
+   <extends>QFrame</extends>
+   <header>xygraph.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,920 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 217
+y 316
+w 645
+h 430
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 6
+textColor index 14
+ctlFgColor1 index 30
+ctlFgColor2 index 32
+ctlBgColor1 index 34
+ctlBgColor2 index 35
+topShadowColor index 37
+botShadowColor index 44
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 14
+y 37
+w 266
+h 21
+font "helvetica-medium-r-8.0"
+fgColor index 54
+bgColor index 0
+useDisplayBg
+value {
+  "Tds3000"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 300
+y 25
+w 65
+h 20
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Remote Ctrl:"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 69
+w 409
+h 309
+lineColor index 53
+fill
+fillColor index 53
+lineWidth 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 35
+w 250
+h 29
+lineColor index 14
+fillColor index 14
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 128
+y 35
+w 65
+h 12
+font "helvetica-medium-r-8.0"
+fgColor index 49
+bgColor index 0
+useDisplayBg
+value {
+  "Script Semaphore"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 103
+y 46
+w 148
+h 15
+controlPv "$(scope)scopeInUseMO"
+format "decimal"
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+fgColor index 14
+fgAlarm
+bgColor index 1
+autoHeight
+nullColor index 32
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 424
+y 24
+w 210
+h 380
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 424
+y 24
+w 210
+h 380
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+displaySource "file"
+file "tds3000stat.edl"
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+endGroup
+
+visPv "$(scope)displayCtlMO"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 424
+y 24
+w 211
+h 354
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 424
+y 24
+w 211
+h 354
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+displaySource "file"
+file "tds3000vert.edl"
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+endGroup
+
+visPv "$(scope)displayCtlMO"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 424
+y 24
+w 211
+h 354
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 424
+y 24
+w 211
+h 354
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+displaySource "file"
+file "file tds3000horiz.edl"
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+endGroup
+
+visPv "$(scope)displayCtlMO"
+visMin "2"
+visMax "3"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 424
+y 24
+w 211
+h 354
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 424
+y 24
+w 211
+h 354
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+displaySource "file"
+file "tds3000trig.edl"
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+endGroup
+
+visPv "$(scope)displayCtlMO"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 424
+y 24
+w 211
+h 354
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 424
+y 24
+w 211
+h 354
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+displaySource "file"
+file "tds3000acquire.edl"
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+endGroup
+
+visPv "$(scope)displayCtlMO"
+visMin "4"
+visMax "5"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 424
+y 24
+w 211
+h 380
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 424
+y 24
+w 211
+h 380
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+displaySource "file"
+file "tds3000utility.edl"
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+endGroup
+
+visPv "$(scope)displayCtlMO"
+visMin "5"
+visMax "6"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 14
+y 393
+w 45
+h 25
+controlPv "$(scope)Name.DESC"
+format "decimal"
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 6
+autoHeight
+nullColor index 32
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 334
+y 394
+w 79
+h 11
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "DISPLAY"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 334
+y 384
+w 79
+h 11
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SCOPE"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 383
+w 64
+h 40
+lineColor index 14
+fillColor index 14
+lineWidth 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 323
+y 383
+w 98
+h 40
+lineColor index 14
+fillColor index 14
+lineWidth 0
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 11
+y 72
+w 402
+h 303
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 72
+w 402
+h 303
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+displaySource "file"
+file "tds3000multiDisplay.edl"
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+endGroup
+
+visPv "$(scope)displayCtl1MO"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 76
+w 400
+h 295
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 76
+w 400
+h 295
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+displaySource "file"
+file "tds3000singleDisplay.edl"
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+endGroup
+
+visPv "$(scope)displayCtl1MO"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 449
+y 409
+w 80
+h 13
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "SDDS Plots ==>"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 21
+w 243
+h 13
+
+beginGroup
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 138
+y 21
+w 120
+h 11
+controlPv "$(scope)WF_timeStampTS"
+format "decimal"
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 1
+autoHeight
+nullColor index 32
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 15
+y 22
+w 65
+h 12
+font "helvetica-medium-r-8.0"
+fgColor index 49
+bgColor index 0
+useDisplayBg
+value {
+  "AutoPrint TimeStamp"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A=1)\}($(scope)scopeInUseMO)"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 646
+h 15
+lineColor index 53
+fill
+fillColor index 53
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 78
+y 2
+w 134
+h 13
+font "helvetica-medium-r-8.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Ethernet Name:"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 200
+y 2
+w 223
+h 13
+controlPv "$(scope)ethernetNameSI"
+format "string"
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+fgColor index 30
+bgColor index 53
+autoHeight
+nullColor index 32
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 271
+y 43
+w 140
+h 20
+fgColor index 14
+bgColor index 57
+selectColor index 57
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(scope)GPIBenableBO"
+font "helvetica-medium-r-10.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 241
+y 382
+w 80
+h 20
+fgColor index 14
+onColor index 57
+offColor index 57
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(scope)displayCtlMO"
+pressValue "2"
+onLabel "HORIZONTAL"
+offLabel "HORIZONTAL"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 77
+y 382
+w 80
+h 20
+fgColor index 14
+onColor index 57
+offColor index 57
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(scope)displayCtlMO"
+pressValue "0"
+onLabel "STATUS"
+offLabel "STATUS"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 159
+y 382
+w 80
+h 20
+fgColor index 14
+onColor index 57
+offColor index 57
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(scope)displayCtlMO"
+pressValue "1"
+onLabel "VERTICAL"
+offLabel "VERTICAL"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 241
+y 404
+w 80
+h 20
+fgColor index 14
+onColor index 57
+offColor index 57
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(scope)displayCtlMO"
+pressValue "5"
+onLabel "UTILITY"
+offLabel "UTILITY"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 77
+y 404
+w 80
+h 20
+fgColor index 14
+onColor index 57
+offColor index 57
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(scope)displayCtlMO"
+pressValue "3"
+onLabel "TRIGGER"
+offLabel "TRIGGER"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 159
+y 404
+w 80
+h 20
+fgColor index 14
+onColor index 57
+offColor index 57
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(scope)displayCtlMO"
+pressValue "4"
+onLabel "ACQUIRE"
+offLabel "ACQUIRE"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 328
+y 405
+w 90
+h 14
+fgColor index 14
+bgColor index 6
+inconsistentColor index 12
+topShadowColor index 2
+botShadowColor index 12
+controlPv "$(scope)displayCtl1MO"
+indicatorPv "$(scope)displayCtl1MO"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 550
+y 407
+w 65
+h 17
+fgColor index 14
+bgColor index 57
+topShadowColor index 2
+botShadowColor index 12
+font "helvetica-medium-r-10.0"
+buttonLabel "!"
+numCmds 1
+commandLabel {
+  0 "View Scope Trace "
+}
+command {
+  0 "/usr/local/iocapps/adlsys/rf/TDS3000/trace10k  $(oag)&"
+}
+endObjectProperties
+

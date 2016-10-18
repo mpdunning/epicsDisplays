@@ -1,0 +1,70 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 556
+y 458
+w 300
+h 200
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+endScreenProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 241
+y 171
+w 56
+h 24
+fgColor index 13
+bgColor index 74
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 3
+y 5
+w 289
+h 126
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Controls:"
+  "Run   - put instrument in run"
+  "Stop  - put instrument in stop"
+  "Init  - initialize to preset values.  It sends"
+  "        a string of commands to configure for"
+  "        acquiring waveform data."
+  "record lengtth - number of data words per waveform"
+  "data Start - starting index of transmitted data"
+  "data Stop - ending index."
+}
+autoSize
+endObjectProperties
+

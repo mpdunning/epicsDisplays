@@ -1,0 +1,5931 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1923
+y 26
+w 1595
+h 1170
+font "new century schoolbook-medium-r-8.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 0
+bgColor index 14
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 10
+y 10
+w 320
+h 40
+controlPv "SIOC:SYS0:ML00:CALC023TS"
+font "utopia-medium-r-32.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1030
+y 10
+w 453
+h 45
+font "utopia-medium-r-38.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+visPv "CALC\\\{A=2 && B==1?0:1\}(MC00:MISC:20:TARGET, SIOC:SYS0:ML02:CALC061)"
+visMin "0"
+visMax "1"
+value {
+  "Delivering Primary Beam"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1110
+y 10
+w 264
+h 45
+font "utopia-medium-r-38.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+visPv "SIOC:SYS0:ML02:CALC061"
+visMin "0"
+visMax "1"
+value {
+  "Not Delivering"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1050
+y 10
+w 414
+h 45
+font "utopia-medium-r-38.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+visPv "CALC\\\{A=1 && B==1?0:1\}(MC00:MISC:20:TARGET, SIOC:SYS0:ML02:CALC061)"
+visMin "0"
+visMax "1"
+value {
+  "Delivering Secondaries"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 400
+w 450
+h 365
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 141
+y 401
+w 194
+h 47
+font "utopia-medium-r-40.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "PPS States"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 450
+w 190
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "Access State"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 490
+w 190
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "Beam Ready"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 230
+y 490
+w 220
+h 30
+controlPv "PPS:ESA0:4:READY_FOR_BEAM_A"
+font "utopia-medium-r-32.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 570
+w 190
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "Stoppers"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 230
+y 570
+w 220
+h 30
+controlPv "PPS:ESA0:4:STOPPER_IN_SUM_A"
+font "utopia-medium-r-32.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 530
+w 190
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "Mode"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 650
+w 190
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "PM 1-5"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 230
+y 650
+w 220
+h 30
+controlPv "PPS:ESA0:4:PM1_5_OFF_A"
+font "utopia-medium-r-32.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 690
+w 180
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "Bend 1/2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 230
+y 690
+w 220
+h 30
+controlPv "PPS:ESA0:4:B1_2_OFF_A"
+font "utopia-medium-r-32.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 445
+w 450
+h 320
+lineColor index 63
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 230
+y 450
+w 230
+h 30
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 310
+y 450
+w 60
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 20
+bgColor index 0
+useDisplayBg
+visPv "PPS:ESA0:1:SUMACCESS"
+visMin "1"
+visMax "2"
+value {
+  "NO"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 235
+y 450
+w 210
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+visPv "PPS:ESA0:1:SUMACCESS"
+visMin "0"
+visMax "1"
+value {
+  "UNDEFINED"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 240
+y 450
+w 200
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+visPv "PPS:ESA0:1:SUMACCESS"
+visMin "3"
+visMax "4"
+value {
+  "PERMITTED"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 450
+w 230
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 35
+bgColor index 0
+useDisplayBg
+visPv "PPS:ESA0:1:SUMACCESS"
+visMin "2"
+visMax "3"
+value {
+  "CONTROLLED"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 610
+w 200
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "22/29 Permit"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 230
+y 610
+w 220
+h 30
+controlPv "PPS:ESA0:4:STOPPER_PERM_A"
+font "utopia-medium-r-32.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 730
+w 180
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "BSOIC SUM"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 230
+y 730
+w 220
+h 30
+controlPv "PPS:ESA0:4:BSOIC_SUM_A"
+font "utopia-medium-r-32.0"
+fontAlign "center"
+fgColor index 15
+fgAlarm
+bgColor index 0
+useDisplayBg
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 140
+y 400
+w 194
+h 47
+font "utopia-medium-r-40.0"
+fgColor index 32
+bgColor index 0
+useDisplayBg
+value {
+  "PPS States"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 240
+y 530
+w 205
+h 38
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+visPv "PPS:ESA0:4:BEND_MODE_A"
+visMin "1"
+visMax "2"
+value {
+  "BEND MODE"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 250
+y 530
+w 181
+h 38
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+visPv "PPS:ESA0:4:BEND_MODE_A"
+visMin "0"
+visMax "1"
+value {
+  "SLIT MODE"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 620
+y 0
+w 340
+h 60
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 621
+y 1
+w 270
+h 58
+font "utopia-medium-r-48.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "ESTB Status"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 620
+y 0
+w 270
+h 58
+font "utopia-medium-r-48.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+value {
+  "ESTB Status"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 775
+w 240
+h 78
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 776
+w 237
+h 47
+font "utopia-medium-r-40.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Micro Status"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 815
+w 219
+h 38
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+visPv "CSTR:AB01:1:STAT"
+visMin "1"
+visMax "2"
+value {
+  "AB01 Running"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 815
+w 180
+h 38
+font "utopia-medium-r-32.0"
+fgColor index 20
+bgColor index 0
+useDisplayBg
+visPv "CSTR:AB01:1:STAT"
+visMin "0"
+visMax "1"
+value {
+  "AB01 DEAD"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 820
+w 240
+h 30
+lineColor index 63
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 775
+w 237
+h 47
+font "utopia-medium-r-40.0"
+fgColor index 32
+bgColor index 0
+useDisplayBg
+value {
+  "Micro Status"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 860
+w 520
+h 300
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 920
+w 250
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "Primary Beam E"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 960
+w 270
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "Primary Beam nC"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 1000
+w 280
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "Primary Beam Nel"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 330
+y 920
+w 170
+h 30
+controlPv "SIOC:SYS0:ML00:AO500"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 2
+nullColor index 0
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 1040
+w 240
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "ABend Flip Coil"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 1080
+w 220
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "ABend Dipole"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 330
+y 960
+w 140
+h 30
+controlPv "SIOC:SYS0:ML00:AO470"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 2
+nullColor index 0
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 330
+y 1000
+w 190
+h 30
+controlPv "TORO:BSY0:34:TMIT1H"
+format "exponential"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 1
+nullColor index 0
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 330
+y 1040
+w 70
+h 30
+controlPv "AB01:BEND:1650:BACT"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 2
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 400
+y 1040
+w 65
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+value {
+  "GeV"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 330
+y 1080
+w 180
+h 30
+controlPv "LGPS:AB01:1100:BACTAPV"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 2
+nullColor index 0
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 330
+y 1120
+w 190
+h 38
+controlPv "KICK:BSY0:66:BACT"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+autoHeight
+precision 1
+nullColor index 0
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 1120
+w 220
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "A-Line Kicker"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 910
+w 520
+h 250
+lineColor index 63
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 45
+y 860
+w 409
+h 47
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 46
+y 861
+w 433
+h 47
+font "utopia-medium-r-40.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "BSY A-Line Parameters"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 45
+y 860
+w 433
+h 47
+font "utopia-medium-r-40.0"
+fgColor index 32
+bgColor index 0
+useDisplayBg
+value {
+  "BSY A-Line Parameters"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1320
+y 60
+w 223
+h 39
+font "utopia-bold-r-32.0"
+fgColor index 16
+bgColor index 0
+useDisplayBg
+visPv "IOC:BSY0:MP01:REQBYKIKBRST"
+visMin "1"
+visMax "2"
+value {
+  "BURST MODE"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 430
+y 60
+w 306
+h 41
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 425
+y 58
+w 180
+h 39
+font "utopia-bold-r-32.0"
+fgColor index 16
+bgColor index 0
+useDisplayBg
+value {
+  "User Access"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 628
+y 60
+w 102
+h 39
+font "utopia-bold-r-32.0"
+fgColor index 16
+bgColor index 0
+useDisplayBg
+visPv "SIOC:SYS0:ML00:CALC243"
+visMin "1"
+visMax "2"
+value {
+  "(AMO)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 629
+y 61
+w 87
+h 39
+font "utopia-bold-r-32.0"
+fgColor index 16
+bgColor index 0
+useDisplayBg
+visPv "SIOC:SYS0:ML00:CALC244"
+visMin "1"
+visMax "2"
+value {
+  "(SXR)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 631
+y 61
+w 89
+h 39
+font "utopia-bold-r-32.0"
+fgColor index 16
+bgColor index 0
+useDisplayBg
+visPv "SIOC:SYS0:ML00:CALC245"
+visMin "1"
+visMax "2"
+value {
+  "(XPP)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 632
+y 60
+w 87
+h 39
+font "utopia-bold-r-32.0"
+fgColor index 16
+bgColor index 0
+useDisplayBg
+visPv "SIOC:SYS0:ML00:CALC246"
+visMin "1"
+visMax "2"
+value {
+  "(XCS)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 631
+y 58
+w 81
+h 39
+font "utopia-bold-r-32.0"
+fgColor index 16
+bgColor index 0
+useDisplayBg
+visPv "SIOC:SYS0:ML00:CALC247"
+visMin "1"
+visMax "2"
+value {
+  "(CXI)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 629
+y 59
+w 99
+h 39
+font "utopia-bold-r-32.0"
+fgColor index 16
+bgColor index 0
+useDisplayBg
+visPv "SIOC:SYS0:ML00:CALC248"
+visMin "1"
+visMax "2"
+value {
+  "(MEC)"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+visPv "SIOC:SYS0:ML00:CALC249"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 60
+w 298
+h 37
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 270
+y 59
+w 43
+h 38
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+value {
+  "Hz"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 59
+w 176
+h 38
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+value {
+  "A-Line Rate"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 190
+y 59
+w 80
+h 37
+controlPv "EVNT:SYS0:1:LCALKIKRATE"
+font "utopia-medium-r-32.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+visPv "SIOC:SYS0:ML02:CALC061"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 810
+y 60
+w 466
+h 40
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1180
+y 60
+w 96
+h 38
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+value {
+  "Pulses"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 810
+y 60
+w 282
+h 38
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+value {
+  "BYKIK Abort Every"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 1100
+y 60
+w 70
+h 40
+controlPv "IOC:IN20:EV01:BYKIK_ABTPRD"
+font "utopia-medium-r-32.0"
+fontAlign "center"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+visPv "SIOC:SYS0:ML02:CALC060"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 940
+w 630
+h 220
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 1130
+y 1120
+w 60
+h 30
+controlPv "AB01:STEP:3710:VACT"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 0
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 970
+y 1120
+w 150
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "C37_H"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1121
+y 941
+w 291
+h 47
+font "utopia-medium-r-40.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Collimator Info"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 970
+y 1000
+w 150
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "SL10_HR"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 970
+y 1040
+w 140
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "C24_H_L"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1280
+y 1080
+w 140
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "C24_V_B"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 1130
+y 1000
+w 80
+h 30
+controlPv "AB01:STEP:2011:VACT"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 1
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 1440
+y 1000
+w 80
+h 30
+controlPv "AB01:STEP:2010:VACT"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 1
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 1130
+y 1040
+w 80
+h 30
+controlPv "AB01:STEP:2472:VACT"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 1
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 1440
+y 1040
+w 80
+h 30
+controlPv "AB01:STEP:2473:VACT"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 1
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 1130
+y 1080
+w 80
+h 30
+controlPv "AB01:STEP:2474:VACT"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 1
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 1440
+y 1080
+w 80
+h 30
+controlPv "AB01:STEP:2475:VACT"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 1
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1280
+y 1000
+w 140
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "SL10_HF"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1280
+y 1040
+w 140
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "C24_H_R"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 970
+y 1080
+w 140
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "C24_V_T"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 990
+w 630
+h 170
+lineColor index 63
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1280
+y 1120
+w 110
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 63
+bgColor index 0
+useDisplayBg
+value {
+  "C37_V"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 1440
+y 1120
+w 60
+h 30
+controlPv "AB01:STEP:3711:VACT"
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+precision 0
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1210
+y 1000
+w 60
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1210
+y 1040
+w 60
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1210
+y 1080
+w 60
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1520
+y 1000
+w 60
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1520
+y 1040
+w 60
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1210
+y 1120
+w 60
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1520
+y 1080
+w 60
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1520
+y 1120
+w 60
+h 30
+font "utopia-medium-r-32.0"
+fgColor index 55
+bgColor index 0
+useDisplayBg
+value {
+  "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1120
+y 940
+w 291
+h 47
+font "utopia-medium-r-40.0"
+fgColor index 32
+bgColor index 0
+useDisplayBg
+value {
+  "Collimator Info"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 478
+y 230
+w 82
+h 9
+font "new century schoolbook-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 170
+w 1470
+h 10
+lineColor index 30
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 18
+y 155
+w 33
+h 40
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>10?1:0\}(KICK:BSY0:66:BACT, KICK:BSY0:66:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 18
+y 155
+w 33
+h 40
+lineColor index 14
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>10?1:0\}(KICK:BSY0:66:BACT, KICK:BSY0:66:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 314
+y 140
+w 66
+h 89
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 327
+y 201
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Q11"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 314
+y 140
+w 66
+h 70
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 335
+y 140
+w 21
+h 64
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:1090:BACT, AB01:LGPS:1090:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 335
+y 140
+w 21
+h 64
+lineColor index 14
+lineAlarm
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:1090:BACT, AB01:LGPS:1090:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 314
+y 146
+w 28
+h 53
+lineColor index 14
+fill
+fillColor index 14
+startAngle -60
+totalAngle 120
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 349
+y 146
+w 28
+h 53
+lineColor index 14
+fill
+fillColor index 14
+startAngle 120
+totalAngle 120
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 335
+y 196
+w 22
+h 7
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 335
+y 140
+w 22
+h 7
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 326
+y 200
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "Q11"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 228
+y 150
+w 16
+h 50
+lineColor index 20
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:1010:BACT, AB01:LGPS:1010:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 228
+y 150
+w 16
+h 50
+lineColor index 15
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:1010:BACT, AB01:LGPS:1010:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 43
+y 310
+w 1462
+h 10
+lineColor index 30
+fillColor index 0
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1500
+y 330
+w 81
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "To ESA"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1513
+y 310
+w 49
+h 0
+lineColor index 30
+fillColor index 0
+lineWidth 5
+arrows "to"
+numPoints 2
+xPoints {
+  0 1513
+  1 1558
+}
+yPoints {
+  0 310
+  1 310
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1501
+y 331
+w 81
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "To ESA"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1480
+y 170
+w 57
+h 10
+lineColor index 30
+fillColor index 0
+lineWidth 2
+lineStyle "dash"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 310
+w 33
+h 10
+lineColor index 30
+fillColor index 0
+lineWidth 2
+lineStyle "dash"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 14
+y 200
+w 44
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 201
+w 52
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "PM1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 14
+y 200
+w 52
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "PM1"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 125
+y 140
+w 9
+h 44
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 125
+y 164
+w 9
+h 20
+lineColor index 20
+fill
+fillColor index 40
+lineWidth 3
+visPv "MC00:MISC:20:TARGET"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 125
+y 140
+w 9
+h 20
+lineColor index 15
+fill
+fillColor index 40
+lineWidth 3
+visPv "MC00:MISC:20:TARGET"
+visMin "2"
+visMax "3"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 100
+y 200
+w 62
+h 57
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 101
+y 201
+w 74
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "   Cu "
+  "Target"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 100
+y 200
+w 74
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "   Cu"
+  "Target"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 215
+y 200
+w 38
+h 29
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 215
+y 200
+w 38
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 216
+y 201
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Q10"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 215
+y 200
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "Q10"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 454
+y 140
+w 9
+h 44
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 454
+y 164
+w 9
+h 20
+lineColor index 14
+fill
+fillColor index 20
+visPv "AB01:PROF:1020:target"
+visMin "5"
+visMax "6"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 454
+y 140
+w 9
+h 20
+lineColor index 15
+fill
+fillColor index 15
+visPv "AB01:PROF:1020:target"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 437
+y 200
+w 57
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 438
+y 201
+w 57
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "PR10"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 437
+y 200
+w 57
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "PR10"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 156
+w 33
+h 40
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:LGPS:1100:BACT, AB01:LGPS:1100:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 560
+y 156
+w 33
+h 40
+lineColor index 14
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:LGPS:1100:BACT, AB01:LGPS:1100:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 536
+y 200
+w 80
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 537
+y 201
+w 97
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "A-BEND"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 536
+y 200
+w 97
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "A-BEND"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 700
+y 160
+w 16
+h 40
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 697
+y 156
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:1112:BACT, AB01:BTRM:1112:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 697
+y 156
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:1112:BACT, AB01:BTRM:1112:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 675
+y 200
+w 60
+h 57
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 676
+y 201
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 1112"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 675
+y 200
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 1112"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 823
+y 160
+w 16
+h 40
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 823
+y 156
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:1314:BACT, AB01:BTRM:1314:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 823
+y 156
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:1314:BACT, AB01:BTRM:1314:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 807
+y 200
+w 60
+h 57
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 808
+y 201
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 1314"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 807
+y 200
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 1314"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 967
+y 160
+w 16
+h 40
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 967
+y 156
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:1516:BACT, AB01:BTRM:1516:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 967
+y 156
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:1516:BACT, AB01:BTRM:1516:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 946
+y 200
+w 60
+h 57
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 947
+y 201
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 1516"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 946
+y 200
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 1516"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1094
+y 140
+w 9
+h 44
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1094
+y 164
+w 9
+h 20
+lineColor index 14
+fill
+fillColor index 20
+visPv "AB01:PROF:1800:target"
+visMin "5"
+visMax "6"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1094
+y 140
+w 9
+h 20
+lineColor index 15
+fill
+fillColor index 15
+visPv "AB01:PROF:1800:target"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1080
+y 200
+w 50
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1080
+y 200
+w 50
+h 30
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1078
+y 201
+w 57
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "PR18"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1077
+y 200
+w 57
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "PR18"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1217
+y 150
+w 17
+h 50
+lineColor index 20
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:1950:BACT, AB01:LGPS:1950:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1217
+y 150
+w 17
+h 50
+lineColor index 15
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:1950:BACT, AB01:LGPS:1950:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1209
+y 200
+w 38
+h 29
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1209
+y 200
+w 38
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1210
+y 201
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Q19"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1209
+y 200
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "Q19"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1333
+y 136
+w 17
+h 30
+lineColor index 64
+fill
+fillColor index 9
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1333
+y 185
+w 17
+h 30
+lineColor index 64
+fill
+fillColor index 9
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1316
+y 228
+w 48
+h 29
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1316
+y 228
+w 48
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1317
+y 229
+w 54
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "SL10"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1316
+y 228
+w 54
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "SL10"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1414
+y 140
+w 66
+h 70
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1435
+y 140
+w 21
+h 64
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:2050:BACT, AB01:LGPS:2050:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1435
+y 140
+w 21
+h 64
+lineColor index 14
+lineAlarm
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:2050:BACT, AB01:LGPS:2050:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1414
+y 146
+w 28
+h 53
+lineColor index 14
+fill
+fillColor index 14
+startAngle -60
+totalAngle 120
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1449
+y 146
+w 28
+h 53
+lineColor index 14
+fill
+fillColor index 14
+startAngle 120
+totalAngle 120
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1435
+y 196
+w 22
+h 7
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1435
+y 140
+w 22
+h 7
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1426
+y 200
+w 38
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1427
+y 201
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Q20"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1426
+y 200
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "Q20"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 68
+y 280
+w 9
+h 44
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 68
+y 304
+w 9
+h 20
+lineColor index 14
+fill
+fillColor index 20
+visPv "AB01:PROF:2070:target"
+visMin "5"
+visMax "6"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 68
+y 280
+w 9
+h 20
+lineColor index 15
+fill
+fillColor index 15
+visPv "AB01:PROF:2070:target"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 51
+y 340
+w 48
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 52
+y 341
+w 57
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "PR20"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 51
+y 340
+w 57
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "PR20"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 171
+y 300
+w 16
+h 40
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 171
+y 296
+w 16
+h 40
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 171
+y 296
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:2122:BACT, AB01:BTRM:2122:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 171
+y 296
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:2122:BACT, AB01:BTRM:2122:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 340
+w 60
+h 57
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 151
+y 341
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 2122"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 150
+y 340
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 2122"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 273
+y 300
+w 25
+h 30
+lineColor index 20
+fill
+fillColor index 20
+visPv "PPS:ESA0:4:ST22_IN_A"
+visMin "1"
+visMax "2"
+numPoints 9
+xPoints {
+  0 281
+  1 290
+  2 298
+  3 298
+  4 290
+  5 281
+  6 273
+  7 273
+  8 281
+}
+yPoints {
+  0 330
+  1 330
+  2 320
+  3 310
+  4 300
+  5 300
+  6 310
+  7 320
+  8 330
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 273
+y 280
+w 25
+h 30
+lineColor index 15
+fill
+fillColor index 15
+visPv "PPS:ESA0:4:ST22_IN_A"
+visMin "0"
+visMax "1"
+numPoints 9
+xPoints {
+  0 281
+  1 290
+  2 298
+  3 298
+  4 290
+  5 281
+  6 273
+  7 273
+  8 281
+}
+yPoints {
+  0 310
+  1 310
+  2 300
+  3 290
+  4 280
+  5 280
+  6 290
+  7 300
+  8 310
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 265
+y 340
+w 47
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 266
+y 341
+w 56
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "ST22"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 265
+y 340
+w 56
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "ST22"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 392
+y 300
+w 16
+h 40
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 392
+y 296
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:2324:BACT, AB01:BTRM:2324:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 392
+y 296
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:2324:BACT, AB01:BTRM:2324:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 371
+y 340
+w 60
+h 57
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 372
+y 341
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 2324"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 371
+y 340
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 2324"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 503
+y 276
+w 17
+h 30
+lineColor index 64
+fill
+fillColor index 9
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 503
+y 325
+w 17
+h 30
+lineColor index 64
+fill
+fillColor index 9
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 486
+y 368
+w 48
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 495
+y 369
+w 43
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "C24"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 494
+y 368
+w 43
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "C24"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 300
+w 16
+h 40
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 296
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:2526:BACT, AB01:BTRM:2526:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 630
+y 296
+w 16
+h 40
+lineColor index 14
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.2?1:0\}(AB01:BTRM:2526:BACT, AB01:BTRM:2526:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 610
+y 340
+w 60
+h 57
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 610
+y 341
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 2526"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 609
+y 340
+w 72
+h 56
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "BTRM"
+  " 2526"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 280
+w 66
+h 70
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 754
+y 280
+w 21
+h 64
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:2750:BACT, AB01:LGPS:2750:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 754
+y 280
+w 21
+h 64
+lineColor index 14
+lineAlarm
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:2750:BACT, AB01:LGPS:2750:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 733
+y 286
+w 28
+h 53
+lineColor index 14
+fill
+fillColor index 14
+startAngle -60
+totalAngle 120
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 768
+y 286
+w 28
+h 53
+lineColor index 14
+fill
+fillColor index 14
+startAngle 120
+totalAngle 120
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 754
+y 336
+w 22
+h 7
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 754
+y 280
+w 22
+h 7
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 745
+y 340
+w 38
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 746
+y 341
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Q27"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 745
+y 340
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "Q27"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 888
+y 290
+w 17
+h 50
+lineColor index 20
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:2850:BACT, AB01:LGPS:2850:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 880
+y 340
+w 38
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 881
+y 341
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Q28"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 880
+y 340
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "Q28"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 888
+y 290
+w 17
+h 50
+lineColor index 15
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:2850:BACT, AB01:LGPS:2850:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1037
+y 280
+w 9
+h 44
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1037
+y 304
+w 9
+h 20
+lineColor index 14
+fill
+fillColor index 20
+visPv "AB01:PROF:2865:target"
+visMin "5"
+visMax "6"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1037
+y 280
+w 9
+h 20
+lineColor index 15
+fill
+fillColor index 15
+visPv "AB01:PROF:2865:target"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1020
+y 340
+w 48
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1021
+y 341
+w 57
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "PR28"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1020
+y 340
+w 57
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "PR28"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1151
+y 280
+w 25
+h 30
+lineColor index 15
+fill
+fillColor index 15
+visPv "PPS:ESA0:4:ST29_IN_A"
+visMin "0"
+visMax "1"
+numPoints 9
+xPoints {
+  0 1159
+  1 1168
+  2 1176
+  3 1176
+  4 1168
+  5 1159
+  6 1151
+  7 1151
+  8 1159
+}
+yPoints {
+  0 310
+  1 310
+  2 300
+  3 290
+  4 280
+  5 280
+  6 290
+  7 300
+  8 310
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1151
+y 300
+w 25
+h 30
+lineColor index 20
+fill
+fillColor index 20
+visPv "PPS:ESA0:4:ST29_IN_A"
+visMin "1"
+visMax "2"
+numPoints 9
+xPoints {
+  0 1159
+  1 1168
+  2 1176
+  3 1176
+  4 1168
+  5 1159
+  6 1151
+  7 1151
+  8 1159
+}
+yPoints {
+  0 330
+  1 330
+  2 320
+  3 310
+  4 300
+  5 300
+  6 310
+  7 320
+  8 330
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1143
+y 340
+w 47
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1144
+y 341
+w 56
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "ST29"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1143
+y 340
+w 56
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "ST29"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1242
+y 280
+w 66
+h 70
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1263
+y 280
+w 21
+h 64
+lineColor index 14
+fill
+fillColor index 15
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:3050:BACT, AB01:LGPS:3050:BDES)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1263
+y 280
+w 21
+h 64
+lineColor index 14
+lineAlarm
+fill
+fillColor index 20
+visPv "CALC\\\{abs(A-B)>0.5?1:0\}(AB01:LGPS:3050:BACT, AB01:LGPS:3050:BDES)"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1242
+y 286
+w 28
+h 53
+lineColor index 14
+fill
+fillColor index 14
+startAngle -60
+totalAngle 120
+endObjectProperties
+
+# (Arc)
+object activeArcClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1277
+y 286
+w 28
+h 53
+lineColor index 14
+fill
+fillColor index 14
+startAngle 120
+totalAngle 120
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1263
+y 336
+w 22
+h 7
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1263
+y 280
+w 22
+h 7
+lineColor index 14
+fill
+fillColor index 14
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1254
+y 340
+w 38
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1255
+y 341
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Q30"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1254
+y 340
+w 45
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "Q30"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1382
+y 304
+w 9
+h 20
+lineColor index 14
+fill
+fillColor index 20
+visPv "AB01:PROF:3320:target"
+visMin "5"
+visMax "6"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1382
+y 280
+w 9
+h 20
+lineColor index 15
+fill
+fillColor index 15
+visPv "AB01:PROF:3320:target"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1382
+y 290
+w 8
+h 20
+lineColor index 35
+fill
+fillColor index 35
+visPv "AB01:PROF:3320:target"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1370
+y 340
+w 48
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1366
+y 341
+w 57
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "PR33"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1365
+y 340
+w 57
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "PR33"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1464
+y 276
+w 17
+h 30
+lineColor index 64
+fill
+fillColor index 9
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1464
+y 325
+w 17
+h 30
+lineColor index 64
+fill
+fillColor index 9
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1447
+y 368
+w 48
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1456
+y 369
+w 43
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "C37"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1455
+y 368
+w 43
+h 28
+font "utopia-medium-r-24.0"
+fgColor index 4
+bgColor index 0
+useDisplayBg
+value {
+  "C37"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 600
+y 100
+w 311
+h 47
+font "utopia-medium-r-40.0"
+fgColor index 77
+bgColor index 0
+useDisplayBg
+visPv "BPMS:BSY0:1:TMIT1H"
+visMin "0"
+visMax "100000000"
+value {
+  "NO LCLS BEAM!"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 570
+y 100
+w 368
+h 47
+font "utopia-medium-r-40.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+visPv "BPMS:BSY0:1:TMIT1H"
+visMin "100000000"
+visMax "10000000000"
+value {
+  "LCLS Beam Present"
+}
+autoSize
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 470
+y 440
+w 480
+h 330
+# Appearance
+border
+fgColor index 0
+bgColor index 14
+gridColor index 0
+font "helvetica-medium-r-18.0"
+# Operating Modes
+nPts 2
+# X axis properties
+xAxisSrc "fromUser"
+xMin 1
+xMax 500
+xLabelIntervals 10
+xShowLabelGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+yAxisSrc "fromUser"
+yMin -4
+yMax 4
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 4
+yPv {
+  0 "ESA:SC02:WF:CH0:TRACE"
+  1 "ESA:SC02:WF:CH1:TRACE"
+  2 "ESA:SC02:WF:CH2:TRACE"
+  3 "ESA:SC02:WF:CH3:TRACE"
+}
+opMode {
+  0 "plot"
+}
+plotColor {
+  0 index 21
+  1 index 26
+  2 index 31
+  3 index 36
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 410
+w 630
+h 520
+
+beginGroup
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1391
+y 410
+w 188
+h 50
+fgColor index 0
+bgColor index 14
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "LOC\\histoplotPV=e:0,SciFi-OpT,SC-OpTable,Lead Glass 1, Rear Paddle, Front Paddle"
+indicatorPv "LOC\\histoplotPV=e:0,1,2,3,4,5"
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 422
+w 630
+h 508
+
+beginGroup
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 960
+y 472
+w 630
+h 458
+# Appearance
+border
+fgColor index 15
+bgColor index 14
+gridColor index 0
+font "helvetica-medium-r-18.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 1
+xMax 2000
+xAxisSmoothing 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMin 0
+yMax 20
+yAxisSmoothing 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "ESA:RT02:GADC0:ASUB:CH8:HIST.VALA"
+}
+opMode {
+  0 "plot"
+}
+plotColor {
+  0 index 21
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1181
+y 422
+w 169
+h 47
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+value {
+  "SciFi-OpT"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+visPv "LOC\\histoplotPV"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 422
+w 630
+h 508
+
+beginGroup
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 960
+y 472
+w 630
+h 458
+# Appearance
+border
+fgColor index 15
+bgColor index 14
+gridColor index 0
+font "helvetica-medium-r-18.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 1
+xMax 2000
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMin 0
+yMax 20
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "ESA:RT02:GADC0:ASUB:CH2-1:HIST.VALA"
+}
+opMode {
+  0 "plot"
+}
+plotColor {
+  0 index 21
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1159
+y 422
+w 209
+h 47
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+value {
+  "Lead Glass 1"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+visPv "LOC\\histoplotPV"
+visMin "2"
+visMax "3"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 422
+w 630
+h 508
+
+beginGroup
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 960
+y 472
+w 630
+h 458
+# Appearance
+border
+fgColor index 15
+bgColor index 14
+gridColor index 0
+font "helvetica-medium-r-18.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 1
+xMax 2000
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMin 0
+yMax 20
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "ESA:RT02:GADC0:ASUB:CH0:HIST.VALA"
+}
+opMode {
+  0 "plot"
+}
+plotColor {
+  0 index 21
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1159
+y 422
+w 215
+h 47
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+value {
+  "Front Paddle"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+visPv "LOC\\histoplotPV"
+visMin "4"
+visMax "5"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 422
+w 630
+h 508
+
+beginGroup
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 960
+y 472
+w 630
+h 458
+# Appearance
+border
+fgColor index 15
+bgColor index 14
+gridColor index 0
+font "helvetica-medium-r-18.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 1
+xMax 2000
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMin 0
+yMax 20
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "ESA:RT02:GADC0:ASUB:CH1:HIST.VALA"
+}
+opMode {
+  0 "plot"
+}
+plotColor {
+  0 index 21
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1159
+y 422
+w 199
+h 47
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+value {
+  "Rear Paddle"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+visPv "LOC\\histoplotPV"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 960
+y 422
+w 630
+h 508
+
+beginGroup
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 960
+y 472
+w 630
+h 458
+# Appearance
+border
+fgColor index 15
+bgColor index 14
+gridColor index 0
+font "helvetica-medium-r-18.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMin 1
+xMax 2000
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMin 0
+yMax 20
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "ESA:RT02:GADC0:ASUB:CH7:HIST.VALA"
+}
+opMode {
+  0 "plot"
+}
+plotColor {
+  0 index 21
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1170
+y 422
+w 202
+h 47
+font "utopia-medium-r-32.0"
+fgColor index 15
+bgColor index 0
+useDisplayBg
+value {
+  "SC-OpTable"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+visPv "LOC\\histoplotPV"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

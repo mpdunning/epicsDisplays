@@ -1,0 +1,10647 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 824
+y 409
+w 630
+h 728
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 504
+w 608
+h 208
+lineColor index 13
+fill
+fillColor index 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 292
+w 608
+h 208
+lineColor index 13
+fill
+fillColor index 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 80
+w 608
+h 208
+lineColor index 13
+fill
+fillColor index 3
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 629
+h 34
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 304
+y 52
+w 33
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Upper"
+  "Limit"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 244
+y 52
+w 34
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Lower"
+  "Limit"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 364
+y 52
+w 25
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Tick"
+  "Limit"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 520
+y 4
+w 40
+h 24
+fgColor index 55
+bgColor index 11
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+buttonLabel "Help"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "helpFDetail.edl"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 8
+w 265
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Sample Values from Slow HB channels"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 144
+y 64
+w 60
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "value read"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 404
+y 52
+w 49
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "  Mask"
+  "RF  Mod"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 580
+y 4
+w 44
+h 24
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 468
+y 52
+w 49
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  " Fault"
+  "RF  Mod"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 88
+w 72
+h 14
+controlPv "$(P):3F1:AI:S:CH1:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 108
+w 72
+h 14
+controlPv "$(P):3F1:AI:S:CH2:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 128
+w 72
+h 14
+controlPv "$(P):3F1:AI:S:CH3:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 148
+w 72
+h 14
+controlPv "$(P):3F1:AI:S:CH4:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 168
+w 72
+h 14
+controlPv "$(P):3F1:AI:S:CH5:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 188
+w 72
+h 14
+controlPv "$(P):3F1:AI:S:CH6:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 208
+w 72
+h 14
+controlPv "$(P):3F1:AI:S:CH7:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 228
+w 72
+h 14
+controlPv "$(P):3F1:AI:S:CH8:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 248
+w 72
+h 14
+controlPv "$(P):3F1:AI:S:CH9:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 268
+w 72
+h 14
+controlPv "$(P):3F1:AI:S:CH10:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 88
+w 64
+h 14
+controlPv "$(P):3F1:AI:S:CH1:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 108
+w 64
+h 14
+controlPv "$(P):3F1:AI:S:CH2:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 128
+w 64
+h 14
+controlPv "$(P):3F1:AI:S:CH3:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 148
+w 64
+h 14
+controlPv "$(P):3F1:AI:S:CH4:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 168
+w 64
+h 14
+controlPv "$(P):3F1:AI:S:CH5:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 188
+w 64
+h 14
+controlPv "$(P):3F1:AI:S:CH6:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 208
+w 64
+h 14
+controlPv "$(P):3F1:AI:S:CH7:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 228
+w 64
+h 14
+controlPv "$(P):3F1:AI:S:CH8:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 248
+w 64
+h 14
+controlPv "$(P):3F1:AI:S:CH9:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 268
+w 64
+h 14
+controlPv "$(P):3F1:AI:S:CH10:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 88
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH1:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 88
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH1:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 88
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH1:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 108
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH2:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 108
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH2:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 108
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH2:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 128
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH3:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 128
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH3:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 128
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH3:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 148
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH4:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 148
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH4:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 148
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH4:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 168
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH5:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 168
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH5:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 168
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH5:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 188
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH6:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 188
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH6:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 188
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH6:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 208
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH7:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 208
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH7:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 208
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH7:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 228
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH8:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 228
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH8:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 228
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH8:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 248
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH9:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 248
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH9:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 248
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH9:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 268
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH10:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 268
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH10:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 268
+w 56
+h 14
+controlPv "$(P):3F1:AO:S:CH10:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 88
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=1"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 108
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=2"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 128
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=3"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 148
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=4"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 168
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=5"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 188
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=6"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 208
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=7"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 228
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=8"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 248
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=9"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 268
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=10"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 88
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=0,CH=1"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 108
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=1,CH=2"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 128
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=2,CH=3"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 148
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=3,CH=4"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 168
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=4,CH=5"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 188
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=5,CH=6"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 208
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=6,CH=7"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 228
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=7,CH=8"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 248
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=8,CH=9"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 268
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F1,T=S,C=9,CH=10"
+}
+swapButtons
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 84
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:RF:FLT:MSK:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 104
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:RF:FLT:MSK:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 124
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:RF:FLT:MSK:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 144
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:RF:FLT:MSK:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 164
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:RF:FLT:MSK:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 184
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:RF:FLT:MSK:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 204
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:RF:FLT:MSK:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 224
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:RF:FLT:MSK:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 244
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:RF:FLT:MSK:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 264
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:RF:FLT:MSK:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 84
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:MD:FLT:MSK:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 104
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:MD:FLT:MSK:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 124
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:MD:FLT:MSK:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 144
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:MD:FLT:MSK:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 164
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:MD:FLT:MSK:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 184
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:MD:FLT:MSK:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 204
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:MD:FLT:MSK:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 224
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:MD:FLT:MSK:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 244
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:MD:FLT:MSK:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 264
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBOB:MD:FLT:MSK:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 84
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:RF:FAULT:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 104
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:RF:FAULT:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 124
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:RF:FAULT:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 144
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:RF:FAULT:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 164
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:RF:FAULT:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 184
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:RF:FAULT:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 204
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:RF:FAULT:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 224
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:RF:FAULT:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 244
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:RF:FAULT:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 264
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:RF:FAULT:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 84
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:MD:FAULT:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 104
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:MD:FAULT:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 124
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:MD:FAULT:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 144
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:MD:FAULT:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 164
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:MD:FAULT:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 184
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:MD:FAULT:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 204
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:MD:FAULT:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 224
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:MD:FAULT:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 244
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:MD:FAULT:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 264
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F1:MBBID:MD:FAULT:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 512
+w 72
+h 14
+controlPv "$(P):3F3:AI:S:CH1:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 532
+w 72
+h 14
+controlPv "$(P):3F3:AI:S:CH2:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 552
+w 72
+h 14
+controlPv "$(P):3F3:AI:S:CH3:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 572
+w 72
+h 14
+controlPv "$(P):3F3:AI:S:CH4:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 592
+w 72
+h 14
+controlPv "$(P):3F3:AI:S:CH5:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 612
+w 72
+h 14
+controlPv "$(P):3F3:AI:S:CH6:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 632
+w 72
+h 14
+controlPv "$(P):3F3:AI:S:CH7:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 652
+w 72
+h 14
+controlPv "$(P):3F3:AI:S:CH8:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 672
+w 72
+h 14
+controlPv "$(P):3F3:AI:S:CH9:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 692
+w 72
+h 14
+controlPv "$(P):3F3:AI:S:CH10:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 512
+w 64
+h 14
+controlPv "$(P):3F3:AI:S:CH1:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 532
+w 64
+h 14
+controlPv "$(P):3F3:AI:S:CH2:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 552
+w 64
+h 14
+controlPv "$(P):3F3:AI:S:CH3:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 572
+w 64
+h 14
+controlPv "$(P):3F3:AI:S:CH4:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 592
+w 64
+h 14
+controlPv "$(P):3F3:AI:S:CH5:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 612
+w 64
+h 14
+controlPv "$(P):3F3:AI:S:CH6:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 632
+w 64
+h 14
+controlPv "$(P):3F3:AI:S:CH7:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 652
+w 64
+h 14
+controlPv "$(P):3F3:AI:S:CH8:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 672
+w 64
+h 14
+controlPv "$(P):3F3:AI:S:CH9:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 692
+w 64
+h 14
+controlPv "$(P):3F3:AI:S:CH10:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 512
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH1:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 512
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH1:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 512
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH1:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 532
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH2:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 532
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH2:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 532
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH2:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 552
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH3:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 552
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH3:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 552
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH3:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 572
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH4:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 572
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH4:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 572
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH4:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 592
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH5:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 592
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH5:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 592
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH5:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 612
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH6:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 612
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH6:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 612
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH6:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 632
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH7:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 632
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH7:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 632
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH7:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 652
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH8:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 652
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH8:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 652
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH8:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 672
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH9:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 672
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH9:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 672
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH9:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 692
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH10:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 692
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH10:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 692
+w 56
+h 14
+controlPv "$(P):3F3:AO:S:CH10:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 512
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=1"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 532
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=2"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 552
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=3"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 572
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=4"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 592
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=5"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 612
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=6"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 632
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=7"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 652
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=8"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 672
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=9"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 692
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=10"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 512
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=0,CH=1"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 532
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=1,CH=2"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 552
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=2,CH=3"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 572
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=3,CH=4"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 592
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=4,CH=5"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 612
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=5,CH=6"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 632
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=6,CH=7"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 652
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=7,CH=8"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 672
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=8,CH=9"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 692
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F3,T=S,C=9,CH=10"
+}
+swapButtons
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 508
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:RF:FLT:MSK:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 528
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:RF:FLT:MSK:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 548
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:RF:FLT:MSK:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 568
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:RF:FLT:MSK:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 588
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:RF:FLT:MSK:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 608
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:RF:FLT:MSK:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 628
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:RF:FLT:MSK:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 648
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:RF:FLT:MSK:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 668
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:RF:FLT:MSK:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 688
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:RF:FLT:MSK:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 508
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:MD:FLT:MSK:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 528
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:MD:FLT:MSK:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 548
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:MD:FLT:MSK:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 568
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:MD:FLT:MSK:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 588
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:MD:FLT:MSK:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 608
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:MD:FLT:MSK:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 628
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:MD:FLT:MSK:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 648
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:MD:FLT:MSK:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 668
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:MD:FLT:MSK:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 688
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBOB:MD:FLT:MSK:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 508
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:RF:FAULT:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 528
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:RF:FAULT:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 548
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:RF:FAULT:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 568
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:RF:FAULT:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 588
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:RF:FAULT:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 608
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:RF:FAULT:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 628
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:RF:FAULT:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 648
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:RF:FAULT:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 668
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:RF:FAULT:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 688
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:RF:FAULT:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 508
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:MD:FAULT:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 528
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:MD:FAULT:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 548
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:MD:FAULT:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 568
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:MD:FAULT:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 588
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:MD:FAULT:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 608
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:MD:FAULT:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 628
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:MD:FAULT:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 648
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:MD:FAULT:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 668
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:MD:FAULT:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 688
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F3:MBBID:MD:FAULT:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 300
+w 72
+h 14
+controlPv "$(P):3F2:AI:S:CH1:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 320
+w 72
+h 14
+controlPv "$(P):3F2:AI:S:CH2:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 340
+w 72
+h 14
+controlPv "$(P):3F2:AI:S:CH3:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 360
+w 72
+h 14
+controlPv "$(P):3F2:AI:S:CH4:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 380
+w 72
+h 14
+controlPv "$(P):3F2:AI:S:CH5:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 400
+w 72
+h 14
+controlPv "$(P):3F2:AI:S:CH6:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 420
+w 72
+h 14
+controlPv "$(P):3F2:AI:S:CH7:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 440
+w 72
+h 14
+controlPv "$(P):3F2:AI:S:CH8:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 460
+w 72
+h 14
+controlPv "$(P):3F2:AI:S:CH9:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 144
+y 480
+w 72
+h 14
+controlPv "$(P):3F2:AI:S:CH10:SMPL"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+fgAlarm
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 300
+w 64
+h 14
+controlPv "$(P):3F2:AI:S:CH1:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 320
+w 64
+h 14
+controlPv "$(P):3F2:AI:S:CH2:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 340
+w 64
+h 14
+controlPv "$(P):3F2:AI:S:CH3:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 360
+w 64
+h 14
+controlPv "$(P):3F2:AI:S:CH4:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 380
+w 64
+h 14
+controlPv "$(P):3F2:AI:S:CH5:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 400
+w 64
+h 14
+controlPv "$(P):3F2:AI:S:CH6:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 420
+w 64
+h 14
+controlPv "$(P):3F2:AI:S:CH7:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 440
+w 64
+h 14
+controlPv "$(P):3F2:AI:S:CH8:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 460
+w 64
+h 14
+controlPv "$(P):3F2:AI:S:CH9:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 480
+w 64
+h 14
+controlPv "$(P):3F2:AI:S:CH10:SMPL.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 300
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH1:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 300
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH1:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 300
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH1:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 320
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH2:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 320
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH2:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 320
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH2:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 340
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH3:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 340
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH3:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 340
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH3:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 360
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH4:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 360
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH4:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 360
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH4:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 380
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH5:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 380
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH5:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 380
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH5:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 400
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH6:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 400
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH6:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 400
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH6:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 420
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH7:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 420
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH7:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 420
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH7:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 440
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH8:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 440
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH8:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 440
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH8:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 460
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH9:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 460
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH9:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 460
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH9:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 284
+y 480
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH10:ULIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 224
+y 480
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH10:LLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 480
+w 56
+h 14
+controlPv "$(P):3F2:AO:S:CH10:TLIM_XUP_"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 300
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=1"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 320
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=2"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 340
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=3"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 360
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=4"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 380
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=5"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 400
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=6"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 420
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=7"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 440
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=8"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 460
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=9"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 148
+y 480
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "scparm.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=10"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 300
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=0,CH=1"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 320
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=1,CH=2"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 340
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=2,CH=3"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 360
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=3,CH=4"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 380
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=4,CH=5"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 400
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=5,CH=6"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 420
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=6,CH=7"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 440
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=7,CH=8"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 460
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=8,CH=9"
+}
+swapButtons
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 200
+y 480
+w 16
+h 12
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acalc.edl"
+}
+symbols {
+  0 "F=3F2,T=S,C=9,CH=10"
+}
+swapButtons
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 296
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:RF:FLT:MSK:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 316
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:RF:FLT:MSK:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 336
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:RF:FLT:MSK:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 356
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:RF:FLT:MSK:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 376
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:RF:FLT:MSK:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 396
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:RF:FLT:MSK:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 416
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:RF:FLT:MSK:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 436
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:RF:FLT:MSK:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 456
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:RF:FLT:MSK:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 476
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:RF:FLT:MSK:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 296
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:MD:FLT:MSK:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 316
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:MD:FLT:MSK:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 336
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:MD:FLT:MSK:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 356
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:MD:FLT:MSK:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 376
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:MD:FLT:MSK:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 396
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:MD:FLT:MSK:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 416
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:MD:FLT:MSK:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 436
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:MD:FLT:MSK:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 456
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:MD:FLT:MSK:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 436
+y 476
+w 20
+h 20
+file "onof.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBOB:MD:FLT:MSK:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 296
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:RF:FAULT:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 316
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:RF:FAULT:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 336
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:RF:FAULT:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 356
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:RF:FAULT:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 376
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:RF:FAULT:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 396
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:RF:FAULT:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 416
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:RF:FAULT:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 436
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:RF:FAULT:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 456
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:RF:FAULT:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 476
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:RF:FAULT:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 296
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:MD:FAULT:LO.B0"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 316
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:MD:FAULT:LO.B1"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 336
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:MD:FAULT:LO.B2"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 356
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:MD:FAULT:LO.B3"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 376
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:MD:FAULT:LO.B4"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 396
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:MD:FAULT:LO.B5"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 416
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:MD:FAULT:LO.B6"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 436
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:MD:FAULT:LO.B7"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 456
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:MD:FAULT:LO.B8"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Symbol)
+object activeSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 476
+w 20
+h 20
+file "fofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):3F2:MBBID:MD:FAULT:LO.B9"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 4
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 540
+y 52
+w 71
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Fault Counts"
+  "  RF     Mod"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 88
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:RF:CH1:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 88
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:MD:CH1:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 108
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:RF:CH2:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 108
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:MD:CH2:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 128
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:RF:CH3:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 128
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:MD:CH3:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 148
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:RF:CH4:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 148
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:MD:CH4:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 168
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:RF:CH5:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 168
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:MD:CH5:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 188
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:RF:CH6:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 188
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:MD:CH6:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 208
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:RF:CH7:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 208
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:MD:CH7:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 228
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:RF:CH8:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 228
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:MD:CH8:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 248
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:RF:CH9:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 248
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:MD:CH9:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 268
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:RF:CH10:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 268
+w 32
+h 14
+controlPv "$(P):3F1:LO:S:MD:CH10:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 300
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:RF:CH1:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 300
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:MD:CH1:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 320
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:RF:CH2:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 320
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:MD:CH2:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 340
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:RF:CH3:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 340
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:MD:CH3:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 360
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:RF:CH4:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 360
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:MD:CH4:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 380
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:RF:CH5:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 380
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:MD:CH5:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 400
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:RF:CH6:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 400
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:MD:CH6:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 420
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:RF:CH7:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 420
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:MD:CH7:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 440
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:RF:CH8:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 440
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:MD:CH8:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 460
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:RF:CH9:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 460
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:MD:CH9:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 480
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:RF:CH10:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 480
+w 32
+h 14
+controlPv "$(P):3F2:LO:S:MD:CH10:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 512
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:RF:CH1:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 512
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:MD:CH1:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 532
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:RF:CH2:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 532
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:MD:CH2:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 552
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:RF:CH3:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 552
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:MD:CH3:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 572
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:RF:CH4:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 572
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:MD:CH4:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 592
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:RF:CH5:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 592
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:MD:CH5:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 612
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:RF:CH6:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 612
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:MD:CH6:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 632
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:RF:CH7:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 632
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:MD:CH7:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 652
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:RF:CH8:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 652
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:MD:CH8:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 672
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:RF:CH9:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 672
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:MD:CH9:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 528
+y 692
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:RF:CH10:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 576
+y 692
+w 32
+h 14
+controlPv "$(P):3F3:LO:S:MD:CH10:FAULT:COUNT"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 3
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+

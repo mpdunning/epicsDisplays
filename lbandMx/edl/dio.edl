@@ -1,0 +1,2193 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 716
+y 46
+w 340
+h 500
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 60
+ctlBgColor2 index 65
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 52
+w 308
+h 420
+lineColor index 13
+fill
+fillColor index 60
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 339
+h 35
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 16
+y 60
+w 95
+h 16
+controlPv "LB:DIO:R_NAME"
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 63
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 47
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 84
+y 112
+w 70
+h 18
+controlPv "LB:DIO:W_OUTPUT"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 46
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 256
+y 4
+w 70
+h 25
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 24
+y 88
+w 52
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+useDisplayBg
+value {
+  "input reg:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 16
+y 116
+w 59
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+useDisplayBg
+value {
+  "output reg:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 48
+y 144
+w 28
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+useDisplayBg
+value {
+  "CSR:"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 160
+y 84
+w 70
+h 18
+controlPv "LB:DIO:R_INPUT"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 160
+y 140
+w 70
+h 18
+controlPv "LB:DIO:R_CSR"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 228
+y 440
+w 75
+h 25
+fgColor index 13
+bgColor index 4
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:R_OUTPUT.SCAN"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 160
+y 112
+w 70
+h 18
+controlPv "LB:DIO:R_OUTPUT"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+useDisplayBg
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 84
+y 140
+w 70
+h 18
+controlPv "LB:DIO:W_CSR"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 46
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 84
+y 84
+w 70
+h 18
+controlPv "LB:DIO:W_INPUT"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 46
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 236
+y 84
+w 64
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:R_INPUT.PROC"
+pressValue "1"
+onLabel "read"
+offLabel "read"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 236
+y 112
+w 64
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:R_OUTPUT.PROC"
+pressValue "1"
+onLabel "read"
+offLabel "read"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 236
+y 140
+w 64
+h 20
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:R_CSR.PROC"
+pressValue "1"
+onLabel "read"
+offLabel "read"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 60
+y 192
+w 12
+h 192
+controlPv "LB:DIO:R_INPUT_REG"
+lineColor index 13
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 148
+y 192
+w 12
+h 192
+controlPv "LB:DIO:R_OUTPUT_REG"
+lineColor index 13
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 228
+y 192
+w 12
+h 192
+controlPv "LB:DIO:R_CSREG"
+lineColor index 13
+onColor index 15
+offColor index 19
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 60
+y 172
+w 27
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "Input"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 148
+y 172
+w 37
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "Output"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 228
+y 172
+w 25
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "CSR"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 80
+y 372
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 80
+y 288
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 7"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 80
+y 192
+w 27
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 15"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 80
+y 372
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 80
+y 372
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 80
+y 372
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 80
+y 276
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 8"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 372
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 288
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 7"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 192
+w 27
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 15"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 372
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 372
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 372
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 168
+y 276
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "bit 8"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 244
+y 192
+w 8
+h 96
+lineColor index 13
+fillColor index 60
+numPoints 4
+xPoints {
+  0 244
+  1 252
+  2 252
+  3 244
+}
+yPoints {
+  0 288
+  1 288
+  2 192
+  3 192
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 256
+y 228
+w 42
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "Board ID"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 248
+y 288
+w 20
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "TM1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 248
+y 300
+w 20
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "TM2"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 248
+y 312
+w 15
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "Fail"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 248
+y 336
+w 24
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "B3H"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 248
+y 348
+w 24
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "B2H"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 248
+y 360
+w 24
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "B1H"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 248
+y 372
+w 24
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 60
+useDisplayBg
+value {
+  "B0H"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 360
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.B1"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 192
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.BF"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 204
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.BE"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 228
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.BC"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 240
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.BB"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 216
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.BD"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 252
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.BA"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 264
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.B9"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 276
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.B8"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 288
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.B7"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 300
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.B6"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 312
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.B5"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 336
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.B3"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 324
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.B4"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 348
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.B2"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 372
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_INPUT_REG.B0"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 360
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.B1"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 192
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.BF"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 204
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.BE"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 228
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.BC"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 240
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.BB"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 216
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.BD"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 252
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.BA"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 264
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.B9"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 276
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.B8"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 288
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.B7"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 300
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.B6"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 312
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.B5"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 336
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.B3"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 324
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.B4"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 348
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.B2"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 128
+y 372
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_OUTPUT_REG.B0"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 360
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.B1"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 192
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.BF"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 204
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.BE"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 228
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.BC"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 240
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.BB"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 216
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.BD"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 252
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.BA"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 264
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.B9"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 276
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.B8"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 288
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.B7"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 300
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.B6"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 312
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.B5"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 336
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.B3"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 324
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.B4"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 348
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.B2"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 372
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 65
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:W_CSREG.B0"
+labelType "literal"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 212
+y 400
+w 48
+h 24
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:R_CSREG.PROC"
+pressValue "1"
+onLabel "read"
+offLabel "read"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 132
+y 400
+w 48
+h 24
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:R_OUTPUT_REG.PROC"
+pressValue "1"
+onLabel "read"
+offLabel "read"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 44
+y 400
+w 48
+h 24
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 12
+controlPv "LB:DIO:R_INPUT_REG.PROC"
+pressValue "1"
+onLabel "read"
+offLabel "read"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 40
+y 436
+w 64
+h 18
+controlPv "LB:DIO:W_INPUT_REG"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 8
+w 217
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Control, Status, Data Registers"
+}
+autoSize
+endObjectProperties
+

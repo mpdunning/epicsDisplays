@@ -1,0 +1,375 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 432
+y 19
+w 332
+h 180
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 120
+y 104
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "bits"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965bits.edl"
+}
+symbols {
+  0 "P=TEST1:ADC"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 24
+y 140
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Chanls"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965Chan.edl"
+}
+symbols {
+  0 "P=TEST1:ADC"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 216
+y 104
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ROM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965Rom.edl"
+}
+symbols {
+  0 "P=TEST1:ADC"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 168
+y 44
+w 92
+h 16
+controlPv "$(P):BI:STATE.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 272
+y 44
+w 44
+h 16
+controlPv "$(P):BI:STATE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 268
+y 40
+w 52
+h 24
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:STATE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 268
+y 40
+w 52
+h 24
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "$(P):BI:STATE"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 120
+y 140
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Raw"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965Raw.edl"
+}
+symbols {
+  0 "P=TEST1:ADC"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 24
+y 104
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "Registers"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965Regs.edl"
+}
+symbols {
+  0 "P=TEST1:ADC"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 328
+h 36
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 8
+w 248
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Controls for: $(P)"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 264
+y 4
+w 52
+h 28
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 48
+w 43
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Missed:"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 52
+y 48
+w 56
+h 16
+controlPv "TEST1:GADC0:CALC:N:MISS"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 72
+w 37
+h 14
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "nTrigs:"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 48
+y 72
+w 56
+h 16
+controlPv "TEST1:GADC0:LI:N:TRIGS"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+

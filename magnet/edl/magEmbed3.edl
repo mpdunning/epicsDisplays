@@ -1,0 +1,282 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 841
+y 51
+w 100
+h 100
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 0
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 148
+y 260
+w 42
+h 38
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 148
+y 260
+w 42
+h 38
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 34
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh XCORYCOR 1940"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 157
+y 264
+w 24
+h 30
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 34
+bgColor index 2
+useDisplayBg
+value {
+  "XCOR"
+  "YCOR"
+  "1940"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 0
+y 0
+w 40
+h 26
+controlPv "ESB:QUAD:$(MAG):BDES"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 40
+h 28
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 0
+y 0
+w 40
+h 28
+fgColor index 13
+bgColor index 60
+topShadowColor index 1
+botShadowColor index 19
+font "courier-medium-r-12.0"
+numCmds 2
+commandLabel {
+  0 "Open Display"
+  1 "Assign to Knob 1"
+}
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh QUAD $(MAG)"
+  1 "$SCRIPT/assignKnob.sh QUAD 480 1"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 0
+y 4
+w 40
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 19
+bgColor index 2
+useDisplayBg
+value {
+  "Quad"
+  "$(MAG)"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 20
+y 32
+w 18
+h 26
+controlPv "ESB:YCOR:$(MAG):BDES"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 0
+y 32
+w 18
+h 26
+controlPv "ESB:XCOR:$(MAG):BDES"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 32
+w 40
+h 28
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 0
+y 30
+w 40
+h 28
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 34
+font "courier-medium-r-12.0"
+numCmds 2
+commandLabel {
+  0 "Open Display"
+  1 "Assign to ..."
+}
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh XCORYCOR $(MAG)"
+  1 "xeyes"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 0
+y 34
+w 40
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 34
+bgColor index 2
+useDisplayBg
+value {
+  "$(MAG)"
+  "CORS"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

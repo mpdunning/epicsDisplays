@@ -1,0 +1,95 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 655
+y 381
+w 500
+h 364
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 59
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 40
+w 484
+h 316
+fgColor index 13
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,Gun,St0,St1,Echo,St3,End"
+file "gunVacEmbed.edl"
+center
+setSize
+sizeOfs 5
+numDsps 6
+displayFileName {
+  0 "gunVac.edl"
+  1 "st0Vac.edl"
+  2 "st1Vac.edl"
+  3 "echoVac.edl"
+  4 "st3VacEmbed.edl"
+  5 "endVac.edl"
+}
+menuLabel {
+  0 "Gun"
+  1 "St0"
+}
+symbols {
+  0 "AREA=Gun"
+  1 "AREA=St0"
+  2 "AREA=St1"
+  3 "AREA=Echo"
+  4 "AREA=St3"
+  5 "AREA=End"
+}
+replaceSymbols {
+  0 1
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 16
+w 328
+h 24
+fgColor index 13
+bgColor index 6
+selectColor index 3
+inconsistentColor index 6
+topShadowColor index 6
+botShadowColor index 6
+controlPv "LOC\\$(!W)show"
+font "helvetica-bold-r-12.0"
+orientation "horizontal"
+endObjectProperties
+

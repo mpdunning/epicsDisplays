@@ -1,0 +1,88 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 772
+y 51
+w 400
+h 400
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 29
+bgColor index 71
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 7
+w 360
+h 15
+font "courier-bold-r-14.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "Help for the Write RAM Registers Screen."
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 28
+w 385
+h 338
+font "courier-medium-r-12.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "Beckhoff engineers implemented the KL2531/2541 bus"
+  "terminal modules to consist of 6 Control and Status"
+  "(CSR) registers, which are directly accessible.  Bulk"
+  "of the registers used to monitor and control the motors"
+  "are accessible via the CSR registers.  I call these"
+  "hidden registers.  There are two types of hidden"
+  "registers: RAM and EEPROM.  RAM registers are wiped out"
+  "by power cycling and EEPROM registers retain their"
+  "values.  Some registers are implemented in both RAM"
+  "and EEPROM space.  On power on these registers in RAM"
+  "space get the values from their counterpart in the"
+  "EEPROM space."
+  ""
+  "This screen shows registers from the RAM space."
+  "The KL2531/2541 modules contain more RAM registers than"
+  "are shown here."
+  "The group of registers shown on the left does not have"
+  "corresponding registers in EEPROM space, whereas"
+  "the group of the registers shown on the right of"
+  "the screen does."
+  ""
+  "The values of the registers shown can be changed by"
+  "typing in the new value and pressing the Enter key."
+  "If the operation is successful, a read back value is"
+  "shown to the right of the control widget, which should"
+  "agree with the requested value."
+}
+autoSize
+endObjectProperties
+

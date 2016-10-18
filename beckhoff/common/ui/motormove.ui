@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>motorForm</class>
+ <widget class="QWidget" name="motorForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>164</width>
+    <height>170</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QELabel" name="qelabel">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>8</y>
+     <width>155</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:$(M)-$(N):DATA.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_3">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>36</y>
+     <width>89</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):CALC:$(M)-$(N):POS:MM</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>36</y>
+     <width>37</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Steps</string>
+   </property>
+  </widget>
+  <widget class="QEShape" name="qeshape_9">
+   <property name="geometry">
+    <rect>
+     <x>132</x>
+     <y>74</y>
+     <width>10</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="variable1" stdset="0">
+    <string>$(P):BI:$(M)-$(N):LIM:FOR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="animation1" stdset="0">
+    <enum>QEShape::ColourHue</enum>
+   </property>
+   <property name="scale1" stdset="0">
+    <double>-120.000000000000000</double>
+   </property>
+   <property name="offset1" stdset="0">
+    <double>120.000000000000000</double>
+   </property>
+   <property name="point1" stdset="0">
+    <point>
+     <x>1</x>
+     <y>1</y>
+    </point>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>8</x>
+     <y>15</y>
+    </point>
+   </property>
+  </widget>
+  <widget class="QEShape" name="qeshape_4">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>74</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="point1" stdset="0">
+    <point>
+     <x>0</x>
+     <y>1</y>
+    </point>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>125</x>
+     <y>16</y>
+    </point>
+   </property>
+   <property name="color1" stdset="0">
+    <color>
+     <red>152</red>
+     <green>255</green>
+     <blue>249</blue>
+    </color>
+   </property>
+   <property name="drawBorder">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QEShape" name="qeshape_3">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>74</y>
+     <width>10</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="variable1" stdset="0">
+    <string>$(P):BI:$(M)-$(N):LIM:REV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="animation1" stdset="0">
+    <enum>QEShape::ColourHue</enum>
+   </property>
+   <property name="scale1" stdset="0">
+    <double>-120.000000000000000</double>
+   </property>
+   <property name="offset1" stdset="0">
+    <double>120.000000000000000</double>
+   </property>
+   <property name="point1" stdset="0">
+    <point>
+     <x>1</x>
+     <y>1</y>
+    </point>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>8</x>
+     <y>15</y>
+    </point>
+   </property>
+  </widget>
+  <widget class="QEShape" name="qeshape">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>78</y>
+     <width>100</width>
+     <height>4</height>
+    </rect>
+   </property>
+   <property name="variable1" stdset="0">
+    <string>$(P):CALC:$(M)-$(N):POS:MM</string>
+   </property>
+   <property name="variable2" stdset="0">
+    <string/>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="animation1" stdset="0">
+    <enum>QEShape::Width</enum>
+   </property>
+   <property name="scale1" stdset="0">
+    <double>0.005000000000000</double>
+   </property>
+   <property name="offset1" stdset="0">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>100</x>
+     <y>4</y>
+    </point>
+   </property>
+   <property name="color1" stdset="0">
+    <color>
+     <red>118</red>
+     <green>136</green>
+     <blue>235</blue>
+    </color>
+   </property>
+   <property name="drawBorder">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QEShape" name="qeshape_2">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>84</y>
+     <width>100</width>
+     <height>4</height>
+    </rect>
+   </property>
+   <property name="variable1" stdset="0">
+    <string>$(P):AO:$(M)-$(N):SET:POS:MM</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="scale1" stdset="0">
+    <double>0.005000000000000</double>
+   </property>
+   <property name="offset1" stdset="0">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>100</x>
+     <y>8</y>
+    </point>
+   </property>
+   <property name="color1" stdset="0">
+    <color>
+     <red>200</red>
+     <green>111</green>
+     <blue>135</blue>
+    </color>
+   </property>
+   <property name="color5" stdset="0">
+    <color>
+     <red>255</red>
+     <green>157</green>
+     <blue>175</blue>
+    </color>
+   </property>
+   <property name="color6" stdset="0">
+    <color>
+     <red>250</red>
+     <green>105</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="color7" stdset="0">
+    <color>
+     <red>151</red>
+     <green>248</green>
+     <blue>232</blue>
+    </color>
+   </property>
+   <property name="color8" stdset="0">
+    <color>
+     <red>129</red>
+     <green>255</green>
+     <blue>140</blue>
+    </color>
+   </property>
+   <property name="color9" stdset="0">
+    <color>
+     <red>229</red>
+     <green>255</green>
+     <blue>133</blue>
+    </color>
+   </property>
+   <property name="color10" stdset="0">
+    <color>
+     <red>255</red>
+     <green>159</green>
+     <blue>90</blue>
+    </color>
+   </property>
+   <property name="drawBorder">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>96</y>
+     <width>25</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Abs</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>120</y>
+     <width>19</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="CAButton" name="FOR_PB">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>120</y>
+     <width>24</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&gt;</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnRelease" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="onText">
+    <string>Yes</string>
+   </property>
+   <property name="offText">
+    <string>Not</string>
+   </property>
+   <property name="showLabel">
+    <bool>true</bool>
+   </property>
+   <property name="onLabel">
+    <string>&gt;</string>
+   </property>
+   <property name="offLabel">
+    <string>&gt;</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:$(M)-$(N):JOG:FOR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="literalLabel">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>96</y>
+     <width>78</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>20.00 mm</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AO:$(M)-$(N):SET:POS:ABS</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="useDbPrecision">
+    <bool>true</bool>
+   </property>
+   <property name="addUnits">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="CAButton" name="REV_PB">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>120</y>
+     <width>24</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnRelease" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="onText">
+    <string>Yes</string>
+   </property>
+   <property name="offText">
+    <string>Not</string>
+   </property>
+   <property name="showLabel">
+    <bool>true</bool>
+   </property>
+   <property name="onLabel">
+    <string>&lt;</string>
+   </property>
+   <property name="offLabel">
+    <string>&lt;</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:$(M)-$(N):JOG:REV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="literalLabel">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="DenyGoQELB">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>146</y>
+     <width>17</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):DENYGO</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="visible" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="CAButton" name="STOP_PB">
+   <property name="geometry">
+    <rect>
+     <x>62</x>
+     <y>144</y>
+     <width>45</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="onColor">
+    <color>
+     <red>180</red>
+     <green>20</green>
+     <blue>60</blue>
+    </color>
+   </property>
+   <property name="offColor">
+    <color>
+     <red>240</red>
+     <green>20</green>
+     <blue>60</blue>
+    </color>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="textColor">
+    <color>
+     <red>255</red>
+     <green>240</green>
+     <blue>200</blue>
+    </color>
+   </property>
+   <property name="onText">
+    <string>Yes</string>
+   </property>
+   <property name="offText">
+    <string>Not</string>
+   </property>
+   <property name="onLabel">
+    <string>STOP</string>
+   </property>
+   <property name="offLabel">
+    <string>STOP</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:$(M)-$(N):STOP</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="literalLabel">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="DenyFoQELB">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>146</y>
+     <width>17</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):DENYFO</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="visible" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_2">
+   <property name="geometry">
+    <rect>
+     <x>54</x>
+     <y>120</y>
+     <width>72</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AO:$(M)-$(N):SET:INC:MM</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="useDbPrecision">
+    <bool>true</bool>
+   </property>
+   <property name="addUnits">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="DenyRvQELB">
+   <property name="geometry">
+    <rect>
+     <x>18</x>
+     <y>146</y>
+     <width>17</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):DENYRV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="visible" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="CAButton" name="GO_PB">
+   <property name="geometry">
+    <rect>
+     <x>122</x>
+     <y>96</y>
+     <width>32</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnRelease" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="onText">
+    <string>Yes</string>
+   </property>
+   <property name="offText">
+    <string>Not</string>
+   </property>
+   <property name="onLabel">
+    <string>Go</string>
+   </property>
+   <property name="offLabel">
+    <string>Go</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:$(M)-$(N):GO:POS:ABS</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="literalLabel">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_4">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>52</y>
+     <width>77</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):MBBI:$(M)-$(N):MOTOR:STATE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,M=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ctrlPB">
+   <property name="geometry">
+    <rect>
+     <x>116</x>
+     <y>144</y>
+     <width>37</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CTRL</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AButton</class>
+   <extends>QPushButton</extends>
+   <header>abutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAButton</class>
+   <extends>AButton</extends>
+   <header>cabutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEShape</class>
+   <extends>QWidget</extends>
+   <header>QEShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

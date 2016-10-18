@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestDialog</class>
+ <widget class="QDialog" name="TestDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>240</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="TButton" name="tbutton">
+   <property name="geometry">
+    <rect>
+     <x>92</x>
+     <y>52</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:$(R):CH1:MOT:ENABL</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=2531-1-2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="textOnClick" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="onText">
+    <string>Yes</string>
+   </property>
+   <property name="offText">
+    <string>Not</string>
+   </property>
+  </widget>
+  <widget class="TButton" name="tbutton_2">
+   <property name="geometry">
+    <rect>
+     <x>304</x>
+     <y>52</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(R):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=2531-1-2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="textOnClick" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="onText">
+    <string>Yes</string>
+   </property>
+   <property name="offText">
+    <string>Not</string>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>4</UInt>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>56</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AutoStart</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>56</y>
+     <width>85</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>keepEnabled</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="TButton" name="tbutton_3">
+   <property name="geometry">
+    <rect>
+     <x>304</x>
+     <y>80</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(R):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=2531-1-2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="textOnClick" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="onText">
+    <string>Yes</string>
+   </property>
+   <property name="offText">
+    <string>Not</string>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>4</UInt>
+   </property>
+  </widget>
+  <widget class="PButton" name="pbutton">
+   <property name="geometry">
+    <rect>
+     <x>92</x>
+     <y>88</y>
+     <width>75</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:$(R):CH1:GO:POS</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=2531-1-2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="pressText">
+    <string>Yes</string>
+   </property>
+   <property name="releaseText">
+    <string>Not</string>
+   </property>
+   <property name="literalLabel">
+    <bool>true</bool>
+   </property>
+   <property name="onLabel">
+    <string>GO</string>
+   </property>
+   <property name="offLabel">
+    <string>GO</string>
+   </property>
+  </widget>
+  <widget class="PButton" name="pbutton_2">
+   <property name="geometry">
+    <rect>
+     <x>132</x>
+     <y>120</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(R):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=2531-1-2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="useTextColor">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>Yes</string>
+   </property>
+   <property name="releaseText">
+    <string>Not</string>
+   </property>
+   <property name="showLabel">
+    <bool>false</bool>
+   </property>
+   <property name="literalLabel">
+    <bool>true</bool>
+   </property>
+   <property name="onLabel">
+    <string/>
+   </property>
+   <property name="offLabel">
+    <string/>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>6</UInt>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>96</x>
+     <y>124</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </widget>
+  <widget class="PButton" name="pbutton_3">
+   <property name="geometry">
+    <rect>
+     <x>96</x>
+     <y>156</y>
+     <width>72</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:$(R):CBYTE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=2531-1-2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string/>
+   </property>
+   <property name="releaseText">
+    <string/>
+   </property>
+   <property name="showLabel">
+    <bool>true</bool>
+   </property>
+   <property name="literalLabel">
+    <bool>true</bool>
+   </property>
+   <property name="onLabel">
+    <string>Reset</string>
+   </property>
+   <property name="offLabel">
+    <string>Reset</string>
+   </property>
+   <property name="bitNumber" stdset="0">
+    <UInt>6</UInt>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PButton</class>
+   <extends>QPushButton</extends>
+   <header>pbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TButton</class>
+   <extends>QPushButton</extends>
+   <header>tbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>TestDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>TestDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

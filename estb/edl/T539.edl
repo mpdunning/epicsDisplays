@@ -1,0 +1,543 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 881
+y 160
+w 544
+h 252
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 272
+y 52
+w 260
+h 188
+lineColor index 13
+fillColor index 2
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 560
+h 32
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 8
+w 132
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "T-539 Specific"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 480
+y 4
+w 56
+h 24
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 8
+y 52
+w 252
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Caladium Beckhoff (Motors, ADC, Temp.)"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "bkh26.edl"
+}
+symbols {
+  0 "P=ESA,M=26,D=BKH26,IOC=sioc-esa-bkh26"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 8
+y 92
+w 252
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Caladium Power Strip"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acswTop.edl"
+}
+symbols {
+  0 "P=ESA:ACSW8,IOC=sioc-esa-acs8"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 288
+y 44
+w 68
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 3
+value {
+  "Webcams"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 8
+y 132
+w 252
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "BK 9130 DC Supply"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "bkPrec9130.edl"
+}
+symbols {
+  0 "P=ESA:BKP01,IOC=sioc-esa-bkp01"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 208
+w 244
+h 24
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 280
+y 208
+w 244
+h 24
+fgColor index 13
+bgColor index 38
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+numCmds 1
+command {
+  0 "firefox \"http://esacam14\""
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 287
+y 212
+w 229
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+useDisplayBg
+value {
+  "EsaCam14: T-539 Caladium Stage"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 68
+w 244
+h 24
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 280
+y 68
+w 244
+h 24
+fgColor index 13
+bgColor index 38
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+numCmds 1
+command {
+  0 "firefox \"http://esacam03\""
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 287
+y 72
+w 229
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+useDisplayBg
+value {
+  "EsaCam03: T-539 Power Supplies"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 96
+w 244
+h 24
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 280
+y 96
+w 244
+h 24
+fgColor index 13
+bgColor index 38
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+numCmds 1
+command {
+  0 "firefox \"http://esacam04\""
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 287
+y 100
+w 229
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+useDisplayBg
+value {
+  "EsaCam04: T-539 Rotation Stage"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 124
+w 244
+h 24
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 280
+y 124
+w 244
+h 24
+fgColor index 13
+bgColor index 38
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+numCmds 1
+command {
+  0 "firefox \"http://esacam05\""
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 287
+y 128
+w 229
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+useDisplayBg
+value {
+  "EsaCam05: T-539 Exit window"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 152
+w 244
+h 24
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 280
+y 152
+w 244
+h 24
+fgColor index 13
+bgColor index 38
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+numCmds 1
+command {
+  0 "firefox \"http://esacam08\""
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 287
+y 156
+w 229
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+useDisplayBg
+value {
+  "EsaCam08: T-539 Dump"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 280
+y 180
+w 244
+h 24
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 280
+y 180
+w 244
+h 24
+fgColor index 13
+bgColor index 38
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+numCmds 1
+command {
+  0 "firefox \"http://esacam13\""
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 287
+y 184
+w 229
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+useDisplayBg
+value {
+  "EsaCam13: T-539 Nothing"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

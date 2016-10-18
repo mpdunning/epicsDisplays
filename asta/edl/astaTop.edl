@@ -1,0 +1,1094 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1368
+y 51
+w 544
+h 516
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 240
+y 60
+w 292
+h 448
+lineColor index 13
+fill
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 604
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 472
+y 4
+w 64
+h 32
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-bold-r-14.0"
+3d
+exitProgram
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 12
+w 248
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 13
+bgColor index 63
+value {
+  "ASTA EDM Display Manager"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 180
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Soft Channels"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "astasc.edl"
+}
+symbols {
+  0 "P=ASTA,IOC=sioc-asta-sc01"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 212
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Rigol 60xx Scope"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ds6x.edl"
+}
+symbols {
+  0 "P=ASTA:SC01,IOC=sioc-asta-scop01"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 116
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "UED Motors"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "mainUEDMotors.edl"
+}
+symbols {
+  0 "P=ASTA:UEDM,R=ASTA,N=30,IOC=sioc-asta-uedm"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 148
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Pollux Controller"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "polluxMain.edl"
+}
+symbols {
+  0 "P=ASTA:POLX01,IOC=sioc-asta-polx01"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 12
+y 52
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "astahome"
+numCmds 1
+command {
+  0 "xterm -iconic -T \"astahome\" -e \". /afs/slac/g/acctest/tools/script/ENVS_acctest.bash && astahome\""
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 276
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Remote Desktops"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "astaRdp.edl"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 412
+y 80
+w 49
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Viewers"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 276
+y 80
+w 84
+h 16
+font "helvetica-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "AreaDetector"
+}
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 252
+y 100
+w 268
+h 63
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e"
+file "camEmbed.edl"
+center
+setSize
+numDsps 1
+displayFileName {
+  0 "astaCamEmbed.edl"
+}
+symbols {
+  0 "C=01"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 488
+y 72
+w 31
+h 24
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Cam"
+  "Power"
+}
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 252
+y 148
+w 268
+h 63
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e"
+file "camEmbed.edl"
+center
+setSize
+numDsps 1
+displayFileName {
+  0 "astaCamEmbed.edl"
+}
+symbols {
+  0 "C=02"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 252
+y 200
+w 268
+h 63
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e"
+file "camEmbed.edl"
+center
+setSize
+numDsps 1
+displayFileName {
+  0 "astaCamEmbed.edl"
+}
+symbols {
+  0 "C=03"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 252
+y 248
+w 268
+h 63
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e"
+file "camEmbed.edl"
+center
+setSize
+numDsps 1
+displayFileName {
+  0 "astaCamEmbed.edl"
+}
+symbols {
+  0 "C=04"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 256
+y 52
+w 80
+h 19
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 1
+value {
+  "Cameras"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 308
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Stats"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "pvStats-asta.edl"
+}
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 252
+y 296
+w 268
+h 63
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e"
+file "camEmbed.edl"
+center
+setSize
+numDsps 1
+displayFileName {
+  0 "astaCamEmbed.edl"
+}
+symbols {
+  0 "C=05"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 244
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Tektronix Scope"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tds3xMain.edl"
+}
+symbols {
+  0 "P=ASTA:SCOP02,IOC=sioc-asta-scop02"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 340
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Lambda Laser Shutters"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "laserShutters-asta.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 372
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "UED DAQ"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "pvScan-ued.edl"
+}
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 252
+y 344
+w 268
+h 63
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e"
+file "camEmbed.edl"
+center
+setSize
+numDsps 1
+displayFileName {
+  0 "astaCamEmbed.edl"
+}
+symbols {
+  0 "C=06"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 252
+y 392
+w 268
+h 63
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e"
+file "camEmbed.edl"
+center
+setSize
+numDsps 1
+displayFileName {
+  0 "astaCamEmbed.edl"
+}
+symbols {
+  0 "C=07"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 404
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "SRS DG645"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "dg645.edl"
+}
+symbols {
+  0 "P=ASTA:DG01,IOC=sioc-asta-dg01"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 468
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "new home"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "/nfs/slac/g/asta/UED/EDM/UED.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 436
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Lakeshore 336"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lakeshore336-full.edl"
+}
+symbols {
+  0 "P=ASTA:LAKE01,IOC=sioc-asta-lake01"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 404
+y 476
+w 52
+h 24
+fgColor index 29
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-bold-r-10.0"
+buttonLabel "ImageJ"
+numCmds 1
+command {
+  0 "cd /afs/slac/g/testfac/tools/ImageJ && ./runAD-astaDD"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 460
+y 476
+w 52
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "qCam"
+numCmds 1
+command {
+  0 "/afs/slac/g/testfac/tools/display/qCam/prod/qCam16bit-astaDD/arch-64/qCam -m P=UED:TST:DIRECTD"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 248
+y 480
+w 152
+h 16
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Direct Detector (ar-asta01 only)"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 404
+y 440
+w 52
+h 24
+fgColor index 29
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-bold-r-10.0"
+buttonLabel "ImageJ"
+numCmds 1
+command {
+  0 "export CAMPVPREFIX=ANDOR1; cd /afs/slac/g/testfac/tools/ImageJ; ./runAD"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 460
+y 440
+w 52
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "qCam"
+numCmds 1
+command {
+  0 "/afs/slac/g/testfac/tools/display/qCam/prod/qCam16bit-andor/arch-64/qCam -m P=ANDOR1,P2=ACSW:AS01:NW03:6HARDRESET,P3=ACSW:AS01:NW03:6POWERSTATE,IOC=sioc-asta-ada01,CAMSERVER=ar-asta06"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 440
+w 136
+h 24
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 256
+y 440
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "andor-asta.edl"
+}
+symbols {
+  0 "P=ANDOR1:,R=cam1:,IOC=sioc-asta-ada01,PDU=ACSW:AS01:NW03,OUTLET=6,IOCSERVER=ar-asta06"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 440
+w 136
+h 24
+lineColor index 15
+fillColor index 15
+lineWidth 3
+visPv "ANDOR1:cam1:Acquire.RVAL"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 440
+w 136
+h 24
+lineColor index 13
+fillColor index 15
+visPv "ANDOR1:cam1:Acquire.RVAL"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 264
+y 444
+w 44
+h 16
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Andor"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 440
+w 136
+h 24
+lineColor index 20
+fillColor index 15
+lineWidth 3
+visPv "CALC\\\{(A)\}(ANDOR1:cam1:AsynIO.CNCT)"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 12
+y 84
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Beckhoffs"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "bkhMain-asta.edl"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 516
+w 220
+h 152
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 316
+y 516
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Beckhoff 5: ASTA ...."
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "bkhA5.edl"
+}
+symbols {
+  0 "P=ASTA,M=5,D=bkh5,IOC=sioc-asta-bkh5"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 316
+y 548
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Beckhoff 9: ASTA Bunker Ceiling"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "mainBkh9.edl"
+}
+symbols {
+  0 "P=ASTA,M=9,D=BKH9,A=9,IOC=sioc-asta-bkh9"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 316
+y 580
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Beckhoff 12: ASTA ...."
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "bkhA12.edl"
+}
+symbols {
+  0 "P=ASTA, M=12, A=12, D=bkh12, IOC=sioc-asta-bkh12"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 316
+y 612
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Beckhoff 31: ASTA Laser Room"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "bkhA31.edl"
+}
+symbols {
+  0 "P=ASTA,M=31,D=BKH31,A=31,IOC=sioc-asta-bkh31"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 316
+y 644
+w 220
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Beckhoff 32: ASTA ..."
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "bkhA32.edl"
+}
+symbols {
+  0 "P=ASTA, M=32, D=BKH32, A=32, IOC=sioc-asta-bkh32"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

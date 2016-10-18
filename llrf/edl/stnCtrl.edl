@@ -1,0 +1,183 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 13
+y 608
+w 556
+h 560
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 860
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 12
+w 304
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Station $(N) Phase & Amp Control"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 488
+y 4
+w 60
+h 32
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-bold-r-18.0"
+3d
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 76
+w 540
+h 476
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,LLRF Phs & Amp,LLRF Pulse,Phs & Amp RBV,Calibrate"
+sizeOfs 5
+numDsps 4
+displayFileName {
+  0 "stnCtrlMain.edl"
+  1 "stnCtrlPulse.edl"
+  2 "stnCtrlRBV.edl"
+  3 "stnCtrlCal.edl"
+}
+symbols {
+  0 "PAC_PRIM=ESB,PAC=L1X,PAC_LOCA=XBSTN$(N),PAC_UNIT=180"
+  1 "PAC_PRIM=ESB,PAC=L1X,PAC_LOCA=XBSTN$(N),PAC_UNIT=180"
+  2 "PAD_PRIM=ESB,PAD=$(PAD),PAD_LOCA=XBSTN$(N),PAD_UNIT=$(KLY)"
+  3 "PAC_PRIM=ESB,PAC=L1X,PAC_LOCA=XBSTN$(N),PAC_UNIT=180,PAD_PRIM=ESB,PAD=$(PAD),PAD_LOCA=XBSTN$(N),PAD_UNIT=$(KLY)"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 52
+w 532
+h 24
+fgColor index 13
+bgColor index 6
+selectColor index 2
+inconsistentColor index 8
+topShadowColor index 6
+botShadowColor index 6
+controlPv "LOC\\$(!W)show"
+font "helvetica-bold-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 396
+y 8
+w 76
+h 24
+fgColor index 0
+bgColor index 20
+topShadowColor index 72
+botShadowColor index 12
+font "helvetica-bold-r-10.0"
+buttonLabel "Reboot IOC"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "popUpConf.edl"
+}
+symbols {
+  0 "CMD=ssh $IOCSERVER $SCRIPT/iocRestart $(IOC),ACTION=Restart IOC: $(IOC),MESSAGE1=Takes 5 seconds...,MESSAGE2= "
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 272
+y 12
+w 104
+h 16
+controlPv "$(P):IOC"
+font "helvetica-bold-r-12.0"
+fgColor index 19
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+

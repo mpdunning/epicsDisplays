@@ -1,0 +1,2553 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 40
+y 61
+w 692
+h 786
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 379
+y 174
+w 109
+h 29
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "stnProc-klysled.edl"
+}
+symbols {
+  0 "$(P)=$(P)"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 618
+y 6
+w 64
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 2
+w 172
+h 43
+lineColor index 13
+fill
+fillColor index 38
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 13
+y 11
+w 121
+h 18
+font "courier-bold-r-18.0"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "Stn $(STN) "
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 93
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 93
+w 100
+h 35
+controlPv "$(P):L1X_I_ADJUST"
+displayMode "decimal"
+precision 4
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 103
+w 108
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "L1X_I_ADJUST"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 131
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 131
+w 100
+h 35
+controlPv "$(P):AMPL:SAVE"
+displayMode "decimal"
+precision 4
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 141
+w 81
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "AMPL Save"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 55
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 55
+w 100
+h 35
+controlPv "$(P):AMPL:DELTAMIN"
+displayMode "decimal"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 65
+w 126
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "AMPL Delta Min"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 169
+w 229
+h 35
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 179
+w 108
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "L1X_Q_ADJUST"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 169
+w 100
+h 35
+controlPv "$(P):L1X_Q_ADJUST"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 255
+y 71
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 384
+y 71
+w 100
+h 35
+controlPv "$(P):CLKVAL"
+displayMode "decimal"
+precision 2
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 255
+y 81
+w 81
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Clock Val"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 245
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 245
+w 100
+h 35
+controlPv "$(P):AMPL:SETP"
+displayMode "decimal"
+precision 4
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 255
+w 126
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "AMPL Set Point"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 254
+y 110
+w 229
+h 15
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 384
+y 111
+w 99
+h 15
+controlPv "$(P):ILOCK"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 254
+y 110
+w 81
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Interlock"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 257
+y 216
+w 229
+h 35
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 257
+y 226
+w 135
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "KLYS Max PWidth"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 386
+y 216
+w 100
+h 35
+controlPv "$(P):KLY:MAXPW"
+displayMode "decimal"
+precision 2
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 257
+y 251
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 386
+y 251
+w 100
+h 35
+controlPv "$(P):SLED:MAXPW"
+displayMode "decimal"
+precision 2
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 257
+y 261
+w 135
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "SLED Max PWidth"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 258
+y 392
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 387
+y 392
+w 100
+h 35
+controlPv "$(P):PAC03:SPWD"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 258
+y 402
+w 90
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PAC03 SPWD"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 258
+y 356
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 387
+y 356
+w 100
+h 35
+controlPv "$(P):PAC03:SPHS"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 258
+y 366
+w 90
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PAC03 SPHS"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 258
+y 321
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 387
+y 321
+w 100
+h 35
+controlPv "$(P):PAC03:SAMP"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 258
+y 331
+w 90
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PAC03 SAMP"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 473
+w 229
+h 35
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 483
+w 90
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "LLRF Power"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 473
+w 100
+h 35
+controlPv "$(P):LLRF:PWR"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 438
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 438
+w 100
+h 35
+controlPv "$(P):LLRF:PHS"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 448
+w 90
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "LLRF Phase"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 402
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 402
+w 100
+h 35
+controlPv "$(P):DRI:PWR"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 412
+w 99
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Drive Power"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 367
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 367
+w 100
+h 35
+controlPv "$(P):DRI:PHS"
+displayMode "decimal"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 377
+w 99
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Drive Phase"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 257
+y 533
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 386
+y 533
+w 100
+h 35
+controlPv "$(P):IQ:ZPTS"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 257
+y 543
+w 126
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "IQ Zero Points"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 257
+y 497
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 386
+y 497
+w 100
+h 35
+controlPv "$(P):IQ:LEN"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 257
+y 507
+w 81
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "IQ Length"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 257
+y 462
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 386
+y 462
+w 100
+h 35
+controlPv "$(P):IQ:HIVAL"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 257
+y 472
+w 117
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "IQ High Value"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 8
+y 523
+w 45
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "DEBUG"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 66
+y 511
+w 84
+h 34
+controlPv "$(P):PHAS:DEBUG"
+fgColor index 13
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 257
+y 286
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 386
+y 286
+w 100
+h 35
+controlPv "$(P):MAXPW"
+displayMode "decimal"
+precision 2
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 257
+y 296
+w 90
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Max PWidth"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 384
+y 181
+w 99
+h 15
+controlPv "$(P):PULSE:MODE"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 254
+y 182
+w 90
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Pulse Mode"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 480
+y 147
+w 99
+h 15
+controlPv "$(P):PROC:ON"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 254
+y 146
+w 63
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Proc ON"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 384
+y 136
+w 85
+h 29
+fgColor index 13
+bgColor index 2
+selectColor index 2
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):PROC:ON"
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 267
+y 581
+w 72
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "TrigMode"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 269
+y 629
+w 54
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "OpMode"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 357
+y 619
+w 85
+h 45
+fgColor index 13
+bgColor index 2
+selectColor index 2
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):OP:MODE"
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 291
+y 427
+w 194
+h 35
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 291
+y 437
+w 90
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "OFST HiVal"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 385
+y 427
+w 100
+h 35
+controlPv "$(P):OFST:HIVAL"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 2
+y 634
+w 45
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Qofst"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 2
+y 610
+w 45
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Iofst"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 2
+y 586
+w 45
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "QGain"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 2
+y 562
+w 45
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "IGain"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 49
+y 631
+w 60
+h 20
+controlPv "$(P):QOFST"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 49
+y 607
+w 60
+h 20
+controlPv "$(P):IOFST"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 49
+y 583
+w 60
+h 20
+controlPv "$(P):QGAIN"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 49
+y 559
+w 60
+h 20
+controlPv "$(P):IGAIN"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 113
+y 630
+w 27
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "QOT"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 113
+y 606
+w 27
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "IOT"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 113
+y 582
+w 27
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "QGT"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 113
+y 558
+w 27
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "IGT"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 160
+y 627
+w 60
+h 20
+controlPv "$(P):QOFST:TEST"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 160
+y 603
+w 60
+h 20
+controlPv "$(P):IOFST:TEST"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 160
+y 579
+w 60
+h 20
+controlPv "$(P):QGAIN:TEST"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 160
+y 555
+w 60
+h 20
+controlPv "$(P):IGAIN:TEST"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 530
+y 476
+w 100
+h 35
+controlPv "$(P):IQLOAD:TEST"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 494
+y 458
+w 63
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "IQ Load"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 524
+y 398
+w 100
+h 35
+controlPv "$(P):LLRFOUTF:PHSVAL"
+displayMode "decimal"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 503
+y 380
+w 81
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Phase Act"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 209
+y 663
+w 78
+h 31
+fgColor index 13
+onColor index 2
+offColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):DELPHAS.PROC"
+pressValue "1"
+onLabel "go delphas"
+offLabel "go delphas"
+3d
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 520
+y 329
+w 100
+h 35
+controlPv "$(P):PHAS:DES"
+displayMode "decimal"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 504
+y 259
+w 81
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Phase Des"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 318
+w 229
+h 23
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 318
+w 100
+h 23
+controlPv "$(P):PW:SETP"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 322
+w 108
+h 15
+font "courier-medium-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PW Set Point"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 343
+w 224
+h 23
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 343
+w 98
+h 23
+controlPv "$(P):PULSE:WIDTH"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 347
+w 99
+h 15
+font "courier-medium-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PULSE:WIDTH"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 475
+y 710
+w 184
+h 26
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "LLRFOUTF Phs,Amp,Pwr"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "stnProc-appplot.edl"
+}
+symbols {
+  0 "$(P)=$(P),SIGNAL=LLRFOUTF"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 474
+y 683
+w 184
+h 26
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "LLRFOUTF Raw, I, Q plots"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "stnProc-riqplot.edl"
+}
+symbols {
+  0 "$(P)=$(P),SIGNAL=LLRFOUTF"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 447
+y 632
+w 99
+h 15
+controlPv "$(P):OP:MODE"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 476
+y 737
+w 184
+h 26
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "LLRFOUTF Raw, IWF, QWF local"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "stnProc-iqwflocal.edl"
+}
+symbols {
+  0 "$(P)=$(P),SIGNAL=LLRFOUTF"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 217
+w 81
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "AMPL SETP"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 137
+y 204
+w 102
+h 39
+controlPv "$(P):AMPL:SETP"
+displayMode "decimal"
+precision 2
+fgColor index 13
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 525
+y 557
+w 96
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "Plot WFs"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "stnProc-plotwfs.edl"
+}
+symbols {
+  0 "CH1=LLRFOUTF,CH2=TWTOUTF,CH3=KLYOUTF,CH4=KLYOUTR,CH5=ACCINPF,CH6=ACCINPR,CH7=ACCOUTF,CH8=CH8"
+}
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 519
+y 282
+w 102
+h 39
+controlPv "$(P):PHAS:DES"
+displayMode "decimal"
+precision 2
+fgColor index 13
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 254
+y 4
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 383
+y 4
+w 100
+h 35
+controlPv "$(P):PAC:AMPL"
+displayMode "decimal"
+precision 4
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 254
+y 14
+w 72
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PAC Ampl"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 254
+y 38
+w 229
+h 35
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 383
+y 38
+w 100
+h 35
+controlPv "$(P):PAC:PHAS"
+displayMode "decimal"
+precision 2
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 254
+y 48
+w 81
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "PAC Phase"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 509
+y 47
+w 100
+h 35
+controlPv "$(P):LLRFOUTF:AMPVAL"
+displayMode "decimal"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 507
+y 93
+w 100
+h 35
+controlPv "$(P):LLRFOUTF:PWRVAL"
+displayMode "decimal"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (incDecButton)
+object idbClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 633
+y 280
+w 23
+h 41
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):PHAS:DES"
+coarseValue "1"
+fineValue ".2"
+3d
+rate 0.1
+scaleMin -180
+scaleMax 180
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 138
+y 281
+w 100
+h 35
+controlPv "$(P):PHS:SETP"
+fgColor index 14
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-14.0"
+fontAlign "right"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 9
+y 291
+w 135
+h 15
+font "courier-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Phase Set Point"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 522
+y 211
+w 102
+h 39
+controlPv "$(P):PHS:SETP"
+displayMode "decimal"
+precision 2
+fgColor index 13
+fgAlarm
+bgColor index 2
+fill
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 346
+y 574
+w 109
+h 29
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+invisible
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "stnProc-trigmode.edl"
+}
+symbols {
+  0 "$(P)=$(P)"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 351
+y 581
+w 99
+h 15
+controlPv "$(P):TRIG:MODE"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+

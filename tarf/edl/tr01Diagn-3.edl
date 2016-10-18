@@ -1,0 +1,962 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 577
+y 61
+w 320
+h 360
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 44
+w 288
+h 96
+lineColor index 13
+fill
+fillColor index 2
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 12
+y 8
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "v2534"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v2534.edl"
+}
+symbols {
+  0 "P=TR01:DIO"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 116
+y 8
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "SIS 1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "gtrNlcta.edl"
+}
+symbols {
+  0 "P=TR01,R=SISDTZ:C0"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 220
+y 8
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "v4132"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v4132.edl"
+}
+symbols {
+  0 "P=TR01:DAC"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 148
+y 52
+w 92
+h 16
+controlPv "TR01:GADC0:BI:STATE.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 252
+y 52
+w 44
+h 16
+controlPv "TR01:GADC0:BI:STATE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 48
+w 52
+h 24
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "TR01:GADC0:BI:STATE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 48
+w 52
+h 24
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "TR01:GADC0:BI:STATE"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 20
+y 76
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "Registers"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965Regs.edl"
+}
+symbols {
+  0 "P=TR01:GADC0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 20
+y 108
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "bits"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965bits.edl"
+}
+symbols {
+  0 "P=TR01:GADC0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 116
+y 76
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Chanls"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965Chan.edl"
+}
+symbols {
+  0 "P=TR01:GADC0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 212
+y 76
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Raw"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965Raw.edl"
+}
+symbols {
+  0 "P=TR01:GADC0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 116
+y 108
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ROM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965Rom.edl"
+}
+symbols {
+  0 "P=TR01:GADC0"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 24
+y 52
+w 104
+h 15
+controlPv "TR01:GADC0:SI:NAME.DESC"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 212
+y 108
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "debug"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v965Debug.edl"
+}
+symbols {
+  0 "P=TR01:GADC0"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 144
+w 288
+h 64
+lineColor index 13
+fill
+fillColor index 2
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 148
+y 152
+w 92
+h 16
+controlPv "TR01:GADC0:BI:STATE.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 252
+y 152
+w 44
+h 16
+controlPv "TR01:GADC0:BI:STATE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 148
+w 52
+h 24
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "TR01:GADC0:BI:STATE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 148
+w 52
+h 24
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "TR01:GADC0:BI:STATE"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 20
+y 176
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "Registers"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v265Regs.edl"
+}
+symbols {
+  0 "P=TR01:GADC0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 116
+y 176
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Chanls"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v265Chan.edl"
+}
+symbols {
+  0 "P=TR01:GADC0"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 24
+y 152
+w 104
+h 15
+controlPv "TR01:GADC0:SI:NAME.DESC"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 212
+y 176
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Chan 2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v265Chan2.edl"
+}
+symbols {
+  0 "P=TR01:GADC0"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 212
+w 288
+h 64
+lineColor index 13
+fill
+fillColor index 2
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 148
+y 220
+w 92
+h 16
+controlPv "TR01:GADC1:BI:STATE.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 252
+y 220
+w 44
+h 16
+controlPv "TR01:GADC1:BI:STATE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 216
+w 52
+h 24
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "TR01:GADC1:BI:STATE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 216
+w 52
+h 24
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "TR01:GADC1:BI:STATE"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 20
+y 244
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "Registers"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v265Regs.edl"
+}
+symbols {
+  0 "P=TR01:GADC1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 116
+y 244
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Chanls"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v265Chan.edl"
+}
+symbols {
+  0 "P=TR01:GADC1"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 24
+y 220
+w 104
+h 15
+controlPv "TR01:GADC1:SI:NAME.DESC"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 212
+y 244
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Chan 2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v265Chan2.edl"
+}
+symbols {
+  0 "P=TR01:GADC1"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 280
+w 288
+h 64
+lineColor index 13
+fill
+fillColor index 2
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 148
+y 288
+w 92
+h 16
+controlPv "TR01:GADC2:BI:STATE.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 252
+y 288
+w 44
+h 16
+controlPv "TR01:GADC2:BI:STATE"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 284
+w 52
+h 24
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "TR01:GADC2:BI:STATE"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 248
+y 284
+w 52
+h 24
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "TR01:GADC2:BI:STATE"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 20
+y 312
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "Registers"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v265Regs.edl"
+}
+symbols {
+  0 "P=TR01:GADC2"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 116
+y 312
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Chanls"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v265Chan.edl"
+}
+symbols {
+  0 "P=TR01:GADC2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 24
+y 288
+w 104
+h 15
+controlPv "TR01:GADC2:SI:NAME.DESC"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 212
+y 312
+w 88
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+buttonLabel "ADC Chan 2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "v265Chan2.edl"
+}
+symbols {
+  0 "P=TR01:GADC2"
+}
+endObjectProperties
+

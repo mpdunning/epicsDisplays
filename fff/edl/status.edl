@@ -1,0 +1,159 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 805
+y 410
+w 602
+h 580
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+ctlFont "helvetica-medium-r-12.0"
+ctlFontAlign "right"
+btnFont "helvetica-medium-r-12.0"
+btnFontAlign "right"
+fgColor index 13
+bgColor index 6
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 76
+w 580
+h 488
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)showIt=e:0,3F1,3F2,3F3"
+sizeOfs 5
+numDsps 3
+displayFileName {
+  0 "status1.edl"
+  1 "status1.edl"
+  2 "status1.edl"
+}
+symbols {
+  0 "P=ESB,F=3F1"
+  1 "P=ESB,F=3F2"
+  2 "P=ESB,F=3F3"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 52
+w 156
+h 24
+fgColor index 13
+bgColor index 5
+selectColor index 3
+inconsistentColor index 8
+topShadowColor index 5
+botShadowColor index 5
+controlPv "LOC\\$(!W)showIt"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 600
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 8
+w 190
+h 16
+font "helvetica-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Some FFF Status Registers"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 524
+y 4
+w 52
+h 32
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "helvetica-bold-r-12.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 364
+y 44
+w 108
+h 28
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "faultStatReg"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "faultStatR.edl"
+}
+endObjectProperties
+

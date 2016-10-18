@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>454</width>
+    <height>176</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>24</y>
+     <width>137</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Channel</string>
+   </property>
+   <widget class="QELineEdit" name="qelineedit">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>24</y>
+      <width>125</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(M)C-$(N):CH1.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QEGenericEdit::Never</enum>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_2">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>48</y>
+      <width>125</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(M)C-$(N):CH2.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QEGenericEdit::Never</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>146</x>
+     <y>24</y>
+     <width>45</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>sByte</string>
+   </property>
+   <widget class="QELabel" name="qelabel">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>26</y>
+      <width>32</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LI:$(M)-$(N):SBYTE1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QELabel::WhenInAlarm</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_4">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>50</y>
+      <width>32</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LI:$(M)-$(N):SBYTE2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QELabel::WhenInAlarm</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>24</y>
+     <width>116</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>T (degC)</string>
+   </property>
+   <widget class="QELabel" name="qelabel_2">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>26</y>
+      <width>76</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(M)C-$(N):CH1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QELabel::WhenInAlarm</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_5">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>50</y>
+      <width>76</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(M)C-$(N):CH2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QELabel::WhenInAlarm</enum>
+    </property>
+   </widget>
+   <widget class="CAShape" name="cashape_2">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>24</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="color1">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="color2">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="LT2">
+     <number>65536</number>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LI:$(M)-$(N):SBYTE1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+   </widget>
+   <widget class="CAShape" name="cashape_5">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>48</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="border">
+     <bool>true</bool>
+    </property>
+    <property name="borderLineWidth" stdset="0">
+     <UInt>2</UInt>
+    </property>
+    <property name="color1">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="color2">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="LT2">
+     <number>65536</number>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LI:$(M)-$(N):SBYTE2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="alrmCh1CPB">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>24</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="alrmCh2CPB">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>48</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>cashape_5</zorder>
+   <zorder>cashape_2</zorder>
+   <zorder>qelabel_2</zorder>
+   <zorder>qelabel_5</zorder>
+   <zorder>alrmCh1CPB</zorder>
+   <zorder>alrmCh2CPB</zorder>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>312</x>
+     <y>24</y>
+     <width>116</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>T (degF)</string>
+   </property>
+   <widget class="QELabel" name="qelabel_3">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>26</y>
+      <width>76</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(M)F-$(N):CH1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QELabel::WhenInAlarm</enum>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_6">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>50</y>
+      <width>76</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(M)F-$(N):CH2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QELabel::WhenInAlarm</enum>
+    </property>
+   </widget>
+   <widget class="CAShape" name="cashape_3">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>24</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="color1">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="color2">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="LT2">
+     <number>65536</number>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LI:$(M)-$(N):SBYTE1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+   </widget>
+   <widget class="CAShape" name="cashape_4">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>48</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <UInt>2</UInt>
+    </property>
+    <property name="border">
+     <bool>true</bool>
+    </property>
+    <property name="borderLineWidth" stdset="0">
+     <UInt>2</UInt>
+    </property>
+    <property name="color1">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="color2">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="LT2">
+     <number>65536</number>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LI:$(M)-$(N):SBYTE2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M),N=$(N)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="alrmCh2FPB">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>48</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="alrmCh1FPB">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>24</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>cashape_4</zorder>
+   <zorder>cashape_3</zorder>
+   <zorder>qelabel_3</zorder>
+   <zorder>qelabel_6</zorder>
+   <zorder>alrmCh2FPB</zorder>
+   <zorder>alrmCh1FPB</zorder>
+  </widget>
+  <widget class="QELabel" name="qelabel_34">
+   <property name="geometry">
+    <rect>
+     <x>72</x>
+     <y>116</y>
+     <width>223</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):WF:$(M)-$(N):MESSAGE</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QELabel::Never</enum>
+   </property>
+  </widget>
+  <widget class="CAShape" name="cashape">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>114</y>
+     <width>63</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="color1">
+    <color>
+     <red>0</red>
+     <green>255</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="color2">
+    <color>
+     <red>255</red>
+     <green>0</green>
+     <blue>0</blue>
+    </color>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):ERROR.RVAL</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_33">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>116</y>
+     <width>57</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BI:$(M)-$(N):ERROR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),M=$(M),N=$(N)</string>
+   </property>
+   <property name="displayAlarmStateOption" stdset="0">
+    <enum>QELabel::WhenInAlarm</enum>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AShape</class>
+   <extends>QWidget</extends>
+   <header>ashape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAShape</class>
+   <extends>AShape</extends>
+   <header>cashape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

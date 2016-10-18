@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetupADC</class>
+ <widget class="QDialog" name="SetupADC">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>289</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>4</y>
+     <width>280</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QPushButton" name="adpClosePB">
+    <property name="geometry">
+     <rect>
+      <x>212</x>
+      <y>4</y>
+      <width>56</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>8</y>
+      <width>165</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Monospace</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Change ADC Params</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>40</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):AI:$(R)-$(N):CH$(C).DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,R=3132,N=2,C=1</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>40</y>
+     <width>89</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Channel Name</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>60</y>
+     <width>260</width>
+     <height>132</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Alarm Setup</string>
+   </property>
+   <widget class="QEComboBox" name="qecombobox_4">
+    <property name="geometry">
+     <rect>
+      <x>148</x>
+      <y>96</y>
+      <width>97</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(R)-$(N):CH$(C).LLSV</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_3">
+    <property name="geometry">
+     <rect>
+      <x>76</x>
+      <y>48</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(R)-$(N):CH$(C).HIGH</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>96</y>
+      <width>56</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Low low</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_4">
+    <property name="geometry">
+     <rect>
+      <x>76</x>
+      <y>72</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(R)-$(N):CH$(C).LOW</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_2">
+    <property name="geometry">
+     <rect>
+      <x>76</x>
+      <y>24</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(R)-$(N):CH$(C).HIHI</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>72</y>
+      <width>56</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Low</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_5">
+    <property name="geometry">
+     <rect>
+      <x>76</x>
+      <y>96</y>
+      <width>69</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(R)-$(N):CH$(C).LOLO</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>48</y>
+      <width>56</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>High</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QEComboBox" name="qecombobox">
+    <property name="geometry">
+     <rect>
+      <x>148</x>
+      <y>24</y>
+      <width>97</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(R)-$(N):CH$(C).HHSV</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>24</y>
+      <width>56</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>High high</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QEComboBox" name="qecombobox_2">
+    <property name="geometry">
+     <rect>
+      <x>148</x>
+      <y>48</y>
+      <width>97</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(R)-$(N):CH$(C).HSV</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+   </widget>
+   <widget class="QEComboBox" name="qecombobox_3">
+    <property name="geometry">
+     <rect>
+      <x>148</x>
+      <y>72</y>
+      <width>97</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AI:$(R)-$(N):CH$(C).LSV</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>92</x>
+     <y>200</y>
+     <width>180</width>
+     <height>76</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Conversion Coefficients</string>
+   </property>
+   <widget class="QELineEdit" name="qelineedit_7">
+    <property name="geometry">
+     <rect>
+      <x>84</x>
+      <y>44</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:$(R)-$(N):CH$(C):B</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>20</y>
+      <width>73</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:$(R)-$(N):CH$(C):A.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_6">
+    <property name="geometry">
+     <rect>
+      <x>84</x>
+      <y>20</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:$(R)-$(N):CH$(C):A</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_2">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>44</y>
+      <width>73</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:$(R)-$(N):CH$(C):B.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,R=3132,N=2,C=1</string>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

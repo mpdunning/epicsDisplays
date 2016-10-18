@@ -1,0 +1,107 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 516
+y 247
+w 530
+h 200
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 1
+w 529
+h 30
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 470
+y 4
+w 50
+h 24
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 8
+w 188
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Help for Filament Timeout Display"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 31
+y 45
+w 476
+h 143
+font "courier-medium-r-12.0"
+fgColor index 55
+bgColor index 4
+useDisplayBg
+value {
+  "When a fault occurrs the LLRF Q and LLRF I levels are set to 0."
+  "After the fault is cleared, press the \"Start Ramp\" button"
+  "to start ramping both Q and I levels from 0 to their respective"
+  "set points in N steps.  Delay between steps is specified in the"
+  "\"Delay between steps\" control."
+  "The LLRF Q and I levels are the DAC channel 1 and 2 outputs."
+  "If these are not at zero then pressing the \"Start Ramp\" will"
+  "either ramp the DAC output to the set point if corresponding set"
+  "point is higher or force the DAC output to the set point if the set"
+  "point is lower than the corresponding DAC output.  If the DAC output"
+  "is equal the corresponding set point, no change is made."
+}
+autoSize
+endObjectProperties
+

@@ -1,0 +1,2471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>867</width>
+    <height>473</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="scopeArea">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>4</y>
+      <width>485</width>
+      <height>413</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(35,45,70)</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QELabel" name="trigState">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>12</y>
+       <width>48</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P):SI:TRIG:STATE</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>P=CHA:SCP1</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="displayAlarmState">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="CAPlot" name="caplot">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>40</y>
+       <width>454</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="frameShadow">
+      <bool>false</bool>
+     </property>
+     <property name="autoScaleX">
+      <bool>false</bool>
+     </property>
+     <property name="axisEnableX">
+      <bool>false</bool>
+     </property>
+     <property name="gridEnableMajorX" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="xMax">
+      <double>1399.000000000000000</double>
+     </property>
+     <property name="nTicksMajorX">
+      <number>14</number>
+     </property>
+     <property name="autoScaleY">
+      <bool>false</bool>
+     </property>
+     <property name="axisEnableY">
+      <bool>false</bool>
+     </property>
+     <property name="gridEnableMajorY" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="yMin">
+      <double>-4.000000000000000</double>
+     </property>
+     <property name="yMax">
+      <double>4.000000000000000</double>
+     </property>
+     <property name="gridMajorColor" stdset="0">
+      <color>
+       <red>95</red>
+       <green>105</green>
+       <blue>120</blue>
+      </color>
+     </property>
+     <property name="gridMinorColor" stdset="0">
+      <color>
+       <red>80</red>
+       <green>90</green>
+       <blue>105</blue>
+      </color>
+     </property>
+     <property name="backgroundColor" stdset="0">
+      <color>
+       <red>35</red>
+       <green>45</green>
+       <blue>70</blue>
+      </color>
+     </property>
+     <property name="traceColor1">
+      <color>
+       <red>255</red>
+       <green>200</green>
+       <blue>100</blue>
+      </color>
+     </property>
+     <property name="traceColor2">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="traceColor3">
+      <color>
+       <red>255</red>
+       <green>0</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="traceColor4">
+      <color>
+       <red>80</red>
+       <green>80</green>
+       <blue>220</blue>
+      </color>
+     </property>
+     <property name="Marker1Enable" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="variable1" stdset="0">
+      <string>$(P):WF:CH0:TRACE</string>
+     </property>
+     <property name="variable2" stdset="0">
+      <string>$(P):WF:CH1:TRACE</string>
+     </property>
+     <property name="variable3" stdset="0">
+      <string>$(P):WF:CH2:TRACE</string>
+     </property>
+     <property name="variable4" stdset="0">
+      <string>$(P):WF:CH3:TRACE</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>P=CHA:SCP1</string>
+     </property>
+     <property name="displayAlarmState">
+      <bool>false</bool>
+     </property>
+     <property name="Marker1PV" stdset="0">
+      <string>$(P):LI:TRIG:LEVQT</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="ch1Label">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>360</y>
+      <width>25</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(255,220,200)</string>
+    </property>
+    <property name="text">
+     <string>CH1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="ch1VDiv">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>360</y>
+      <width>77</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:CH0:SCL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA:SCP1</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="ch3VDiv">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>380</y>
+      <width>77</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:CH2:SCL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA:SCP1</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ch3Label">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>380</y>
+      <width>25</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(255,220,200)</string>
+    </property>
+    <property name="text">
+     <string>CH3</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="ch2VDiv">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>360</y>
+      <width>77</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:CH1:SCL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA:SCP1</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ch2Label">
+    <property name="geometry">
+     <rect>
+      <x>136</x>
+      <y>360</y>
+      <width>25</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(255,220,200)</string>
+    </property>
+    <property name="text">
+     <string>CH2</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="ch4VDiv">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>380</y>
+      <width>77</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):AO:CH3:SCL</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA:SCP1</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+    <property name="precision">
+     <number>3</number>
+    </property>
+    <property name="useDbPrecision">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ch4Label">
+    <property name="geometry">
+     <rect>
+      <x>136</x>
+      <y>380</y>
+      <width>25</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(255,220,200)</string>
+    </property>
+    <property name="text">
+     <string>CH4</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="idnLabel">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>424</y>
+      <width>357</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <number>0</number>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):WF:IDN</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA:SC01</string>
+    </property>
+    <property name="displayAlarmState">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>504</x>
+      <y>4</y>
+      <width>341</width>
+      <height>403</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="mainTab">
+     <attribute name="title">
+      <string>Main</string>
+     </attribute>
+     <widget class="CAMVButton" name="tbaseUnit">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>150</y>
+        <width>24</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>us</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <property name="offColor">
+       <color>
+        <red>200</red>
+        <green>210</green>
+        <blue>220</blue>
+       </color>
+      </property>
+      <property name="useTextColor">
+       <bool>true</bool>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:TIM:DIV:U</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="AlarmEnable" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="timeScale">
+      <property name="geometry">
+       <rect>
+        <x>24</x>
+        <y>150</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):LO:TIME:DIV:V</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="Knob" name="tBaseKnob">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>86</y>
+        <width>60</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="scaleMaxMajor">
+       <number>0</number>
+      </property>
+      <property name="scaleMaxMinor">
+       <number>0</number>
+      </property>
+      <property name="scaleStepSize">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="totalSteps">
+       <UInt>999</UInt>
+      </property>
+      <property name="stepAlignment">
+       <bool>true</bool>
+      </property>
+      <property name="tracking">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="knobStyle">
+       <enum>QwtKnob::Raised</enum>
+      </property>
+      <property name="knobWidth">
+       <number>40</number>
+      </property>
+      <property name="totalAngle">
+       <double>720.000000000000000</double>
+      </property>
+      <property name="numTurns">
+       <number>2</number>
+      </property>
+      <property name="markerStyle">
+       <enum>QwtKnob::Tick</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:TIME:DIV</string>
+      </property>
+      <property name="variableSubst" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="haveScale">
+       <bool>false</bool>
+      </property>
+      <property name="minValue" stdset="0">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="maxValue" stdset="0">
+       <double>999.000000000000000</double>
+      </property>
+      <property name="valueIncrement" stdset="0">
+       <double>1.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tBaseDown">
+      <property name="geometry">
+       <rect>
+        <x>82</x>
+        <y>122</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0,0,0,0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>down.xpm</normaloff>down.xpm</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="tBaseOfst">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>150</y>
+        <width>69</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:TIME:OFST</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+      <property name="precision">
+       <number>6</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tBaseUp">
+      <property name="geometry">
+       <rect>
+        <x>82</x>
+        <y>92</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0,0,0,0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>up.xpm</normaloff>up.xpm</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="Knob" name="hPosKnob">
+      <property name="geometry">
+       <rect>
+        <x>122</x>
+        <y>92</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="lowerBound">
+       <double>-0.001400000000000</double>
+      </property>
+      <property name="upperBound">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="scaleMaxMajor">
+       <number>0</number>
+      </property>
+      <property name="scaleMaxMinor">
+       <number>0</number>
+      </property>
+      <property name="totalSteps">
+       <UInt>36000</UInt>
+      </property>
+      <property name="stepAlignment">
+       <bool>true</bool>
+      </property>
+      <property name="tracking">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="knobStyle">
+       <enum>QwtKnob::Raised</enum>
+      </property>
+      <property name="knobWidth">
+       <number>30</number>
+      </property>
+      <property name="totalAngle">
+       <double>3600.000000000000000</double>
+      </property>
+      <property name="numTurns">
+       <number>10</number>
+      </property>
+      <property name="markerStyle">
+       <enum>QwtKnob::Tick</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:TIME:OFST</string>
+      </property>
+      <property name="variableSubst" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="haveScale">
+       <bool>false</bool>
+      </property>
+      <property name="minValue" stdset="0">
+       <double>-0.001400000000000</double>
+      </property>
+      <property name="maxValue" stdset="0">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="valueIncrement" stdset="0">
+       <double>0.000001000000000</double>
+      </property>
+     </widget>
+     <widget class="QFrame" name="timeFrame">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>70</y>
+        <width>205</width>
+        <height>109</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(130,130,140)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>4</y>
+         <width>163</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(20,20,40)</string>
+       </property>
+       <property name="text">
+        <string>Horizontal Time &amp; Position</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>116</x>
+         <y>60</y>
+         <width>36</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../ui/rlarrow.xpm</pixmap>
+       </property>
+      </widget>
+     </widget>
+     <widget class="Knob" name="ch4KnobY">
+      <property name="geometry">
+       <rect>
+        <x>236</x>
+        <y>182</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="scaleMaxMajor">
+       <number>0</number>
+      </property>
+      <property name="scaleMaxMinor">
+       <number>0</number>
+      </property>
+      <property name="totalSteps">
+       <UInt>256</UInt>
+      </property>
+      <property name="stepAlignment">
+       <bool>true</bool>
+      </property>
+      <property name="tracking">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="knobStyle">
+       <enum>QwtKnob::Raised</enum>
+      </property>
+      <property name="knobWidth">
+       <number>30</number>
+      </property>
+      <property name="totalAngle">
+       <double>720.000000000000000</double>
+      </property>
+      <property name="numTurns">
+       <number>2</number>
+      </property>
+      <property name="markerStyle">
+       <enum>QwtKnob::Tick</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH3:POS</string>
+      </property>
+      <property name="variableSubst" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="haveScale">
+       <bool>false</bool>
+      </property>
+      <property name="minValue" stdset="0">
+       <double>-8.000000000000000</double>
+      </property>
+      <property name="maxValue" stdset="0">
+       <double>8.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="Knob" name="ch4KnobV">
+      <property name="geometry">
+       <rect>
+        <x>226</x>
+        <y>280</y>
+        <width>60</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="scaleMaxMajor">
+       <number>0</number>
+      </property>
+      <property name="scaleMaxMinor">
+       <number>0</number>
+      </property>
+      <property name="totalSteps">
+       <UInt>256</UInt>
+      </property>
+      <property name="stepAlignment">
+       <bool>true</bool>
+      </property>
+      <property name="tracking">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="knobStyle">
+       <enum>QwtKnob::Raised</enum>
+      </property>
+      <property name="knobWidth">
+       <number>40</number>
+      </property>
+      <property name="totalAngle">
+       <double>720.000000000000000</double>
+      </property>
+      <property name="numTurns">
+       <number>2</number>
+      </property>
+      <property name="markerStyle">
+       <enum>QwtKnob::Tick</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH3:SCL</string>
+      </property>
+      <property name="variableSubst" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="haveScale">
+       <bool>false</bool>
+      </property>
+      <property name="minValue" stdset="0">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="maxValue" stdset="0">
+       <double>5.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ch4Up">
+      <property name="geometry">
+       <rect>
+        <x>276</x>
+        <y>286</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0,0,0,0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>up.xpm</normaloff>up.xpm</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="ch4Scale">
+      <property name="geometry">
+       <rect>
+        <x>238</x>
+        <y>338</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH3:SCL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ch4Down">
+      <property name="geometry">
+       <rect>
+        <x>276</x>
+        <y>318</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0,0,0,0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>down.xpm</normaloff>down.xpm</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="ch4YPos">
+      <property name="geometry">
+       <rect>
+        <x>236</x>
+        <y>228</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH3:POS</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="CAButton" name="ch4CAEn">
+      <property name="geometry">
+       <rect>
+        <x>246</x>
+        <y>268</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(160,180,200)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="writeOnPress" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="writeOnClick" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="onText">
+       <string>On</string>
+      </property>
+      <property name="offText">
+       <string>Off</string>
+      </property>
+      <property name="showLabel">
+       <bool>false</bool>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:CH3:ON</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="AlarmEnable" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="ch4Frame">
+      <property name="geometry">
+       <rect>
+        <x>228</x>
+        <y>182</y>
+        <width>68</width>
+        <height>184</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(80,80,220)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QFrame" name="ch3Frame">
+      <property name="geometry">
+       <rect>
+        <x>156</x>
+        <y>182</y>
+        <width>68</width>
+        <height>184</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(255,0,255)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <widget class="Knob" name="ch3KnobV">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>98</y>
+         <width>60</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="scaleMaxMajor">
+        <number>0</number>
+       </property>
+       <property name="scaleMaxMinor">
+        <number>0</number>
+       </property>
+       <property name="totalSteps">
+        <UInt>256</UInt>
+       </property>
+       <property name="stepAlignment">
+        <bool>true</bool>
+       </property>
+       <property name="tracking">
+        <bool>false</bool>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="knobStyle">
+        <enum>QwtKnob::Raised</enum>
+       </property>
+       <property name="knobWidth">
+        <number>40</number>
+       </property>
+       <property name="totalAngle">
+        <double>720.000000000000000</double>
+       </property>
+       <property name="numTurns">
+        <number>2</number>
+       </property>
+       <property name="markerStyle">
+        <enum>QwtKnob::Tick</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:CH2:SCL</string>
+       </property>
+       <property name="variableSubst" stdset="0">
+        <string>P=CHA:SCP1</string>
+       </property>
+       <property name="subscribe">
+        <bool>true</bool>
+       </property>
+       <property name="haveScale">
+        <bool>false</bool>
+       </property>
+       <property name="minValue" stdset="0">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maxValue" stdset="0">
+        <double>5.000000000000000</double>
+       </property>
+      </widget>
+     </widget>
+     <widget class="CAButton" name="ch3CAEn">
+      <property name="geometry">
+       <rect>
+        <x>174</x>
+        <y>268</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(160,180,200)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="writeOnPress" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="writeOnClick" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="onText">
+       <string>On</string>
+      </property>
+      <property name="offText">
+       <string>Off</string>
+      </property>
+      <property name="showLabel">
+       <bool>false</bool>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:CH2:ON</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="AlarmEnable" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ch3Up">
+      <property name="geometry">
+       <rect>
+        <x>204</x>
+        <y>286</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0,0,0,0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>up.xpm</normaloff>up.xpm</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="ch3Scale">
+      <property name="geometry">
+       <rect>
+        <x>166</x>
+        <y>338</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH2:SCL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ch3Down">
+      <property name="geometry">
+       <rect>
+        <x>204</x>
+        <y>318</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0,0,0,0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>down.xpm</normaloff>down.xpm</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="Knob" name="ch3KnobY">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>182</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="scaleMaxMajor">
+       <number>0</number>
+      </property>
+      <property name="scaleMaxMinor">
+       <number>0</number>
+      </property>
+      <property name="totalSteps">
+       <UInt>256</UInt>
+      </property>
+      <property name="stepAlignment">
+       <bool>true</bool>
+      </property>
+      <property name="tracking">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="knobStyle">
+       <enum>QwtKnob::Raised</enum>
+      </property>
+      <property name="knobWidth">
+       <number>30</number>
+      </property>
+      <property name="totalAngle">
+       <double>720.000000000000000</double>
+      </property>
+      <property name="numTurns">
+       <number>2</number>
+      </property>
+      <property name="markerStyle">
+       <enum>QwtKnob::Tick</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH2:POS</string>
+      </property>
+      <property name="variableSubst" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="haveScale">
+       <bool>false</bool>
+      </property>
+      <property name="minValue" stdset="0">
+       <double>-8.000000000000000</double>
+      </property>
+      <property name="maxValue" stdset="0">
+       <double>8.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="ch3YPos">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>228</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH2:POS</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="ch2Frame">
+      <property name="geometry">
+       <rect>
+        <x>84</x>
+        <y>182</y>
+        <width>68</width>
+        <height>184</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0,255,255)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ch2Down">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>318</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0,0,0,0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>down.xpm</normaloff>down.xpm</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="ch2Scale">
+      <property name="geometry">
+       <rect>
+        <x>94</x>
+        <y>338</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH1:SCL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="ch2YPos">
+      <property name="geometry">
+       <rect>
+        <x>92</x>
+        <y>228</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH1:POS</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="Knob" name="ch2KnobY">
+      <property name="geometry">
+       <rect>
+        <x>92</x>
+        <y>182</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="scaleMaxMajor">
+       <number>0</number>
+      </property>
+      <property name="scaleMaxMinor">
+       <number>0</number>
+      </property>
+      <property name="totalSteps">
+       <UInt>256</UInt>
+      </property>
+      <property name="stepAlignment">
+       <bool>true</bool>
+      </property>
+      <property name="tracking">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="knobStyle">
+       <enum>QwtKnob::Raised</enum>
+      </property>
+      <property name="knobWidth">
+       <number>30</number>
+      </property>
+      <property name="totalAngle">
+       <double>720.000000000000000</double>
+      </property>
+      <property name="numTurns">
+       <number>2</number>
+      </property>
+      <property name="markerStyle">
+       <enum>QwtKnob::Tick</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH1:POS</string>
+      </property>
+      <property name="variableSubst" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="haveScale">
+       <bool>false</bool>
+      </property>
+      <property name="minValue" stdset="0">
+       <double>-8.000000000000000</double>
+      </property>
+      <property name="maxValue" stdset="0">
+       <double>8.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="CAButton" name="ch2CAEn">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>268</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(128,255,128)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="writeOnPress" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="writeOnClick" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="onText">
+       <string>On</string>
+      </property>
+      <property name="offText">
+       <string>Off</string>
+      </property>
+      <property name="showLabel">
+       <bool>false</bool>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:CH1:ON</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="AlarmEnable" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ch2Up">
+      <property name="geometry">
+       <rect>
+        <x>132</x>
+        <y>286</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0,0,0,0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>up.xpm</normaloff>up.xpm</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="Knob" name="ch2KnobV">
+      <property name="geometry">
+       <rect>
+        <x>82</x>
+        <y>280</y>
+        <width>60</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="scaleMaxMajor">
+       <number>0</number>
+      </property>
+      <property name="scaleMaxMinor">
+       <number>0</number>
+      </property>
+      <property name="totalSteps">
+       <UInt>0</UInt>
+      </property>
+      <property name="pageSteps">
+       <UInt>1</UInt>
+      </property>
+      <property name="stepAlignment">
+       <bool>true</bool>
+      </property>
+      <property name="tracking">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="knobStyle">
+       <enum>QwtKnob::Raised</enum>
+      </property>
+      <property name="knobWidth">
+       <number>40</number>
+      </property>
+      <property name="totalAngle">
+       <double>720.000000000000000</double>
+      </property>
+      <property name="numTurns">
+       <number>2</number>
+      </property>
+      <property name="markerStyle">
+       <enum>QwtKnob::Tick</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH1:SCL</string>
+      </property>
+      <property name="variableSubst" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="haveScale">
+       <bool>false</bool>
+      </property>
+      <property name="minValue" stdset="0">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="maxValue" stdset="0">
+       <double>5.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QFrame" name="ch1Frame">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>182</y>
+        <width>68</width>
+        <height>184</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(255,200,100)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="Knob" name="ch1KnobV">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>60</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="scaleMaxMajor">
+       <number>0</number>
+      </property>
+      <property name="scaleMaxMinor">
+       <number>0</number>
+      </property>
+      <property name="totalSteps">
+       <UInt>0</UInt>
+      </property>
+      <property name="pageSteps">
+       <UInt>1</UInt>
+      </property>
+      <property name="stepAlignment">
+       <bool>true</bool>
+      </property>
+      <property name="tracking">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="knobStyle">
+       <enum>QwtKnob::Raised</enum>
+      </property>
+      <property name="knobWidth">
+       <number>40</number>
+      </property>
+      <property name="totalAngle">
+       <double>720.000000000000000</double>
+      </property>
+      <property name="numTurns">
+       <number>2</number>
+      </property>
+      <property name="markerStyle">
+       <enum>QwtKnob::Tick</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH0:SCL</string>
+      </property>
+      <property name="variableSubst" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="haveScale">
+       <bool>false</bool>
+      </property>
+      <property name="minValue" stdset="0">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="maxValue" stdset="0">
+       <double>5.000000000000000</double>
+      </property>
+      <property name="valueIncrement" stdset="0">
+       <double>1.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="Knob" name="ch1KnobY">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>182</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="scaleMaxMajor">
+       <number>0</number>
+      </property>
+      <property name="scaleMaxMinor">
+       <number>0</number>
+      </property>
+      <property name="totalSteps">
+       <UInt>256</UInt>
+      </property>
+      <property name="stepAlignment">
+       <bool>true</bool>
+      </property>
+      <property name="tracking">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="knobStyle">
+       <enum>QwtKnob::Raised</enum>
+      </property>
+      <property name="knobWidth">
+       <number>30</number>
+      </property>
+      <property name="totalAngle">
+       <double>720.000000000000000</double>
+      </property>
+      <property name="numTurns">
+       <number>2</number>
+      </property>
+      <property name="markerStyle">
+       <enum>QwtKnob::Tick</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH0:POS</string>
+      </property>
+      <property name="variableSubst" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="haveScale">
+       <bool>false</bool>
+      </property>
+      <property name="minValue" stdset="0">
+       <double>-8.000000000000000</double>
+      </property>
+      <property name="maxValue" stdset="0">
+       <double>8.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ch1Up">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>286</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0,0,0,0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>up.xpm</normaloff>up.xpm</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ch1Down">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>318</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(0,0,0,0)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>down.xpm</normaloff>down.xpm</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="ch1YPos">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>228</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH0:POS</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+      <property name="precision">
+       <number>3</number>
+      </property>
+      <property name="useDbPrecision">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="ch1Scale">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>338</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:CH0:SCL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="CAButton" name="ch1CAEn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>268</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:rgb(160,180,200)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="writeOnPress" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="writeOnClick" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="onText">
+       <string>On</string>
+      </property>
+      <property name="offText">
+       <string>Off</string>
+      </property>
+      <property name="showLabel">
+       <bool>false</bool>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:CH0:ON</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="AlarmEnable" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="CAMVButton" name="trigSource">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>36</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="offColor">
+       <color>
+        <red>200</red>
+        <green>210</green>
+        <blue>220</blue>
+       </color>
+      </property>
+      <property name="useTextColor">
+       <bool>true</bool>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:TRIG:SOU</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="AlarmEnable" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="CAMVButton" name="trigSlopeBut">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>60</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Fall</string>
+      </property>
+      <property name="offColor">
+       <color>
+        <red>200</red>
+        <green>210</green>
+        <blue>220</blue>
+       </color>
+      </property>
+      <property name="useTextColor">
+       <bool>true</bool>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:TRIG:SLOPE</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="AlarmEnable" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="CAMVButton" name="trigSweep">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>84</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="offColor">
+       <color>
+        <red>200</red>
+        <green>210</green>
+        <blue>220</blue>
+       </color>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:TRIG:SWEEP</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="AlarmEnable" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="Knob" name="tLevKnob">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>108</y>
+        <width>40</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="lowerBound">
+       <double>-5.000000000000000</double>
+      </property>
+      <property name="upperBound">
+       <double>5.000000000000000</double>
+      </property>
+      <property name="scaleMaxMajor">
+       <number>0</number>
+      </property>
+      <property name="scaleMaxMinor">
+       <number>0</number>
+      </property>
+      <property name="totalSteps">
+       <UInt>256</UInt>
+      </property>
+      <property name="stepAlignment">
+       <bool>true</bool>
+      </property>
+      <property name="tracking">
+       <bool>false</bool>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="knobStyle">
+       <enum>QwtKnob::Raised</enum>
+      </property>
+      <property name="knobWidth">
+       <number>30</number>
+      </property>
+      <property name="totalAngle">
+       <double>3600.000000000000000</double>
+      </property>
+      <property name="numTurns">
+       <number>10</number>
+      </property>
+      <property name="markerStyle">
+       <enum>QwtKnob::Tick</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:TRIG:LEV</string>
+      </property>
+      <property name="variableSubst" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="haveScale">
+       <bool>false</bool>
+      </property>
+      <property name="minValue" stdset="0">
+       <double>-5.000000000000000</double>
+      </property>
+      <property name="maxValue" stdset="0">
+       <double>5.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="trigLevl">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>150</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:TRIG:LEV</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="trigFrame">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>10</y>
+        <width>75</width>
+        <height>169</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(200,255,200)</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>32</x>
+         <y>108</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../../../tools/display/scope/ui/tlevel.xpm</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>108</y>
+         <width>20</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../../../../../tools/display/scope/ui/tlevel.xpm</pixmap>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>16</y>
+        <width>47</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Trigger</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="CAButton" name="runStopBut">
+      <property name="geometry">
+       <rect>
+        <x>98</x>
+        <y>10</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="useTextColor">
+       <bool>true</bool>
+      </property>
+      <property name="writeOnPress" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="writeOnClick" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="onText">
+       <string>Run</string>
+      </property>
+      <property name="offText">
+       <string>Stop</string>
+      </property>
+      <property name="onLabel">
+       <string>Run</string>
+      </property>
+      <property name="offLabel">
+       <string>Run</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:RUN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="AlarmEnable" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="literalLabel">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>42</y>
+        <width>89</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Sampling rate</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel">
+      <property name="geometry">
+       <rect>
+        <x>108</x>
+        <y>42</y>
+        <width>103</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):SI:SMPL:RATE</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Automatic</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>298</x>
+        <y>302</y>
+        <width>37</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scale</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>298</x>
+        <y>188</y>
+        <width>24</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../ui/udarrow.xpm</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="CAButton" name="runStopBut_2">
+      <property name="geometry">
+       <rect>
+        <x>158</x>
+        <y>10</y>
+        <width>48</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="useTextColor">
+       <bool>true</bool>
+      </property>
+      <property name="writeOnPress" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="writeOnClick" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="onText">
+       <string>Run</string>
+      </property>
+      <property name="offText">
+       <string>Stop</string>
+      </property>
+      <property name="onLabel">
+       <string>Stop</string>
+      </property>
+      <property name="offLabel">
+       <string>Stop</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:STOP</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:SCP1</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="AlarmEnable" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="literalLabel">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>trigFrame</zorder>
+     <zorder>timeFrame</zorder>
+     <zorder>ch4Frame</zorder>
+     <zorder>tbaseUnit</zorder>
+     <zorder>timeScale</zorder>
+     <zorder>tBaseKnob</zorder>
+     <zorder>tBaseDown</zorder>
+     <zorder>tBaseOfst</zorder>
+     <zorder>tBaseUp</zorder>
+     <zorder>hPosKnob</zorder>
+     <zorder>ch4KnobY</zorder>
+     <zorder>ch4KnobV</zorder>
+     <zorder>ch4Up</zorder>
+     <zorder>ch4Scale</zorder>
+     <zorder>ch4Down</zorder>
+     <zorder>ch4YPos</zorder>
+     <zorder>ch4CAEn</zorder>
+     <zorder>ch3Frame</zorder>
+     <zorder>ch3CAEn</zorder>
+     <zorder>ch3Up</zorder>
+     <zorder>ch3Scale</zorder>
+     <zorder>ch3Down</zorder>
+     <zorder>ch3KnobY</zorder>
+     <zorder>ch3YPos</zorder>
+     <zorder>ch2Frame</zorder>
+     <zorder>ch2Down</zorder>
+     <zorder>ch2Scale</zorder>
+     <zorder>ch2YPos</zorder>
+     <zorder>ch2KnobY</zorder>
+     <zorder>ch2CAEn</zorder>
+     <zorder>ch2Up</zorder>
+     <zorder>ch2KnobV</zorder>
+     <zorder>ch1Frame</zorder>
+     <zorder>ch1KnobV</zorder>
+     <zorder>ch1KnobY</zorder>
+     <zorder>ch1Up</zorder>
+     <zorder>ch1Down</zorder>
+     <zorder>ch1YPos</zorder>
+     <zorder>ch1Scale</zorder>
+     <zorder>ch1CAEn</zorder>
+     <zorder>trigSource</zorder>
+     <zorder>trigSlopeBut</zorder>
+     <zorder>trigSweep</zorder>
+     <zorder>tLevKnob</zorder>
+     <zorder>trigLevl</zorder>
+     <zorder>label_4</zorder>
+     <zorder>runStopBut</zorder>
+     <zorder>label_5</zorder>
+     <zorder>qelabel</zorder>
+     <zorder>label_6</zorder>
+     <zorder>label_7</zorder>
+     <zorder>runStopBut_2</zorder>
+    </widget>
+    <widget class="QWidget" name="horTab">
+     <attribute name="title">
+      <string>Time</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="trigTab">
+     <attribute name="title">
+      <string>Trigger</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Acquire</string>
+     </attribute>
+    </widget>
+   </widget>
+   <zorder>tabWidget</zorder>
+   <zorder>scopeArea</zorder>
+   <zorder>ch1Label</zorder>
+   <zorder>ch1VDiv</zorder>
+   <zorder>ch3VDiv</zorder>
+   <zorder>ch3Label</zorder>
+   <zorder>ch2VDiv</zorder>
+   <zorder>ch2Label</zorder>
+   <zorder>ch4VDiv</zorder>
+   <zorder>ch4Label</zorder>
+   <zorder>idnLabel</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>867</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Knob</class>
+   <extends>QWidget</extends>
+   <header>knob.h</header>
+  </customwidget>
+  <customwidget>
+   <class>AButton</class>
+   <extends>QPushButton</extends>
+   <header>abutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAButton</class>
+   <extends>AButton</extends>
+   <header>cabutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAMVButton</class>
+   <extends>AButton</extends>
+   <header>camvbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>APlot</class>
+   <extends>QFrame</extends>
+   <header>aplot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAPlot</class>
+   <extends>APlot</extends>
+   <header>caplot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,146 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 715
+y 504
+w 420
+h 160
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 50
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+disableScroll
+endScreenProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 261
+y 70
+w 80
+h 32
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "Cancel"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 14
+y 12
+w 99
+h 18
+font "courier-bold-r-18.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "$(ACTION)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 26
+y 80
+w 117
+h 15
+font "courier-bold-r-14.0"
+fgColor index 20
+bgColor index 2
+useDisplayBg
+value {
+  "Are you sure?"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 17
+y 121
+w 77
+h 13
+font "courier-bold-i-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "$(MESSAGE1)"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 166
+y 70
+w 80
+h 32
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-14.0"
+closeDisplay
+buttonLabel "Yes"
+numCmds 1
+command {
+  0 "$(CMD)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 23
+y 45
+w 99
+h 15
+font "courier-bold-r-14.0"
+fgColor index 77
+bgColor index 2
+useDisplayBg
+value {
+  "$(MESSAGE2)"
+}
+autoSize
+endObjectProperties
+

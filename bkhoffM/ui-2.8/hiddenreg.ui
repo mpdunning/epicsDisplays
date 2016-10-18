@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HiddenReg</class>
+ <widget class="QDialog" name="HiddenReg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>367</width>
+    <height>270</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QELineEdit" name="qelineedit_3">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>228</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:$(Q)-$(N):WREG:VAL</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELineEdit::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+   <property name="notation" stdset="0">
+    <enum>QELineEdit::Fixed</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>276</x>
+     <y>208</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>180</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:$(Q)-$(N):CHAN</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_2">
+   <property name="geometry">
+    <rect>
+     <x>292</x>
+     <y>208</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:$(Q)-$(N):REGVAL</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_3">
+   <property name="geometry">
+    <rect>
+     <x>216</x>
+     <y>228</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:$(Q)-$(N):WR:RBV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_2">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>204</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:$(Q)-$(N):REGN</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel">
+   <property name="geometry">
+    <rect>
+     <x>216</x>
+     <y>208</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:$(Q)-$(N):REGVAL</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,Q=2531-1,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>228</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>4</y>
+     <width>353</width>
+     <height>165</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>A. Read:</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>   enter channel number</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>   enter register number (Reg Numb)</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>   The value read is shown in decimal and hexadecimal </string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>B. Write</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>   enter channel number</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>   enter register number, this will read back contents</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>   enter a new value in hexadecimal.</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>   The changed value is read back and is shown</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>   to the right of the control widget.</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>180</y>
+     <width>85</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Channel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>204</y>
+     <width>85</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reg Numb</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>228</y>
+     <width>85</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Data to write</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

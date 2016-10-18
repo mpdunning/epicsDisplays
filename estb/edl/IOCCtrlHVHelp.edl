@@ -1,0 +1,113 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 69
+y 140
+w 400
+h 300
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 73
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 398
+h 32
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 340
+y 4
+w 52
+h 24
+fgColor index 55
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 8
+y 8
+w 229
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "IOC Control Help for HV Soft IOC"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 4
+y 36
+w 394
+h 196
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Driver status, "
+  ""
+  "This is a pure soft IOC, which means that it does not control any"
+  "hardware directly.  It issues commands to the ESA VME (DAQ) system"
+  "to perform IO operations on the HV Chassis, which is interfaced to"
+  "the VME system.  If the Channel Access communication between"
+  "this IOC and the VME System falls apart, it may be useful to"
+  "restart  this IOC."
+  ""
+  "AC Outlet Power Status indicates whether the CAEN HV Chassis is"
+  "powered on of off.  The green/red square indicates the state"
+  "of the PDU outlet that the device is plugged into."
+  "Green means the power is on, red the power is off."
+  "   "
+}
+autoSize
+endObjectProperties
+

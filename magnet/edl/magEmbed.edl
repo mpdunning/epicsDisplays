@@ -1,0 +1,282 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 627
+y 57
+w 100
+h 100
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 68
+h 68
+lineColor index 13
+fillColor index 2
+lineWidth 2
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 148
+y 264
+w 42
+h 38
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 148
+y 264
+w 42
+h 38
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 34
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh XCORYCOR 1940"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 157
+y 268
+w 24
+h 30
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 34
+bgColor index 2
+useDisplayBg
+value {
+  "XCOR"
+  "YCOR"
+  "1940"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 4
+y 20
+w 36
+h 20
+fgColor index 19
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 19
+font "courier-bold-r-10.0"
+buttonLabel "QUAD"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh QUAD $(MAG)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 0
+y 4
+w 60
+h 12
+font "courier-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "$(MAG)"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 4
+y 44
+w 36
+h 20
+fgColor index 34
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 34
+font "courier-bold-r-10.0"
+buttonLabel "CORS"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh XCORYCOR 1940"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 44
+y 20
+w 20
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-10.0"
+buttonLabel "K"
+numCmds 8
+commandLabel {
+  0 "Assign to Knob 1"
+  1 "Assign to Knob 2"
+  2 "Assign to Knob 3"
+  3 "Assign to Knob 4"
+  4 "Assign to Knob 5"
+  5 "Assign to Knob 6"
+  6 "Assign to Knob 7"
+  7 "Assign to Knob 8"
+}
+command {
+  0 "$SCRIPT/assignKnob.sh QUAD $(MAG) 1"
+  1 "$SCRIPT/assignKnob.sh QUAD $(MAG) 2"
+  2 "$SCRIPT/assignKnob.sh QUAD $(MAG) 3"
+  3 "$SCRIPT/assignKnob.sh QUAD $(MAG) 4"
+  4 "$SCRIPT/assignKnob.sh QUAD $(MAG) 5"
+  5 "$SCRIPT/assignKnob.sh QUAD $(MAG) 6"
+  6 "$SCRIPT/assignKnob.sh QUAD $(MAG) 7"
+  7 "$SCRIPT/assignKnob.sh QUAD $(MAG) 8"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 44
+y 44
+w 20
+h 10
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-8.0"
+numCmds 8
+commandLabel {
+  0 "Assign XCOR to Knob 1"
+  1 "Assign to Knob 2"
+  2 "Assign to Knob 3"
+  3 "Assign to Knob 4"
+  4 "Assign to Knob 5"
+  5 "Assign to Knob 6"
+  6 "Assign to Knob 7"
+  7 "Assign to Knob 8"
+}
+command {
+  0 "$SCRIPT/assignKnob.sh XCOR $(MAG) 1"
+  1 "$SCRIPT/assignKnob.sh XCOR $(MAG) 2"
+  2 "$SCRIPT/assignKnob.sh XCOR $(MAG) 3"
+  3 "$SCRIPT/assignKnob.sh XCOR $(MAG) 4"
+  4 "$SCRIPT/assignKnob.sh XCOR $(MAG) 5"
+  5 "$SCRIPT/assignKnob.sh XCOR$(MAG) 6"
+  6 "$SCRIPT/assignKnob.sh XCOR $(MAG) 7"
+  7 "$SCRIPT/assignKnob.sh XCOR $(MAG) 8"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 44
+y 56
+w 20
+h 10
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numCmds 8
+commandLabel {
+  0 "Assign YCOR to Knob 1"
+  1 "Assign to Knob 2"
+  2 "Assign to Knob 3"
+  3 "Assign to Knob 4"
+  4 "Assign to Knob 5"
+  5 "Assign to Knob 6"
+  6 "Assign to Knob 7"
+  7 "Assign to Knob 8"
+}
+command {
+  0 "$SCRIPT/assignKnob.sh YCOR $(MAG) 1"
+  1 "$SCRIPT/assignKnob.sh YCOR $(MAG) 2"
+  2 "$SCRIPT/assignKnob.sh YCOR $(MAG) 3"
+  3 "$SCRIPT/assignKnob.sh YCOR $(MAG) 4"
+  4 "$SCRIPT/assignKnob.sh YCOR $(MAG) 5"
+  5 "$SCRIPT/assignKnob.sh YCOR$(MAG) 6"
+  6 "$SCRIPT/assignKnob.sh YCOR $(MAG) 7"
+  7 "$SCRIPT/assignKnob.sh YCOR $(MAG) 8"
+}
+endObjectProperties
+

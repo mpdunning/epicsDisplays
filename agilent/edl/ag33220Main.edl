@@ -1,0 +1,516 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 472
+y 77
+w 700
+h 670
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 698
+h 55
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 70
+y 75
+w 230
+h 45
+lineColor index 13
+fill
+fillColor index 11
+lineWidth 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 10
+w 76
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 13
+bgColor index 53
+useDisplayBg
+value {
+  "Soft IOC"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 15
+y 35
+w 355
+h 16
+controlPv "$(usr):IDN"
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+autoHeight
+limitsFromDb
+nullColor index 24
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 615
+y 10
+w 65
+h 30
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 11
+label "EXIT"
+font "helvetica-medium-r-14.0"
+3d
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 150
+y 80
+w 140
+h 30
+controlPv "$(usr):WFreq"
+font "helvetica-medium-r-24.0"
+fgColor index 55
+bgColor index 13
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 24
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 75
+y 90
+w 63
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 55
+bgColor index 10
+useDisplayBg
+value {
+  "frequency"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 130
+w 340
+h 25
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 45
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(usr):WFunc"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 190
+y 15
+w 59
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "started on "
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 255
+y 15
+w 95
+h 14
+controlPv "LBG:startTime"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 63
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 465
+y 15
+w 95
+h 14
+controlPv "LBG:currTime"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 63
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 95
+y 10
+w 80
+h 21
+controlPv "$(usr):Name.DESC"
+font "helvetica-medium-r-18.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 370
+y 95
+w 310
+h 310
+fgColor index 13
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 12
+displaySource "menu"
+filePv "LOC\\$(!W)showIt=e:0,MOST,BURS,SWEE,PULS,MORE,CMND,UTIL"
+center
+sizeOfs 5
+numDsps 7
+displayFileName {
+  0 "ag33220Most.edl"
+  1 "ag33220Burs.edl"
+  2 "ag33220Swee.edl"
+  3 "ag33220Puls.edl"
+  4 "ag33220More.edl"
+  5 "ag33220Cmd.edl"
+  6 "ag33220Util.edl"
+}
+noScroll
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 395
+y 15
+w 65
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "current time"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 370
+y 75
+w 310
+h 20
+fgColor index 13
+bgColor index 6
+selectColor index 3
+inconsistentColor index 8
+topShadowColor index 6
+botShadowColor index 6
+controlPv "LOC\\$(!W)showIt"
+font "courier-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 595
+w 465
+h 60
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 600
+w 58
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "File path:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 85
+y 595
+w 405
+h 20
+controlPv "$(usr):WfPath"
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 24
+changeValOnLoseFocus
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 625
+w 70
+h 30
+fgColor index 13
+onColor index 65
+offColor index 67
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(usr):getData.PROC"
+pressValue "1"
+onLabel "getData"
+offLabel "getData"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+endGroup
+
+visPv "$(usr):WFunc"
+visMin "6"
+visMax "7"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 170
+w 355
+h 220
+
+beginGroup
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 175
+w 340
+h 210
+fgColor index 13
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+displaySource "file"
+file "ag33220WF.edl"
+center
+sizeOfs 5
+numDsps 0
+noScroll
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 170
+w 355
+h 220
+lineColor index 13
+fill
+fillColor index 5
+endObjectProperties
+
+endGroup
+
+visPv "$(usr):WFunc"
+visMin "6"
+visMax "7"
+endObjectProperties
+
+# (Message Box)
+object activeMessageBoxClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 10
+y 415
+w 535
+h 170
+fgColor index 13
+bgColor index 2
+2ndBgColor index 4
+topShadowColor index 1
+botShadowColor index 12
+indicatorPv "$(usr):ErrMsg.VALA"
+font "helvetica-medium-r-12.0"
+bufferSize 1000
+fileSize 100000
+flushTimerValue 600
+readOnly
+endObjectProperties
+

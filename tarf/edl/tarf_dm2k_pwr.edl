@@ -1,0 +1,227 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 736
+y 299
+w 764
+h 650
+font "helvetica-medium-r-18.0"
+ctlFont "courier-bold-r-10.0"
+btnFont "helvetica-medium-i-18.0"
+fgColor index 14
+bgColor index 71
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 71
+ctlBgColor1 index 71
+ctlBgColor2 index 14
+topShadowColor index 71
+botShadowColor index 14
+endScreenProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 676
+y 3
+w 75
+h 28
+fgColor index 14
+bgColor index 71
+topShadowColor index 71
+botShadowColor index 14
+label "EXIT"
+font "courier-bold-r-18.0"
+3d
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 439
+y 12
+w 196
+h 24
+controlPv "TRS$(S):$(NAME):PWR"
+font "courier-bold-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 71
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+# Geometry
+x 132
+y 50
+w 500
+h 140
+# Appearance
+border
+graphTitle "Slow History"
+xLabel "Time"
+yLabel "Power (MW)"
+fgColor index 14
+bgColor index 71
+gridColor index 14
+font "courier-bold-r-10.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 60
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 60
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "TRS$(S):$(NAME):PWRONE"
+}
+opMode {
+  0 "plot"
+}
+plotColor {
+  0 index 16
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+# Geometry
+x 57
+y 400
+w 650
+h 240
+# Appearance
+border
+graphTitle "Low,Avg,Hi"
+yLabel "Power (MW)"
+fgColor index 14
+bgColor index 71
+gridColor index 14
+font "courier-bold-r-10.0"
+# Operating Modes
+nPts 2
+triggerPv "TRS$(S):$(NAME):PWRONE"
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 240
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2Max 1
+# Trace Properties
+numTraces 3
+yPv {
+  0 "TRS$(S):$(NAME):PAVEHST"
+  1 "TRS$(S):$(NAME):PMINHST"
+  2 "TRS$(S):$(NAME):PMAXHST"
+}
+plotColor {
+  0 index 26
+  1 index 21
+  2 index 21
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+# Geometry
+x 57
+y 215
+w 650
+h 170
+# Appearance
+border
+graphTitle "Snapshot"
+yLabel "Power (MW)"
+fgColor index 14
+bgColor index 71
+gridColor index 14
+font "courier-bold-r-10.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 2
+updateTimerMs 500
+triggerPv "TRS$(S):$(NAME):PWRONE"
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 240
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "TRS$(S):$(NAME):PWRHST"
+}
+plotColor {
+  0 index 25
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 0
+y 11
+w 383
+h 24
+controlPv "TRS$(S):$(NAME):PWR.DESC"
+font "courier-bold-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 71
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+

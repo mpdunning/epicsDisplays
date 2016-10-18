@@ -1,0 +1,114 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 180
+y 143
+w 400
+h 300
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 73
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 398
+h 32
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 340
+y 4
+w 52
+h 24
+fgColor index 55
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 8
+y 8
+w 119
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "IOC Control Help"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 4
+y 36
+w 392
+h 244
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "IOC Name is used by procServ program used to start/stop the IOC"
+  "Driver Status indicates the state that the IOC is in:"
+  "  If the box and text are white, the IOC is not loaded,"
+  "  If the box is red, then some problem exists, most likely the"
+  "    software is not communicating with the hardware."
+  "  If the box is green, then the software is communicating with"
+  "    the hardware."
+  "AC Outlet Power Status indicates if the hardware is off (red) or"
+  "  on (green).  Note that some SIOCs do not control hardware and"
+  "  that some hardware is not powered via a PDU."
+  "VME Crate Power Status indicates whether the VME crate is"
+  "  powered on( green) or off (red)."
+  "Restart SIOC buttons, when pressed and confirmed, are used"
+  "  to restart the Soft IOC.  Note that the VME systems are not"
+  "  restarted via procServ, which is what is used for the Soft"
+  "  IOCs."
+}
+endObjectProperties
+

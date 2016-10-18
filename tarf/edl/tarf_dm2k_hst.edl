@@ -1,0 +1,176 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 14
+y 33
+w 763
+h 429
+font "helvetica-medium-r-18.0"
+ctlFont "courier-bold-r-10.0"
+btnFont "helvetica-medium-i-18.0"
+fgColor index 14
+bgColor index 71
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 71
+ctlBgColor1 index 71
+ctlBgColor2 index 14
+topShadowColor index 71
+botShadowColor index 14
+endScreenProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 676
+y 3
+w 75
+h 28
+fgColor index 14
+bgColor index 71
+topShadowColor index 71
+botShadowColor index 14
+label "EXIT"
+font "courier-bold-r-18.0"
+3d
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 484
+y 13
+w 90
+h 24
+controlPv "$(S):$(NAME)"
+font "courier-bold-r-24.0"
+fgColor index 14
+bgColor index 71
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+# Geometry
+x 150
+y 50
+w 500
+h 140
+# Appearance
+border
+graphTitle "Slow History"
+xLabel "Time"
+fgColor index 14
+bgColor index 71
+gridColor index 14
+font "courier-bold-r-10.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 60
+updateTimerMs 500
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(S):$(NAME)"
+}
+opMode {
+  0 "plot"
+}
+plotColor {
+  0 index 16
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+# Geometry
+x 90
+y 215
+w 650
+h 170
+# Appearance
+border
+graphTitle "Snapshot"
+fgColor index 14
+bgColor index 71
+gridColor index 14
+font "courier-bold-r-10.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 240
+updateTimerMs 500
+triggerPv "$(S):$(NAME)"
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 240
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+y2Max 1
+# Trace Properties
+numTraces 1
+yPv {
+  0 "$(S):$(NAME)HST"
+}
+plotColor {
+  0 index 25
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 32
+y 11
+w 300
+h 30
+controlPv "$(S):$(NAME).DESC"
+font "courier-bold-r-24.0"
+fgColor index 14
+bgColor index 71
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+

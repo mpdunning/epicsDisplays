@@ -1,0 +1,79 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 772
+y 51
+w 400
+h 280
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 29
+bgColor index 71
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 7
+w 387
+h 15
+font "courier-bold-r-14.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "Help for the Write EEPROM Registers Screen."
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 27
+w 371
+h 221
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "See Help screen for the WriteRAM Page for description"
+  "of Beckhoff KL2531/KL2541 bus terminal modules."
+  "This screen allows modifying values of the hidden"
+  "registers in EEPROM space."
+  "MaxCurrentA & B are in % of full current capacity"
+  "of the bus terminal used."
+  "Velocity is in steps/sec."
+  "StepSize register specifies number of micro steps per"
+  "step.  Number of micro steps n=2^x, where x is"
+  "the contents of the StepSize register.  This"
+  "register can take value 0 - 6."
+  ""
+  "Note that Beckhoff documentation warns that these"
+  "registers can be modified a finite number of times"
+  "and if that is exceeded (unfortunately the number"
+  "is not specified) more modifications of the register"
+  "contents will be impossible."
+}
+autoSize
+endObjectProperties
+

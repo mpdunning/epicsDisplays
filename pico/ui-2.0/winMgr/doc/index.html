@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Pico Motor Controls</title>
+</head><body>
+<img src="motor.png">
+<h2>Contents</h2>
+<ul>
+<li><a href="#Overview">Overview</a></lis>
+<li><a href="#Hardware">Hardware</a></lis>
+<li><a href="#Qt GUI">Qt GUI</a></lis>
+<li><a href="#Soft IOC">Soft IOC</a></lis>
+</ul>
+
+<a name="Overview"></a>
+<h3>Overview</h3>
+This application is a Qt implementation of the controls and
+monitoring widgets for interracting with the soft IOC
+which does IO with the hardware.  EPICS aware widgets are used
+to do Channel Access IO with IOC PVs.  The Epics aware widgets
+were developed at Australian Synchrotron Laboratory.
+Andrew Rhyder is one of the developers and a contact person.
+Documentation on the EPICS aware widgets, or QCA framework, can be found
+in /afs/slac/g/testfac/tools/epicsQt/R1.1.6.2/documentation.
+
+<a name="Hardware"></a>
+<h3>Hardware</h3>
+The hardware consists of NewFocus 8752 Ethernet controller and
+a number of 8753 Intelligent Pico Motor Drivers.  Each driver
+controls up to three pico motors.  In the NLCTA implementation
+we use only two of the three motors, A and C, for  horizontal
+and vertical moves of optical elements.
+
+<a name="Qt GUI"></a>
+<h3> Qt GUI</h3>
+The main window is implemented as a Multi Display Interface (MDI).  When the
+program is started, the main window is created with dialogs, one for each
+group of motors.  A group corresponds to a set of three Pico Motors controlled
+by a Driver Card (8753).  The number of dialogs, labels and macros are specified
+in a setup file (picosetup.txt), which is read at program startup time.  The
+file is located in $TOOLS/display/pico/ui directory.  Each dialog shows
+a number of buttons.  Some of these buttons send commands to the
+<a href="#Soft IOC">soft IOC</a>, these will be refered as command buttons.
+while other buttons are used to pop up other dialogs and will be refered to as
+show buttons.
+
+<h4> Command Buttons</h4>
+The command buttons are setup to request that a motor is moved by the number
+of steps shown in the button label.  There are four groups of five buttons each.
+These four groups are arranged in a way to suggest the direction of motion:
+left - right and up - down.  Each pair of groups of buttons controls a motor:
+left - right controls motor A and up - down controls motor C.  Motor B is not
+used.  In addition there also are read back values for each motor.  A pair of
+values is shown for each motor, one of these is the analog read back value, the
+other is raw read back value.  Since for Pico motors we set engineering unit
+to be a step, hence the pair of RBVs shows the same value.
+
+<h4>Show Buttons</h4>
+There are two groups of three buttons labeled Motor, Detail, and Debug.  Again,
+each group is associated with a motor.  Aditional button More allows to access
+a dialog to control the middle motor (B).  It is there just in case.
+
+<ul>
+<li> Motor button is used to pop up a dialog, which allows more complete
+     control and positioning of the associated motor. </li>
+<li> Detail button is used to pop a dialog, which allows controling various
+     aspects of the <a href="motorRecord.html"> motor record</a>.</li>
+<li> Debug button is used to pop up a dialog, which shows values of various
+     fields in the <a href="motorRecord.html"> motor record</a>.
+     As the name suggests, it is used for debugging.</li>
+</ul>
+
+<a name="Soft IOC"></a>
+<h3>Soft IOC</h3>
+<p>The soft IOC program uses
+<a href="motorRecord.html"> motor record</a> and a support module "pico".
+The support module is a subclass of the asynMotorAxis and asynMotorController
+classes.  The latter of these two is a subclass of
+<a href="asynPortDriver.html">asyn Port Driver class</a>
+<p>Since the Pico Motors support only relative moves, the software was designed
+to match that.  When the IOC is started, motor step counters are set to 0 for
+all motors regardless of their actual position.  Subsequently, the position
+for each motor is calculated by adding the incremental motor moves.  This way
+some semblance of actual motor position is maintained.
+<p> It is observed that Pico Motors do not have a constant step size.
+Typically, to rotate the motor shaft CCW it takes up to twice the number
+of steps as it does to rotate it CW in each case through the same angle
+of rotation.  Step size also varies as the shaft is screwed in or out.
+Furthermore, step size varies greatly from motor to motor.
+CW rotation is achieved with a positive number of
+steps and CCW with a negative number of steps.
+</body>
+</html>

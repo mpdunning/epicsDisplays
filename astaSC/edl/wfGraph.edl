@@ -1,0 +1,85 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 566
+y 19
+w 600
+h 440
+font "helvetica-medium-r-8.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-8.0"
+fgColor index 73
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+disableScroll
+endScreenProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 25
+y 35
+w 555
+h 375
+# Appearance
+border
+fgColor index 73
+bgColor index 12
+gridColor index 10
+font "helvetica-medium-r-8.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xMin 0
+xMax 1
+xLabelIntervals 10
+xShowLabelGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yLabelIntervals 10
+yShowLabelGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 4
+yPv {
+  0 "$(P):WF:TRACE:1"
+  1 "$(P):WF:TRACE:2"
+  2 "$(P):WF:TRACE:3"
+  3 "$(P):WF:TRACE:4"
+}
+ySigned {
+  0 1
+  1 1
+  2 1
+  3 1
+}
+plotColor {
+  0 index 35
+  1 index 63
+  2 index 31
+  3 index 75
+}
+endObjectProperties
+

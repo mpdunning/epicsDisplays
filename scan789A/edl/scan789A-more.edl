@@ -1,0 +1,188 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 380
+y 479
+w 400
+h 300
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 176
+w 288
+h 80
+lineColor index 13
+fill
+fillColor index 2
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 112
+y 224
+w 24
+h 24
+controlPv "$(PDU):BO:SC:STATE:$(OUTLET)"
+lineColor index 13
+onColor index 17
+offColor index 14
+endian "little"
+numBits 1
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 20
+y 188
+w 132
+h 24
+fgColor index 14
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-bold-r-12.0"
+buttonLabel "Restart Device"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "popUpConf"
+}
+symbols {
+  0 "CMD=ssh $IOCSERVER $SCRIPT/restartDevice.sh $(IOC) $(PDU) $(OUTLET),ACTION=Restart Device ($(PDU) $(OUTLET)),MESSAGE1=Takes 20 seconds...,MESSAGE2= "
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 48
+w 132
+h 56
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 20
+y 48
+w 132
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Restart Device"
+numCmds 1
+command {
+  0 "$SCRIPT/restartDevice.sh sioc-esb-scan1 ESB:ACSW8 13"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 20
+y 80
+w 132
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Power Cycle"
+numCmds 1
+command {
+  0 "caput ESB:ACSW8:BO:REBOOT:13 1"
+}
+endObjectProperties
+
+endGroup
+
+visPv "a"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 40
+y 224
+w 64
+h 24
+font "helvetica-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "AC Power"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 160
+y 188
+w 132
+h 24
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "<-- Takes 20 seconds"
+}
+endObjectProperties
+

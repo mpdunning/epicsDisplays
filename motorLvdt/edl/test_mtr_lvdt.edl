@@ -1,0 +1,1271 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 41
+y 118
+w 500
+h 600
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 6
+w 350
+h 592
+lineColor index 14
+fill
+fillColor index 36
+lineWidth 3
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 78
+y 24
+w 202
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Motor - LVDT test Panel"
+}
+autoSize
+lineWidth 4
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 86
+y 51
+w 190
+h 20
+controlPv "WIRE:IN20:531:MOTR.NAME"
+fgColor index 27
+fgAlarm
+bgColor index 3
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 82
+w 190
+h 60
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 122
+w 160
+h 20
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 86
+y 122
+w 80
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 27
+bgColor index 3
+useDisplayBg
+value {
+  "Status: "
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 166
+y 122
+w 80
+h 20
+font "helvetica-bold-r-12.0"
+fgColor index 82
+bgColor index 0
+useDisplayBg
+visPv "WIRE:IN20:531:MOTR.MOVN"
+visMin "1"
+visMax "2"
+value {
+  "Moving"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 166
+y 122
+w 80
+h 20
+font "helvetica-bold-r-12.0"
+fgColor index 83
+bgColor index 0
+useDisplayBg
+visPv "WIRE:IN20:531:MOTR.SPMG"
+visMin "1"
+visMax "2"
+value {
+  "PAUSED"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 166
+y 122
+w 80
+h 20
+font "helvetica-bold-r-12.0"
+fgColor index 27
+bgColor index 0
+useDisplayBg
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visMin "1"
+visMax "2"
+value {
+  "Stopped"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 86
+y 102
+w 80
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 27
+bgColor index 3
+useDisplayBg
+value {
+  "Request: "
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 86
+y 82
+w 80
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 27
+bgColor index 3
+useDisplayBg
+value {
+  "Currently: "
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 166
+y 82
+w 110
+h 20
+controlPv "WIRE:IN20:531:MOTR.RBV"
+fgColor index 27
+fgAlarm
+bgColor index 3
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 166
+y 102
+w 70
+h 20
+controlPv "WIRE:IN20:531:MOTR"
+font "helvetica-medium-r-12.0"
+fgColor index 19
+bgColor index 5
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 8
+useHexPrefix
+newPos
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 96
+y 151
+w 170
+h 20
+
+beginGroup
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 106
+y 161
+w 150
+h 10
+indicatorColor index 27
+fgColor index 27
+bgColor index 9
+indicatorPv "WIRE:IN20:531:MOTR.RBV"
+font "helvetica-medium-r-8.0"
+scaleFormat "FFloat"
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 106
+y 151
+w 150
+h 10
+indicatorColor index 15
+fgColor index 15
+bgColor index 9
+indicatorPv "WIRE:IN20:531:MOTR.VAL"
+font "helvetica-medium-r-8.0"
+scaleFormat "FFloat"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 96
+y 151
+w 10
+h 20
+lineColor index 9
+fill
+fillColor index 81
+lineWidth 0
+visPv "WIRE:IN20:531:MOTR.LLS"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 151
+w 10
+h 20
+lineColor index 9
+fill
+fillColor index 81
+lineWidth 0
+visPv "WIRE:IN20:531:MOTR.HLS"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 102
+y 191
+w 158
+h 90
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 102
+y 221
+w 150
+h 60
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 152
+y 251
+w 50
+h 30
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 3
+bgColor index 3
+useDisplayBg
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visMin "1"
+visMax "2"
+value {
+  "STOP"
+}
+border
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 152
+y 251
+w 50
+h 30
+fgColor index 35
+onColor index 24
+offColor index 21
+topShadowColor index 20
+botShadowColor index 12
+controlPv "WIRE:IN20:531:MOTR.STOP"
+pressValue "1"
+onLabel "STOP"
+offLabel "STOP"
+3d
+useEnumNumeric
+font "helvetica-bold-r-10.0"
+visPv "WIRE:IN20:531:MOTR.MOVN"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 102
+y 221
+w 50
+h 30
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 102
+y 221
+w 50
+h 30
+fgColor index 0
+onColor index 19
+offColor index 19
+topShadowColor index 17
+botShadowColor index 18
+controlPv "WIRE:IN20:531:MOTR.TWR"
+pressValue "1"
+3d
+useEnumNumeric
+font "helvetica-bold-r-24.0"
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 120
+y 229
+w 15
+h 15
+lineColor index 0
+fill
+fillColor index 1
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 6
+xPoints {
+  0 135
+  1 120
+  2 135
+  3 135
+  4 135
+  5 135
+}
+yPoints {
+  0 229
+  1 237
+  2 244
+  3 229
+  4 229
+  5 229
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 102
+y 221
+w 50
+h 30
+lineColor index 2
+fillColor index 3
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visInvert
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 120
+y 229
+w 15
+h 15
+lineColor index 2
+fillColor index 1
+lineWidth 2
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visInvert
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 6
+xPoints {
+  0 135
+  1 120
+  2 135
+  3 135
+  4 135
+  5 135
+}
+yPoints {
+  0 229
+  1 237
+  2 244
+  3 229
+  4 229
+  5 229
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 202
+y 221
+w 50
+h 30
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 202
+y 221
+w 50
+h 30
+fgColor index 0
+onColor index 19
+offColor index 19
+topShadowColor index 17
+botShadowColor index 18
+controlPv "WIRE:IN20:531:MOTR.TWF"
+pressValue "1"
+3d
+useEnumNumeric
+font "helvetica-bold-r-24.0"
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 220
+y 229
+w 15
+h 15
+lineColor index 0
+fill
+fillColor index 1
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 6
+xPoints {
+  0 220
+  1 235
+  2 220
+  3 220
+  4 220
+  5 220
+}
+yPoints {
+  0 229
+  1 237
+  2 244
+  3 229
+  4 229
+  5 229
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 202
+y 221
+w 50
+h 30
+lineColor index 2
+fillColor index 3
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visInvert
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 220
+y 229
+w 15
+h 15
+lineColor index 2
+fillColor index 1
+lineWidth 2
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visInvert
+visMin "1"
+visMax "2"
+closePolygon
+numPoints 6
+xPoints {
+  0 220
+  1 235
+  2 220
+  3 220
+  4 220
+  5 220
+}
+yPoints {
+  0 229
+  1 237
+  2 244
+  3 229
+  4 229
+  5 229
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 152
+y 221
+w 50
+h 30
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 152
+y 221
+w 50
+h 30
+fgColor index 0
+onColor index 83
+offColor index 19
+topShadowColor index 17
+botShadowColor index 18
+controlPv "WIRE:IN20:531:MOTR.SPMG"
+pressValue "1"
+releaseValue "3"
+onLabel "Resume"
+offLabel "PAUSE"
+toggle
+3d
+useEnumNumeric
+font "helvetica-bold-r-10.0"
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visInvert
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 152
+y 221
+w 50
+h 30
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 3
+bgColor index 3
+useDisplayBg
+visPv "WIRE:IN20:531:MOTR.DMOV"
+visMin "1"
+visMax "2"
+value {
+  "PAUSE"
+}
+border
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 212
+y 191
+w 48
+h 20
+controlPv "WIRE:IN20:531:MOTR.EGU"
+font "helvetica-medium-r-12.0"
+fgColor index 27
+bgColor index 7
+useDisplayBg
+nullColor index 0
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 102
+y 191
+w 40
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 27
+bgColor index 3
+useDisplayBg
+value {
+  "Jump: "
+}
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 142
+y 191
+w 70
+h 20
+controlPv "WIRE:IN20:531:MOTR.TWV"
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 19
+bgColor index 5
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 8
+autoSelect
+useHexPrefix
+newPos
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 9
+y 293
+w 349
+h 0
+lineColor index 14
+fillColor index 0
+lineWidth 3
+numPoints 3
+xPoints {
+  0 9
+  1 358
+  2 358
+}
+yPoints {
+  0 293
+  1 293
+  2 293
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 66
+y 386
+w 230
+h 20
+controlPv "WIRE:IN20:531:LVPOS.EGU"
+fgColor index 0
+fgAlarm
+bgColor index 34
+fill
+font "helvetica-medium-r-8.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 76
+y 356
+w 210
+h 30
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 27
+useDisplayBg
+value {
+  "(WIRE:IN20:531:LVPOS)"
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 66
+y 326
+w 230
+h 30
+controlPv "WIRE:IN20:531:LVPOS.DESC"
+fgColor index 27
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 81
+y 429
+w 200
+h 60
+
+beginGroup
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 161
+y 469
+w 120
+h 20
+controlPv "WIRE:IN20:531:LVAMPL"
+fgColor index 27
+fgAlarm
+bgColor index 61
+fill
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 81
+y 469
+w 80
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 34
+bgColor index 3
+useDisplayBg
+value {
+  "Amplitude: "
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 161
+y 449
+w 120
+h 20
+controlPv "WIRE:IN20:531:LVPOS"
+fgColor index 27
+fgAlarm
+bgColor index 61
+fill
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 91
+y 449
+w 70
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 34
+bgColor index 3
+useDisplayBg
+value {
+  "Position: "
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 91
+y 429
+w 70
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 32
+bgColor index 60
+useDisplayBg
+value {
+  "Scan Count: "
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 161
+y 429
+w 120
+h 20
+controlPv "WIRE:IN20:531:LVSCANCOUNT"
+fgColor index 32
+fgAlarm
+bgColor index 61
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 66
+y 506
+w 230
+h 80
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 66
+y 506
+w 230
+h 80
+lineColor index 62
+fillColor index 34
+lineWidth 2
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 156
+y 556
+w 30
+h 20
+controlPv "WIRE:IN20:531:LVSETCYCLES"
+font "helvetica-bold-r-12.0"
+fgColor index 27
+bgColor index 62
+useDisplayBg
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 76
+y 556
+w 80
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "right"
+fgColor index 34
+bgColor index 3
+useDisplayBg
+value {
+  "Requested:  "
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 76
+y 536
+w 80
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 34
+bgColor index 3
+useDisplayBg
+value {
+  "Currently: "
+}
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 156
+y 536
+w 130
+h 20
+controlPv "WIRE:IN20:531:LVGETCYCLES"
+fgColor index 27
+fgAlarm
+bgColor index 61
+fill
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 156
+y 516
+w 130
+h 20
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 34
+bgColor index 3
+useDisplayBg
+value {
+  "Acquisition Cycles"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 374
+y 94
+w 73
+h 28
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-18.0"
+buttonLabel "xtod"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "xtod-motor"
+}
+symbols {
+  0 "dev=WIRE:IN20:531"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 54
+y 150
+w 32
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "CW"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 286
+y 150
+w 46
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "CCW"
+}
+autoSize
+endObjectProperties
+

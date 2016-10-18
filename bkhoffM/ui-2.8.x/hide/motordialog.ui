@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MotorDialog</class>
+ <widget class="QDialog" name="MotorDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>180</width>
+    <height>194</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>180</width>
+    <height>194</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>180</width>
+    <height>212</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QELabel" name="QELabelName">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>8</y>
+     <width>100</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).NAME</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PushButtonExit">
+   <property name="geometry">
+    <rect>
+     <x>116</x>
+     <y>4</y>
+     <width>60</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="shortcut">
+    <string/>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QEPushButtonStop">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>160</y>
+     <width>62</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).STOP</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="releaseText">
+    <string>0</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LabelJump">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>108</y>
+     <width>41</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>tweek:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="ToggleButton" name="togglebutton">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>128</y>
+     <width>62</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).SPMG</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="clickText">
+    <string notr="true">0</string>
+   </property>
+   <property name="offLabel">
+    <string>Pause</string>
+   </property>
+   <property name="onLabel">
+    <string>Resume</string>
+   </property>
+   <property name="offText">
+    <string>3</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QEPushButtonRight">
+   <property name="geometry">
+    <rect>
+     <x>103</x>
+     <y>128</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).TWF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>1</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="QELineEditJump">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>104</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1.0</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).TWV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QEPushButtonLeft">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>128</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).TWR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>1</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LabelPos">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>36</y>
+     <width>57</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Currently:</string>
+   </property>
+  </widget>
+  <widget class="QEShape" name="qeshape_9">
+   <property name="geometry">
+    <rect>
+     <x>148</x>
+     <y>80</y>
+     <width>10</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="variable1" stdset="0">
+    <string>$(P):$(M).LLS</string>
+   </property>
+   <property name="animation1" stdset="0">
+    <enum>QEShape::ColourHue</enum>
+   </property>
+   <property name="scale1" stdset="0">
+    <double>-120.000000000000000</double>
+   </property>
+   <property name="offset1" stdset="0">
+    <double>120.000000000000000</double>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="point1" stdset="0">
+    <point>
+     <x>1</x>
+     <y>1</y>
+    </point>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>8</x>
+     <y>15</y>
+    </point>
+   </property>
+  </widget>
+  <widget class="QEShape" name="qeshape_2">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>90</y>
+     <width>124</width>
+     <height>4</height>
+    </rect>
+   </property>
+   <property name="variable1" stdset="0">
+    <string>$(P):$(M):CALC:RBV</string>
+   </property>
+   <property name="scale1" stdset="0">
+    <double>0.010000000000000</double>
+   </property>
+   <property name="offset1" stdset="0">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>125</x>
+     <y>8</y>
+    </point>
+   </property>
+   <property name="color1" stdset="0">
+    <color>
+     <red>200</red>
+     <green>111</green>
+     <blue>135</blue>
+    </color>
+   </property>
+   <property name="color5" stdset="0">
+    <color>
+     <red>255</red>
+     <green>157</green>
+     <blue>175</blue>
+    </color>
+   </property>
+   <property name="color6" stdset="0">
+    <color>
+     <red>250</red>
+     <green>105</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="color7" stdset="0">
+    <color>
+     <red>151</red>
+     <green>248</green>
+     <blue>232</blue>
+    </color>
+   </property>
+   <property name="color8" stdset="0">
+    <color>
+     <red>129</red>
+     <green>255</green>
+     <blue>140</blue>
+    </color>
+   </property>
+   <property name="color9" stdset="0">
+    <color>
+     <red>229</red>
+     <green>255</green>
+     <blue>133</blue>
+    </color>
+   </property>
+   <property name="color10" stdset="0">
+    <color>
+     <red>255</red>
+     <green>159</green>
+     <blue>90</blue>
+    </color>
+   </property>
+   <property name="drawBorder">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="QELineEditlReq">
+   <property name="geometry">
+    <rect>
+     <x>68</x>
+     <y>56</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M)</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="confirmWrite">
+    <bool>false</bool>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QEShape" name="qeshape">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>84</y>
+     <width>124</width>
+     <height>4</height>
+    </rect>
+   </property>
+   <property name="variable1" stdset="0">
+    <string>$(P):$(M):CALC:VAL</string>
+   </property>
+   <property name="animation1" stdset="0">
+    <enum>QEShape::Width</enum>
+   </property>
+   <property name="scale1" stdset="0">
+    <double>0.010000000000000</double>
+   </property>
+   <property name="offset1" stdset="0">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>124</x>
+     <y>4</y>
+    </point>
+   </property>
+   <property name="color1" stdset="0">
+    <color>
+     <red>118</red>
+     <green>136</green>
+     <blue>235</blue>
+    </color>
+   </property>
+   <property name="drawBorder">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="QELabelPos">
+   <property name="geometry">
+    <rect>
+     <x>68</x>
+     <y>36</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).RBV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="LabelReq">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>58</y>
+     <width>65</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Request1:</string>
+   </property>
+  </widget>
+  <widget class="QEShape" name="qeshape_3">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>80</y>
+     <width>10</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="variable1" stdset="0">
+    <string>$(P):$(M).LLS</string>
+   </property>
+   <property name="animation1" stdset="0">
+    <enum>QEShape::ColourHue</enum>
+   </property>
+   <property name="scale1" stdset="0">
+    <double>-120.000000000000000</double>
+   </property>
+   <property name="offset1" stdset="0">
+    <double>120.000000000000000</double>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="point1" stdset="0">
+    <point>
+     <x>1</x>
+     <y>1</y>
+    </point>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>8</x>
+     <y>15</y>
+    </point>
+   </property>
+  </widget>
+  <widget class="QEShape" name="qeshape_4">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>80</y>
+     <width>124</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="point1" stdset="0">
+    <point>
+     <x>0</x>
+     <y>1</y>
+    </point>
+   </property>
+   <property name="point2" stdset="0">
+    <point>
+     <x>125</x>
+     <y>16</y>
+    </point>
+   </property>
+   <property name="color1" stdset="0">
+    <color>
+     <red>152</red>
+     <green>255</green>
+     <blue>249</blue>
+    </color>
+   </property>
+   <property name="drawBorder">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbDetails">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>164</y>
+     <width>64</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Details</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="motorGBox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>181</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+  </widget>
+  <zorder>qeshape_4</zorder>
+  <zorder>motorGBox</zorder>
+  <zorder>QELabelName</zorder>
+  <zorder>PushButtonExit</zorder>
+  <zorder>QEPushButtonStop</zorder>
+  <zorder>LabelJump</zorder>
+  <zorder>togglebutton</zorder>
+  <zorder>QEPushButtonRight</zorder>
+  <zorder>QELineEditJump</zorder>
+  <zorder>QEPushButtonLeft</zorder>
+  <zorder>LabelPos</zorder>
+  <zorder>qeshape_9</zorder>
+  <zorder>qeshape_2</zorder>
+  <zorder>QELineEditlReq</zorder>
+  <zorder>qeshape</zorder>
+  <zorder>QELabelPos</zorder>
+  <zorder>LabelReq</zorder>
+  <zorder>qeshape_3</zorder>
+  <zorder>pbDetails</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ToggleButton</class>
+   <extends>QPushButton</extends>
+   <header>togglebutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEShape</class>
+   <extends>QWidget</extends>
+   <header>QEShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>QELineEditlReq</tabstop>
+  <tabstop>QELineEditJump</tabstop>
+  <tabstop>QEPushButtonLeft</tabstop>
+  <tabstop>QEPushButtonRight</tabstop>
+  <tabstop>QEPushButtonStop</tabstop>
+  <tabstop>PushButtonExit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>PushButtonExit</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MotorDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>202</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

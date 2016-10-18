@@ -1,0 +1,247 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 830
+y 365
+w 400
+h 300
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 168
+y 20
+w 84
+h 24
+controlPv "$(P):BO:START.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 256
+y 48
+w 52
+h 24
+fgColor index 13
+onColor index 59
+offColor index 5
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:RESET"
+buttonType "push"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 52
+y 16
+w 64
+h 20
+controlPv "$(P):AI:X:POS"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 16
+w 28
+h 20
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "X:"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 52
+y 40
+w 64
+h 20
+controlPv "$(P):AI:Y:POS"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 40
+w 28
+h 20
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Y:"
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 16
+y 80
+w 224
+h 200
+# Appearance
+fgColor index 13
+bgColor index 1
+gridColor index 3
+font "courier-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 1
+triggerPv "$(P):AI:X:POS"
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin 0
+xMax 30
+xLabelIntervals 3
+xMajorsPerLabel 5
+xShowLabelGrid
+xShowMajorGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "fromUser"
+yMin 0
+yMax 30
+yLabelIntervals 3
+yMajorsPerLabel 5
+yShowLabelGrid
+yShowMajorGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+xPv {
+  0 "$(P):AI:X:POS"
+}
+yPv {
+  0 "$(P):AI:Y:POS"
+}
+plotStyle {
+  0 "point"
+}
+plotUpdateMode {
+  0 "xOrY"
+}
+plotSymbolType {
+  0 "circle"
+}
+plotColor {
+  0 index 20
+}
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 20
+w 72
+h 24
+fgColor index 13
+bgColor index 74
+selectColor index 58
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:START"
+font "courier-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+

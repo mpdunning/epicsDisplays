@@ -1,0 +1,1114 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 111
+y 93
+w 754
+h 575
+font "new century schoolbook-medium-r-18.0"
+ctlFont "new century schoolbook-bold-r-18.0"
+btnFont "new century schoolbook-medium-i-14.0"
+fgColor index 14 
+bgColor index 71
+textColor index 14
+ctlFgColor1 index 12
+ctlFgColor2 index 7
+ctlBgColor1 index 63
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+title "lband_dac_chans.edl"
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 541
+h 56
+lineColor index 63
+fill
+fillColor index 63
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 0
+y 56
+w 754
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 2
+xPoints {
+  0 0
+  1 754
+}
+yPoints {
+  0 56
+  1 56
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 7
+w 183
+h 52
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "L-Band"
+  "DAC channels"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 674
+y 0
+w 75
+h 28
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+label "EXIT"
+font "new century schoolbook-medium-r-18.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 60
+w 230
+h 45
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "A & P -->> I & Q"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 61
+w 744
+h 121
+lineColor index 14
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 509
+y 106
+w 92
+h 18
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "DAC I (V)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 509
+y 151
+w 92
+h 18
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "DAC Q (V)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 144
+w 74
+h 33
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "P (deg)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 99
+w 47
+h 33
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "A (V)"
+}
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 262
+y 140
+w 229
+h 40
+fgColor index 14
+bgColor index 1
+2ndBgColor index 55
+topShadowColor index 14
+botShadowColor index 0
+controlPv "TRSL:LLRF:OUT:PHASCTRL"
+controlLabelType "pvName"
+font "new century schoolbook-bold-r-14.0"
+precision 4
+scaleMin -180
+scaleMax 180
+showLimits
+showValue
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 262
+y 95
+w 229
+h 40
+fgColor index 14
+bgColor index 1
+2ndBgColor index 55
+topShadowColor index 14
+botShadowColor index 0
+controlPv "TRSL:LLRF:OUT:AMPLCTRL"
+controlLabelType "pvName"
+font "new century schoolbook-bold-r-14.0"
+precision 4
+scaleMin 0
+scaleMax 1
+showLimits
+showValue
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 141
+y 143
+w 107
+h 34
+controlPv "TRSL:LLRF:OUT:PHASCTRL"
+displayMode "decimal"
+precision 4
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 141
+y 98
+w 106
+h 34
+controlPv "TRSL:LLRF:OUT:AMPLCTRL"
+displayMode "decimal"
+precision 4
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 609
+y 103
+w 32
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_dac.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=L,NAME=LLRF:OUT:ICTRL,NAME1=Out I Ctrl"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 643
+y 148
+w 100
+h 25
+controlPv "TRSL:LLRF:OUT:QCTRL"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+precision 4
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 643
+y 103
+w 100
+h 25
+controlPv "TRSL:LLRF:OUT:ICTRL"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+precision 4
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 609
+y 148
+w 32
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_dac.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=L,NAME=LLRF:OUT:QCTRL,NAME1=Out Q Ctrl"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 188
+w 229
+h 104
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 188
+w 229
+h 104
+lineColor index 14
+fillColor index 63
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 25
+y 231
+w 198
+h 38
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 253
+w 91
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Q = A*SIN(P)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 231
+w 89
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "I = A*COS(P)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 120
+y 240
+w 103
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "* 0.5 to the DAC"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 191
+w 94
+h 16
+font "new century schoolbook-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Calculations"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 377
+w 494
+h 189
+lineColor index 14
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 379
+w 106
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "PMT Gains"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 298
+w 744
+h 74
+lineColor index 14
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 508
+y 341
+w 92
+h 18
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "to DAC (V)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 300
+w 163
+h 27
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Pulse Width"
+}
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 140
+y 333
+w 100
+h 34
+controlPv "TRSL:LLRF:PULSE:WIDTHCTRLI"
+displayMode "decimal"
+precision 3
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 261
+y 330
+w 229
+h 40
+fgColor index 14
+bgColor index 1
+2ndBgColor index 55
+topShadowColor index 14
+botShadowColor index 0
+controlPv "TRSL:LLRF:PULSE:WIDTHCTRLI"
+controlLabelType "pvName"
+font "new century schoolbook-bold-r-14.0"
+precision 2
+scaleMin 0
+scaleMax 10
+showLimits
+showValue
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 407
+w 39
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Kly :"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 140
+y 400
+w 100
+h 34
+controlPv "TRSL:KLY:PMT:GAIN"
+precision -1
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 449
+w 43
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Circ :"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 140
+y 442
+w 100
+h 34
+controlPv "TRSL:CIRC:PMT:GAIN"
+precision -1
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 107
+y 335
+w 34
+h 30
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-14.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_dac.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=L,NAME=LLRF:PULSE:WIDTHCTRLI,NAME1=Pulse Width"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 107
+y 402
+w 34
+h 30
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-14.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_dac.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=L,NAME=KLY:PMT:GAIN,NAME1=Kly PMT Gain"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 107
+y 444
+w 34
+h 30
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-14.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_dac.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=L,NAME=CIRC:PMT:GAIN,NAME1=Circ PMT Gain"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 642
+y 338
+w 100
+h 25
+controlPv "TRSL:LLRF:PULSE:WIDTHCTRL"
+format "decimal"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 263
+y 397
+w 229
+h 40
+fgColor index 14
+bgColor index 1
+2ndBgColor index 55
+topShadowColor index 14
+botShadowColor index 0
+controlPv "TRSL:KLY:PMT:GAIN"
+controlLabelType "pvName"
+font "new century schoolbook-bold-r-14.0"
+precision 2
+scaleMin 0
+scaleMax 10
+showLimits
+showValue
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 263
+y 439
+w 229
+h 40
+fgColor index 14
+bgColor index 1
+2ndBgColor index 55
+topShadowColor index 14
+botShadowColor index 0
+controlPv "TRSL:CIRC:PMT:GAIN"
+controlLabelType "pvName"
+font "new century schoolbook-bold-r-14.0"
+precision 2
+scaleMin 0
+scaleMax 10
+showLimits
+showValue
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 262
+y 481
+w 229
+h 40
+fgColor index 14
+bgColor index 1
+2ndBgColor index 55
+topShadowColor index 14
+botShadowColor index 0
+controlPv "TRSL:CPLIN:PMT:GAIN"
+controlLabelType "pvName"
+font "new century schoolbook-bold-r-14.0"
+precision 2
+scaleMin 0
+scaleMax 10
+showLimits
+showValue
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 262
+y 524
+w 229
+h 40
+fgColor index 14
+bgColor index 1
+2ndBgColor index 55
+topShadowColor index 14
+botShadowColor index 0
+controlPv "TRSL:CPLOUT:PMT:GAIN"
+controlLabelType "pvName"
+font "new century schoolbook-bold-r-14.0"
+precision 2
+scaleMin 0
+scaleMax 10
+showLimits
+showValue
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 491
+w 63
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Cplr In:"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 142
+y 484
+w 100
+h 34
+controlPv "TRSL:CPLIN:PMT:GAIN"
+precision -1
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 534
+w 77
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Cplr Out:"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 142
+y 527
+w 100
+h 34
+controlPv "TRSL:CPLOUT:PMT:GAIN"
+precision -1
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 109
+y 486
+w 34
+h 30
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-14.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_dac.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=L,NAME=CPLIN:PMT:GAIN,NAME1=Kly PMT Gain"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 109
+y 529
+w 34
+h 30
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-14.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_dac.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=L,NAME=CPLOUT:PMT:GAIN,NAME1=Circ PMT Gain"
+}
+endObjectProperties
+

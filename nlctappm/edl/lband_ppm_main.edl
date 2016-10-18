@@ -1,0 +1,1444 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1653
+y 20
+w 1250
+h 700
+font "new century schoolbook-medium-r-18.0"
+ctlFont "new century schoolbook-medium-r-12.0"
+btnFont "new century schoolbook-bold-r-14.0"
+fgColor index 14
+bgColor index 71
+textColor index 14
+ctlFgColor1 index 12
+ctlFgColor2 index 7
+ctlBgColor1 index 63
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+title "lband_ppm_main.edl"
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 938
+h 57
+lineColor index 63
+fill
+fillColor index 63
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 2147483647
+y 2147483647
+w -2147483648
+h -2147483648
+lineColor index 14
+fillColor index 63
+arrows "both"
+numPoints 0
+xPoints {
+}
+yPoints {
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 4
+y 5
+w 191
+h 39
+controlPv "$(IOC):$(SCOPE):NAME.DESC"
+fgColor index 14
+bgColor index 63
+font "new century schoolbook-bold-r-24.0"
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1167
+y 6
+w 75
+h 28
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+label "EXIT"
+font "new century schoolbook-medium-r-18.0"
+3d
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 198
+y 13
+w 738
+h 31
+controlPv "$(IOC):$(SCOPE):IDN"
+fgColor index 14
+fgAlarm
+bgColor index 63
+fill
+font "courier-medium-r-18.0"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 0
+y 58
+w 1306
+h 0
+lineColor index 14
+fillColor index 63
+numPoints 2
+xPoints {
+  0 1306
+  1 0
+}
+yPoints {
+  0 58
+  1 58
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 586
+y 130
+w 114
+h 30
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-bold-r-18.0"
+buttonLabel "$(SCOPE) Diag"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_ppm_diag.edl"
+}
+symbols {
+  0 "IOC=$(IOC),SCOPE=$(SCOPE)"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 282
+w 110
+h 24
+fgColor index 14
+bgColor index 63
+inconsistentColor index 21
+topShadowColor index 2
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):CHAN1:PUNITS"
+indicatorPv "$(IOC):$(SCOPE):CHAN1:PUNITS"
+font "new century schoolbook-bold-r-14.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 868
+y 489
+w 140
+h 24
+fgColor index 14
+bgColor index 63
+inconsistentColor index 21
+topShadowColor index 2
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):TUNITS"
+indicatorPv "$(IOC):$(SCOPE):TUNITS"
+font "new century schoolbook-bold-r-14.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 596
+y 282
+w 110
+h 24
+fgColor index 14
+bgColor index 63
+inconsistentColor index 21
+topShadowColor index 2
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):CHAN4:PUNITS"
+indicatorPv "$(IOC):$(SCOPE):CHAN4:PUNITS"
+font "new century schoolbook-bold-r-14.0"
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 710
+y 110
+w 457
+h 369
+# Appearance
+border
+fgColor index 14
+bgColor index 63
+gridColor index 14
+font "new century schoolbook-medium-r-12.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+showY2Axis
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+xPv {
+  0 "$(IOC):$(SCOPE):DTIMWF"
+}
+yPv {
+  0 "$(IOC):$(SCOPE):CHAN4:DDATA"
+}
+lineThickness {
+  0 3
+}
+plotUpdateMode {
+  0 "xOrY"
+}
+xSigned {
+  0 16777216
+}
+ySigned {
+  0 3801240
+}
+plotColor {
+  0 index 26
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 1047
+y 71
+w 120
+h 30
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-bold-r-18.0"
+buttonLabel "Chan4 Diag"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_ppm_ch.edl"
+}
+symbols {
+  0 "IOC=$(IOC),SCOPE=$(SCOPE),CH=CHAN4,CHO=CHAN1"
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 277
+y 489
+w 140
+h 24
+fgColor index 14
+bgColor index 63
+inconsistentColor index 21
+topShadowColor index 2
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):TUNITS"
+indicatorPv "$(IOC):$(SCOPE):TUNITS"
+font "new century schoolbook-bold-r-14.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 456
+y 71
+w 120
+h 30
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-bold-r-18.0"
+buttonLabel "Chan1 Diag"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_ppm_ch.edl"
+}
+symbols {
+  0 "IOC=$(IOC),SCOPE=$(SCOPE),CH=CHAN1,CHO=CHAN4"
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+# Geometry
+x 119
+y 110
+w 457
+h 369
+# Appearance
+border
+fgColor index 14
+bgColor index 63
+gridColor index 14
+font "new century schoolbook-medium-r-12.0"
+# Operating Modes
+nPts 2
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+# Y2 axis properties
+showY2Axis
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 1
+xPv {
+  0 "$(IOC):$(SCOPE):DTIMWF"
+}
+yPv {
+  0 "$(IOC):$(SCOPE):CHAN1:DDATA"
+}
+lineThickness {
+  0 3
+}
+plotUpdateMode {
+  0 "xOrY"
+}
+xSigned {
+  0 16777216
+}
+ySigned {
+  0 1810440
+}
+plotColor {
+  0 index 26
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 391
+y 520
+w 570
+h 172
+
+beginGroup
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 391
+y 542
+w 243
+h 35
+controlPv "$(IOC):$(SCOPE):COMMAND"
+fgColor index 14
+fgAlarm
+bgColor index 63
+fill
+font "new century schoolbook-medium-r-12.0"
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 643
+y 542
+w 243
+h 35
+controlPv "$(IOC):$(SCOPE):QUERY"
+fgColor index 14
+fgAlarm
+bgColor index 63
+fill
+font "new century schoolbook-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 643
+y 520
+w 54
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "Query"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 391
+y 578
+w 80
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "Response"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 391
+y 520
+w 89
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "Command"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 391
+y 603
+w 570
+h 31
+controlPv "$(IOC):$(SCOPE):LRESP"
+fgColor index 14
+fgAlarm
+bgColor index 63
+fill
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 391
+y 661
+w 570
+h 31
+controlPv "$(IOC):$(SCOPE):ERRMSG"
+fgColor index 14
+fgAlarm
+bgColor index 63
+fill
+font "courier-medium-r-10.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 391
+y 634
+w 112
+h 27
+fgColor index 14
+onColor index 63
+offColor index 63
+topShadowColor index 2
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):ERRMSG.PROC"
+pressValue "1"
+onLabel "Get ErrMsg"
+offLabel "Get ErrMsg"
+3d
+font "new century schoolbook-medium-r-18.0"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 490
+w 212
+h 199
+lineColor index 16
+lineAlarm
+fillColor index 63
+lineWidth 3
+alarmPv "$(IOC):$(SCOPE):CHAN1:SPMAT.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 38
+y 657
+w 67
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "VBASE"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 110
+y 650
+w 107
+h 33
+controlPv "$(IOC):$(SCOPE):CHAN1:VBASE"
+displayMode "exp"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 110
+y 611
+w 107
+h 33
+controlPv "$(IOC):$(SCOPE):CHAN1:VMIN"
+displayMode "exp"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 47
+y 618
+w 58
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "VMIN"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 18
+y 579
+w 87
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "PWIDTH"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 110
+y 572
+w 107
+h 33
+controlPv "$(IOC):$(SCOPE):CHAN1:PWIDTH"
+displayMode "exp"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 110
+y 534
+w 107
+h 33
+controlPv "$(IOC):$(SCOPE):CHAN1:VTOP"
+displayMode "exp"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 48
+y 541
+w 57
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "VTOP"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 41
+y 503
+w 64
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "VMAX"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 110
+y 496
+w 107
+h 33
+controlPv "$(IOC):$(SCOPE):CHAN1:VMAX"
+displayMode "exp"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1026
+y 488
+w 212
+h 199
+lineColor index 16
+lineAlarm
+fillColor index 63
+lineWidth 3
+alarmPv "$(IOC):$(SCOPE):CHAN4:SPMAT.SEVR"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1126
+y 649
+w 107
+h 33
+controlPv "$(IOC):$(SCOPE):CHAN4:VBASE"
+displayMode "exp"
+precision 4
+fgColor index 14
+fgAlarm
+bgColor index 63
+fill
+font "new century schoolbook-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1053
+y 656
+w 67
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "VBASE"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1062
+y 617
+w 58
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "VMIN"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1126
+y 610
+w 107
+h 33
+controlPv "$(IOC):$(SCOPE):CHAN4:VMIN"
+displayMode "exp"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1126
+y 571
+w 107
+h 33
+controlPv "$(IOC):$(SCOPE):CHAN4:PWIDTH"
+displayMode "exp"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1033
+y 578
+w 87
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "PWIDTH"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1063
+y 540
+w 57
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "VTOP"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1126
+y 533
+w 107
+h 33
+controlPv "$(IOC):$(SCOPE):CHAN4:VTOP"
+displayMode "exp"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1126
+y 495
+w 107
+h 33
+controlPv "$(IOC):$(SCOPE):CHAN4:VMAX"
+displayMode "exp"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-bold-r-18.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1056
+y 502
+w 64
+h 20
+font "new century schoolbook-bold-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "VMAX"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 329
+y 71
+w 120
+h 30
+fgColor index 14
+onColor index 63
+offColor index 63
+topShadowColor index 63
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):CHAN1:MEASLOOP.PROC"
+pressValue "1"
+onLabel "Get CH1 WF"
+offLabel "Get CH1 WF"
+3d
+font "new century schoolbook-bold-r-14.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 920
+y 71
+w 120
+h 30
+fgColor index 14
+onColor index 63
+offColor index 63
+topShadowColor index 63
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):CHAN4:MEASLOOP.PROC"
+pressValue "1"
+onLabel "Get CH4 WF"
+offLabel "Get CH4 WF"
+3d
+font "new century schoolbook-bold-r-14.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 597
+y 72
+w 92
+h 49
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 601
+y 72
+w 85
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "Meas Stn?"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 597
+y 94
+w 92
+h 27
+fgColor index 14
+bgColor index 3
+selectColor index 63
+inconsistentColor index 21
+topShadowColor index 2
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):MEAS"
+indicatorPv "$(IOC):$(SCOPE):MEAS"
+font "new century schoolbook-bold-r-14.0"
+orientation "horizontal"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 119
+y 73
+w 202
+h 27
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 119
+y 75
+w 102
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "Meas Chan?"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 229
+y 73
+w 92
+h 27
+fgColor index 14
+bgColor index 3
+selectColor index 63
+inconsistentColor index 21
+topShadowColor index 2
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):CHAN1:ONOF"
+indicatorPv "$(IOC):$(SCOPE):CHAN1:ONOF"
+font "new century schoolbook-bold-r-14.0"
+orientation "horizontal"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 710
+y 76
+w 102
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "Meas Chan?"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 820
+y 73
+w 92
+h 27
+fgColor index 14
+bgColor index 3
+selectColor index 63
+inconsistentColor index 21
+topShadowColor index 2
+botShadowColor index 0
+controlPv "$(IOC):$(SCOPE):CHAN4:ONOF"
+indicatorPv "$(IOC):$(SCOPE):CHAN4:ONOF"
+font "new century schoolbook-bold-r-14.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 46
+y 596
+w 29
+h 14
+font "new century schoolbook-bold-r-12.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "(ms)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1066
+y 595
+w 29
+h 14
+font "new century schoolbook-bold-r-12.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "(ms)"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 26
+y 690
+w 72
+h 11
+controlPv "$(IOC):$(SCOPE):TS"
+fgColor index 12
+fgAlarm
+bgColor index 63
+fill
+font "new century schoolbook-medium-r-8.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 3
+y 342
+w 66
+h 19
+controlPv "$(IOC):$(SCOPE):CHAN1:STEMP"
+displayMode "decimal"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 3
+y 325
+w 116
+h 17
+controlPv "$(IOC):$(SCOPE):CHAN1:SENS"
+fgColor index 14
+fgAlarm
+bgColor index 63
+fill
+font "new century schoolbook-medium-r-10.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 3
+y 311
+w 92
+h 12
+font "new century schoolbook-medium-r-10.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "Sensor ID & Temp"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 592
+y 328
+w 116
+h 18
+controlPv "$(IOC):$(SCOPE):CHAN4:SENS"
+fgColor index 14
+fgAlarm
+bgColor index 63
+fill
+font "new century schoolbook-medium-r-10.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 592
+y 346
+w 66
+h 20
+controlPv "$(IOC):$(SCOPE):CHAN4:STEMP"
+displayMode "decimal"
+precision 4
+fgColor index 14
+bgColor index 63
+fill
+font "new century schoolbook-medium-r-10.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 592
+y 313
+w 92
+h 12
+font "new century schoolbook-medium-r-10.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "Sensor ID & Temp"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 15
+y 396
+w 94
+h 27
+fgColor index 13
+bgColor index 74
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-bold-r-14.0"
+buttonLabel "raw WF"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lbandRawWf.edl"
+}
+symbols {
+  0 "N=1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 604
+y 397
+w 94
+h 27
+fgColor index 13
+bgColor index 74
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-bold-r-14.0"
+buttonLabel "raw WF"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lbandRawWf.edl"
+}
+symbols {
+  0 "N=4"
+}
+endObjectProperties
+

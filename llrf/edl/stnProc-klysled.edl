@@ -1,0 +1,164 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1008
+y 234
+w 380
+h 250
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 307
+y 5
+w 64
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 2
+w 290
+h 43
+lineColor index 13
+fill
+fillColor index 38
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 13
+y 11
+w 121
+h 18
+font "courier-bold-r-18.0"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "Stn $(STN) "
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 68
+y 191
+w 250
+h 40
+fgColor index 13
+bgColor index 24
+selectColor index 1
+inconsistentColor index 3
+topShadowColor index 23
+botShadowColor index 13
+controlPv "$(P):PULSE:MODE"
+font "courier-bold-r-24.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 51
+w 378
+h 52
+font "times-bold-r-24.0"
+fontAlign "center"
+fgColor index 77
+bgColor index 2
+useDisplayBg
+value {
+  "ARE YOU SURE YOU WANT TO "
+  "CHANGE THE PULSE MODE?"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 58
+y 111
+w 270
+h 24
+font "courier-bold-r-24.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Current Pulse Mode"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 134
+y 140
+w 119
+h 24
+controlPv "$(P):PULSE:MODE"
+font "courier-bold-r-24.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+

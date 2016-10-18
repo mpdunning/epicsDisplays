@@ -1,0 +1,323 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 909
+y 613
+w 400
+h 196
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 52
+w 188
+h 132
+lineColor index 13
+fillColor index 2
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 204
+y 52
+w 188
+h 132
+lineColor index 13
+fillColor index 2
+lineWidth 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 452
+h 32
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 8
+w 132
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "E222 Specific"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 16
+y 108
+w 136
+h 28
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Sample"
+numCmds 1
+command {
+  0 "$SCRIPT/startCamViewer.sh qCam 6"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 336
+y 4
+w 56
+h 24
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 44
+w 68
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 3
+value {
+  "Cameras"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 212
+y 44
+w 64
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 3
+value {
+  "Motors"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 16
+y 72
+w 136
+h 28
+fgColor index 13
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Kraken"
+numCmds 1
+command {
+  0 "$SCRIPT/startCamViewer.sh qCam 5"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 216
+y 72
+w 164
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Kraken"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "main1motor.edl"
+}
+symbols {
+  0 "P=ESA,M=24,M1=2531-3,ADC=3162,DAC=4002,C1=1,D1=1"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 216
+y 108
+w 164
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Sample"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lanlSampleMotors.edl"
+}
+symbols {
+  0 "P=ESA, B1=23, B2=27, M1=2531-1, M2=2531-3, M3=2531-1, M4=2531-2, ADC1=3162, ADC2=3132-1, DAC1=4132, DAC2=4132, C1=1, C2=2"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 216
+y 144
+w 164
+h 28
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-medium-r-12.0"
+buttonLabel "Colimator"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lanlCollMotors.edl"
+}
+symbols {
+  0 "P=ESA, M=23, M1=2531-3, M2=2531-4, M3=2531-5, M4=2531-6, ADC=3162, DAC=4002, C1=3, C2=4, C3=5, C4=6, XMAC=ESTB Horizontal Colimator,YMAC=ESTB Vertical Colimator"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 156
+y 72
+w 32
+h 28
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "edm"
+numCmds 1
+command {
+  0 "$SCRIPT/startCamViewer.sh edm 5"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 156
+y 108
+w 32
+h 28
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "edm"
+numCmds 1
+command {
+  0 "$SCRIPT/startCamViewer.sh edm 6"
+}
+endObjectProperties
+

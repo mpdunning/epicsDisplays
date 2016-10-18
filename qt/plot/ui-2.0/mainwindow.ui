@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>404</width>
+    <height>595</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QELabel" name="qelabelWFType">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>20</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):MBBO:WF:TYPE.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=QTPLOT</string>
+    </property>
+   </widget>
+   <widget class="QEComboBox" name="qecombobox">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>16</y>
+      <width>74</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):MBBO:WF:TYPE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=QTPLOT</string>
+    </property>
+    <property name="subscribe">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabelMin">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>52</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LO:MIN.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=QTPLOT</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>48</y>
+      <width>73</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LO:MIN</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=QTPLOT</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabelMax">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LO:MAX.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=QTPLOT</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_2">
+    <property name="geometry">
+     <rect>
+      <x>304</x>
+      <y>16</y>
+      <width>73</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LO:MAX</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=QTPLOT</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabelNPTS">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>52</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LO:NPTS.DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=QTPLOT</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_3">
+    <property name="geometry">
+     <rect>
+      <x>304</x>
+      <y>48</y>
+      <width>73</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):LO:NPTS</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=QTPLOT</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qebushbutton">
+    <property name="geometry">
+     <rect>
+      <x>307</x>
+      <y>80</y>
+      <width>69</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Make</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):ASUB:WAVEFORMS.PROC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=QTPLOT</string>
+    </property>
+    <property name="subscribe">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QBitStatus" name="qbitstatus">
+    <property name="geometry">
+     <rect>
+      <x>332</x>
+      <y>212</y>
+      <width>12</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>150</number>
+    </property>
+    <property name="Orientation">
+     <enum>QBitStatus::LSB_On_Top</enum>
+    </property>
+   </widget>
+   <widget class="QEBitStatus" name="qebitstatus">
+    <property name="geometry">
+     <rect>
+      <x>364</x>
+      <y>212</y>
+      <width>12</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>15</number>
+    </property>
+    <property name="Orientation">
+     <enum>QBitStatus::LSB_On_Bottom</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>QTPLOT:MBBO:WF:TYPE</string>
+    </property>
+   </widget>
+   <widget class="XYGraph" name="xygraph">
+    <property name="geometry">
+     <rect>
+      <x>28</x>
+      <y>88</y>
+      <width>240</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>QTPLOT:WF:DATA</string>
+    </property>
+    <property name="gridEnableMajorX" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMinorX" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMajorY" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="gridEnableMinorY" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="backgroundColor">
+     <color>
+      <red>191</red>
+      <green>200</green>
+      <blue>212</blue>
+     </color>
+    </property>
+   </widget>
+   <widget class="ImageFrame" name="imageframe">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>272</y>
+      <width>293</width>
+      <height>213</height>
+     </rect>
+    </property>
+    <property name="pixmap">
+     <pixmap>21.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qebushbutton_2">
+    <property name="geometry">
+     <rect>
+      <x>307</x>
+      <y>116</y>
+      <width>69</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Make</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):ASUB:WAVEFORMS.PROC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=QTPLOT</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>404</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuQuit">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuQuit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionFile">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImageFrame</class>
+   <extends>QWidget</extends>
+   <header>imageframe.h</header>
+  </customwidget>
+  <customwidget>
+   <class>XYGraph</class>
+   <extends>QFrame</extends>
+   <header>xygraph.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEBitStatus</class>
+   <extends>QBitStatus</extends>
+   <header>QEBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QBitStatus</class>
+   <extends>QWidget</extends>
+   <header>QBitStatus.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

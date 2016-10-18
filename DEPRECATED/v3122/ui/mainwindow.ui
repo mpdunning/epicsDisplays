@@ -1,0 +1,2222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>548</width>
+    <height>406</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>-4</x>
+      <y>-4</y>
+      <width>537</width>
+      <height>345</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="title">
+      <string>Channels</string>
+     </attribute>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>52</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH0.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_2">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>52</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH0</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>52</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH0.LOLO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_2">
+      <property name="geometry">
+       <rect>
+        <x>264</x>
+        <y>52</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH0.LOW</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_3">
+      <property name="geometry">
+       <rect>
+        <x>328</x>
+        <y>52</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH0.HIGH</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_4">
+      <property name="geometry">
+       <rect>
+        <x>392</x>
+        <y>52</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH0.HIHI</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_3">
+      <property name="geometry">
+       <rect>
+        <x>464</x>
+        <y>52</y>
+        <width>53</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH0.RVAL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QCaLabelPlugin::UnsignedInteger</enum>
+      </property>
+      <property name="radix">
+       <UInt>16</UInt>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_4">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>76</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH1</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_5">
+      <property name="geometry">
+       <rect>
+        <x>328</x>
+        <y>76</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH1.HIGH</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_6">
+      <property name="geometry">
+       <rect>
+        <x>392</x>
+        <y>76</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH1.HIHI</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_7">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>76</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH1.LOLO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_5">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>76</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH1.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_6">
+      <property name="geometry">
+       <rect>
+        <x>464</x>
+        <y>76</y>
+        <width>53</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH1.RVAL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QCaLabelPlugin::UnsignedInteger</enum>
+      </property>
+      <property name="radix">
+       <UInt>16</UInt>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_8">
+      <property name="geometry">
+       <rect>
+        <x>264</x>
+        <y>76</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH1.LOW</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_7">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>100</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH2</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_9">
+      <property name="geometry">
+       <rect>
+        <x>328</x>
+        <y>100</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH2.HIGH</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_10">
+      <property name="geometry">
+       <rect>
+        <x>392</x>
+        <y>100</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH2.HIHI</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_11">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>100</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH2.LOLO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_8">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>100</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH2.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_9">
+      <property name="geometry">
+       <rect>
+        <x>464</x>
+        <y>100</y>
+        <width>53</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH2.RVAL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QCaLabelPlugin::UnsignedInteger</enum>
+      </property>
+      <property name="radix">
+       <UInt>16</UInt>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_12">
+      <property name="geometry">
+       <rect>
+        <x>264</x>
+        <y>100</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH2.LOW</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_10">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>124</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH3</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_13">
+      <property name="geometry">
+       <rect>
+        <x>328</x>
+        <y>124</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH3.HIGH</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_14">
+      <property name="geometry">
+       <rect>
+        <x>392</x>
+        <y>124</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH3.HIHI</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_15">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>124</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH3.LOLO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_11">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>124</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH3.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_12">
+      <property name="geometry">
+       <rect>
+        <x>464</x>
+        <y>124</y>
+        <width>53</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH3.RVAL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QCaLabelPlugin::UnsignedInteger</enum>
+      </property>
+      <property name="radix">
+       <UInt>16</UInt>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_16">
+      <property name="geometry">
+       <rect>
+        <x>264</x>
+        <y>124</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH3.LOW</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_13">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>148</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH4</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_17">
+      <property name="geometry">
+       <rect>
+        <x>328</x>
+        <y>148</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH4.HIGH</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_18">
+      <property name="geometry">
+       <rect>
+        <x>392</x>
+        <y>148</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH4.HIHI</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_19">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>148</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH4.LOLO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_14">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>148</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH4.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_15">
+      <property name="geometry">
+       <rect>
+        <x>464</x>
+        <y>148</y>
+        <width>53</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH4.RVAL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QCaLabelPlugin::UnsignedInteger</enum>
+      </property>
+      <property name="radix">
+       <UInt>16</UInt>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_20">
+      <property name="geometry">
+       <rect>
+        <x>264</x>
+        <y>148</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH4.LOW</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_16">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>172</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH5</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_21">
+      <property name="geometry">
+       <rect>
+        <x>328</x>
+        <y>172</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH5.HIGH</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_22">
+      <property name="geometry">
+       <rect>
+        <x>392</x>
+        <y>172</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH5.HIHI</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_23">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>172</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH5.LOLO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_17">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>172</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH5.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_18">
+      <property name="geometry">
+       <rect>
+        <x>464</x>
+        <y>172</y>
+        <width>53</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH5.RVAL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QCaLabelPlugin::UnsignedInteger</enum>
+      </property>
+      <property name="radix">
+       <UInt>16</UInt>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_24">
+      <property name="geometry">
+       <rect>
+        <x>264</x>
+        <y>172</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH5.LOW</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_19">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>196</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH6</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_25">
+      <property name="geometry">
+       <rect>
+        <x>328</x>
+        <y>196</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH6.HIGH</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_26">
+      <property name="geometry">
+       <rect>
+        <x>392</x>
+        <y>196</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH6.HIHI</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_27">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>196</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH6.LOLO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_20">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>196</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH6.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_21">
+      <property name="geometry">
+       <rect>
+        <x>464</x>
+        <y>196</y>
+        <width>53</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH6.RVAL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QCaLabelPlugin::UnsignedInteger</enum>
+      </property>
+      <property name="radix">
+       <UInt>16</UInt>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_28">
+      <property name="geometry">
+       <rect>
+        <x>264</x>
+        <y>196</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH6.LOW</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_22">
+      <property name="geometry">
+       <rect>
+        <x>112</x>
+        <y>220</y>
+        <width>64</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH7</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_29">
+      <property name="geometry">
+       <rect>
+        <x>328</x>
+        <y>220</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH7.HIGH</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_30">
+      <property name="geometry">
+       <rect>
+        <x>392</x>
+        <y>220</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH7.HIHI</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_31">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>220</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH7.LOLO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_23">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>220</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH7.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_24">
+      <property name="geometry">
+       <rect>
+        <x>464</x>
+        <y>220</y>
+        <width>53</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH7.RVAL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QCaLabelPlugin::UnsignedInteger</enum>
+      </property>
+      <property name="radix">
+       <UInt>16</UInt>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_32">
+      <property name="geometry">
+       <rect>
+        <x>264</x>
+        <y>220</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:CH7.LOW</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupChan">
+      <property name="geometry">
+       <rect>
+        <x>4</x>
+        <y>8</y>
+        <width>105</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Channel</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupAdc">
+      <property name="geometry">
+       <rect>
+        <x>107</x>
+        <y>8</y>
+        <width>87</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>ADC</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupAlarm">
+      <property name="geometry">
+       <rect>
+        <x>192</x>
+        <y>8</y>
+        <width>270</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Alarm Limits</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupRaw">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>8</y>
+        <width>65</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Raw</string>
+      </property>
+     </widget>
+     <widget class="QCaComboBoxPlugin" name="qcacomboSTrigScan">
+      <property name="geometry">
+       <rect>
+        <x>392</x>
+        <y>264</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:STRIG.SCAN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelSTrigScan">
+      <property name="geometry">
+       <rect>
+        <x>273</x>
+        <y>264</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:STRIG.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <zorder>groupRaw</zorder>
+     <zorder>groupAlarm</zorder>
+     <zorder>groupAdc</zorder>
+     <zorder>groupChan</zorder>
+     <zorder>qcalabelplugin</zorder>
+     <zorder>qcalabelplugin_2</zorder>
+     <zorder>qcalineeditplugin</zorder>
+     <zorder>qcalineeditplugin_2</zorder>
+     <zorder>qcalineeditplugin_3</zorder>
+     <zorder>qcalineeditplugin_4</zorder>
+     <zorder>qcalabelplugin_3</zorder>
+     <zorder>qcalabelplugin_4</zorder>
+     <zorder>qcalineeditplugin_5</zorder>
+     <zorder>qcalineeditplugin_6</zorder>
+     <zorder>qcalineeditplugin_7</zorder>
+     <zorder>qcalabelplugin_5</zorder>
+     <zorder>qcalabelplugin_6</zorder>
+     <zorder>qcalineeditplugin_8</zorder>
+     <zorder>qcalabelplugin_7</zorder>
+     <zorder>qcalineeditplugin_9</zorder>
+     <zorder>qcalineeditplugin_10</zorder>
+     <zorder>qcalineeditplugin_11</zorder>
+     <zorder>qcalabelplugin_8</zorder>
+     <zorder>qcalabelplugin_9</zorder>
+     <zorder>qcalineeditplugin_12</zorder>
+     <zorder>qcalabelplugin_10</zorder>
+     <zorder>qcalineeditplugin_13</zorder>
+     <zorder>qcalineeditplugin_14</zorder>
+     <zorder>qcalineeditplugin_15</zorder>
+     <zorder>qcalabelplugin_11</zorder>
+     <zorder>qcalabelplugin_12</zorder>
+     <zorder>qcalineeditplugin_16</zorder>
+     <zorder>qcalabelplugin_13</zorder>
+     <zorder>qcalineeditplugin_17</zorder>
+     <zorder>qcalineeditplugin_18</zorder>
+     <zorder>qcalineeditplugin_19</zorder>
+     <zorder>qcalabelplugin_14</zorder>
+     <zorder>qcalabelplugin_15</zorder>
+     <zorder>qcalineeditplugin_20</zorder>
+     <zorder>qcalabelplugin_16</zorder>
+     <zorder>qcalineeditplugin_21</zorder>
+     <zorder>qcalineeditplugin_22</zorder>
+     <zorder>qcalineeditplugin_23</zorder>
+     <zorder>qcalabelplugin_17</zorder>
+     <zorder>qcalabelplugin_18</zorder>
+     <zorder>qcalineeditplugin_24</zorder>
+     <zorder>qcalabelplugin_19</zorder>
+     <zorder>qcalineeditplugin_25</zorder>
+     <zorder>qcalineeditplugin_26</zorder>
+     <zorder>qcalineeditplugin_27</zorder>
+     <zorder>qcalabelplugin_20</zorder>
+     <zorder>qcalabelplugin_21</zorder>
+     <zorder>qcalineeditplugin_28</zorder>
+     <zorder>qcalabelplugin_22</zorder>
+     <zorder>qcalineeditplugin_29</zorder>
+     <zorder>qcalineeditplugin_30</zorder>
+     <zorder>qcalineeditplugin_31</zorder>
+     <zorder>qcalabelplugin_23</zorder>
+     <zorder>qcalabelplugin_24</zorder>
+     <zorder>qcalineeditplugin_32</zorder>
+     <zorder>qcacomboSTrigScan</zorder>
+     <zorder>qcalabelSTrigScan</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Registers</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupReg">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>8</y>
+        <width>117</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Register</string>
+      </property>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_42">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>252</y>
+         <width>58</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:DCR.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_33">
+       <property name="geometry">
+        <rect>
+         <x>37</x>
+         <y>108</y>
+         <width>69</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:IVR.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_38">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>204</y>
+         <width>58</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:TR0.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_30">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>60</y>
+         <width>58</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:RCR.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_31">
+       <property name="geometry">
+        <rect>
+         <x>37</x>
+         <y>84</y>
+         <width>69</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:ICR.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_28">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>36</y>
+         <width>58</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:CCR.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_36">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>180</y>
+         <width>58</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:GAI.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelReset">
+       <property name="geometry">
+        <rect>
+         <x>36</x>
+         <y>132</y>
+         <width>69</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):BO:RESET.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_40">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>228</y>
+         <width>58</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:TR1.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelSTrig">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>156</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):BO:STRIG.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_25">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>12</y>
+         <width>58</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:CSR.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupRegV">
+      <property name="geometry">
+       <rect>
+        <x>131</x>
+        <y>8</y>
+        <width>137</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Register Value</string>
+      </property>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_35">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>184</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:GAI</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLineEditPlugin" name="qcalineeditplugin_39">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>256</y>
+         <width>65</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LO:SC:DCR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_26">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>16</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:CSR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLineEditPlugin" name="qcalineeditplugin_38">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>232</y>
+         <width>65</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LO:SC:TR1</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_39">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>232</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:TR1</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_34">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>112</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:IVR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLineEditPlugin" name="qcalineeditplugin_33">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>16</y>
+         <width>65</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LO:SC:CSR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_32">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>88</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:ICR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_27">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>40</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:CCR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLineEditPlugin" name="qcalineeditplugin_35">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>64</y>
+         <width>65</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LO:SC:RCR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLineEditPlugin" name="qcalineeditplugin_36">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>184</y>
+         <width>65</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LO:SC:GAI</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_29">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>64</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:RCR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLineEditPlugin" name="qcalineeditplugin_34">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>40</y>
+         <width>65</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LO:SC:CCR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_37">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>208</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:TR0</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_41">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>256</y>
+         <width>48</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:DCR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QCaPushButtonPlugin" name="qcapushbuttonplugin">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>136</y>
+         <width>65</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Reset</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):BO:RESET.PROC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="subscribe">
+        <bool>false</bool>
+       </property>
+       <property name="pressText">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QCaPushButtonPlugin" name="qcapushbuttonplugin_2">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>160</y>
+         <width>65</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Trigger</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):BO:STRIG.PROC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="subscribe">
+        <bool>false</bool>
+       </property>
+       <property name="pressText">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QCaLineEditPlugin" name="qcalineeditplugin_37">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>208</y>
+         <width>65</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LO:SC:TR0</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=TEST1:ADC</string>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QCaPushButtonPlugin" name="qcapushbuttonplugin_3">
+      <property name="geometry">
+       <rect>
+        <x>408</x>
+        <y>52</y>
+        <width>65</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Read</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:RREGS.PROC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="pressText">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>56</y>
+        <width>97</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Read registers</string>
+      </property>
+     </widget>
+     <widget class="QCaComboBoxPlugin" name="qcacomboboxplugin">
+      <property name="geometry">
+       <rect>
+        <x>408</x>
+        <y>92</y>
+        <width>97</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:TRIG</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCaComboBoxPlugin" name="qcacomboboxplugin_2">
+      <property name="geometry">
+       <rect>
+        <x>408</x>
+        <y>116</y>
+        <width>97</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:SCAN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCaComboBoxPlugin" name="qcacomboboxplugin_3">
+      <property name="geometry">
+       <rect>
+        <x>408</x>
+        <y>140</y>
+        <width>97</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:GAIN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCaComboBoxPlugin" name="caComboISorc">
+      <property name="geometry">
+       <rect>
+        <x>408</x>
+        <y>164</y>
+        <width>97</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:ISORC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_43">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>92</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:TRIG.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_44">
+      <property name="geometry">
+       <rect>
+        <x>288</x>
+        <y>116</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:SCAN.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_45">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>140</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:GAIN.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelISource">
+      <property name="geometry">
+       <rect>
+        <x>296</x>
+        <y>164</y>
+        <width>105</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:ISORC.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=TEST1:ADC</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupCtrl">
+      <property name="geometry">
+       <rect>
+        <x>266</x>
+        <y>8</y>
+        <width>253</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Some Controls</string>
+      </property>
+     </widget>
+     <zorder>groupCtrl</zorder>
+     <zorder>groupReg</zorder>
+     <zorder>groupRegV</zorder>
+     <zorder>qcapushbuttonplugin_3</zorder>
+     <zorder>label</zorder>
+     <zorder>qcacomboboxplugin</zorder>
+     <zorder>qcacomboboxplugin_2</zorder>
+     <zorder>qcacomboboxplugin_3</zorder>
+     <zorder>caComboISorc</zorder>
+     <zorder>qcalabelplugin_43</zorder>
+     <zorder>qcalabelplugin_44</zorder>
+     <zorder>qcalabelplugin_45</zorder>
+     <zorder>qcalabelISource</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>CSR</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>CCR</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>RCR</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>548</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCaLabelPlugin</class>
+   <extends>QLabel</extends>
+   <header>QCaLabelPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaLineEditPlugin</class>
+   <extends>QLineEdit</extends>
+   <header>QCaLineEditPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaPushButtonPlugin</class>
+   <extends>QPushButton</extends>
+   <header>QCaPushButtonPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaComboBoxPlugin</class>
+   <extends>QComboBox</extends>
+   <header>QCaComboBoxPlugin.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

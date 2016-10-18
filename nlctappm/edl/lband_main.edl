@@ -1,0 +1,567 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 827
+y 51
+w 450
+h 371
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 71
+textColor index 14
+ctlFgColor1 index 12
+ctlFgColor2 index 7
+ctlBgColor1 index 63
+ctlBgColor2 index 21
+topShadowColor index 1
+botShadowColor index 0
+title "lband_main.edl"
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 24
+y 83
+w 230
+h 38
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 27
+y 86
+w 224
+h 32
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+yPosOffset 10
+buttonLabel "Processing Loop"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_proc_as.edl"
+}
+menuLabel {
+  0 "Processing Loop"
+}
+symbols {
+  0 "STN=L,A=PWR"
+}
+propagateMacros {
+  0 0
+}
+colorPv "TRSL:RF:RAMP:STATE.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 86
+w 224
+h 32
+lineColor index 16
+lineAlarm
+fillColor index 20
+lineWidth 5
+alarmPv "TRSL:RF:RAMP:STATE.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 270
+y 83
+w 165
+h 38
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+yPosOffset 10
+buttonLabel "GPIB Main"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_gpibmain.edl"
+}
+menuLabel {
+  0 "GPIB Main"
+}
+symbols {
+  0 "1 "
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 298
+h 57
+lineColor index 63
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 30
+w 214
+h 30
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Main "
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 0
+y 57
+w 471
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 4
+xPoints {
+  0 0
+  1 470
+  2 467
+  3 461
+}
+yPoints {
+  0 57
+  1 57
+  2 57
+  3 57
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 3
+w 145
+h 30
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "L-Band"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 373
+y 0
+w 75
+h 28
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+label "EXIT"
+font "new century schoolbook-medium-r-18.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 273
+y 134
+w 158
+h 32
+fgColor index 14
+bgColor index 63
+topShadowColor index 63
+botShadowColor index 63
+font "new century schoolbook-medium-r-24.0"
+yPosOffset 10
+buttonLabel "Mod Main"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_mod_main.edl"
+}
+menuLabel {
+  0 "Mod Main"
+}
+symbols {
+  0 "S=TS00"
+}
+colorPv "TS00:MOD:SUMY:STAT.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 60
+y 366
+w 0
+h 0
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 24
+y 131
+w 230
+h 38
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+yPosOffset 10
+buttonLabel "DAC Channels"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_dac_chans.edl"
+}
+menuLabel {
+  0 "DAC Channels"
+}
+symbols {
+  0 "1 "
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 24
+y 275
+w 230
+h 38
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+yPosOffset 10
+buttonLabel "SIS Channels"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_a_and_p_plots.edl"
+}
+menuLabel {
+  0 "SIS Channels"
+}
+symbols {
+  0 "1 "
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 273
+y 134
+w 158
+h 32
+lineColor index 16
+lineAlarm
+fillColor index 20
+lineWidth 5
+alarmPv "TS00:MOD:SUMY:STAT.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 270
+y 131
+w 164
+h 38
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 24
+y 179
+w 230
+h 38
+lineColor index 14
+fillColor index 0
+visInvert
+visMax "1"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 27
+y 182
+w 224
+h 32
+fgColor index 14
+bgColor index 63
+topShadowColor index 63
+botShadowColor index 63
+font "new century schoolbook-medium-r-24.0"
+yPosOffset 10
+buttonLabel "DIO Channels"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_dio_chans.edl"
+}
+menuLabel {
+  0 "DIO Channels"
+}
+symbols {
+  0 "1 "
+}
+colorPv "TRSL:DIO:SUMY:STAT.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 182
+w 224
+h 32
+lineColor index 16
+lineAlarm
+fillColor index 22
+lineWidth 5
+alarmPv "TRSL:DIO:SUMY:STAT.SEVR"
+visInvert
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 24
+y 227
+w 230
+h 38
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 27
+y 230
+w 224
+h 32
+fgColor index 14
+bgColor index 63
+topShadowColor index 63
+botShadowColor index 63
+font "new century schoolbook-medium-r-24.0"
+yPosOffset 10
+buttonLabel "ADC Channels"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_adc_chans.edl"
+}
+menuLabel {
+  0 "ADC Channels"
+}
+symbols {
+  0 "1 "
+}
+colorPv "TRSL:ADC:SUMY:STAT.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 230
+w 224
+h 32
+lineColor index 16
+lineAlarm
+fillColor index 20
+lineWidth 5
+alarmPv "TRSL:ADC:SUMY:STAT.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 24
+y 323
+w 230
+h 38
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 27
+y 326
+w 224
+h 32
+fgColor index 14
+bgColor index 63
+topShadowColor index 63
+botShadowColor index 63
+font "new century schoolbook-medium-r-24.0"
+yPosOffset 10
+buttonLabel "TR10 Modules"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_modules_tr10.edl"
+}
+menuLabel {
+  0 "TR10 Modules"
+}
+symbols {
+  0 "STN=TR10"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 27
+y 326
+w 224
+h 32
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 5
+alarmPv "TR10:MODU:SUMY:STAT.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 291
+y 326
+w 141
+h 35
+fgColor index 14
+bgColor index 63
+topShadowColor index 1
+botShadowColor index 0
+font "helvetica-bold-r-14.0"
+buttonLabel "TR10 Diagnostics"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10Diagn.edl"
+}
+endObjectProperties
+

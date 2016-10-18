@@ -1,0 +1,79 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 539
+y 994
+w 420
+h 140
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 24
+w 412
+h 96
+fgColor index 12
+bgColor index 10
+topShadowColor index 12
+botShadowColor index 12
+displaySource "menu"
+filePv "LOC\\$(!W)showDt=e:0,MARK,POWR,TIME,TEMP"
+center
+sizeOfs 5
+numDsps 4
+displayFileName {
+  0 "rfmarkpow.edl"
+  1 "rfmeaspow.edl"
+  2 "rfmeastime.edl"
+  3 "rfcurtemp.edl"
+}
+symbols {
+  0 "N=$(N)"
+  1 "N=$(N)"
+  2 "N=$(N)"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 4
+w 204
+h 20
+fgColor index 55
+bgColor index 12
+selectColor index 10
+inconsistentColor index 8
+topShadowColor index 12
+botShadowColor index 12
+controlPv "LOC\\$(!W)showDt"
+font "helvetica-medium-r-10.0"
+orientation "horizontal"
+endObjectProperties
+

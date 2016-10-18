@@ -1,0 +1,207 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 178
+y 77
+w 350
+h 120
+font "new century schoolbook-medium-r-18.0"
+ctlFont "helvetica-medium-r-14.0"
+btnFont "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 1
+ctlBgColor1 index 25
+ctlBgColor2 index 25
+topShadowColor index 1
+botShadowColor index 14
+title "Dev PS Diags"
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 350
+h 40
+lineColor index 14
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 5
+w 100
+h 30
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Ether PSC"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 270
+y 5
+w 71
+h 28
+fgColor index 1
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 14
+label "EXIT"
+font "helvetica-bold-r-14.0"
+3d
+exitProgram
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 135
+y 55
+w 100
+h 25
+fgColor index 1
+bgColor index 49
+topShadowColor index 1
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "TEST:PS"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "etherpsc_ps_diagnostics"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "ps=TEST:PS,vi=Curr,vis=I,iv=Volt,ivs=V"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 60
+w 60
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "TEST:PS"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 135
+y 85
+w 100
+h 25
+fgColor index 1
+bgColor index 49
+topShadowColor index 1
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "118-PSD6"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "etherpsc_ps_diagnostics"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "ps=118-PSD6,vi=Curr,vis=I,iv=Volt,ivs=V"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 90
+w 68
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "118-PSD6"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 240
+y 55
+w 100
+h 25
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 14
+font "helvetica-bold-r-14.0"
+buttonLabel "B Field"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "magData.edl"
+}
+setPosition {
+  0 "button"
+}
+symbols {
+  0 "P=TEST:PS"
+}
+endObjectProperties
+

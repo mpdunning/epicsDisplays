@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>411</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>4</y>
+      <width>393</width>
+      <height>323</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Raster</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>142</x>
+        <y>6</y>
+        <width>63</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rastering</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="CAButton" name="cabutton_2">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>28</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="onText">
+       <string>1</string>
+      </property>
+      <property name="offText">
+       <string>0</string>
+      </property>
+      <property name="onLabel">
+       <string>Reset</string>
+      </property>
+      <property name="offLabel">
+       <string>Reset</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:RESET.RVAL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:XYM</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="literalLabel">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="CAXYPlot" name="caxyplot">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>70</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <bool>false</bool>
+      </property>
+      <property name="autoScaleX">
+       <bool>false</bool>
+      </property>
+      <property name="axisEnableX">
+       <bool>true</bool>
+      </property>
+      <property name="gridEnableMajorX" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="gridEnableMinorX" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="xMin">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="xMax">
+       <double>30.000000000000000</double>
+      </property>
+      <property name="nTicksMajorX">
+       <number>3</number>
+      </property>
+      <property name="autoScaleY">
+       <bool>false</bool>
+      </property>
+      <property name="gridEnableMajorY" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="gridEnableMinorY" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="yMin">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="yMax">
+       <double>30.000000000000000</double>
+      </property>
+      <property name="nTicksMajorY">
+       <number>3</number>
+      </property>
+      <property name="gridMajorColor" stdset="0">
+       <color>
+        <red>210</red>
+        <green>210</green>
+        <blue>215</blue>
+       </color>
+      </property>
+      <property name="gridMinorColor" stdset="0">
+       <color>
+        <red>210</red>
+        <green>210</green>
+        <blue>215</blue>
+       </color>
+      </property>
+      <property name="traceColor">
+       <color>
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+      <property name="traceStyle" stdset="0">
+       <enum>XYPlot::Dots</enum>
+      </property>
+      <property name="pointStyle">
+       <enum>XYPlot::Ellipse</enum>
+      </property>
+      <property name="XVariable" stdset="0">
+       <string>$(P):AI:X:POS</string>
+      </property>
+      <property name="YVariable" stdset="0">
+       <string>$(P):AI:Y:POS</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:XYM</string>
+      </property>
+      <property name="displayAlarmState">
+       <bool>false</bool>
+      </property>
+      <property name="refreshOnXandY" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="waveform" stdset="0">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="CAButton" name="cabutton">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>6</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="writeOnPress" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="writeOnClick" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="onText">
+       <string>ON</string>
+      </property>
+      <property name="offText">
+       <string>OFF</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:START</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:XYM</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="literalLabel">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>8</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:Y:POS</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:XYM</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QELabel::WhenInAlarm</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>8</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AI:X:POS</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=CHA:XYM</string>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QELabel::WhenInAlarm</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>30</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Setup</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>8</y>
+        <width>373</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>X Axis</string>
+      </property>
+      <widget class="QELabel" name="qelabel_3">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>26</y>
+         <width>119</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:X0.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>26</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:X0</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEGenericEdit::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_4">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>50</y>
+         <width>119</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:X1.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit_2">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>50</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:X1</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEGenericEdit::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_5">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>74</y>
+         <width>119</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:X:VELO.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit_3">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>74</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LO:X:VELO</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEGenericEdit::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit_4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>26</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:X:SET</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEGenericEdit::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_6">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>26</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AI:X:SET.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_7">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>50</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:X:SBYTE.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_8">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>74</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:X:SWORD.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_9">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>50</y>
+         <width>26</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:X:SBYTE</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::WhenInAlarm</enum>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_10">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>74</y>
+         <width>26</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:X:SWORD</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::WhenInAlarm</enum>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_11">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>98</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:X:MOV.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_12">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>98</y>
+         <width>26</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:X:MOV</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::WhenInAlarm</enum>
+       </property>
+       <property name="radix">
+        <UInt>10</UInt>
+       </property>
+      </widget>
+      <widget class="CAButton" name="cabutton_3">
+       <property name="geometry">
+        <rect>
+         <x>334</x>
+         <y>26</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="onText">
+        <string>1</string>
+       </property>
+       <property name="offText">
+        <string>0</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):BO:X:GO</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="subscribe">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>134</y>
+        <width>373</width>
+        <height>125</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Y Axis</string>
+      </property>
+      <widget class="QELabel" name="qelabel_13">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>24</y>
+         <width>119</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:Y0.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit_5">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>24</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:Y0</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEGenericEdit::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_14">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>48</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:Y1.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit_6">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>48</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:Y1</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEGenericEdit::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_15">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>72</y>
+         <width>83</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:Y:INC.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit_7">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>72</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:Y:INC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEGenericEdit::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit_8">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>24</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AO:Y:SET</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEGenericEdit::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_16">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>24</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):AI:Y:SET.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_17">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>48</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:Y:SBYTE.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_18">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>72</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:Y:SWORD.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_19">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>48</y>
+         <width>26</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:Y:SBYTE</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::WhenInAlarm</enum>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_20">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>72</y>
+         <width>26</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:Y:SWORD</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::WhenInAlarm</enum>
+       </property>
+       <property name="radix">
+        <UInt>16</UInt>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_21">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>96</y>
+         <width>80</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:Y:MOV.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_22">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>96</y>
+         <width>26</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:Y:MOV</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::WhenInAlarm</enum>
+       </property>
+       <property name="radix">
+        <UInt>10</UInt>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_23">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>96</y>
+         <width>83</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:Y:VELO.DESC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QELabel::Never</enum>
+       </property>
+      </widget>
+      <widget class="QELineEdit" name="qelineedit_9">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>96</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LO:Y:VELO</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEGenericEdit::Never</enum>
+       </property>
+      </widget>
+      <widget class="CAButton" name="cabutton_4">
+       <property name="geometry">
+        <rect>
+         <x>334</x>
+         <y>24</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="onText">
+        <string>1</string>
+       </property>
+       <property name="offText">
+        <string>0</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):BO:Y:GO</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CHA:XYM</string>
+       </property>
+       <property name="subscribe">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="xyMotPB">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>266</y>
+        <width>80</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>XY Motors</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>411</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AButton</class>
+   <extends>QPushButton</extends>
+   <header>abutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAButton</class>
+   <extends>AButton</extends>
+   <header>cabutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>XYPlot</class>
+   <extends>QFrame</extends>
+   <header>xyplot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAXYPlot</class>
+   <extends>XYPlot</extends>
+   <header>caxyplot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

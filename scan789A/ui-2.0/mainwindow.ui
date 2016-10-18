@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>365</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>4</y>
+      <width>357</width>
+      <height>265</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Motion</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>12</y>
+        <width>56</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Home</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>40</y>
+        <width>56</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hi Limit</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>68</y>
+        <width>56</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Low Limit</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>108</y>
+        <width>64</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stopped</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>136</y>
+        <width>64</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Moving</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>164</y>
+        <width>64</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Moving Hi</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>192</y>
+        <width>64</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Slewing</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="qelineedit">
+      <property name="geometry">
+       <rect>
+        <x>148</x>
+        <y>20</y>
+        <width>77</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:MOVE:UP</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QELineEdit::Floating</enum>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="qelineedit_2">
+      <property name="geometry">
+       <rect>
+        <x>148</x>
+        <y>44</y>
+        <width>77</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:MOVE:DWN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+      <property name="format" stdset="0">
+       <enum>QELineEdit::Floating</enum>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton">
+      <property name="geometry">
+       <rect>
+        <x>256</x>
+        <y>20</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:MOVE:UP</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_2">
+      <property name="geometry">
+       <rect>
+        <x>256</x>
+        <y>44</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:MOVE:DWN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_8">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>80</y>
+        <width>64</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Abort</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:ABORT</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>12</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>$(P):BI:HOME</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="animation1" stdset="0">
+       <enum>QEShape::ColourValue</enum>
+      </property>
+      <property name="animation6" stdset="0">
+       <enum>QEShape::ColourHue</enum>
+      </property>
+      <property name="scale1" stdset="0">
+       <double>190.000000000000000</double>
+      </property>
+      <property name="offset1" stdset="0">
+       <double>60.000000000000000</double>
+      </property>
+      <property name="shape" stdset="0">
+       <enum>QEShape::Ellipse</enum>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>16</x>
+        <y>16</y>
+       </point>
+      </property>
+      <property name="color1" stdset="0">
+       <color>
+        <red>255</red>
+        <green>100</green>
+        <blue>48</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape_2">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>40</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>$(P):BI:HI:LIM</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="animation1" stdset="0">
+       <enum>QEShape::ColourHue</enum>
+      </property>
+      <property name="scale1" stdset="0">
+       <double>120.000000000000000</double>
+      </property>
+      <property name="offset1" stdset="0">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="shape" stdset="0">
+       <enum>QEShape::Ellipse</enum>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>16</x>
+        <y>16</y>
+       </point>
+      </property>
+      <property name="color1" stdset="0">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape_3">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>68</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>$(P):BI:LO:LIM</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="animation1" stdset="0">
+       <enum>QEShape::ColourHue</enum>
+      </property>
+      <property name="scale1" stdset="0">
+       <double>120.000000000000000</double>
+      </property>
+      <property name="offset1" stdset="0">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="shape" stdset="0">
+       <enum>QEShape::Ellipse</enum>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>16</x>
+        <y>16</y>
+       </point>
+      </property>
+      <property name="color1" stdset="0">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape_4">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>108</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>$(P):BI:STOPPED</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="animation1" stdset="0">
+       <enum>QEShape::ColourHue</enum>
+      </property>
+      <property name="scale1" stdset="0">
+       <double>120.000000000000000</double>
+      </property>
+      <property name="offset1" stdset="0">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="shape" stdset="0">
+       <enum>QEShape::Ellipse</enum>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>16</x>
+        <y>16</y>
+       </point>
+      </property>
+      <property name="color1" stdset="0">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape_5">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>136</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>$(P):BI:MOVING</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="animation1" stdset="0">
+       <enum>QEShape::ColourHue</enum>
+      </property>
+      <property name="scale1" stdset="0">
+       <double>120.000000000000000</double>
+      </property>
+      <property name="offset1" stdset="0">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="shape" stdset="0">
+       <enum>QEShape::Ellipse</enum>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>16</x>
+        <y>16</y>
+       </point>
+      </property>
+      <property name="color1" stdset="0">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape_6">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>164</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>$(P):BI:MOVING:HI</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="animation1" stdset="0">
+       <enum>QEShape::ColourHue</enum>
+      </property>
+      <property name="scale1" stdset="0">
+       <double>120.000000000000000</double>
+      </property>
+      <property name="offset1" stdset="0">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="shape" stdset="0">
+       <enum>QEShape::Ellipse</enum>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>16</x>
+        <y>16</y>
+       </point>
+      </property>
+      <property name="color1" stdset="0">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape_7">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>192</y>
+        <width>18</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>$(P):BI:SLEW</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="animation1" stdset="0">
+       <enum>QEShape::ColourHue</enum>
+      </property>
+      <property name="scale1" stdset="0">
+       <double>120.000000000000000</double>
+      </property>
+      <property name="offset1" stdset="0">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="shape" stdset="0">
+       <enum>QEShape::Ellipse</enum>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>16</x>
+        <y>16</y>
+       </point>
+      </property>
+      <property name="color1" stdset="0">
+       <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>128</x>
+        <y>156</y>
+        <width>201</width>
+        <height>65</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Debug</string>
+      </property>
+      <widget class="QEPushButton" name="qepushbutton_10">
+       <property name="geometry">
+        <rect>
+         <x>104</x>
+         <y>24</y>
+         <width>77</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>get State</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):BO:MOVE:STAT.PROC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=ESB:SCAN</string>
+       </property>
+      </widget>
+      <widget class="QEPushButton" name="qepushbutton_9">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>24</y>
+         <width>77</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>get Limits</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):BO:LIMITS.PROC</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=ESB:SCAN</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>228</x>
+        <y>46</y>
+        <width>25</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>nm</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>228</x>
+        <y>22</y>
+        <width>25</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>nm</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Setup</string>
+     </attribute>
+     <widget class="QELineEdit" name="qelineedit_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>52</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):LO:STRT:VELO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="qelineedit_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):LO:ACCEL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+     </widget>
+     <widget class="QELineEdit" name="qelineedit_5">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>108</y>
+        <width>110</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):LO:VELO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>54</y>
+        <width>84</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start Velocity</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>82</y>
+        <width>84</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Acceleration</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>110</y>
+        <width>84</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Velocity</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_3">
+      <property name="geometry">
+       <rect>
+        <x>216</x>
+        <y>52</y>
+        <width>28</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:STRT:VELO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_4">
+      <property name="geometry">
+       <rect>
+        <x>216</x>
+        <y>80</y>
+        <width>28</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:ACCEL</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_5">
+      <property name="geometry">
+       <rect>
+        <x>216</x>
+        <y>108</y>
+        <width>28</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:VELOCITY</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>104</x>
+        <y>28</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Units: steps &amp; sec</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>More</string>
+     </attribute>
+     <widget class="QEComboBox" name="qecombobox">
+      <property name="geometry">
+       <rect>
+        <x>104</x>
+        <y>16</y>
+        <width>97</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:MOVE:STAT.SCAN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="useDbEnumerations">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QEComboBox" name="qecombobox_1">
+      <property name="geometry">
+       <rect>
+        <x>104</x>
+        <y>44</y>
+        <width>97</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:LIMITS.SCAN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+      <property name="useDbEnumerations">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>16</y>
+        <width>89</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Moving State</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>44</y>
+        <width>89</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Limits</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QEPushButton" name="qepushbutton_13">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>92</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>examine</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:EXAMINE.PROC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>100</y>
+        <width>185</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):SI:PARAMS</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:SCAN</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>365</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEShape</class>
+   <extends>QWidget</extends>
+   <header>QEShape.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

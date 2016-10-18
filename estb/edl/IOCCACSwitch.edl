@@ -1,0 +1,1156 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 711
+y 51
+w 560
+h 312
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 120
+w 136
+h 176
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 758
+h 36
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 8
+y 8
+w 212
+h 24
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "IOC Status and Control"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 484
+y 4
+w 60
+h 28
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 124
+w 184
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ACSwitch Orange Rack"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 152
+w 172
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ACSwitch EXP Area"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 180
+w 184
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ACSwitch Near Alcove"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 208
+w 136
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ACSwitch Dump"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 208
+w 62
+h 20
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 344
+y 208
+w 48
+h 20
+controlPv "ESA:ACSW6:BI:IO:STATE"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 208
+w 62
+h 20
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW6:BI:IO:STATE.VAL"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 208
+w 62
+h 20
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW6:BI:IO:STATE.VAL"
+visMin "1"
+visMax "256"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 180
+w 62
+h 20
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 344
+y 180
+w 48
+h 20
+controlPv "ESA:ACSW4:BI:IO:STATE"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 180
+w 62
+h 20
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW4:BI:IO:STATE.VAL"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 180
+w 62
+h 20
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW4:BI:IO:STATE.VAL"
+visMin "1"
+visMax "256"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 152
+w 62
+h 20
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 344
+y 152
+w 48
+h 20
+controlPv "ESA:ACSW3:BI:IO:STATE"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 152
+w 62
+h 20
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW3:BI:IO:STATE.VAL"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 152
+w 62
+h 20
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW3:BI:IO:STATE.VAL"
+visMin "1"
+visMax "256"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 124
+w 62
+h 20
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 344
+y 124
+w 48
+h 20
+controlPv "ESA:ACSW2:BI:IO:STATE"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 124
+w 62
+h 20
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW2:BI:IO:STATE.VAL"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 124
+w 62
+h 20
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW2:BI:IO:STATE.VAL"
+visMin "1"
+visMax "256"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 92
+w 120
+h 24
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Descriptor"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 400
+y 44
+w 124
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Driver Status"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 352
+y 56
+w 44
+h 60
+lineColor index 13
+fillColor index 2
+numPoints 3
+xPoints {
+  0 352
+  1 352
+  2 396
+}
+yPoints {
+  0 116
+  1 56
+  2 56
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 196
+y 120
+w 132
+h 176
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 200
+y 92
+w 120
+h 24
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "IOC name"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 204
+y 124
+w 116
+h 20
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "sioc-esa-acs2"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 204
+y 152
+w 116
+h 20
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "sioc-esa-acs3"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 204
+y 180
+w 116
+h 20
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "sioc-esa-acsw4"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 204
+y 208
+w 116
+h 20
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "sioc-esa-acsw6"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 380
+y 4
+w 56
+h 28
+fgColor index 73
+bgColor index 34
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-14.0"
+buttonLabel "Help"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IOCControlHelp.edl"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 8
+y 40
+w 232
+h 40
+font "helvetica-bold-r-14.0"
+fgColor index 73
+bgColor index 29
+value {
+  "NOTE: Only tfuser can"
+  "            restart an IOC!"
+}
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 660
+y 892
+w 112
+h 52
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0"
+center
+setSize
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "restartIOC.edl"
+}
+symbols {
+  0 "IOC=sioc-esa-mag02"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 420
+y 124
+w 112
+h 52
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0"
+center
+setSize
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "restartIOC.edl"
+}
+symbols {
+  0 "IOC=sioc-esa-acs2"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 420
+y 152
+w 112
+h 52
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0"
+center
+setSize
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "restartIOC.edl"
+}
+symbols {
+  0 "IOC=sioc-esa-acs3"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 420
+y 180
+w 112
+h 52
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0"
+center
+setSize
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "restartIOC.edl"
+}
+symbols {
+  0 "IOC=sioc-esa-acsw4"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 236
+w 168
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ACSwitch EndTunnel"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 236
+w 62
+h 20
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 344
+y 236
+w 48
+h 20
+controlPv "ESA:ACSW7:BI:IO:STATE"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 236
+w 62
+h 20
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW7:BI:IO:STATE.VAL"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 236
+w 62
+h 20
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW7:BI:IO:STATE.VAL"
+visMin "1"
+visMax "256"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 204
+y 236
+w 116
+h 20
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "sioc-esa-acsw7"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 264
+w 136
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ACSwitch B108"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 264
+w 62
+h 20
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 344
+y 264
+w 48
+h 20
+controlPv "ESA:ACSW5:BI:IO:STATE"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 264
+w 62
+h 20
+lineColor index 20
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW5:BI:IO:STATE.VAL"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 264
+w 62
+h 20
+lineColor index 15
+fillColor index 2
+lineWidth 2
+visPv "ESA:ACSW5:BI:IO:STATE.VAL"
+visMin "1"
+visMax "256"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 204
+y 264
+w 116
+h 20
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "sioc-esa-acsw5"
+}
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 420
+y 208
+w 112
+h 52
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0"
+center
+setSize
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "restartIOC.edl"
+}
+symbols {
+  0 "IOC=sioc-esa-acsw6"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 420
+y 236
+w 112
+h 52
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0"
+center
+setSize
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "restartIOC.edl"
+}
+symbols {
+  0 "IOC=sioc-esa-acsw7"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 420
+y 264
+w 112
+h 52
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0"
+center
+setSize
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "restartIOC.edl"
+}
+symbols {
+  0 "IOC=sioc-esa-acsw5"
+}
+noScroll
+ignoreMultiplexors
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 120
+w 540
+h 176
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 488
+y 92
+w 40
+h 20
+fgColor index 73
+bgColor index 34
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Help"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "IOCCtrlSoftHelp.edl"
+}
+endObjectProperties
+

@@ -1,0 +1,18 @@
+# Setup data for the PICO Qt GUI in a table format; one line per motor.
+# Where:
+# N	sequential number
+# P	macro substitution for PVs
+# M	macro substitution for PVs
+# D	direction, 1 - left/right, 2 - up/down
+# L	if 1 use this as a function Label
+# Name	motor and details window title
+# G	group number.  Group consists of three motors of which two are used.
+# A	if 1 dialog is created in an active state.
+# Label	identifies group function.
+#--N-----P---M---D--L-----Name--G--A-----Label-----------------------------
+   1, PICO, m1,  1, 1, Motor 1, 1, 1, Laser mirror
+   2, PICO, m2,  0, 0, Motor 2, 1, 1, Not used
+   3, PICO, m3,  2, 0, Motor 3, 1, 1, Laser mirror
+   4, PICO, m4,  1, 1, Motor 4, 2, 0, Actuator 1
+   5, PICO, m5,  0, 0, Motor 5, 2, 0, Not used
+   6, PICO, m6,  2, 0, Motor 6, 2, 0, Actuator 1

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Hidden</class>
+ <widget class="QDialog" name="Hidden">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>408</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>4</y>
+     <width>400</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QPushButton" name="hidClosePB">
+    <property name="geometry">
+     <rect>
+      <x>332</x>
+      <y>4</y>
+      <width>56</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>40</y>
+     <width>400</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>3</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Mot 1</string>
+    </attribute>
+    <widget class="QEForm" name="qeform">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>8</y>
+       <width>378</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>hiddenreg.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>Q=2531-1,N=2</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Mot 2</string>
+    </attribute>
+    <widget class="QEForm" name="qeform_2">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>8</y>
+       <width>378</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>hiddenreg.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>Q=2531-2,N=2</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>ADC</string>
+    </attribute>
+    <widget class="QEForm" name="qeform_3">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>8</y>
+       <width>378</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>hiddenreg.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>Q=3132,N=2</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>DAC</string>
+    </attribute>
+    <widget class="QEForm" name="qeform_4">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>8</y>
+       <width>378</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>hiddenreg.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>Q=4132,N=2</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MotorDialog</class>
+ <widget class="QDialog" name="MotorDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>227</width>
+    <height>332</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QCaLabelPlugin" name="QCaLabelName">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>16</y>
+     <width>201</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M):MOTR.NAME</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=ESA:XPS1,M=m1</string>
+   </property>
+  </widget>
+  <widget class="QCaLabelPlugin" name="QCaLabelDesc">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>36</y>
+     <width>209</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M):MOTR.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=ESA:XPS1,M=m1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PushButtonExit">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>292</y>
+     <width>83</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="shortcut">
+    <string/>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>0</y>
+     <width>217</width>
+     <height>285</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Motor</string>
+   </property>
+   <widget class="QCaPushButtonPlugin" name="QCaPushButtonRight">
+    <property name="geometry">
+     <rect>
+      <x>144</x>
+      <y>216</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR.TWF</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1,M=m1</string>
+    </property>
+    <property name="writeOnPress">
+     <bool>false</bool>
+    </property>
+    <property name="writeOnRelease">
+     <bool>true</bool>
+    </property>
+    <property name="writeOnClick">
+     <bool>false</bool>
+    </property>
+    <property name="pressText">
+     <string>0</string>
+    </property>
+    <property name="releaseText">
+     <string>1</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LabelJump">
+    <property name="geometry">
+     <rect>
+      <x>36</x>
+      <y>188</y>
+      <width>41</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Jump:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QCaLineEditPlugin" name="QCaLineEditJump">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>184</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1.00000</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR.TWV</string>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCaPushButtonPlugin" name="QCaPushButtonStop">
+    <property name="geometry">
+     <rect>
+      <x>77</x>
+      <y>248</y>
+      <width>62</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR.STOP</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1,M=m1</string>
+    </property>
+    <property name="writeOnPress">
+     <bool>true</bool>
+    </property>
+    <property name="writeOnRelease">
+     <bool>false</bool>
+    </property>
+    <property name="writeOnClick">
+     <bool>false</bool>
+    </property>
+    <property name="releaseText">
+     <string>0</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QCaPushButtonPlugin" name="QCaPushButtonLeft">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>216</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR.TWR</string>
+    </property>
+    <property name="writeOnPress">
+     <bool>false</bool>
+    </property>
+    <property name="writeOnRelease">
+     <bool>true</bool>
+    </property>
+    <property name="writeOnClick">
+     <bool>false</bool>
+    </property>
+    <property name="pressText">
+     <string>0</string>
+    </property>
+    <property name="releaseText">
+     <string>1</string>
+    </property>
+    <property name="clickText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QCaLineEditPlugin" name="QCaLineEditlReq_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>104</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>15.00000</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR:ABS2</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1,M=m1</string>
+    </property>
+    <property name="confirmWrite">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCaLineEditPlugin" name="QCaLineEditlReq_3">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>128</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>20.00000</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR:ABS3</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1,M=m1</string>
+    </property>
+    <property name="confirmWrite">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LabelReq_2">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>106</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Request2:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LabelReq_3">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>130</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Request3:</string>
+    </property>
+   </widget>
+   <widget class="QCaPushButtonPlugin" name="qcapushbuttonplugin">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>80</y>
+      <width>32</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Go</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR:ABS1:GO.PROC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1,M=m1</string>
+    </property>
+   </widget>
+   <widget class="QCaPushButtonPlugin" name="qcapushbuttonplugin_2">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>104</y>
+      <width>32</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Go</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR:ABS2:GO.PROC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1,M=m1</string>
+    </property>
+   </widget>
+   <widget class="QCaPushButtonPlugin" name="qcapushbuttonplugin_3">
+    <property name="geometry">
+     <rect>
+      <x>168</x>
+      <y>128</y>
+      <width>32</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Go</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR:ABS3:GO.PROC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1,M=m1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LabelPos">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>60</y>
+      <width>57</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Currently:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="LabelReq">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>82</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Request1:</string>
+    </property>
+   </widget>
+   <widget class="QCaLineEditPlugin" name="QCaLineEditlReq">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>80</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10.00000</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR:ABS1</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1,M=m1</string>
+    </property>
+    <property name="confirmWrite">
+     <bool>false</bool>
+    </property>
+    <property name="addUnits">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCaLabelPlugin" name="QCaLabelPos">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>60</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M):MOTR.RBV</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1,M=m1</string>
+    </property>
+   </widget>
+   <widget class="QCaShapePlugin" name="qcashapeplugin">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>125</width>
+      <height>8</height>
+     </rect>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>$(P):$(M):CALC:VAL</string>
+    </property>
+    <property name="animation1" stdset="0">
+     <enum>QCaShapePlugin::Width</enum>
+    </property>
+    <property name="scale1" stdset="0">
+     <double>0.010000000000000</double>
+    </property>
+    <property name="offset1" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1:m1:1</string>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>125</x>
+      <y>8</y>
+     </point>
+    </property>
+    <property name="color1" stdset="0">
+     <color>
+      <red>118</red>
+      <green>136</green>
+      <blue>235</blue>
+     </color>
+    </property>
+    <property name="drawBorder">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCaShapePlugin" name="qcashapeplugin_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>168</y>
+      <width>125</width>
+      <height>8</height>
+     </rect>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>$(P):$(M):CALC:RBV</string>
+    </property>
+    <property name="scale1" stdset="0">
+     <double>0.010000000000000</double>
+    </property>
+    <property name="offset1" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1:m1:1</string>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>125</x>
+      <y>8</y>
+     </point>
+    </property>
+    <property name="color1" stdset="0">
+     <color>
+      <red>200</red>
+      <green>111</green>
+      <blue>135</blue>
+     </color>
+    </property>
+    <property name="color5" stdset="0">
+     <color>
+      <red>255</red>
+      <green>157</green>
+      <blue>175</blue>
+     </color>
+    </property>
+    <property name="color6" stdset="0">
+     <color>
+      <red>250</red>
+      <green>105</green>
+      <blue>255</blue>
+     </color>
+    </property>
+    <property name="color7" stdset="0">
+     <color>
+      <red>151</red>
+      <green>248</green>
+      <blue>232</blue>
+     </color>
+    </property>
+    <property name="color8" stdset="0">
+     <color>
+      <red>129</red>
+      <green>255</green>
+      <blue>140</blue>
+     </color>
+    </property>
+    <property name="color9" stdset="0">
+     <color>
+      <red>229</red>
+      <green>255</green>
+      <blue>133</blue>
+     </color>
+    </property>
+    <property name="color10" stdset="0">
+     <color>
+      <red>255</red>
+      <green>159</green>
+      <blue>90</blue>
+     </color>
+    </property>
+    <property name="drawBorder">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCaShapePlugin" name="qcashapeplugin_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>159</y>
+      <width>125</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="point1" stdset="0">
+     <point>
+      <x>0</x>
+      <y>1</y>
+     </point>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>125</x>
+      <y>16</y>
+     </point>
+    </property>
+    <property name="color1" stdset="0">
+     <color>
+      <red>152</red>
+      <green>255</green>
+      <blue>249</blue>
+     </color>
+    </property>
+    <property name="drawBorder">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCaShapePlugin" name="qcashapeplugin_3">
+    <property name="geometry">
+     <rect>
+      <x>31</x>
+      <y>159</y>
+      <width>10</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>$(P):$(M):MOTR.LLS</string>
+    </property>
+    <property name="animation1" stdset="0">
+     <enum>QCaShapePlugin::ColourHue</enum>
+    </property>
+    <property name="scale1" stdset="0">
+     <double>-120.000000000000000</double>
+    </property>
+    <property name="offset1" stdset="0">
+     <double>120.000000000000000</double>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1:m1:1</string>
+    </property>
+    <property name="point1" stdset="0">
+     <point>
+      <x>1</x>
+      <y>1</y>
+     </point>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>8</x>
+      <y>15</y>
+     </point>
+    </property>
+   </widget>
+   <widget class="QCaShapePlugin" name="qcashapeplugin_9">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>159</y>
+      <width>10</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>$(P):$(M):MOTR.LLS</string>
+    </property>
+    <property name="animation1" stdset="0">
+     <enum>QCaShapePlugin::ColourHue</enum>
+    </property>
+    <property name="scale1" stdset="0">
+     <double>-120.000000000000000</double>
+    </property>
+    <property name="offset1" stdset="0">
+     <double>120.000000000000000</double>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:XPS1:m1:1</string>
+    </property>
+    <property name="point1" stdset="0">
+     <point>
+      <x>1</x>
+      <y>1</y>
+     </point>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>8</x>
+      <y>15</y>
+     </point>
+    </property>
+   </widget>
+   <zorder>QCaPushButtonRight</zorder>
+   <zorder>LabelJump</zorder>
+   <zorder>QCaLineEditJump</zorder>
+   <zorder>QCaPushButtonStop</zorder>
+   <zorder>QCaPushButtonLeft</zorder>
+   <zorder>QCaLineEditlReq_2</zorder>
+   <zorder>QCaLineEditlReq_3</zorder>
+   <zorder>LabelReq_2</zorder>
+   <zorder>LabelReq_3</zorder>
+   <zorder>qcapushbuttonplugin</zorder>
+   <zorder>qcapushbuttonplugin_2</zorder>
+   <zorder>qcapushbuttonplugin_3</zorder>
+   <zorder>LabelPos</zorder>
+   <zorder>LabelReq</zorder>
+   <zorder>QCaLineEditlReq</zorder>
+   <zorder>QCaLabelPos</zorder>
+   <zorder>qcashapeplugin_4</zorder>
+   <zorder>qcashapeplugin_3</zorder>
+   <zorder>qcashapeplugin_9</zorder>
+   <zorder>qcashapeplugin_2</zorder>
+   <zorder>qcashapeplugin</zorder>
+  </widget>
+  <widget class="ToggleButton" name="togglebutton">
+   <property name="geometry">
+    <rect>
+     <x>81</x>
+     <y>216</y>
+     <width>62</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M):MOTR.SPMG</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=ESA:XPS1,M=m1</string>
+   </property>
+   <property name="clickText">
+    <string notr="true">0</string>
+   </property>
+   <property name="offLabel">
+    <string>Pause</string>
+   </property>
+   <property name="onLabel">
+    <string>Resume</string>
+   </property>
+   <property name="offText">
+    <string>3</string>
+   </property>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>QCaLabelName</zorder>
+  <zorder>QCaLabelDesc</zorder>
+  <zorder>PushButtonExit</zorder>
+  <zorder>togglebutton</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCaLabelPlugin</class>
+   <extends>QLabel</extends>
+   <header>QCaLabelPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaLineEditPlugin</class>
+   <extends>QLineEdit</extends>
+   <header>QCaLineEditPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaPushButtonPlugin</class>
+   <extends>QPushButton</extends>
+   <header>QCaPushButtonPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaShapePlugin</class>
+   <extends>QWidget</extends>
+   <header>QCaShapePlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ToggleButton</class>
+   <extends>QPushButton</extends>
+   <header>togglebutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>QCaLineEditlReq</tabstop>
+  <tabstop>QCaLineEditJump</tabstop>
+  <tabstop>QCaPushButtonLeft</tabstop>
+  <tabstop>QCaPushButtonRight</tabstop>
+  <tabstop>QCaPushButtonStop</tabstop>
+  <tabstop>PushButtonExit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>PushButtonExit</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MotorDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>202</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>324</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,563 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 590
+y 22
+w 590
+h 470
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 5
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 375
+w 565
+h 80
+lineColor index 3
+fill
+fillColor index 3
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 155
+y 340
+w 65
+h 25
+fgColor index 13
+onColor index 50
+offColor index 50
+topShadowColor index 50
+botShadowColor index 50
+controlPv "LOC\\ebwM"
+releaseValue "-1"
+onLabel "menu"
+offLabel "menu"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 589
+h 35
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 15
+y 10
+w 120
+h 16
+controlPv "$(P):SIS:SI:NAME"
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 63
+autoHeight
+limitsFromDb
+nullColor index 47
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 65
+w 40
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 5
+useDisplayBg
+value {
+  "rearm:"
+}
+autoSize
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 60
+w 95
+h 25
+fgColor index 13
+bgColor index 50
+inconsistentColor index 46
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):SIS:BO:AUTO:RESTART"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 90
+w 95
+h 25
+fgColor index 13
+bgColor index 50
+inconsistentColor index 46
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):SIS:MBBO:TRIGGER"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 125
+w 44
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 5
+useDisplayBg
+value {
+  "trigger:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 95
+w 27
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 5
+useDisplayBg
+value {
+  "arm:"
+}
+autoSize
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 50
+y 120
+w 95
+h 25
+fgColor index 13
+bgColor index 50
+inconsistentColor index 46
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):SIS:MBBO:ARM"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 520
+y 5
+w 60
+h 25
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 155
+y 40
+w 375
+h 300
+fgColor index 13
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 12
+displaySource "menu"
+filePv "LOC\\ebwM=i:-1"
+labelPv "LOC\\name=s"
+file "sisWf"
+sizeOfs 5
+numDsps 8
+displayFileName {
+  0 "sisWf"
+  1 "sisWf"
+  2 "sisWf"
+  3 "sisWf"
+  4 "sisWf"
+  5 "sisWf"
+  6 "sisWf"
+  7 "sisWf"
+}
+menuLabel {
+  0 "Channel0"
+  1 "Channel1"
+  2 "Channel2"
+  3 "Channel3"
+  4 "Channel4"
+  5 "Channel5"
+  6 "Channel6"
+  7 "Channel7"
+}
+symbols {
+  0 "N=0"
+  1 "N=1"
+  2 "N=2"
+  3 "N=3"
+  4 "N=4"
+  5 "N=5"
+  6 "N=6"
+  7 "N=7"
+}
+noScroll
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 100
+y 380
+w 195
+h 70
+lineColor index 13
+fill
+fillColor index 50
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 200
+y 400
+w 80
+h 18
+controlPv "$(P):SIS:SO:REGISTER.IVOV"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 120
+y 405
+w 61
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "offset (hex)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 120
+y 425
+w 75
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "value to write"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 120
+y 385
+w 77
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Write Register"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 200
+y 425
+w 80
+h 18
+controlPv "$(P):SIS:SO:REGISTER.VAL"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 380
+w 275
+h 70
+lineColor index 13
+fill
+fillColor index 73
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 400
+y 400
+w 165
+h 18
+controlPv "$(P):SIS:SI:REGISTER.SVAL"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 400
+y 425
+w 165
+h 18
+controlPv "$(P):SIS:SI:REGISTER.VAL"
+format "hex"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 320
+y 405
+w 61
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "offset (hex)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 425
+w 81
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "value returned"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 320
+y 385
+w 78
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Read Register"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 385
+w 37
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Debug"
+}
+autoSize
+endObjectProperties
+

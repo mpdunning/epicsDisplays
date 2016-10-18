@@ -1,0 +1,107 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1198
+y 235
+w 700
+h 630
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 29
+bgColor index 71
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 7
+w 306
+h 15
+font "courier-bold-r-14.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "Help for the Motor Control dialog."
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 35
+w 686
+h 585
+font "courier-medium-r-12.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "This display allows monitoring and controlling many parameters useful for normal motor operations."
+  "The motor itself is controlled from a dialog screen which is \"popped up\" by pressing the"
+  "\"Motor Move\" button in the left bottom corner of this display.  The labels used in this display"
+  "are consistent with the terminology used in the Beckhoff manual for the KL2531/KL2541 controllers."
+  ""
+  "Status Byte is represented as an array of 8 bits."
+  "AtTarget, \"Input 2\", and \"Input 1\" are bit 3, 1, and 0 in the  StatWord register;"
+  "see Motor Regs/CST screen.  AutoStop is a bit 6 in CtrlByte register; see Morot Regs/CSR."
+  "\"Input 1\" and \"Input2\" indicate the state of the limit switches.  When it is bright green,"
+  "the limit switch is active."
+  ""
+  "Reset button is used to clear an Error condition (bit 6 in StatByte).  ClearPosition button"
+  "is used to clear the actual position regs. This does not affect the PosFromPot value."
+  "Set Position button is used to copy the values from the \"set Position\""
+  "registers to the \"actual position\" registers."
+  ""
+  "\"keep enabled\" toggle button when set causes the motor to remain in enabled state"
+  "(holding current on) when a move is completed.  Enable and Start toggle buttons control bits 0"
+  "and 2 in CtrlByte register."
+  ""
+  "Motion Parameters group consists of controls for changing velocity and accelleration values"
+  "and Read Back Values (RBV).  \"Steps to Jog\" control is used to enter number of motor steps to"
+  "jog the motor position when \"getOffLimit\" button is pressed to move the motor off a limit switch."
+  ""
+  "\"Actual Position\" area shows the \"actual position\" registers in both number of micro steps as well"
+  "as mm wrt to the home position.  Refresh button forces reading these registers."
+  "\"Set Position\" shows the \"set position\" registers in units of micro steps and revolutions wrt"
+  "the home position.  The control allows changing these registers, where the entered value is in"
+  "micro steps.  The Relative position just entered is shown in micro steps."
+  "Use the Coeficients button to pop up a dialog which allows changing linear conversion coefficients"
+  "for the position values from mm to revolutions and back."
+  ""
+  "Home:"
+  "The Home position is at PosFromPot 0 value; assuming that this has been setup correctly."
+  "The correct way to establish the Home position is to drive the motor into the \"left\" limit switch,"
+  "step off the limit switch, and click on ClearPosition button in Control screen, and adjust"
+  "the potentiometer readout coefficients as needed."
+  "If the potentiometer readout is working correctly and it disagrees with PosFromStep value, one"
+  "can fix this in the following way:"
+  "In \"Move Stage\" dialog for the motor in question, type the value in PosFromPot in setAbsPos"
+  "control, press the Enter key, and in Controls dialog press the \"Set Position\" button.  You may"
+  "have to Refresh the \"Actual Position\" to verify that all went well.  At this point both"
+  "PosFromPot and PosFromStep should show the same values."
+  "To force reading the actual position, click on the \"Refresh\" button in this dialog located in"
+  "the \"Actual Position\" group."
+}
+autoSize
+endObjectProperties
+

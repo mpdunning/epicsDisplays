@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>233</width>
+    <height>345</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Motor</string>
+  </property>
+  <property name="toolTip">
+   <string>Motor Control</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>4</y>
+      <width>193</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>PhaseShifter 1</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>20</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="GuiPushButtonPlugin" name="GuiPushButtonMotor">
+        <property name="text">
+         <string>Motion</string>
+        </property>
+        <property name="guiFile" stdset="0">
+         <string>motordialog.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>M=m1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="GuiPushButtonPlugin" name="guipushbuttonplugin">
+        <property name="text">
+         <string>Setup</string>
+        </property>
+        <property name="guiFile" stdset="0">
+         <string>setupdialog.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>M=m1</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>68</y>
+      <width>193</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>PhaseShifter 2</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>20</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="GuiPushButtonPlugin" name="GuiPushButtonMotor_2">
+        <property name="text">
+         <string>Motion</string>
+        </property>
+        <property name="guiFile" stdset="0">
+         <string>motordialog.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>M=m2</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="GuiPushButtonPlugin" name="guipushbuttonplugin_2">
+        <property name="text">
+         <string>Setup</string>
+        </property>
+        <property name="guiFile" stdset="0">
+         <string>setupdialog.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>M=m2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="GuiPushButtonPlugin" name="guipushbuttonplugin_3">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>264</y>
+      <width>93</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Phase Move</string>
+    </property>
+    <property name="guiFile" stdset="0">
+     <string>phasedialog.ui</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>132</y>
+      <width>193</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>800nm WavePlate</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>20</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="GuiPushButtonPlugin" name="GuiPushButtonMotor_3">
+        <property name="text">
+         <string>Motion</string>
+        </property>
+        <property name="guiFile" stdset="0">
+         <string>motordialog.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>M=m3</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="GuiPushButtonPlugin" name="guipushbuttonplugin_4">
+        <property name="text">
+         <string>Setup</string>
+        </property>
+        <property name="guiFile" stdset="0">
+         <string>setupdialog.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>M=m3</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>196</y>
+      <width>193</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>1600nm WavePlate</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>20</y>
+       <width>158</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="GuiPushButtonPlugin" name="GuiPushButtonMotor_4">
+        <property name="text">
+         <string>Motion</string>
+        </property>
+        <property name="guiFile" stdset="0">
+         <string>motordialog.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>M=m4</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="GuiPushButtonPlugin" name="guipushbuttonplugin_5">
+        <property name="text">
+         <string>Setup</string>
+        </property>
+        <property name="guiFile" stdset="0">
+         <string>setupdialog.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>M=m4</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>233</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GuiPushButtonPlugin</class>
+   <extends>QPushButton</extends>
+   <header>GuiPushButtonPlugin.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

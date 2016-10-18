@@ -1,0 +1,462 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 408
+y 23
+w 614
+h 400
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 16
+y 88
+w 272
+h 292
+lineColor index 13
+fill
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 612
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 8
+y 8
+w 188
+h 20
+controlPv "$(P):SI:NAME.DESC"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 544
+y 4
+w 60
+h 32
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 148
+y 68
+w 40
+h 16
+controlPv "$(P):LI:STAT0"
+format "hex"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 24
+y 104
+w 16
+h 128
+controlPv "$(P):LI:STAT0"
+lineColor index 13
+onColor index 30
+offColor index 34
+numBits 8
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 44
+y 104
+w 70
+h 128
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "always 0"
+  "always 1"
+  "Fault Sum"
+  "Operate"
+  "Standby"
+  "Warmup"
+  "Cooldown"
+  "Unit On"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 24
+y 244
+w 16
+h 128
+controlPv "$(P):LI:STAT1"
+lineColor index 13
+onColor index 30
+offColor index 34
+numBits 8
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 44
+y 244
+w 126
+h 128
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "always 0"
+  "always 1"
+  ""
+  "Pulse Input Fault"
+  ""
+  "Overtemp Sum"
+  "Reverse Pwr Fault"
+  "Interlock"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 108
+w 16
+h 128
+controlPv "$(P):LI:STAT2"
+lineColor index 13
+onColor index 30
+offColor index 34
+numBits 8
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 160
+y 108
+w 120
+h 128
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "always 0"
+  "always 1"
+  "Coolant Fault"
+  ""
+  "In Remote"
+  ""
+  "Load Position"
+  "Antenna Position"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 212
+y 8
+w 136
+h 20
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "($(P))"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 196
+y 68
+w 40
+h 16
+controlPv "$(P):LI:STAT1"
+format "hex"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 244
+y 68
+w 40
+h 16
+controlPv "$(P):LI:STAT2"
+format "hex"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 16
+y 68
+w 128
+h 16
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Status Bytes:"
+}
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 296
+y 88
+w 300
+h 292
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,Control,Debug"
+center
+sizeOfs 5
+numDsps 2
+displayFileName {
+  0 "twtCtrl.edl"
+  1 "twtDebug.edl"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 60
+w 188
+h 28
+fgColor index 13
+bgColor index 5
+selectColor index 2
+inconsistentColor index 5
+topShadowColor index 5
+botShadowColor index 5
+controlPv "LOC\\$(!W)show"
+font "courier-bold-r-14.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 404
+y 10
+w 64
+h 20
+controlPv "$(P):BI:ALIVE.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Animated Symbol)
+object anaSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 468
+y 10
+w 20
+h 20
+file "alive.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):BI:ALIVE"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 2
+endObjectProperties
+
+# (Animated Symbol)
+object anaSymbolClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 512
+y 10
+w 19
+h 18
+file "ofon.edl"
+numStates 2
+minValues {
+  1 1
+}
+maxValues {
+  0 1
+  1 2
+}
+controlPvs {
+  0 "$(P):BI:BLINK"
+}
+numPvs 1
+useOriginalSize
+useOriginalColors
+fgColor index 13
+bgColor index 2
+endObjectProperties
+

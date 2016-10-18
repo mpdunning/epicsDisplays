@@ -1,0 +1,27 @@
+#---------------------------------------------------------
+include(/opt/qt/arch.pri)
+include(/afs/slac/g/testfac/tools/qt/common/common.pri)
+
+DESTDIR = $$bindir
+TEMPLATE = app
+TARGET = tds3x
+DEPENDPATH += .
+INCLUDEPATH += .
+
+# Input
+HEADERS += mainwindow.h
+SOURCES += mainwindow.cpp main.cpp
+FORMS   += mainwindow.ui
+
+INCLUDEPATH += $$(QCAFRAMEWORK)/widgets/QEWidget
+INCLUDEPATH += $$(QCAFRAMEWORK)/widgets/QEForm
+INCLUDEPATH += $$(QCAFRAMEWORK)/widgets/QESlider
+INCLUDEPATH += $$(QCAFRAMEWORK)/api
+INCLUDEPATH += $$(QCAFRAMEWORK)/data
+INCLUDEPATH += $$(QCAFRAMEWORK)/common
+INCLUDEPATH += $$(QTDIR)/include/QtXml
+INCLUDEPATH += $$(QWTDIR)/src
+INCLUDEPATH += $$(MYPLUGINS)/widgets
+LIBS += -L$$(QTPLUG) -lQEPlugin
+LIBS += -L$$(QTPLUG) -lmyPlugin
+RESOURCES = tds3x.qrc

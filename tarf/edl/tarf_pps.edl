@@ -1,0 +1,6878 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 58
+y 36
+w 615
+h 865
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-bold-r-18.0"
+btnFont "helvetica-medium-i-18.0"
+fgColor index 14
+bgColor index 2
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 2
+ctlBgColor1 index 2
+ctlBgColor2 index 14
+topShadowColor index 2
+botShadowColor index 14
+endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 57
+w 950
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 2
+xPoints {
+  0 1
+  1 951
+}
+yPoints {
+  0 57
+  1 57
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 403
+h 56
+lineColor index 64
+fill
+fillColor index 64
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 25
+w 253
+h 30
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "ESB:EL01:ELOG:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 0
+w 393
+h 30
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "NLCTA Auto Elog Parameters"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 522
+y 5
+w 75
+h 28
+fgColor index 14
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 14
+label "EXIT"
+font "new century schoolbook-medium-r-18.0"
+3d
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x -284
+y 127
+w 115
+h 322
+indicatorColor index 0
+fgColor index 13
+bgColor index 2
+indicatorPv "TRSS:MOD:AMPS"
+label "AMPS"
+showScale
+font "new century schoolbook-bold-r-14.0"
+border
+scaleFormat "FFloat"
+orientation "vertical"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 252
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 256
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:W_GATE"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 252
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 252
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 254
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:W_GATE.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 257
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:W_GATE,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 258
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:W_GATE"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 283
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 287
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:W_EE"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 283
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 283
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 285
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:W_EE.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 288
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:W_EE,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 289
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:W_EE"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 314
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 318
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:W_DOOR"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 314
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 314
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 316
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:W_DOOR.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 319
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:W_DOOR,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 320
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:W_DOOR"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 345
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 349
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:W_KEYBNK"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 345
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 345
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 347
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:W_KEYBNK.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 350
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:W_KEYBNK,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 351
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:W_KEYBNK"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 66
+w 257
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 36
+y 70
+w 140
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:SUMYSTAT"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 66
+w 111
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 66
+w 111
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 184
+y 68
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:SUMYSTAT"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 186
+y 71
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_calc.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:SUMYSTAT"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 71
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:SUMYSTAT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 97
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 101
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:ASTATE"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 97
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 97
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 99
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:ASTATE.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 102
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:ASTATE,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 212
+y 102
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:ASTATE"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 128
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 132
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:SECURITY"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 128
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 128
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 130
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:SECURITY.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 133
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:SECURITY,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 212
+y 133
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:SECURITY"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 159
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 163
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:STPR_ENB"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 159
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 159
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 161
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:STPR_ENB.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 164
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:STPR_ENB,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 212
+y 163
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:STPR_ENB"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 190
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 194
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:SEARCHOK"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 190
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 190
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 192
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:SEARCHOK.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 195
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_calc.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:SEARCHOK,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 212
+y 195
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:SEARCHOK"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 221
+w 285
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 225
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:SEARCH"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 221
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 221
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 223
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:SEARCH.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 226
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:SEARCH,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 225
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:SEARCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 376
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 380
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:E_GATE"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 376
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 376
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 378
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:E_GATE.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 381
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:E_GATE,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 382
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:E_GATE"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 407
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 411
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:E_EE"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 407
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 407
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 409
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:E_EE.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 412
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:E_EE,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 413
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:E_EE"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 438
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 442
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:E_DOOR"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 438
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 438
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 440
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:E_DOOR.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 443
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:E_DOOR,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 444
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:E_DOOR"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 469
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 473
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:E_KEYBNK"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 469
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 469
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 471
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:E_KEYBNK.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 474
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:E_KEYBNK,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 475
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:E_KEYBNK"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 500
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 504
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:MODE"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 500
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 500
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 502
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:MODE.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 505
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:MODE"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 506
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:MODE"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 97
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 101
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:PRESET_2"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 97
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 97
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 99
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:PRESET_2.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 102
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:PRESET_2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 103
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:PRESET_2"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 128
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 132
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:PRESET"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 128
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 128
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 130
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:PRESET.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 133
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:PRESET"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 134
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:PRESET"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 159
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 163
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:EO_1"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 159
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 159
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 161
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:EO_1.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 164
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:EO_1,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 165
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:EO_1"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 190
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 194
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:EO_2"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 190
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 190
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 192
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:EO_2.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 195
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:EO_2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 196
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:EO_2"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 66
+w 285
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 70
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:PRESET_1"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 66
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 66
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 68
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:PRESET_1.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 71
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:PRESET_1"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 70
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:PRESET_1"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 221
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 225
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:EO_3"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 221
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 221
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 223
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:EO_3.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 226
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:EO_3,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 227
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:EO_3"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 252
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 256
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:EO_4"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 252
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 252
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 254
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:EO_4.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 257
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:EO_4"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 258
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:EO_4"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 283
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 287
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:EO_5"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 283
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 283
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 285
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:EO_5.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 288
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:EO_5"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 289
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:EO_5"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 315
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 319
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:STOPPER1"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 315
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 315
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 317
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:STOPPER1.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 320
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:STOPPER1"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 321
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:STOPPER1"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 346
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 350
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:STOPPER2"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 346
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 346
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 348
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:STOPPER2.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 351
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:STOPPER2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 352
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:STOPPER2"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 377
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 381
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:STOPPER3"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 377
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 377
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 379
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:STOPPER3.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 382
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:STOPPER3"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 383
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:STOPPER3"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 408
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 412
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:STOPPER4"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 408
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 408
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 410
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:STOPPER4.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 413
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:STOPPER4"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 414
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:STOPPER4"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 439
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 443
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:GUN"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 439
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 439
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 441
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:GUN.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 444
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:GUN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 445
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:GUN"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 470
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 474
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:HAZRDENB"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 470
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 470
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 472
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:HAZRDENB.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 475
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:HAZRDENB"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 476
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:HAZRDENB"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 501
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 505
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:HAZRDOFF"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 501
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 501
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 503
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:HAZRDOFF.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 506
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:HAZRDOFF"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 507
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:HAZRDOFF"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 316
+y 533
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 537
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "NPPS:INTLOCKS"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 533
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 533
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 535
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:NPPS:INTLOCKS.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 538
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:NPPS:INTLOCKS"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 518
+y 539
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:NPPS:INTLOCKS"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 565
+w 34
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "E/H"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 6
+y 565
+w 0
+h 0
+lineColor index 14
+fillColor index 2
+numPoints 1
+xPoints {
+  0 6
+}
+yPoints {
+  0 565
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1
+y 560
+w 650
+h 1
+lineColor index 14
+fillColor index 2
+numPoints 2
+xPoints {
+  0 1
+  1 651
+}
+yPoints {
+  0 560
+  1 560
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 651
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 655
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:STPERMIT"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 651
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 651
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 653
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:STPERMIT.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 656
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:STPERMIT,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 212
+y 655
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:STPERMIT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 681
+w 285
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 685
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:SEARCH"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 681
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 681
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 683
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:SEARCH.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 686
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:SEARCH,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 685
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:SEARCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 711
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 715
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:W_GATE"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 711
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 711
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 713
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:W_GATE.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 716
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:W_GATE,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 717
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:W_GATE"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 741
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 745
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:EESUM"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 741
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 741
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 743
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:EESUM.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 746
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:EESUM,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 747
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:EESUM"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 801
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 805
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:W_KEYBNK"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 801
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 801
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 803
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:W_KEYBNK.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 806
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:W_KEYBNK,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 807
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:W_KEYBNK"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 771
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 775
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:W_DOOR"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 771
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 771
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 773
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:W_DOOR.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 776
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:W_DOOR,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 777
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:W_DOOR"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 830
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 834
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:PRESET"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 830
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 830
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 832
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:PRESET.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 835
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:PRESET"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 836
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:PRESET"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 801
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 805
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:INTLOCKS"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 801
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 801
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 491
+y 803
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:INTLOCKS.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 493
+y 806
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:INTLOCKS"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 517
+y 807
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:INTLOCKS"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 742
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 746
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:STOPPER2"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 742
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 742
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 491
+y 744
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:STOPPER2.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 493
+y 747
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:STOPPER2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 517
+y 748
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:STOPPER2"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 712
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 716
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:STOPPER1"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 712
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 712
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 491
+y 714
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:STOPPER1.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 493
+y 717
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:STOPPER1"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 517
+y 718
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:STOPPER1"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 772
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 776
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:STPRSUM"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 772
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 772
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 491
+y 774
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:STPRSUM.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 493
+y 777
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:STPRSUM"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 517
+y 778
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:STPRSUM"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 622
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 626
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:EO_2"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 622
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 622
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 491
+y 624
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:EO_2.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 493
+y 627
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:EO_2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 517
+y 628
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:EO_2"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 652
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 656
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:EO_3"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 652
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 652
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 491
+y 654
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:EO_3.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 493
+y 657
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:EO_3,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 517
+y 658
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:EO_3"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 592
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 596
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:EO_1"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 592
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 592
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 491
+y 594
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:EO_1.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 493
+y 597
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:EO_1,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 517
+y 598
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:EO_1"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 682
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 686
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:EO_SUM"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 682
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 489
+y 682
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 491
+y 684
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:EO_SUM.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 493
+y 687
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:EO_SUM"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 517
+y 688
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:EO_SUM"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 9
+y 621
+w 284
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 625
+w 168
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:ASTATE"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 621
+w 110
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 183
+y 621
+w 110
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 185
+y 623
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:ASTATE.SEVR"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 187
+y 626
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:ASTATE,MODULE=STNDCM:SUMY,DCM=STN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 212
+y 626
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:ASTATE"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 591
+w 257
+h 25
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 36
+y 595
+w 140
+h 16
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "EPPS:SUMYSTAT"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 591
+w 111
+h 25
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 591
+w 111
+h 25
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 184
+y 593
+w 106
+h 21
+lineColor index 17
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "ESB:EL01:ELOG:EPPS:SUMYSTAT"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 186
+y 596
+w 23
+h 16
+fgColor index 14
+bgColor index 2
+topShadowColor index 2
+botShadowColor index 14
+font "new century schoolbook-bold-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "elog_db_calc.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=ESB:EL01,NAME=ELOG:EPPS:SUMYSTAT"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 211
+y 596
+w 75
+h 16
+controlPv "ESB:EL01:ELOG:EPPS:SUMYSTAT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 2
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

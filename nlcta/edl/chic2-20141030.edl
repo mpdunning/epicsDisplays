@@ -1,0 +1,1034 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 45
+y 639
+w 992
+h 357
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 0
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 2
+endScreenProperties
+
+# (GIF Image)
+object cfcf6c8a_dbeb_11d2_8a97_00104b8742df
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 52
+w 1000
+h 238
+file "chic2"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 134
+y 240
+w 52
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:ACSW2:BO:SC:STATE:6"
+onLabel "AL2:ON"
+offLabel "AL2:OFF"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 366
+y 88
+w 20
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS13:,R=cam1:,A=ESB:ACSW2,N=5,IOC=sioc-esb-adps13"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 294
+y 64
+w 82
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2114-11:BIT6"
+onLabel "Prof1805:IN"
+offLabel "Prof1805:OUT"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 548
+y 62
+w 82
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2114-11:BIT4"
+onLabel "Prof1880:IN"
+offLabel "Prof1880:OUT"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 610
+y 86
+w 20
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS20:,R=cam1:,A=ESB:ACSW8,N=21,IOC=sioc-esb-adps20"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 384
+y 216
+w 52
+h 16
+controlPv "ESB:AI:3314F-11:CH1"
+font "courier-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 486
+y 216
+w 50
+h 16
+controlPv "ESB:AI:3314F-11:CH2"
+font "courier-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 118
+y 216
+w 84
+h 58
+lineColor index 13
+fillColor index 2
+lineWidth 2
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 308
+y 88
+w 56
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Cam 1805"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 13"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 552
+y 86
+w 56
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Cam 1880"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 20"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 866
+y 4
+w 120
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Chicane R56 Tables"
+numCmds 1
+command {
+  0 "$SCRIPT/geditChicanes.sh"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 14
+y 218
+w 42
+h 28
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 14
+y 218
+w 42
+h 28
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 19
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh QUAD 1720"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 23
+y 222
+w 24
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 19
+bgColor index 2
+useDisplayBg
+value {
+  "Quad"
+  "1720"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 286
+y 218
+w 42
+h 28
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 286
+y 218
+w 42
+h 28
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 19
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh QUAD 1790"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 295
+y 222
+w 24
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 19
+bgColor index 2
+useDisplayBg
+value {
+  "Quad"
+  "1790"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 542
+y 218
+w 42
+h 28
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 542
+y 218
+w 42
+h 28
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 19
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh QUAD 1860"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 551
+y 222
+w 24
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 19
+bgColor index 2
+useDisplayBg
+value {
+  "Quad"
+  "1860"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 638
+y 218
+w 42
+h 28
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 638
+y 218
+w 42
+h 28
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 19
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh QUAD 1940"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 647
+y 222
+w 24
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 19
+bgColor index 2
+useDisplayBg
+value {
+  "Quad"
+  "1890"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 432
+y 146
+w 29
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "T105"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 634
+y 62
+w 80
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2114-11:BIT8"
+onLabel "Prof1930:IN"
+offLabel "Prof1930:OUT"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+visMin "0"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 346
+y 216
+w 42
+h 16
+font "courier-bold-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Temp1:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 446
+y 216
+w 42
+h 16
+font "courier-bold-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Temp2:"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 140
+y 46
+w 92
+h 58
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 140
+y 46
+w 92
+h 58
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 29
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh CHIC 2"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 156
+y 52
+w 54
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "Chicane 2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 180
+y 86
+w 46
+h 12
+controlPv "ESB:CHIC:2:R56:ACT"
+font "courier-bold-r-10.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 180
+y 70
+w 44
+h 12
+controlPv "ESB:CHIC:2:BACT"
+font "courier-medium-r-10.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 144
+y 68
+w 32
+h 16
+font "courier-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "BACT:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 146
+y 84
+w 28
+h 16
+font "courier-bold-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "R56:"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 638
+y 248
+w 42
+h 28
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 638
+y 248
+w 42
+h 28
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 34
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh XCORYCOR 1940"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 647
+y 252
+w 24
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 34
+bgColor index 2
+useDisplayBg
+value {
+  "1890"
+  "CORS"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 542
+y 248
+w 42
+h 28
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 542
+y 248
+w 42
+h 28
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 34
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh XCORYCOR 1860"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 551
+y 252
+w 24
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 34
+bgColor index 2
+useDisplayBg
+value {
+  "1860"
+  "CORS"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 286
+y 248
+w 42
+h 28
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 286
+y 248
+w 42
+h 28
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 34
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh XCORYCOR 1790"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 295
+y 252
+w 24
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 34
+bgColor index 2
+useDisplayBg
+value {
+  "1790"
+  "CORS"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 14
+y 248
+w 42
+h 28
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 14
+y 248
+w 42
+h 28
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 34
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh XCORYCOR 1720"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 23
+y 252
+w 24
+h 20
+font "courier-bold-r-10.0"
+fontAlign "center"
+fgColor index 34
+bgColor index 2
+useDisplayBg
+value {
+  "1720"
+  "CORS"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 714
+y 100
+w 294
+h 132
+lineColor index 13
+fill
+fillColor index 25
+endObjectProperties
+

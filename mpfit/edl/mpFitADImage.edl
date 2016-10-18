@@ -1,0 +1,223 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 317
+y 182
+w 580
+h 500
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 8
+y 348
+w 396
+h 144
+# Appearance
+border
+plotAreaBorder
+autoScaleBothDirections
+xLabel "mm"
+yLabel "counts"
+fgColor index 13
+bgColor index 2
+gridColor index 13
+font "courier-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 1
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+xLabelIntervals 8
+xShowLabelGrid
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yShowLabelGrid
+# Y2 axis properties
+showY2Axis
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 2
+xPv {
+  0 "$(P)$(PORT):WF:X:DATA_0"
+  1 "$(P)$(PORT):WF:X:DATA_0"
+}
+yPv {
+  0 "$(P)$(PORT):WF:Y:DATA_0"
+  1 "$(P)$(PORT):WF:Y:FIT_0"
+}
+nPv {
+  0 "$(P)$(PORT):WF:X:DATA_0.NORD"
+  1 "$(P)$(PORT):WF:X:DATA_0.NORD"
+}
+plotStyle {
+  0 "point"
+}
+plotSymbolType {
+  0 "circle"
+}
+ySigned {
+  0 1
+  1 1
+}
+plotColor {
+  0 index 21
+  1 index 26
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 428
+y 4
+w 144
+h 312
+# Appearance
+border
+autoScaleBothDirections
+xLabel "counts"
+yLabel "mm"
+fgColor index 13
+bgColor index 2
+gridColor index 13
+font "courier-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 1
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+xLabelIntervals 8
+xShowLabelGrid
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 2
+xPv {
+  0 "$(P)$(PORT):WF:Y:DATA_1"
+  1 "$(P)$(PORT):WF:Y:FIT_1"
+}
+yPv {
+  0 "$(P)$(PORT):WF:X:DATA_1"
+  1 "$(P)$(PORT):WF:X:DATA_1"
+}
+nPv {
+  0 "$(P)$(PORT):WF:Y:FIT_1.NORD"
+  1 "$(P)$(PORT):WF:Y:DATA_1.NORD"
+}
+plotStyle {
+  0 "point"
+}
+plotSymbolType {
+  0 "circle"
+}
+xSigned {
+  0 1
+  1 1
+}
+plotColor {
+  0 index 31
+  1 index 36
+}
+endObjectProperties
+
+# (Video)
+object TwoDProfileMonitorClass
+beginObjectProperties
+major 4
+minor 2
+release 1
+x 8
+y 4
+w 396
+h 312
+dataPvStr "$(P)image1:ArrayData"
+widthPvStr "$(P)cam1:ArraySizeX_RBV"
+heightPvStr "$(P)cam1:ArraySizeY_RBV"
+dataWidth 1292
+pvBasedDataSize 1
+nBitsPerPixel 0
+endObjectProperties
+
+# (mmover)
+object mmvClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 4
+w 16
+h 312
+fgColor index 13
+bgColor index 2
+ctrl1Color index 13
+ctrl1Pv "$(P)Over1:2:PositionY"
+ctrl2Color index 13
+orientStr "VertRight"
+orientation 3
+incMultiplier 1
+limitsFromDb
+endObjectProperties
+
+# (mmover)
+object mmvClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 324
+w 396
+h 16
+fgColor index 13
+bgColor index 2
+ctrl1Color index 13
+ctrl1Pv "$(P)Over1:2:PositionX"
+ctrl2Color index 13
+orientStr "HorizBot"
+orientation 2
+incMultiplier 1
+limitsFromDb
+endObjectProperties
+

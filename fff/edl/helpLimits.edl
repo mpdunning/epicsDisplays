@@ -1,0 +1,113 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1088
+y 336
+w 450
+h 300
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 1
+w 448
+h 30
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 395
+y 4
+w 50
+h 24
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 8
+w 148
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Help for Fault Setup Panel"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 31
+y 45
+w 394
+h 238
+font "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 4
+useDisplayBg
+value {
+  "Displays information relevant to fault threshold limits."
+  "All values are raw register values."
+  ""
+  "Use the \"Refresh\" button to read current values from registers."
+  ""
+  "Use the \"Save\" button to save values in a disk file.  The file"
+  "name used is taken from the \"File Name\" text control widget.  Note that"
+  "if the file with this name already exists it will be overwritten.  The file"
+  "is stored in /nfs/slac/g/testfac/esb/ioc-esb-lb01/setup/ directory."
+  "Enter new file name in the \"File Name\" text control and press Enter."
+  ""
+  "Notice that what you see will be written to the file, hence you must first"
+  "refresh values."
+  ""
+  "The data is written to a text file, where entries are written one per line,"
+  "in the format:"
+  "name=value"
+}
+autoSize
+endObjectProperties
+

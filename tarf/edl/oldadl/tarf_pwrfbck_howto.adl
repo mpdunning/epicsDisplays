@@ -1,0 +1,1000 @@
+file {
+	name="tarf_pwrfbck_howto.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="0"
+	npc="1"
+	nstr="143"
+	ndynamic="0"
+	nplot="0"
+	nrd="2"
+	nes="3"
+	nkd="1"
+	npd="1"
+	npo="0"
+	object {
+		x="150"
+		y="400"
+		width="668"
+		height="444"
+	}
+	clr="1"
+	bclr="10"
+	nwords_dspy="2734"
+	nwords_sta="428"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="1916"
+	osta="1488"
+	odynamic="1916"
+	oplot="1916"
+	ord="1916"
+	oes="2236"
+	okd="2710"
+	opd="2722"
+	opo="2734"
+	opc="68"
+	ostr="72"
+	ocmap="1488"
+	ocrules="1488"
+	style="solid"
+	fill="outline"
+	width="1"
+	clrmod="static"
+	vismod="static"
+	precision="-1"
+	clrrule="rf_ilck"
+	pv="TRS$(STN):AS:PROC:"
+	cmap="color.dl"
+	pixwid="1280"
+	pixht="994"
+	mmwid="387"
+	mmht="300"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="29"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="0"
+		y="0"
+		width="510"
+		height="57"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="0"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="25"
+		width="528"
+		height="30"
+		groupid="0"
+	}
+	textix="Power Feedback Troubleshooting   "
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"line" {
+	object {
+		x="509"
+		y="56"
+		width="440"
+		height="0"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="509"
+		y="56"
+	}
+	point[1] {
+		x="949"
+		y="56"
+	}
+	orgpoint[0] {
+		x="0"
+		y="0"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="1000"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="0"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="0"
+		width="550"
+		height="30"
+		groupid="0"
+	}
+	textix="Test Accelerator & 8-Pack"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="9"
+		y="61"
+		width="192"
+		height="20"
+		groupid="0"
+	}
+	textix="Things to check:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="7"
+		y="175"
+		width="279"
+		height="16"
+		groupid="0"
+	}
+	textix="Is PWRMAX(MIN) being moved?"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="41"
+		y="196"
+		width="357"
+		height="16"
+		groupid="0"
+	}
+	textix="Use the Archive browser to look at:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="41"
+		y="218"
+		width="484"
+		height="16"
+		groupid="0"
+	}
+	textix="TRS(1,2):RF:DRIVE:PWRMAX or TRS8:RF:DRIVE:PWRMIN"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="41"
+		y="240"
+		width="600"
+		height="16"
+		groupid="0"
+	}
+	textix="If so, the feedback is working.  Perhaps change its parameters?"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="7"
+		y="108"
+		width="304"
+		height="16"
+		groupid="0"
+	}
+	textix="Is Atten Control > CTRL Limit?"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="7"
+		y="152"
+		width="597"
+		height="16"
+		groupid="0"
+	}
+	textix="Is (VTOP - desired power) > minimum & < maximum power diff?"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="7"
+		y="265"
+		width="503"
+		height="16"
+		groupid="0"
+	}
+	textix="Use CMLOG to look at feedback diagnostic messages."
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="7"
+		y="373"
+		width="602"
+		height="16"
+		groupid="0"
+	}
+	textix="If PWRMAX(MIN) isn't moving AND there aren't any messages "
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="6"
+		y="392"
+		width="562"
+		height="16"
+		groupid="0"
+	}
+	textix="AND all the answers to the above questions are yes, then:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="55"
+		y="415"
+		width="261"
+		height="16"
+		groupid="0"
+	}
+	textix="Call Janice or Ron Chestnut."
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="7"
+		y="130"
+		width="340"
+		height="16"
+		groupid="0"
+	}
+	textix="Is Pulse width desired = control?"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="7"
+		y="88"
+		width="94"
+		height="16"
+		groupid="0"
+	}
+	textix="Is it ON?"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="7"
+		y="336"
+		width="387"
+		height="16"
+		groupid="0"
+	}
+	textix="Reboot TR00 or TR07.  Is it fixed now?"
+	align="horiz. left"
+}
+"related display" {
+	object {
+		x="220"
+		y="284"
+		width="160"
+		height="35"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="CMLOG How-to"
+		name="tarf_cmlog_howto.dl"
+		args=""
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="CMLOG How-to"
+	decorate="outward"
+}
+"related display" {
+	object {
+		x="476"
+		y="62"
+		width="188"
+		height="39"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="pwrfbck"
+		name="tarf_pwrfbck.dl"
+		args="STN=TRS$(STN),NAME=AS:PROC:NORM"
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="PWR FBCK Params"
+	decorate="outward"
+}
+"execute script" {
+	object {
+		x="588"
+		y="30"
+		width="75"
+		height="26"
+		groupid="0"
+	}
+	script[0] {
+		label="Help"
+		path="dm_help tarf/power"
+		args=""
+	}
+	script[1] {
+		label=""
+		path=""
+		args=""
+	}
+	script[2] {
+		label=""
+		path=""
+		args=""
+	}
+	script[3] {
+		label=""
+		path=""
+		args=""
+	}
+	script[4] {
+		label=""
+		path=""
+		args=""
+	}
+	script[5] {
+		label=""
+		path=""
+		args=""
+	}
+	script[6] {
+		label=""
+		path=""
+		args=""
+	}
+	script[7] {
+		label=""
+		path=""
+		args=""
+	}
+	script[8] {
+		label=""
+		path=""
+		args=""
+	}
+	script[9] {
+		label=""
+		path=""
+		args=""
+	}
+	script[10] {
+		label=""
+		path=""
+		args=""
+	}
+	script[11] {
+		label=""
+		path=""
+		args=""
+	}
+	script[12] {
+		label=""
+		path=""
+		args=""
+	}
+	script[13] {
+		label=""
+		path=""
+		args=""
+	}
+	script[14] {
+		label=""
+		path=""
+		args=""
+	}
+	script[15] {
+		label=""
+		path=""
+		args=""
+	}
+	script[16] {
+		label=""
+		path=""
+		args=""
+	}
+	script[17] {
+		label=""
+		path=""
+		args=""
+	}
+	script[18] {
+		label=""
+		path=""
+		args=""
+	}
+	script[19] {
+		label=""
+		path=""
+		args=""
+	}
+	script[20] {
+		label=""
+		path=""
+		args=""
+	}
+	script[21] {
+		label=""
+		path=""
+		args=""
+	}
+	script[22] {
+		label=""
+		path=""
+		args=""
+	}
+	script[23] {
+		label=""
+		path=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="Help  "
+	decorate="outward"
+}
+"execute script" {
+	object {
+		x="48"
+		y="284"
+		width="160"
+		height="35"
+		groupid="0"
+	}
+	script[0] {
+		label="CMLOG"
+		path="cmlog"
+		args=""
+	}
+	script[1] {
+		label=""
+		path=""
+		args=""
+	}
+	script[2] {
+		label=""
+		path=""
+		args=""
+	}
+	script[3] {
+		label=""
+		path=""
+		args=""
+	}
+	script[4] {
+		label=""
+		path=""
+		args=""
+	}
+	script[5] {
+		label=""
+		path=""
+		args=""
+	}
+	script[6] {
+		label=""
+		path=""
+		args=""
+	}
+	script[7] {
+		label=""
+		path=""
+		args=""
+	}
+	script[8] {
+		label=""
+		path=""
+		args=""
+	}
+	script[9] {
+		label=""
+		path=""
+		args=""
+	}
+	script[10] {
+		label=""
+		path=""
+		args=""
+	}
+	script[11] {
+		label=""
+		path=""
+		args=""
+	}
+	script[12] {
+		label=""
+		path=""
+		args=""
+	}
+	script[13] {
+		label=""
+		path=""
+		args=""
+	}
+	script[14] {
+		label=""
+		path=""
+		args=""
+	}
+	script[15] {
+		label=""
+		path=""
+		args=""
+	}
+	script[16] {
+		label=""
+		path=""
+		args=""
+	}
+	script[17] {
+		label=""
+		path=""
+		args=""
+	}
+	script[18] {
+		label=""
+		path=""
+		args=""
+	}
+	script[19] {
+		label=""
+		path=""
+		args=""
+	}
+	script[20] {
+		label=""
+		path=""
+		args=""
+	}
+	script[21] {
+		label=""
+		path=""
+		args=""
+	}
+	script[22] {
+		label=""
+		path=""
+		args=""
+	}
+	script[23] {
+		label=""
+		path=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="CMLOG"
+	decorate="outward"
+}
+"execute script" {
+	object {
+		x="401"
+		y="176"
+		width="160"
+		height="35"
+		groupid="0"
+	}
+	script[0] {
+		label="Archive Viewer"
+		path="cstafarc"
+		args=""
+	}
+	script[1] {
+		label=""
+		path=""
+		args=""
+	}
+	script[2] {
+		label=""
+		path=""
+		args=""
+	}
+	script[3] {
+		label=""
+		path=""
+		args=""
+	}
+	script[4] {
+		label=""
+		path=""
+		args=""
+	}
+	script[5] {
+		label=""
+		path=""
+		args=""
+	}
+	script[6] {
+		label=""
+		path=""
+		args=""
+	}
+	script[7] {
+		label=""
+		path=""
+		args=""
+	}
+	script[8] {
+		label=""
+		path=""
+		args=""
+	}
+	script[9] {
+		label=""
+		path=""
+		args=""
+	}
+	script[10] {
+		label=""
+		path=""
+		args=""
+	}
+	script[11] {
+		label=""
+		path=""
+		args=""
+	}
+	script[12] {
+		label=""
+		path=""
+		args=""
+	}
+	script[13] {
+		label=""
+		path=""
+		args=""
+	}
+	script[14] {
+		label=""
+		path=""
+		args=""
+	}
+	script[15] {
+		label=""
+		path=""
+		args=""
+	}
+	script[16] {
+		label=""
+		path=""
+		args=""
+	}
+	script[17] {
+		label=""
+		path=""
+		args=""
+	}
+	script[18] {
+		label=""
+		path=""
+		args=""
+	}
+	script[19] {
+		label=""
+		path=""
+		args=""
+	}
+	script[20] {
+		label=""
+		path=""
+		args=""
+	}
+	script[21] {
+		label=""
+		path=""
+		args=""
+	}
+	script[22] {
+		label=""
+		path=""
+		args=""
+	}
+	script[23] {
+		label=""
+		path=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="Archive Viewer"
+	decorate="outward"
+}
+"kill display" {
+	object {
+		x="588"
+		y="0"
+		width="75"
+		height="28"
+		groupid="0"
+	}
+	label="Exit"
+	clr="1"
+	bclr="20"
+	decorate="outward"
+}
+"print display" {
+	object {
+		x="511"
+		y="0"
+		width="75"
+		height="28"
+		groupid="0"
+	}
+	label="Print"
+	clr="1"
+	bclr="20"
+	decorate="outward"
+}

@@ -1,0 +1,2293 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1758
+y 401
+w 1142
+h 350
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 7
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 1140
+h 36
+lineColor index 56
+fill
+fillColor index 56
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1032
+y 8
+w 92
+h 20
+fgColor index 14
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 14
+label "Exit"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 8
+w 326
+h 21
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "$(LOCA) Knob Box $(B) - $(FACILITY)"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 924
+y 8
+w 92
+h 20
+fgColor index 14
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "Help..."
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "knobbox_help.edl"
+}
+setPosition {
+  0 "parentWindow"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 816
+y 8
+w 92
+h 20
+fgColor index 14
+bgColor index 4
+topShadowColor index 4
+botShadowColor index 14
+font "helvetica-medium-r-12.0"
+buttonLabel "Diagnostics..."
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "knobbox_diag.edl"
+}
+setPosition {
+  0 "parentWindow"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 48
+w 272
+h 292
+lineColor index 3
+fill
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 860
+y 312
+w 272
+h 20
+controlPv "KNOB:$(LOCA):$(B):K3_MSG"
+fgColor index 23
+fgAlarm
+bgColor index 0
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 860
+y 48
+w 272
+h 28
+lineColor index 54
+fill
+fillColor index 54
+lineWidth 3
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 920
+y 84
+w 212
+h 28
+controlPv "KNOB:$(LOCA):$(B):K3_DEVNAME"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+updatePvOnDrop
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 860
+y 84
+w 56
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "PV Name"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 920
+y 120
+w 128
+h 28
+controlPv "KNOB:$(LOCA):$(B):K3_STATE"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 872
+y 124
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Status"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1060
+y 120
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K3_GODETACH.PROC"
+pressValue "1"
+onLabel "Detach"
+offLabel "Detach"
+3d
+useEnumNumeric
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1060
+y 160
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K3_GOSAVE"
+onLabel "Save Value"
+offLabel "Save Value"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 996
+y 160
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K3_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 920
+y 160
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K3_DISPVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 872
+y 164
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Value"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1060
+y 192
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K3_GORETURN"
+onLabel "Load Saved"
+offLabel "Load Saved"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 996
+y 192
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K3_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 920
+y 192
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K3_SAVEDVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 872
+y 196
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Saved"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1060
+y 228
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K3_GORESTORE"
+onLabel "Load Initial"
+offLabel "Load Initial"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 996
+y 228
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K3_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 920
+y 228
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K3_INITVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 872
+y 228
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Initial"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 1100
+y 264
+w 32
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "/turn"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 920
+y 264
+w 100
+h 28
+controlPv "KNOB:$(LOCA):$(B):K3_SENS"
+format "exponential"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+editable
+motifWidget
+precision 3
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 860
+y 264
+w 56
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Sensitivity"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 1028
+y 264
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K3_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 860
+y 52
+w 272
+h 20
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Knob 3"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 576
+y 48
+w 272
+h 292
+lineColor index 3
+fill
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 576
+y 312
+w 272
+h 20
+controlPv "KNOB:$(LOCA):$(B):K2_MSG"
+fgColor index 23
+fgAlarm
+bgColor index 0
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 576
+y 48
+w 272
+h 28
+lineColor index 54
+fill
+fillColor index 54
+lineWidth 3
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 636
+y 84
+w 212
+h 28
+controlPv "KNOB:$(LOCA):$(B):K2_DEVNAME"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+updatePvOnDrop
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 576
+y 84
+w 56
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "PV Name"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 636
+y 120
+w 128
+h 28
+controlPv "KNOB:$(LOCA):$(B):K2_STATE"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 588
+y 124
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Status"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 776
+y 120
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K2_GODETACH.PROC"
+pressValue "1"
+onLabel "Detach"
+offLabel "Detach"
+3d
+useEnumNumeric
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 776
+y 160
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K2_GOSAVE"
+onLabel "Save Value"
+offLabel "Save Value"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 712
+y 160
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K2_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 636
+y 160
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K2_DISPVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 588
+y 164
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Value"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 776
+y 192
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K2_GORETURN"
+onLabel "Load Saved"
+offLabel "Load Saved"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 712
+y 192
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K2_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 636
+y 192
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K2_SAVEDVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 588
+y 196
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Saved"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 776
+y 228
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K2_GORESTORE"
+onLabel "Load Initial"
+offLabel "Load Initial"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 712
+y 228
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K2_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 636
+y 228
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K2_INITVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 588
+y 228
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Initial"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 816
+y 264
+w 32
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "/turn"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 636
+y 264
+w 100
+h 28
+controlPv "KNOB:$(LOCA):$(B):K2_SENS"
+format "exponential"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+editable
+motifWidget
+precision 3
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 576
+y 264
+w 56
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Sensitivity"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 744
+y 264
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K2_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 576
+y 52
+w 272
+h 20
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Knob 2"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 48
+w 272
+h 292
+lineColor index 3
+fill
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 8
+y 312
+w 272
+h 20
+controlPv "KNOB:$(LOCA):$(B):K0_MSG"
+fgColor index 23
+fgAlarm
+bgColor index 0
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 48
+w 272
+h 28
+lineColor index 54
+fill
+fillColor index 54
+lineWidth 3
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 68
+y 84
+w 212
+h 28
+controlPv "KNOB:$(LOCA):$(B):K0_DEVNAME"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+updatePvOnDrop
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 84
+w 56
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "PV Name"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 68
+y 120
+w 128
+h 28
+controlPv "KNOB:$(LOCA):$(B):K0_STATE"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 124
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Status"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 120
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K0_GODETACH.PROC"
+pressValue "1"
+onLabel "Detach"
+offLabel "Detach"
+3d
+useEnumNumeric
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 160
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K0_GOSAVE"
+onLabel "Save Value"
+offLabel "Save Value"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 144
+y 160
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K0_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 68
+y 160
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K0_DISPVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 164
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Value"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 192
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K0_GORETURN"
+onLabel "Load Saved"
+offLabel "Load Saved"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 144
+y 192
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K0_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 68
+y 192
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K0_SAVEDVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 196
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Saved"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 228
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K0_GORESTORE"
+onLabel "Load Initial"
+offLabel "Load Initial"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 144
+y 228
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K0_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 68
+y 228
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K0_INITVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 228
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Initial"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 248
+y 264
+w 32
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "/turn"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 68
+y 264
+w 100
+h 28
+controlPv "KNOB:$(LOCA):$(B):K0_SENS"
+format "exponential"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+editable
+motifWidget
+precision 3
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 264
+w 56
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Sensitivity"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 176
+y 264
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K0_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 52
+w 272
+h 20
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Knob 0"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 292
+y 48
+w 272
+h 292
+lineColor index 3
+fill
+fillColor index 3
+lineWidth 3
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 292
+y 312
+w 272
+h 20
+controlPv "KNOB:$(LOCA):$(B):K1_MSG"
+fgColor index 23
+fgAlarm
+bgColor index 0
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 292
+y 48
+w 272
+h 28
+lineColor index 54
+fill
+fillColor index 54
+lineWidth 3
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 352
+y 84
+w 212
+h 28
+controlPv "KNOB:$(LOCA):$(B):K1_DEVNAME"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+editable
+motifWidget
+limitsFromDb
+nullColor index 0
+smartRefresh
+updatePvOnDrop
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 292
+y 84
+w 56
+h 28
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "PV Name"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 352
+y 120
+w 128
+h 28
+controlPv "KNOB:$(LOCA):$(B):K1_STATE"
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 304
+y 124
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Status"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 120
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K1_GODETACH.PROC"
+pressValue "1"
+onLabel "Detach"
+offLabel "Detach"
+3d
+useEnumNumeric
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 160
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K1_GOSAVE"
+onLabel "Save Value"
+offLabel "Save Value"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 428
+y 160
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K1_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 352
+y 160
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K1_DISPVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 304
+y 164
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Value"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 192
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K1_GORETURN"
+onLabel "Load Saved"
+offLabel "Load Saved"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 428
+y 192
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K1_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 352
+y 192
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K1_SAVEDVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 304
+y 196
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Saved"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 492
+y 228
+w 72
+h 28
+fgColor index 14
+onColor index 52
+offColor index 52
+inconsistentColor index 14
+topShadowColor index 51
+botShadowColor index 14
+controlPv "KNOB:$(LOCA):$(B):K1_GORESTORE"
+onLabel "Load Initial"
+offLabel "Load Initial"
+labelType "literal"
+buttonType "push"
+3d
+font "helvetica-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 428
+y 228
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K1_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 352
+y 228
+w 72
+h 28
+controlPv "KNOB:$(LOCA):$(B):K1_INITVAL"
+displayMode "exp"
+precision 3
+fgColor index 14
+fgAlarm
+bgColor index 0
+fill
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 304
+y 228
+w 44
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Initial"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 532
+y 264
+w 32
+h 28
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "/turn"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 352
+y 264
+w 100
+h 28
+controlPv "KNOB:$(LOCA):$(B):K1_SENS"
+format "exponential"
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+editable
+motifWidget
+precision 3
+nullColor index 0
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 292
+y 264
+w 56
+h 24
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Sensitivity"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 460
+y 264
+w 56
+h 28
+controlPv "KNOB:$(LOCA):$(B):K1_EGU"
+fgColor index 14
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 292
+y 52
+w 272
+h 20
+font "helvetica-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Knob 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 16
+y 288
+w 40
+h 16
+fgColor index 14
+bgColor index 52
+topShadowColor index 2
+botShadowColor index 14
+font "helvetica-medium-r-10.0"
+buttonLabel "Save"
+numCmds 1
+command {
+  0 "$SCRIPT/knobDataUpdate $(B) 0 1 $(facility) $(LOCA)"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 300
+y 288
+w 40
+h 16
+fgColor index 14
+bgColor index 52
+topShadowColor index 2
+botShadowColor index 14
+font "helvetica-medium-r-10.0"
+buttonLabel "Save"
+numCmds 1
+command {
+  0 "$SCRIPT/knobDataUpdate $(B) 1 1 $(facility) $(LOCA)"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 584
+y 288
+w 40
+h 16
+fgColor index 14
+bgColor index 52
+topShadowColor index 2
+botShadowColor index 14
+font "helvetica-medium-r-10.0"
+buttonLabel "Save"
+numCmds 1
+command {
+  0 "$SCRIPT/knobDataUpdate $(B) 2 1 $(facility) $(LOCA)"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 868
+y 288
+w 40
+h 16
+fgColor index 14
+bgColor index 52
+topShadowColor index 2
+botShadowColor index 14
+font "helvetica-medium-r-10.0"
+buttonLabel "Save"
+numCmds 1
+command {
+  0 "$SCRIPT/knobDataUpdate $(B) 3 1 $(facility) $(LOCA)"
+}
+endObjectProperties
+

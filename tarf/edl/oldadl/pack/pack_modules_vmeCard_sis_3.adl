@@ -1,0 +1,2165 @@
+file {
+	name="pack_modules_vmeCard_sis_3.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="1"
+	npc="27"
+	nstr="151"
+	ndynamic="25"
+	nplot="0"
+	nrd="1"
+	nes="2"
+	nkd="1"
+	npd="1"
+	npo="0"
+	object {
+		x="500"
+		y="500"
+		width="675"
+		height="587"
+	}
+	clr="1"
+	bclr="10"
+	nwords_dspy="5444"
+	nwords_sta="1228"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="3224"
+	osta="1996"
+	odynamic="3280"
+	oplot="4944"
+	ord="4944"
+	oes="5104"
+	okd="5420"
+	opd="5432"
+	opo="5444"
+	opc="68"
+	ostr="564"
+	ocmap="1996"
+	ocrules="1996"
+	style="solid"
+	fill="outline"
+	width="1"
+	clrmod="static"
+	vismod="static"
+	precision="-1"
+	clrrule=""
+	pv="$(STN):STN:DCM:MODU"
+	cmap="color.dl"
+	pixwid="1280"
+	pixht="932"
+	mmwid="320"
+	mmht="233"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"line" {
+	object {
+		x="220"
+		y="56"
+		width="454"
+		height="0"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="220"
+		y="56"
+	}
+	point[1] {
+		x="674"
+		y="56"
+	}
+	orgpoint[0] {
+		x="0"
+		y="-1"
+	}
+	orgpoint[1] {
+		x="999"
+		y="-1"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="11"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="0"
+		y="0"
+		width="515"
+		height="57"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="0"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="0"
+		width="150"
+		height="30"
+		groupid="0"
+	}
+	textix="8-Pack"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="65"
+		width="451"
+		height="12"
+		groupid="0"
+	}
+	textix="Record Name (NAME):  $(SYS):$(SUB):C$(CARD):MODU"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="5"
+		y="80"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Description (DESC):"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="5"
+		y="111"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Severity    (SEVR):"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="5"
+		y="96"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Scan Type   (SCAN):"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="136"
+		y="131"
+		width="240"
+		height="25"
+		groupid="0"
+	}
+	textix="Hardware Information"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="4"
+		y="337"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Force Update(PROC):"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="5"
+		y="163"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Interrupt Vector :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="5"
+		y="185"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Interrupt Level  :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="5"
+		y="230"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="VME Address      :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="5"
+		y="208"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Address Mode     :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="280"
+		y="208"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="VME Data Size     :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="280"
+		y="231"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="VME I/O bcnt      :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="5"
+		y="253"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Module ID        :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="280"
+		y="254"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Module Status     :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="5"
+		y="299"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Link Status (STAT) :"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="150"
+		y="292"
+		width="299"
+		height="23"
+		groupid="4"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="7"
+		y="420"
+		width="80"
+		height="15"
+		groupid="0"
+	}
+	textix="ARM"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="112"
+		y="420"
+		width="80"
+		height="15"
+		groupid="0"
+	}
+	textix="AUTO-Start"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="351"
+		y="421"
+		width="98"
+		height="15"
+		groupid="0"
+	}
+	textix="Soft Trigger"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="7"
+		y="470"
+		width="80"
+		height="15"
+		groupid="0"
+	}
+	textix="Clock"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="112"
+		y="470"
+		width="80"
+		height="15"
+		groupid="0"
+	}
+	textix="Trigger"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="227"
+		y="470"
+		width="80"
+		height="15"
+		groupid="0"
+	}
+	textix="Multi Event"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="7"
+		y="520"
+		width="80"
+		height="16"
+		groupid="0"
+	}
+	textix="number PTS"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="112"
+		y="520"
+		width="80"
+		height="15"
+		groupid="0"
+	}
+	textix="number PPS"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="227"
+		y="520"
+		width="80"
+		height="15"
+		groupid="0"
+	}
+	textix="number PTE"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="214"
+		y="417"
+		width="138"
+		height="15"
+		groupid="0"
+	}
+	textix="Interrup Rate (Hz)"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"line" {
+	object {
+		x="0"
+		y="381"
+		width="677"
+		height="0"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="0"
+		y="381"
+	}
+	point[1] {
+		x="677"
+		y="381"
+	}
+	orgpoint[0] {
+		x="0"
+		y="-1"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="-1"
+	}
+}
+"text" {
+	object {
+		x="7"
+		y="382"
+		width="198"
+		height="37"
+		groupid="0"
+	}
+	textix="GTR Statistics"
+	align="horiz. left"
+}
+"line" {
+	object {
+		x="378"
+		y="444"
+		width="0"
+		height="0"
+		groupid="0"
+	}
+	npoints="0"
+}
+"line" {
+	object {
+		x="467"
+		y="381"
+		width="0"
+		height="206"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="467"
+		y="381"
+	}
+	point[1] {
+		x="467"
+		y="587"
+	}
+	orgpoint[0] {
+		x="-1"
+		y="0"
+	}
+	orgpoint[1] {
+		x="-1"
+		y="999"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="498"
+		y="397"
+		width="98"
+		height="15"
+		groupid="0"
+	}
+	textix="Waveforms"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="495"
+		y="450"
+		width="166"
+		height="15"
+		groupid="0"
+	}
+	textix="(will acquire card 3 only)"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="6"
+		style="solid"
+		fill="outline"
+		width="3"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="1"
+			rulecolorbg="1"
+			chan="$(SYS):$(SUB):C$(CARD):MODU.SEVR"
+			rulechan[0] = "$(SYS):$(SUB):C$(CARD):MODU.SEVR"
+			rulechan[1] = "$(SYS):$(SUB):C$(CARD):MODU.SEVR"
+			rulechan[2] = "$(SYS):$(SUB):C$(CARD):MODU.SEVR"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="STN=$(SYS),NAME=$(SUB):C$(CARD):MODU"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="152"
+		y="294"
+		width="295"
+		height="19"
+		groupid="4"
+	}
+}
+"text update" {
+	object {
+		x="150"
+		y="80"
+		width="300"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.DESC"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="150"
+		y="111"
+		width="114"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.SEVR"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="150"
+		y="96"
+		width="114"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.SCAN"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"message button" {
+	object {
+		x="149"
+		y="332"
+		width="114"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.PROC"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="Update"
+	pressed_label="Update"
+	press_msg="1"
+	release_msg=""
+}
+"text update" {
+	object {
+		x="150"
+		y="163"
+		width="120"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.IVEC"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="430"
+		y="231"
+		width="120"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.CSIZ"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="150"
+		y="186"
+		width="120"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.ILEV"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="150"
+		y="209"
+		width="120"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.AMOD"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="430"
+		y="208"
+		width="120"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.DSIZ"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="150"
+		y="232"
+		width="120"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.ADDR"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="150"
+		y="255"
+		width="120"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.MID"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="430"
+		y="254"
+		width="120"
+		height="12"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.MSTT"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="hexadecimal"
+}
+"text update" {
+	object {
+		x="179"
+		y="296"
+		width="266"
+		height="16"
+		groupid="4"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.VAL"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="7"
+		y="28"
+		width="263"
+		height="23"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):$(SUB):C$(CARD):MODU.DESC"
+		clr="0"
+		bclr="11"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"menu" {
+	object {
+		x="8"
+		y="435"
+		width="90"
+		height="28"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):GTR:C$(CARD):arm"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	menu_title=""
+}
+"menu" {
+	object {
+		x="112"
+		y="435"
+		width="90"
+		height="28"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):GTR:C$(CARD):autoRestart"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	menu_title=""
+}
+"toggle button" {
+	object {
+		x="351"
+		y="436"
+		width="90"
+		height="28"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):GTR:C$(CARD):softTrigger"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	zero_label="soft trigger"
+	one_label="Soft Trigger"
+}
+"menu" {
+	object {
+		x="7"
+		y="485"
+		width="90"
+		height="28"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):GTR:C$(CARD):clock"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	menu_title=""
+}
+"menu" {
+	object {
+		x="112"
+		y="485"
+		width="90"
+		height="28"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):GTR:C$(CARD):trigger"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	menu_title=""
+}
+"menu" {
+	object {
+		x="227"
+		y="485"
+		width="90"
+		height="28"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):GTR:C$(CARD):multiEvent"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	menu_title=""
+}
+"text entry" {
+	object {
+		x="7"
+		y="540"
+		width="90"
+		height="28"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):GTR:C$(CARD):numberPTS"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="112"
+		y="540"
+		width="90"
+		height="28"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):GTR:C$(CARD):numberPPS"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="227"
+		y="540"
+		width="90"
+		height="28"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):GTR:C$(CARD):numberPTE"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text update" {
+	object {
+		x="229"
+		y="435"
+		width="90"
+		height="28"
+		groupid="0"
+	}
+	monitor {
+		chan="$(SYS):GTR:C$(CARD):perSecond"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. left"
+	format="decimal"
+}
+"message button" {
+	object {
+		x="498"
+		y="420"
+		width="140"
+		height="27"
+		groupid="0"
+	}
+	control {
+		chan="$(SYS):SISDTZ:ACQCTRL_3.PROC"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule="rf_ilck"
+		clrargs=""
+		rulecolorbg="1"
+		rulecolorfg="1"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="Acquire"
+	pressed_label="Acquiring..."
+	press_msg="0"
+	release_msg=""
+}
+"related display" {
+	object {
+		x="599"
+		y="29"
+		width="75"
+		height="26"
+		groupid="0"
+	}
+	selfkill="off"
+	display[0] {
+		label="$(SUB) Status Help"
+		name="dm_help tarf/index"
+		args=""
+	}
+	display[1] {
+		label=""
+		name=""
+		args=""
+	}
+	display[2] {
+		label=""
+		name=""
+		args=""
+	}
+	display[3] {
+		label=""
+		name=""
+		args=""
+	}
+	display[4] {
+		label=""
+		name=""
+		args=""
+	}
+	display[5] {
+		label=""
+		name=""
+		args=""
+	}
+	display[6] {
+		label=""
+		name=""
+		args=""
+	}
+	display[7] {
+		label=""
+		name=""
+		args=""
+	}
+	display[8] {
+		label=""
+		name=""
+		args=""
+	}
+	display[9] {
+		label=""
+		name=""
+		args=""
+	}
+	display[10] {
+		label=""
+		name=""
+		args=""
+	}
+	display[11] {
+		label=""
+		name=""
+		args=""
+	}
+	display[12] {
+		label=""
+		name=""
+		args=""
+	}
+	display[13] {
+		label=""
+		name=""
+		args=""
+	}
+	display[14] {
+		label=""
+		name=""
+		args=""
+	}
+	display[15] {
+		label=""
+		name=""
+		args=""
+	}
+	display[16] {
+		label=""
+		name=""
+		args=""
+	}
+	display[17] {
+		label=""
+		name=""
+		args=""
+	}
+	display[18] {
+		label=""
+		name=""
+		args=""
+	}
+	display[19] {
+		label=""
+		name=""
+		args=""
+	}
+	display[20] {
+		label=""
+		name=""
+		args=""
+	}
+	display[21] {
+		label=""
+		name=""
+		args=""
+	}
+	display[22] {
+		label=""
+		name=""
+		args=""
+	}
+	display[23] {
+		label=""
+		name=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="Help"
+	decorate="outward"
+}
+"execute script" {
+	object {
+		x="496"
+		y="482"
+		width="118"
+		height="26"
+		groupid="0"
+	}
+	script[0] {
+		label="Chan 0 - 3 Plots"
+		path="rfdm2k pack_dm2k_dtiz STN=$(SYS),M=$(CARD),C1=0,C2=1,C3=2,C4=3"
+		args=""
+	}
+	script[1] {
+		label=""
+		path=""
+		args=""
+	}
+	script[2] {
+		label=""
+		path=""
+		args=""
+	}
+	script[3] {
+		label=""
+		path=""
+		args=""
+	}
+	script[4] {
+		label=""
+		path=""
+		args=""
+	}
+	script[5] {
+		label=""
+		path=""
+		args=""
+	}
+	script[6] {
+		label=""
+		path=""
+		args=""
+	}
+	script[7] {
+		label=""
+		path=""
+		args=""
+	}
+	script[8] {
+		label=""
+		path=""
+		args=""
+	}
+	script[9] {
+		label=""
+		path=""
+		args=""
+	}
+	script[10] {
+		label=""
+		path=""
+		args=""
+	}
+	script[11] {
+		label=""
+		path=""
+		args=""
+	}
+	script[12] {
+		label=""
+		path=""
+		args=""
+	}
+	script[13] {
+		label=""
+		path=""
+		args=""
+	}
+	script[14] {
+		label=""
+		path=""
+		args=""
+	}
+	script[15] {
+		label=""
+		path=""
+		args=""
+	}
+	script[16] {
+		label=""
+		path=""
+		args=""
+	}
+	script[17] {
+		label=""
+		path=""
+		args=""
+	}
+	script[18] {
+		label=""
+		path=""
+		args=""
+	}
+	script[19] {
+		label=""
+		path=""
+		args=""
+	}
+	script[20] {
+		label=""
+		path=""
+		args=""
+	}
+	script[21] {
+		label=""
+		path=""
+		args=""
+	}
+	script[22] {
+		label=""
+		path=""
+		args=""
+	}
+	script[23] {
+		label=""
+		path=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="Chan 0 - 3 Plots"
+	decorate="outward"
+}
+"execute script" {
+	object {
+		x="497"
+		y="523"
+		width="118"
+		height="26"
+		groupid="0"
+	}
+	script[0] {
+		label="Chan 4 - 7 Plots"
+		path="rfdm2k pack_dm2k_dtiz STN=$(SYS),M=$(CARD),C1=4,C2=5,C3=6,C4=7"
+		args=""
+	}
+	script[1] {
+		label=""
+		path=""
+		args=""
+	}
+	script[2] {
+		label=""
+		path=""
+		args=""
+	}
+	script[3] {
+		label=""
+		path=""
+		args=""
+	}
+	script[4] {
+		label=""
+		path=""
+		args=""
+	}
+	script[5] {
+		label=""
+		path=""
+		args=""
+	}
+	script[6] {
+		label=""
+		path=""
+		args=""
+	}
+	script[7] {
+		label=""
+		path=""
+		args=""
+	}
+	script[8] {
+		label=""
+		path=""
+		args=""
+	}
+	script[9] {
+		label=""
+		path=""
+		args=""
+	}
+	script[10] {
+		label=""
+		path=""
+		args=""
+	}
+	script[11] {
+		label=""
+		path=""
+		args=""
+	}
+	script[12] {
+		label=""
+		path=""
+		args=""
+	}
+	script[13] {
+		label=""
+		path=""
+		args=""
+	}
+	script[14] {
+		label=""
+		path=""
+		args=""
+	}
+	script[15] {
+		label=""
+		path=""
+		args=""
+	}
+	script[16] {
+		label=""
+		path=""
+		args=""
+	}
+	script[17] {
+		label=""
+		path=""
+		args=""
+	}
+	script[18] {
+		label=""
+		path=""
+		args=""
+	}
+	script[19] {
+		label=""
+		path=""
+		args=""
+	}
+	script[20] {
+		label=""
+		path=""
+		args=""
+	}
+	script[21] {
+		label=""
+		path=""
+		args=""
+	}
+	script[22] {
+		label=""
+		path=""
+		args=""
+	}
+	script[23] {
+		label=""
+		path=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="Chan 4 - 7 Plots"
+	decorate="outward"
+}
+"kill display" {
+	object {
+		x="599"
+		y="0"
+		width="75"
+		height="28"
+		groupid="0"
+	}
+	label="Exit"
+	clr="1"
+	bclr="20"
+	decorate="outward"
+}
+"print display" {
+	object {
+		x="516"
+		y="0"
+		width="75"
+		height="28"
+		groupid="0"
+	}
+	label="Print"
+	clr="1"
+	bclr="20"
+	decorate="outward"
+}

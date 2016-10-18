@@ -1,0 +1,517 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 986
+y 639
+w 215
+h 310
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 39
+w 49
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "$(PV)"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 140
+y 4
+w 68
+h 30
+fgColor index 13
+bgColor index 64
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "new century schoolbook-medium-r-14.0"
+3d
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 7
+y 67
+w 191
+h 16
+controlPv "TRS3:$(PV):VAL.DESC"
+font "new century schoolbook-medium-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 275
+w 142
+h 29
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 71
+y 275
+w 78
+h 29
+controlPv "TRS3:$(PV):GAIN"
+displayMode "decimal"
+precision 3
+fgColor index 13
+bgColor index 2
+fill
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 281
+w 40
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "GAIN"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 202
+w 142
+h 29
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 71
+y 202
+w 78
+h 29
+controlPv "TRS3:$(PV):VAL"
+displayMode "decimal"
+precision 3
+fgColor index 13
+bgColor index 2
+fill
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 208
+w 30
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "VAL"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 128
+w 142
+h 29
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 69
+y 128
+w 80
+h 29
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 69
+y 128
+w 80
+h 29
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:$(PV):ILCK"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 69
+y 128
+w 78
+h 29
+controlPv "TRS3:$(PV):ILCK"
+fgColor index 13
+bgColor index 2
+colorPv "TRS3:$(PV):ILCK"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 134
+w 38
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ILCK"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 165
+w 142
+h 29
+
+beginGroup
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 71
+y 165
+w 78
+h 29
+controlPv "TRS3:$(PV):POSLIM"
+displayMode "decimal"
+precision 3
+fgColor index 13
+bgColor index 2
+fill
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 171
+w 61
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "POSLIM"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 91
+w 80
+h 29
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 91
+w 80
+h 29
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:$(PV):SUMY"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 13
+y 97
+w 68
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Summary"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 91
+w 80
+h 29
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 91
+w 80
+h 29
+lineColor index 13
+fill
+fillColor index 15
+fillAlarm
+alarmPv "TRS3:$(PV):VAL:OOT"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 103
+y 97
+w 68
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "OutOfTol?"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 239
+w 143
+h 29
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 245
+w 66
+h 16
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "NEGLIM"
+}
+autoSize
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 72
+y 239
+w 78
+h 29
+controlPv "TRS3:$(PV):NEGLIM"
+displayMode "decimal"
+precision 3
+fgColor index 13
+bgColor index 2
+fill
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

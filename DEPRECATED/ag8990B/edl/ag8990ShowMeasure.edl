@@ -1,0 +1,154 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 494
+y 303
+w 572
+h 486
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 572
+h 36
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 8
+w 151
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Measurement Results"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 504
+y 4
+w 60
+h 28
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 76
+w 552
+h 400
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,Channel1,Channel2,Channel3,Channel4"
+center
+sizeOfs 5
+numDsps 4
+displayFileName {
+  0 "ag8990ShowMChan.edl"
+  1 "ag8990ShowMChan.edl"
+  2 "ag8990ShowMChan.edl"
+  3 "ag8990ShowMChan.edl"
+}
+symbols {
+  0 "N=1,TP=0"
+  1 "N=2,TP=1"
+  2 "N=3,TP=1"
+  3 "N=4,TP=0"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 52
+w 364
+h 24
+fgColor index 13
+bgColor index 5
+selectColor index 2
+inconsistentColor index 5
+topShadowColor index 5
+botShadowColor index 5
+controlPv "LOC\\$(!W)show"
+font "courier-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 444
+y 44
+w 108
+h 28
+fgColor index 13
+bgColor index 50
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):BO:MEASURE.SCAN"
+font "courier-medium-r-12.0"
+endObjectProperties
+

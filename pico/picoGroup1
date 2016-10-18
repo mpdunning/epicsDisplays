@@ -1,0 +1,20 @@
+# The macro text is of the form:
+#  <title>,<area>,<mh>,<md>,<mv>
+# where
+#  <title> is text identifying the function of this group, it is displayed
+#             in the main window title area and in the title area of
+#		the child dialogs.
+#  <area> is the preemble of the PV names
+#  <mh>   is horizontal motor identification name (either m1 or m3)
+#  <md>   is diagonal motor identification name (m2)
+#  <mv>   is virtical motor identification name (either m1 or m3)
+# Note, motor direction is controlled in the substitutions file,
+# where DIR can be Pos or Neg for Normal or Reverse.
+#----------------------------------------------------------------
+title="Echo7 Pipe 2 Mirror"
+area=ESB:PICO
+motors="m3,m2,m1"
+macro="$title,$area,$motors"
+path=/afs/slac/g/testfac/tools/display/pico/ui/dialog
+
+$path/pico -m "$macro"

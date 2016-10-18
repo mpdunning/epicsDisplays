@@ -1,0 +1,111 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 209
+y 51
+w 580
+h 330
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 4
+y 4
+w 168
+h 16
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Results of Fit"
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 8
+y 28
+w 560
+h 292
+# Appearance
+autoScaleBothDirections
+yLabel "counts"
+fgColor index 13
+bgColor index 2
+gridColor index 13
+font "courier-medium-r-12.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 1
+# X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xMax 1
+xLabelIntervals 8
+xShowLabelGrid
+# Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+yMax 1
+yShowLabelGrid
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 2
+xPv {
+  0 "$(P):WF:X:DATA"
+  1 "$(P):WF:X:DATA"
+}
+yPv {
+  0 "$(P):WF:Y:DATA"
+  1 "$(P):WF:Y:FIT"
+}
+nPv {
+  0 "$(P):WF:X:DATA.NORD"
+  1 "$(P):WF:X:DATA.NORD"
+}
+plotStyle {
+  0 "point"
+}
+plotSymbolType {
+  0 "circle"
+}
+xSigned {
+  0 1
+  1 1
+}
+plotColor {
+  0 index 21
+  1 index 26
+}
+endObjectProperties
+

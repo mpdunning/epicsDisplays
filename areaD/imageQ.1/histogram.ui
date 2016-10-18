@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HistoDialog</class>
+ <widget class="QDialog" name="HistoDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>397</width>
+    <height>296</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ClosePB">
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="CAPlot" name="caplot">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="autoScaleX">
+        <bool>false</bool>
+       </property>
+       <property name="gridEnableMajorX" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="xMax">
+        <double>255.000000000000000</double>
+       </property>
+       <property name="nTicksMajorX">
+        <number>5</number>
+       </property>
+       <property name="gridEnableMajorY" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="gridMajorColor" stdset="0">
+        <color>
+         <red>80</red>
+         <green>80</green>
+         <blue>90</blue>
+        </color>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="backgroundColor" stdset="0">
+        <color>
+         <red>35</red>
+         <green>45</green>
+         <blue>70</blue>
+        </color>
+       </property>
+       <property name="trace2On">
+        <bool>false</bool>
+       </property>
+       <property name="trace3On">
+        <bool>false</bool>
+       </property>
+       <property name="trace4On">
+        <bool>false</bool>
+       </property>
+       <property name="traceColor1">
+        <color>
+         <red>255</red>
+         <green>210</green>
+         <blue>100</blue>
+        </color>
+       </property>
+       <property name="variable1" stdset="0">
+        <string>$(P):Stats1:Histogram_RBV</string>
+       </property>
+       <property name="variable4" stdset="0">
+        <string/>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=CPS1</string>
+       </property>
+       <property name="displayAlarmState">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>APlot</class>
+   <extends>QFrame</extends>
+   <header>aplot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAPlot</class>
+   <extends>APlot</extends>
+   <header>caplot.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

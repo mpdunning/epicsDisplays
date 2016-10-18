@@ -1,0 +1,2985 @@
+4 0 0
+beginScreenProperties
+major 4
+minor 0
+release 0
+x 4
+y 90
+w 668
+h 421
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor rgb 0 0 0
+bgColor rgb 26880 26880 26880
+textColor rgb 0 0 0
+ctlFgColor1 rgb 64256 62208 18944
+ctlFgColor2 rgb 60928 46592 11008
+ctlBgColor1 rgb 52480 24832 0
+ctlBgColor2 rgb 65280 45056 65280
+topShadowColor rgb 44544 19968 48128
+botShadowColor rgb 13312 13056 34304
+snapToGrid
+gridSize 5
+endScreenProperties
+
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 5
+w 668
+h 26
+font "helvetica-medium-r-8.0"
+fgColor rgb 63744 55808 15360
+useDisplayBg
+value {
+ "Sensoray Model 518 Smart A/D Inputs"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 43
+w 648
+h 0
+lineColor rgb 65280 65280 65280
+fillColor rgb 65280 65280 65280
+lineWidth 0
+numPoints 2 {
+xPoints  {
+0 8
+1 656
+}
+yPoints  {
+0 43
+1 43
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 63
+w 648
+h 0
+lineColor rgb 65280 65280 65280
+fillColor rgb 65280 65280 65280
+lineWidth 0
+numPoints 2 {
+xPoints  {
+0 8
+1 656
+}
+yPoints  {
+0 63
+1 63
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 64
+w 0
+h 345
+lineColor rgb 65280 65280 65280
+fillColor rgb 65280 65280 65280
+lineWidth 0
+numPoints 2 {
+xPoints  {
+0 8
+1 8
+}
+yPoints  {
+0 64
+1 409
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 105
+w 121
+h 20
+controlPv "$(PV)ai01.VAL"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 89
+w 410
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 39168 65280 65280
+useDisplayBg
+value {
+ "$(PV)ai01"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 409
+w 648
+h 0
+lineColor rgb 65280 65280 65280
+fillColor rgb 65280 65280 65280
+lineWidth 0
+numPoints 2 {
+xPoints  {
+0 8
+1 656
+}
+yPoints  {
+0 409
+1 409
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 533
+y 105
+w 40
+h 20
+controlPv "$(PV)ai01.EGU"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format "string"
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 656
+y 64
+w 0
+h 345
+lineColor rgb 65280 65280 65280
+fillColor rgb 65280 65280 65280
+lineWidth 0
+numPoints 2 {
+xPoints  {
+0 656
+1 656
+}
+yPoints  {
+0 64
+1 409
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 105
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai01:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 105
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai01:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 105
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai01:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 145
+w 121
+h 20
+controlPv "$(PV)ai02.VAL"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 129
+w 410
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 39168 65280 65280
+useDisplayBg
+value {
+ "$(PV)ai02"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 533
+y 145
+w 40
+h 20
+controlPv "$(PV)ai02.EGU"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format "string"
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 145
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai02:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 145
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai02:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 145
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai02:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 185
+w 121
+h 20
+controlPv "$(PV)ai03.VAL"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 169
+w 410
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 39168 65280 65280
+useDisplayBg
+value {
+ "$(PV)ai03"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 533
+y 185
+w 40
+h 20
+controlPv "$(PV)ai03.EGU"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format "string"
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 185
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai03:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 185
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai03:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 185
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai03:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 225
+w 121
+h 20
+controlPv "$(PV)ai04.VAL"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 209
+w 410
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 39168 65280 65280
+useDisplayBg
+value {
+ "$(PV)ai04"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 533
+y 225
+w 40
+h 20
+controlPv "$(PV)ai04.EGU"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format "string"
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 225
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai04:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 225
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai04:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 225
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai04:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 265
+w 121
+h 20
+controlPv "$(PV)ai05.VAL"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 249
+w 410
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 39168 65280 65280
+useDisplayBg
+value {
+ "$(PV)ai05"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 533
+y 265
+w 40
+h 20
+controlPv "$(PV)ai05.EGU"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format "string"
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 265
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai05:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 265
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai05:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 265
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai05:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 305
+w 121
+h 20
+controlPv "$(PV)ai06.VAL"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 289
+w 410
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 39168 65280 65280
+useDisplayBg
+value {
+ "$(PV)ai06"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 533
+y 305
+w 40
+h 20
+controlPv "$(PV)ai06.EGU"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format "string"
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 305
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai06:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 305
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai06:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 305
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai06:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 345
+w 121
+h 20
+controlPv "$(PV)ai07.VAL"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 329
+w 410
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 39168 65280 65280
+useDisplayBg
+value {
+ "$(PV)ai07"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 533
+y 345
+w 40
+h 20
+controlPv "$(PV)ai07.EGU"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format "string"
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 345
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai07:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 345
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai07:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 345
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai07:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 385
+w 121
+h 20
+controlPv "$(PV)ai08.VAL"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 369
+w 410
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 39168 65280 65280
+useDisplayBg
+value {
+ "$(PV)ai08"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 533
+y 385
+w 40
+h 20
+controlPv "$(PV)ai08.EGU"
+font "helvetica-medium-r-8.0"
+fgColor rgb 20992 55808 15104
+bgColor rgb 26880 26880 26880
+autoHeight
+format "string"
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 385
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai08:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 385
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai08:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 385
+w 72
+h 20
+
+beginGroup
+
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai08:type)"
+visInvert
+visMin 0
+visMax 1
+visInvert
+endObjectProperties
+
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 105
+w 226
+h 20
+controlPv "$(PV)ai01.DESC"
+font "helvetica-medium-r-8.0"
+fgColor rgb 64256 62208 18944
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 145
+w 226
+h 20
+controlPv "$(PV)ai02.DESC"
+font "helvetica-medium-r-8.0"
+fgColor rgb 64256 62208 18944
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 185
+w 226
+h 20
+controlPv "$(PV)ai03.DESC"
+font "helvetica-medium-r-8.0"
+fgColor rgb 64256 62208 18944
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 225
+w 226
+h 20
+controlPv "$(PV)ai04.DESC"
+font "helvetica-medium-r-8.0"
+fgColor rgb 64256 62208 18944
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 265
+w 226
+h 20
+controlPv "$(PV)ai05.DESC"
+font "helvetica-medium-r-8.0"
+fgColor rgb 64256 62208 18944
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 305
+w 226
+h 20
+controlPv "$(PV)ai06.DESC"
+font "helvetica-medium-r-8.0"
+fgColor rgb 64256 62208 18944
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 345
+w 226
+h 20
+controlPv "$(PV)ai07.DESC"
+font "helvetica-medium-r-8.0"
+fgColor rgb 64256 62208 18944
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 385
+w 226
+h 20
+controlPv "$(PV)ai08.DESC"
+font "helvetica-medium-r-8.0"
+fgColor rgb 64256 62208 18944
+bgColor rgb 26880 26880 26880
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 105
+w 84
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai01.SCAN"
+indicatorPv "$(PV)ai01.SCAN"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 105
+w 70
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai01:dis"
+indicatorPv "$(PV)ai01:dis"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 105
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 105
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai01"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai01:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 105
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 105
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai01"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai01:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 105
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 105
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickVoltage.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai01"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai01:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 145
+w 84
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai02.SCAN"
+indicatorPv "$(PV)ai02.SCAN"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 145
+w 70
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai02:dis"
+indicatorPv "$(PV)ai02:dis"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 145
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 145
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai02"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai02:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 145
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 145
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai02"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai02:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 145
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 145
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickVoltage.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai02"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai02:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 185
+w 84
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai03.SCAN"
+indicatorPv "$(PV)ai03.SCAN"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 185
+w 70
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai03:dis"
+indicatorPv "$(PV)ai03:dis"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 185
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 185
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai03"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai03:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 185
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 185
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai03"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai03:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 185
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 185
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickVoltage.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai03"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai03:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 225
+w 84
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai04.SCAN"
+indicatorPv "$(PV)ai04.SCAN"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 225
+w 70
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai04:dis"
+indicatorPv "$(PV)ai04:dis"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 225
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 225
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai04"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai04:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 225
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 225
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai04"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai04:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 225
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 225
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickVoltage.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai04"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai04:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 265
+w 84
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai05.SCAN"
+indicatorPv "$(PV)ai05.SCAN"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 265
+w 70
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai05:dis"
+indicatorPv "$(PV)ai05:dis"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 265
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 265
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai05"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai05:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 265
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 265
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai05"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai05:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 265
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 265
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickVoltage.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai05"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai05:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 305
+w 84
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai06.SCAN"
+indicatorPv "$(PV)ai06.SCAN"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 305
+w 70
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai06:dis"
+indicatorPv "$(PV)ai06:dis"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 305
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 305
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai06"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai06:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 305
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 305
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai06"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai06:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 305
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 305
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickVoltage.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai06"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai06:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 345
+w 84
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai07.SCAN"
+indicatorPv "$(PV)ai07.SCAN"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 345
+w 70
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai07:dis"
+indicatorPv "$(PV)ai07:dis"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 345
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 345
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai07"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai07:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 345
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 345
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai07"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai07:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 345
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 345
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickVoltage.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai07"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai07:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 86
+y 385
+w 84
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai08.SCAN"
+indicatorPv "$(PV)ai08.SCAN"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 12
+y 385
+w 70
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(PV)ai08:dis"
+indicatorPv "$(PV)ai08:dis"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 385
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 385
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai08"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==3)\}($(PV)ai08:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 385
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 385
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickTemperature.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai08"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==4)\}($(PV)ai08:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 385
+w 72
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 385
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Details"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickVoltage.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)ai08"
+}
+endObjectProperties
+
+endGroup
+
+visPv "CALC\\\{(A==1)\}($(PV)ai08:type)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 581
+y 69
+w 72
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Config"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickSENconfig.edl
+}
+menuLabel {
+  0 
+}
+symbols {
+  0  "PV=$(PV)"
+}
+endObjectProperties
+

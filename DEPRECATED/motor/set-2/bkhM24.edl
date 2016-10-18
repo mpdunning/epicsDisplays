@@ -1,0 +1,137 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 682
+y 77
+w 600
+h 468
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 598
+h 36
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 528
+y 4
+w 56
+h 28
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 68
+w 584
+h 392
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,Mot-1,Mot-2,3132,Hidden,BK9000"
+center
+sizeOfs 5
+numDsps 5
+displayFileName {
+  0 "bkhMMotor.edl"
+  1 "bkhMMotor.edl"
+  2 "bkhM3132.edl"
+  3 "bkhMHidden.edl"
+  4 "bkhM9000.edl"
+}
+symbols {
+  0 "T=2531,M=24,CH=1,ADC=3132"
+  1 "T=2541,M=24,CH=2,ADC=3132"
+  2 "M1=3132"
+  3 "ADC=3132,DAC=4132"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 44
+w 460
+h 24
+fgColor index 13
+bgColor index 5
+selectColor index 1
+inconsistentColor index 8
+topShadowColor index 5
+botShadowColor index 5
+controlPv "LOC\\$(!W)show"
+font "courier-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 16
+y 8
+w 153
+h 15
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ESTB (ESA) ($(D))"
+}
+autoSize
+endObjectProperties
+

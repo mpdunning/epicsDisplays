@@ -1,0 +1,320 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1128
+y 113
+w 300
+h 224
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 4
+y 112
+w 288
+h 104
+lineColor index 13
+fill
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 300
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 16
+y 12
+w 100
+h 16
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Station 3 Main"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 236
+y 4
+w 60
+h 32
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-bold-r-18.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 8
+y 48
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "PLC"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "trs3PlcMain.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 152
+y 48
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Matlab GUI"
+numCmds 1
+command {
+  0 "$SCRIPT/matlab/startMatlab.sh runst3"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 8
+y 80
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "RF Power Meter"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "xband_ppm_main.edl"
+}
+symbols {
+  0 "IOC=TRS3,SC=2PPM,P1=2PPM:CHAN1,P2=2PPM:CHAN4"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 152
+y 80
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "Vacuum"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "st3Vac.edl"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 152
+y 184
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "IPAD 033"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "ipad_nlcta.edl"
+}
+symbols {
+  0 "TITLE=Station 3,acsw=ESB:ACSW4,plug=5,PAD_PRIM=EIOC,PAD_LOCA=ESB,PAD_UNIT=PAD033,PAD=TST,CH0NAME=CH0,CH1NAME=CH1,CH2NAME=CH2,CH3NAME=CH3,acswhost=sioc-esb-acs4"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 8
+y 120
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "PAC 03"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "pac_nlcta.edl"
+}
+symbols {
+  0 "TITLE=Station 3,PAC=L1X,PAC_PRIM=ESB,PAC_LOCA=XBSTN3,PAC_UNIT=180"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 152
+y 120
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "PAD 031"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "pad_nlcta.edl"
+}
+symbols {
+  0 "TITLE=Station 3,PAD_PRIM=ESB,PAD_LOCA=XBSTN3,PAD_UNIT=K5,PAD=031,CH0NAME=CH0,CH1NAME=CH1,CH2NAME=CH2,CH3NAME=CH3,CH4NAME=CH4,CH5NAME=CH5,CH6NAME=CH6,CH7NAME=CH7"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 152
+y 152
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "PAD 032"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "pad_nlcta.edl"
+}
+symbols {
+  0 "TITLE=Station 3,PAD_PRIM=ESB,PAD_LOCA=XBSTN3,PAD_UNIT=K5,PAD=032,CH0NAME=CH0,CH1NAME=CH1,CH2NAME=CH2,CH3NAME=CH3,CH4NAME=CH4,CH5NAME=CH5,CH6NAME=CH6,CH7NAME=CH7"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 8
+y 152
+w 136
+h 24
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "PAC 03 Calibration"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "pac_cal_nlcta.edl"
+}
+symbols {
+  0 "TITLE=Station 3,PAC=L1X,PAC_PRIM=ESB,PAC_LOCA=XBSTN3,PAC_UNIT=180"
+}
+endObjectProperties
+

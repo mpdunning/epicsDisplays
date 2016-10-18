@@ -1,0 +1,465 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 431
+y 66
+w 614
+h 64
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 5
+textColor index 14
+ctlFgColor1 index 35
+ctlFgColor2 index 40
+ctlBgColor1 index 39
+ctlBgColor2 index 68
+topShadowColor index 72
+botShadowColor index 12
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 572
+h 60
+lineColor index 14
+fillColor index 14
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 124
+y 16
+w 1
+h 40
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 4
+w 100
+h 20
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 27
+bgColor index 2
+value {
+  "Plugins"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 492
+y 4
+w 76
+h 24
+fgColor index 29
+bgColor index 50
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-bold-r-12.0"
+buttonLabel "ImageJ"
+numCmds 1
+command {
+  0 "export CAMPVPREFIX=`echo \"$(P)\" | sed s'/:$//'`;cd /afs/slac/g/testfac/tools/ImageJ; ./runAD"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 324
+y 8
+w 71
+h 44
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 325
+y 32
+w 71
+h 20
+fgColor index 14
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "gcNDOverlay.edl"
+}
+symbols {
+  0 " P=$(P), R=Over1:"
+}
+replaceSymbols {
+  0 1
+}
+icon
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 340
+y 8
+w 44
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Overlay"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 252
+y 8
+w 64
+h 44
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 252
+y 32
+w 64
+h 20
+fgColor index 14
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "gcNDFileTIFF.edl"
+}
+menuLabel {
+  0 "Image #1"
+}
+symbols {
+  0 " P=$(P), R=TIFF1:"
+}
+replaceSymbols {
+  0 1
+}
+icon
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 264
+y 8
+w 40
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "TIFF"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 180
+y 8
+w 64
+h 44
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 180
+y 32
+w 64
+h 20
+fgColor index 14
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "gcNDStdArrays.edl"
+}
+menuLabel {
+  0 "Image #1"
+}
+symbols {
+  0 " P=$(P), R=image1:"
+}
+replaceSymbols {
+  0 1
+}
+icon
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 192
+y 8
+w 40
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Image"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 404
+y 8
+w 71
+h 44
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 405
+y 32
+w 71
+h 20
+fgColor index 14
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-10.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "gcNDProcess.edl"
+}
+symbols {
+  0 " P=$(P), R=Proc1:"
+}
+replaceSymbols {
+  0 1
+}
+icon
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 420
+y 8
+w 44
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Process"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 492
+y 32
+w 76
+h 24
+fgColor index 14
+bgColor index 54
+topShadowColor index 72
+botShadowColor index 12
+font "helvetica-bold-r-12.0"
+buttonLabel "mpFit"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "mpFitADMain.edl"
+}
+symbols {
+  0 "P=$(P),PORT=MPFT"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 108
+y 32
+w 64
+h 20
+fgColor index 14
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 12
+font "helvetica-medium-r-12.0"
+numPvs 4
+numDsps 6
+displayFileName {
+  0 "gcNDStats.edl"
+  1 "gcNDStats.edl"
+  2 "gcNDStats.edl"
+  3 "gcNDStats.edl"
+  4 "gcNDStats.edl"
+  5 "gcNDStats5.edl"
+}
+menuLabel {
+  0 "Statistics #1"
+  1 "Statistics #2"
+  2 "Statistics #3"
+  3 "Statistics #4"
+  4 "Statistics #5"
+  5 "Statistics 1-5"
+}
+symbols {
+  0 " P=$(P), R=Stats1:"
+  1 " P=$(P), R=Stats2:"
+  2 " P=$(P), R=Stats3:"
+  3 " P=$(P), R=Stats4:"
+  4 " P=$(P), R=Stats5:"
+  5 " P=$(P), R1=Stats1:,R2=Stats2:,R3=Stats3:,R4=Stats4:,R5=Stats5:"
+}
+replaceSymbols {
+  0 1
+  1 1
+  2 1
+  3 1
+  4 1
+  5 1
+}
+icon
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 112
+y 8
+w 56
+h 20
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Statistics"
+}
+endObjectProperties
+

@@ -1,0 +1,244 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 917
+y 51
+w 460
+h 460
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 6
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 68
+ctlFgColor2 index 55
+ctlBgColor1 index 2
+ctlBgColor2 index 5
+topShadowColor index 1
+botShadowColor index 13
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 460
+h 44
+lineColor index 1
+fill
+fillColor index 63
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 24
+w 124
+h 16
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 63
+value {
+  "($(P):$(T)-$(M))"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 0
+y 0
+w 10
+h 10
+font "helvetica-medium-r-8.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 180
+y 24
+w 32
+h 16
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 63
+value {
+  "EGU:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x -1
+y 532
+w 110
+h 20
+font "helvetica-medium-r-8.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Resolution"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 4
+y 4
+w 108
+h 16
+controlPv "$(P):LI:$(T)-$(M):DATA.DESC"
+font "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 216
+y 24
+w 64
+h 16
+controlPv "$(P):AO:$(T)-$(M):CH1:SET:POS:MM.EGU"
+font "helvetica-bold-r-12.0"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 404
+y 8
+w 48
+h 28
+fgColor index 55
+bgColor index 47
+topShadowColor index 72
+botShadowColor index 12
+label "EXIT"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 80
+w 444
+h 372
+fgColor index 14
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,Drive,Dynamics,Resol,Status,Calib,Servo"
+center
+sizeOfs 5
+numDsps 6
+displayFileName {
+  0 "motorx-ctrl1.edl"
+  1 "motorx-ctrl2.edl"
+  2 "motorx-ctrl3.edl"
+  3 "motorx-ctrl4.edl"
+  4 "motorx-ctrl5.edl"
+  5 "motorx-ctrl6.edl"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 52
+w 392
+h 28
+fgColor index 13
+bgColor index 6
+selectColor index 2
+inconsistentColor index 8
+topShadowColor index 6
+botShadowColor index 6
+controlPv "LOC\\$(!W)show"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 184
+y 4
+w 92
+h 16
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 2
+useDisplayBg
+value {
+  "KL$(T)"
+}
+endObjectProperties
+

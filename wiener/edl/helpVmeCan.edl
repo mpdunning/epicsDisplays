@@ -1,0 +1,126 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1095
+y 435
+w 450
+h 600
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 1
+w 448
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 391
+y 4
+w 54
+h 31
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 12
+label "Close"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 8
+w 193
+h 24
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Help for VME-CAN Screen"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 27
+y 66
+w 397
+h 434
+font "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 4
+useDisplayBg
+value {
+  "VME-CAN screen shows the state of the VME crate and allows"
+  "a few commands to control the VME system."
+  "A 16 bit status register is represented as 16 green lights arranged"
+  "vertically, with bit 0 at the bottom.  Normal pattern is that the bits"
+  "0-7 are bright green (on), the next 7 bits are dark green (off) and bit"
+  "15 is also light green."
+  "Three rectangular areas show the speed of fans, temperatures,"
+  "and voltages/currents.  Volt/Amps values should be:"
+  "  Chan   Value"
+  "     0    +5V"
+  "     1    +12V"
+  "     3    +3.3V"
+  "     5    -12V (displayed as positive)"
+  "All other channels should be close to 0."
+  ""
+  "In the Contorls group in the bottom right rectangle, one can change the"
+  "fan speeds, power the crate on or off, do a VME reset, and turn"
+  "on or off \"enable power trip on error\".  Four control bits are provided."
+  "These bits can be turned on (bright green) or off (dark green) with a"
+  "mouse click.  Pressing the \"Send\" button, sends the control bits pattern"
+  "to the VME crate.  Lets number the bits 0-3 with 0 at the bottom, then:"
+  "Action,   bits:    0    1     2   3"
+  "Power on         on  on   off  on"
+  "Power off         on  off   off  on"
+  "VME reset       off   off   on  on"
+  "Err trip enable  off   off   off  on"
+  "Err trip disabl   off   off   off  off"
+  "For the first three commands \"Err trip enable\" was assumed."
+  ""
+  "A related display button \"more...\" is used to pop up a disgnostic"
+  "screen, which is not of much interest to a casual user."
+}
+autoSize
+endObjectProperties
+

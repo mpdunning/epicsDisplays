@@ -1,0 +1,97 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 300
+y 51
+w 350
+h 300
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+endScreenProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 285
+y 7
+w 56
+h 24
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 12
+label "Close"
+font "helvetica-bold-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 39
+w 325
+h 238
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Five single shot buttons in the upper letf can be used to"
+  "request reading wave data from one all enabled channels."
+  "Below these are shown:"
+  "WF time: current, min, and max values for reading the"
+  "  waveform data for all enabled channels in seconds."
+  "Period is the effective time it takes the polling loop"
+  "  to complete one cycle, again in seconds."
+  "Rate is the inverse of Period (Hz)."
+  "pollTMO is the nominal timeout value in the polling loop."
+  "MsgQ is a Message Queue used to queue all requests."
+  ""
+  "\"Periodic update\" controls the scan rate of various"
+  "knobs and push buttons on the front panel of the"
+  "scope.  Periodic updates should be enabled to keep"
+  "track of changes made by an operaton on the front"
+  "panel of the scope.  Periodic updates steel \"cycles\""
+  "from the refresh of the waveform traces."
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 7
+w 167
+h 18
+font "helvetica-bold-r-14.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Debugging Commands"
+}
+endObjectProperties
+

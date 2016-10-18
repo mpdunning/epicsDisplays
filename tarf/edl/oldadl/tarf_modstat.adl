@@ -1,0 +1,1156 @@
+file {
+	name="tarf_modstat.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="0"
+	npc="143"
+	nstr="271"
+	ndynamic="16"
+	nplot="0"
+	nrd="0"
+	nes="1"
+	nkd="1"
+	npd="1"
+	npo="0"
+	object {
+		x="50"
+		y="400"
+		width="606"
+		height="270"
+	}
+	clr="1"
+	bclr="10"
+	nwords_dspy="7608"
+	nwords_sta="356"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="6310"
+	osta="5954"
+	odynamic="6310"
+	oplot="7426"
+	ord="7426"
+	oes="7426"
+	okd="7584"
+	opd="7596"
+	opo="7608"
+	opc="68"
+	ostr="2582"
+	ocmap="5954"
+	ocrules="5954"
+	style="solid"
+	fill="outline"
+	width="1"
+	clrmod="static"
+	vismod="static"
+	precision="-1"
+	clrrule="rf_ilck"
+	pv="TRS$(STN):AS:PROC:"
+	cmap="color.dl"
+	pixwid="1280"
+	pixht="993"
+	mmwid="320"
+	mmht="232"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="29"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="0"
+		y="0"
+		width="443"
+		height="57"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="0"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="25"
+		width="387"
+		height="30"
+		groupid="0"
+	}
+	textix="Modulator Status and Reset"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"line" {
+	object {
+		x="443"
+		y="56"
+		width="175"
+		height="0"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="443"
+		y="56"
+	}
+	point[1] {
+		x="617"
+		y="56"
+	}
+	orgpoint[0] {
+		x="0"
+		y="-1"
+	}
+	orgpoint[1] {
+		x="999"
+		y="-1"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="0"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="0"
+		width="352"
+		height="30"
+		groupid="0"
+	}
+	textix="Test Accelerator"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"text" {
+	object {
+		x="51"
+		y="62"
+		width="95"
+		height="18"
+		groupid="0"
+	}
+	textix="Station 1"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="356"
+		y="62"
+		width="95"
+		height="18"
+		groupid="0"
+	}
+	textix="Station 2"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="200"
+		y="93"
+		width="95"
+		height="18"
+		groupid="0"
+	}
+	textix="RF ILCK 1 STAT"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="504"
+		y="93"
+		width="95"
+		height="18"
+		groupid="0"
+	}
+	textix="RF ILCK 2 STAT"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="199"
+		y="149"
+		width="95"
+		height="18"
+		groupid="0"
+	}
+	textix="PS 1 STAT"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="199"
+		y="208"
+		width="95"
+		height="18"
+		groupid="0"
+	}
+	textix="PS 1 SUMY"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="504"
+		y="151"
+		width="95"
+		height="18"
+		groupid="0"
+	}
+	textix="PS 2 STAT"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="504"
+		y="207"
+		width="95"
+		height="18"
+		groupid="0"
+	}
+	textix="PS 2 SUMY"
+	align="horiz. left"
+}
+"text update" {
+	object {
+		x="199"
+		y="113"
+		width="95"
+		height="30"
+		groupid="0"
+	}
+	monitor {
+		chan="TA02:MISC:41:RF_SUMRY"
+		clr="12"
+		bclr="18"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="4"
+		rulecolorfg="4"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"message button" {
+	object {
+		x="11"
+		y="121"
+		width="175"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TA02:MISC:31:INTLOCK"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="RF Ilck Reset"
+	pressed_label="RF Ilck Reset"
+	press_msg="RESET"
+	release_msg=""
+}
+"message button" {
+	object {
+		x="11"
+		y="85"
+		width="175"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TA02:MISC:750:PLC_SOFT"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="RF Soft Reset"
+	pressed_label="RF Soft Reset"
+	press_msg="RESET"
+	release_msg=""
+}
+"message button" {
+	object {
+		x="316"
+		y="121"
+		width="175"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TA02:MISC:32:INTLOCK"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="RF Ilck Reset"
+	pressed_label="RF Ilck Reset"
+	press_msg="RESET"
+	release_msg=""
+}
+"message button" {
+	object {
+		x="316"
+		y="85"
+		width="175"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TA02:MISC:751:PLC_SOFT"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="RF Soft Reset"
+	pressed_label="RF Soft Reset"
+	press_msg="RESET"
+	release_msg=""
+}
+"message button" {
+	object {
+		x="11"
+		y="156"
+		width="175"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TA02:MISC:720:MODULATR"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="Mod HVPS Reset"
+	pressed_label="Mod HVPS Reset"
+	press_msg="RESET"
+	release_msg=""
+}
+"message button" {
+	object {
+		x="316"
+		y="156"
+		width="175"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TA02:MISC:32:MODULATR"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="Mod HVPS Reset"
+	pressed_label="Mod HVPS Reset"
+	press_msg="RESET"
+	release_msg=""
+}
+"message button" {
+	object {
+		x="11"
+		y="192"
+		width="175"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TA02:MISC:720:MOD_HVPS"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="Mod HVPS On"
+	pressed_label="Mod HVPS On"
+	press_msg="ON"
+	release_msg=""
+}
+"message button" {
+	object {
+		x="316"
+		y="192"
+		width="175"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TA02:MISC:32:MOD_HVPS"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="Mod HVPS On"
+	pressed_label="Mod HVPS On"
+	press_msg="ON"
+	release_msg=""
+}
+"message button" {
+	object {
+		x="11"
+		y="228"
+		width="175"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TA02:MISC:720:MOD_HVPS"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="Mod HVPS Off"
+	pressed_label="Mod HVPS Off"
+	press_msg="OFF"
+	release_msg=""
+}
+"message button" {
+	object {
+		x="316"
+		y="228"
+		width="175"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TA02:MISC:32:MOD_HVPS"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	inactive_label="Mod HVPS Off"
+	pressed_label="Mod HVPS Off"
+	press_msg="OFF"
+	release_msg=""
+}
+"text update" {
+	object {
+		x="504"
+		y="114"
+		width="95"
+		height="30"
+		groupid="0"
+	}
+	monitor {
+		chan="TA02:MISC:42:RF_SUMRY"
+		clr="12"
+		bclr="18"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="4"
+		rulecolorfg="4"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="199"
+		y="170"
+		width="95"
+		height="30"
+		groupid="0"
+	}
+	monitor {
+		chan="TA02:MISC:720:PS_STAT"
+		clr="12"
+		bclr="18"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="4"
+		rulecolorfg="4"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="199"
+		y="228"
+		width="95"
+		height="30"
+		groupid="0"
+	}
+	monitor {
+		chan="TA02:MISC:720:PS_SUMRY"
+		clr="12"
+		bclr="18"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="4"
+		rulecolorfg="4"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="504"
+		y="169"
+		width="95"
+		height="30"
+		groupid="0"
+	}
+	monitor {
+		chan="TA02:MISC:32:PS_STAT"
+		clr="12"
+		bclr="18"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="4"
+		rulecolorfg="4"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="504"
+		y="225"
+		width="95"
+		height="30"
+		groupid="0"
+	}
+	monitor {
+		chan="TA02:MISC:32:PS_SUMRY"
+		clr="12"
+		bclr="18"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="4"
+		rulecolorfg="4"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"execute script" {
+	object {
+		x="528"
+		y="30"
+		width="75"
+		height="26"
+		groupid="0"
+	}
+	script[0] {
+		label="Help"
+		path="dm_help tarf/power"
+		args=""
+	}
+	script[1] {
+		label=""
+		path=""
+		args=""
+	}
+	script[2] {
+		label=""
+		path=""
+		args=""
+	}
+	script[3] {
+		label=""
+		path=""
+		args=""
+	}
+	script[4] {
+		label=""
+		path=""
+		args=""
+	}
+	script[5] {
+		label=""
+		path=""
+		args=""
+	}
+	script[6] {
+		label=""
+		path=""
+		args=""
+	}
+	script[7] {
+		label=""
+		path=""
+		args=""
+	}
+	script[8] {
+		label=""
+		path=""
+		args=""
+	}
+	script[9] {
+		label=""
+		path=""
+		args=""
+	}
+	script[10] {
+		label=""
+		path=""
+		args=""
+	}
+	script[11] {
+		label=""
+		path=""
+		args=""
+	}
+	script[12] {
+		label=""
+		path=""
+		args=""
+	}
+	script[13] {
+		label=""
+		path=""
+		args=""
+	}
+	script[14] {
+		label=""
+		path=""
+		args=""
+	}
+	script[15] {
+		label=""
+		path=""
+		args=""
+	}
+	script[16] {
+		label=""
+		path=""
+		args=""
+	}
+	script[17] {
+		label=""
+		path=""
+		args=""
+	}
+	script[18] {
+		label=""
+		path=""
+		args=""
+	}
+	script[19] {
+		label=""
+		path=""
+		args=""
+	}
+	script[20] {
+		label=""
+		path=""
+		args=""
+	}
+	script[21] {
+		label=""
+		path=""
+		args=""
+	}
+	script[22] {
+		label=""
+		path=""
+		args=""
+	}
+	script[23] {
+		label=""
+		path=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="Help  "
+	decorate="outward"
+}
+"kill display" {
+	object {
+		x="528"
+		y="1"
+		width="75"
+		height="28"
+		groupid="0"
+	}
+	label="Exit"
+	clr="1"
+	bclr="20"
+	decorate="outward"
+}
+"print display" {
+	object {
+		x="450"
+		y="2"
+		width="75"
+		height="28"
+		groupid="0"
+	}
+	label="Print"
+	clr="1"
+	bclr="20"
+	decorate="outward"
+}

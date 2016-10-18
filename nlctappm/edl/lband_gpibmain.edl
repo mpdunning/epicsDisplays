@@ -1,0 +1,446 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 549
+y 294
+w 270
+h 550
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-bold-r-14.0"
+fgColor index 14
+bgColor index 71
+textColor index 14
+ctlFgColor1 index 12
+ctlFgColor2 index 7
+ctlBgColor1 index 63
+ctlBgColor2 index 21
+topShadowColor index 2
+botShadowColor index 0
+title "lband_gpibmain.edl"
+endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 2147483647
+y 2147483647
+w -2147483648
+h -2147483648
+lineColor index 14
+fillColor index 63
+arrows "both"
+numPoints 0
+xPoints {
+}
+yPoints {
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 846
+y 445
+w 0
+h 0
+lineColor index 14
+fillColor index 63
+lineWidth 2
+numPoints 1
+xPoints {
+  0 846
+}
+yPoints {
+  0 445
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 846
+y 446
+w 0
+h 0
+lineColor index 14
+fillColor index 63
+lineWidth 2
+numPoints 1
+xPoints {
+  0 846
+}
+yPoints {
+  0 446
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 192
+y 1
+w 75
+h 28
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+label "EXIT"
+font "new century schoolbook-medium-r-18.0"
+3d
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 154
+h 57
+lineColor index 63
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 7
+y 30
+w 165
+h 30
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "GPIB Main"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 3
+w 145
+h 30
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "L-Band"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 0
+y 57
+w 270
+h 0
+lineColor index 14
+fillColor index 63
+numPoints 3
+xPoints {
+  0 0
+  1 270
+  2 270
+}
+yPoints {
+  0 57
+  1 57
+  2 57
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 46
+y 216
+w 165
+h 35
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+buttonLabel "LBandPPM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_ppm_main.edl"
+}
+menuLabel {
+  0 "LBandPPM"
+}
+symbols {
+  0 "IOC=TS01,SCOPE=LBPM"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 46
+y 167
+w 165
+h 35
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+buttonLabel "AFG2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_afg.edl"
+}
+menuLabel {
+  0 "AFG2"
+}
+symbols {
+  0 "IOC=TS01,SCOPE=AFG2"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 46
+y 117
+w 165
+h 35
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+yPosOffset 10
+buttonLabel "AFG1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_afg.edl"
+}
+menuLabel {
+  0 "AFG1"
+}
+symbols {
+  0 "IOC=TS01,SCOPE=AFG1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 46
+y 266
+w 165
+h 35
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+buttonLabel "Stn0PPM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "xband_ppm_main.edl"
+}
+menuLabel {
+  0 "Stn0PPM"
+}
+symbols {
+  0 "IOC=TRS0,SC=S0PM,P1=SLEDOUT:PEAKPWR,P2=SLEDIN:PEAKPWR"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 46
+y 315
+w 165
+h 35
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+buttonLabel "Stn1PPM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "xband_ppm_main.edl"
+}
+menuLabel {
+  0 "Stn1PPM"
+}
+symbols {
+  0 "IOC=TRS1,SC=S1PM,P1=SLEDOUT:PEAKPWR,P2=SLEDIN:PEAKPWR"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 46
+y 365
+w 165
+h 35
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+buttonLabel "Stn2PPM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "xband_ppm_main.edl"
+}
+menuLabel {
+  0 "Stn2PPM"
+}
+symbols {
+  0 "IOC=TRS2,SC=S2PM,P1=SLEDOUT:PEAKPWR,P2=SLEDIN:PEAKPWR"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 16
+y 462
+w 241
+h 72
+font "new century schoolbook-medium-r-10.0"
+fgColor index 14
+bgColor index 63
+useDisplayBg
+value {
+  "to restart PPM softIOC: ssh opi00gtw04, "
+  "iocConsole.pl TS01 -cleanup, iocConsole.pl TS01, "
+  "wait for IOC to start, "
+  "then ctrl-a d (not ctrl-a ctrl-d)"
+  "For the LBand Modulator soft IOC, do the"
+  "same but for TS00."
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 46
+y 414
+w 165
+h 35
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+buttonLabel "2PackPPM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "xband_ppm_main.edl"
+}
+menuLabel {
+  0 "2PackPPM"
+}
+symbols {
+  0 "IOC=TRS3,SC=2PPM,P1=2PPM:CHAN1,P2=2PPM:CHAN4"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 46
+y 67
+w 165
+h 35
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+font "new century schoolbook-medium-r-24.0"
+yPosOffset 10
+buttonLabel "FGEN"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_fgen.edl"
+}
+menuLabel {
+  0 "FGEN"
+}
+symbols {
+  0 "IOC=TS01,SCOPE=FGEN"
+}
+endObjectProperties
+

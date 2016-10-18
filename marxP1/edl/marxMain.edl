@@ -1,0 +1,2197 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 241
+y 41
+w 758
+h 960
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 9
+textColor index 14
+ctlFgColor1 index 35
+ctlFgColor2 index 40
+ctlBgColor1 index 39
+ctlBgColor2 index 68
+topShadowColor index 72
+botShadowColor index 12
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 60
+y 185
+w 159
+h 140
+lineColor index 11
+fillColor index 11
+lineWidth 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 55
+y 640
+w 640
+h 275
+lineColor index 11
+fillColor index 11
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 65
+y 260
+w 100
+h 30
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Missing Clock?"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 350
+y 190
+w 347
+h 140
+lineColor index 11
+fillColor index 11
+lineWidth 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 61
+y 86
+w 189
+h 50
+lineColor index 11
+fillColor index 11
+lineWidth 0
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 171
+y 96
+w 70
+h 12
+controlPv "MARX$(SYS):CNTL:GCB:CSRRD"
+format "hex"
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 56
+autoHeight
+precision 0
+fieldLen "8"
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 215
+y 20
+w 252
+h 27
+font "helvetica-bold-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "MARX CONTROLLER"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 775
+w 320
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:CHEN"
+lineColor index 14
+onColor index 16
+offColor index 21
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 590
+y 200
+w 82
+h 16
+controlPv "MARX$(SYS):CNTL:GCB:RATE"
+format "decimal"
+font "helvetica-medium-r-10.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+editable
+autoHeight
+motifWidget
+precision 2
+fieldLen "6"
+nullColor index 40
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "controls"
+clipToDspLimits
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 530
+y 200
+w 55
+h 18
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Rate (Hz)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 96
+w 93
+h 18
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GCB CSR value"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 250
+y 300
+w 82
+h 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN"
+format "hex"
+font "helvetica-medium-r-8.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+editable
+autoHeight
+motifWidget
+precision 0
+fieldLen "5"
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 250
+y 280
+w 82
+h 20
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Channel Enable"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 171
+y 115
+w 70
+h 12
+controlPv "MARX$(SYS):CNTL:VERS"
+format "hex"
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 56
+autoHeight
+precision 0
+fieldLen "4"
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 116
+w 93
+h 18
+font "helvetica-medium-r-10.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Version"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 175
+y 270
+w 30
+h 10
+controlPv "MARX$(SYS):CNTL:MISSCLK"
+format "string"
+font "helvetica-medium-r-8.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+autoHeight
+nullColor index 40
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 645
+y 260
+w 25
+h 10
+controlPv "MARX$(SYS):CNTL:MISSTRG"
+format "string"
+font "helvetica-medium-r-8.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+autoHeight
+nullColor index 40
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 525
+y 255
+w 100
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Missing Trigger?"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 695
+w 320
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:DAV"
+lineColor index 14
+onColor index 16
+offColor index 21
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 195
+y 700
+w 72
+h 18
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Data Valid"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 205
+y 775
+w 61
+h 18
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Enabled"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 485
+y 96
+w 93
+h 18
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Cell Select"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 475
+y 86
+w 151
+h 60
+lineColor index 11
+fillColor index 11
+lineWidth 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 55
+y 610
+w 110
+h 29
+lineColor index 10
+fill
+fillColor index 10
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 65
+y 620
+w 91
+h 16
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Channel Control"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 85
+y 850
+w 50
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Display"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 85
+y 865
+w 51
+h 24
+font "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Panel"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 75
+y 205
+w 93
+h 18
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Clock Rx Phase"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 367
+y 200
+w 93
+h 18
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Source"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 60
+y 156
+w 110
+h 29
+lineColor index 10
+fill
+fillColor index 10
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 166
+w 91
+h 16
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Clock Control"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 61
+y 56
+w 70
+h 29
+lineColor index 10
+fill
+fillColor index 10
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 71
+y 66
+w 91
+h 16
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Status"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 475
+y 56
+w 101
+h 29
+lineColor index 10
+fill
+fillColor index 10
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 485
+y 66
+w 91
+h 16
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "DAC Control"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 250
+y 250
+w 82
+h 14
+controlPv "MARX$(SYS):CNTL:GCB:DAV"
+format "hex"
+font "helvetica-medium-r-8.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+editable
+autoHeight
+motifWidget
+precision 0
+fieldLen "5"
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 250
+y 230
+w 82
+h 20
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Data Valid"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 350
+y 160
+w 110
+h 29
+lineColor index 10
+fill
+fillColor index 10
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 360
+y 170
+w 91
+h 16
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Trigger Control"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 670
+w 320
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:PAR"
+lineColor index 14
+onColor index 21
+offColor index 17
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 195
+y 675
+w 72
+h 18
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Parity Error"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 285
+y 670
+w 20
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:PAR"
+lineColor index 14
+onColor index 22
+offColor index 16
+endian "little"
+numBits 1
+shift 15
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 285
+y 695
+w 21
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:DAV"
+lineColor index 14
+onColor index 16
+offColor index 21
+endian "little"
+numBits 1
+shift 15
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 285
+y 775
+w 21
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:CHEN"
+lineColor index 14
+onColor index 17
+offColor index 21
+endian "little"
+numBits 1
+shift 15
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 315
+y 850
+w 320
+h 31
+fgColor index 14
+bgColor index 51
+topShadowColor index 70
+botShadowColor index 12
+font "helvetica-medium-r-14.0"
+buttonLabel "Main Cells"
+numPvs 4
+numDsps 16
+displayFileName {
+  0 "dcb.edl"
+  1 "dcb.edl"
+  2 "dcb.edl"
+  3 "dcb.edl"
+  4 "dcb.edl"
+  5 "dcb.edl"
+  6 "dcb.edl"
+  7 "dcb.edl"
+  8 "dcb.edl"
+  9 "dcb.edl"
+  10 "dcb.edl"
+  11 "dcb.edl"
+  12 "dcb.edl"
+  13 "dcb.edl"
+  14 "dcb.edl"
+  15 "dcb.edl"
+}
+menuLabel {
+  0 "15"
+  1 "14"
+  2 "13"
+  3 "12"
+  4 "11"
+  5 "10"
+  6 "9"
+  7 "8"
+  8 "7"
+  9 "6"
+  10 "5"
+  11 "4"
+  12 "3"
+  13 "2"
+  14 "1"
+  15 "0"
+}
+symbols {
+  0 "CELL=15"
+  1 "CELL=14"
+  2 "CELL=13"
+  3 "CELL=12"
+  4 "CELL=11"
+  5 "CELL=10"
+  6 "CELL=9"
+  7 "CELL=8"
+  8 "CELL=7"
+  9 "CELL=6"
+  10 "CELL=5"
+  11 "CELL=4"
+  12 "CELL=3"
+  13 "CELL=2"
+  14 "CELL=1"
+  15 "CELL=0"
+}
+icon
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 485
+y 116
+w 130
+h 19
+fgColor index 14
+bgColor index 64
+inconsistentColor index 12
+topShadowColor index 70
+botShadowColor index 12
+controlPv "MARX$(SYS):CNTL:CELL:SEL"
+indicatorPv "MARX$(SYS):CNTL:CELL:SEL"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 570
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN2"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN1"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 610
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN0"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 510
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN5"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 530
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN4"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 550
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN3"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 450
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN8"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 470
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN7"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN6"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 395
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN11"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 415
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN10"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 435
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN9"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 375
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN12"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN15"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 335
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN14"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 355
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN13"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 70
+y 230
+w 132
+h 20
+fgColor index 14
+bgColor index 64
+inconsistentColor index 12
+topShadowColor index 70
+botShadowColor index 12
+controlPv "MARX$(SYS):CNTL:CLK:RXPH"
+indicatorPv "MARX$(SYS):CNTL:CLK:RXPH"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 367
+y 220
+w 130
+h 19
+fgColor index 14
+bgColor index 64
+inconsistentColor index 12
+topShadowColor index 70
+botShadowColor index 12
+controlPv "MARX$(SYS):CNTL:TRG:SRC"
+indicatorPv "MARX$(SYS):CNTL:TRG:SRC"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 370
+y 270
+w 131
+h 30
+fgColor index 14
+bgColor index 64
+topShadowColor index 70
+botShadowColor index 12
+font "helvetica-medium-r-10.0"
+buttonLabel "Timing Config"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "StartStop.edl"
+}
+menuLabel {
+  0 "Timing Config"
+}
+icon
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 655
+y 670
+w 26
+h 20
+fgColor index 14
+onColor index 72
+offColor index 72
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:PARWR"
+pressValue "262143"
+onLabel "CLR"
+offLabel "CLR"
+3d
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 655
+y 695
+w 26
+h 20
+fgColor index 14
+onColor index 72
+offColor index 72
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:DAVWR"
+pressValue "262143"
+onLabel "CLR"
+offLabel "CLR"
+3d
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 145
+y 850
+w 160
+h 32
+fgColor index 14
+bgColor index 51
+topShadowColor index 70
+botShadowColor index 12
+font "helvetica-medium-r-14.0"
+buttonLabel "Vernier"
+numPvs 4
+numDsps 3
+displayFileName {
+  0 "vernier.edl"
+  1 "vernier_strtstp.edl"
+  2 "vernier_times.edl"
+}
+menuLabel {
+  0 "Vernier Card"
+  1 "All Vernier Start/Stop"
+  2 "All Vernier Delay/Width"
+}
+symbols {
+  0 "CELL=16"
+  1 "CELL=16"
+  2 "CELL=16"
+}
+icon
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 285
+y 800
+w 20
+h 40
+fgColor index 14
+bgColor index 51
+selectColor index 51
+inconsistentColor index 14
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:GCB:CHEN16"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 310
+y 100
+w 110
+h 20
+fgColor index 14
+bgColor index 64
+topShadowColor index 70
+botShadowColor index 12
+font "helvetica-medium-r-10.0"
+buttonLabel "Temperatures"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "Temperatures.edl"
+}
+menuLabel {
+  0 "Temperatures"
+}
+icon
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 170
+y 295
+w 40
+h 20
+fgColor index 14
+onColor index 72
+offColor index 72
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:MISSCLK:RESET"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 635
+y 285
+w 40
+h 20
+fgColor index 14
+onColor index 72
+offColor index 72
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:MISSTRG:RESET"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 60
+y 360
+w 110
+h 29
+lineColor index 10
+fill
+fillColor index 10
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 65
+y 365
+w 91
+h 16
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Pulse Control"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 60
+y 390
+w 640
+h 140
+lineColor index 11
+fillColor index 11
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 65
+y 445
+w 155
+h 30
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Blank to Fire Delay"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 65
+y 405
+w 155
+h 30
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Trigger to Blank Delay"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 65
+y 485
+w 155
+h 30
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Blank Width"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 245
+y 410
+w 95
+h 16
+controlPv "MARX$(SYS):CNTL:BLANK:DELAY"
+format "float"
+font "helvetica-medium-r-10.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+editable
+autoHeight
+motifWidget
+precision 3
+fieldLen "6"
+nullColor index 40
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 240
+y 455
+w 95
+h 16
+controlPv "MARX$(SYS):CNTL:BLANK:TOFIRE"
+format "float"
+font "helvetica-medium-r-10.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+editable
+autoHeight
+motifWidget
+precision 2
+fieldLen "6"
+nullColor index 40
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 240
+y 490
+w 95
+h 16
+controlPv "MARX$(SYS):CNTL:BLANK:WIDTH"
+format "float"
+font "helvetica-medium-r-10.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+editable
+autoHeight
+motifWidget
+precision 3
+fieldLen "6"
+nullColor index 40
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 395
+y 405
+w 155
+h 30
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Delayed Trigger Delay"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 395
+y 440
+w 155
+h 30
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Delayed Trigger Width"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 570
+y 410
+w 95
+h 16
+controlPv "MARX$(SYS):CNTL:DLY:TRIG"
+format "float"
+font "helvetica-medium-r-10.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+editable
+autoHeight
+motifWidget
+precision 2
+fieldLen "6"
+nullColor index 40
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 570
+y 445
+w 95
+h 16
+controlPv "MARX$(SYS):CNTL:DLY:TRGWID"
+format "float"
+font "helvetica-medium-r-10.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+editable
+autoHeight
+motifWidget
+precision 2
+fieldLen "6"
+nullColor index 40
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 750
+w 320
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:CLS"
+lineColor index 14
+onColor index 17
+offColor index 21
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 205
+y 750
+w 61
+h 18
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Local Status"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 285
+y 750
+w 21
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:CLS"
+lineColor index 14
+onColor index 17
+offColor index 21
+endian "little"
+numBits 1
+shift 15
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 725
+w 320
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:HVINH"
+lineColor index 14
+onColor index 21
+offColor index 17
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 205
+y 725
+w 61
+h 18
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "HV Inhibit"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 285
+y 725
+w 21
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:HVINH"
+lineColor index 14
+onColor index 21
+offColor index 17
+endian "little"
+numBits 1
+shift 15
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 315
+y 615
+w 316
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 39
+useDisplayBg
+value {
+  "15 14 13 12 11 10   9   8   7   6   5   4   3   2   1   0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 350
+y 410
+w 19
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 39
+useDisplayBg
+value {
+  "ms"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 350
+y 455
+w 19
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 39
+useDisplayBg
+value {
+  "ms"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 350
+y 490
+w 19
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 39
+useDisplayBg
+value {
+  "ms"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 670
+y 410
+w 19
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 39
+useDisplayBg
+value {
+  "ms"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 670
+y 445
+w 19
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 39
+useDisplayBg
+value {
+  "ms"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 675
+y 200
+w 17
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 39
+useDisplayBg
+value {
+  "Hz"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 355
+w 100
+h 30
+font "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Global Fault"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 320
+y 360
+w 30
+h 12
+controlPv "MARX$(SYS):CNTL:FAULTLATCH"
+format "string"
+font "helvetica-medium-r-10.0"
+fgColor index 14
+fgAlarm
+bgColor index 56
+autoHeight
+nullColor index 40
+smartRefresh
+fastUpdate
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 380
+y 355
+w 40
+h 20
+fgColor index 14
+onColor index 72
+offColor index 72
+topShadowColor index 0
+botShadowColor index 14
+controlPv "MARX$(SYS):CNTL:LATCHCLR"
+pressValue "1"
+onLabel "Reset"
+offLabel "Reset"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 315
+y 645
+w 320
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:ROS"
+lineColor index 14
+onColor index 21
+offColor index 17
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 195
+y 650
+w 72
+h 18
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Relay Open Status"
+}
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 285
+y 645
+w 20
+h 20
+controlPv "MARX$(SYS):CNTL:GCB:ROS"
+lineColor index 14
+onColor index 22
+offColor index 16
+endian "little"
+numBits 1
+shift 15
+endObjectProperties
+

@@ -1,0 +1,134 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 612
+y 452
+w 530
+h 560
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 1
+w 529
+h 30
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 470
+y 4
+w 50
+h 24
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 8
+w 172
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Help for Fault Status Overview"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 31
+y 45
+w 483
+h 494
+font "courier-medium-r-12.0"
+fgColor index 55
+bgColor index 4
+useDisplayBg
+value {
+  "The \"Fault Status Overview\" screen shows an overview of the Fault"
+  "status and allows clearing the fault condition as well as"
+  "resetting the fault counters."
+  "\"Clear Fault\" button is used to clear the fault state in all three"
+  "FFF modules provided that all fault conditions have been removed."
+  "\"Clear Counts\" button is used to reset all fault counters."
+  "Various times are displayed."
+  "The HB indicater should be bright green, which indicates that"
+  "the History Buffers are recording.  The Dump indicator should also"
+  "be bright green, which indicates that creating dumps is enabled."
+  "Should the Dump indicator be dark green, then creating dump files"
+  "can enabled from \"Diagnostic\" screen using a menu.  Access to this"
+  "control is restricted and permission can be obtained in the same"
+  "screen.  Password is required for this."
+  "\"Fast Channels\" and \"Slow Channels\" related display buttons are"
+  "used to pop up screens that show fault details for all fast and"
+  "slow channels.  For more information see help found on those screens."
+  "\"Filament Timeout\" related display is used to pop up a screen which"
+  "shows details of the Filament supply timeout."
+  "Filament timeout status is shown to the right of the \"Filament Tmo\""
+  "button.  One of the following states is shown:"
+  ""
+  "Filament PS Off:  power supply current less than threshold,"
+  "Fil State Error:  inconsistent data, see \"Filament Timeout\" display,"
+  "Fil Warming Up:   timeout countdown in progress,"
+  "Took Too Long:    warming up end overdue,"
+  "Error-Too Long:   warming up finished but took more than 10% longer"
+  "                  than expected,"
+  "Too Soon:         warming up ended sooner than expected,"
+  "Error-Too Soon:   warming up ended much sooner than expected,"
+  "Filament Ready:   warming up ended, no errors,"
+  "Fil Ready-Error:  warming up ended with errors."
+  "\"CheckSums\" related display shows check sums for all three FFF boards"
+  "both for current and restored channel fault limit paramters."
+  "\"klystron\" related display show accumulated power values delivered to"
+  "the klystron."
+  "\"ARC Status\" related display shows the state of the fault system for"
+  "testing whether the PMT's are functioning."
+}
+autoSize
+endObjectProperties
+

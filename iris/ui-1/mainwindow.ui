@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>365</width>
+    <height>306</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>24</y>
+      <width>353</width>
+      <height>229</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_1">
+     <attribute name="title">
+      <string>Control</string>
+     </attribute>
+     <widget class="QCaSliderPlugin" name="qcasliderplugin">
+      <property name="geometry">
+       <rect>
+        <x>24</x>
+        <y>52</y>
+        <width>297</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>36</number>
+      </property>
+      <property name="pageStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>4</number>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:SC:OPENING</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESB:IRIS</string>
+      </property>
+     </widget>
+     <widget class="QCaShapePlugin" name="irisEye">
+      <property name="geometry">
+       <rect>
+        <x>256</x>
+        <y>108</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="variable1" stdset="0">
+       <string>ESB:IRIS:AI:MONITOR</string>
+      </property>
+      <property name="variable2" stdset="0">
+       <string>ESB:IRIS:AI:MONITOR</string>
+      </property>
+      <property name="variable3" stdset="0">
+       <string>ESB:IRIS:AI:MONITOR</string>
+      </property>
+      <property name="variable4" stdset="0">
+       <string>ESB:IRIS:AI:MONITOR</string>
+      </property>
+      <property name="scale1" stdset="0">
+       <double>0.027800000000000</double>
+      </property>
+      <property name="scale2" stdset="0">
+       <double>0.027800000000000</double>
+      </property>
+      <property name="scale3" stdset="0">
+       <double>-0.694400000000000</double>
+      </property>
+      <property name="scale4" stdset="0">
+       <double>-0.694400000000000</double>
+      </property>
+      <property name="offset1" stdset="0">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="offset3" stdset="0">
+       <double>25.000000000000000</double>
+      </property>
+      <property name="offset4" stdset="0">
+       <double>25.000000000000000</double>
+      </property>
+      <property name="shape" stdset="0">
+       <enum>QCaShapePlugin::Ellipse</enum>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>50</x>
+        <y>50</y>
+       </point>
+      </property>
+      <property name="color1" stdset="0">
+       <color>
+        <red>179</red>
+        <green>210</green>
+        <blue>255</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QCaShapePlugin" name="irisFrame">
+      <property name="geometry">
+       <rect>
+        <x>248</x>
+        <y>100</y>
+        <width>70</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>70</x>
+        <y>70</y>
+       </point>
+      </property>
+      <property name="color1" stdset="0">
+       <color>
+        <red>1</red>
+        <green>59</green>
+        <blue>122</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QCaShapePlugin" name="irisHole">
+      <property name="geometry">
+       <rect>
+        <x>256</x>
+        <y>108</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="shape" stdset="0">
+       <enum>QCaShapePlugin::Ellipse</enum>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>50</x>
+        <y>50</y>
+       </point>
+      </property>
+      <property name="color1" stdset="0">
+       <color>
+        <red>0</red>
+        <green>24</green>
+        <blue>45</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin">
+      <property name="geometry">
+       <rect>
+        <x>253</x>
+        <y>16</y>
+        <width>65</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:AO:SC:OPENING</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>80</y>
+        <width>77</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:AI:MONITOR</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_2">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>16</y>
+        <width>85</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:AO:SC:OPENING.DESC</string>
+      </property>
+     </widget>
+     <widget class="QCaPushButtonPlugin" name="qcapushbuttonplugin">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>164</y>
+        <width>49</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> </string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:BO:RESET.PROC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_3">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>168</y>
+        <width>77</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:BO:RESET.DESC</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_14">
+      <property name="geometry">
+       <rect>
+        <x>165</x>
+        <y>80</y>
+        <width>69</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:AI:MONITOR.DESC</string>
+      </property>
+     </widget>
+     <zorder>qcasliderplugin</zorder>
+     <zorder>irisFrame</zorder>
+     <zorder>irisHole</zorder>
+     <zorder>qcalineeditplugin</zorder>
+     <zorder>qcalabelplugin</zorder>
+     <zorder>qcalabelplugin_2</zorder>
+     <zorder>qcapushbuttonplugin</zorder>
+     <zorder>qcalabelplugin_3</zorder>
+     <zorder>qcalabelplugin_14</zorder>
+     <zorder>irisEye</zorder>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Setup</string>
+     </attribute>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_4">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>32</y>
+        <width>57</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:AO:CONV:OFF.DESC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_2">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>28</y>
+        <width>73</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:AO:CONV:OFF</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_5">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>56</y>
+        <width>57</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:AO:CONV:SLOPE.DESC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_3">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>52</y>
+        <width>73</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:AO:CONV:SLOPE</string>
+      </property>
+      <property name="addUnits">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_6">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>104</y>
+        <width>57</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:LO:SC:MAXV.DESC</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_4">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>100</y>
+        <width>73</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:LO:SC:MAXV</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_9">
+      <property name="geometry">
+       <rect>
+        <x>72</x>
+        <y>124</y>
+        <width>73</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:LO:SC:MAXA</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_13">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>128</y>
+        <width>57</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>ESB:IRIS:LO:SC:MAXA.DESC</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>4</x>
+        <y>4</y>
+        <width>337</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Conversion Coefficients</string>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>172</x>
+         <y>12</y>
+         <width>157</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Size opening gets</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>172</x>
+         <y>28</y>
+         <width>157</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>converted to steps:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>172</x>
+         <y>48</y>
+         <width>157</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>steps=off+(mm*slope)</string>
+       </property>
+      </widget>
+     </widget>
+     <zorder>groupBox</zorder>
+     <zorder>qcalabelplugin_4</zorder>
+     <zorder>qcalineeditplugin_2</zorder>
+     <zorder>qcalabelplugin_5</zorder>
+     <zorder>qcalineeditplugin_3</zorder>
+     <zorder>qcalabelplugin_6</zorder>
+     <zorder>qcalineeditplugin_4</zorder>
+     <zorder>qcalineeditplugin_9</zorder>
+     <zorder>qcalabelplugin_13</zorder>
+    </widget>
+   </widget>
+   <widget class="QCaShapePlugin" name="qcashapeplugin">
+    <property name="geometry">
+     <rect>
+      <x>288</x>
+      <y>12</y>
+      <width>17</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="variable1" stdset="0">
+     <string>ESB:IRIS:BI:BLINK</string>
+    </property>
+    <property name="animation1" stdset="0">
+     <enum>QCaShapePlugin::ColourHue</enum>
+    </property>
+    <property name="scale1" stdset="0">
+     <double>120.000000000000000</double>
+    </property>
+    <property name="shape" stdset="0">
+     <enum>QCaShapePlugin::Ellipse</enum>
+    </property>
+    <property name="point2" stdset="0">
+     <point>
+      <x>16</x>
+      <y>16</y>
+     </point>
+    </property>
+    <property name="color1" stdset="0">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>365</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCaLabelPlugin</class>
+   <extends>QLabel</extends>
+   <header>QCaLabelPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaLineEditPlugin</class>
+   <extends>QLineEdit</extends>
+   <header>QCaLineEditPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaPushButtonPlugin</class>
+   <extends>QPushButton</extends>
+   <header>QCaPushButtonPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaShapePlugin</class>
+   <extends>QWidget</extends>
+   <header>QCaShapePlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaSliderPlugin</class>
+   <extends>QSlider</extends>
+   <header>QCaSliderPlugin.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MotorCtrl</class>
+ <widget class="QDialog" name="MotorCtrl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>528</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="motor1_tab">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>36</y>
+     <width>509</width>
+     <height>373</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Home</string>
+    </attribute>
+    <widget class="QEForm" name="qeform_2">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>6</y>
+       <width>493</width>
+       <height>317</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>/afs/slac/g/testfac/tools/display/beckhoff.1/common/ui/home.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>P=$(P),M=$(M),N=$(N)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="control">
+    <attribute name="title">
+     <string>Setup</string>
+    </attribute>
+    <widget class="QEForm" name="qeform">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>4</y>
+       <width>497</width>
+       <height>307</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>/afs/slac/g/testfac/tools/display/beckhoff.1/common/ui/control.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>P=$(P),M=$(M),N=$(N)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="csr">
+    <attribute name="title">
+     <string>CSR</string>
+    </attribute>
+    <widget class="QEForm" name="qeform_3">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>6</y>
+       <width>495</width>
+       <height>314</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>/afs/slac/g/testfac/tools/display/beckhoff.1/common/ui/csr.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>P=$(P),M=$(M),N=$(N)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="readreg">
+    <attribute name="title">
+     <string>readR</string>
+    </attribute>
+    <widget class="QEForm" name="qeform_5">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>6</y>
+       <width>493</width>
+       <height>314</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>/afs/slac/g/testfac/tools/display/beckhoff.1/common/ui/readreg.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>P=$(P),M=$(M),N=$(N)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="writeram">
+    <attribute name="title">
+     <string>wtRAM</string>
+    </attribute>
+    <widget class="QEForm" name="qeform_7">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>6</y>
+       <width>493</width>
+       <height>314</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>/afs/slac/g/testfac/tools/display/beckhoff.1/common/ui/writeram.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>P=$(P),M=$(M),N=$(N)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="writeeeprom">
+    <attribute name="title">
+     <string>wtEEPROM</string>
+    </attribute>
+    <widget class="QEForm" name="qeform_9">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>6</y>
+       <width>495</width>
+       <height>314</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>/afs/slac/g/testfac/tools/display/beckhoff.1/common/ui/writeeep.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>P=$(P),M=$(M),N=$(N)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="feature1">
+    <attribute name="title">
+     <string>Feature</string>
+    </attribute>
+    <widget class="QEForm" name="qeform_11">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>6</y>
+       <width>493</width>
+       <height>314</height>
+      </rect>
+     </property>
+     <property name="uiFile" stdset="0">
+      <string>/afs/slac/g/testfac/tools/display/beckhoff.1/common/ui/feature.ui</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string>P=$(P),M=$(M),N=$(N)</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="ctrlClosePB">
+   <property name="geometry">
+    <rect>
+     <x>462</x>
+     <y>6</y>
+     <width>56</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>10</y>
+     <width>99</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:$(M)-$(N):DATA.DESC</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

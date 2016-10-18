@@ -1,0 +1,559 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 478
+y 93
+w 310
+h 310
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+title "Configuration"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 82
+y 130
+w 58
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Volt Unit:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 150
+w 70
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Volt Offset:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 65
+y 260
+w 75
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Output Trig:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 62
+y 195
+w 78
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Trig Source:"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 50
+w 95
+h 20
+controlPv "$(usr):RFunc"
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 6
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 53
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 81
+y 50
+w 59
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Function:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 23
+y 70
+w 117
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "square duty cycle:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 21
+y 90
+w 119
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "ramping symmetry:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 111
+y 110
+w 29
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Volt:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 38
+y 170
+w 102
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Volt range auto:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 52
+y 220
+w 88
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Trigger slope:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 240
+w 130
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Output trigger slope:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 110
+w 95
+h 18
+controlPv "$(usr):WVolt"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 2
+nullColor index 53
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 130
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(usr):WVoltU"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 150
+w 95
+h 18
+controlPv "$(usr):WVoltO"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 2
+nullColor index 53
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 170
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(usr):WVoltRA"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 70
+w 95
+h 18
+controlPv "$(usr):WFuncSQD"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 2
+nullColor index 53
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 90
+w 95
+h 18
+controlPv "$(usr):WFuncRAS"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 2
+nullColor index 53
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 220
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(usr):WTrigSlope"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 240
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(usr):WOutpTrigSl"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 260
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(usr):WOutTrig"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 94
+y 280
+w 46
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Output:"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 280
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(usr):WOutp"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 190
+w 95
+h 25
+fgColor index 13
+bgColor index 50
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "$(usr):WTrigSource"
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 15
+w 65
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Most Useful"
+}
+autoSize
+endObjectProperties
+

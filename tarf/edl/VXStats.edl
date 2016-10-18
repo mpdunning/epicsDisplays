@@ -1,0 +1,581 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 66
+y 322
+w 769
+h 355
+font "helvetica-medium-r-18.0"
+ctlFont "courier-bold-r-10.0"
+btnFont "helvetica-medium-i-18.0"
+fgColor index 14
+bgColor index 71
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 71
+ctlBgColor1 index 71
+ctlBgColor2 index 14
+topShadowColor index 71
+botShadowColor index 14
+endScreenProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 0
+y 59
+w 825
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 2
+xPoints {
+  0 0
+  1 825
+}
+yPoints {
+  0 59
+  1 59
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 4
+y 176
+w 186
+h 22
+font "courier-bold-r-18.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "File Descriptors"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 106
+y 218
+w 84
+h 22
+font "courier-bold-r-18.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Memory"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 130
+y 259
+w 60
+h 22
+font "courier-bold-r-18.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "CPU"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 297
+y 151
+w 157
+h 20
+font "courier-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "In Use (%)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 651
+y 151
+w 116
+h 20
+font "courier-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Scan (sec)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 337
+y 324
+w 354
+h 16
+font "courier-bold-r-14.0"
+fgColor index 25
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Not allowed if $(C1)."
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 65
+y 110
+w 126
+h 22
+font "courier-bold-r-18.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Boot Time"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 562
+y 175
+w 65
+h 30
+controlPv "$(STN):FD:USED"
+format "decimal"
+font "courier-bold-r-24.0"
+fgColor index 14
+bgColor index 71
+autoHeight
+precision 1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 197
+y 175
+w 350
+h 34
+indicatorColor index 14
+fgColor index 14
+bgColor index 71
+indicatorPv "$(STN):FD:USED"
+showScale
+origin "0"
+font "courier-bold-r-10.0"
+labelTicks "4"
+majorTicks "1"
+limitsFromDb
+precision "0"
+min "0"
+max "100"
+scaleFormat "GFloat"
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 672
+y 174
+w 60
+h 32
+controlPv "$(STN):FD:PERIOD"
+displayMode "decimal"
+fgColor index 14
+bgColor index 73
+fill
+font "courier-bold-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 672
+y 214
+w 60
+h 32
+controlPv "$(STN):MEM:PERIOD"
+displayMode "decimal"
+fgColor index 14
+bgColor index 73
+fill
+font "courier-bold-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 672
+y 254
+w 60
+h 32
+controlPv "$(STN):CPU:PERIOD"
+displayMode "decimal"
+fgColor index 14
+bgColor index 73
+fill
+font "courier-bold-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 562
+y 215
+w 65
+h 30
+controlPv "$(STN):MEMORY:USED"
+format "decimal"
+font "courier-bold-r-24.0"
+fgColor index 14
+bgColor index 71
+autoHeight
+precision 1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 197
+y 215
+w 350
+h 34
+indicatorColor index 14
+fgColor index 14
+bgColor index 71
+indicatorPv "$(STN):MEMORY:USED"
+showScale
+origin "0"
+font "courier-bold-r-10.0"
+labelTicks "4"
+majorTicks "1"
+limitsFromDb
+precision "0"
+min "0"
+max "100"
+scaleFormat "GFloat"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 562
+y 255
+w 65
+h 30
+controlPv "$(STN):CPU:USED"
+format "decimal"
+font "courier-bold-r-24.0"
+fgColor index 14
+bgColor index 71
+autoHeight
+precision 1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 197
+y 255
+w 350
+h 34
+indicatorColor index 14
+fgColor index 14
+bgColor index 71
+indicatorPv "$(STN):CPU:USED"
+showScale
+origin "0"
+font "courier-bold-r-10.0"
+labelTicks "4"
+majorTicks "1"
+limitsFromDb
+precision "0"
+min "0"
+max "100"
+scaleFormat "GFloat"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 148
+y 310
+w 172
+h 34
+fgColor index 14
+onColor index 33
+offColor index 31
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(STN):REBOOT.PROC"
+pressValue "1"
+onLabel "Rebooting"
+offLabel "Reboot IOC"
+3d
+font "courier-bold-r-24.0"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 197
+y 106
+w 250
+h 30
+controlPv "$(STN):TIMEOFBOOT"
+format "decimal"
+font "courier-bold-r-24.0"
+fgColor index 14
+bgColor index 71
+autoHeight
+precision 0
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 686
+y 7
+w 75
+h 32
+fgColor index 14
+bgColor index 71
+topShadowColor index 71
+botShadowColor index 14
+label "EXIT"
+font "courier-bold-r-24.0"
+3d
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 482
+h 58
+lineColor index 49
+fill
+fillColor index 49
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 14
+w 130
+h 30
+font "courier-bold-r-24.0"
+fgColor index 0
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "$(STN)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 95
+y 14
+w 282
+h 30
+font "courier-bold-r-24.0"
+fgColor index 0
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "VxWorks Statistics"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 197
+y 71
+w 250
+h 30
+controlPv "$(STN):TIMEOFDAY"
+format "decimal"
+font "courier-bold-r-24.0"
+fgColor index 14
+bgColor index 71
+autoHeight
+precision 0
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 35
+y 75
+w 156
+h 22
+font "courier-bold-r-18.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Current Time"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 632
+y 76
+w 101
+h 31
+fgColor index 14
+bgColor index 71
+topShadowColor index 71
+botShadowColor index 14
+font "courier-bold-r-12.0"
+buttonLabel "VXStats-all"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "VXStats_all_ilc.edl"
+}
+endObjectProperties
+

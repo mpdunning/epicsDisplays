@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>276</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QELabel" name="errMessage1">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>246</y>
+      <width>297</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):WF:BKHERR-$(N):MESSAGE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,N=2</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget { color: grey }</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QELabel::Never</enum>
+    </property>
+    <property name="buddy">
+     <cstring>message</cstring>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelError">
+    <property name="geometry">
+     <rect>
+      <x>248</x>
+      <y>6</y>
+      <width>56</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):BI:BKHERR-$(N):ERROR</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,N=2</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget { color: grey }</string>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QELabel::Never</enum>
+    </property>
+   </widget>
+   <widget class="CAShape" name="cashape">
+    <property name="geometry">
+     <rect>
+      <x>246</x>
+      <y>4</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="lineWidth">
+     <UInt>2</UInt>
+    </property>
+    <property name="rectangle" stdset="0">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>60</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="color1">
+     <color>
+      <red>0</red>
+      <green>255</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="color2">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):BI:BKHERR-$(N):ERROR</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=CHA,N=2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbBkh">
+    <property name="geometry">
+     <rect>
+      <x>408</x>
+      <y>6</y>
+      <width>80</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bkh More...</string>
+    </property>
+   </widget>
+   <widget class="QEForm" name="qeformM1">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>38</y>
+      <width>163</width>
+      <height>187</height>
+     </rect>
+    </property>
+    <property name="uiFile" stdset="0">
+     <string>/afs/slac/g/testfac/tools/display/beckhoff.1/common/ui/motormove.ui</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M1),N=$(N),R=$(A1),C=1</string>
+    </property>
+   </widget>
+   <widget class="QEForm" name="qeformM2">
+    <property name="geometry">
+     <rect>
+      <x>176</x>
+      <y>38</y>
+      <width>163</width>
+      <height>187</height>
+     </rect>
+    </property>
+    <property name="uiFile" stdset="0">
+     <string>/afs/slac/g/testfac/tools/display/beckhoff.1/common/ui/motormove.ui</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M2),N=$(N),R=$(A1),C=2</string>
+    </property>
+   </widget>
+   <widget class="QEForm" name="qeformM3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>38</y>
+      <width>163</width>
+      <height>187</height>
+     </rect>
+    </property>
+    <property name="uiFile" stdset="0">
+     <string>/afs/slac/g/testfac/tools/display/beckhoff.1/common/ui/motormove.ui</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=$(P),M=$(M3),N=$(N),R=$(A2),C=1</string>
+    </property>
+   </widget>
+   <zorder>cashape</zorder>
+   <zorder>errMessage1</zorder>
+   <zorder>qelError</zorder>
+   <zorder>pbBkh</zorder>
+   <zorder>qeformM1</zorder>
+   <zorder>qeformM2</zorder>
+   <zorder>qeformM3</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>520</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AShape</class>
+   <extends>QWidget</extends>
+   <header>ashape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CAShape</class>
+   <extends>AShape</extends>
+   <header>cashape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

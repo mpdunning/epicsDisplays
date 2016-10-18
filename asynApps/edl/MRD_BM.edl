@@ -1,0 +1,1634 @@
+4 0 0
+beginScreenProperties
+major 4
+minor 0
+release 0
+x 114
+y 414
+w 750
+h 450
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor rgb 65280 65280 65280
+bgColor rgb 60160 61696 46336
+textColor rgb 0 0 0
+ctlFgColor1 rgb 64256 62208 18944
+ctlFgColor2 rgb 60928 46592 11008
+ctlBgColor1 rgb 52480 24832 0
+ctlBgColor2 rgb 65280 45056 65280
+topShadowColor rgb 44544 19968 48128
+botShadowColor rgb 13312 13056 34304
+snapToGrid
+gridSize 5
+endScreenProperties
+
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 17
+y 6
+w 650
+h 30
+font "helvetica-medium-r-8.0"
+fgColor rgb 64768 0 0
+useDisplayBg
+value {
+ "SR Status for Beamline $(xx)-BM"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 417
+y 266
+w 280
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 22528 37632 65280
+useDisplayBg
+value {
+ "* NORMALIZED x-BPM SIGNALS *"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 448
+y 359
+w 90
+h 15
+controlPv "BL$(xx):BM:1XBPM:VPOS"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 587
+y 359
+w 90
+h 15
+controlPv "BL$(xx):BM:2XBPM:VPOS"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 590
+y 416
+w 90
+h 15
+controlPv "BL$(xx):BM:XBPM:VAngle"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 453
+y 344
+w 80
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "1XBPM:VPOSITION"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 592
+y 344
+w 80
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "2XBPM:VPOSITION"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 616
+y 401
+w 50
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "VANGLE"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 517
+y 374
+w 20
+h 13
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 659
+y 374
+w 20
+h 13
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 592
+y 432
+w 90
+h 13
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "microradians"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 89
+y 346
+w 180
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 24832 2560 29952
+useDisplayBg
+value {
+ "Vertical Positions and Angles"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 416
+y 46
+w 300
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 24832 2560 29952
+useDisplayBg
+value {
+ "Beam Line Front End X-RAY BPM"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 539
+y 102
+w 0
+h 47
+lineColor rgb 0 0 0
+fillColor rgb 0 0 0
+lineWidth 0
+numPoints 2 {
+xPoints  {
+0 539
+1 539
+}
+yPoints  {
+0 102
+1 149
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 539
+y 177
+w 0
+h 50
+lineColor rgb 0 0 0
+fillColor rgb 0 0 0
+lineWidth 0
+numPoints 2 {
+xPoints  {
+0 539
+1 539
+}
+yPoints  {
+0 177
+1 227
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 455
+y 126
+w 75
+h 20
+controlPv "BL$(xx):BM:1XBPM:A"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 456
+y 205
+w 75
+h 20
+controlPv "BL$(xx):BM:1XBPM:B"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 536
+y 84
+w 10
+h 15
+font "helvetica-medium-r-8.0"
+fgColor rgb 2560 0 47104
+useDisplayBg
+value {
+ "A"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 536
+y 233
+w 10
+h 15
+font "helvetica-medium-r-8.0"
+fgColor rgb 2560 0 47104
+useDisplayBg
+value {
+ "B"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 451
+y 70
+w 75
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 52480 24832 0
+useDisplayBg
+value {
+ "First"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 588
+y 67
+w 75
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 52480 24832 0
+useDisplayBg
+value {
+ "Second"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 464
+y 103
+w 60
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "1XBPM:A"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 465
+y 186
+w 60
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "1XBPM:B"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 673
+y 105
+w 0
+h 47
+lineColor rgb 0 0 0
+fillColor rgb 0 0 0
+lineWidth 0
+numPoints 2 {
+xPoints  {
+0 673
+1 673
+}
+yPoints  {
+0 105
+1 152
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 673
+y 180
+w 0
+h 50
+lineColor rgb 0 0 0
+fillColor rgb 0 0 0
+lineWidth 0
+numPoints 2 {
+xPoints  {
+0 673
+1 673
+}
+yPoints  {
+0 180
+1 230
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 588
+y 127
+w 75
+h 20
+controlPv "BL$(xx):BM:2XBPM:A"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 583
+y 208
+w 75
+h 20
+controlPv "BL$(xx):BM:2XBPM:B"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 670
+y 87
+w 10
+h 15
+font "helvetica-medium-r-8.0"
+fgColor rgb 2560 0 47104
+useDisplayBg
+value {
+ "A"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 670
+y 234
+w 10
+h 15
+font "helvetica-medium-r-8.0"
+fgColor rgb 2560 0 47104
+useDisplayBg
+value {
+ "B"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 595
+y 104
+w 60
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "2XBPM:A"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 597
+y 185
+w 60
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "2XBPM:B"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 452
+y 416
+w 90
+h 15
+controlPv "BL$(xx):BM:XBPM:VPosition"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 463
+y 401
+w 80
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "VPOSITION"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 521
+y 432
+w 20
+h 13
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "mm"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 197
+y 388
+w 120
+h 25
+controlPv "BL$(xx):SRBM:VAngle"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 236
+y 373
+w 50
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "VANGLE"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 229
+y 416
+w 90
+h 13
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "microradians"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 18
+y 388
+w 120
+h 25
+controlPv "BL$(xx):SRBM:VPosition"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 39
+y 373
+w 80
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "VPOSITION"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 118
+y 413
+w 20
+h 13
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "mm"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 34
+y 304
+w 280
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 2560 0 47104
+useDisplayBg
+value {
+ "* SR RF BPM Signals *"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 465
+y 225
+w 60
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "microAmps"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 466
+y 146
+w 60
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "microAmps"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 601
+y 148
+w 60
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "microAmps"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 596
+y 228
+w 60
+h 10
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "microAmps"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 35
+y 324
+w 280
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 2560 0 47104
+useDisplayBg
+value {
+ "* Normalized to the Source *"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 474
+y 282
+w 180
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 9984 21504 36096
+useDisplayBg
+value {
+ "Vertical Positions and Angles"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 381
+y 300
+w 350
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 64768 0 0
+useDisplayBg
+value {
+ "NOTE:  The Normalized XBPM signals"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 388
+y 318
+w 350
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 64768 0 0
+useDisplayBg
+value {
+ "are correctly only when calibrated."
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 176
+y 53
+w 90
+h 34
+controlPv "BL$(xx):srCurrent"
+font "helvetica-medium-r-8.0"
+fgColor rgb 7680 47872 0
+fgAlarm
+bgColor rgb 54272 56064 40192
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 354
+y 378
+w 50
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "CM Status"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 15
+y 60
+w 150
+h 22
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "SR Current :"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 277
+y 65
+w 50
+h 20
+controlPv "BL$(xx):srCurrent.EGU"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 22
+y 92
+w 150
+h 22
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "SR Status :"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 169
+y 94
+w 227
+h 25
+controlPv "BL$(xx):ActualMode"
+font "helvetica-medium-r-8.0"
+fgColor rgb 2560 0 47104
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 160
+y 163
+w 13
+h 13
+lineColor rgb 15360 46080 8192
+fill
+fillColor rgb 15360 46080 8192
+lineWidth 0
+fillAlarm
+lineAlarm
+alarmPv "BL$(xx):BeamPresent"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 193
+w 100
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "MPS/RF OK"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 36
+y 223
+w 100
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Top Up"
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 160
+y 224
+w 13
+h 13
+lineColor rgb 15360 46080 8192
+fill
+fillColor rgb 15360 46080 8192
+lineWidth 0
+fillAlarm
+lineAlarm
+alarmPv "BL$(xx):TopUpStatus"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 160
+y 194
+w 13
+h 13
+lineColor rgb 15360 46080 8192
+fill
+fillColor rgb 15360 46080 8192
+lineWidth 0
+fillAlarm
+lineAlarm
+alarmPv "BL$(xx):RfMpsStatus"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 14
+y 161
+w 120
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Beam Present"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 230
+y 158
+w 100
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "ACIS Permit"
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 354
+y 161
+w 13
+h 13
+lineColor rgb 15360 46080 8192
+fill
+fillColor rgb 15360 46080 8192
+lineWidth 0
+fillAlarm
+lineAlarm
+alarmPv "BL$(xx):ACISShutterPermit"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 228
+y 221
+w 100
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Gbl Fdbk"
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 354
+y 192
+w 13
+h 13
+lineColor rgb 15360 46080 8192
+fill
+fillColor rgb 15360 46080 8192
+lineWidth 0
+fillAlarm
+lineAlarm
+alarmPv "BL$(xx):OrbitCorrection"
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 354
+y 223
+w 13
+h 13
+lineColor rgb 15360 46080 8192
+fill
+fillColor rgb 15360 46080 8192
+lineWidth 0
+fillAlarm
+lineAlarm
+alarmPv "BL$(xx):GblFeedback"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 229
+y 189
+w 100
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Orbit Corr"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 72
+y 251
+w 265
+h 25
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 55296 0
+useDisplayBg
+value {
+ "Front End Shutters Open"
+}
+visPv "CALC\\\{(A)\}(BL$(xx):BMFEShutter)"
+visInvert
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 59
+y 251
+w 265
+h 25
+font "helvetica-medium-r-8.0"
+fgColor rgb 64768 0 0
+useDisplayBg
+value {
+ "Front End Shutters Closed"
+}
+visPv "CALC\\\{(A)\}(BL$(xx):BMFEShutter)"
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 357
+y 391
+w 49
+h 7
+lineColor rgb 7680 47872 0
+fill
+fillColor rgb 7680 47872 0
+lineWidth 0
+fillAlarm
+lineAlarm
+alarmPv "BL$(xx):CMStatus"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 354
+y 411
+w 50
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Aux Clock OFF"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 357
+y 424
+w 49
+h 7
+lineColor rgb 7680 47872 0
+fill
+fillColor rgb 7680 47872 0
+lineWidth 0
+fillAlarm
+lineAlarm
+alarmPv "BL$(xx):AuxClock"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 13
+y 128
+w 150
+h 22
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "SR Lifetime :"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 176
+y 120
+w 90
+h 34
+controlPv "BL$(xx):srLifetime"
+font "helvetica-medium-r-8.0"
+fgColor rgb 7680 47872 0
+fgAlarm
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 273
+y 133
+w 50
+h 20
+controlPv "BL$(xx):srLifetime.EGU"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+bgColor rgb 60160 61696 46336
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 7
+y 120
+w 329
+h 34
+lineColor rgb 60160 61696 46336
+fill
+fillColor rgb 60160 61696 46336
+lineWidth 0
+visPv "CALC\\\{(A)\}(BL$(xx):Injecting)"
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 37
+y 127
+w 280
+h 24
+font "helvetica-medium-r-8.0"
+fgColor rgb 64768 0 0
+useDisplayBg
+value {
+ "Injection in Progress"
+}
+visPv "CALC\\\{(A)\}(BL$(xx):Injecting)"
+visMin 0
+visMax 1
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 195
+y 290
+w 50
+h 12
+controlPv "BL$(xx):ParityError"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+fgAlarm
+bgColor rgb 54272 56064 40192
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 90
+y 288
+w 45
+h 12
+controlPv "BL$(xx):LostLink"
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+fgAlarm
+bgColor rgb 54272 56064 40192
+autoHeight
+format decimal
+nullColor rgb 60928 46592 11008
+useHexPrefix
+objType "controls"
+newPos
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 95
+y 275
+w 36
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Link Status"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 217
+y 277
+w 80
+h 12
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Parity Error"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 258
+y 288
+w 50
+h 15
+fgColor rgb 64768 0 0
+onColor rgb 50944 47872 27904
+offColor rgb 50944 47872 27904
+topShadowColor rgb 65280 65280 65280
+botShadowColor rgb 0 0 0
+controlPv "BL$(xx):ParityErrorClr"
+pressValue "1"
+releaseValue 
+onLabel "Clear"
+offLabel "Clear"
+3d
+useEnumNumeric
+font "helvetica-medium-r-10.0"
+endObjectProperties
+

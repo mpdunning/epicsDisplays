@@ -1,0 +1,394 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 618
+y 51
+w 310
+h 310
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+title "Configuration"
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 49
+y 215
+w 97
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 33
+useDisplayBg
+value {
+  "Output Polarity:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 68
+y 95
+w 78
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 33
+useDisplayBg
+value {
+  "Burst Mode:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 72
+y 115
+w 74
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 33
+useDisplayBg
+value {
+  "Burst State:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 49
+y 135
+w 97
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 33
+useDisplayBg
+value {
+  "Burst N cycles:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 155
+w 121
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 33
+useDisplayBg
+value {
+  "Burst intern period:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 65
+y 175
+w 81
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 33
+useDisplayBg
+value {
+  "Burst phase:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 78
+y 195
+w 68
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 33
+useDisplayBg
+value {
+  "Angle unit:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 26
+y 240
+w 120
+h 16
+font "helvetica-medium-r-14.0"
+fgColor index 13
+bgColor index 33
+useDisplayBg
+value {
+  "Burst gate Polarity:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 155
+y 135
+w 95
+h 18
+controlPv "$(P):LO:SC:BURS:NCYCLE"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 2
+nullColor index 53
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 155
+y 155
+w 95
+h 18
+controlPv "$(P):AO:SC:BURS:IPER"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 2
+nullColor index 53
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 155
+y 175
+w 95
+h 18
+controlPv "$(P):AO:SC:BURS:PHAS"
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+editable
+autoHeight
+motifWidget
+limitsFromDb
+precision 2
+nullColor index 53
+smartRefresh
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 155
+y 115
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(P):BO:SC:BURS:STATE"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 155
+y 95
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(P):BO:SC:BURS:MODE"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 155
+y 195
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(P):BO:SC:UNIT:ANGLE"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 155
+y 240
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(P):BO:SC:BURS:GPOL"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 15
+w 93
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Burst Commands"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 156
+y 216
+w 140
+h 15
+fgColor index 13
+bgColor index 62
+selectColor index 60
+inconsistentColor index 47
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(P):BO:SC:OUT:POL"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+

@@ -1,0 +1,956 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 419
+y 269
+w 400
+h 180
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 10
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 400
+h 30
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 5
+w 125
+h 20
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 10
+useDisplayBg
+value {
+  "Temperature details:"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 335
+y 5
+w 53
+h 22
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 90
+y 40
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN8"
+font "helvetica-medium-r-10.0"
+fgColor index 55
+fgAlarm
+bgColor index 11
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 40
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN8.LOLO"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 210
+y 40
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN8.LOW"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 60
+y 40
+w 21
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 55
+bgColor index 11
+useDisplayBg
+value {
+  "Tank"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 90
+y 60
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN9"
+font "helvetica-medium-r-10.0"
+fgColor index 55
+fgAlarm
+bgColor index 11
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 60
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN9.LOLO"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 210
+y 60
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN9.LOW"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 60
+w 39
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 55
+bgColor index 11
+useDisplayBg
+value {
+  "Klystron"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 90
+y 80
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN10"
+font "helvetica-medium-r-10.0"
+fgColor index 55
+fgAlarm
+bgColor index 11
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 80
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN10.LOLO"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 210
+y 80
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN10.LOW"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 40
+y 80
+w 40
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 55
+bgColor index 11
+useDisplayBg
+value {
+  "Solenoid"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 90
+y 100
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN11"
+font "helvetica-medium-r-10.0"
+fgColor index 55
+fgAlarm
+bgColor index 11
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 100
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN11.LOLO"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 210
+y 100
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN11.LOW"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 100
+w 27
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 55
+bgColor index 11
+useDisplayBg
+value {
+  "Tank2"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 90
+y 120
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN12"
+font "helvetica-medium-r-10.0"
+fgColor index 55
+fgAlarm
+bgColor index 11
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 120
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN12.LOLO"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 210
+y 120
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN12.LOW"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 120
+w 27
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 55
+bgColor index 11
+useDisplayBg
+value {
+  "Tank3"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 90
+y 140
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN13"
+font "helvetica-medium-r-10.0"
+fgColor index 55
+fgAlarm
+bgColor index 11
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 150
+y 140
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN13.LOLO"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 210
+y 140
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN13.LOW"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 140
+w 27
+h 12
+font "helvetica-medium-r-10.0"
+fgColor index 55
+bgColor index 11
+useDisplayBg
+value {
+  "Tank4"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 270
+y 40
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN8.HIGH"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 330
+y 40
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN8.HIHI"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 270
+y 60
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN9.HIGH"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 330
+y 60
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN9.HIHI"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 270
+y 80
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN10.HIGH"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 330
+y 80
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN10.HIHI"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 270
+y 100
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN11.HIGH"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 330
+y 100
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN11.HIHI"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 270
+y 120
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN12.HIGH"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 330
+y 120
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN12.HIHI"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 270
+y 140
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN13.HIGH"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 330
+y 140
+w 50
+h 16
+controlPv "LB:ADC:R_CHAN13.HIHI"
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 3
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 40
+smartRefresh
+fastUpdate
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+

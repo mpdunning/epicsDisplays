@@ -1,0 +1,1652 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 882
+y 627
+w 555
+h 535
+font "helvetica-medium-r-18.0"
+ctlFont "courier-bold-r-10.0"
+btnFont "helvetica-medium-i-18.0"
+fgColor index 14
+bgColor index 71
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 71
+ctlBgColor1 index 71
+ctlBgColor2 index 14
+topShadowColor index 71
+botShadowColor index 14
+endScreenProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 0
+y 0
+w 388
+h 58
+fgColor index 29
+bgColor index 49
+topShadowColor index 48
+botShadowColor index 49
+font "courier-bold-r-18.0"
+yPosOffset 10
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tarf_main.edl"
+}
+menuLabel {
+  0 "Tarf Main"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 25
+w 450
+h 24
+font "courier-bold-r-24.0"
+fgColor index 0
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "RF Station $(STN) AS Proc Mini"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 0
+y 59
+w 1028
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 2
+xPoints {
+  0 0
+  1 1028
+}
+yPoints {
+  0 59
+  1 59
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 0
+w 240
+h 24
+font "courier-bold-r-24.0"
+fgColor index 0
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Test Accelerator"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 472
+y 7
+w 75
+h 28
+fgColor index 14
+bgColor index 71
+topShadowColor index 71
+botShadowColor index 14
+label "EXIT"
+font "courier-bold-r-24.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 21
+y 501
+w 175
+h 24
+fgColor index 29
+bgColor index 71
+topShadowColor index 0
+botShadowColor index 14
+font "courier-bold-r-18.0"
+buttonLabel "Stn$(STN)PPM"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "xband_ppm_main.edl"
+}
+menuLabel {
+  0 "Stn$(STN)PPM"
+}
+symbols {
+  0 "IOC=TRS$(STN),SC=S$(STN)PM,P1=SLEDOUT:PEAKPWR,P2=SLEDIN:PEAKPWR"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 21
+y 325
+w 175
+h 24
+fgColor index 29
+bgColor index 71
+topShadowColor index 73
+botShadowColor index 14
+font "courier-bold-r-18.0"
+yPosOffset 10
+buttonLabel "PWR FBCK Params"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tarf_pwrfbck.edl"
+}
+menuLabel {
+  0 "pwrfbck"
+}
+symbols {
+  0 "STN=TRS$(STN),NAME=AS:PROC:NORM"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 325
+y 126
+w 210
+h 30
+fgColor index 14
+bgColor index 71
+2ndBgColor index 71
+topShadowColor index 71
+botShadowColor index 14
+controlPv "TRS$(STN):RF:PULSE:WIDTHCTRL"
+font "courier-bold-r-10.0"
+limitsFromDb
+precision -1
+scaleMin 0
+scaleMax 0
+showLimits
+showValue
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 325
+y 66
+w 170
+h 16
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Pulse Width (nsec)"
+}
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 325
+y 195
+w 100
+h 32
+controlPv "TRS$(STN):RF:PULSE:WIDTHDES"
+precision -1
+fgColor index 14
+bgColor index 73
+fill
+font "courier-bold-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 325
+y 160
+w 100
+h 32
+controlPv "TRS$(STN):RF:PULSE:WIDTHINIT"
+precision -1
+fgColor index 14
+bgColor index 73
+fill
+font "courier-bold-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 435
+y 196
+w 100
+h 30
+fgColor index 14
+onColor index 33
+offColor index 31
+topShadowColor index 0
+botShadowColor index 14
+controlPv "TRS$(STN):RF:PULSE:WIDTHSAVE.PROC"
+pressValue "1"
+onLabel "Ctl->Tgt"
+offLabel "Ctl->Tgt"
+3d
+font "courier-bold-r-18.0"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 477
+w 182
+h 18
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 108
+y 479
+w 100
+h 15
+controlPv "TRS$(STN):SLEDOUT:PEAKPWR:PWIDTH"
+format "decimal"
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 71
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 26
+y 477
+w 54
+h 18
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "PWIDTH"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 39
+y 453
+w 169
+h 18
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 39
+y 453
+w 41
+h 18
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "VTOP"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 108
+y 455
+w 100
+h 15
+controlPv "TRS$(STN):SLEDOUT:PEAKPWR:VTOP"
+format "decimal"
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 71
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 39
+y 429
+w 169
+h 18
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 39
+y 429
+w 41
+h 18
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "VMAX"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 108
+y 431
+w 100
+h 15
+controlPv "TRS$(STN):SLEDOUT:PEAKPWR:VMAX"
+format "decimal"
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 71
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 26
+y 391
+w 162
+h 32
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 26
+y 392
+w 54
+h 30
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Target"
+  "Power"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 108
+y 391
+w 80
+h 32
+controlPv "TRS$(STN):AS:PWRFBCK:DES"
+precision -1
+fgColor index 14
+bgColor index 73
+fill
+font "courier-bold-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 355
+w 180
+h 30
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 8
+y 355
+w 72
+h 30
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Feedback"
+  "on/off"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 108
+y 360
+w 80
+h 20
+fgColor index 14
+bgColor index 33
+selectColor index 31
+inconsistentColor index 71
+topShadowColor index 0
+botShadowColor index 14
+controlPv "TRS$(STN):AS:PWRFBCK:ON"
+font "courier-bold-r-14.0"
+orientation "horizontal"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 86
+w 157
+h 35
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 325
+y 86
+w 157
+h 35
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 329
+y 90
+w 29
+h 27
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 327
+y 88
+w 153
+h 31
+lineColor index 87
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):RF:PULSE:WIDTH.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 359
+y 93
+w 120
+h 18
+controlPv "TRS$(STN):RF:PULSE:WIDTH"
+format "decimal"
+font "courier-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 71
+autoHeight
+precision 1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 330
+y 91
+w 28
+h 26
+fgColor index 29
+bgColor index 71
+topShadowColor index 73
+botShadowColor index 14
+font "courier-bold-r-18.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tarf_db_pulsewidth.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=TRS$(STN),NAME=RF:PULSE:WIDTH,CH=$(PWCH),DCH=$(PWDCH)"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 338
+y 445
+w 175
+h 24
+fgColor index 29
+bgColor index 71
+topShadowColor index 73
+botShadowColor index 14
+font "courier-bold-r-18.0"
+yPosOffset 10
+buttonLabel "AS Proc Inputs"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tarf_proc_as_inputs.edl"
+}
+menuLabel {
+  0 "AS Processing Inputs"
+}
+symbols {
+  0 "STN=$(STN)"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 338
+y 407
+w 175
+h 24
+fgColor index 29
+bgColor index 71
+topShadowColor index 73
+botShadowColor index 14
+font "courier-bold-r-18.0"
+yPosOffset 10
+buttonLabel "AS Proc Stn $(STN)"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tarf_proc_as.edl"
+}
+menuLabel {
+  0 "Acc Structure Processing"
+}
+symbols {
+  0 "STN=$(STN),M=$(M),C=$(C),CR=$(CR),DPCH=$(DPCH),DPDCH=$(DPDCH),PWCH=$(PWCH),PWDCH=$(PWDCH)"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 331
+y 253
+w 188
+h 129
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 331
+y 253
+w 188
+h 26
+
+beginGroup
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 397
+y 253
+w 122
+h 26
+fgColor index 14
+onColor index 33
+offColor index 31
+inconsistentColor index 14
+topShadowColor index 71
+botShadowColor index 14
+controlPv "TRS$(STN):RF:RAMP:OVERRIDE"
+3d
+font "courier-bold-r-18.0"
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 331
+y 258
+w 65
+h 16
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Ramp"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 331
+y 306
+w 188
+h 23
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 396
+y 306
+w 123
+h 23
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 396
+y 306
+w 123
+h 23
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 310
+w 24
+h 15
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 398
+y 308
+w 119
+h 19
+lineColor index 87
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):RF:RAMP:STATE.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 426
+y 310
+w 90
+h 15
+controlPv "TRS$(STN):RF:RAMP:STATE"
+format "decimal"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 71
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 401
+y 311
+w 23
+h 14
+fgColor index 29
+bgColor index 71
+topShadowColor index 73
+botShadowColor index 14
+font "courier-bold-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "rf_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=TRS$(STN),RING=TARF,NAME=RF:RAMP:STATE"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 331
+y 309
+w 65
+h 16
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Status"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 331
+y 352
+w 188
+h 30
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 406
+y 356
+w 113
+h 23
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 406
+y 356
+w 113
+h 23
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 410
+y 360
+w 24
+h 15
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 408
+y 358
+w 109
+h 19
+lineColor index 87
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS:PROC:PFAULT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 436
+y 360
+w 80
+h 15
+controlPv "TRS$(STN):AS:PROC:PFAULT"
+format "decimal"
+font "courier-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 71
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 411
+y 361
+w 23
+h 14
+fgColor index 29
+bgColor index 71
+topShadowColor index 73
+botShadowColor index 14
+font "courier-bold-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "rf_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=TRS$(STN),RING=TARF,NAME=AS:PROC:PFAULT"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 331
+y 352
+w 63
+h 30
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Fault"
+  "Summary"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 338
+y 503
+w 175
+h 24
+fgColor index 29
+bgColor index 71
+topShadowColor index 73
+botShadowColor index 14
+font "courier-bold-r-18.0"
+yPosOffset 10
+buttonLabel "SLEDFBCK 2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tarf_sledfbck.edl"
+}
+menuLabel {
+  0 "SLEDFBCK 2"
+}
+symbols {
+  0 "STN=TRS2"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 338
+y 478
+w 175
+h 24
+fgColor index 29
+bgColor index 71
+topShadowColor index 73
+botShadowColor index 14
+font "courier-bold-r-18.0"
+yPosOffset 10
+buttonLabel "SLEDFBCK 0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tarf_sledfbck.edl"
+}
+menuLabel {
+  0 "SLEDFBCK 0"
+}
+symbols {
+  0 "STN=TRS0"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 67
+y 66
+w 170
+h 16
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "SLED In Power (MW)"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 199
+y 266
+w 100
+h 30
+fgColor index 14
+onColor index 33
+offColor index 31
+topShadowColor index 0
+botShadowColor index 14
+controlPv "TRS$(STN):RF:DRIVE:PWRSAVE.PROC"
+pressValue "1"
+onLabel "Ctl->Tgt"
+offLabel "Ctl->Tgt"
+3d
+font "courier-bold-r-18.0"
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 89
+y 160
+w 100
+h 32
+controlPv "TRS$(STN):RF:DRIVE:PWRINIT"
+precision -1
+fgColor index 14
+bgColor index 73
+fill
+font "courier-bold-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 89
+y 195
+w 100
+h 32
+controlPv "TRS$(STN):RF:DRIVE:PWRMIN"
+precision -1
+fgColor index 14
+bgColor index 73
+fill
+font "courier-bold-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 89
+y 230
+w 100
+h 32
+controlPv "TRS$(STN):RF:DRIVE:PWRMAX"
+precision -1
+fgColor index 14
+bgColor index 73
+fill
+font "courier-bold-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 89
+y 265
+w 100
+h 32
+controlPv "TRS$(STN):RF:DRIVE:PWRDES"
+precision -1
+fgColor index 14
+bgColor index 73
+fill
+font "courier-bold-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 273
+w 80
+h 16
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Target"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 238
+w 80
+h 16
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Maximum"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 203
+w 80
+h 16
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Minimum"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 168
+w 80
+h 16
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Initial"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 133
+w 80
+h 16
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Control"
+}
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 86
+y 126
+w 210
+h 30
+fgColor index 14
+bgColor index 71
+2ndBgColor index 71
+topShadowColor index 71
+botShadowColor index 14
+controlPv "TRS$(STN):RF:DRIVE:PWRCTRL"
+font "courier-bold-r-10.0"
+precision 1
+scaleMin 0
+scaleMax 30
+showLimits
+showValue
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 88
+y 86
+w 157
+h 35
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 88
+y 86
+w 157
+h 35
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 92
+y 90
+w 29
+h 27
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 90
+y 88
+w 153
+h 31
+lineColor index 87
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):RF:DRIVE:PWR.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 122
+y 93
+w 120
+h 18
+controlPv "TRS$(STN):RF:DRIVE:PWR"
+format "decimal"
+font "courier-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 71
+autoHeight
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 93
+y 91
+w 28
+h 26
+fgColor index 29
+bgColor index 71
+topShadowColor index 73
+botShadowColor index 14
+font "courier-bold-r-18.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tarf_db_sledpwr.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=TRS$(STN),NAME=RF:DRIVE:PWR,CH=$(DPCH),DCH=$(DPDCH)"
+}
+propagateMacros {
+  0 0
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 95
+w 80
+h 16
+font "courier-bold-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Current"
+}
+endObjectProperties
+
+# (incDecButton)
+object idbClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 267
+y 85
+w 24
+h 36
+fgColor index 14
+bgColor index 71
+topShadowColor index 71
+botShadowColor index 14
+controlPv "TRS$(STN):RF:DRIVE:PWRCTRL"
+coarseValue ".5"
+fineValue ".1"
+label "H’Ó	"
+3d
+rate 0.1
+scaleMin 0
+scaleMax 30
+endObjectProperties
+

@@ -1,0 +1,2229 @@
+file {
+	name="pack_lost_power.dl"
+}
+display {
+	magic="305419896"
+	majv="2"
+	mnrv="4"
+	ndyng="8"
+	npc="31"
+	nstr="150"
+	ndynamic="21"
+	nplot="0"
+	nrd="0"
+	nes="2"
+	nkd="1"
+	npd="1"
+	npo="0"
+	object {
+		x="600"
+		y="250"
+		width="595"
+		height="539"
+	}
+	clr="1"
+	bclr="10"
+	nwords_dspy="5122"
+	nwords_sta="904"
+	nwords_cmap="0"
+	nwords_crules="0"
+	odyng="2976"
+	osta="2072"
+	odynamic="3396"
+	oplot="4782"
+	ord="4782"
+	oes="4782"
+	okd="5098"
+	opd="5110"
+	opo="5122"
+	opc="68"
+	ostr="578"
+	ocmap="2072"
+	ocrules="2072"
+	style="solid"
+	fill="outline"
+	width="1"
+	clrmod="static"
+	vismod="static"
+	precision="-1"
+	clrrule=""
+	pv="TRS$(STN):"
+	cmap="color.dl"
+	pixwid="1600"
+	pixht="1200"
+	mmwid="325"
+	mmht="243"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="11"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="0"
+		y="0"
+		width="220"
+		height="57"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="0"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="25"
+		width="180"
+		height="30"
+		groupid="0"
+	}
+	textix="DB: Power"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"line" {
+	object {
+		x="419"
+		y="0"
+		width="0"
+		height="55"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="419"
+		y="0"
+	}
+	point[1] {
+		x="419"
+		y="55"
+	}
+	orgpoint[0] {
+		x="-1"
+		y="0"
+	}
+	orgpoint[1] {
+		x="-1"
+		y="1000"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="0"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="0"
+		width="200"
+		height="30"
+		groupid="0"
+	}
+	textix="8-Pack"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"text" {
+	object {
+		x="19"
+		y="216"
+		width="140"
+		height="16"
+		groupid="0"
+	}
+	textix="Smoothed Value:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="19"
+		y="116"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="High Op Lim (HOPR):"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="19"
+		y="154"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="HiHi Al Lim (HIHI):"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="19"
+		y="186"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="High Al Lim (HIGH):"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="19"
+		y="246"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Low  Al Lim (LOW) :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="19"
+		y="278"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="LoLo Al Lim (LOLO):"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="19"
+		y="312"
+		width="140"
+		height="12"
+		groupid="0"
+	}
+	textix="Low  Op Lim (LOPR):"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="194"
+		y="83"
+		width="170"
+		height="17"
+		groupid="0"
+	}
+	textix="Alarm Information"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="164"
+		y="212"
+		width="113"
+		height="23"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="10"
+		y="370"
+		width="560"
+		height="18"
+		groupid="0"
+	}
+	textix="Lost Power = A * ( KLY5 FwdPwr + KLY6 FwdPwr + KLY7 FwdPwr + KLY8 FwdPwr )"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="11"
+		y="462"
+		width="550"
+		height="18"
+		groupid="0"
+	}
+	textix="Smoothed Power = (SMOO*Last Val) + ((1-SMOO)*Current Val)"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="280"
+		y="400"
+		width="25"
+		height="18"
+		groupid="0"
+	}
+	textix="C"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="166"
+		y="399"
+		width="25"
+		height="18"
+		groupid="0"
+	}
+	textix="B"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="52"
+		y="398"
+		width="25"
+		height="18"
+		groupid="0"
+	}
+	textix="A"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="286"
+		y="494"
+		width="140"
+		height="18"
+		groupid="0"
+	}
+	textix="Detail Plots"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="13"
+		y="497"
+		width="50"
+		height="18"
+		groupid="0"
+	}
+	textix="SMOO"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"rectangle" {
+	object {
+		x="4"
+		y="73"
+		width="585"
+		height="280"
+		groupid="0"
+	}
+}
+"rectangle" {
+	object {
+		x="4"
+		y="358"
+		width="585"
+		height="173"
+		groupid="0"
+	}
+}
+"text" {
+	object {
+		x="294"
+		y="148"
+		width="130"
+		height="16"
+		groupid="0"
+	}
+	textix="Alarm Hyst   :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="294"
+		y="113"
+		width="130"
+		height="16"
+		groupid="0"
+	}
+	textix="Monitor Delta:"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="294"
+		y="183"
+		width="130"
+		height="16"
+		groupid="0"
+	}
+	textix="Precision    :"
+	align="horiz. left"
+}
+"text" {
+	object {
+		x="294"
+		y="220"
+		width="90"
+		height="16"
+		groupid="0"
+	}
+	textix="Value  :"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="394"
+		y="213"
+		width="87"
+		height="23"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"text" {
+	object {
+		x="294"
+		y="298"
+		width="90"
+		height="16"
+		groupid="0"
+	}
+	textix="Minimum:"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="394"
+		y="291"
+		width="87"
+		height="23"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"text" {
+	object {
+		x="294"
+		y="246"
+		width="90"
+		height="16"
+		groupid="0"
+	}
+	textix="Maximum:"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="394"
+		y="239"
+		width="87"
+		height="23"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"text" {
+	object {
+		x="294"
+		y="272"
+		width="90"
+		height="16"
+		groupid="0"
+	}
+	textix="Average:"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"rectangle" {
+	object {
+		x="394"
+		y="265"
+		width="87"
+		height="23"
+		groupid="0"
+	}
+}
+"rectangle" {
+	object {
+		x="489"
+		y="291"
+		width="87"
+		height="23"
+		groupid="0"
+	}
+}
+"rectangle" {
+	object {
+		x="489"
+		y="239"
+		width="87"
+		height="23"
+		groupid="0"
+	}
+}
+"rectangle" {
+	object {
+		x="489"
+		y="265"
+		width="87"
+		height="23"
+		groupid="0"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"text" {
+	object {
+		x="499"
+		y="223"
+		width="90"
+		height="16"
+		groupid="0"
+	}
+	textix="Archived"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="0"
+	}
+}
+"line" {
+	object {
+		x="221"
+		y="56"
+		width="380"
+		height="0"
+		groupid="0"
+	}
+	npoints="2"
+	point[0] {
+		x="221"
+		y="56"
+	}
+	point[1] {
+		x="601"
+		y="56"
+	}
+	orgpoint[0] {
+		x="0"
+		y="0"
+	}
+	orgpoint[1] {
+		x="1000"
+		y="1000"
+	}
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="solid"
+		width="0"
+	}
+}
+"text" {
+	object {
+		x="105"
+		y="386"
+		width="271"
+		height="13"
+		groupid="0"
+	}
+	textix="- B * ( LD6 FwdPwr + LD8 FwdPwr ) + C"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="1"
+		style="solid"
+		fill="outline"
+		width="1"
+	}
+}
+"text" {
+	object {
+		x="5"
+		y="59"
+		width="450"
+		height="12"
+		groupid="0"
+	}
+	textix="Record Name (NAME):  TRS$(STN):$(NAME):PWR"
+	align="horiz. left"
+}
+"<<basic attribute>>" {
+	attr {
+		clr="6"
+		style="solid"
+		fill="outline"
+		width="3"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="1"
+			rulecolorbg="1"
+			chan="TRS$(STN):$(NAME):PWR.SEVR"
+			rulechan[0] = "TRS$(STN):$(NAME):PWR.SEVR"
+			rulechan[1] = "TRS$(STN):$(NAME):PWR.SEVR"
+			rulechan[2] = "TRS$(STN):$(NAME):PWR.SEVR"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="STN=TRS$(STN),NAME=$(NAME):PWR,MODULE=$(M)"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="166"
+		y="214"
+		width="109"
+		height="19"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="1"
+			rulecolorbg="1"
+			chan="TRS$(STN):$(NAME):PWRONE.SEVR"
+			rulechan[0] = "TRS$(STN):$(NAME):PWRONE.SEVR"
+			rulechan[1] = "TRS$(STN):$(NAME):PWRONE.SEVR"
+			rulechan[2] = "TRS$(STN):$(NAME):PWRONE.SEVR"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="STN=TRS$(STN),NAME=$(NAME):PWRONE,MODULE=$(M)"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="396"
+		y="215"
+		width="83"
+		height="19"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="1"
+			rulecolorbg="1"
+			chan="TRS$(STN):$(NAME):PWRMIN.SEVR"
+			rulechan[0] = "TRS$(STN):$(NAME):PWRMIN.SEVR"
+			rulechan[1] = "TRS$(STN):$(NAME):PWRMIN.SEVR"
+			rulechan[2] = "TRS$(STN):$(NAME):PWRMIN.SEVR"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="STN=TRS$(STN),NAME=$(NAME):PWRMIN,MODULE=$(M)"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="396"
+		y="293"
+		width="83"
+		height="19"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="1"
+			rulecolorbg="1"
+			chan="TRS$(STN):$(NAME):PWRMAX.SEVR"
+			rulechan[0] = "TRS$(STN):$(NAME):PWRMAX.SEVR"
+			rulechan[1] = "TRS$(STN):$(NAME):PWRMAX.SEVR"
+			rulechan[2] = "TRS$(STN):$(NAME):PWRMAX.SEVR"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="STN=TRS$(STN),NAME=$(NAME):PWRMAX,MODULE=$(M)"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="396"
+		y="241"
+		width="83"
+		height="19"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="1"
+			rulecolorbg="1"
+			chan="TRS$(STN):$(NAME):PWRAVE.SEVR"
+			rulechan[0] = "TRS$(STN):$(NAME):PWRAVE.SEVR"
+			rulechan[1] = "TRS$(STN):$(NAME):PWRAVE.SEVR"
+			rulechan[2] = "TRS$(STN):$(NAME):PWRAVE.SEVR"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="STN=TRS$(STN),NAME=$(NAME):PWRAVE,MODULE=$(M)"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="396"
+		y="267"
+		width="83"
+		height="19"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="1"
+			rulecolorbg="1"
+			chan="TRS$(STN):$(NAME):PMIN.SEVR"
+			rulechan[0] = "TRS$(STN):$(NAME):PMIN.SEVR"
+			rulechan[1] = "TRS$(STN):$(NAME):PMIN.SEVR"
+			rulechan[2] = "TRS$(STN):$(NAME):PMIN.SEVR"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="STN=TRS$(STN),NAME=$(NAME):PMIN,MODULE=$(M)"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="491"
+		y="293"
+		width="83"
+		height="19"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="1"
+			rulecolorbg="1"
+			chan="TRS$(STN):$(NAME):PMAX.SEVR"
+			rulechan[0] = "TRS$(STN):$(NAME):PMAX.SEVR"
+			rulechan[1] = "TRS$(STN):$(NAME):PMAX.SEVR"
+			rulechan[2] = "TRS$(STN):$(NAME):PMAX.SEVR"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="STN=TRS$(STN),NAME=$(NAME):PMAX,MODULE=$(M)"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="491"
+		y="241"
+		width="83"
+		height="19"
+		groupid="0"
+	}
+}
+"<<dynamic attribute>>" {
+	attr {
+		mod {
+			clrmod="rule"
+			vis="static"
+		}
+		param {
+			rulecolorfg="1"
+			rulecolorbg="1"
+			chan="TRS$(STN):$(NAME):PAVE.SEVR"
+			rulechan[0] = "TRS$(STN):$(NAME):PAVE.SEVR"
+			rulechan[1] = "TRS$(STN):$(NAME):PAVE.SEVR"
+			rulechan[2] = "TRS$(STN):$(NAME):PAVE.SEVR"
+			rulechan[3] = ""
+			rulechan[4] = ""
+			rulechan[5] = ""
+			rulechan[6] = ""
+			rulechan[7] = ""
+			rulechan[8] = ""
+			rulechan[9] = ""
+			rulechan[10] = ""
+			rulechan[11] = ""
+			rulechan[12] = ""
+			rulechan[13] = ""
+			rulechan[14] = ""
+			rulechan[15] = ""
+			clrrule="alarm"
+			clrargs="STN=TRS$(STN),NAME=$(NAME):PAVE,MODULE=$(M)"
+		}
+	}
+}
+"rectangle" {
+	object {
+		x="491"
+		y="267"
+		width="83"
+		height="19"
+		groupid="0"
+	}
+}
+"text entry" {
+	object {
+		x="164"
+		y="111"
+		width="114"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):$(NAME):PHOPR"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="164"
+		y="145"
+		width="114"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):$(NAME):PWR.HIHI"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="164"
+		y="178"
+		width="114"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):$(NAME):PWR.HIGH"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="164"
+		y="240"
+		width="114"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):$(NAME):PWR.LOW"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="164"
+		y="273"
+		width="114"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):$(NAME):PWR.LOLO"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="164"
+		y="307"
+		width="114"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):$(NAME):PLOPR"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text update" {
+	object {
+		x="194"
+		y="216"
+		width="80"
+		height="16"
+		groupid="0"
+	}
+	monitor {
+		chan="TRS$(STN):$(NAME):PWR"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="240"
+		y="420"
+		width="110"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):SYS:AS:LST:PWRFST.C"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal- exponential notation"
+}
+"text entry" {
+	object {
+		x="126"
+		y="419"
+		width="110"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):SYS:AS:LST:PWRFST.B"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal- exponential notation"
+}
+"text entry" {
+	object {
+		x="12"
+		y="418"
+		width="110"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):SYS:AS:LST:PWRFST.A"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="2"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal- exponential notation"
+}
+"text entry" {
+	object {
+		x="73"
+		y="487"
+		width="100"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):$(NAME):PWR.C"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="439"
+		y="143"
+		width="114"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):$(NAME):PWR.HYST"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="439"
+		y="108"
+		width="114"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):$(NAME):PWR.MDEL"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text entry" {
+	object {
+		x="439"
+		y="178"
+		width="114"
+		height="30"
+		groupid="0"
+	}
+	control {
+		chan="TRS$(STN):$(NAME):PWR.PREC"
+		clr="1"
+		bclr="20"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="0"
+		newunits=""
+		units="none"
+		decorate="outward"
+		convertFunc=""
+		convertParams=""
+	}
+	format="decimal"
+}
+"text update" {
+	object {
+		x="398"
+		y="217"
+		width="80"
+		height="16"
+		groupid="0"
+	}
+	monitor {
+		chan="TRS$(STN):$(NAME):PWRONE"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="398"
+		y="243"
+		width="80"
+		height="16"
+		groupid="0"
+	}
+	monitor {
+		chan="TRS$(STN):$(NAME):PWRMAX"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="398"
+		y="269"
+		width="80"
+		height="16"
+		groupid="0"
+	}
+	monitor {
+		chan="TRS$(STN):$(NAME):PWRAVE"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="398"
+		y="295"
+		width="80"
+		height="16"
+		groupid="0"
+	}
+	monitor {
+		chan="TRS$(STN):$(NAME):PWRMIN"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="493"
+		y="243"
+		width="80"
+		height="16"
+		groupid="0"
+	}
+	monitor {
+		chan="TRS$(STN):$(NAME):PMAX"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="493"
+		y="269"
+		width="80"
+		height="16"
+		groupid="0"
+	}
+	monitor {
+		chan="TRS$(STN):$(NAME):PAVE"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"text update" {
+	object {
+		x="493"
+		y="295"
+		width="80"
+		height="16"
+		groupid="0"
+	}
+	monitor {
+		chan="TRS$(STN):$(NAME):PMIN"
+		clr="1"
+		bclr="10"
+		label="none"
+		clrmod="static"
+		rulechan[0] = ""
+		rulechan[1] = ""
+		rulechan[2] = ""
+		rulechan[3] = ""
+		rulechan[4] = ""
+		rulechan[5] = ""
+		rulechan[6] = ""
+		rulechan[7] = ""
+		rulechan[8] = ""
+		rulechan[9] = ""
+		rulechan[10] = ""
+		rulechan[11] = ""
+		rulechan[12] = ""
+		rulechan[13] = ""
+		rulechan[14] = ""
+		rulechan[15] = ""
+		clrrule=""
+		clrargs=""
+		rulecolorbg="0"
+		rulecolorfg="0"
+		hdl="0"
+		ldl="0"
+		prec="-1"
+		newunits=""
+		units="none"
+		decorate="none"
+		convertFunc=""
+		convertParams=""
+	}
+	align="horiz. centered"
+	format="decimal"
+}
+"execute script" {
+	object {
+		x="518"
+		y="29"
+		width="75"
+		height="26"
+		groupid="0"
+	}
+	script[0] {
+		label="Help"
+		path="dm_help tarf/power"
+		args=""
+	}
+	script[1] {
+		label=""
+		path=""
+		args=""
+	}
+	script[2] {
+		label=""
+		path=""
+		args=""
+	}
+	script[3] {
+		label=""
+		path=""
+		args=""
+	}
+	script[4] {
+		label=""
+		path=""
+		args=""
+	}
+	script[5] {
+		label=""
+		path=""
+		args=""
+	}
+	script[6] {
+		label=""
+		path=""
+		args=""
+	}
+	script[7] {
+		label=""
+		path=""
+		args=""
+	}
+	script[8] {
+		label=""
+		path=""
+		args=""
+	}
+	script[9] {
+		label=""
+		path=""
+		args=""
+	}
+	script[10] {
+		label=""
+		path=""
+		args=""
+	}
+	script[11] {
+		label=""
+		path=""
+		args=""
+	}
+	script[12] {
+		label=""
+		path=""
+		args=""
+	}
+	script[13] {
+		label=""
+		path=""
+		args=""
+	}
+	script[14] {
+		label=""
+		path=""
+		args=""
+	}
+	script[15] {
+		label=""
+		path=""
+		args=""
+	}
+	script[16] {
+		label=""
+		path=""
+		args=""
+	}
+	script[17] {
+		label=""
+		path=""
+		args=""
+	}
+	script[18] {
+		label=""
+		path=""
+		args=""
+	}
+	script[19] {
+		label=""
+		path=""
+		args=""
+	}
+	script[20] {
+		label=""
+		path=""
+		args=""
+	}
+	script[21] {
+		label=""
+		path=""
+		args=""
+	}
+	script[22] {
+		label=""
+		path=""
+		args=""
+	}
+	script[23] {
+		label=""
+		path=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="Help  "
+	decorate="outward"
+}
+"execute script" {
+	object {
+		x="441"
+		y="484"
+		width="65"
+		height="35"
+		groupid="0"
+	}
+	script[0] {
+		label="Detail Plots"
+		path="rfdm2k pack_dm2k_pwr S=$(STN),NAME=$(NAME)"
+		args=""
+	}
+	script[1] {
+		label=""
+		path=""
+		args=""
+	}
+	script[2] {
+		label=""
+		path=""
+		args=""
+	}
+	script[3] {
+		label=""
+		path=""
+		args=""
+	}
+	script[4] {
+		label=""
+		path=""
+		args=""
+	}
+	script[5] {
+		label=""
+		path=""
+		args=""
+	}
+	script[6] {
+		label=""
+		path=""
+		args=""
+	}
+	script[7] {
+		label=""
+		path=""
+		args=""
+	}
+	script[8] {
+		label=""
+		path=""
+		args=""
+	}
+	script[9] {
+		label=""
+		path=""
+		args=""
+	}
+	script[10] {
+		label=""
+		path=""
+		args=""
+	}
+	script[11] {
+		label=""
+		path=""
+		args=""
+	}
+	script[12] {
+		label=""
+		path=""
+		args=""
+	}
+	script[13] {
+		label=""
+		path=""
+		args=""
+	}
+	script[14] {
+		label=""
+		path=""
+		args=""
+	}
+	script[15] {
+		label=""
+		path=""
+		args=""
+	}
+	script[16] {
+		label=""
+		path=""
+		args=""
+	}
+	script[17] {
+		label=""
+		path=""
+		args=""
+	}
+	script[18] {
+		label=""
+		path=""
+		args=""
+	}
+	script[19] {
+		label=""
+		path=""
+		args=""
+	}
+	script[20] {
+		label=""
+		path=""
+		args=""
+	}
+	script[21] {
+		label=""
+		path=""
+		args=""
+	}
+	script[22] {
+		label=""
+		path=""
+		args=""
+	}
+	script[23] {
+		label=""
+		path=""
+		args=""
+	}
+	clr="1"
+	bclr="10"
+	menu_title="Diag"
+	decorate="outward"
+}
+"kill display" {
+	object {
+		x="518"
+		y="0"
+		width="75"
+		height="28"
+		groupid="0"
+	}
+	label="Exit"
+	clr="1"
+	bclr="20"
+	decorate="outward"
+}
+"print display" {
+	object {
+		x="435"
+		y="0"
+		width="75"
+		height="28"
+		groupid="0"
+	}
+	label="Print"
+	clr="1"
+	bclr="20"
+	decorate="outward"
+}

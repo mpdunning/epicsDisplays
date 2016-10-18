@@ -1,0 +1,988 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 51
+y 1497
+w 992
+h 307
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (GIF Image)
+object cfcf6c8a_dbeb_11d2_8a97_00104b8742df
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 1000
+h 299
+file "end.gif"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 732
+y 88
+w 20
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS7:,R=cam1:,A=ESB:ACSW5,N=7,IOC=sioc-esb-adps7"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 672
+y 64
+w 80
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2114-1:BIT3"
+onLabel "Prof2250:IN"
+offLabel "Prof2250:OUT"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 780
+y 152
+w 80
+h 20
+fgColor index 13
+onColor index 64
+offColor index 40
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2114-1:BIT2"
+onLabel "Prof2190:YAG"
+offLabel "Prof2190:OTR"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 100
+y 92
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 100
+}
+yPoints {
+  0 90
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 260
+y 116
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+lineWidth 2
+visPv "ESB:BO:2124-8:BIT3"
+visMin "0"
+visMax "2"
+numPoints 1
+xPoints {
+  0 258
+}
+yPoints {
+  0 116
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 76
+y 152
+w 24
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS47:,R=cam1:,IOC=sioc-esb-adps47"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 676
+y 88
+w 56
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Cam 2250"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 7"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 428
+y 152
+w 56
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Cam 2100"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 28"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 428
+y 128
+w 80
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2114-1:BIT6"
+onLabel "Prof2100:IN"
+offLabel "Prof2100:OUT"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 484
+y 152
+w 24
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS28:,R=cam1:,A=ESB:ACSW5,N=5,IOC=sioc-esb-adps28"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 100
+y 152
+w 56
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Cam 1975"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 47"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 344
+y 128
+w 80
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2114-11:BIT3"
+onLabel "Prof2055:IN"
+offLabel "Prof2055:OUT"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 344
+y 152
+w 24
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS15:,R=cam1:,A=ESB:ACSW5,N=1,IOC=sioc-esb-adps15"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 368
+y 152
+w 56
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Cam 2055"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 15"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 76
+y 128
+w 82
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2114-11:BIT5"
+onLabel "Prof1975:IN"
+offLabel "Prof1975:OUT"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 680
+y 264
+w 72
+h 32
+fgColor index 14
+bgColor index 30
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-12.0"
+buttonLabel "RattBoyz"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "phantom.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 800
+y 16
+w 56
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "cam 2290"
+numCmds 1
+command {
+  0 "$SCRIPT/startAD.sh -c 6"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 792
+y 176
+w 56
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "cam 2190"
+numCmds 1
+command {
+  0 "$SCRIPT/startAD.sh -c 8"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 520
+y 96
+w 90
+h 44
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 518
+y 96
+w 90
+h 44
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 29
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh BEND 2110"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 526
+y 100
+w 70
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 29
+bgColor index 0
+useDisplayBg
+value {
+  "Bend 2110"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 524
+y 118
+w 76
+h 16
+controlPv "ESB:BEND:2110:BACT"
+font "courier-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+fgAlarm
+bgColor index 2
+useDisplayBg
+precision 2
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 624
+y 8
+w 150
+h 34
+lineColor index 13
+fill
+fillColor index 65
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 636
+y 12
+w 36
+h 12
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Temp:"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 636
+y 28
+w 44
+h 10
+controlPv "ESB:AI:3314F-16:CH1"
+font "courier-bold-r-10.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+autoHeight
+precision 1
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 712
+y 28
+w 44
+h 12
+controlPv "ESB:TUNNEL_EAST:HUMIDITY"
+font "courier-bold-r-10.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+precision 1
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 692
+y 12
+w 78
+h 12
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Rel Humidity:"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 160
+y 128
+w 82
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2114-11:BIT2"
+onLabel "Prof1980:IN"
+offLabel "Prof1980:OUT"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 416
+y 256
+w 40
+h 50
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "quadEmbed.edl"
+}
+symbols {
+  0 "MAG=2070"
+}
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 480
+y 236
+w 40
+h 50
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "ycorEmbed.edl"
+}
+symbols {
+  0 "MAG=2100"
+}
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 560
+y 236
+w 40
+h 50
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "xcorEmbed.edl"
+}
+symbols {
+  0 "MAG=2110"
+}
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 292
+y 96
+w 40
+h 50
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "xcorEmbed.edl"
+}
+symbols {
+  0 "MAG=2030"
+}
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 292
+y 140
+w 40
+h 50
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "ycorEmbed.edl"
+}
+symbols {
+  0 "MAG=2040"
+}
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 292
+y 256
+w 40
+h 50
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "quadEmbed.edl"
+}
+symbols {
+  0 "MAG=2020"
+}
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 356
+y 256
+w 40
+h 50
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "quadEmbed.edl"
+}
+symbols {
+  0 "MAG=2050"
+}
+noScroll
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 160
+y 152
+w 40
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "andor"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "andor-nlcta.edl"
+}
+symbols {
+  0 "P=ANDOR1:,R=cam1:,P2=ESB:ACSW8,N=4,IOC=sioc-esb-ada01"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 204
+y 152
+w 38
+h 20
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "MCP"
+numCmds 1
+command {
+  0 "$SCRIPT/startAD.sh -c 50"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 184
+y 264
+w 104
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2114-11:BIT3"
+onLabel "Prof_Gainbox:IN"
+offLabel "Prof_Gainbox:OUT"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+visMin "1"
+visMax "2"
+endObjectProperties
+

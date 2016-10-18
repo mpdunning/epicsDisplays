@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>506</width>
+    <height>436</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>0</y>
+      <width>489</width>
+      <height>387</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_12">
+     <attribute name="title">
+      <string>Controls</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>6</y>
+        <width>299</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>ESA Test Beam Illumination Controls</string>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="tabWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>32</y>
+        <width>433</width>
+        <height>313</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_13">
+       <attribute name="title">
+        <string>1 - 6</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_5">
+        <property name="geometry">
+         <rect>
+          <x>36</x>
+          <y>16</y>
+          <width>368</width>
+          <height>248</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/lamps-1.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=ESA,M=4414,N=22</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_14">
+       <attribute name="title">
+        <string>7 - 12</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_6">
+        <property name="geometry">
+         <rect>
+          <x>36</x>
+          <y>16</y>
+          <width>368</width>
+          <height>248</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/lamps-2.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=ESA,M=4414,N=22</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>ADC(3404)</string>
+     </attribute>
+     <widget class="QEForm" name="adcQEForm">
+      <property name="geometry">
+       <rect>
+        <x>6</x>
+        <y>8</y>
+        <width>471</width>
+        <height>299</height>
+       </rect>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/adcConv-4.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA,M=3404,N=22</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>DAC</string>
+     </attribute>
+     <widget class="QEForm" name="t3222QEForm">
+      <property name="geometry">
+       <rect>
+        <x>24</x>
+        <y>14</y>
+        <width>436</width>
+        <height>317</height>
+       </rect>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/dac-12.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA,M=4414,N=22</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_9">
+     <attribute name="title">
+      <string>DOut</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>92</x>
+        <y>60</y>
+        <width>197</width>
+        <height>223</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>KL2408</string>
+      </property>
+      <widget class="QEForm" name="qeform_9">
+       <property name="geometry">
+        <rect>
+         <x>6</x>
+         <y>20</y>
+         <width>185</width>
+         <height>195</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/kl2xxx-8.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=ESA,M=2408,N=22</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>T(3314)</string>
+     </attribute>
+     <widget class="QEForm" name="t3314QEForm">
+      <property name="geometry">
+       <rect>
+        <x>24</x>
+        <y>20</y>
+        <width>436</width>
+        <height>233</height>
+       </rect>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/therm-4.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA,M=3314,N=22</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Hidden</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>36</x>
+        <y>8</y>
+        <width>411</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>3404</string>
+       </attribute>
+       <widget class="QEForm" name="qeform">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>8</y>
+          <width>370</width>
+          <height>260</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/hiddenreg.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=ESA,M=3404,N=22</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>4414</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_3">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>8</y>
+          <width>370</width>
+          <height>260</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/hiddenreg.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=ESA,M=4414,N=22</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>3314</string>
+       </attribute>
+       <widget class="QEForm" name="qeform_4">
+        <property name="geometry">
+         <rect>
+          <x>18</x>
+          <y>8</y>
+          <width>370</width>
+          <height>260</height>
+         </rect>
+        </property>
+        <property name="uiFile" stdset="0">
+         <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/hiddenreg.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=ESA,M=3314,N=22</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Coupler</string>
+     </attribute>
+     <widget class="QEForm" name="bk9QEForm">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>8</y>
+        <width>407</width>
+        <height>339</height>
+       </rect>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/bk9000.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA,N=22</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>506</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

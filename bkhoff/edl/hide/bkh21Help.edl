@@ -1,0 +1,74 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 443
+y 77
+w 600
+h 400
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 24
+bgColor index 60
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 7
+w 459
+h 15
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Beckhoff Stepper Motor Control Displays and Dialog."
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 35
+w 589
+h 168
+font "new century schoolbook-medium-r-12.0"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "The hardware consists of BK9000 Ethernet Coupler followed by bus terminals: KL2531, KL2541, which"
+  "are the stepper motor controllers, KL3172, a two channel ADC, KL2114, four bit digital out, KL4001,"
+  "one channel DAC and KL9010, bus terminator terminal."
+  ""
+  "The programming model for these Beckhoff devices is a bit complicated.  Typically, two in and two out"
+  "registers are visible to the controlling software.  A number of hidden registers are accessed via the"
+  "visible registers.  This makes programming difficult since reading from or writing to a hidden register"
+  "can't be performed as an atomic operation.  The motor controller has three read and three write visible"
+  "registers and a few hundred hidden registers.  The set position and actual position values are 32 bit and"
+  "these are implemented as two registers, low order word and high order word.  Hence, reading the"
+  "actual position is a complex operation and can fail, which due to the limitations of the Modbus driver"
+  "software used."
+}
+autoSize
+endObjectProperties
+

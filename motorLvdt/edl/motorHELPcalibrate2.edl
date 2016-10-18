@@ -1,0 +1,353 @@
+# MEDM filename = "/home/sricat/BCDA/epics/3.13.1/baseR3.13.1.1_shareR4.0/stdApp/op/adl/motor4x.adl"
+# MEDM version = 020305
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 548
+y 144
+w 440
+h 370
+font "helvetica-bold-r-18.0"
+ctlFont "helvetica-medium-r-18.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 4
+textColor index 0
+ctlFgColor1 index 1
+ctlFgColor2 index 0
+ctlBgColor1 index 1
+ctlBgColor2 index 0
+topShadowColor index 1
+botShadowColor index 11
+title "Motor Calibration"
+showGrid
+snapToGrid
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 430
+h 360
+lineColor index 0
+fill
+fillColor index 10
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 300
+w 410
+h 50
+lineColor index 0
+fill
+fillColor index 6
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 310
+w 70
+h 30
+fgColor index 35
+bgColor index 27
+topShadowColor index 60
+botShadowColor index 10
+label "Done"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 10
+w 230
+h 90
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 10
+w 230
+h 90
+lineColor index 0
+fill
+fillColor index 6
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 18
+y 20
+w 213
+h 70
+lineColor index 29
+fill
+fillColor index 29
+lineWidth 4
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 18
+y 60
+w 213
+h 30
+controlPv "$(DEV):$(AREA):$(POS):MOTR.DESC"
+fgColor index 0
+fgAlarm
+bgColor index 3
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Textupdate)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 27
+y 30
+w 196
+h 30
+controlPv "$(DEV):$(AREA):$(POS):MOTR.NAME"
+fgColor index 27
+fgAlarm
+bgColor index 3
+fill
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 110
+w 410
+h 180
+lineColor index 0
+fill
+fillColor index 6
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 120
+w 390
+h 160
+font "helvetica-medium-r-12.0"
+fgColor index 27
+bgColor index 6
+useDisplayBg
+value {
+  "After the system knows the limits of motion, it needs to determine how"
+  "to relate the computed distance in motor steps to the raw value of a"
+  "readback device."
+  ""
+  "When the START button is pressed, the system moves the motion"
+  "through the available distance, from one limit to the other.  It will"
+  "repeatedly step through the requested distance, then pause for the"
+  "requested number of seconds, to allow LVDT to settle."
+  ""
+  "At each step, the motor position is recorded on the graph, as is the"
+  "RAW value from the LVDT."
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 250
+y 10
+w 170
+h 90
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 250
+y 10
+w 170
+h 90
+lineColor index 0
+fill
+fillColor index 6
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 261
+y 20
+w 149
+h 50
+font "helvetica-bold-r-24.0"
+fgColor index 27
+bgColor index 6
+useDisplayBg
+value {
+  "Calibration"
+  "Step 2."
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 261
+y 70
+w 138
+h 30
+font "helvetica-bold-r-14.0"
+fgColor index 27
+bgColor index 6
+useDisplayBg
+value {
+  "Instructions"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 260
+y 310
+w 80
+h 30
+fgColor index 27
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "More   >"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorHELPcalibrate3.edl"
+}
+menuLabel {
+  0 "Next"
+}
+closeAction {
+  0 1
+}
+symbols {
+  0 "DEV=$(DEV),AREA=$(AREA),POS=$(POS)"
+}
+propagateMacros {
+  0 0
+}
+closeDisplay {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 170
+y 310
+w 80
+h 30
+fgColor index 27
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-medium-r-12.0"
+buttonLabel "<   Prev"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorHELPcalibrate1.edl"
+}
+menuLabel {
+  0 "Next"
+}
+closeAction {
+  0 1
+}
+symbols {
+  0 "DEV=$(DEV),AREA=$(AREA),POS=$(POS)"
+}
+propagateMacros {
+  0 0
+}
+closeDisplay {
+  0 1
+}
+endObjectProperties
+

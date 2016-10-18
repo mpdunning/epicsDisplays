@@ -1,0 +1,453 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 312
+y 876
+w 296
+h 258
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 292
+h 92
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 168
+y 100
+w 120
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-10.0"
+buttonLabel "Motor1 Setup"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorx_setup"
+}
+symbols {
+  0 "M=m1:MOTR"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 4
+y 100
+w 156
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Final Turning Mirror Y"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motor1x-sr"
+}
+symbols {
+  0 "M=m1:MOTR,CTRL=XPS3,MOTOR=m1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 168
+y 132
+w 120
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-10.0"
+buttonLabel "Motor2 Setup"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorx_setup"
+}
+symbols {
+  0 "M=m2:MOTR"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 4
+y 132
+w 156
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Final Turning  Mirror X"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motor1x-sr"
+}
+symbols {
+  0 "M=m2:MOTR,CTRL=XPS3,MOTOR=m2"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 4
+y 164
+w 156
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "UV Attenuator"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motor1x-sr"
+}
+symbols {
+  0 "M=m3:MOTR,CTRL=XPS3,MOTOR=m3"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 168
+y 164
+w 120
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-10.0"
+buttonLabel "Motor3 Setup"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorx_setup"
+}
+symbols {
+  0 "M=m3:MOTR"
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 240
+y 4
+w 48
+h 24
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 160
+y 36
+w 48
+h 20
+fgColor index 13
+bgColor index 40
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Web"
+numCmds 1
+command {
+  0 "firefox \"http://$(IOC)\""
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 216
+y 36
+w 72
+h 20
+fgColor index 14
+bgColor index 20
+topShadowColor index 72
+botShadowColor index 12
+font "courier-bold-r-10.0"
+buttonLabel "Reboot IOC"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "popUpConf"
+}
+symbols {
+  0 "CMD=ssh ar-gonzo /afs/slac/g/testfac/extras/scripts/iocRestart $(IOC),ACTION=Restart IOC: $(IOC),MESSAGE1=Takes 5 seconds...,MESSAGE2= "
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 56
+y 72
+w 42
+h 13
+font "courier-bold-r-12.0"
+fontAlign "center"
+fgColor index 19
+bgColor index 2
+useDisplayBg
+value {
+  "$(IOC)"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 168
+y 196
+w 120
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-10.0"
+buttonLabel "Motor4 Setup"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorx_setup"
+}
+symbols {
+  0 "M=m4:MOTR"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 4
+y 196
+w 156
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Gun Table Mirror X"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motor1x-sr"
+}
+symbols {
+  0 "M=m4:MOTR,CTRL=XPS3,MOTOR=m4"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 168
+y 228
+w 120
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-10.0"
+buttonLabel "Motor5 Setup"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motorx_setup"
+}
+symbols {
+  0 "M=m5:MOTR"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 4
+y 228
+w 156
+h 24
+fgColor index 13
+bgColor index 73
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Gun Table Mirror Y"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "motor1x-sr"
+}
+symbols {
+  0 "M=m5:MOTR,CTRL=XPS3,MOTOR=m5"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 176
+y 64
+w 92
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Archived Data"
+numCmds 1
+command {
+  0 "/afs/slac/g/cd/soft/new/solaris/bin/taarchview nlctaXPS3motors"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 8
+y 28
+w 136
+h 12
+controlPv "$(P):NAME.DESC"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 56
+y 8
+w 63
+h 15
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+value {
+  "XPS$(A)"
+}
+autoSize
+endObjectProperties
+

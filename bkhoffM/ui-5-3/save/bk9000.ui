@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BK9000</class>
+ <widget class="QDialog" name="BK9000">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>454</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>4</y>
+     <width>448</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QPushButton" name="bkClosePB">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>4</y>
+      <width>56</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QELabel" name="qelabel">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>48</y>
+     <width>144</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG10.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_2">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>68</y>
+     <width>144</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG11.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_3">
+   <property name="geometry">
+    <rect>
+     <x>164</x>
+     <y>48</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG10</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>48</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>68</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_4">
+   <property name="geometry">
+    <rect>
+     <x>164</x>
+     <y>68</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG11</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>88</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_5">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>88</y>
+     <width>144</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG12.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_6">
+   <property name="geometry">
+    <rect>
+     <x>164</x>
+     <y>88</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG12</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>112</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_7">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>112</y>
+     <width>144</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG16.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_8">
+   <property name="geometry">
+    <rect>
+     <x>164</x>
+     <y>112</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG16</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_9">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>132</y>
+     <width>144</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG17.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>132</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_10">
+   <property name="geometry">
+    <rect>
+     <x>164</x>
+     <y>132</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG17</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_11">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>152</y>
+     <width>144</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG18.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>152</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_12">
+   <property name="geometry">
+    <rect>
+     <x>164</x>
+     <y>152</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG18</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_13">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>172</y>
+     <width>144</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG19.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>172</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_14">
+   <property name="geometry">
+    <rect>
+     <x>164</x>
+     <y>172</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG19</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_15">
+   <property name="geometry">
+    <rect>
+     <x>164</x>
+     <y>196</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG32</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+   <property name="format" stdset="0">
+    <enum>QELabel::UnsignedInteger</enum>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>196</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0x</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_16">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>196</y>
+     <width>144</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LI:900R-$(N):REG32.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_17">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>220</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG0.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_18">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>240</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG1.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_19">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>260</y>
+     <width>149</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG22.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>220</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG0</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_2">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>240</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG1</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_3">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>260</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG22</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_4">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>280</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG23</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_5">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>300</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG24</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_6">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>320</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG25</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_20">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>280</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG23.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_21">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>300</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG24.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_22">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>320</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:900W-$(N):REG25.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_23">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>348</y>
+     <width>144</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:DEBUG-$(N):ALLOW:INLQ.DESC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_7">
+   <property name="geometry">
+    <rect>
+     <x>152</x>
+     <y>348</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:DEBUG-$(N):ALLOW:INLQ</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_24">
+   <property name="geometry">
+    <rect>
+     <x>212</x>
+     <y>348</y>
+     <width>41</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Monospace</family>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):LO:SC:DEBUG-$(N):ALLOW:INLQ</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="displayAlarmState">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>284</y>
+     <width>57</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="debugPB">
+   <property name="geometry">
+    <rect>
+     <x>284</x>
+     <y>340</y>
+     <width>72</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Debug</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>216</x>
+     <y>224</y>
+     <width>25</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>hex</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>216</x>
+     <y>244</y>
+     <width>25</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>hex</string>
+   </property>
+  </widget>
+  <widget class="MyButton" name="BKREFR_MB">
+   <property name="geometry">
+    <rect>
+     <x>284</x>
+     <y>64</y>
+     <width>72</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:900R-$(N):REFRESH.PROC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>true</bool>
+   </property>
+   <property name="onText">
+    <string>1</string>
+   </property>
+   <property name="offText">
+    <string>0</string>
+   </property>
+   <property name="literalLabel">
+    <bool>true</bool>
+   </property>
+   <property name="onLabel">
+    <string>Refresh</string>
+   </property>
+   <property name="offLabel">
+    <string>Refresh</string>
+   </property>
+  </widget>
+  <widget class="MyButton" name="BKRST_MB">
+   <property name="geometry">
+    <rect>
+     <x>284</x>
+     <y>280</y>
+     <width>72</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):BO:900W-$(N):WD:RESET.PROC</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=CHA,N=2</string>
+   </property>
+   <property name="subscribe">
+    <bool>true</bool>
+   </property>
+   <property name="AlarmEnable" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="useTextColor">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>true</bool>
+   </property>
+   <property name="onText">
+    <string>1</string>
+   </property>
+   <property name="offText">
+    <string>0</string>
+   </property>
+   <property name="literalLabel">
+    <bool>true</bool>
+   </property>
+   <property name="onLabel">
+    <string>Reset</string>
+   </property>
+   <property name="offLabel">
+    <string>Reset</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyButton</class>
+   <extends>QPushButton</extends>
+   <header>mybutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

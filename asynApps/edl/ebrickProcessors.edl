@@ -1,0 +1,212 @@
+4 0 0
+beginScreenProperties
+major 4
+minor 0
+release 0
+x 174
+y 480
+w 383
+h 110
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor rgb 0 0 0
+bgColor rgb 26880 26880 26880
+textColor rgb 0 0 0
+ctlFgColor1 rgb 64256 62208 18944
+ctlFgColor2 rgb 60928 46592 11008
+ctlBgColor1 rgb 52480 24832 0
+ctlBgColor2 rgb 65280 45056 65280
+topShadowColor rgb 44544 19968 48128
+botShadowColor rgb 13312 13056 34304
+snapToGrid
+gridSize 5
+endScreenProperties
+
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 4
+w 374
+h 22
+font "helvetica-medium-r-8.0"
+fgColor rgb 63744 55808 15360
+useDisplayBg
+value {
+ "EBRICK Processors"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 30
+w 374
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 39168 65280 65280
+useDisplayBg
+value {
+ "$(P)"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 11
+y 50
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Athena"
+numPvs 12
+numDsps 6
+displayFileName {
+  0 ebrickDIGinp.edl
+  1 ebrickDIGinp.edl
+  2 ebrickDIGout.edl
+  3 ebrickADC.edl
+  4 ebrickDAC.edl
+  5 ebrickSysMon.edl
+}
+menuLabel {
+  0 Digital register 01
+  1 Digital register 02
+  2 Digital register 03
+  3 Analog Input
+  4 Analog Output
+  5 System monitor
+}
+symbols {
+  0  "PV=$(P)ath01:reg01:"
+  1  "PV=$(P)ath01:reg02:"
+  2  "PV=$(P)ath01:reg03:"
+  3  "PV=$(P)ath01:ana01:,T=Athena-Analog-Inputs1-16"
+  4  "PV=$(P)ath01:ana01:,T=Athena-Analog-Outputs1-4"
+  5  "P=$(P)"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 191
+y 50
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Poseidon"
+numPvs 14
+numDsps 7
+displayFileName {
+  0 ebrickDIGinp.edl
+  1 ebrickDIGinp.edl
+  2 ebrickDIGout.edl
+  3 ebrickADC.edl
+  4 ebrickADC17-32.edl
+  5 ebrickDAC.edl
+  6 ebrickSysMon.edl
+}
+menuLabel {
+  0 Digital register 01
+  1 Digital register 02
+  2 Digital register 03
+  3 Analog Input 1-16
+  4 Analog Input 17-32
+  5 Analog Output
+  6 System monitor
+}
+symbols {
+  0  "PV=$(P)pos01:reg01:"
+  1  "PV=$(P)pos01:reg02:"
+  2  "PV=$(P)pos01:reg03:"
+  3  "PV=$(P)pos01:ana01:,T=Poseidon-Analog-Inputs1-16"
+  4  "PV=$(P)pos01:ana01:,T=Poseidon-Analog-Inputs17-32"
+  5  "PV=$(P)pos01:ana01:,T=Poseidon-Analog-Outputs1-4"
+  6  "P=$(P)"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 191
+y 73
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 11
+y 73
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "uCDIMM"
+numPvs 6
+numDsps 3
+displayFileName {
+  0 ebrickQADC.edl
+  1 ebrickDIGout.edl
+  2 ebrickDIGinp16.edl
+}
+menuLabel {
+  0 Queued ADCs/CPU Load
+  1 Programmed output IO
+  2 Programmed input IO
+}
+symbols {
+  0  "P=$(P),R=uCDIMM:"
+  1  "PV=$(P)uCDIMM:pio:"
+  2  "PV=$(P)uCDIMM:pio:"
+}
+endObjectProperties
+

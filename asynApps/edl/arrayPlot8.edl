@@ -1,0 +1,271 @@
+4 0 0
+beginScreenProperties
+major 4
+minor 0
+release 0
+x 120
+y 583
+w 400
+h 280
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor rgb 0 0 0
+bgColor rgb 17920 17920 17920
+textColor rgb 0 0 0
+ctlFgColor1 rgb 64256 62208 18944
+ctlFgColor2 rgb 60928 46592 11008
+ctlBgColor1 rgb 52480 24832 0
+ctlBgColor2 rgb 65280 45056 65280
+topShadowColor rgb 44544 19968 48128
+botShadowColor rgb 13312 13056 34304
+snapToGrid
+gridSize 5
+endScreenProperties
+
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 200
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 65280 65280 65280
+useDisplayBg
+value {
+ "$(Y1)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 14
+w 200
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 50944 47872 27904
+useDisplayBg
+value {
+ "$(Y2)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 28
+w 200
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 64768 0 0
+useDisplayBg
+value {
+ "$(Y3)"
+}
+endObjectProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 60
+w 400
+h 200
+# Appearance
+border
+graphTitle 
+xLabel 
+yLabel "SEE LEGEND"
+fgColor rgb 50944 47872 27904
+bgColor rgb 0 0 0
+gridColor rgb 50944 47872 27904
+font "helvetica-medium-r-10.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 2000
+#  X axis properties
+showXAxis
+xAxisSrc "AutoScale"
+xLablePrecision 1
+#  Y axis properties
+showYAxis
+yAxisSrc "AutoScale"
+#  Trace Properties
+numTraces 8
+yPv {
+  0 "$(Y1)"
+  1 "$(Y2)"
+  2 "$(Y3)"
+  3 "$(Y4)"
+  4 "$(Y5)"
+  5 "$(Y6)"
+  6 "$(Y7)"
+  7 "$(Y8)"
+}
+plotStyle {
+  0 "line"
+  1 "line"
+  2 "line"
+  3 "line"
+  4 "line"
+  5 "line"
+  6 "line"
+  7 "line"
+}
+plotUpdateMode {
+  0 "x"
+  1 "x"
+  2 "x"
+  3 "x"
+  4 "x"
+  5 "x"
+  6 "x"
+  7 "x"
+}
+plotSymbolType {
+  0 "circle"
+  1 "circle"
+  2 "circle"
+  3 "circle"
+  4 "circle"
+  5 "circle"
+  6 "circle"
+  7 "circle"
+}
+plotColor {
+  0 rgb 65280 65280 65280
+  1 rgb 50944 47872 27904
+  2 rgb 64768 0 0
+  3 rgb 57600 36864 5376
+  4 rgb 64256 62208 18944
+  5 rgb 0 55296 0
+  6 rgb 19968 42240 63744
+  7 rgb 54784 32512 57856
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 262
+w 390
+h 13
+font "helvetica-medium-r-8.0"
+fgColor rgb 65280 65280 65280
+useDisplayBg
+value {
+ "ARRAY INDEX"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 42
+w 200
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 57600 36864 5376
+useDisplayBg
+value {
+ "$(Y4)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 0
+w 200
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 64256 62208 18944
+useDisplayBg
+value {
+ "$(Y5)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 14
+w 200
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 7680 47872 0
+useDisplayBg
+value {
+ "$(Y6)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 28
+w 200
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 19968 42240 63744
+useDisplayBg
+value {
+ "$(Y7)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 200
+y 42
+w 200
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 65280 45056 65280
+useDisplayBg
+value {
+ "$(Y7)"
+}
+endObjectProperties
+

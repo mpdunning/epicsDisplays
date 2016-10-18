@@ -1,0 +1,179 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 49
+y 405
+w 840
+h 568
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 10
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 850
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 70
+w 825
+h 490
+fgColor index 13
+bgColor index 4
+topShadowColor index 15
+botShadowColor index 12
+displaySource "menu"
+filePv "LOC\\$(!W)show=e:0,Display,Setup,More"
+center
+setSize
+sizeOfs 5
+numDsps 3
+displayFileName {
+  0 "hp8xxxaDisp-1ch.edl"
+  1 "hp8xxxaSetup.edl"
+  2 "hp8xxxaMore.edl"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 45
+w 280
+h 25
+fgColor index 14
+bgColor index 5
+selectColor index 3
+inconsistentColor index 5
+topShadowColor index 5
+botShadowColor index 14
+controlPv "LOC\\$(!W)show"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 10
+w 226
+h 21
+font "helvetica-bold-r-18.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "HP 8xxxA RF Power Meter"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 390
+y 10
+w 175
+h 21
+controlPv "$(P):IOC.DESC"
+font "helvetica-bold-r-18.0"
+fgColor index 26
+bgColor index 4
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 40
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 770
+y 5
+w 64
+h 32
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-bold-r-18.0"
+3d
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 685
+y 10
+w 72
+h 20
+fgColor index 14
+bgColor index 20
+topShadowColor index 72
+botShadowColor index 12
+font "courier-bold-r-10.0"
+buttonLabel "Reboot IOC"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "popUpConf"
+}
+symbols {
+  0 "CMD=ssh $IOCSERVER $SCRIPT/iocRestart $(IOC),ACTION=Restart IOC: $(IOC),MESSAGE1=Takes 5 seconds...,MESSAGE2= "
+}
+endObjectProperties
+

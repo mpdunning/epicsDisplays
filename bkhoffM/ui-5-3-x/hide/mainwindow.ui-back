@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>466</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Motor</string>
+  </property>
+  <property name="toolTip">
+   <string>Motor Control</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>8</y>
+      <width>573</width>
+      <height>409</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Motor 1</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>4</x>
+        <y>4</y>
+        <width>557</width>
+        <height>373</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>Control</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButtonM1">
+        <property name="geometry">
+         <rect>
+          <x>8</x>
+          <y>284</y>
+          <width>83</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Motor 1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>28</x>
+          <y>36</y>
+          <width>65</width>
+          <height>12</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>RegAccess</string>
+        </property>
+       </widget>
+       <widget class="QEBitStatus" name="qebitstatus">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>36</y>
+          <width>12</width>
+          <height>96</height>
+         </rect>
+        </property>
+        <property name="Orientation">
+         <enum>QBitStatus::LSB_On_Bottom</enum>
+        </property>
+        <property name="offColour">
+         <color>
+          <red>157</red>
+          <green>171</green>
+          <blue>193</blue>
+         </color>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P):LI:$(R):SBYTE</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,R=2531-1-2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>28</x>
+          <y>84</y>
+          <width>65</width>
+          <height>12</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>LoadAngle 3</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>28</x>
+          <y>96</y>
+          <width>65</width>
+          <height>12</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>LoadAngle 2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>28</x>
+          <y>108</y>
+          <width>65</width>
+          <height>12</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>LoadAngle 1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>28</x>
+          <y>120</y>
+          <width>65</width>
+          <height>12</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ready</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>28</x>
+          <y>72</y>
+          <width>65</width>
+          <height>12</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Idle</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>28</x>
+          <y>60</y>
+          <width>65</width>
+          <height>12</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Warning</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>28</x>
+          <y>48</y>
+          <width>65</width>
+          <height>12</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>7</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Error</string>
+        </property>
+       </widget>
+       <widget class="QEBitStatus" name="qebitstatus_3">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>160</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="numberOfBits">
+         <number>1</number>
+        </property>
+        <property name="shift">
+         <number>3</number>
+        </property>
+        <property name="onColour">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="offColour">
+         <color>
+          <red>156</red>
+          <green>173</green>
+          <blue>194</blue>
+         </color>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P):LI:$(R):SWORD</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,R=2531-1-2</string>
+        </property>
+       </widget>
+       <widget class="QEBitStatus" name="qebitstatus_4">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>180</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="numberOfBits">
+         <number>1</number>
+        </property>
+        <property name="shift">
+         <number>1</number>
+        </property>
+        <property name="onColour">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="offColour">
+         <color>
+          <red>156</red>
+          <green>173</green>
+          <blue>194</blue>
+         </color>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P):LI:$(R):SWORD</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,R=2531-1-2</string>
+        </property>
+       </widget>
+       <widget class="QEBitStatus" name="qebitstatus_5">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>200</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="numberOfBits">
+         <number>1</number>
+        </property>
+        <property name="shift">
+         <number>0</number>
+        </property>
+        <property name="onColour">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="offColour">
+         <color>
+          <red>156</red>
+          <green>173</green>
+          <blue>194</blue>
+         </color>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P):LI:$(R):SWORD</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,R=2531-1-2</string>
+        </property>
+       </widget>
+       <widget class="QEBitStatus" name="qebitstatus_6">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>220</y>
+          <width>16</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="numberOfBits">
+         <number>1</number>
+        </property>
+        <property name="shift">
+         <number>5</number>
+        </property>
+        <property name="onColour">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="offColour">
+         <color>
+          <red>255</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P):LO:$(R):CBYTE</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,R=2531-1-2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>32</x>
+          <y>160</y>
+          <width>56</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>atTarget</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>32</x>
+          <y>180</y>
+          <width>56</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Input 2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>32</x>
+          <y>200</y>
+          <width>56</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Input 1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>32</x>
+          <y>220</y>
+          <width>56</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>autoStop</string>
+        </property>
+       </widget>
+       <widget class="ToggleButton" name="togglebutton">
+        <property name="geometry">
+         <rect>
+          <x>276</x>
+          <y>32</y>
+          <width>24</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P):BO:$(R):CH1:MOT:ENABL</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,R=2531-1-2</string>
+        </property>
+        <property name="subscribe">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QELabel" name="qelabel">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>4</y>
+          <width>81</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P):LI:$(R):DATA.DESC</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,R=2531-1-2</string>
+        </property>
+       </widget>
+       <widget class="QEPushButton" name="qepushbutton">
+        <property name="geometry">
+         <rect>
+          <x>264</x>
+          <y>100</y>
+          <width>92</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P):LO:SC:$(R):CBYTE</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,R=2531-1-2</string>
+        </property>
+        <property name="subscribe">
+         <bool>true</bool>
+        </property>
+        <property name="displayAlarmState">
+         <bool>false</bool>
+        </property>
+        <property name="clickText">
+         <string>Yes</string>
+        </property>
+        <property name="clickCheckedText">
+         <string>Yes</string>
+        </property>
+       </widget>
+       <widget class="TButton" name="tbutton">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>140</y>
+          <width>75</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P):LO:SC:$(R):CBYTE</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,R=2531-1-2</string>
+        </property>
+       </widget>
+       <widget class="TButton" name="tbutton_2">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>180</y>
+          <width>75</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="variable" stdset="0">
+         <string>$(P):LO:SC:$(R):CBYTE</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>P=CHA,R=2531-1-2</string>
+        </property>
+        <property name="showLabel">
+         <bool>false</bool>
+        </property>
+        <property name="onColor">
+         <color>
+          <red>61</red>
+          <green>255</green>
+          <blue>61</blue>
+         </color>
+        </property>
+        <property name="offColor">
+         <color>
+          <red>167</red>
+          <green>171</green>
+          <blue>193</blue>
+         </color>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>CSR</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_11">
+       <attribute name="title">
+        <string>readReg</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_12">
+       <attribute name="title">
+        <string>writeRAM</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_13">
+       <attribute name="title">
+        <string>writeEEPROM</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="title">
+        <string>Feature 1</string>
+       </attribute>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Motor 2</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>ADC/DAC</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Hidden</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>BK9000</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>588</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TButton</class>
+   <extends>QPushButton</extends>
+   <header>tbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ToggleButton</class>
+   <extends>QPushButton</extends>
+   <header>togglebutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEBitStatus</class>
+   <extends>QBitStatus</extends>
+   <header>QEBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QBitStatus</class>
+   <extends>QWidget</extends>
+   <header>QBitStatus.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

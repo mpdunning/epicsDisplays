@@ -1,0 +1,94 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 798
+y 281
+w 300
+h 400
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 5
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+disableScroll
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 5
+w 104
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Trigger Commands"
+}
+autoSize
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 60
+w 280
+h 330
+fgColor index 3
+bgColor index 3
+topShadowColor index 3
+botShadowColor index 3
+displaySource "menu"
+filePv "LOC\\$(!W)choice3=e:0,A,B"
+center
+sizeOfs 5
+numDsps 2
+displayFileName {
+  0 "rftrga.edl"
+  1 "rftrgb.edl"
+}
+noScroll
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 35
+w 105
+h 25
+fgColor index 13
+bgColor index 6
+selectColor index 3
+inconsistentColor index 8
+topShadowColor index 6
+botShadowColor index 6
+controlPv "LOC\\$(!W)choice3"
+font "courier-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+

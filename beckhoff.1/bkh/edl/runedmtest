@@ -1,0 +1,16 @@
+# file: runedmnlcta
+# for testing NLCTA beckhoff EDM screens
+#---------------------------------------------------------------
+display=$TOOLS/display
+path01=$display/asyn/edl
+path02=$display/beckhoff/bkh/edlx
+path03=$display/beckhoff/common/edlx
+path04=$display/beckhoff/motor/edlx
+path05=$display/beckhoff/ued/edlx
+
+edf=$path00:$path01:$path02:$path03:$path04:$path05
+
+export EDMDATAFILES=$edf
+cd $path02
+$EDMBIN/edm -x bkh-nlcta-main.edl
+#$EDMBIN/edm -x bkh-asta-main.edl

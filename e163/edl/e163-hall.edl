@@ -1,0 +1,450 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 458
+y 577
+w 992
+h 307
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 32
+w 164
+h 208
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 32
+y 48
+w 112
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "PROF 4205"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 80"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 32
+y 80
+w 112
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "IFEL"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 81"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 32
+y 112
+w 112
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "E163 cam3"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 82"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 32
+y 144
+w 112
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "PROF 4250"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 83"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 32
+y 176
+w 112
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "IP YAG"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 84"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 32
+y 208
+w 112
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "E163 cam6"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 85"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 28
+y 24
+w 68
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 4
+value {
+  "Cameras"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 196
+y 32
+w 136
+h 84
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 204
+y 24
+w 96
+h 16
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 4
+value {
+  "Power Strips"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 208
+y 48
+w 112
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "APC 1"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acswTop-8.edl"
+}
+symbols {
+  0 "P=ESB:ACSW13,IOC=sioc-esb-acs13"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 208
+y 80
+w 112
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-10.0"
+buttonLabel "APC 2"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "acswTop-8.edl"
+}
+symbols {
+  0 "P=ESB:ACSW14,IOC=sioc-esb-acs14"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 48
+w 24
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS80:,R=cam1:,A=ESB:ACSWx,N=x,IOC=sioc-esb-adps80"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 80
+w 24
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS81:,R=cam1:,A=ESB:ACSWx,N=x,IOC=sioc-esb-adps81"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 112
+w 24
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS82:,R=cam1:,A=ESB:ACSWx,N=x,IOC=sioc-esb-adps82"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 144
+w 24
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS83:,R=cam1:,A=ESB:ACSWx,N=x,IOC=sioc-esb-adps83"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 176
+w 24
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS84:,R=cam1:,A=ESB:ACSWx,N=x,IOC=sioc-esb-adps84"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 152
+y 208
+w 24
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS85:,R=cam1:,A=ESB:ACSWx,N=x,IOC=sioc-esb-adps85"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+

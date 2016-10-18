@@ -1,0 +1,392 @@
+4 0 0
+beginScreenProperties
+major 4
+minor 0
+release 0
+x 375
+y 268
+w 470
+h 100
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor rgb 0 0 0
+bgColor rgb 55808 55808 55808
+textColor rgb 0 0 0
+ctlFgColor1 rgb 64256 62208 18944
+ctlFgColor2 rgb 60928 46592 11008
+ctlBgColor1 rgb 52480 24832 0
+ctlBgColor2 rgb 65280 45056 65280
+topShadowColor rgb 44544 19968 48128
+botShadowColor rgb 13312 13056 34304
+snapToGrid
+gridSize 5
+endScreenProperties
+
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 25
+w 100
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Mode"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 129
+h 22
+lineColor rgb 65280 65280 65280
+fill
+fillColor rgb 65280 65280 65280
+lineWidth 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 130
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "Coarse/Fine"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 163
+y 24
+w 265
+h 53
+
+beginGroup
+
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 178
+y 52
+w 250
+h 25
+indicatorColor rgb 0 0 0
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+indicatorPv 
+showScale
+font "helvetica-medium-r-8.0"
+labelTicks 1
+majorTicks 10
+minorTicks 0
+border
+limitsFromDb
+precision 2
+scaleFormat "FFloat"
+orientation "horizontal"
+endObjectProperties
+# (Bar)
+object activeBarClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 228
+y 24
+w 150
+h 25
+indicatorColor rgb 0 0 0
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+indicatorPv 
+showScale
+font "helvetica-medium-r-8.0"
+labelTicks 1
+majorTicks 10
+minorTicks 0
+border
+limitsFromDb
+precision 2
+scaleFormat "FFloat"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 213
+y 27
+w 10
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "F"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 163
+y 57
+w 10
+h 20
+font "helvetica-medium-r-8.0"
+fgColor rgb 0 0 0
+useDisplayBg
+value {
+ "C"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 75
+w 125
+h 20
+
+beginGroup
+
+
+endGroup
+
+endObjectProperties
+
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 45
+w 95
+h 20
+fgColor rgb 0 0 0
+bgColor rgb 29440 57088 65280
+inconsistentColor rgb 17920 17920 17920
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+controlPv "$(P)mode"
+indicatorPv "$(P)mode"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 102
+y 35
+w 25
+h 30
+fgColor rgb 65280 65280 65280
+bgColor rgb 10240 37632 5376
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "?"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 CoarseFineMotorHelp.edl
+}
+menuLabel {
+  0 help
+}
+symbols {
+  0  "P=$(P)"
+}
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 163
+y 24
+w 265
+h 53
+
+beginGroup
+
+
+endGroup
+
+endObjectProperties
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 430
+y 85
+w 40
+h 15
+fgColor rgb 26880 26880 26880
+bgColor rgb 55808 55808 55808
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "DEBUG"
+numPvs 12
+numDsps 6
+displayFileName {
+  0 yyTransform_full.edl
+  1 yyTransform_full.edl
+  2 yyCalcoutRecord.edl
+  3 yyCalcoutRecord.edl
+  4 yyCalcoutRecord.edl
+  5 yyCalcoutRecord.edl
+}
+menuLabel {
+  0 limitProc
+  1 moveCF
+  2 closeGate calc
+  3 fineModeCalc
+  4 done calc
+  5 RBV calc
+}
+symbols {
+  0  "P=$(P),T=limitProc"
+  1  "P=$(P),T=moveCF"
+  2  "P=$(P),C=closeGate"
+  3  "P=$(P),C=fineModeCalc"
+  4  "P=$(P),C=doneCalc"
+  5  "P=$(P),C=RBV"
+}
+endObjectProperties
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 75
+w 125
+h 20
+
+beginGroup
+
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 75
+w 55
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 10240 37632 5376
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Motors"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 motorx.edl
+  1 motor2x.edl
+}
+menuLabel {
+  0 Combined (soft) motor
+  1 Actual motors
+}
+symbols {
+  0  "P=$(P),M=MOT"
+  1  "P=$(PM),M1=$(CM),M2=$(FM)"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 90
+y 75
+w 40
+h 20
+fgColor rgb 65280 65280 65280
+bgColor rgb 13056 39168 0
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Less"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 CoarseFineMotor.edl
+}
+menuLabel {
+  0 Small display
+}
+symbols {
+  0  "P=$(P),M=MOT,PM=$(PM),CM=$(CM),FM=$(FM)"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+

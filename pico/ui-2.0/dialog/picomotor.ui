@@ -1,0 +1,1229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PicoMotor</class>
+ <widget class="QDialog" name="PicoMotor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>252</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>320</width>
+    <height>252</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>320</width>
+    <height>252</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QEPushButton" name="QCA2Left">
+   <property name="geometry">
+    <rect>
+     <x>52</x>
+     <y>84</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-2</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1):AO:RELR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>2</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA10Left">
+   <property name="geometry">
+    <rect>
+     <x>84</x>
+     <y>84</y>
+     <width>36</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-10</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1):AO:RELR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>10</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA100Left">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>108</y>
+     <width>44</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-100</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1):AO:RELR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>100</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA1000Left">
+   <property name="geometry">
+    <rect>
+     <x>84</x>
+     <y>108</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-1000</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1):AO:RELR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>1000</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA10000Left">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>132</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-10000</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1):AO:RELR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>10000</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA2Right">
+   <property name="geometry">
+    <rect>
+     <x>216</x>
+     <y>84</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+2</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1):AO:RELF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>2</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA10Right">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>84</y>
+     <width>36</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+10</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1):AO:RELF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>10</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA100Right">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>108</y>
+     <width>44</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+100</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1):AO:RELF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>100</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA1000Right">
+   <property name="geometry">
+    <rect>
+     <x>248</x>
+     <y>108</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+1000</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1):AO:RELF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>1000</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA10000Right">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>132</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+10000</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1):AO:RELF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>10000</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA2Up">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>24</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+2</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3):AO:RELF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>2</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA10Up">
+   <property name="geometry">
+    <rect>
+     <x>168</x>
+     <y>24</y>
+     <width>36</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+10</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3):AO:RELF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>10</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA100Up">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>48</y>
+     <width>44</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+100</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3):AO:RELF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>100</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA1000Up">
+   <property name="geometry">
+    <rect>
+     <x>168</x>
+     <y>48</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+1000</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3):AO:RELF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>1000</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA10000Up">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>72</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>+10000</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3):AO:RELF</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>10000</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA2Down">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>140</y>
+     <width>28</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-2</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3):AO:RELR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>2</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA10Down">
+   <property name="geometry">
+    <rect>
+     <x>168</x>
+     <y>140</y>
+     <width>36</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-10</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3):AO:RELR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>10</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA100Down">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>164</y>
+     <width>44</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-100</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3):AO:RELR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>100</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA1000Down">
+   <property name="geometry">
+    <rect>
+     <x>168</x>
+     <y>164</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-1000</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3):AO:RELR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>1000</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="QCA10000Down">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>188</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>-10000</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3):AO:RELR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="writeOnPress">
+    <bool>false</bool>
+   </property>
+   <property name="writeOnRelease">
+    <bool>true</bool>
+   </property>
+   <property name="writeOnClick">
+    <bool>false</bool>
+   </property>
+   <property name="pressText">
+    <string>0</string>
+   </property>
+   <property name="releaseText">
+    <string>10000</string>
+   </property>
+   <property name="clickText">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabelname_2">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>4</y>
+     <width>100</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3).NAME</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabelname">
+   <property name="geometry">
+    <rect>
+     <x>16</x>
+     <y>64</y>
+     <width>100</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1).NAME</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabelPos_3">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>4</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3).RRBV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabelPos_4">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>20</y>
+     <width>85</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M3).RBV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M3=m3</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabelPos_2">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>156</y>
+     <width>85</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1).RRBV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabelPos">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>172</y>
+     <width>85</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M1).RBV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M1=m1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Motor1">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>192</y>
+     <width>73</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Pop up Motor Dialog for this Axis</string>
+   </property>
+   <property name="text">
+    <string>Motor</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Detail1">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>220</y>
+     <width>73</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Pop up Motor Details Dialog for this Axis</string>
+   </property>
+   <property name="text">
+    <string>Detail</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Motor3">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>164</y>
+     <width>73</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Pop up Motor Dialog</string>
+   </property>
+   <property name="whatsThis">
+    <string>Pops up Motor Dialog for this axis</string>
+   </property>
+   <property name="text">
+    <string>Motor</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Detail3">
+   <property name="geometry">
+    <rect>
+     <x>236</x>
+     <y>192</y>
+     <width>73</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Motor Details</string>
+   </property>
+   <property name="whatsThis">
+    <string>Pop up Motor Detais Dialog for this axis</string>
+   </property>
+   <property name="text">
+    <string>Detail</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Debug1">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>220</y>
+     <width>49</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Pop up Motor Details Dialog for this Axis</string>
+   </property>
+   <property name="text">
+    <string>Debug</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Debug3">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>220</y>
+     <width>49</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Pop up Motor Details Dialog for this Axis</string>
+   </property>
+   <property name="text">
+    <string>Debug</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Motor2">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>220</y>
+     <width>49</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Pop up middle motor control</string>
+   </property>
+   <property name="text">
+    <string>More</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

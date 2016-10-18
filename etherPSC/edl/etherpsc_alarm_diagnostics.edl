@@ -1,0 +1,1915 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 116
+y 36
+w 410
+h 665
+font "helvetica-medium-r-14.0"
+ctlFont "helvetica-medium-r-14.0"
+btnFont "helvetica-medium-r-14.0"
+fgColor index 14
+bgColor index 2
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 3
+ctlBgColor1 index 3
+ctlBgColor2 index 14
+topShadowColor index 1
+botShadowColor index 14
+title "$(ps) Alarm Limits"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 10
+w 390
+h 190
+lineColor index 14
+fillColor index 3
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 120
+y 175
+w 165
+h 20
+fgColor index 14
+bgColor index 2
+2ndBgColor index 59
+topShadowColor index 3
+botShadowColor index 14
+controlPv "$(ps):$(vi)Setpt"
+controlLabelType "pvLabel"
+font "new century schoolbook-medium-r-12.0"
+limitsFromDb
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 15
+w 370
+h 15
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Main Power Supply $(ps) Alarm Limits"
+}
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 160
+y 140
+w 90
+h 15
+controlPv "$(ps):$(vi)"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+fgAlarm
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 3
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 235
+y 160
+w 50
+h 14
+controlPv "$(ps):$(vi)Setpt.DRVH"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+precision 1
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 125
+y 160
+w 50
+h 14
+controlPv "$(ps):$(vi)Setpt.DRVL"
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+precision 1
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 180
+y 160
+w 50
+h 14
+controlPv "$(ps):$(vi)Setpt"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+autoHeight
+limitsFromDb
+nullColor index 3
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 200
+w 390
+h 455
+lineColor index 14
+fillColor index 3
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 245
+y 205
+w 129
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Setpoint Alarm Limits"
+}
+autoSize
+endObjectProperties
+
+# (Meter)
+object activeMeterClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 120
+y 35
+w 165
+h 85
+caseColor index 2
+scaleColor index 49
+labelColor index 14
+fgColor index 28
+fgAlarm
+bgColor index 3
+topShadowColor index 40
+botShadowColor index 14
+readPv "$(ps):$(vi)"
+labelType "pvName"
+showScale
+scaleFormat "FFloat"
+scalePrecision "0"
+scaleLimitsFromDb
+useDisplayBg
+labelIntervals "5"
+majorIntervals "5"
+minorIntervals "1"
+complexNeedle
+3d
+scaleMin "0"
+scaleMax "98"
+labelFontTag "new century schoolbook-medium-r-12.0"
+scaleFontTag "new century schoolbook-medium-r-12.0"
+meterAngle 120
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 140
+y 120
+w 125
+h 15
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+fgColor index 21
+bgColor index 3
+useDisplayBg
+visPv "$(ps):RampStatus"
+visMin "1"
+visMax "2"
+value {
+  "RAMPING"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 205
+w 146
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Operations Alarm Limits"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 205
+w 165
+h 15
+lineColor index 14
+lineAlarm
+fillColor index 3
+alarmPv "$(ps):$(vi)Check"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 225
+y 205
+w 165
+h 15
+lineColor index 14
+lineAlarm
+fillColor index 3
+alarmPv "$(ps):$(vi)"
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 100
+y 545
+w 50
+h 14
+controlPv "$(ps):CntlTemp.HIHI"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 545
+w 32
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HIHI"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 520
+w 178
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Controller Temp Alarm Limits"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 100
+y 560
+w 50
+h 14
+controlPv "$(ps):CntlTemp.HIGH"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 560
+w 36
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HIGH"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 100
+y 600
+w 50
+h 14
+controlPv "$(ps):CntlTemp.LOW"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 600
+w 29
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "LOW"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 100
+y 615
+w 50
+h 15
+controlPv "$(ps):CntlTemp.LOLO"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 615
+w 34
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "LOLO"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 100
+y 635
+w 50
+h 15
+controlPv "$(ps):CntlTemp.HYST"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 635
+w 35
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HYST"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 20
+y 520
+w 185
+h 15
+lineColor index 14
+lineAlarm
+fillColor index 3
+alarmPv "$(ps):CntlTemp"
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 110
+y 580
+w 40
+h 15
+controlPv "$(ps):CntlTemp"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+fgAlarm
+bgColor index 3
+useDisplayBg
+limitsFromDb
+nullColor index 3
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 580
+w 53
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Temp (C)"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 320
+y 225
+w 65
+h 15
+controlPv "$(ps):$(vi).HIHI"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 225
+w 32
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HIHI"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 320
+y 240
+w 65
+h 15
+controlPv "$(ps):$(vi).HIGH"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 240
+w 36
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HIGH"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 320
+y 280
+w 65
+h 15
+controlPv "$(ps):$(vi).LOW"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 280
+w 29
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "LOW"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 320
+y 295
+w 65
+h 15
+controlPv "$(ps):$(vi).LOLO"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 295
+w 34
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "LOLO"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 320
+y 315
+w 65
+h 15
+controlPv "$(ps):$(vi).HYST"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+limitsFromDb
+precision 4
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 315
+w 35
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HYST"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 320
+y 335
+w 65
+h 15
+controlPv "$(ps):WarnDelta"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 335
+w 85
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Warning Delta"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 320
+y 355
+w 65
+h 15
+controlPv "$(ps):AlarmDelta"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 355
+w 72
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Alarm Delta"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 225
+w 65
+h 15
+controlPv "$(ps):$(vi)Check.HIHI"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 225
+w 32
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HIHI"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 240
+w 65
+h 15
+controlPv "$(ps):$(vi)Check.HIGH"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 240
+w 36
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HIGH"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 280
+w 65
+h 15
+controlPv "$(ps):$(vi)Check.LOW"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 280
+w 29
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "LOW"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 295
+w 65
+h 15
+controlPv "$(ps):$(vi)Check.LOLO"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 295
+w 34
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "LOLO"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 315
+w 65
+h 15
+controlPv "$(ps):$(vi)Check.HYST"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+limitsFromDb
+precision 4
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 315
+w 35
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HYST"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 335
+w 65
+h 15
+controlPv "$(ps):WarnDeltaDes"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 335
+w 85
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Warning Delta"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 355
+w 65
+h 15
+controlPv "$(ps):AlarmDeltaDes"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 355
+w 72
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Alarm Delta"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 320
+y 260
+w 65
+h 15
+controlPv "$(ps):$(vi)Setpt"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 260
+w 46
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Setpoint"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 260
+w 65
+h 15
+controlPv "$(ps):$(vi)SetptDes"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 260
+w 44
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Desired"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 375
+w 65
+h 15
+controlPv "$(ps):WarnDeltaDes.B"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+editable
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 375
+w 60
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Minimum"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 135
+y 395
+w 45
+h 15
+controlPv "$(ps):WarnDeltaDes.I"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+editable
+precision 4
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 395
+w 82
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Warning Frac"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 135
+y 415
+w 45
+h 15
+controlPv "$(ps):WarnDeltaDes.E"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+editable
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 415
+w 101
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Alarm Multiplier"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 435
+w 65
+h 15
+controlPv "$(ps):WarnDeltaDes.D"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+editable
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 25
+y 435
+w 73
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Warning Tol"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 320
+y 375
+w 65
+h 15
+controlPv "$(ps):WarnDelta.B"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+editable
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 375
+w 60
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Minimum"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 340
+y 395
+w 45
+h 15
+controlPv "$(ps):WarnDelta.I"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+editable
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 395
+w 82
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Warning Frac"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 340
+y 415
+w 45
+h 15
+controlPv "$(ps):WarnDelta.E"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+editable
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 415
+w 101
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Alarm Multiplier"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 320
+y 435
+w 65
+h 15
+controlPv "$(ps):WarnDelta.D"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+editable
+limitsFromDb
+precision 2
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 230
+y 435
+w 73
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Warning Tol"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 455
+w 353
+h 56
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "If abs(Ref) <= Minimum, Warning Delta = Warning Tol"
+  "If abs(Ref) >  Minimum, Warning Delta = Ref * Warning Frac"
+  "where Ref = Desired or Setpoint"
+  "Alarm Delta = Alarm Multiplier * Warning Delta"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 300
+y 560
+w 60
+h 15
+controlPv "$(ps):GndCurr.HIHI"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 255
+y 560
+w 32
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HIHI"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 225
+y 520
+w 160
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Ground Curr Alarm Limits"
+}
+autoSize
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 300
+y 635
+w 60
+h 15
+controlPv "$(ps):GndCurr.HYST"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+editable
+limitsFromDb
+nullColor index 3
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 255
+y 635
+w 35
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "HYST"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 220
+y 520
+w 170
+h 15
+lineColor index 14
+lineAlarm
+fillColor index 3
+alarmPv "$(ps):GndCurr"
+endObjectProperties
+
+# (Text)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 305
+y 580
+w 55
+h 15
+controlPv "$(ps):GndCurr"
+font "new century schoolbook-medium-r-12.0"
+fontAlign "right"
+fgColor index 14
+fgAlarm
+bgColor index 3
+useDisplayBg
+limitsFromDb
+nullColor index 3
+useHexPrefix
+useAlarmBorder
+newPos
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 255
+y 580
+w 50
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Curr (A)"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 255
+y 545
+w 25
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "Trip"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 320
+y 545
+w 40
+h 14
+font "new century schoolbook-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+useDisplayBg
+value {
+  "0.02500"
+}
+autoSize
+endObjectProperties
+

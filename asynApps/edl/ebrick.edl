@@ -1,0 +1,785 @@
+4 0 0
+beginScreenProperties
+major 4
+minor 0
+release 0
+x 81
+y 340
+w 739
+h 196
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor rgb 0 0 0
+bgColor rgb 26880 26880 26880
+textColor rgb 0 0 0
+ctlFgColor1 rgb 64256 62208 18944
+ctlFgColor2 rgb 60928 46592 11008
+ctlBgColor1 rgb 52480 24832 0
+ctlBgColor2 rgb 65280 45056 65280
+topShadowColor rgb 44544 19968 48128
+botShadowColor rgb 13312 13056 34304
+snapToGrid
+gridSize 5
+endScreenProperties
+
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 3
+y 4
+w 732
+h 22
+font "helvetica-medium-r-8.0"
+fgColor rgb 63744 55808 15360
+useDisplayBg
+value {
+ "EBRICK IOC"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 3
+y 30
+w 732
+h 14
+font "helvetica-medium-r-8.0"
+fgColor rgb 39168 65280 65280
+useDisplayBg
+value {
+ "$(P)"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 11
+y 50
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Asyn Serial"
+numPvs 14
+numDsps 7
+displayFileName {
+  0 asynRecord.edl
+  1 asynRecord.edl
+  2 asynRecord.edl
+  3 asynRecord.edl
+  4 asynRecord.edl
+  5 asynRecord.edl
+  6 asynRecord.edl
+}
+menuLabel {
+  0 ttyS1
+  1 ttyS2
+  2 ttyS3
+  3 ttyS4
+  4 ttyS5
+  5 ttyS6
+  6 ttyS7
+}
+symbols {
+  0  "P=$(P),R=ttyS1"
+  1  "P=$(P),R=ttyS2"
+  2  "P=$(P),R=ttyS3"
+  3  "P=$(P),R=ttyS4"
+  4  "P=$(P),R=ttyS5"
+  5  "P=$(P),R=ttyS6"
+  6  "P=$(P),R=ttyS7"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 11
+y 96
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Processors"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickProcessors.edl
+}
+menuLabel {
+  0 Processors
+}
+symbols {
+  0  "P=$(P)"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 11
+y 119
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Pearl-MM"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickBitout16.edl
+}
+menuLabel {
+  0 Output relays
+}
+symbols {
+  0  "PV1=$(P)pmm01:reg01:,PV2=$(P)pmm01:reg02:,T=Pearl-MM-0"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 11
+y 142
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Ruby-MM Single-Ended"
+numPvs 8
+numDsps 4
+displayFileName {
+  0 ebrickDIGinp.edl
+  1 ebrickDIGinp.edl
+  2 ebrickDIGout.edl
+  3 ebrickDAC.edl
+}
+menuLabel {
+  0 Digital register 01
+  1 Digital register 02
+  2 Digital register 03
+  3 Analog Output
+}
+symbols {
+  0  "PV=$(P)rmm01:reg01:"
+  1  "PV=$(P)rmm01:reg02:"
+  2  "PV=$(P)rmm01:reg03:"
+  3  "PV=$(P)rmm01:ana01:,T=Ruby01-Analog-Outputs1-4"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 192
+y 73
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Smart A/D 518"
+numPvs 2
+numDsps 1
+displayFileName {
+  0 ebrickSEN.edl
+}
+menuLabel {
+  0 Sensor Input
+}
+symbols {
+  0  "PV=$(P)sad01:sen01:"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 192
+y 50
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Onyx-MM-XT"
+numPvs 6
+numDsps 3
+displayFileName {
+  0 ebrickDIGinp.edl
+  1 ebrickDIGinp.edl
+  2 ebrickDIGout.edl
+}
+menuLabel {
+  0 Digital register 01
+  1 Digital register 02
+  2 Digital register 03
+}
+symbols {
+  0  "PV=$(P)omm01:reg01:"
+  1  "PV=$(P)omm01:reg02:"
+  2  "PV=$(P)omm01:reg03:"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 11
+y 165
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Ruby-MM Differential"
+numPvs 8
+numDsps 4
+displayFileName {
+  0 ebrickDIGinp.edl
+  1 ebrickDIGinp.edl
+  2 ebrickDIGout.edl
+  3 ebrickDIF.edl
+}
+menuLabel {
+  0 Digital register 01
+  1 Digital register 02
+  2 Digital register 03
+  3 Analog Output
+}
+symbols {
+  0  "PV=$(P)rmm01:reg01:"
+  1  "PV=$(P)rmm01:reg02:"
+  2  "PV=$(P)rmm01:reg03:"
+  3  "PV=$(P)rmm01:ana01:,T=Ruby01-Diff-Analog-Outputs1-4"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 192
+y 119
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 192
+y 142
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 373
+y 50
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 554
+y 50
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Scalers"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 scaler16_more.edl
+  1 scaler32_more.edl
+}
+menuLabel {
+  0 16 Scaler
+  1 32 Scaler
+}
+symbols {
+  0  "P=$(P),S=scaler1"
+  1  "P=$(P),S=scaler1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 373
+y 73
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 373
+y 96
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 554
+y 73
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Serial link V2.1"
+numPvs 6
+numDsps 3
+displayFileName {
+  0 serialLink.edl
+  1 serialLinkBC059.edl
+  2 ccdTiming_more.edl
+}
+menuLabel {
+  0 Serial link
+  1 BC059 Scalers
+  2 BC059 CCD Timing
+}
+symbols {
+  0  "P=$(P),R=Slp:"
+  1  "P=$(P),R=Slp:"
+  2  "P=$(P),E=ccd1:,F1=ccdon:,F2=extsync:,F3=ccdoff:"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 373
+y 119
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 373
+y 142
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 554
+y 142
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 373
+y 165
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 554
+y 165
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 192
+y 165
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 11
+y 73
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Asyn OMS"
+numPvs 4
+numDsps 2
+displayFileName {
+  0 asynRecord.edl
+  1 asynRecord.edl
+}
+menuLabel {
+  0 Oms0
+  1 Oms1
+}
+symbols {
+  0  "P=$(P),R=oms0"
+  1  "P=$(P),R=oms1"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 192
+y 96
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel ""
+numPvs 0
+numDsps 0
+displayFileName {
+}
+menuLabel {
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 554
+y 96
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "userCalc"
+numPvs 16
+numDsps 8
+displayFileName {
+  0 userCalcs10.edl
+  1 userStringCalcs10.edl
+  2 userTransforms10.edl
+  3 yySseq.edl
+  4 yySseq.edl
+  5 yySseq.edl
+  6 userAve10.edl
+  7 userCalcOuts10.edl
+}
+menuLabel {
+  0 user calcs 1-10
+  1 user stringCalcs 1-10
+  2 user transforms 1-10
+  3 sseq record 1
+  4 sseq record 2
+  5 sseq record 3
+  6 user average 1-10
+  7 user calcOuts
+}
+symbols {
+  0  "P=$(P)"
+  1  "P=$(P)"
+  2  "P=$(P)"
+  3  "P=$(P),S=Sseq1"
+  4  "P=$(P),S=Sseq2"
+  5  "P=$(P),S=Sseq3"
+  6  "P=$(P)"
+  7  "P=$(P)"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 554
+y 119
+w 180
+h 22
+fgColor rgb 0 0 0
+bgColor rgb 47872 47872 47872
+topShadowColor rgb 55808 55808 55808
+botShadowColor rgb 17920 17920 17920
+font "helvetica-medium-r-10.0"
+buttonLabel "Scans"
+numPvs 10
+numDsps 5
+displayFileName {
+  0 scan.edl
+  1 scan.edl
+  2 scan.edl
+  3 scan.edl
+  4 scan.edl
+}
+menuLabel {
+  0 Scan1 (for all scans)
+  1 Scan2 (for 2D & higher scans)
+  2 Scan3 (for 3D & higher scans)
+  3 Scan4 (for 4D scans)
+  4 ScanH (for Hardware-assisted scans)
+}
+symbols {
+  0  "P=$(P),N=1,S=scan1"
+  1  "P=$(P),N=2,S=scan2"
+  2  "P=$(P),N=3,S=scan3"
+  3  "P=$(P),N=4,S=scan4"
+  4  "P=$(P),N=H,S=scanH"
+}
+endObjectProperties
+

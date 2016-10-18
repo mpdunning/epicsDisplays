@@ -1,0 +1,1014 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 771
+y 481
+w 540
+h 300
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 376
+y 56
+w 152
+h 176
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 256
+y 56
+w 120
+h 176
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 56
+w 248
+h 176
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 0
+w 538
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 8
+y 4
+w 136
+h 15
+controlPv "$(P):$(R):SI:NAME"
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 63
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 468
+y 4
+w 56
+h 32
+fgColor index 73
+bgColor index 29
+topShadowColor index 1
+botShadowColor index 13
+label "Close"
+font "helvetica-bold-r-14.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 164
+y 12
+w 198
+h 15
+font "courier-bold-r-14.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Register bits for $(R)"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 28
+y 72
+w 12
+h 144
+controlPv "$(P):$(R):LI:MODE"
+lineColor index 13
+onColor index 15
+offColor index 19
+numBits 12
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 284
+y 120
+w 12
+h 96
+controlPv "$(P):$(R):LI:STAT"
+lineColor index 13
+onColor index 15
+offColor index 19
+numBits 8
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 400
+y 144
+w 12
+h 72
+controlPv "$(P):$(R):LI:IGAIN"
+lineColor index 13
+onColor index 15
+offColor index 19
+numBits 6
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 72
+w 12
+h 144
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "11"
+  "10"
+  " 9"
+  " 8"
+  " 7"
+  " 6"
+  " 5"
+  " 4"
+  " 3"
+  " 2"
+  " 1"
+  " 0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 48
+y 72
+w 85
+h 144
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Test out sel 2"
+  "Test out sel 1"
+  "Test out sel 0"
+  "Reset 0->1"
+  "Use arbitr or VME"
+  "N baseline smpls 2"
+  "N baseline smpls 1"
+  "N baseline smpls 0"
+  "Enable/disable Cal"
+  "Intr Start Cal"
+  "Ext/Intr start cal"
+  "Calibrate/Run"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 300
+y 120
+w 64
+h 96
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "ADC 5 Overfl"
+  "ADC 4 Overfl"
+  "ADC 3 Overfl"
+  "ADC 2 Overfl"
+  "ADC 1 Overfl"
+  "ADC 0 Overfl"
+  "Bi/Uni polar"
+  "Busy/Done"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 284
+y 48
+w 48
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 3
+value {
+  "Status"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 400
+y 48
+w 108
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 3
+value {
+  "Integrator Gain"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 420
+y 144
+w 67
+h 72
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "low/high CH 5"
+  "low/high CH 4"
+  "low/high CH 3"
+  "low/high CH 2"
+  "low/high CH 1"
+  "low/high CH 0"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 8
+y 24
+w 136
+h 13
+controlPv "$(P):$(R):SI:NAME.DESC"
+font "courier-bold-r-12.0"
+fgColor index 13
+bgColor index 63
+autoHeight
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 156
+y 204
+w 40
+h 20
+fgColor index 13
+onColor index 30
+offColor index 75
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):BO:CAL:RUN"
+onLabel "Run"
+offLabel "Cal"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 496
+y 144
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):LO:IGAIN"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+controlBitPos 5
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 496
+y 168
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):LO:IGAIN"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+controlBitPos 3
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 496
+y 156
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):LO:IGAIN"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+controlBitPos 4
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 496
+y 180
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):LO:IGAIN"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+controlBitPos 2
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 496
+y 192
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):LO:IGAIN"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+controlBitPos 1
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 496
+y 204
+w 12
+h 12
+fgColor index 13
+onColor index 15
+offColor index 19
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):LO:IGAIN"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+controlBitPos 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 48
+y 48
+w 44
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 3
+value {
+  "Mode"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 268
+y 120
+w 9
+h 96
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  " 7"
+  " 6"
+  " 5"
+  " 4"
+  " 3"
+  " 2"
+  " 1"
+  " 0"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 384
+y 144
+w 9
+h 72
+font "helvetica-medium-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  " 5"
+  " 4"
+  " 3"
+  " 2"
+  " 1"
+  " 0"
+}
+autoSize
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 192
+w 40
+h 20
+fgColor index 13
+onColor index 30
+offColor index 75
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):BO:CAL:EXT"
+onLabel "Intr"
+offLabel "Ext"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 156
+w 40
+h 20
+fgColor index 13
+onColor index 30
+offColor index 75
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):BO:CAL:ENA"
+onLabel "Off"
+offLabel "On"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 120
+w 40
+h 20
+fgColor index 13
+onColor index 30
+offColor index 75
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):BO:DAC:ARB:VME"
+onLabel "VME"
+offLabel "Arbt"
+labelType "literal"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 120
+y 212
+w 0
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 1
+xPoints {
+  0 120
+}
+yPoints {
+  0 212
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 116
+y 212
+w 32
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 2
+xPoints {
+  0 116
+  1 148
+}
+yPoints {
+  0 212
+  1 212
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 132
+y 200
+w 68
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 2
+xPoints {
+  0 132
+  1 200
+}
+yPoints {
+  0 200
+  1 200
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 144
+y 128
+w 56
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 2
+xPoints {
+  0 144
+  1 200
+}
+yPoints {
+  0 128
+  1 128
+}
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 144
+y 136
+w 56
+h 24
+fgColor index 13
+bgColor index 50
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):MBBO:N:SAMPL"
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 176
+y 64
+w 72
+h 24
+fgColor index 13
+bgColor index 50
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):MBBO:TEST:OUT"
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 112
+y 76
+w 56
+h 32
+lineColor index 13
+fillColor index 2
+numPoints 3
+xPoints {
+  0 112
+  1 112
+  2 168
+}
+yPoints {
+  0 108
+  1 76
+  2 76
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 188
+y 92
+w 60
+h 24
+fgColor index 13
+onColor index 74
+offColor index 75
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):BO:RESET"
+onLabel "Reset"
+offLabel "Reset"
+labelType "literal"
+buttonType "push"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 104
+y 104
+w 76
+h 12
+lineColor index 13
+fillColor index 2
+numPoints 4
+xPoints {
+  0 104
+  1 164
+  2 164
+  3 180
+}
+yPoints {
+  0 116
+  1 116
+  2 104
+  3 104
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 152
+y 172
+w 48
+h 24
+fgColor index 13
+onColor index 74
+offColor index 75
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):BO:START:CAL"
+onLabel "Start"
+offLabel "Start"
+labelType "literal"
+buttonType "push"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 136
+y 168
+w 64
+h 4
+lineColor index 13
+fillColor index 2
+numPoints 4
+xPoints {
+  0 136
+  1 148
+  2 148
+  3 200
+}
+yPoints {
+  0 172
+  1 172
+  2 168
+  3 168
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 116
+y 188
+w 32
+h 0
+lineColor index 13
+fillColor index 2
+numPoints 2
+xPoints {
+  0 116
+  1 148
+}
+yPoints {
+  0 188
+  1 188
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 200
+y 252
+w 100
+h 16
+controlPv "$(P):$(R):BO:DIAGN.DESC"
+font "courier-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 308
+y 248
+w 48
+h 24
+fgColor index 13
+onColor index 74
+offColor index 59
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):$(R):BO:DIAGN"
+3d
+font "courier-medium-r-12.0"
+objType "controls"
+endObjectProperties
+

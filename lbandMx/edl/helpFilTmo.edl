@@ -1,0 +1,115 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 516
+y 247
+w 530
+h 330
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 55
+bgColor index 12
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 1
+y 1
+w 529
+h 30
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 470
+y 4
+w 50
+h 24
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 12
+label "EXIT"
+font "helvetica-medium-r-12.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 6
+y 8
+w 188
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 63
+value {
+  "Help for Filament Timeout Display"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 31
+y 45
+w 490
+h 247
+font "courier-medium-r-12.0"
+fgColor index 55
+bgColor index 4
+useDisplayBg
+value {
+  "The \"Filament Timeout\" screen shows details of the setup"
+  "and the current status of the Filement timeout system.  Variables"
+  "and parameters are displayed which are used in determining the"
+  "state of the filament - power supply circuit."
+  "\"Filment on threshold\" control is used to set the threshold current"
+  "which is compared with \"Fil PS current\" value and if the current"
+  "exceeds the threshold, software counters are started.  At this time"
+  "the hardware counter should also get started."
+  "The \"Timeout\" control is used to set the length of timeout in seconds."
+  "The default value is 3600 seconds."
+  "The \"Filament Timeout\" bar indicater, shows the progress of"
+  "the software counter.   When the software timeout expires (the counter"
+  "counts down to 0), then the \"Software tmo\" bit turns green."
+  "When the hardware timeout expires then the \"Filament tmo\" should show"
+  "value close to 5 and the bit should turn green.  It is expected that"
+  "both the software and the hardware timeouts should expire with 10% of"
+  "the software timer preset value.  If either the hardware timeout"
+  "expires too early or too late with respect to the software timeout,"
+  "the \"Far off\" indicator will show active (green)."
+}
+autoSize
+endObjectProperties
+

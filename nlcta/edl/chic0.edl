@@ -1,0 +1,1746 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 160
+y 474
+w 992
+h 307
+font "courier-medium-r-12.0"
+ctlFont "courier-medium-r-12.0"
+btnFont "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 0
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (GIF Image)
+object cfcf6c8a_dbeb_11d2_8a97_00104b8742df
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 52
+w 1000
+h 238
+file "chic0.gif"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 866
+y 4
+w 120
+h 20
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Chicane R56 Tables"
+numCmds 1
+command {
+  0 "$SCRIPT/geditChicanes.sh"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 436
+y 74
+w 20
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS17:,R=cam1:,A=ESB:ACSW9,N=5,IOC=sioc-esb-adps17"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 452
+y 106
+w 34
+h 14
+font "helvetica-bold-r-12.0"
+fgColor index 13
+bgColor index 0
+value {
+  "Und 1"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 364
+y 46
+w 108
+h 24
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 364
+y 46
+w 108
+h 24
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/prof_int.sh PROF1520"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 371
+y 53
+w 54
+h 10
+font "courier-bold-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Prof1520:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 427
+y 53
+w 18
+h 10
+font "courier-bold-r-10.0"
+fgColor index 14
+bgColor index 15
+useDisplayBg
+visPv "ESB:BO:2114-1:BIT1"
+visMin "0"
+visMax "1"
+value {
+  "OUT"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 427
+y 53
+w 12
+h 10
+font "courier-bold-r-10.0"
+fgColor index 14
+bgColor index 20
+useDisplayBg
+visPv "ESB:BO:2114-1:BIT1"
+visMin "1"
+visMax "2"
+value {
+  "IN"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 454
+y 52
+w 11
+h 11
+lineColor index 13
+fill
+fillColor index 15
+visPv "ESB:BO:2114-1:BIT1"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 454
+y 51
+w 11
+h 11
+lineColor index 13
+fill
+fillColor index 20
+visPv "ESB:BO:2114-1:BIT1"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 118
+y 238
+w 80
+h 28
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 118
+y 238
+w 80
+h 26
+fgColor index 14
+bgColor index 1
+topShadowColor index 72
+botShadowColor index 12
+font "courier-bold-r-8.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "popUpConf"
+}
+symbols {
+  0 "CMD=$SCRIPT/powerCyclePicoMotors.sh,ACTION=Power Cycle Pico Motors,MESSAGE1=Takes 5 seconds...,MESSAGE2= "
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 244
+w 12
+h 12
+lineColor index 13
+fill
+fillColor index 15
+visPv "CALC\\\{a+B\}(ESB:ACSW2:BO:SC:STATE:21,ESB:ACSW2:BO:SC:STATE:22"
+visMin "2"
+visMax "3"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 122
+y 242
+w 55
+h 18
+font "courier-bold-r-8.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Power Cycle"
+  "PicoMotors"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 182
+y 244
+w 12
+h 12
+lineColor index 13
+fill
+fillColor index 20
+visPv "CALC\\\{a+B\}(ESB:ACSW2:BO:SC:STATE:21,ESB:ACSW2:BO:SC:STATE:22"
+visMin "0"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 654
+y 230
+w 80
+h 28
+
+beginGroup
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 654
+y 230
+w 80
+h 26
+fgColor index 14
+bgColor index 1
+topShadowColor index 72
+botShadowColor index 12
+font "courier-bold-r-8.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "popUpConf"
+}
+symbols {
+  0 "CMD=$SCRIPT/powerCyclePicoMotors.sh,ACTION=Power Cycle Pico Motors,MESSAGE1=Takes 5 seconds...,MESSAGE2= "
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 718
+y 236
+w 12
+h 12
+lineColor index 13
+fill
+fillColor index 15
+visPv "CALC\\\{a+B\}(ESB:ACSW2:BO:SC:STATE:21,ESB:ACSW2:BO:SC:STATE:22"
+visMin "2"
+visMax "3"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 658
+y 234
+w 55
+h 18
+font "courier-bold-r-8.0"
+fontAlign "center"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Power Cycle"
+  "PicoMotors"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 718
+y 236
+w 12
+h 12
+lineColor index 13
+fill
+fillColor index 20
+visPv "CALC\\\{a+B\}(ESB:ACSW2:BO:SC:STATE:21,ESB:ACSW2:BO:SC:STATE:22"
+visMin "0"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 190
+y 176
+w 76
+h 88
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 214
+y 212
+w 52
+h 52
+
+beginGroup
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 214
+y 244
+w 52
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:ACSW9:BO:SC:STATE:2"
+onLabel "AL0:ON"
+offLabel "AL0:OFF"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 238
+y 212
+w 0
+h 36
+lineColor index 13
+fillColor index 2
+lineWidth 2
+visMin "0"
+visMax "2"
+numPoints 2
+xPoints {
+  0 238
+  1 238
+}
+yPoints {
+  0 248
+  1 212
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 190
+y 176
+w 48
+h 36
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 190
+y 176
+w 0
+h 36
+lineColor index 13
+fillColor index 2
+lineWidth 2
+visMin "0"
+visMax "2"
+numPoints 2
+xPoints {
+  0 190
+  1 190
+}
+yPoints {
+  0 212
+  1 176
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 190
+y 212
+w 48
+h 0
+lineColor index 13
+fillColor index 2
+lineWidth 2
+visMin "0"
+visMax "2"
+numPoints 2
+xPoints {
+  0 190
+  1 238
+}
+yPoints {
+  0 212
+  1 212
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 118
+y 204
+w 80
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Seed Lasers"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "laserSeeds"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 724
+y 170
+w 76
+h 88
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 748
+y 206
+w 52
+h 52
+
+beginGroup
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 748
+y 238
+w 52
+h 20
+fgColor index 13
+onColor index 20
+offColor index 15
+inconsistentColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:ACSW2:BO:SC:STATE:24"
+onLabel "AL1:ON"
+offLabel "AL1:OFF"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 772
+y 206
+w 0
+h 36
+lineColor index 13
+fillColor index 2
+lineWidth 2
+visMin "0"
+visMax "2"
+numPoints 2
+xPoints {
+  0 772
+  1 772
+}
+yPoints {
+  0 242
+  1 206
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 724
+y 170
+w 48
+h 36
+
+beginGroup
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 724
+y 170
+w 0
+h 36
+lineColor index 13
+fillColor index 2
+lineWidth 2
+visMin "0"
+visMax "2"
+numPoints 2
+xPoints {
+  0 724
+  1 724
+}
+yPoints {
+  0 206
+  1 170
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 724
+y 206
+w 48
+h 0
+lineColor index 13
+fillColor index 2
+lineWidth 2
+visMin "0"
+visMax "2"
+numPoints 2
+xPoints {
+  0 724
+  1 772
+}
+yPoints {
+  0 206
+  1 206
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 640
+y 196
+w 80
+h 24
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Seed Lasers"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "laserSeeds"
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 488
+y 32
+w 108
+h 60
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 510
+y 32
+w 60
+h 10
+font "courier-bold-r-10.0"
+fgColor index 13
+bgColor index 0
+value {
+  "photodiode"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 488
+y 44
+w 108
+h 24
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 488
+y 44
+w 108
+h 24
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/prof_int.sh PROF1550"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 495
+y 51
+w 54
+h 10
+font "courier-bold-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Prof1550:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 551
+y 51
+w 18
+h 10
+font "courier-bold-r-10.0"
+fgColor index 14
+bgColor index 15
+useDisplayBg
+visPv "ESB:BO:2114-1:BIT4"
+visMin "0"
+visMax "1"
+value {
+  "OUT"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 551
+y 51
+w 12
+h 10
+font "courier-bold-r-10.0"
+fgColor index 14
+bgColor index 20
+useDisplayBg
+visPv "ESB:BO:2114-1:BIT4"
+visMin "1"
+visMax "2"
+value {
+  "IN"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 578
+y 50
+w 11
+h 11
+lineColor index 13
+fill
+fillColor index 15
+visPv "ESB:BO:2114-1:BIT4"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 578
+y 49
+w 11
+h 11
+lineColor index 13
+fill
+fillColor index 20
+visPv "ESB:BO:2114-1:BIT4"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 512
+y 72
+w 56
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "scope"
+numCmds 1
+command {
+  0 "rdesktop nlcta-scope-01 -u Administrator -g 1024x768 -a 16"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 664
+y 262
+w 56
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "laptop"
+numCmds 1
+command {
+  0 "rdesktop ar-kermit -u \"SLAC\\orion\" -g 1024x768 -a 16"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 378
+y 74
+w 56
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Cam 1520"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 17"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 476
+y 236
+w 56
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-10.0"
+buttonLabel "Cam 1545"
+numCmds 1
+command {
+  0 "$SCRIPT/startQCam.sh -c 31"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 724
+y 262
+w 72
+h 20
+fgColor index 13
+onColor index 15
+offColor index 20
+inconsistentColor index 3
+topShadowColor index 1
+botShadowColor index 13
+controlPv "ESB:BO:2124-14:BIT5"
+onLabel "2400BP:OUT"
+offLabel "2400BP:IN"
+labelType "literal"
+3d
+font "courier-bold-r-10.0"
+objType "controls"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 458
+y 174
+w 108
+h 58
+
+beginGroup
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 458
+y 208
+w 108
+h 24
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 458
+y 208
+w 108
+h 24
+fgColor index 13
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 13
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/prof_int.sh PROF1545"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 465
+y 215
+w 54
+h 10
+font "courier-bold-r-10.0"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Prof1545:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 521
+y 215
+w 18
+h 10
+font "courier-bold-r-10.0"
+fgColor index 14
+bgColor index 15
+useDisplayBg
+visPv "ESB:BO:2114-14:BIT1"
+visMin "0"
+visMax "1"
+value {
+  "OUT"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 521
+y 215
+w 12
+h 10
+font "courier-bold-r-10.0"
+fgColor index 14
+bgColor index 20
+useDisplayBg
+visPv "ESB:BO:2114-14:BIT1"
+visMin "1"
+visMax "2"
+value {
+  "IN"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 548
+y 214
+w 11
+h 11
+lineColor index 13
+fill
+fillColor index 15
+visPv "ESB:BO:2114-14:BIT1"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 548
+y 213
+w 11
+h 11
+lineColor index 13
+fill
+fillColor index 20
+visPv "ESB:BO:2114-14:BIT1"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 512
+y 174
+w 0
+h 36
+lineColor index 13
+fillColor index 2
+lineWidth 2
+visMin "0"
+visMax "2"
+numPoints 2
+xPoints {
+  0 512
+  1 512
+}
+yPoints {
+  0 210
+  1 174
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 534
+y 236
+w 20
+h 20
+fgColor index 13
+bgColor index 0
+topShadowColor index 1
+botShadowColor index 13
+font "courier-bold-r-8.0"
+buttonLabel "edm"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "edmViewer"
+}
+symbols {
+  0 "P=13PS31:,R=cam1:,A=ESB:ACSW9,N=7,IOC=sioc-esb-adps31"
+}
+replaceSymbols {
+  0 1
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 144
+y 30
+w 92
+h 58
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 144
+y 30
+w 92
+h 58
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 29
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh CHIC 0"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 160
+y 36
+w 54
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "Chicane 0"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 184
+y 70
+w 46
+h 12
+controlPv "ESB:CHIC:0:R56:ACT"
+font "courier-bold-r-10.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 184
+y 54
+w 44
+h 12
+controlPv "ESB:CHIC:0:BACT"
+font "courier-medium-r-10.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 148
+y 52
+w 32
+h 16
+font "courier-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "BACT:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 150
+y 68
+w 28
+h 16
+font "courier-bold-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "R56:"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 678
+y 30
+w 92
+h 58
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 678
+y 30
+w 92
+h 58
+fgColor index 13
+bgColor index 71
+topShadowColor index 1
+botShadowColor index 29
+font "courier-medium-r-12.0"
+numCmds 1
+command {
+  0 "$SCRIPT/openMagnetDisplay.sh CHIC 1"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 694
+y 36
+w 54
+h 12
+font "helvetica-bold-r-10.0"
+fontAlign "center"
+fgColor index 29
+bgColor index 2
+useDisplayBg
+value {
+  "Chicane 1"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 718
+y 70
+w 46
+h 12
+controlPv "ESB:CHIC:1:R56:ACT"
+font "courier-bold-r-10.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 718
+y 54
+w 44
+h 12
+controlPv "ESB:CHIC:1:BACT"
+font "courier-medium-r-10.0"
+fgColor index 13
+fgAlarm
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 682
+y 52
+w 32
+h 16
+font "courier-medium-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "BACT:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 684
+y 68
+w 28
+h 16
+font "courier-bold-r-10.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "R56:"
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 316
+y 208
+w 40
+h 80
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "magEmbed2.edl"
+}
+symbols {
+  0 "MAG=1490"
+}
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 574
+y 208
+w 40
+h 80
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "magEmbed2.edl"
+}
+symbols {
+  0 "MAG=1570"
+}
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 832
+y 208
+w 40
+h 80
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "magEmbed2.edl"
+}
+symbols {
+  0 "MAG=1640"
+}
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 364
+y 96
+w 40
+h 50
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "xcorEmbed.edl"
+}
+symbols {
+  0 "MAG=1510"
+}
+noScroll
+endObjectProperties
+
+# (Embedded Window)
+object activePipClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 364
+y 176
+w 40
+h 50
+fgColor index 13
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+displaySource "menu"
+filePv "LOC\\$(!W)disp=e:0"
+file "magEmbed.edl"
+sizeOfs 5
+numDsps 1
+displayFileName {
+  0 "ycorEmbed.edl"
+}
+symbols {
+  0 "MAG=1500"
+}
+noScroll
+endObjectProperties
+

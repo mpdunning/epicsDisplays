@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdcDac2MSA</class>
+ <widget class="QDialog" name="AdcDac2MSA">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>4</y>
+     <width>453</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QPushButton" name="adcClosePB">
+    <property name="geometry">
+     <rect>
+      <x>372</x>
+      <y>4</y>
+      <width>74</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>8</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ADC and DAC Page</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QEForm" name="adcDacQEF">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>42</y>
+     <width>452</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="uiFile" stdset="0">
+    <string>/afs/slac/g/testfac/tools/display/beckhoff/common/ui/adcdac2m.ui</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=$(P),R=$(R),N=$(N)</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MRecord</class>
+ <widget class="QDialog" name="MRecord">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>267</width>
+    <height>201</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="Banner">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>265</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="closeButton">
+    <property name="geometry">
+     <rect>
+      <x>204</x>
+      <y>4</y>
+      <width>49</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>12</y>
+      <width>85</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M).NAME</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=PICO,M=m1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>12</y>
+      <width>85</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):$(M).DESC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=PICO,M=m1</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QELabel" name="qelabel_3">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>44</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).RBV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>44</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RBV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_4">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>124</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).RRBV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>124</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RRBV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_5">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>64</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).DRBV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>64</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DRBV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_6">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>84</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).DMOV</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>84</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DMOV</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>104</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MOVN</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_7">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>104</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).MOVN</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>144</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RMP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_8">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>144</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).RMP</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>164</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>REP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_9">
+   <property name="geometry">
+    <rect>
+     <x>56</x>
+     <y>164</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).REP</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>44</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MSTA</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_10">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>44</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).MSTA</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+   <property name="radix">
+    <UInt>16</UInt>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>64</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TDIR</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_11">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>64</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).TDIR</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>84</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ATHM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_12">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>84</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).ATHM</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>104</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RCNT</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_13">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>104</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).RCNT</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>124</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RVEL</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_14">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>124</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).RVEL</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>144</y>
+     <width>37</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>STUP</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_15">
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>144</y>
+     <width>69</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>$(P):$(M).STUP</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=PICO,M=m1</string>
+   </property>
+   <property name="addUnits">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MRecord</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>349</x>
+     <y>18</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>265</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,307 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 28
+y 932
+w 648
+h 100
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 13
+ctlFgColor2 index 13
+ctlBgColor1 index 2
+ctlBgColor2 index 3
+topShadowColor index 1
+botShadowColor index 13
+showGrid
+snapToGrid
+gridSize 4
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 8
+y 8
+w 112
+h 32
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 120
+y 8
+w 216
+h 32
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 336
+y 8
+w 184
+h 32
+lineColor index 13
+fillColor index 2
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 224
+y 16
+w 80
+h 20
+controlPv "$(P):BDES"
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 29
+fgAlarm
+bgColor index 2
+editable
+motifWidget
+limitsFromDb
+precision 2
+nullColor index 13
+useHexPrefix
+useAlarmBorder
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 428
+y 16
+w 84
+h 20
+controlPv "$(P):BACT"
+font "courier-bold-r-14.0"
+fgColor index 29
+fgAlarm
+bgColor index 2
+limitsFromDb
+precision 2
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 12
+y 16
+w 100
+h 16
+font "courier-bold-r-14.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "$(P)"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 128
+y 16
+w 60
+h 20
+controlPv "$(P):R56:DES"
+font "courier-bold-r-14.0"
+fgColor index 29
+fgAlarm
+bgColor index 2
+editable
+motifWidget
+precision 2
+nullColor index 13
+useHexPrefix
+useAlarmBorder
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 348
+y 16
+w 72
+h 20
+controlPv "$(P):R56:ACT"
+font "courier-bold-r-14.0"
+fgColor index 29
+fgAlarm
+bgColor index 2
+precision 2
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 560
+y 4
+w 76
+h 20
+controlPv "$(P):BACT.A"
+font "courier-bold-r-14.0"
+fgColor index 29
+fgAlarm
+bgColor index 2
+limitsFromDb
+precision 2
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 560
+y 28
+w 76
+h 20
+controlPv "$(P):BACT.B"
+font "courier-bold-r-14.0"
+fgColor index 29
+fgAlarm
+bgColor index 2
+limitsFromDb
+precision 2
+nullColor index 13
+smartRefresh
+fastUpdate
+useHexPrefix
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 524
+y 8
+w 24
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Top:"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 524
+y 28
+w 24
+h 16
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+value {
+  "Bot:"
+}
+endObjectProperties
+
+# (incDecButton)
+object idbClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 192
+y 12
+w 16
+h 24
+fgColor index 27
+bgColor index 2
+topShadowColor index 1
+botShadowColor index 13
+controlPv "$(P):R56:DES"
+coarseValue ".1"
+fineValue "0.01"
+3d
+rate 0.1
+limitsFromDb
+endObjectProperties
+

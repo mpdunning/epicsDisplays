@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HMAdcsDialog</class>
+ <widget class="QDialog" name="HMAdcsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>548</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="ASguiFormPlugin" name="asguiformplugin">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>32</y>
+     <width>381</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="uiFile" stdset="0">
+    <string>hmadcs1.ui</string>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=HM02</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="HMSelect">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>10</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HM02</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Close">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>508</y>
+     <width>69</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ASguiFormPlugin</class>
+   <extends>QScrollArea</extends>
+   <header>ASguiFormPlugin.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Close</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>HMAdcsDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>349</x>
+     <y>522</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>266</x>
+     <y>502</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

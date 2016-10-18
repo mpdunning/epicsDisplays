@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>426</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>20</y>
+      <width>393</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="Main">
+     <attribute name="title">
+      <string>Main</string>
+     </attribute>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>8</y>
+        <width>201</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):SI:VERS</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>44</x>
+        <y>40</y>
+        <width>308</width>
+        <height>157</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Display</string>
+      </property>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_2">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>36</y>
+         <width>293</width>
+         <height>73</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):CALC:READ</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=ESA:OPEM</string>
+       </property>
+       <property name="notation" stdset="0">
+        <enum>QCaLabelPlugin::Automatic</enum>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_3">
+       <property name="geometry">
+        <rect>
+         <x>12</x>
+         <y>20</y>
+         <width>129</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):SI:HEAD</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=ESA:OPEM</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>132</y>
+         <width>33</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Res:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_4">
+       <property name="geometry">
+        <rect>
+         <x>48</x>
+         <y>132</y>
+         <width>105</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):SI:RESOL</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=ESA:OPEM</string>
+       </property>
+      </widget>
+      <widget class="QCaLabelPlugin" name="qcalabelplugin_5">
+       <property name="geometry">
+        <rect>
+         <x>196</x>
+         <y>132</y>
+         <width>69</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>$(P):LI:WL:CORR</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>P=ESA:OPEM</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>120</y>
+         <width>305</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>127</y>
+         <width>8</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QCaComboBoxPlugin" name="qcacomboboxplugin">
+      <property name="geometry">
+       <rect>
+        <x>237</x>
+        <y>208</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:READ.SCAN</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCaComboBoxPlugin" name="qcacomboboxplugin_2">
+      <property name="geometry">
+       <rect>
+        <x>92</x>
+        <y>208</y>
+        <width>74</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):MBBO:ZERO</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+      <property name="subscribe">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>52</x>
+        <y>208</y>
+        <width>37</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Zero:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Setup">
+     <attribute name="title">
+      <string>Setup</string>
+     </attribute>
+     <widget class="QCaPushButtonPlugin" name="qcapushbuttonplugin">
+      <property name="geometry">
+       <rect>
+        <x>259</x>
+        <y>208</y>
+        <width>65</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):BO:CLEAR.PROC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+      <property name="subscribe">
+       <bool>false</bool>
+      </property>
+      <property name="writeOnPress">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>212</x>
+        <y>212</y>
+        <width>41</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Error:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_7">
+      <property name="geometry">
+       <rect>
+        <x>84</x>
+        <y>16</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:MULT:1.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>16</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:MULT:1</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_8">
+      <property name="geometry">
+       <rect>
+        <x>84</x>
+        <y>40</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:MULT:2.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_2">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>40</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:MULT:2</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_9">
+      <property name="geometry">
+       <rect>
+        <x>84</x>
+        <y>92</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:OFST:2.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_10">
+      <property name="geometry">
+       <rect>
+        <x>84</x>
+        <y>68</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:OFST:1.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_3">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>92</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:OFST:2</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_4">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>68</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):AO:OFST:1</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+     <widget class="QCaLabelPlugin" name="qcalabelplugin_11">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>120</y>
+        <width>153</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):LO:WL:CORR.DESC</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+     <widget class="QCaLineEditPlugin" name="qcalineeditplugin_5">
+      <property name="geometry">
+       <rect>
+        <x>168</x>
+        <y>120</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P):LO:WL:CORR</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>P=ESA:OPEM</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QCaLabelPlugin" name="qcalabelplugin_6">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>312</y>
+      <width>357</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):SI:ERROR</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=ESA:OPEM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>312</y>
+      <width>37</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Error:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>426</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCaLabelPlugin</class>
+   <extends>QLabel</extends>
+   <header>QCaLabelPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaLineEditPlugin</class>
+   <extends>QLineEdit</extends>
+   <header>QCaLineEditPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaPushButtonPlugin</class>
+   <extends>QPushButton</extends>
+   <header>QCaPushButtonPlugin.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QCaComboBoxPlugin</class>
+   <extends>QComboBox</extends>
+   <header>QCaComboBoxPlugin.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,126 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 93
+y 606
+w 180
+h 100
+font "helvetica-medium-r-18.0"
+ctlFont "helvetica-medium-r-8.0"
+btnFont "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 4
+textColor index 14
+ctlFgColor1 index 69
+ctlFgColor2 index 40
+ctlBgColor1 index 39
+ctlBgColor2 index 74
+topShadowColor index 72
+botShadowColor index 12
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 15
+y 10
+w 200
+h 20
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "$(P)$(R)"
+}
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 116
+y 40
+w 18
+h 18
+lineColor index 20
+fill
+fillColor index 20
+lineWidth 0
+visPv "CALC\\\{(A)\}($(P)$(R))"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 46
+y 39
+w 60
+h 10
+controlPv "$(P)$(R).VAL"
+format "hex"
+font "helvetica-medium-r-8.0"
+fgColor index 14
+bgColor index 63
+autoHeight
+nullColor index 40
+useHexPrefix
+newPos
+objType "controls"
+noExecuteClipMask
+endObjectProperties
+
+# (Circle)
+object activeCircleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 116
+y 40
+w 18
+h 18
+lineColor index 16
+fill
+fillColor index 16
+lineWidth 0
+visPv "CALC\\\{(A)\}($(P)$(R))"
+visInvert
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Menu Button)
+object activeMenuButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 40
+y 70
+w 100
+h 20
+fgColor index 14
+bgColor index 63
+inconsistentColor index 12
+topShadowColor index 2
+botShadowColor index 12
+controlPv "$(P)$(R).SCAN"
+indicatorPv "$(P)$(R).SCAN"
+font "helvetica-medium-r-10.0"
+endObjectProperties
+

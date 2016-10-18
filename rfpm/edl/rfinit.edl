@@ -1,0 +1,156 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 505
+y 162
+w 280
+h 330
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 3
+textColor index 13
+ctlFgColor1 index 55
+ctlFgColor2 index 40
+ctlBgColor1 index 4
+ctlBgColor2 index 8
+topShadowColor index 1
+botShadowColor index 12
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 15
+w 101
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Initiate Commands"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 50
+y 70
+w 66
+h 14
+font "helvetica-medium-r-12.0"
+fgColor index 13
+bgColor index 4
+useDisplayBg
+value {
+  "Continuous:"
+}
+autoSize
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 125
+y 65
+w 85
+h 20
+fgColor index 13
+bgColor index 52
+selectColor index 50
+inconsistentColor index 8
+topShadowColor index 1
+botShadowColor index 12
+controlPv "RFPM:BO:INIT:CONTIN"
+font "helvetica-medium-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 135
+y 155
+w 80
+h 25
+fgColor index 13
+onColor index 2
+offColor index 6
+topShadowColor index 1
+botShadowColor index 12
+controlPv "RFPM:BO:ABORT.PROC"
+pressValue "1"
+onLabel "Abort"
+offLabel "Abort"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 135
+y 125
+w 80
+h 25
+fgColor index 13
+onColor index 2
+offColor index 6
+topShadowColor index 1
+botShadowColor index 12
+controlPv "RFPM:BO:SYST:AUTOSET.PROC"
+pressValue "1"
+onLabel "Autoset"
+offLabel "Autoset"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 135
+y 95
+w 80
+h 25
+fgColor index 13
+onColor index 2
+offColor index 6
+topShadowColor index 1
+botShadowColor index 12
+controlPv "RFPM:BO:INIT:IMMED.PROC"
+pressValue "1"
+onLabel "InitiateImm"
+offLabel "InitiateImm"
+3d
+font "helvetica-medium-r-12.0"
+endObjectProperties
+

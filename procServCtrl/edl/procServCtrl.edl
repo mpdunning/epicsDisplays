@@ -1,0 +1,581 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 138
+y 105
+w 733
+h 560
+font "helvetica-medium-r-12.0"
+ctlFont "helvetica-medium-r-12.0"
+btnFont "helvetica-medium-r-12.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "procServ - $(IOC)"
+showGrid
+snapToGrid
+gridSize 4
+disableScroll
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 968
+h 40
+lineColor index 13
+fill
+fillColor index 63
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 24
+y 4
+w 208
+h 32
+font "helvetica-bold-r-18.0"
+fgColor index 14
+bgColor index 48
+useDisplayBg
+value {
+  "procServ IOC Control"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 45
+w 720
+h 510
+lineColor index 14
+fill
+fillColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 240
+y 56
+w 96
+h 24
+font "helvetica-bold-r-14.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "AutoRestart"
+}
+endObjectProperties
+
+# (Menu Mux)
+object menuMuxClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 2000
+y 240
+w 150
+h 45
+fgColor index 14
+bgColor index 0
+topShadowColor index 0
+botShadowColor index 14
+controlPv "$(CS):CSTYPE"
+font "helvetica-medium-r-18.0"
+numItems 2
+symbolTag {
+  0 "Cryostream"
+  1 "Phenix"
+}
+symbol0 {
+  0 "purge"
+  1 "purge"
+}
+value0 {
+  0 "Purge"
+  1 "Warm"
+}
+symbol1 {
+  0 "gas"
+  1 "gas"
+}
+value1 {
+  0 "Gas"
+  1 "Sample"
+}
+symbol2 {
+  0 "evap"
+  1 "evap"
+}
+value2 {
+  0 "Evap"
+  1 "Shield"
+}
+symbol3 {
+  0 "gasflow"
+  1 "gasflow"
+}
+value3 {
+  0 "Gas Flow"
+  1 "Cryo Speed"
+}
+symbol4 {
+  0 "evapadjust"
+  1 "evapadjust"
+}
+value4 {
+  0 "Evap Adjust"
+  1 "Evap Adjust"
+}
+symbol5 {
+  0 "cstype"
+  1 "cstype"
+}
+value5 {
+  0 "Oxford Cryostream"
+  1 "Phenix Cryostat"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 344
+y 56
+w 68
+h 24
+controlPv "$(IOC):AUTORESTART"
+fgColor index 16
+fgAlarm
+bgColor index 14
+fill
+font "helvetica-bold-r-12.0"
+fontAlign "center"
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 92
+y 56
+w 132
+h 24
+controlPv "$(IOC):IOCNAME"
+fgColor index 16
+fgAlarm
+bgColor index 14
+fill
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 55
+w 80
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "IOC Name"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 416
+y 56
+w 68
+h 24
+fgColor index 25
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(IOC):TOGGLE"
+indicatorPv "$(IOC):TOGGLE"
+onLabel "Toggle"
+offLabel "Toggle"
+labelType "literal"
+3d
+font "helvetica-bold-r-12.0"
+objType "controls"
+visPv "$(IOC):STATUS"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 85
+w 80
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "IOC status"
+}
+endObjectProperties
+
+# (Text Update)
+object TextupdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 92
+y 84
+w 132
+h 24
+controlPv "$(IOC):STATUS"
+fgColor index 16
+fgAlarm
+bgColor index 14
+fill
+font "helvetica-bold-r-12.0"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 344
+y 88
+w 68
+h 24
+fgColor index 19
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(IOC):START"
+onLabel "Start"
+offLabel "Start"
+labelType "literal"
+3d
+font "helvetica-bold-r-12.0"
+objType "controls"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 488
+y 88
+w 68
+h 24
+fgColor index 24
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(IOC):RESTART"
+onLabel "Restart"
+offLabel "Restart"
+labelType "literal"
+3d
+font "helvetica-bold-r-12.0"
+objType "controls"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 416
+y 88
+w 68
+h 24
+fgColor index 24
+onColor index 4
+offColor index 3
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(IOC):STOP"
+onLabel "Stop"
+offLabel "Stop"
+labelType "literal"
+3d
+font "helvetica-bold-r-12.0"
+objType "controls"
+visMin "0"
+visMax "1"
+endObjectProperties
+
+# (multiLineTextUpdate)
+object multiLineTextUpdateClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 10
+y 150
+w 710
+h 400
+controlPv "$(IOC):IOCOUT"
+fgColour index 16
+fgAlarm
+bgColour index 10
+fill
+font "courier-medium-r-12.0"
+endObjectProperties
+
+# (Choice Button)
+object activeChoiceButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 580
+y 85
+w 140
+h 24
+fgColor index 25
+bgColor index 3
+selectColor index 4
+inconsistentColor index 0
+topShadowColor index 1
+botShadowColor index 11
+controlPv "$(IOC):SHOWOUT"
+font "helvetica-bold-r-12.0"
+orientation "horizontal"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 580
+y 55
+w 140
+h 25
+font "helvetica-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Show IOC Output"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 344
+y 120
+w 68
+h 24
+fgColor index 19
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+buttonLabel "Start"
+numCmds 1
+command {
+  0 "ssh $IOCSERVER $PROCSERV/startIOC.sh $(IOC)"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 416
+y 120
+w 68
+h 24
+fgColor index 24
+bgColor index 4
+topShadowColor index 1
+botShadowColor index 11
+font "helvetica-bold-r-12.0"
+buttonLabel "Stop"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "popUpConf.edl"
+}
+symbols {
+  0 "CMD=ssh $IOCSERVER $PROCSERV/killIOC.sh -k $(IOC),ACTION=Stop procServ for IOC: $(IOC),MESSAGE1=Takes 5 seconds...,MESSAGE2= "
+}
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 664
+y 4
+w 60
+h 32
+fgColor index 55
+bgColor index 47
+topShadowColor index 1
+botShadowColor index 13
+label "EXIT"
+font "courier-bold-r-18.0"
+3d
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 264
+y 4
+w 316
+h 32
+font "helvetica-bold-r-18.0"
+fgColor index 19
+bgColor index 48
+useDisplayBg
+value {
+  "$(IOC)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 260
+y 120
+w 76
+h 24
+font "helvetica-bold-r-14.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "procServ"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 296
+y 88
+w 40
+h 24
+font "helvetica-bold-r-14.0"
+fontAlign "right"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "IOC"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 580
+y 4
+w 68
+h 32
+fgColor index 73
+bgColor index 34
+topShadowColor index 1
+botShadowColor index 13
+font "helvetica-bold-r-14.0"
+buttonLabel "Help"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "procServCtrl-help.edl"
+}
+endObjectProperties
+

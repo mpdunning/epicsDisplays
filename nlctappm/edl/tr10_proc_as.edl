@@ -1,0 +1,5565 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 555
+y 51
+w 880
+h 899
+font "new century schoolbook-medium-r-18.0"
+ctlFont "new century schoolbook-bold-r-18.0"
+btnFont "new century schoolbook-medium-i-18.0"
+fgColor index 14
+bgColor index 71
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 1
+ctlBgColor1 index 1
+ctlBgColor2 index 14
+topShadowColor index 1
+botShadowColor index 14
+title "L-Band Processing Loop"
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 62
+w 870
+h 615
+lineColor index 14
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 682
+w 290
+h 212
+lineColor index 14
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 300
+y 682
+w 575
+h 212
+lineColor index 14
+fillColor index 1
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 0
+y 0
+w 642
+h 57
+lineColor index 63
+fill
+fillColor index 63
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 0
+y 57
+w 1124
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 2
+xPoints {
+  0 0
+  1 1124
+}
+yPoints {
+  0 57
+  1 57
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 0
+w 94
+h 26
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "L-Band"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 1249
+y 384
+w 0
+h 221
+lineColor index 14
+fillColor index 0
+numPoints 3
+xPoints {
+  0 1249
+  1 1249
+  2 1249
+}
+yPoints {
+  0 384
+  1 456
+  2 604
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 9
+y 26
+w 283
+h 26
+font "new century schoolbook-bold-r-24.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "RF Station Processing"
+}
+autoSize
+endObjectProperties
+
+# (Exit Button)
+object activeExitButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 803
+y 0
+w 75
+h 26
+fgColor index 14
+bgColor index 63
+topShadowColor index 2
+botShadowColor index 0
+label "EXIT"
+font "new century schoolbook-medium-r-18.0"
+3d
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 5
+y 430
+w 870
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 2
+xPoints {
+  0 5
+  1 875
+}
+yPoints {
+  0 430
+  1 430
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 5
+y 265
+w 870
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 2
+xPoints {
+  0 5
+  1 875
+}
+yPoints {
+  0 265
+  1 265
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 558
+y 690
+w 130
+h 18
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "DAC Control"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 440
+y 705
+w 78
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Attenuation"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 765
+y 840
+w 100
+h 26
+fgColor index 14
+onColor index 56
+offColor index 55
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):RF:PULSE:WIDTHSAVE.PROC"
+pressValue "1"
+onLabel "Ctl->Tgt"
+offLabel "Ctl->Tgt"
+3d
+font "new century schoolbook-medium-i-18.0"
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 854
+w 100
+h 35
+controlPv "TRS$(STN):RF:PULSE:WIDTHDES"
+precision -1
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 655
+y 810
+w 100
+h 35
+controlPv "TRS$(STN):RF:PULSE:WIDTHINIT"
+precision -1
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 655
+y 765
+w 200
+h 40
+fgColor index 14
+bgColor index 1
+2ndBgColor index 55
+topShadowColor index 14
+botShadowColor index 0
+controlPv "TRS$(STN):RF:PULSE:WIDTHCTRL"
+controlLabelType "pvName"
+font "new century schoolbook-bold-r-14.0"
+precision 4
+scaleMin 0
+scaleMax 10
+showLimits
+showValue
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 725
+y 705
+w 81
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Pulse Width"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 600
+y 820
+w 40
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Initial"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 600
+y 860
+w 45
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Target"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 320
+y 860
+w 45
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Target"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 320
+y 820
+w 40
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Initial"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 320
+y 770
+w 50
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Control"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 320
+y 735
+w 55
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 1
+useDisplayBg
+value {
+  "Current"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 490
+y 840
+w 100
+h 26
+fgColor index 14
+onColor index 56
+offColor index 55
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):RF:DRIVE:PWRSAVE.PROC"
+pressValue "1"
+onLabel "Ctl->Tgt"
+offLabel "Ctl->Tgt"
+3d
+font "new century schoolbook-medium-i-18.0"
+endObjectProperties
+
+# (Motif Slider)
+object activeMotifSliderClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 380
+y 765
+w 200
+h 40
+fgColor index 14
+bgColor index 1
+2ndBgColor index 55
+topShadowColor index 14
+botShadowColor index 0
+controlPv "TRS$(STN):RF:DRIVE:PWRCTRL"
+controlLabelType "pvName"
+font "new century schoolbook-bold-r-14.0"
+precision 4
+scaleMax 1
+showLimits
+showValue
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 380
+y 854
+w 100
+h 35
+controlPv "TRS$(STN):RF:DRIVE:PWRDES"
+precision -1
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 380
+y 810
+w 100
+h 35
+controlPv "TRS$(STN):RF:DRIVE:PWRINIT"
+precision -1
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 593
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 595
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):VACM10:SUMY:STAT.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 389
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 350
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 311
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 313
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):COUP:LST:EN"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 391
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):COUPWG:LST:EN"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 352
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS1WG:LST:EN"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 10
+y 68
+w 160
+h 35
+fgColor index 14
+bgColor index 55
+topShadowColor index 55
+botShadowColor index 14
+font "new century schoolbook-medium-r-18.0"
+yPosOffset 10
+buttonLabel "AS Prc Inputs"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_proc_as_inputs.edl"
+}
+menuLabel {
+  0 "AS Processing Inputs"
+}
+symbols {
+  0 "STN=TRS$(STN)"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 107
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 111
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 109
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):KLY:OUTR:RMS:PWR.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 115
+w 120
+h 20
+controlPv "TRS$(STN):KLY:OUTR:RMS:PWR"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 112
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_db_pwr.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),NAME=KLY:OUTR:RMS,M=0,C=4"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 146
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 150
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 148
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):CIRC:OUTR:RMS:PWR.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 154
+w 120
+h 20
+controlPv "TRS$(STN):CIRC:OUTR:RMS:PWR"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 151
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_db_pwr.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),NAME=CIRC:OUTR:RMS,M=0,C=6"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 185
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 189
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 187
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS1:INPR:RMS:PWR.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 193
+w 120
+h 20
+controlPv "TRS$(STN):AS1:INPR:RMS:PWR"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 190
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_db_pwr.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),NAME=AS1:INPR:RMS,M=0,C=9"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 228
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 224
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 226
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):COUP:INPR:RMS:PWR.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 232
+w 120
+h 20
+controlPv "TRS$(STN):COUP:INPR:RMS:PWR"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 229
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_db_pwr.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),NAME=COUP:INPR:RMS,M=0,C=14"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 272
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 274
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS1:LST:EN"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 277
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_lostpwr.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),NAME=AS1,NAME1=AS1:OUTF:INT,NAME2=AS1:INPF:INT"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 280
+w 120
+h 20
+controlPv "TRS$(STN):AS1:LST:EN"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 276
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 315
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 319
+w 120
+h 20
+controlPv "TRS$(STN):COUP:LST:EN"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 316
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_lostpwr.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),NAME=COUP,NAME1=COUP:OUTF:INT,NAME2=COUP:INPF:INT"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 437
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 439
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:COMP:INP.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 445
+w 120
+h 20
+controlPv "TRS$(STN):LLRF:COMP:INP"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 442
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_db_binary.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=TRSL,RING=LBAND,NAME=LLRF:COMP:INP"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 354
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 358
+w 120
+h 20
+controlPv "TRS$(STN):AS1WG:LST:EN"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 355
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_lostpwr.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),NAME=AS1WG,NAME1=AS1:INPF:INT,NAME2=KLY:OUTF:INT"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 393
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 397
+w 120
+h 20
+controlPv "TRS$(STN):COUPWG:LST:EN"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 394
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_lostpwr.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),NAME=COUPWG,NAME1=COUP:INPF:INT,NAME2=KLY:OUTF:INT"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 476
+w 161
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 478
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:ARCDET:INP.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 484
+w 120
+h 20
+controlPv "TRS$(STN):LLRF:ARCDET:INP"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 480
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 481
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_db_binary.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),RING=LBAND,NAME=LLRF:ARCDET:INP"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 515
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 517
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:STAT:INP.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 523
+w 120
+h 20
+controlPv "TRS$(STN):LLRF:STAT:INP"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 519
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 520
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_db_binary.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),RING=LBAND,NAME=LLRF:STAT:INP"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 129
+y 554
+w 160
+h 34
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 131
+y 556
+w 156
+h 30
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:DIODE:LTCH.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 562
+w 120
+h 20
+controlPv "TRS$(STN):LLRF:DIODE:LTCH"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 559
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 559
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_db_binary.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),RING=LBAND,NAME=LLRF:DIODE:LTCH"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 134
+y 598
+w 27
+h 25
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_vacuum.edl"
+}
+symbols {
+  0 "STN=L,U1=10"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 133
+y 598
+w 28
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 164
+y 602
+w 120
+h 16
+controlPv "TRS$(STN):VACM10:SUMY:STAT.SEVR"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 115
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Kly OutR"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 154
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Circ OutR"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 193
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "AS1 Inp R"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 232
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Coup Inp R"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 278
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "AS1 Lst En"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 317
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Coup Lst En"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 445
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Comp Inp"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 356
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "AS1WG Lst En"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 395
+w 114
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "CoupWG Lst En"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 484
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Arc Det Inp"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 523
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Stat Inp"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 562
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Diode Ltch"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 11
+y 601
+w 100
+h 14
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Vacuum"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 309
+y 87
+w 70
+h 16
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Limits"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 309
+y 69
+w 70
+h 16
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Check"
+}
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 109
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):KLY:OUTR:RMS:PWRUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 148
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):CIRC:OUTR:RMS:PWRUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 187
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):AS1:INPR:RMS:PWRUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 226
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):COUP:INPR:RMS:PWRUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 274
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):AS1:LST:ENUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 313
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):COUP:LST:ENUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 439
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):LLRF:COMP:INP:PWRUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 352
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):AS1WG:LST:ENUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 391
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):COUPWG:LST:ENUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 478
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):LLRF:ARCDET:INP:PWRUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 517
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):LLRF:STAT:INP:PWRUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 556
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):LLRF:DIODE:LTCH:PWRUSE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 309
+y 595
+w 50
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+inconsistentColor index 14
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):VACM10:SUMY:STAT:USE"
+onLabel "NO"
+offLabel "YES"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 558
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 560
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:DIODE:LTCH:LTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 597
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 597
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 599
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):VACM10:SUMY:STAT:FLT.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 274
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 276
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS1:LST:EFLT.SEVR"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 409
+y 85
+w 71
+h 17
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Limit"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 409
+y 69
+w 71
+h 17
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Error"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 784
+y 85
+w 67
+h 20
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "# Faults"
+}
+autoSize
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 379
+y 107
+w 100
+h 34
+controlPv "TRS$(STN):KLY:OUTR:RMS:$(A).HIHI"
+displayMode "decimal"
+precision 2
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 379
+y 146
+w 100
+h 34
+controlPv "TRS$(STN):CIRC:OUTR:RMS:$(A).HIHI"
+displayMode "decimal"
+precision 2
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 379
+y 185
+w 100
+h 34
+controlPv "TRS$(STN):AS1:INPR:RMS:$(A).HIHI"
+displayMode "decimal"
+precision 2
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 379
+y 224
+w 100
+h 34
+controlPv "TRS$(STN):COUP:INPR:RMS:$(A).HIHI"
+displayMode "decimal"
+precision 2
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 379
+y 270
+w 100
+h 34
+controlPv "TRS$(STN):AS1:LST:EN.HIHI"
+displayMode "decimal"
+precision 2
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 379
+y 309
+w 100
+h 34
+controlPv "TRS$(STN):COUP:LST:EN.HIHI"
+displayMode "decimal"
+precision 2
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 379
+y 348
+w 100
+h 34
+controlPv "TRS$(STN):AS1WG:LST:EN.HIHI"
+displayMode "decimal"
+precision 2
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Text Entry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 379
+y 387
+w 100
+h 34
+controlPv "TRS$(STN):COUPWG:LST:EN.HIHI"
+displayMode "decimal"
+precision 2
+fgColor index 14
+bgColor index 55
+fill
+font "new century schoolbook-medium-r-14.0"
+lineWidth 1
+lineAlarm
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 504
+y 85
+w 65
+h 17
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Plots"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 499
+y 69
+w 70
+h 17
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Detail"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 589
+y 85
+w 71
+h 17
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Status"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 579
+y 69
+w 81
+h 17
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Latched"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 689
+y 85
+w 71
+h 17
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Status"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 689
+y 69
+w 71
+h 17
+font "new century schoolbook-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Fault"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 111
+w 95
+h 26
+controlPv "TRS$(STN):AS:PWRFLT:CNT.A"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 111
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 111
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 113
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):KLY:OUTR:RMS:PLTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 113
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):KLY:OUTR:RMS:PFLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 117
+w 82
+h 16
+controlPv "TRS$(STN):KLY:OUTR:RMS:PLTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 116
+w 82
+h 16
+controlPv "TRS$(STN):KLY:OUTR:RMS:PFLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 107
+w 65
+h 34
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-18.0"
+buttonLabel "Diag"
+numCmds 1
+commandLabel {
+  0 "Detail Plots"
+}
+command {
+  0 "rfdm2k tr10_dm2k_pwr S=L,NAME=KLY:OUTR:RMS"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 150
+w 95
+h 26
+controlPv "TRS$(STN):AS:PWRFLT:CNT.B"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 150
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 150
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 152
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):CIRC:OUTR:RMS:PLTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 152
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):CIRC:OUTR:RMS:PFLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 156
+w 82
+h 16
+controlPv "TRS$(STN):CIRC:OUTR:RMS:PLTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 156
+w 82
+h 16
+controlPv "TRS$(STN):CIRC:OUTR:RMS:PFLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 146
+w 65
+h 34
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-18.0"
+buttonLabel "Diag"
+numCmds 1
+commandLabel {
+  0 "Detail Plots"
+}
+command {
+  0 "rfdm2k tr10_dm2k_pwr S=L,NAME=CIRC:OUTR:RMS"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 189
+w 95
+h 26
+controlPv "TRS$(STN):AS:PWRFLT:CNT.C"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 189
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 189
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 191
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS1:INPR:RMS:PLTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 191
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS1:INPR:RMS:PFLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 195
+w 82
+h 16
+controlPv "TRS$(STN):AS1:INPR:RMS:PLTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 195
+w 82
+h 16
+controlPv "TRS$(STN):AS1:INPR:RMS:PFLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 185
+w 65
+h 34
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-18.0"
+buttonLabel "Diag"
+numCmds 1
+commandLabel {
+  0 "Detail Plots"
+}
+command {
+  0 "rfdm2k tr10_dm2k_pwr S=L,NAME=AS1:INPR:RMS"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 228
+w 95
+h 26
+controlPv "TRS$(STN):AS:PWRFLT:CNT.D"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 228
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 228
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 230
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):COUP:INPR:RMS:PLTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 230
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):COUP:INPR:RMS:PFLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 234
+w 82
+h 16
+controlPv "TRS$(STN):COUP:INPR:RMS:PLTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 234
+w 82
+h 16
+controlPv "TRS$(STN):COUP:INPR:RMS:PFLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 224
+w 65
+h 34
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-18.0"
+buttonLabel "Diag"
+numCmds 1
+commandLabel {
+  0 "Detail Plots"
+}
+command {
+  0 "rfdm2k tr10_dm2k_pwr S=L,NAME=COUP:INPR:RMS"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 274
+w 95
+h 26
+controlPv "TRS$(STN):AS:PWRFLT:CNT.E"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 270
+w 65
+h 34
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-18.0"
+buttonLabel "Diag"
+numCmds 1
+commandLabel {
+  0 "Detail Plots"
+}
+command {
+  0 "rfdm2k tr10_dm2k_enfst S=L,NAME=AS1:LST"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 313
+w 95
+h 26
+controlPv "TRS$(STN):AS:PWRFLT:CNT.F"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 309
+w 65
+h 34
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-18.0"
+buttonLabel "Diag"
+numCmds 1
+commandLabel {
+  0 "Detail Plots"
+}
+command {
+  0 "rfdm2k tr10_dm2k_enfst S=L,NAME=COUP:LST"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 348
+w 65
+h 34
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-18.0"
+buttonLabel "Diag"
+numCmds 1
+commandLabel {
+  0 "Detail Plots"
+}
+command {
+  0 "rfdm2k tr10_dm2k_enfst S=L,NAME=AS1WG:LST"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 494
+y 387
+w 65
+h 34
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-18.0"
+buttonLabel "Diag"
+numCmds 1
+commandLabel {
+  0 "Detail Plots"
+}
+command {
+  0 "rfdm2k tr10_dm2k_enfst S=$(STN),NAME=COUPWG:LST"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 441
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 441
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 443
+w 85
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:COMP:INP:LTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 443
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:COMP:INP:FLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 441
+w 95
+h 26
+controlPv "TRS$(STN):AS:HWFLT:CNT.A"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 574
+y 446
+w 82
+h 16
+controlPv "TRS$(STN):LLRF:COMP:INP:LTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 446
+w 82
+h 16
+controlPv "TRS$(STN):LLRF:COMP:INP:FLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 280
+w 82
+h 16
+controlPv "TRS$(STN):AS1:LST:EFLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 280
+w 82
+h 16
+controlPv "TRS$(STN):AS1:LST:ELTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 276
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS1:LST:ELTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 274
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 313
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 315
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):COUP:LST:ELTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 315
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):COUP:LST:EFLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 319
+w 82
+h 16
+controlPv "TRS$(STN):COUP:LST:ELTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 319
+w 82
+h 16
+controlPv "TRS$(STN):COUP:LST:EFLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 313
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 352
+w 95
+h 26
+controlPv "TRS$(STN):AS:PWRFLT:CNT.G"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 391
+w 95
+h 26
+controlPv "TRS$(STN):AS:PWRFLT:CNT.H"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 352
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 352
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 354
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS1WG:LST:ELTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 354
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS1WG:LST:EFLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 358
+w 82
+h 16
+controlPv "TRS$(STN):AS1WG:LST:ELTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 358
+w 82
+h 16
+controlPv "TRS$(STN):AS1WG:LST:EFLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 391
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 391
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 393
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):COUPWG:LST:ELTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 393
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):COUPWG:LST:EFLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 397
+w 82
+h 16
+controlPv "TRS$(STN):COUPWG:LST:ELTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 397
+w 82
+h 16
+controlPv "TRS$(STN):COUPWG:LST:EFLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 480
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 480
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 482
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:ARCDET:INP:LTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 482
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:ARCDET:INP:FLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 485
+w 82
+h 16
+controlPv "TRS$(STN):LLRF:ARCDET:INP:LTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 485
+w 82
+h 16
+controlPv "TRS$(STN):LLRF:ARCDET:INP:FLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 480
+w 95
+h 26
+controlPv "TRS$(STN):AS:HWFLT:CNT.B"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 569
+y 519
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 519
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 521
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:STAT:INP:LTCH.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 521
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:STAT:INP:FLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 524
+w 82
+h 16
+controlPv "TRS$(STN):LLRF:STAT:INP:LTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 524
+w 82
+h 16
+controlPv "TRS$(STN):LLRF:STAT:INP:FLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 519
+w 95
+h 26
+controlPv "TRS$(STN):AS:HWFLT:CNT.C"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 669
+y 558
+w 90
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 671
+y 560
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:DIODE:LTCH:FLT.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 563
+w 82
+h 16
+controlPv "TRS$(STN):LLRF:DIODE:LTCH:LTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 563
+w 82
+h 16
+controlPv "TRS$(STN):LLRF:DIODE:LTCH:FLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 558
+w 95
+h 26
+controlPv "TRS$(STN):AS:HWFLT:CNT.D"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 571
+y 599
+w 86
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):VACM10:SUMY:STAT:LTCH.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 769
+y 597
+w 95
+h 26
+controlPv "TRS$(STN):AS:PWRFLT:CNT.I"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 673
+y 602
+w 82
+h 16
+controlPv "TRS$(STN):VACM10:SUMY:STAT:FLT"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 573
+y 602
+w 82
+h 16
+controlPv "TRS$(STN):VACM10:SUMY:STAT:LTCH"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 796
+y 625
+w 45
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Total"
+}
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 314
+y 640
+w 120
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):AS:PROC:RSTSEQ.PROC"
+pressValue "0"
+onLabel " Fault  Reset"
+offLabel " Fault  Reset"
+3d
+font "new century schoolbook-medium-i-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 10
+y 640
+w 120
+h 30
+fgColor index 14
+onColor index 56
+offColor index 55
+topShadowColor index 55
+botShadowColor index 14
+controlPv "TRS$(STN):AS:FLT:CNTRST.PROC"
+pressValue "0"
+onLabel "Count Reset "
+offLabel "Count Reset "
+3d
+font "new century schoolbook-medium-i-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 140
+y 635
+w 124
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Last Count Reset:"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 140
+y 654
+w 150
+h 16
+controlPv "TRS$(STN):AS:FLT:CNTRSTTIME"
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 445
+y 635
+w 100
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Last Fault:"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 445
+y 654
+w 150
+h 16
+controlPv "TRS$(STN):AS:FLT:TIME"
+font "new century schoolbook-bold-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 771
+y 645
+w 93
+h 26
+controlPv "TRS$(STN):AS:FLT:CNT:BE.VAL"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 638
+y 649
+w 28
+h 18
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 638
+y 650
+w 27
+h 17
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-10.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),RING=LBAND,NAME=AS:PROC:FLT:BES,NAME1=Fault Status"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 632
+y 645
+w 129
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 634
+y 647
+w 124
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):AS:PROC:FLT:BES.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 667
+y 650
+w 91
+h 16
+controlPv "TRS$(STN):AS:PROC:FLT:BES"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 115
+y 730
+w 153
+h 23
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 119
+y 734
+w 24
+h 15
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 35
+y 733
+w 65
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Status"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 35
+y 758
+w 80
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Running"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 35
+y 773
+w 80
+h 16
+font "new century schoolbook-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+bgAlarm
+useDisplayBg
+value {
+  "Counter"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 117
+y 732
+w 149
+h 19
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):RF:RAMP:STATE.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 145
+y 734
+w 120
+h 16
+controlPv "TRS$(STN):RF:RAMP:STATE"
+font "new century schoolbook-medium-r-14.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 793
+w 60
+h 26
+fgColor index 14
+onColor index 55
+offColor index 56
+inconsistentColor index 14
+topShadowColor index 14
+botShadowColor index 55
+controlPv "TRS$(STN):MOD:SUMY:STATCHECK"
+onLabel "YES"
+offLabel "NO"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 120
+y 735
+w 23
+h 14
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_db_mbbi.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),RING=LBAND,NAME=RF:RAMP:STATE,NAME1=Ramp Status"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 115
+y 760
+w 153
+h 26
+controlPv "TRS$(STN):RF:NOTRIP:TIME"
+font "new century schoolbook-medium-r-24.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 63
+limitsFromDb
+precision -1
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Button)
+object activeButtonClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 208
+y 823
+w 60
+h 26
+fgColor index 14
+onColor index 55
+offColor index 56
+inconsistentColor index 14
+topShadowColor index 14
+botShadowColor index 55
+controlPv "TRS$(STN):VACM:SUMY:STATCHECK"
+onLabel "YES"
+offLabel "NO"
+labelType "literal"
+3d
+font "new century schoolbook-medium-i-14.0"
+objType "controls"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 685
+y 730
+w 140
+h 28
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 687
+y 732
+w 136
+h 24
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):LLRF:PULSE:WIDTHCTRLI.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 720
+y 734
+w 100
+h 20
+controlPv "TRS$(STN):LLRF:PULSE:WIDTHCTRLI"
+format "decimal"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 689
+y 735
+w 28
+h 20
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 690
+y 735
+w 27
+h 19
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_dac.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),NAME=LLRF:PULSE:WIDTHCTRLI,NAME1=Pulse Width"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 410
+y 730
+w 140
+h 28
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 412
+y 732
+w 136
+h 24
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):RF:DRIVE:PWRCTRL.SEVR"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 5
+release 0
+x 445
+y 734
+w 100
+h 20
+controlPv "TRS$(STN):RF:DRIVE:PWRCTRL"
+format "decimal"
+font "new century schoolbook-medium-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 1
+autoHeight
+limitsFromDb
+precision 2
+nullColor index 0
+newPos
+noExecuteClipMask
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 414
+y 735
+w 28
+h 20
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 415
+y 735
+w 27
+h 19
+fgColor index 14
+bgColor index 1
+topShadowColor index 1
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "DB"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_db_dac.edl"
+}
+menuLabel {
+  0 "DB"
+}
+symbols {
+  0 "STN=$(STN),NAME=RF:DRIVE:PWRCTRL,NAME1=Drive Power"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 35
+y 793
+w 130
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 37
+y 795
+w 126
+h 22
+fgColor index 14
+bgColor index 1
+topShadowColor index 14
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "Modulatr LBand"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "lband_mod_main.edl"
+}
+menuLabel {
+  0 "Modulator L-Band"
+}
+symbols {
+  0 "S=TS00"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 37
+y 795
+w 126
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TS00:MOD:SUMY:STAT.SEVR"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 35
+y 823
+w 130
+h 26
+lineColor index 14
+fillColor index 0
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 37
+y 825
+w 126
+h 22
+fgColor index 14
+bgColor index 1
+topShadowColor index 14
+botShadowColor index 14
+font "new century schoolbook-medium-r-12.0"
+yPosOffset 10
+buttonLabel "VP Limits   "
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "tr10_vacuum.edl"
+}
+menuLabel {
+  0 "Vacuum $(STN) Limits"
+}
+symbols {
+  0 "STN=L,U1=10"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 37
+y 825
+w 126
+h 22
+lineColor index 16
+lineAlarm
+fillColor index 0
+lineWidth 3
+alarmPv "TRS$(STN):VACM10:SUMY:STAT.SEVR"
+endObjectProperties
+
