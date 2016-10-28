@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 147
-y 51
+x 39
+y 114
 w 300
-h 140
+h 260
 font "courier-medium-r-12.0"
 ctlFont "courier-medium-r-12.0"
 btnFont "courier-medium-r-12.0"
@@ -176,7 +176,7 @@ major 4
 minor 7
 release 0
 x 220
-y 112
+y 224
 w 74
 h 20
 controlPv "$(P):CALC:$(MOD):CH$(C).EGU"
@@ -198,17 +198,17 @@ beginObjectProperties
 major 4
 minor 1
 release 1
-x 176
-y 112
+x 172
+y 224
 w 40
 h 20
-font "courier-medium-r-12.0"
+font "courier-bold-r-12.0"
 fontAlign "right"
 fgColor index 13
 bgColor index 2
 useDisplayBg
 value {
-  "Unit"
+  "Units"
 }
 endObjectProperties
 
@@ -264,8 +264,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 156
-y 44
+x 8
+y 128
 w 60
 h 20
 controlPv "$(P):AO:$(MOD):CH$(C):D.DESC"
@@ -287,8 +287,8 @@ beginObjectProperties
 major 4
 minor 7
 release 0
-x 220
-y 44
+x 72
+y 128
 w 74
 h 20
 controlPv "$(P):AO:$(MOD):CH$(C):D"
@@ -310,11 +310,149 @@ beginObjectProperties
 major 4
 minor 7
 release 0
+x 8
+y 156
+w 60
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):E.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 72
+y 156
+w 74
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):E"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+precision 7
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 8
+y 184
+w 60
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):F.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 72
+y 184
+w 74
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):F"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+precision 7
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 156
+y 44
+w 60
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):G.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 220
+y 44
+w 74
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):G"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+precision 7
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
 x 156
 y 72
 w 60
 h 20
-controlPv "$(P):AO:$(MOD):CH$(C):E.DESC"
+controlPv "$(P):AO:$(MOD):CH$(C):H.DESC"
 font "helvetica-medium-r-12.0"
 fontAlign "right"
 fgColor index 13
@@ -337,7 +475,191 @@ x 220
 y 72
 w 74
 h 20
-controlPv "$(P):AO:$(MOD):CH$(C):E"
+controlPv "$(P):AO:$(MOD):CH$(C):H"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+precision 7
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 156
+y 100
+w 60
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):I.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 220
+y 100
+w 74
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):I"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+precision 7
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 156
+y 128
+w 60
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):J.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 220
+y 128
+w 74
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):J"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+precision 7
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 156
+y 156
+w 60
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):K.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 220
+y 156
+w 74
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):K"
+font "courier-medium-r-12.0"
+fgColor index 13
+bgColor index 1
+editable
+motifWidget
+precision 7
+nullColor index 13
+useHexPrefix
+newPos
+objType "controls"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 156
+y 184
+w 60
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):L.DESC"
+font "helvetica-medium-r-12.0"
+fontAlign "right"
+fgColor index 13
+bgColor index 2
+useDisplayBg
+limitsFromDb
+nullColor index 13
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 7
+release 0
+x 220
+y 184
+w 74
+h 20
+controlPv "$(P):AO:$(MOD):CH$(C):L"
 font "courier-medium-r-12.0"
 fgColor index 13
 bgColor index 1
